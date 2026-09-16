@@ -9,6 +9,8 @@ Polujan365.lean - An affirmative answer to Polujan’s (2021) Open Problem 3.65:
 
 BentAffineOrbit.lean - An affirmative answer to Kudin, Pasalic, Polujan, and Zhang’s (2025) Open Problem 2: “Can one construct EA-inequivalent bent concatenations outside the completed Maiorana–McFarland class using affine rearrangements of one fixed seed?”; here an explicit pair is formally verified in every even dimension N ≥ 8, with distinct linearity indices N/2 − 2 and N/2 − 1, together with an exact rank formula for concatenations from rigid seeds.
 
+BentDesignRank.lean - A refutation of Hyun, Kwon, Wang, and Wu’s (2026) Open Problem 7: “Do the designs D_{g,h} and TD_h in Theorem 10 always have equal binary ranks?”; here an explicit eight-variable counterexample is formally verified in Lean, satisfying every bent-function and duality hypothesis, with binary ranks 29 and 30 respectively.
+
 TIEqTISp.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)'s Open Question 8: "Which, if any, of TI_O, TI_U, TI_Sp are equal to TI?"; here it is proved that TI = TI_Sp.
 
 TIParStandalone.lean - Resolves the maximal-parabolic case of Chen, Grochow, Qiao, Tang, and Zhang’s (2024) research direction in §1.5: “What are the tensor-isomorphism complexity classes associated with other matrix groups, including parabolic subgroups?”; here TI = TI_Par is proved for the maximal parabolic family P_(n,n) over every field, under coordinate-projection reductions with polynomial output-size bounds. This addresses an explicitly proposed research direction, rather than a numbered open question.
