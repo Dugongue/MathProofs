@@ -1,10 +1,12 @@
 PolujanPottV1.lean - An affirmative answer to Polujan-Pott (2021) Open Problem V.1: "Can two vectorial bent functions have isomorphic graph translation designs without being EA-equivalent?"
 
+Polujan365.lean - An affirmative answer to Polujan’s (2021) Open Problem 3.65: “For every even \(n\), are two vectorial bent functions EA-equivalent exactly when their vanishing-flat designs are isomorphic?” Here it is proved that vanishing-flat design isomorphism is equivalent to EA-equivalence for all vectorial bent functions in the admissible Nyberg range.
+
 TIEqTISp.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)'s Open Question 8: "Which, if any, of TI_O, TI_U, TI_Sp are equal to TI?"; here it is proved that TI = TI_Sp.
 
 FormTI.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)’s Open Question 1.11: “What is the complexity of tensor isomorphism restricted to other form-preserving groups, including mixed orthogonal groups and groups preserving forms that are neither symmetric nor skew-symmetric?”; here TI-completeness is proved for seven form-isometry families, including O(n,n), O(3n,n), and families preserving nonsymmetric or degenerate bilinear forms, under coordinate-projection reductions with polynomial output-size bounds.
 
-Polujan365.lean - An affirmative answer to Polujan’s (2021) Open Problem 3.65: “For every even \(n\), are two vectorial bent functions EA-equivalent exactly when their vanishing-flat designs are isomorphic?” Here it is proved that vanishing-flat design isomorphism is equivalent to EA-equivalence for all vectorial bent functions in the admissible Nyberg range.
+FangCounterexample.lean - A refutation of Fang’s (2017) Conjecture 2.9: “Does identical collapse tomography at every vertex imply that a graph is vertex-transitive?”; here a ten-vertex counterexample is formally verified in Lean. The classical Tutte 12-cage also refutes the conjecture, as noted in the file; priority for the explicit refutation remains unverified.
 
 -------------------------------------------
 
