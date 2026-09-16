@@ -1,4 +1,5 @@
 Lean proofs obtained and formalized with use of AI models, namely some combination of Claude Opus 5, Claude Fable 5/5.1, GPT-5.6 Sol and GPT-6 Astra.
+I've tried to assert the novelty of these proofs: all are pending comprehensive human validation and formal writeups.
 
 -------------------------------------------
 
