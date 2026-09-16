@@ -3,7 +3,7 @@ I've tried to assert the novelty of these proofs: all are pending comprehensive 
 
 -------------------------------------------
 
-PolujanPottV1.lean - An affirmative answer to Polujan-Pott (2021) Open Problem V.1: "Can two vectorial bent functions have isomorphic graph translation designs without being EA-equivalent?"
+PolujanPottV1.lean - An affirmative answer to Polujan-Pott (2021) Open Problem V.1 / Polujan's (2021) Open Problem 3.64: "Can two vectorial bent functions have isomorphic graph translation designs without being EA-equivalent?"
 
 Polujan365.lean - An affirmative answer to Polujan’s (2021) Open Problem 3.65: “For every even \(n\), are two vectorial bent functions EA-equivalent exactly when their vanishing-flat designs are isomorphic?” Here it is proved that vanishing-flat design isomorphism is equivalent to EA-equivalence for all vectorial bent functions in the admissible Nyberg range.
 
@@ -27,4 +27,3 @@ CFR525.lean - An affirmative answer to the CFR(5,25) open instance listed by Ros
 
 Pending formalizations:
 * Chizewer, Everett, Mithal, and Qiao (2026) [https://arxiv.org/html/2603.27128v1] — Open Problem 4: “Can average-case polynomial-time algorithms be devised for tensor orthogonal and unitary isomorphism over finite fields?”; also Li, Li, Qiao, Tao, and Wang (2026) [https://arxiv.org/html/2604.00591v1] — Problem 1.8: “Can average-case polynomial-time algorithms be devised for 3-tensor isomorphism over finite fields under orthogonal and unitary group actions?” — Here answered affirmatively for cubical tensors under the standard matrix-isometry actions.
-* Polujan 3.64
