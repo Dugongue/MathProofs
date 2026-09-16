@@ -11,6 +11,8 @@ BentAffineOrbit.lean - An affirmative answer to Kudin, Pasalic, Polujan, and Zha
 
 BentDesignRank.lean - A refutation of Hyun, Kwon, Wang, and Wu’s (2026) Open Problem 7: “Do the designs D_{g,h} and TD_h in Theorem 10 always have equal binary ranks?”; here an explicit eight-variable counterexample is formally verified in Lean, satisfying every bent-function and duality hypothesis, with binary ranks 29 and 30 respectively.
 
+DMT17.lean - An affirmative answer to Ding, Munemasa, and Tonchev’s (2019) Conjecture 17: “For each fixed admissible output dimension, does the number of inequivalent codes obtained from vectorial bent functions grow exponentially, with the proportion admitting a two-transitive automorphism group tending to zero?” Here both assertions are formally proved, with the stronger conclusion that even the proportion admitting a transitive automorphism group tends to zero, and quantitative bounds uniform across all admissible output dimensions.
+
 TIEqTISp.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)'s Open Question 8: "Which, if any, of TI_O, TI_U, TI_Sp are equal to TI?"; here it is proved that TI = TI_Sp.
 
 TIParStandalone.lean - Resolves the maximal-parabolic case of Chen, Grochow, Qiao, Tang, and Zhang’s (2024) research direction in §1.5: “What are the tensor-isomorphism complexity classes associated with other matrix groups, including parabolic subgroups?”; here TI = TI_Par is proved for the maximal parabolic family P_(n,n) over every field, under coordinate-projection reductions with polynomial output-size bounds. This addresses an explicitly proposed research direction, rather than a numbered open question.
