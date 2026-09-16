@@ -4,6 +4,8 @@ Polujan365.lean - An affirmative answer to Polujan’s (2021) Open Problem 3.65:
 
 TIEqTISp.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)'s Open Question 8: "Which, if any, of TI_O, TI_U, TI_Sp are equal to TI?"; here it is proved that TI = TI_Sp.
 
+TIParStandalone.lean - Resolves the maximal-parabolic case of Chen, Grochow, Qiao, Tang, and Zhang’s (2024) research direction in §1.5: “What are the tensor-isomorphism complexity classes associated with other matrix groups, including parabolic subgroups?”; here TI = TI_Par is proved for the maximal parabolic family P_(n,n) over every field, under coordinate-projection reductions with polynomial output-size bounds. This addresses an explicitly proposed research direction, rather than a numbered open question.
+
 FormTI.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)’s Open Question 1.11: “What is the complexity of tensor isomorphism restricted to other form-preserving groups, including mixed orthogonal groups and groups preserving forms that are neither symmetric nor skew-symmetric?”; here TI-completeness is proved for seven form-isometry families, including O(n,n), O(3n,n), and families preserving nonsymmetric or degenerate bilinear forms, under coordinate-projection reductions with polynomial output-size bounds.
 
 FangCounterexample.lean - A refutation of Fang’s (2017) Conjecture 2.9: “Does identical collapse tomography at every vertex imply that a graph is vertex-transitive?”; here a ten-vertex counterexample is formally verified in Lean. The classical Tutte 12-cage also refutes the conjecture, as noted in the file; priority for the explicit refutation remains unverified.
