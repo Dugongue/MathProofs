@@ -10,7 +10,7 @@ FormTI.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)’
 
 FangCounterexample.lean - A refutation of Fang’s (2017) Conjecture 2.9: “Does identical collapse tomography at every vertex imply that a graph is vertex-transitive?”; here a ten-vertex counterexample is formally verified in Lean. The classical Tutte 12-cage also refutes the conjecture, as noted in the file; priority for the explicit refutation remains unverified.
 
-CFR525.lean - An affirmative answer to the CFR(5,25) open instance listed by Rosin’s CPro1 (2025), originating from Handbook of Combinatorial Designs §VI.62: “Does a \(5\times25\) circular Florentine rectangle exist?”; here an explicit witness is formally verified in Lean, proving \(F_c(25)\ge5\). This resolves the existence instance, not the exact value of \(F_c(25)\).
+CFR525.lean - An affirmative answer to the CFR(5,25) open instance listed by Rosin’s CPro1 (2025), originating from the Handbook of Combinatorial Designs, §VI.62: “Does a 5 × 25 circular Florentine rectangle exist?” Here an explicit witness is formally verified in Lean, proving F_c(25) ≥ 5. This resolves the existence instance, not the exact value of F_c(25).
 
 -------------------------------------------
 
