@@ -1,3 +1,7 @@
+Lean proofs obtained and formalized with use of AI models, namely some combination of Claude Opus 5, Claude Fable 5/5.1, GPT-5.6 Sol and GPT-6 Astra.
+
+-------------------------------------------
+
 PolujanPottV1.lean - An affirmative answer to Polujan-Pott (2021) Open Problem V.1: "Can two vectorial bent functions have isomorphic graph translation designs without being EA-equivalent?"
 
 Polujan365.lean - An affirmative answer to Polujan’s (2021) Open Problem 3.65: “For every even \(n\), are two vectorial bent functions EA-equivalent exactly when their vanishing-flat designs are isomorphic?” Here it is proved that vanishing-flat design isomorphism is equivalent to EA-equivalence for all vectorial bent functions in the admissible Nyberg range.
