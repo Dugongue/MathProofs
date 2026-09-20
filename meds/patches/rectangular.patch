@@ -1,0 +1,292 @@
+--- a/ref/src/matrixmod.c
++++ b/ref/src/matrixmod.c
+@@ -1,4 +1,5 @@
+ #include <stdlib.h>
++#include <immintrin.h>
+ #include <stdio.h>
+ #include <string.h>
+ 
+@@ -6,6 +7,16 @@
+ #include "profiler.h"
+ #include "params.h"
+ #include "matrixmod.h"
++
++
++_Static_assert(MEDS_p == 4093, "This arithmetic candidate specializes to q=4093");
++/* For all uint32_t x: first fold <= 3,149,820, second <= 6,402 < 2q.
++ * Each fold preserves x mod q since 4096 = 3 mod 4093. */
++static inline uint32_t reduce4093(uint32_t x) {
++  x=(x&4095u)+3u*(x>>12);
++  x=(x&4095u)+3u*(x>>12);
++  return x-4093u*(x>=4093u);
++}
+ 
+ void pmod_mat_print(pmod_mat_t *M, int M_r, int M_c)
+ {
+@@ -42,26 +53,42 @@
+   }
+ }
+ 
++/* Row-blocked multiplication. 64-bit accumulation preserves the original
++ * unsigned arithmetic even for noncanonical uint16_t inputs; output can alias
++ * either input. Public dimensions alone control all loops. */
++/* AVX2 packed dot products with exact 64-bit fallback. Valid MEDS
++ * representatives and all 12-bit wire values take the same public-size path. */
+ void pmod_mat_mul(pmod_mat_t *C, int C_r, int C_c, pmod_mat_t *A, int A_r, int A_c, pmod_mat_t *B, int B_r, int B_c)
+ {
+-  PROFILER_START("pmod_mat_mul");
+   GFq_t tmp[C_r*C_c];
+-
+-  for (int c = 0; c < C_c; c++)
+-    for (int r = 0; r < C_r; r++)
+-    {
+-      uint64_t val = 0;
+-
+-      for (int i = 0; i < A_c; i++)
+-        val = (val + (uint64_t)pmod_mat_entry(A, A_r, A_c, r, i) * (uint64_t)pmod_mat_entry(B, B_r, B_c, i, c));
+-
+-      tmp[r*C_c + c] = val % MEDS_p;
+-    }
+-
+-  for (int c = 0; c < C_c; c++)
+-    for (int r = 0; r < C_r; r++)
+-      pmod_mat_set_entry(C, C_r, C_c, r, c, tmp[r*C_c + c]);
+-  PROFILER_STOP("pmod_mat_mul");
++  uint16_t bits=0;
++  for(int r=0;r<C_r;++r) for(int k=0;k<A_c;++k) bits|=A[r*A_c+k];
++  for(int k=0;k<A_c;++k) for(int c=0;c<C_c;++c) bits|=B[k*B_c+c];
++  if(A_c<=256 && (bits>>12)==0) {
++    int stride=(A_c+15)&~15;
++    uint16_t ap[C_r*stride],bt[C_c*stride];
++    for(int r=0;r<C_r;++r){memcpy(ap+r*stride,A+r*A_c,A_c*sizeof *A);memset(ap+r*stride+A_c,0,(stride-A_c)*sizeof *A);}
++    for(int c=0;c<C_c;++c){for(int k=0;k<A_c;++k)bt[c*stride+k]=B[k*B_c+c];memset(bt+c*stride+A_c,0,(stride-A_c)*sizeof *B);}
++    for(int r=0;r<C_r;++r)for(int c=0;c<C_c;++c){
++      __m256i acc=_mm256_setzero_si256();
++      for(int k=0;k<stride;k+=16){
++        __m256i aa=_mm256_loadu_si256((const __m256i*)(ap+r*stride+k));
++        __m256i bb=_mm256_loadu_si256((const __m256i*)(bt+c*stride+k));
++        acc=_mm256_add_epi32(acc,_mm256_madd_epi16(aa,bb));
++      }
++      __m128i sum=_mm_add_epi32(_mm256_castsi256_si128(acc),_mm256_extracti128_si256(acc,1));
++      sum=_mm_add_epi32(sum,_mm_srli_si128(sum,8));
++      sum=_mm_add_epi32(sum,_mm_srli_si128(sum,4));
++      tmp[r*C_c+c]=reduce4093((uint32_t)_mm_cvtsi128_si32(sum));
++    }
++  } else {
++    for(int r=0;r<C_r;++r)for(int c=0;c<C_c;++c){
++      uint64_t acc=0;
++      for(int k=0;k<A_c;++k)acc+=(uint64_t)A[r*A_c+k]*B[k*B_c+c];
++      tmp[r*C_c+c]=acc%MEDS_p;
++    }
++  }
++  memcpy(C,tmp,sizeof tmp);
+ }
+ 
+ int pmod_mat_syst_ct(pmod_mat_t *M, int M_r, int M_c)
+@@ -132,19 +159,19 @@
+ 
+     for (int r2 = r+1; r2 < M_r; r2++)
+     {
+-      uint64_t Mrr = pmod_mat_entry(M, M_r, M_c, r, r);
++      uint32_t Mrr = pmod_mat_entry(M, M_r, M_c, r, r);
+ 
+       for (int c = r; c < M_c; c++)
+       {
+-        uint64_t val = pmod_mat_entry(M, M_r, M_c, r2, c);
+-
+-        uint64_t Mrc = pmod_mat_entry(M, M_r, M_c, r, c);
+-
+-        pmod_mat_set_entry(M, M_r, M_c, r, c, (Mrc + val * GFq_eq0(Mrr)) % MEDS_p);
+-      }
+-    }
+-
+-    uint64_t val = pmod_mat_entry(M, M_r, M_c, r, r);
++        uint32_t val = pmod_mat_entry(M, M_r, M_c, r2, c);
++
++        uint32_t Mrc = pmod_mat_entry(M, M_r, M_c, r, c);
++
++        pmod_mat_set_entry(M, M_r, M_c, r, c, reduce4093(Mrc + val * GFq_eq0(Mrr)));
++      }
++    }
++
++    uint32_t val = pmod_mat_entry(M, M_r, M_c, r, r);
+ 
+     if (val == 0)
+     {
+@@ -157,23 +184,23 @@
+     // normalize
+     for (int c = r; c < M_c; c++)
+     {
+-      uint64_t tmp = ((uint64_t)pmod_mat_entry(M, M_r, M_c, r, c) * val) % MEDS_p;
++      uint32_t tmp = reduce4093((uint32_t)pmod_mat_entry(M, M_r, M_c, r, c) * val);
+       pmod_mat_set_entry(M, M_r, M_c, r, c, tmp);
+     }
+ 
+     // eliminate
+     for (int r2 = r+1; r2 < M_r; r2++)
+     {
+-      uint64_t factor = pmod_mat_entry(M, M_r, M_c, r2, r);
++      uint32_t factor = pmod_mat_entry(M, M_r, M_c, r2, r);
+ 
+       for (int c = r; c < M_c; c++)
+       {
+-        uint64_t tmp0 = pmod_mat_entry(M, M_r, M_c, r, c);
+-        uint64_t tmp1 = pmod_mat_entry(M, M_r, M_c, r2, c);
+-
+-        uint64_t val = (tmp0 * factor) % MEDS_p;
+-
+-        val = (MEDS_p + tmp1 - val) % MEDS_p;
++        uint32_t tmp0 = pmod_mat_entry(M, M_r, M_c, r, c);
++        uint32_t tmp1 = pmod_mat_entry(M, M_r, M_c, r2, c);
++
++        uint32_t val = reduce4093(tmp0 * factor);
++
++        val = reduce4093(MEDS_p + tmp1 - val);
+ 
+         pmod_mat_set_entry(M, M_r, M_c,  r2, c, val);
+       }
+@@ -190,25 +217,25 @@
+   for (int r = max_r - 1; r >= 0; r--)
+     for (int r2 = 0; r2 < r; r2++)
+     {
+-      uint64_t factor = pmod_mat_entry(M, M_r, M_c, r2, r);
+-
+-      uint64_t tmp0 = pmod_mat_entry(M, M_r, M_c, r, r);
+-      uint64_t tmp1 = pmod_mat_entry(M, M_r, M_c, r2, r);
+-
+-      uint64_t val = (tmp0 * factor) % MEDS_p;
+-
+-      val = (MEDS_p + tmp1 - val) % MEDS_p;
++      uint32_t factor = pmod_mat_entry(M, M_r, M_c, r2, r);
++
++      uint32_t tmp0 = pmod_mat_entry(M, M_r, M_c, r, r);
++      uint32_t tmp1 = pmod_mat_entry(M, M_r, M_c, r2, r);
++
++      uint32_t val = reduce4093(tmp0 * factor);
++
++      val = reduce4093(MEDS_p + tmp1 - val);
+ 
+       pmod_mat_set_entry(M, M_r, M_c,  r2, r, val);
+ 
+       for (int c = max_r; c < M_c; c++)
+       {
+-        uint64_t tmp0 = pmod_mat_entry(M, M_r, M_c, r, c);
+-        uint64_t tmp1 = pmod_mat_entry(M, M_r, M_c, r2, c);
+-
+-        uint64_t val = (tmp0 * factor) % MEDS_p;
+-
+-        val = (MEDS_p + tmp1 - val) % MEDS_p;
++        uint32_t tmp0 = pmod_mat_entry(M, M_r, M_c, r, c);
++        uint32_t tmp1 = pmod_mat_entry(M, M_r, M_c, r2, c);
++
++        uint32_t val = reduce4093(tmp0 * factor);
++
++        val = reduce4093(MEDS_p + tmp1 - val);
+ 
+         pmod_mat_set_entry(M, M_r, M_c,  r2, c, val);
+       }
+--- a/ref/src/meds.c
++++ b/ref/src/meds.c
+@@ -1,3 +1,4 @@
++/* Experimental modification: remove three unused inversions; see REPORT.md. */
+ #include <stdio.h>
+ #include <stdint.h>
+ #include <stdlib.h>
+@@ -89,13 +90,13 @@
+ 
+       LOG_MAT(Ti, MEDS_k, MEDS_k);
+ 
+-      pmod_mat_t G0prime[MEDS_k * MEDS_m * MEDS_n];
+-
+-      pmod_mat_mul(G0prime, MEDS_k, MEDS_m * MEDS_n,
+-                   Ti, MEDS_k, MEDS_k,
++      pmod_mat_t G0prime[2 * MEDS_m * MEDS_n];
++
++      pmod_mat_mul(G0prime, 2, MEDS_m * MEDS_n,
++                   Ti, 2, MEDS_k,
+                    G[0], MEDS_k, MEDS_m * MEDS_n);
+ 
+-      LOG_MAT(G0prime, MEDS_k, MEDS_m * MEDS_n);
++      LOG_MAT(G0prime, 2, MEDS_m * MEDS_n);
+ 
+       if (solve(A, B_inv[i], G0prime) < 0)
+       {
+@@ -109,11 +110,10 @@
+         continue;
+       }
+ 
+-      if (pmod_mat_inv(A_inv[i], A, MEDS_m, MEDS_m) < 0)
+-      {
+-        LOG("no inv A_inv");
+-        continue;
+-      }
++      /* A^{-1} = first_m_columns(C0 * B), by matrix cancellation.
++       * B has n-column row stride even though only m columns are needed. */
++      pmod_mat_mul(A_inv[i], MEDS_m, MEDS_m,
++                   G0prime, MEDS_m, MEDS_n, B, MEDS_n, MEDS_n);
+ 
+       LOG_MAT_FMT(A, MEDS_m, MEDS_m, "A[%i]", i);
+       LOG_MAT_FMT(A_inv[i], MEDS_m, MEDS_m, "A_inv[%i]", i);
+@@ -379,7 +379,6 @@
+ 
+       LOG_MAT(C, 2, MEDS_m * MEDS_n);
+ 
+-      pmod_mat_t A_tilde_inv[MEDS_m * MEDS_m];
+       pmod_mat_t B_tilde_inv[MEDS_n * MEDS_n];
+ 
+       if (solve(A_tilde[i], B_tilde_inv, C) < 0)
+@@ -394,11 +393,7 @@
+         continue;
+       }
+ 
+-      if (pmod_mat_inv(A_tilde_inv, A_tilde[i], MEDS_m, MEDS_m) < 0)
+-      {
+-        LOG("no A_tilde_inv");
+-        continue;
+-      }
++      /* Redundant: A*C0 = [I|0]*B_inv, and B_inv is already invertible. */
+ 
+       LOG_MAT_FMT(A_tilde[i], MEDS_m, MEDS_m, "A_tilde[%i]", i);
+       LOG_MAT_FMT(B_tilde[i], MEDS_n, MEDS_n, "B_tilde[%i]", i);
+@@ -614,7 +609,6 @@
+       pmod_mat_t A_hat[MEDS_m * MEDS_m];
+       pmod_mat_t B_hat[MEDS_n * MEDS_n];
+ 
+-      pmod_mat_t A_hat_inv[MEDS_m * MEDS_m];
+       pmod_mat_t B_hat_inv[MEDS_n * MEDS_n];
+ 
+       if (solve(A_hat, B_hat_inv, G0_prime) < 0)
+@@ -630,11 +624,7 @@
+         return -1;
+       }
+ 
+-      if (pmod_mat_inv(A_hat_inv, A_hat, MEDS_m, MEDS_m) < 0)
+-      {
+-        LOG("no A_hat_inv");
+-        return -1;
+-      }
++      /* Redundant: A*C0 = [I|0]*B_inv, and B_inv is already invertible. */
+ 
+       LOG_MAT_FMT(A_hat, MEDS_m, MEDS_m, "A_hat[%i]", i);
+       LOG_MAT_FMT(B_hat, MEDS_n, MEDS_n, "B_hat[%i]", i);
+@@ -699,7 +689,6 @@
+         pmod_mat_t A_hat_i[MEDS_m * MEDS_m];
+         pmod_mat_t B_hat_i[MEDS_n * MEDS_n];
+ 
+-        pmod_mat_t A_hat_inv[MEDS_m * MEDS_m];
+         pmod_mat_t B_hat_inv[MEDS_n * MEDS_n];
+ 
+         if (solve(A_hat_i, B_hat_inv, C_hat) < 0)
+@@ -714,11 +703,7 @@
+           continue;
+         }
+ 
+-        if (pmod_mat_inv(A_hat_inv, A_hat_i, MEDS_m, MEDS_m) < 0)
+-        {
+-          LOG("no A_hat_inv");
+-          continue;
+-        }
++      /* Redundant: A*C0 = [I|0]*B_inv, and B_inv is already invertible. */
+ 
+         LOG_MAT_FMT(A_hat_i, MEDS_m, MEDS_m, "A_hat[%i]", i);
+         LOG_MAT_FMT(B_hat_i, MEDS_n, MEDS_n, "B_hat[%i]", i);

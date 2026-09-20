@@ -1,0 +1,130 @@
+{
+  "parameter": "MEDS55604",
+  "trials": 9,
+  "checks": [
+    {
+      "kind": "systemizer_checks",
+      "cases": 200,
+      "passed": true
+    },
+    {
+      "kind": "kernels",
+      "cases": 200,
+      "passed": true
+    },
+    {
+      "kind": "check",
+      "trial": -1,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 0,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 1,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 2,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 3,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 4,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 5,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 6,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 7,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    },
+    {
+      "kind": "check",
+      "trial": 8,
+      "three_way_equal": true,
+      "signature_bytes": 54736
+    }
+  ],
+  "keygen": {
+    "ms": {
+      "scalar": 6.3523,
+      "published": 2.2456,
+      "ours": 1.6192,
+      "published_over_ours": 1.3868577075098816,
+      "scalar_over_ours": 3.9231101778656123,
+      "paired_ratio": 1.3897759623715809
+    },
+    "cycles": {
+      "scalar": 18433441,
+      "published": 6520202,
+      "ours": 4699797,
+      "published_over_ours": 1.3873369424253856,
+      "scalar_over_ours": 3.9221781281191506,
+      "paired_ratio": 1.3903250871698294
+    }
+  },
+  "sign": {
+    "ms": {
+      "scalar": 185.5755,
+      "published": 40.8393,
+      "ours": 34.506,
+      "published_over_ours": 1.1835419926969224,
+      "scalar_over_ours": 5.3780646844027125,
+      "paired_ratio": 1.1835419926969224
+    },
+    "cycles": {
+      "scalar": 538261549,
+      "published": 118448528,
+      "ours": 100125523,
+      "published_over_ours": 1.1830003424801088,
+      "scalar_over_ours": 5.375867539788032,
+      "paired_ratio": 1.1834613716356044
+    }
+  },
+  "verify": {
+    "ms": {
+      "scalar": 183.8059,
+      "published": 39.4158,
+      "ours": 33.1093,
+      "published_over_ours": 1.190475183709713,
+      "scalar_over_ours": 5.551488554575301,
+      "paired_ratio": 1.1909163538793168
+    },
+    "cycles": {
+      "scalar": 533129820,
+      "published": 114292161,
+      "ours": 95991380,
+      "published_over_ours": 1.1906502542207436,
+      "scalar_over_ours": 5.553934322019331,
+      "paired_ratio": 1.1912774335860052
+    }
+  }
+}

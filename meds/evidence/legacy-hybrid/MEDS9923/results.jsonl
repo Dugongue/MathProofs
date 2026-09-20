@@ -1,0 +1,162 @@
+{"kind":"systemizer_checks","cases":200,"passed":true}
+{"kind":"kernels","cases":200,"passed":true}
+(keygen) total time_mul_time:  0.000070   (202343 cycles)
+(keygen) total solve_time:     0.000073   (211162 cycles)
+(keygen) total pi_time:        0.000131   (380825 cycles)
+(keygen) total sys_time:       0.000365   (1059865 cycles)
+(keygen) total time_mul_time:  0.000017   (48836 cycles)
+(keygen) total solve_time:     0.000064   (186077 cycles)
+(keygen) total pi_time:        0.000037   (107160 cycles)
+(keygen) total sys_time:       0.000070   (204393 cycles)
+(keygen) total time_mul_time:  0.000017   (49346 cycles)
+(keygen) total solve_time:     0.000040   (116660 cycles)
+(keygen) total pi_time:        0.000037   (106869 cycles)
+(keygen) total sys_time:       0.000033   (96050 cycles)
+{"kind":"timing","trial":-1,"op":0,"msg_bytes":0,"scalar_ms":2.603100,"published_ms":2.161900,"ours_ms":2.379500,"scalar_cycles":7553339,"published_cycles":6274478,"ours_cycles":4613792}
+{"kind":"timing","trial":-1,"op":1,"msg_bytes":0,"scalar_ms":235.074300,"published_ms":76.193700,"ours_ms":65.080400,"scalar_cycles":682135420,"published_cycles":221102204,"ours_cycles":188722746}
+{"kind":"timing","trial":-1,"op":2,"msg_bytes":0,"scalar_ms":233.569700,"published_ms":75.322600,"ours_ms":64.237700,"scalar_cycles":677713967,"published_cycles":218536082,"ours_cycles":186378485}
+{"kind":"check","trial":-1,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000017   (49532 cycles)
+(keygen) total solve_time:     0.000064   (186522 cycles)
+(keygen) total pi_time:        0.000037   (107342 cycles)
+(keygen) total sys_time:       0.000058   (167266 cycles)
+(keygen) total time_mul_time:  0.000017   (48476 cycles)
+(keygen) total solve_time:     0.000035   (100066 cycles)
+(keygen) total pi_time:        0.000037   (106482 cycles)
+(keygen) total sys_time:       0.000028   (79980 cycles)
+(keygen) total time_mul_time:  0.000065   (189645 cycles)
+(keygen) total solve_time:     0.000064   (184534 cycles)
+(keygen) total pi_time:        0.000154   (447624 cycles)
+(keygen) total sys_time:       0.000371   (1075324 cycles)
+{"kind":"timing","trial":0,"op":0,"msg_bytes":1,"scalar_ms":1.318900,"published_ms":0.836700,"ours_ms":0.712200,"scalar_cycles":3801615,"published_cycles":2428726,"ours_cycles":2067283}
+{"kind":"timing","trial":0,"op":1,"msg_bytes":1,"scalar_ms":234.361300,"published_ms":76.143200,"ours_ms":64.930500,"scalar_cycles":680075407,"published_cycles":220996883,"ours_cycles":188374822}
+{"kind":"timing","trial":0,"op":2,"msg_bytes":1,"scalar_ms":233.473400,"published_ms":75.306000,"ours_ms":63.941400,"scalar_cycles":677494134,"published_cycles":218531726,"ours_cycles":185570204}
+{"kind":"check","trial":0,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000017   (48755 cycles)
+(keygen) total solve_time:     0.000034   (99708 cycles)
+(keygen) total pi_time:        0.000037   (106837 cycles)
+(keygen) total sys_time:       0.000028   (81072 cycles)
+(keygen) total time_mul_time:  0.000066   (190972 cycles)
+(keygen) total solve_time:     0.000064   (186637 cycles)
+(keygen) total pi_time:        0.000132   (383065 cycles)
+(keygen) total sys_time:       0.000367   (1064351 cycles)
+(keygen) total time_mul_time:  0.000017   (49316 cycles)
+(keygen) total solve_time:     0.000063   (183914 cycles)
+(keygen) total pi_time:        0.000037   (106924 cycles)
+(keygen) total sys_time:       0.000057   (166096 cycles)
+{"kind":"timing","trial":1,"op":0,"msg_bytes":32,"scalar_ms":1.330900,"published_ms":0.833100,"ours_ms":0.715100,"scalar_cycles":3820943,"published_cycles":2418682,"ours_cycles":2073902}
+{"kind":"timing","trial":1,"op":1,"msg_bytes":32,"scalar_ms":234.580300,"published_ms":76.568800,"ours_ms":65.579400,"scalar_cycles":680676382,"published_cycles":222036236,"ours_cycles":190273018}
+{"kind":"timing","trial":1,"op":2,"msg_bytes":32,"scalar_ms":233.827500,"published_ms":75.322900,"ours_ms":64.095600,"scalar_cycles":678272306,"published_cycles":218503402,"ours_cycles":185943366}
+{"kind":"check","trial":1,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000066   (192816 cycles)
+(keygen) total solve_time:     0.000065   (188324 cycles)
+(keygen) total pi_time:        0.000131   (380511 cycles)
+(keygen) total sys_time:       0.000369   (1070555 cycles)
+(keygen) total time_mul_time:  0.000017   (49942 cycles)
+(keygen) total solve_time:     0.000064   (185041 cycles)
+(keygen) total pi_time:        0.000038   (110715 cycles)
+(keygen) total sys_time:       0.000060   (174928 cycles)
+(keygen) total time_mul_time:  0.000017   (48865 cycles)
+(keygen) total solve_time:     0.000035   (101048 cycles)
+(keygen) total pi_time:        0.000037   (106481 cycles)
+(keygen) total sys_time:       0.000028   (80347 cycles)
+{"kind":"timing","trial":2,"op":0,"msg_bytes":135,"scalar_ms":1.312300,"published_ms":0.842000,"ours_ms":0.721500,"scalar_cycles":3806682,"published_cycles":2443198,"ours_cycles":2093386}
+{"kind":"timing","trial":2,"op":1,"msg_bytes":135,"scalar_ms":234.622100,"published_ms":76.210400,"ours_ms":65.084800,"scalar_cycles":680727093,"published_cycles":220940326,"ours_cycles":188483550}
+{"kind":"timing","trial":2,"op":2,"msg_bytes":135,"scalar_ms":233.516900,"published_ms":75.524000,"ours_ms":64.358500,"scalar_cycles":677575196,"published_cycles":218794978,"ours_cycles":186674026}
+{"kind":"check","trial":2,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000017   (49182 cycles)
+(keygen) total solve_time:     0.000065   (187637 cycles)
+(keygen) total pi_time:        0.000037   (107215 cycles)
+(keygen) total sys_time:       0.000057   (166459 cycles)
+(keygen) total time_mul_time:  0.000017   (48790 cycles)
+(keygen) total solve_time:     0.000035   (100433 cycles)
+(keygen) total pi_time:        0.000037   (106589 cycles)
+(keygen) total sys_time:       0.000028   (80222 cycles)
+(keygen) total time_mul_time:  0.000065   (189651 cycles)
+(keygen) total solve_time:     0.000064   (185111 cycles)
+(keygen) total pi_time:        0.000132   (383315 cycles)
+(keygen) total sys_time:       0.000366   (1061198 cycles)
+{"kind":"timing","trial":3,"op":0,"msg_bytes":136,"scalar_ms":1.294100,"published_ms":0.841500,"ours_ms":0.717500,"scalar_cycles":3756405,"published_cycles":2439219,"ours_cycles":2082010}
+{"kind":"timing","trial":3,"op":1,"msg_bytes":136,"scalar_ms":234.344100,"published_ms":76.112800,"ours_ms":65.082100,"scalar_cycles":680109003,"published_cycles":220834992,"ours_cycles":188896985}
+{"kind":"timing","trial":3,"op":2,"msg_bytes":136,"scalar_ms":233.834400,"published_ms":75.428000,"ours_ms":64.118700,"scalar_cycles":678282862,"published_cycles":218898978,"ours_cycles":185996658}
+{"kind":"check","trial":3,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000017   (48964 cycles)
+(keygen) total solve_time:     0.000034   (99677 cycles)
+(keygen) total pi_time:        0.000037   (106613 cycles)
+(keygen) total sys_time:       0.000028   (80265 cycles)
+(keygen) total time_mul_time:  0.000066   (191275 cycles)
+(keygen) total solve_time:     0.000064   (186304 cycles)
+(keygen) total pi_time:        0.000132   (383158 cycles)
+(keygen) total sys_time:       0.000365   (1058000 cycles)
+(keygen) total time_mul_time:  0.000017   (49355 cycles)
+(keygen) total solve_time:     0.000063   (183734 cycles)
+(keygen) total pi_time:        0.000037   (107032 cycles)
+(keygen) total sys_time:       0.000057   (164502 cycles)
+{"kind":"timing","trial":4,"op":0,"msg_bytes":137,"scalar_ms":1.289100,"published_ms":0.831700,"ours_ms":0.714700,"scalar_cycles":3742943,"published_cycles":2414485,"ours_cycles":2073333}
+{"kind":"timing","trial":4,"op":1,"msg_bytes":137,"scalar_ms":234.265300,"published_ms":76.131300,"ours_ms":65.005900,"scalar_cycles":679577540,"published_cycles":220952110,"ours_cycles":188620956}
+{"kind":"timing","trial":4,"op":2,"msg_bytes":137,"scalar_ms":234.187100,"published_ms":75.195100,"ours_ms":63.980600,"scalar_cycles":679240861,"published_cycles":218188639,"ours_cycles":185648265}
+{"kind":"check","trial":4,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000066   (192479 cycles)
+(keygen) total solve_time:     0.000065   (187288 cycles)
+(keygen) total pi_time:        0.000132   (383308 cycles)
+(keygen) total sys_time:       0.000365   (1057067 cycles)
+(keygen) total time_mul_time:  0.000017   (48753 cycles)
+(keygen) total solve_time:     0.000064   (184789 cycles)
+(keygen) total pi_time:        0.000037   (106973 cycles)
+(keygen) total sys_time:       0.000057   (165263 cycles)
+(keygen) total time_mul_time:  0.000017   (48699 cycles)
+(keygen) total solve_time:     0.000034   (99987 cycles)
+(keygen) total pi_time:        0.000037   (106712 cycles)
+(keygen) total sys_time:       0.000028   (80310 cycles)
+{"kind":"timing","trial":5,"op":0,"msg_bytes":1024,"scalar_ms":1.296200,"published_ms":0.841600,"ours_ms":0.711500,"scalar_cycles":3760912,"published_cycles":2441264,"ours_cycles":2065628}
+{"kind":"timing","trial":5,"op":1,"msg_bytes":1024,"scalar_ms":233.995000,"published_ms":76.042000,"ours_ms":65.171800,"scalar_cycles":678986406,"published_cycles":220658745,"ours_cycles":189024520}
+{"kind":"timing","trial":5,"op":2,"msg_bytes":1024,"scalar_ms":233.371700,"published_ms":75.388600,"ours_ms":63.937900,"scalar_cycles":677063433,"published_cycles":218709259,"ours_cycles":185581479}
+{"kind":"check","trial":5,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000017   (49649 cycles)
+(keygen) total solve_time:     0.000064   (186948 cycles)
+(keygen) total pi_time:        0.000037   (107181 cycles)
+(keygen) total sys_time:       0.000057   (165341 cycles)
+(keygen) total time_mul_time:  0.000017   (48658 cycles)
+(keygen) total solve_time:     0.000034   (99918 cycles)
+(keygen) total pi_time:        0.000037   (106573 cycles)
+(keygen) total sys_time:       0.000028   (80084 cycles)
+(keygen) total time_mul_time:  0.000066   (190076 cycles)
+(keygen) total solve_time:     0.000064   (184978 cycles)
+(keygen) total pi_time:        0.000132   (383209 cycles)
+(keygen) total sys_time:       0.000367   (1064230 cycles)
+{"kind":"timing","trial":6,"op":0,"msg_bytes":0,"scalar_ms":1.312100,"published_ms":0.838600,"ours_ms":0.710800,"scalar_cycles":3807195,"published_cycles":2432703,"ours_cycles":2063473}
+{"kind":"timing","trial":6,"op":1,"msg_bytes":0,"scalar_ms":235.070700,"published_ms":76.246900,"ours_ms":65.153600,"scalar_cycles":682033663,"published_cycles":221243418,"ours_cycles":189027854}
+{"kind":"timing","trial":6,"op":2,"msg_bytes":0,"scalar_ms":233.366700,"published_ms":75.236600,"ours_ms":63.994600,"scalar_cycles":677143147,"published_cycles":218334614,"ours_cycles":185719862}
+{"kind":"check","trial":6,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000017   (48792 cycles)
+(keygen) total solve_time:     0.000034   (99321 cycles)
+(keygen) total pi_time:        0.000037   (106499 cycles)
+(keygen) total sys_time:       0.000028   (80122 cycles)
+(keygen) total time_mul_time:  0.000066   (191018 cycles)
+(keygen) total solve_time:     0.000065   (188298 cycles)
+(keygen) total pi_time:        0.000132   (383050 cycles)
+(keygen) total sys_time:       0.000367   (1064232 cycles)
+(keygen) total time_mul_time:  0.000017   (48924 cycles)
+(keygen) total solve_time:     0.000064   (184270 cycles)
+(keygen) total pi_time:        0.000037   (107190 cycles)
+(keygen) total sys_time:       0.000057   (166621 cycles)
+{"kind":"timing","trial":7,"op":0,"msg_bytes":1,"scalar_ms":1.300100,"published_ms":0.832900,"ours_ms":0.713100,"scalar_cycles":3773087,"published_cycles":2418209,"ours_cycles":2068402}
+{"kind":"timing","trial":7,"op":1,"msg_bytes":1,"scalar_ms":234.562900,"published_ms":76.354800,"ours_ms":65.061000,"scalar_cycles":680597233,"published_cycles":221428379,"ours_cycles":188788551}
+{"kind":"timing","trial":7,"op":2,"msg_bytes":1,"scalar_ms":233.643600,"published_ms":75.713900,"ours_ms":64.188900,"scalar_cycles":677942636,"published_cycles":219432366,"ours_cycles":186243959}
+{"kind":"check","trial":7,"three_way_equal":true,"signature_bytes":9896}
+(keygen) total time_mul_time:  0.000066   (191591 cycles)
+(keygen) total solve_time:     0.000065   (187276 cycles)
+(keygen) total pi_time:        0.000132   (383149 cycles)
+(keygen) total sys_time:       0.000365   (1059260 cycles)
+(keygen) total time_mul_time:  0.000017   (49245 cycles)
+(keygen) total solve_time:     0.000064   (184176 cycles)
+(keygen) total pi_time:        0.000037   (107334 cycles)
+(keygen) total sys_time:       0.000057   (165374 cycles)
+(keygen) total time_mul_time:  0.000017   (48890 cycles)
+(keygen) total solve_time:     0.000035   (100180 cycles)
+(keygen) total pi_time:        0.000037   (106712 cycles)
+(keygen) total sys_time:       0.000028   (80467 cycles)
+{"kind":"timing","trial":8,"op":0,"msg_bytes":32,"scalar_ms":1.295100,"published_ms":0.869700,"ours_ms":0.718800,"scalar_cycles":3758411,"published_cycles":2522592,"ours_cycles":2085427}
+{"kind":"timing","trial":8,"op":1,"msg_bytes":32,"scalar_ms":235.020200,"published_ms":76.266300,"ours_ms":64.969100,"scalar_cycles":681773005,"published_cycles":221247558,"ours_cycles":188529654}
+{"kind":"timing","trial":8,"op":2,"msg_bytes":32,"scalar_ms":233.678600,"published_ms":75.319400,"ours_ms":64.167900,"scalar_cycles":678006181,"published_cycles":218554200,"ours_cycles":186149377}
+{"kind":"check","trial":8,"three_way_equal":true,"signature_bytes":9896}

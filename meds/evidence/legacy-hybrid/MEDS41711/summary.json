@@ -1,0 +1,130 @@
+{
+  "parameter": "MEDS41711",
+  "trials": 9,
+  "checks": [
+    {
+      "kind": "systemizer_checks",
+      "cases": 200,
+      "passed": true
+    },
+    {
+      "kind": "kernels",
+      "cases": 200,
+      "passed": true
+    },
+    {
+      "kind": "check",
+      "trial": -1,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 0,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 1,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 2,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 3,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 4,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 5,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 6,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 7,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    },
+    {
+      "kind": "check",
+      "trial": 8,
+      "three_way_equal": true,
+      "signature_bytes": 41080
+    }
+  ],
+  "keygen": {
+    "ms": {
+      "scalar": 4.8971,
+      "published": 1.8755,
+      "ours": 1.3851,
+      "published_over_ours": 1.3540538589271531,
+      "scalar_over_ours": 3.5355569994946214,
+      "paired_ratio": 1.336076817558299
+    },
+    "cycles": {
+      "scalar": 14144847,
+      "published": 5396623,
+      "ours": 4011859,
+      "published_over_ours": 1.3451676641676589,
+      "scalar_over_ours": 3.5257587567259967,
+      "paired_ratio": 1.3399630623323142
+    }
+  },
+  "sign": {
+    "ms": {
+      "scalar": 704.9767,
+      "published": 154.4991,
+      "ours": 130.3704,
+      "published_over_ours": 1.1850780545277149,
+      "scalar_over_ours": 5.407490503979432,
+      "paired_ratio": 1.1846421537902077
+    },
+    "cycles": {
+      "scalar": 2039384487,
+      "published": 446915079,
+      "ours": 377164411,
+      "published_over_ours": 1.184934383960209,
+      "scalar_over_ours": 5.407149846383571,
+      "paired_ratio": 1.184934383960209
+    }
+  },
+  "verify": {
+    "ms": {
+      "scalar": 703.2637,
+      "published": 153.0261,
+      "ours": 128.7992,
+      "published_over_ours": 1.188098218001354,
+      "scalar_over_ours": 5.460155808421169,
+      "paired_ratio": 1.1875618635916545
+    },
+    "cycles": {
+      "scalar": 2035053555,
+      "published": 442828498,
+      "ours": 372857201,
+      "published_over_ours": 1.1876624531116404,
+      "scalar_over_ours": 5.457997189116913,
+      "paired_ratio": 1.1876886266707773
+    }
+  }
+}

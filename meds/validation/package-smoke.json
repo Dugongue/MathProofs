@@ -1,0 +1,49 @@
+[
+  {
+    "family": "legacy",
+    "args": [
+      "MEDS13220",
+      "1",
+      "package-check",
+      "hybrid"
+    ],
+    "exit_code": 0
+  },
+  {
+    "family": "rectangular",
+    "args": [
+      "level1",
+      "native",
+      "1",
+      "package-check"
+    ],
+    "exit_code": 0
+  },
+  {
+    "family": "official",
+    "args": [
+      "MEDS13220",
+      "1",
+      "package-check"
+    ],
+    "exit_code": 0
+  },
+  {
+    "family": "minimeds",
+    "args": [
+      "3",
+      "1",
+      "package-check"
+    ],
+    "exit_code": 0
+  },
+  {
+    "family": "minimeds",
+    "args": [
+      "5",
+      "1",
+      "package-check"
+    ],
+    "exit_code": 0
+  }
+]

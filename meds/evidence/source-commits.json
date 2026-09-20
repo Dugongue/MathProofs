@@ -1,0 +1,14 @@
+{
+  "historical_avx2_meds": "4ba53049dab9519a816ccc820f63edbc3c1bcff9",
+  "official_meds": "0ba7868bc060a1cda19af943ee0c7f8c25bf754e",
+  "rectangular_meds": "a072af947a98bf19cb10114d87f5f4a12018a823",
+  "minimeds": "4314054773d5d51ec764f95f4f19b1cd3e827dcf",
+  "copied_evidence_files": {
+    "legacy-hybrid": 12,
+    "legacy-packed-control": 12,
+    "rectangular": 6,
+    "minimeds": 6,
+    "official": 12,
+    "rectangular-arithmetic-only": 6
+  }
+}
