@@ -1,0 +1,132 @@
+{
+  "level": 3,
+  "reps": 7,
+  "passed": true,
+  "checks": [
+    {
+      "kind": "kernels",
+      "reduce_cases": 100000,
+      "dot_cases": 3000,
+      "tensor_cases": 40,
+      "systemizer_cases": 200,
+      "kernel_cases": 200,
+      "matrix_cases": 20,
+      "contraction_cases": 60,
+      "passed": true
+    },
+    {
+      "kind": "checks",
+      "trial": -1,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 0,
+      "signature_struct_bytes": 13080
+    },
+    {
+      "kind": "checks",
+      "trial": 0,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 3,
+      "signature_struct_bytes": 13080
+    },
+    {
+      "kind": "checks",
+      "trial": 1,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 3,
+      "signature_struct_bytes": 13080
+    },
+    {
+      "kind": "checks",
+      "trial": 2,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 3,
+      "signature_struct_bytes": 13080
+    },
+    {
+      "kind": "checks",
+      "trial": 3,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 3,
+      "signature_struct_bytes": 13080
+    },
+    {
+      "kind": "checks",
+      "trial": 4,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 3,
+      "signature_struct_bytes": 13080
+    },
+    {
+      "kind": "checks",
+      "trial": 5,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 3,
+      "signature_struct_bytes": 13080
+    },
+    {
+      "kind": "checks",
+      "trial": 6,
+      "key_bytes_identical": true,
+      "signature_bytes_identical": true,
+      "cross_verify": true,
+      "mutants": 3,
+      "signature_struct_bytes": 13080
+    }
+  ],
+  "keygen": {
+    "ms": {
+      "base": 6.1049,
+      "fast": 1.1544,
+      "speedup": 5.288374913374913,
+      "paired_speedup": 5.212922920376494
+    },
+    "cycles": {
+      "base": 17722993,
+      "fast": 3354128,
+      "speedup": 5.283934602376534,
+      "paired_speedup": 5.2076919147917735
+    }
+  },
+  "sign": {
+    "ms": {
+      "base": 450.703,
+      "fast": 354.4787,
+      "speedup": 1.2714529815190587,
+      "paired_speedup": 1.2731812067359425
+    },
+    "cycles": {
+      "base": 1307732741,
+      "fast": 1027725446,
+      "speedup": 1.2724534028906394,
+      "paired_speedup": 1.27439039567724
+    }
+  },
+  "verify": {
+    "ms": {
+      "base": 185.2615,
+      "fast": 135.8694,
+      "speedup": 1.3635262980479783,
+      "paired_speedup": 1.3596165589946325
+    },
+    "cycles": {
+      "base": 537602135,
+      "fast": 394271870,
+      "speedup": 1.3635315524792575,
+      "paired_speedup": 1.3580363433515072
+    }
+  }
+}

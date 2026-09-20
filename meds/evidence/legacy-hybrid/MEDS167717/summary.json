@@ -1,0 +1,130 @@
+{
+  "parameter": "MEDS167717",
+  "trials": 9,
+  "checks": [
+    {
+      "kind": "systemizer_checks",
+      "cases": 200,
+      "passed": true
+    },
+    {
+      "kind": "kernels",
+      "cases": 200,
+      "passed": true
+    },
+    {
+      "kind": "check",
+      "trial": -1,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 0,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 1,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 2,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 3,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 4,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 5,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 6,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 7,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    },
+    {
+      "kind": "check",
+      "trial": 8,
+      "three_way_equal": true,
+      "signature_bytes": 165464
+    }
+  ],
+  "keygen": {
+    "ms": {
+      "scalar": 25.6517,
+      "published": 6.5894,
+      "ours": 4.691,
+      "published_over_ours": 1.4046898315924112,
+      "scalar_over_ours": 5.468279684502239,
+      "paired_ratio": 1.4101953719788116
+    },
+    "cycles": {
+      "scalar": 74462201,
+      "published": 19133101,
+      "ours": 13608109,
+      "published_over_ours": 1.4060073298942564,
+      "scalar_over_ours": 5.471899218326367,
+      "paired_ratio": 1.4080698340282891
+    }
+  },
+  "sign": {
+    "ms": {
+      "scalar": 459.9137,
+      "published": 76.8985,
+      "ours": 66.3148,
+      "published_over_ours": 1.1595978574918417,
+      "scalar_over_ours": 6.935310066531151,
+      "paired_ratio": 1.1648012561020524
+    },
+    "cycles": {
+      "scalar": 1334070050,
+      "published": 223189308,
+      "ours": 192230595,
+      "published_over_ours": 1.1610498734605696,
+      "scalar_over_ours": 6.939946526202034,
+      "paired_ratio": 1.1634008465984482
+    }
+  },
+  "verify": {
+    "ms": {
+      "scalar": 452.9092,
+      "published": 72.0985,
+      "ours": 61.4695,
+      "published_over_ours": 1.1729150228975347,
+      "scalar_over_ours": 7.368031300075648,
+      "paired_ratio": 1.1740594553592245
+    },
+    "cycles": {
+      "scalar": 1314295610,
+      "published": 209194041,
+      "ours": 178330804,
+      "published_over_ours": 1.1730673350185759,
+      "scalar_over_ours": 7.369986455060226,
+      "paired_ratio": 1.1756041914914408
+    }
+  }
+}

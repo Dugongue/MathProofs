@@ -1,0 +1,99 @@
+{
+  "parameter": "level5",
+  "variant": "native",
+  "trials": 7,
+  "source_hashes": {
+    "base-matrixmod": {
+      "path": "D:\\proof\\research\\meds-cancellation-20260919\\upstream\\ref\\src\\matrixmod.c",
+      "sha256": "2346b43b26d0bba3804a83622c10a89d79ca46a3cebd6ddde3648d145401aacb"
+    },
+    "base-util": {
+      "path": "D:\\proof\\research\\meds-cancellation-20260919\\upstream\\ref\\src\\util.c",
+      "sha256": "3d32e114e6c7f03c406cadf10ec52d479fd1d64815bdc9a36cbbc9b00a8a3e6f"
+    },
+    "base-meds": {
+      "path": "D:\\proof\\research\\meds-cancellation-20260919\\meds-original.c",
+      "sha256": "5e9affceaf151668d559bd410fae37efdc0f55e5e9a5661ef6f5837a935dbb18"
+    },
+    "fast-matrixmod": {
+      "path": "D:\\proof\\research\\meds-bestknown-20260919\\matrixmod-native.c",
+      "sha256": "5399deaad214908fce2c90bdfb281e963f4ffdc40be61a3906cd02ca12d98e3c"
+    },
+    "fast-util": {
+      "path": "D:\\proof\\research\\meds-cancellation-20260919\\upstream\\ref\\src\\util.c",
+      "sha256": "3d32e114e6c7f03c406cadf10ec52d479fd1d64815bdc9a36cbbc9b00a8a3e6f"
+    },
+    "fast-meds": {
+      "path": "D:\\proof\\research\\meds-bestknown-20260919\\meds-native.c",
+      "sha256": "489bfc0437103542d4578673b328ace3ba721809b92bae7baa3ae5a6dba7a40a"
+    }
+  },
+  "harness_sha256": "b86cfb507eb146837483eb7a9daf4af401760ebc0a301b774000baca89701eed",
+  "flags": [
+    "-O3",
+    "-march=native",
+    "-std=c11",
+    "-ID:\\proof\\research\\meds-bestknown-20260919\\final\\level5-native",
+    "-ID:\\proof\\research\\meds-cancellation-20260919",
+    "-ID:\\proof\\research\\meds-cancellation-20260919\\upstream\\ref\\include",
+    "-Wno-unused-function"
+  ],
+  "compiler": "gcc.exe (MinGW-W64 x86_64-msvcrt-posix-seh, built by Brecht Sanders, r1) 15.2.0",
+  "sign_ms": {
+    "base": 2389.9802,
+    "fast": 693.9161,
+    "ratio": 3.44419188429264,
+    "paired_ratio_median": 3.4442956864923757
+  },
+  "sign_cycles": {
+    "base": 6927771712,
+    "fast": 2011994006,
+    "ratio": 3.4432367548514455,
+    "paired_ratio_median": 3.4423195758376353
+  },
+  "verify_ms": {
+    "base": 2385.557,
+    "fast": 691.0357,
+    "ratio": 3.452147262435211,
+    "paired_ratio_median": 3.4544296963765784
+  },
+  "verify_cycles": {
+    "base": 6921301095,
+    "fast": 2004182147,
+    "ratio": 3.453429173271645,
+    "paired_ratio_median": 3.4535628138634666
+  },
+  "keygen": {
+    "ms": {
+      "base": 11.494800000000001,
+      "fast": 3.16235,
+      "paired_ratio_median": 3.635808761249173
+    },
+    "cycles": {
+      "base": 33355522.5,
+      "fast": 9167097.5,
+      "paired_ratio_median": 3.6370127441668396
+    }
+  },
+  "checks": [
+    {
+      "kind": "environment",
+      "affinity_mask": 64
+    },
+    {
+      "kind": "solver_checks",
+      "parameter": "level5",
+      "cases": 1000,
+      "solved": 600,
+      "right_invertible": 600,
+      "failures": 0
+    },
+    {
+      "kind": "differential",
+      "parameter": "level5",
+      "identical_signatures": 8,
+      "mutant_rejections": 12,
+      "failures": 0
+    }
+  ]
+}

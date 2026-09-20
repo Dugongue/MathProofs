@@ -1,0 +1,2 @@
+
+'MEDSCancellation.inverse_from_slice' depends on axioms: [propext, Classical.choice, Quot.sound]

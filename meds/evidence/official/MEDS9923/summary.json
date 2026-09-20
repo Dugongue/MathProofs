@@ -1,0 +1,113 @@
+{
+  "parameter": "MEDS9923",
+  "trials": 7,
+  "checks": [
+    {
+      "kind": "kernels",
+      "cases": 200,
+      "passed": true
+    },
+    {
+      "kind": "check",
+      "trial": -1,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    },
+    {
+      "kind": "check",
+      "trial": 0,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    },
+    {
+      "kind": "check",
+      "trial": 1,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    },
+    {
+      "kind": "check",
+      "trial": 2,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    },
+    {
+      "kind": "check",
+      "trial": 3,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    },
+    {
+      "kind": "check",
+      "trial": 4,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    },
+    {
+      "kind": "check",
+      "trial": 5,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    },
+    {
+      "kind": "check",
+      "trial": 6,
+      "two_way_equal": true,
+      "signature_bytes": 9896
+    }
+  ],
+  "keygen": {
+    "ms": {
+      "scalar": 0.5091,
+      "published": 0.5091,
+      "ours": 0.2912,
+      "published_over_ours": 1.748282967032967,
+      "scalar_over_ours": 1.748282967032967,
+      "paired_ratio": 1.7481940144478842
+    },
+    "cycles": {
+      "scalar": 1477065,
+      "published": 1477065,
+      "ours": 843787,
+      "published_over_ours": 1.750518792064822,
+      "scalar_over_ours": 1.750518792064822,
+      "paired_ratio": 1.7467972620963008
+    }
+  },
+  "sign": {
+    "ms": {
+      "scalar": 144.9947,
+      "published": 144.9947,
+      "ours": 84.3168,
+      "published_over_ours": 1.7196418744544384,
+      "scalar_over_ours": 1.7196418744544384,
+      "paired_ratio": 1.716217647557267
+    },
+    "cycles": {
+      "scalar": 420255142,
+      "published": 420255142,
+      "ours": 244534987,
+      "published_over_ours": 1.718589013195073,
+      "scalar_over_ours": 1.718589013195073,
+      "paired_ratio": 1.7165310194315406
+    }
+  },
+  "verify": {
+    "ms": {
+      "scalar": 144.2663,
+      "published": 144.2663,
+      "ours": 85.2527,
+      "published_over_ours": 1.6922197185543684,
+      "scalar_over_ours": 1.6922197185543684,
+      "paired_ratio": 1.6911306847221117
+    },
+    "cycles": {
+      "scalar": 418443526,
+      "published": 418443526,
+      "ours": 247255070,
+      "published_over_ours": 1.6923556956789603,
+      "scalar_over_ours": 1.6923556956789603,
+      "paired_ratio": 1.6910555952397004
+    }
+  }
+}
