@@ -1,5 +1,0 @@
-{
-  "status": "PASS",
-  "method": "fresh ZIP extraction, local pinned miniMEDS setup without Python UTF-8 mode, then miniMEDS level 1 and corrected AVX2 MEDS MEDS13220 differential runners",
-  "mini_dependency_in_public_zip": false
-}

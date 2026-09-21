@@ -1,1 +1,0 @@
-NIST/PQCgenKAT_sign.c
