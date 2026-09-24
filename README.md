@@ -1,4 +1,4 @@
-Lean proofs obtained and formalized with use of AI models, namely some combination of Claude Opus 5, Claude Fable 5/5.1, GPT-5.6 Sol and GPT-6 Astra.
+Lean proofs obtained and formalized with use of AI models, namely some combination of Claude Opus 5/5.5, Claude Fable 5/5.1, GPT-5.6 Sol and GPT-6 Astra.
 I've tried to assert the novelty of these proofs: all are pending comprehensive human validation and formal writeups.
 
 -------------------------------------------
@@ -24,6 +24,8 @@ FiveIsoentangledETF.lean — A proof that every two-qubit entanglement spectrum 
 ETFAllDimensionsAllPurities.lean — A proof that every integer d ≥ 2 admits an equiangular tight frame of d² + 1 normalized bipartite states with any prescribed common reduced purity p ∈ [1/d, 1]. Includes the maximally entangled endpoint, answering the higher-dimensional existence question in Section IX of Wei–Cobucci–Tavakoli’s Nonprojective Bell-state measurements (2024), and extends Section IV’s entanglement-tuning observations to all dimensions at the level of purity.
 
 MaximallyEntangledTightFrame_ExactOneWayPPTOptimum.lean - Proves that every maximally entangled tight frame of \(N\) states in \(\mathbb C^d\otimes\mathbb C^d\), for \(d\ge2\), has exact uniform-prior, single-copy discrimination optimum \(d/N\): an explicit one-way protocol achieves it, and no PPT measurement can exceed it. Includes the exact five-state qubit value \(2/5\), resolving the numerical one-way shortfall reported by Wei–Cobucci–Tavakoli (2024), Section VII.
+
+FiveStateRegularSimplex_TwoCopyGlobalOptimum.lean - Proves that two identical copies of any five-state regular simplex, sampled uniformly, have exact global discrimination optimum \((13+4\sqrt3)/20 \approx 0.9964101615\). Constructs an attaining POVM and proves a matching universal upper bound, giving an exact regular-simplex formulation of the numerical result reported by Wei–Cobucci–Tavakoli (2024), Section VII.
 
 JouxNarayanan54.lean - An affirmative answer to Joux–Narayanan’s Question 5.4: “Does ordinary tensor isomorphism reduce to tensor isomorphism under special-linear transformations?” Here zero-padding each mode from dimension n to 2n is formally proved to preserve and reflect equivalence over every field, for arbitrary input tensors. The proof certifies an explicit coordinate projection with exactly eight times as many output entries, establishing TI ≤ TI_SL.
 
