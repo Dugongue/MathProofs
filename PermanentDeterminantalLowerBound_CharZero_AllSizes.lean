@@ -1,40 +1,43 @@
 import Mathlib
 
 /-!
-# Permanent determinantal lower bounds over every characteristic-zero field
+# Permanent determinantal complexity: ceiling(n²/2) + 1 in characteristic zero
 
-`permanent_determinantal_bound_all_sizes` proves: for every characteristic-zero
-field F, all natural numbers n and m, and every m by m matrix L of polynomials
-over F in n by n variables, if each entry has total degree at most one and
-det(L) is the ordinary permanent polynomial, then
+For every characteristic-zero field F, all natural numbers n and m, and every
+m by m matrix L of polynomials over F in n by n variables, if each entry has
+total degree at most one and det(L) is the ordinary permanent polynomial,
+`permanent_determinantal_bound_all_sizes` proves
 
-    n * n + (if 3 <= n then 1 else 0) <= 2 * m.
+    n * n + (if 3 <= n then 2 else 0) <= 2 * m.
 
-Thus n^2 <= 2m for every n, and n^2 + 1 <= 2m whenever n >= 3.
-There are no extra Hessian, embedding, algebraic-closure, or minimum-attainment
-hypotheses. The statement quantifies over every affine determinantal
-representation, so applies in particular to one of minimum size.
+Thus n² <= 2m for every n, and n² + 2 <= 2m whenever n >= 3. Equivalently,
+dc(perm_n) >= ceiling(n²/2) + 1 for every n >= 3, both even and odd.
+`permanent_determinantal_bound_ceiling` states the rounded integer bound using
+natural-number division: (n*n + 1)/2 + 1 <= m.
+There are no additional Hessian, embedding, algebraic-closure, or
+minimum-attainment hypotheses: the result applies to every affine
+determinantal representation, hence in particular to one of minimum size.
 
 ## The existing theorem subsumed
 
 Thierry Mignon and Nicolas Ressayre, "A quadratic bound for the determinant
 and permanent problem", International Mathematics Research Notices 2004,
-no. 79, pp. 4241-4253, Theorem 2 in the authors' version, states
-dc(perm_n) >= n^2 / 2 over every characteristic-zero field.
+no. 79, pp. 4241-4253, Theorem 2 in the authors' version, proves
+dc(perm_n) >= n²/2 over every characteristic-zero field.
 
-`mignon_ressayre_theorem_two` recovers this complete field and size scope as
-an immediate corollary. For every even n >= 4, the integer lower bound is
-strictly increased from n^2/2 to n^2/2 + 1; for odd n >= 3, it agrees with
-the integer-rounded original bound. Complete subsumption does not mean
-strict improvement at every size, an asymptotic improvement, or a claim
-of priority over all subsequent literature.
+`mignon_ressayre_theorem_two` recovers its complete field and size scope.
+For every n >= 3, the rounded integer lower bound increases by one, from
+ceiling(n²/2) to ceiling(n²/2) + 1. This is an additive improvement, not an
+asymptotic improvement or a claim of priority over all subsequent literature.
 
 Authors' version: https://math.univ-lyon1.fr/~ressayre/PDFs/permdet.pdf
 Published article: https://doi.org/10.1155/S1073792804142566
 
-The proof uses a nondegenerate Hessian at the Mignon-Ressayre point,
-zero spaces spanning the tangent hyperplane, and a two-slice dimension
-argument. The small sizes are proved separately.
+The proof combines the nondegenerate Hessian at the Mignon-Ressayre point,
+zero spaces spanning the tangent hyperplane, and homogeneity: adjoining the
+base point to an affine zero direction space gives a linear zero space,
+whose Hessian-isotropic dimension bound supplies the parity refinement.
+The small sizes are proved separately. This file imports only Mathlib.
 -/
 
 variable {F : Type} [Field F] [CharZero F]
@@ -3054,7 +3057,6 @@ theorem permanent_determinantal_lower_bound (n : ℕ) (hn : 3 ≤ n) {m : ℕ}
     n * n + 1 ≤ 2 * m := by
   exact PermanentBound.Bound.two_dc_ge_succ_unconditional n hn h
 
-#print axioms permanent_determinantal_lower_bound
 
 
 namespace PermanentSmallSizes
@@ -3102,14 +3104,302 @@ theorem no_size_zero_one
 end PermanentSmallSizes
 
 
+/-! ## Homogeneous affine zero spaces and the parity-uniform strengthening -/
+namespace PermanentBound.Refinement
+open MvPolynomial Matrix
+open PermanentBound.AffineZeroSpaces PermanentBound.Hessian PermanentBound.PermanentZeroSpaces PermanentBound.TaylorExpansion
+open scoped Matrix
+open PermanentBound.TwoSliceDimension PermanentBound.TangentBound
+theorem affine_zero_contains_base {K : Type} [Field K] [Infinite K]
+    {ι : Type} [Fintype ι] [DecidableEq ι] {d : ℕ}
+    (f : MvPolynomial ι K) (hf : f.IsHomogeneous d) (y : ι → K)
+    (hnd : ∀ v, (hess f y).mulVec v = 0 → v = 0)
+    (U : Submodule K (ι → K)) (hU : ∀ u ∈ U, eval (y + u) f = 0)
+    (hlarge : Fintype.card ι ≤ 2 * Module.finrank K U + 1) : y ∈ U := by
+  classical
+  let S : Submodule K (ι → K) := (K ∙ y) ⊔ U
+  have hUS : U ≤ S := le_sup_right
+  have hyS : y ∈ S := (le_span_sup (x := y) (U := U)).2
+  have hS : ∀ x ∈ S, eval x f = 0 := vanishes_on_span_sup f hf hU
+  have hnd' : ∀ v, (∀ w, dotForm (hess f y) v w = 0) → v = 0 := by
+    intro v hv
+    apply hnd v
+    funext a
+    have h := hv (Pi.single a 1)
+    rw [dotForm_apply, Matrix.dotProduct_mulVec, ← Matrix.mulVec_transpose, hess_transpose] at h
+    simpa using h
+  have hb := two_mul_finrank_le_of_isotropic
+    (dotForm_isRefl (hess f y) (hess_transpose f y)) hnd' (W := S)
+    (fun a ha b hb => hess_isotropic_of_vanishes f S hS hyS ha hb)
+  rw [Module.finrank_fintype_fun_eq_card] at hb
+  have hdim : Module.finrank K U = Module.finrank K S := by
+    have := Submodule.finrank_mono hUS
+    omega
+  have heq : U = S := Submodule.eq_of_le_of_finrank_eq hUS hdim
+  rw [heq]
+  exact hyS
+
+section
+variable {K : Type} [Field K] [Infinite K] {ι : Type} [Fintype ι] [DecidableEq ι]
+theorem kernel_of_A0_plus_one {m : Type*} [Fintype m] [DecidableEq m] (A : AffineMat K m ι)
+    (f : MvPolynomial ι K) {d : ℕ} (hf : f.IsHomogeneous d)
+    (hrep : ∀ x, (A.eval x).det = eval x f) (h2m : 2 * Fintype.card m ≤ Fintype.card ι + 1)
+    (y : ι → K) (hnd : ∀ v, (hess f y).mulVec v = 0 → v = 0)
+    (w u : m → K) (hw : w ≠ 0) (hu : u ≠ 0) (hwy : Matrix.vecMul w (A.eval y) = 0)
+    (huy : (A.eval y).mulVec u = 0) :
+    Matrix.vecMul w A.A0 = 0 ∧ A.A0.mulVec u = 0 := by
+  have hW : ∀ δ ∈ LinearMap.ker (kmap A w), eval (y + δ) f = 0 := by
+    intro δ hδ
+    rw [LinearMap.mem_ker, kmap_apply] at hδ
+    rw [← hrep]
+    apply det_eq_zero_of_vecMul_eq_zero hw
+    rw [AffineMat.eval_add_linear, Matrix.vecMul_add, hwy, hδ, add_zero]
+  have hU : ∀ δ ∈ LinearMap.ker (rightKmap A u), eval (y + δ) f = 0 := by
+    intro δ hδ
+    rw [LinearMap.mem_ker, rightKmap_apply] at hδ
+    rw [← hrep]
+    apply Matrix.exists_mulVec_eq_zero_iff.mp
+    refine ⟨u, hu, ?_⟩
+    rw [AffineMat.eval_add_linear, Matrix.add_mulVec, huy, hδ, add_zero]
+  have h1 := card_le_card_add_finrank_ker A w
+  have h2 := card_le_card_add_finrank_ker_right A u
+  have hyW := affine_zero_contains_base f hf y hnd _ hW (by omega)
+  have hyU := affine_zero_contains_base f hf y hnd _ hU (by omega)
+  rw [LinearMap.mem_ker, kmap_apply] at hyW
+  rw [LinearMap.mem_ker, rightKmap_apply] at hyU
+  have hev : A.eval y = A.A0 + A.L y := rfl
+  rw [hev, Matrix.vecMul_add, hyW, add_zero] at hwy
+  rw [hev, Matrix.add_mulVec, hyU, add_zero] at huy
+  exact ⟨hwy, huy⟩
+
+variable {M : Type} [Fintype M] [DecidableEq M]
+theorem tangent_bound_plus_one (A : AffineMat K M ι) (f : MvPolynomial ι K) {d : ℕ}
+    (hf : f.IsHomogeneous d) (hrep : ∀ x, (A.eval x).det = eval x f)
+    (h2m : 2 * Fintype.card M ≤ Fintype.card ι + 1) (p : ι → K) (hp0 : p ≠ 0)
+    (hnd : ∀ v, (hess f p).mulVec v = 0 → v = 0) {ιs : Type*} (V : ιs → Submodule K (ι → K))
+    (hV : ∀ i, p ∈ V i ∧ ∀ q ∈ V i, eval q f = 0) :
+    2 * Module.finrank K (⨆ i, V i : Submodule K (ι → K))
+      ≤ Fintype.card ι + 2 * Module.finrank K (leftKer A) := by
+  classical
+  by_cases hne : Nonempty ιs
+  swap
+  · have hbot : (⨆ i, V i : Submodule K (ι → K)) = ⊥ := by
+      rw [not_nonempty_iff] at hne
+      exact iSup_of_empty V
+    rw [hbot, finrank_bot]
+    omega
+  obtain ⟨i₁⟩ := hne
+  have hpf : eval p f = 0 := (hV i₁).2 p (hV i₁).1
+  have hgrad : grad f p ≠ 0 := by
+    intro h0
+    have h := hess_mulVec_self hf p
+    rw [h0, smul_zero] at h
+    exact hp0 (hnd p h)
+  have hdetp : (A.eval p).det = 0 := by rw [hrep, hpf]
+  obtain ⟨u, hu, hAu⟩ := Matrix.exists_mulVec_eq_zero_iff.mpr hdetp
+
+  have hrow : ∃ i₀, adjRow A p i₀ ≠ 0 := by
+    by_contra hall
+    push_neg at hall
+    have hgz : ∀ δ, δ ⬝ᵥ grad f p = 0 := by
+      intro δ
+      obtain ⟨i₀, hi₀⟩ : ∃ i₀, u i₀ ≠ 0 := by
+        by_contra h
+        push_neg at h
+        exact hu (funext h)
+      have hk := congrArg (fun v => v ⬝ᵥ u) (key_identity A f hrep p i₀ δ)
+      simp only [add_dotProduct, hall i₀, Matrix.zero_vecMul, zero_dotProduct, add_zero,
+        smul_dotProduct, single_dotProduct, one_mul, smul_eq_mul] at hk
+      rw [← Matrix.dotProduct_mulVec, hAu, dotProduct_zero] at hk
+      exact (mul_eq_zero.mp hk.symm).resolve_right hi₀
+    apply hgrad
+    funext j
+    have := hgz (Pi.single j 1)
+    simpa using this
+  obtain ⟨i₀, hi₀⟩ := hrow
+  set w := adjRow A p i₀ with hw
+  have hwA : w ᵥ* A.eval p = 0 := by rw [hw, adjRow_vecMul, hdetp, zero_smul]
+  obtain ⟨hwA0, -⟩ := kernel_of_A0_plus_one A f hf hrep h2m p hnd w u hi₀ hu hwA hAu
+
+  set DW := LinearMap.ker (kmap A w) with hDW
+  have hDWzero : ∀ q ∈ DW, eval q f = 0 := by
+    intro q hq
+    rw [LinearMap.mem_ker, kmap_apply] at hq
+    rw [← hrep]
+    apply det_eq_zero_of_vecMul_eq_zero hi₀
+    show w ᵥ* (A.A0 + A.L q) = 0
+    rw [Matrix.vecMul_add, hwA0, hq, add_zero]
+  have hpDW : p ∈ DW := by
+    rw [LinearMap.mem_ker, kmap_apply]
+    have h : w ᵥ* A.eval p = w ᵥ* A.A0 + w ᵥ* A.L p := by
+      show w ᵥ* (A.A0 + A.L p) = _
+      rw [Matrix.vecMul_add]
+    rw [hwA, hwA0, zero_add] at h
+    exact h.symm
+  have hDWdim : 2 * Module.finrank K DW ≤ Fintype.card ι := by
+    have hnd' : ∀ v, (∀ w', dotForm (hess f p) v w' = 0) → v = 0 := by
+      intro v hv
+      apply hnd v
+      funext a
+      have h := hv (Pi.single a 1)
+      rw [dotForm_apply, Matrix.dotProduct_mulVec, ← Matrix.mulVec_transpose, hess_transpose] at h
+      simpa using h
+    have h := two_mul_finrank_le_of_isotropic (dotForm_isRefl (hess f p) (hess_transpose f p)) hnd'
+      (W := DW) (fun a ha b hb => by
+        rw [dotForm_apply]
+        exact hess_isotropic_of_vanishes f DW hDWzero hpDW ha hb)
+    rwa [Module.finrank_fintype_fun_eq_card] at h
+
+  have hT_grad : ∀ x ∈ (⨆ i, V i : Submodule K (ι → K)), x ⬝ᵥ grad f p = 0 := by
+    intro x hx
+    have hle : (⨆ i, V i : Submodule K (ι → K))
+        ≤ LinearMap.ker ((dotForm (1 : Matrix ι ι K)) (grad f p)) := by
+      refine iSup_le fun i => ?_
+      intro y hy
+      rw [LinearMap.mem_ker]
+      show grad f p ⬝ᵥ ((1 : Matrix ι ι K) *ᵥ y) = 0
+      rw [Matrix.one_mulVec, dotProduct_comm]
+      exact grad_orth_of_affine_zero f p (V i)
+        (fun δ hδ => (hV i).2 _ ((V i).add_mem (hV i).1 hδ)) hy
+    have h := hle hx
+    rw [LinearMap.mem_ker] at h
+    change grad f p ⬝ᵥ ((1 : Matrix ι ι K) *ᵥ x) = 0 at h
+    rwa [Matrix.one_mulVec, dotProduct_comm] at h
+
+  have hΨ_line : ∀ i, ∀ δ ∈ V i, Ψ A p i₀ δ ∈ leftKer A := by
+    intro i δ hδ
+    rw [mem_leftKer]
+    funext b
+    let g : MvPolynomial ι K := ∑ a, (polyMat A).adjugate i₀ a * C (A.A0 a b)
+    have hg_eval : ∀ y, eval y g = (adjRow A y i₀ ᵥ* A.A0) b := by
+      intro y
+      simp [g, map_sum, map_mul, eval_C, eval_adjugate_polyMat, Matrix.vecMul, dotProduct]
+    have hg_dir : δ ⬝ᵥ grad g p = (Ψ A p i₀ δ ᵥ* A.A0) b := by
+      simp only [dotProduct, grad, g, map_sum, pderiv_mul, pderiv_C, mul_zero, add_zero, map_mul,
+        eval_C, Ψ_apply, Matrix.vecMul, Matrix.mulVec, jac, Finset.mul_sum, Finset.sum_mul]
+      rw [Finset.sum_comm]
+      exact Finset.sum_congr rfl fun a _ => Finset.sum_congr rfl fun j _ => by ring
+    have hfin1 : {t : K | eval (t • δ + p) (hessPoly f).det = 0}.Finite :=
+      finite_zeros_of_ne_zero _ p δ (by rw [eval_det_hessPoly]; exact det_ne_zero_of_injective _ hnd)
+    obtain ⟨a₀, ha₀⟩ : ∃ a₀, adjRow A p i₀ a₀ ≠ 0 := by
+      by_contra h
+      push_neg at h
+      exact hi₀ (funext h)
+    have hfin2 : {t : K | eval (t • δ + p) ((polyMat A).adjugate i₀ a₀) = 0}.Finite :=
+      finite_zeros_of_ne_zero _ p δ (by rw [eval_adjugate_polyMat]; exact ha₀)
+    have hinf : {t : K | eval (t • δ + p) g = 0}.Infinite := by
+      have hcompl : ({t : K | eval (t • δ + p) (hessPoly f).det = 0}
+          ∪ {t | eval (t • δ + p) ((polyMat A).adjugate i₀ a₀) = 0})ᶜ
+          ⊆ {t | eval (t • δ + p) g = 0} := by
+        intro t ht
+        simp only [Set.mem_compl_iff, Set.mem_union, Set.mem_setOf_eq, not_or] at ht
+        obtain ⟨ht1, ht2⟩ := ht
+        have hyV : t • δ + p ∈ V i := (V i).add_mem ((V i).smul_mem t hδ) (hV i).1
+        have hyf : eval (t • δ + p) f = 0 := (hV i).2 _ hyV
+        have hndy : ∀ v, (hess f (t • δ + p)).mulVec v = 0 → v = 0 :=
+          injective_of_det_ne_zero _ (by rw [← eval_det_hessPoly]; exact ht1)
+        have hwy : adjRow A (t • δ + p) i₀ ≠ 0 := by
+          intro h
+          apply ht2
+          rw [eval_adjugate_polyMat]
+          exact congrFun h a₀
+        have hdety : (A.eval (t • δ + p)).det = 0 := by rw [hrep, hyf]
+        obtain ⟨u', hu', hAu'⟩ := Matrix.exists_mulVec_eq_zero_iff.mpr hdety
+        have hwyA : adjRow A (t • δ + p) i₀ ᵥ* A.eval (t • δ + p) = 0 := by
+          rw [adjRow_vecMul, hdety, zero_smul]
+        obtain ⟨h0, -⟩ := kernel_of_A0_plus_one A f hf hrep h2m (t • δ + p) hndy _ u' hwy hu' hwyA hAu'
+        show eval (t • δ + p) g = 0
+        rw [hg_eval, h0]
+        rfl
+      exact Set.Infinite.mono hcompl ((hfin1.union hfin2).infinite_compl)
+    have h := dirDeriv_eq_zero_of_infinite_zeros g p δ hinf
+    rw [hg_dir] at h
+    exact h
+
+  set T : Submodule K (ι → K) := ⨆ i, V i with hT
+  have hΨT : ∀ x ∈ T, Ψ A p i₀ x ∈ leftKer A := by
+    intro x hx
+    have hle : T ≤ (leftKer A).comap (Ψ A p i₀) :=
+      iSup_le fun i y hy => Submodule.mem_comap.mpr (hΨ_line i y hy)
+    exact Submodule.mem_comap.mp (hle hx)
+  let Ψ' : T →ₗ[K] (M → K) := (Ψ A p i₀).domRestrict T
+  have hrange : LinearMap.range Ψ' ≤ leftKer A := by
+    rintro _ ⟨x, rfl⟩
+    exact hΨT x x.2
+  have hker : (LinearMap.ker Ψ').map T.subtype ≤ DW := by
+    rintro _ ⟨x, hx, rfl⟩
+    have hx' : Ψ A p i₀ (x : ι → K) = 0 := hx
+    have hk := key_identity A f hrep p i₀ x
+    rw [hx', Matrix.zero_vecMul, zero_add, hT_grad x x.2, zero_smul] at hk
+    rw [Submodule.subtype_apply, LinearMap.mem_ker, kmap_apply]
+    exact hk
+  have h1 := LinearMap.finrank_range_add_finrank_ker Ψ'
+  have h2 := Submodule.finrank_mono hrange
+  have h3 := Submodule.finrank_mono hker
+  rw [Submodule.finrank_map_subtype_eq] at h3
+  omega
+
+end
+
+theorem permanent_determinantal_bound_plus_two {F : Type} [Field F] [CharZero F]
+    (n m : ℕ) (hn : 3 ≤ n)
+    (L : Matrix (Fin m) (Fin m) (MvPolynomial (Fin n × Fin n) F))
+    (hL : ∀ i j, (L i j).totalDegree ≤ 1)
+    (hdet : L.det = (Matrix.mvPolynomialX (Fin n) (Fin n) F).permanent) :
+    n*n + 2 ≤ 2*m := by
+  classical
+  haveI : NeZero n := ⟨by omega⟩
+  obtain ⟨A, hA⟩ := PermanentBound.AffineRepresentation.affineMat_of_hasDetRep
+    (f := AlgebraicComplexity.Valiant.permanentPoly (F := F) n) ⟨L, hL, hdet⟩
+  have hrep : ∀ x, (A.eval x).det = eval x (permPoly (Fin n) F) := by
+    intro x
+    rw [hA, PermanentBound.AffineRepresentation.eval_permanentPoly, eval_permPoly]
+  have hnd : ∀ v, (hess (permPoly (Fin n) F) (PermanentBound.Bound.pMR (F := F) n)).mulVec v = 0 → v = 0 := by
+    intro v hv
+    apply PermanentBound.Bound.hessian_all n hn v
+    intro w
+    have hv' : (hess (permPoly (Fin n) F)
+      (fun ij => PermanentBound.MignonRessayrePoint.mrPoint (K := F) n ij.1 ij.2)).mulVec v = 0 := hv
+    rw [Matrix.dotProduct_mulVec, ← Matrix.mulVec_transpose, hess_transpose, hv', zero_dotProduct]
+  obtain ⟨ιs, _, V, hV, hspan⟩ := PermanentBound.Bound.tangentSpanned_all (F := F) n
+  have hV' : ∀ i, PermanentBound.Bound.pMR (F := F) n ∈ V i ∧ ∀ q ∈ V i, eval q (permPoly (Fin n) F) = 0 :=
+    fun i => ⟨(hV i).1, fun q hq => by rw [eval_permPoly]; exact (hV i).2 q hq⟩
+  by_contra hfail
+  have h2m : 2 * Fintype.card (Fin m) ≤ Fintype.card (Fin n × Fin n) + 1 := by
+    simp only [Fintype.card_prod, Fintype.card_fin]
+    omega
+  have hb := tangent_bound_plus_one A (permPoly (Fin n) F) permPoly_isHomogeneous hrep h2m
+    (PermanentBound.Bound.pMR (F := F) n) (PermanentBound.Bound.pMR_ne_zero n (by omega)) hnd V hV'
+  have hJ : eval (fun ij => PermanentBound.MignonRessayrePoint.J (K := F) n ij.1 ij.2)
+      (permPoly (Fin n) F) ≠ 0 := by
+    rw [eval_permPoly]
+    have : toMat (fun ij => PermanentBound.MignonRessayrePoint.J (K := F) n ij.1 ij.2)
+        = PermanentBound.MignonRessayrePoint.J (K := F) n := by ext i j; rfl
+    rw [this, PermanentBound.Bound.permanent_J]
+    exact Nat.cast_ne_zero.mpr (Nat.factorial_ne_zero n)
+  have hc := finrank_leftKer_le A (permPoly (Fin n) F) permPoly_isHomogeneous hrep _ hJ
+  simp only [Fintype.card_prod, Fintype.card_fin] at hb hc
+  have hn2 : 3 * n ≤ n * n := Nat.mul_le_mul_right n hn
+  omega
+
+end PermanentBound.Refinement
+
+theorem permanent_determinantal_bound_plus_two {F : Type} [Field F] [CharZero F]
+    (n m : ℕ) (hn : 3 ≤ n)
+    (L : Matrix (Fin m) (Fin m) (MvPolynomial (Fin n × Fin n) F))
+    (hL : ∀ i j, (L i j).totalDegree ≤ 1)
+    (hdet : L.det = (Matrix.mvPolynomialX (Fin n) (Fin n) F).permanent) :
+    n*n + 2 ≤ 2*m := by
+  exact PermanentBound.Refinement.permanent_determinantal_bound_plus_two n m hn L hL hdet
+
 theorem permanent_determinantal_bound_all_sizes {F : Type} [Field F] [CharZero F]
     (n m : ℕ) (L : Matrix (Fin m) (Fin m) (MvPolynomial (Fin n × Fin n) F))
     (hL : ∀ i j, (L i j).totalDegree ≤ 1)
     (hdet : L.det = (Matrix.mvPolynomialX (Fin n) (Fin n) F).permanent) :
-    n * n + (if 3 ≤ n then 1 else 0) ≤ 2 * m := by
+    n * n + (if 3 ≤ n then 2 else 0) ≤ 2 * m := by
   by_cases hn : 3 ≤ n
   · rw [if_pos hn]
-    exact permanent_determinantal_lower_bound n hn ⟨L, hL, hdet⟩
+    exact permanent_determinantal_bound_plus_two n m hn L hL hdet
   have hn' : n = 0 ∨ n = 1 ∨ n = 2 := by omega
   rcases hn' with rfl | rfl | rfl
   · simp
@@ -3142,8 +3432,6 @@ theorem mignon_ressayre_theorem_two {F : Type} [Field F] [CharZero F]
   have h := permanent_determinantal_bound_all_sizes n m L hL hdet
   omega
 
-#print axioms permanent_determinantal_bound_all_sizes
-#print axioms mignon_ressayre_theorem_two
 
 /-- Strict integer improvement for every even permanent size at least four. -/
 theorem permanent_determinantal_bound_even {F : Type} [Field F] [CharZero F]
@@ -3155,4 +3443,25 @@ theorem permanent_determinantal_bound_even {F : Type} [Field F] [CharZero F]
   have h := permanent_determinantal_bound_all_sizes (2*k) m L hL hdet
   rw [if_pos (by omega : 3 ≤ 2*k)] at h
   have he : (2*k)*(2*k) = 2*(2*k*k) := by ring
+  omega
+
+/-- The rounded integer improvement, uniformly for even and odd sizes. -/
+theorem permanent_determinantal_bound_ceiling {F : Type} [Field F] [CharZero F]
+    (n m : ℕ) (hn : 3 ≤ n)
+    (L : Matrix (Fin m) (Fin m) (MvPolynomial (Fin n × Fin n) F))
+    (hL : ∀ i j, (L i j).totalDegree ≤ 1)
+    (hdet : L.det = (Matrix.mvPolynomialX (Fin n) (Fin n) F).permanent) :
+    (n*n + 1)/2 + 1 ≤ m := by
+  have h := permanent_determinantal_bound_plus_two n m hn L hL hdet
+  omega
+
+/-- Strict integer improvement for every odd permanent size at least three. -/
+theorem permanent_determinantal_bound_odd {F : Type} [Field F] [CharZero F]
+    (k m : ℕ) (hk : 1 ≤ k)
+    (L : Matrix (Fin m) (Fin m) (MvPolynomial (Fin (2*k+1) × Fin (2*k+1)) F))
+    (hL : ∀ i j, (L i j).totalDegree ≤ 1)
+    (hdet : L.det = (Matrix.mvPolynomialX (Fin (2*k+1)) (Fin (2*k+1)) F).permanent) :
+    2*k*k + 2*k + 2 ≤ m := by
+  have h := permanent_determinantal_bound_plus_two (2*k+1) m (by omega) L hL hdet
+  have he : (2*k+1)*(2*k+1) = 2*(2*k*k+2*k)+1 := by ring
   omega
