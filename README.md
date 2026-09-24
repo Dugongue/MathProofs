@@ -21,6 +21,8 @@ DMT17.lean - An affirmative answer to Ding, Munemasa, and Tonchev’s (2019) Con
 
 FiveIsoentangledETF.lean — A Lean proof that every two-qubit entanglement spectrum admits a five-state equiangular tight frame. Gives an explicit construction spanning product to maximally entangled states, with squared pairwise overlap 1/16 and frame operator (5/4)I. Provides a uniform analytic solution to the existence question explored numerically in Section IV of Wei–Cobucci–Tavakoli, Nonprojective Bell-state measurements (2024).
 
+BellETFAllDimensions.lean - A Mathlib-only Lean proof that every integer d ≥ 2 admits an equiangular tight frame of d² + 1 normalized, maximally entangled states in ℂᵈ ⊗ ℂᵈ, including composite dimensions. Answers the higher-dimensional existence question in Section IX of Wei–Cobucci–Tavakoli’s Nonprojective Bell-state measurements (2024).
+
 JouxNarayanan54.lean - An affirmative answer to Joux–Narayanan’s Question 5.4: “Does ordinary tensor isomorphism reduce to tensor isomorphism under special-linear transformations?” Here zero-padding each mode from dimension n to 2n is formally proved to preserve and reflect equivalence over every field, for arbitrary input tensors. The proof certifies an explicit coordinate projection with exactly eight times as many output entries, establishing TI ≤ TI_SL.
 
 TIEqTISp.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)'s Open Question 8: "Which, if any, of TI_O, TI_U, TI_Sp are equal to TI?"; here it is proved that TI = TI_Sp.
