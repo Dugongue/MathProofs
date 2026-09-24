@@ -19,6 +19,8 @@ MetricRegularBent.lean - An affirmative answer to Meidl, Polujan, and Pott’s (
 
 DMT17.lean - An affirmative answer to Ding, Munemasa, and Tonchev’s (2019) Conjecture 17: “For each fixed admissible output dimension, does the number of inequivalent codes obtained from vectorial bent functions grow exponentially, with the proportion admitting a two-transitive automorphism group tending to zero?” Here both assertions are formally proved, with the stronger conclusion that even the proportion admitting a transitive automorphism group tends to zero, and quantitative bounds uniform across all admissible output dimensions.
 
+FiveIsoentangledETF.lean — A Lean proof that every two-qubit entanglement spectrum admits a five-state equiangular tight frame. Gives an explicit construction spanning product to maximally entangled states, with squared pairwise overlap 1/16 and frame operator (5/4)I. Provides a uniform analytic solution to the existence question explored numerically in Section IV of Wei–Cobucci–Tavakoli, Nonprojective Bell-state measurements (2024).
+
 JouxNarayanan54.lean - An affirmative answer to Joux–Narayanan’s Question 5.4: “Does ordinary tensor isomorphism reduce to tensor isomorphism under special-linear transformations?” Here zero-padding each mode from dimension n to 2n is formally proved to preserve and reflect equivalence over every field, for arbitrary input tensors. The proof certifies an explicit coordinate projection with exactly eight times as many output entries, establishing TI ≤ TI_SL.
 
 TIEqTISp.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)'s Open Question 8: "Which, if any, of TI_O, TI_U, TI_Sp are equal to TI?"; here it is proved that TI = TI_Sp.
