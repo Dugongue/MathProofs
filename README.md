@@ -23,6 +23,8 @@ FiveIsoentangledETF.lean — A proof that every two-qubit entanglement spectrum 
 
 ETFAllDimensionsAllPurities.lean — A proof that every integer d ≥ 2 admits an equiangular tight frame of d² + 1 normalized bipartite states with any prescribed common reduced purity p ∈ [1/d, 1]. Includes the maximally entangled endpoint, answering the higher-dimensional existence question in Section IX of Wei–Cobucci–Tavakoli’s Nonprojective Bell-state measurements (2024), and extends Section IV’s entanglement-tuning observations to all dimensions at the level of purity.
 
+MaximallyEntangledTightFrame_ExactOneWayPPTOptimum.lean - Proves that every maximally entangled tight frame of \(N\) states in \(\mathbb C^d\otimes\mathbb C^d\), for \(d\ge2\), has exact uniform-prior, single-copy discrimination optimum \(d/N\): an explicit one-way protocol achieves it, and no PPT measurement can exceed it. Includes the exact five-state qubit value \(2/5\), resolving the numerical one-way shortfall reported by Wei–Cobucci–Tavakoli (2024), Section VII.
+
 JouxNarayanan54.lean - An affirmative answer to Joux–Narayanan’s Question 5.4: “Does ordinary tensor isomorphism reduce to tensor isomorphism under special-linear transformations?” Here zero-padding each mode from dimension n to 2n is formally proved to preserve and reflect equivalence over every field, for arbitrary input tensors. The proof certifies an explicit coordinate projection with exactly eight times as many output entries, establishing TI ≤ TI_SL.
 
 TIEqTISp.lean - A partial answer to Chen, Grochow, Qiao, Tang, and Zhang (2024)'s Open Question 8: "Which, if any, of TI_O, TI_U, TI_Sp are equal to TI?"; here it is proved that TI = TI_Sp.
