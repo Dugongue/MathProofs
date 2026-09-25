@@ -1,7 +1,9 @@
 Lean proofs obtained and formalized with use of AI models, namely some combination of Claude Opus 5/5.5, Claude Fable 5/5.1, GPT-5.6 Sol and GPT-6 Astra.
 I've tried to assert the novelty of these proofs: all are pending comprehensive human validation and formal writeups.
+Each Lean file imports only Mathlib.
 
 -------------------------------------------
+FourProjectiveMeasurements_ArbitraryRank_LowerBoundAndRigidity.lean - A proof of the arbitrary-rank four-measurement selected-sum bound, resolving the four-measurement case left open after Theorem 9 of Designolle–Farkas, k-fold unbiased measurements and maximal incompatibility (2026). Covers every outcome count \(n\ge2\) in every positive finite dimension, allowing unequal and zero outcome ranks without assuming unbiasedness. Also proves equality rigidity: attaining the bound forces every subtriple to be algebraically three-fold unbiased.
 
 PolujanPottV1.lean - An affirmative answer to Polujan-Pott (2021) Open Problem V.1 / Polujan's (2021) Open Problem 3.64: "Can two vectorial bent functions have isomorphic graph translation designs without being EA-equivalent?"
 
