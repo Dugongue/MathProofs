@@ -1,12 +1,32 @@
 /-
 A complete family of seven mutually unbiased orthonormal bases in complex
 dimension six admits an explicit degree-five parent POVM. The construction
-has depolarizing visibility 4415/14497 and generalized visibility 18286/43491.
+has improved depolarizing visibility 56137/184289 and generalized visibility
+232487/552867, strictly improving the retained 4415/14497 construction.
+
+It also proves the exact attained optimum for common-quadratic odd-SOS
+parents S sum_l q_l(S)^2: the largest real root of
+42875 z^3 - 12495 z^2 - 609 z + 133 = 0. This is an optimum for that specified
+polynomial-parent class, not the joint-measurability threshold over all POVMs.
+
+The relevant literature is Designolle, "Most incompatible measurements and
+sum-of-squares optimisation" (2026), in particular its polynomial-parent
+framework. The exact fifth-moment construction and optimization here concern
+hypothetical complete dimension-six families. They do not settle MUB existence.
 
 This file is self-contained apart from Mathlib: it proves the dephasing-frame,
 exact conditional moments, positivity, normalization, and every marginal.
 -/
-import Mathlib
+import Mathlib.Analysis.Matrix.Order
+import Mathlib.Analysis.Matrix.PosDef
+import Mathlib.LinearAlgebra.Matrix.Trace
+import Mathlib.LinearAlgebra.Matrix.Kronecker
+import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
+import Mathlib.Data.Fintype.Pi
+import Mathlib.Algebra.BigOperators.Fin
+import Mathlib.Tactic
+import Mathlib.Topology.Order.IntermediateValue
+import Mathlib.Topology.Instances.Real.Lemmas
 
 
 open scoped BigOperators Matrix ComplexConjugate ComplexOrder
@@ -1143,7 +1163,7 @@ theorem zero_anchor_head0_counts :
     zeroAnchorHeadExponentCount 0 4 = 700 ∧
     zeroAnchorHeadExponentCount 0 5 = 120 ∧
     (∀ v : Fin 4 → Fin 6,
-      (reduceProjectorWord 5 (zeroAnchorHeadWord 0 v)).2 = []) := by decide
+      (reduceProjectorWord 5 (zeroAnchorHeadWord 0 v)).2 = []) := by decide +kernel
 
 set_option maxRecDepth 100000 in
 theorem zero_anchor_head1_counts :
@@ -1153,7 +1173,7 @@ theorem zero_anchor_head1_counts :
     zeroAnchorHeadExponentCount 1 4 = 700 ∧
     zeroAnchorHeadExponentCount 1 5 = 120 ∧
     (∀ v : Fin 4 → Fin 6,
-      (reduceProjectorWord 5 (zeroAnchorHeadWord 1 v)).2 = []) := by decide
+      (reduceProjectorWord 5 (zeroAnchorHeadWord 1 v)).2 = []) := by decide +kernel
 
 set_option maxRecDepth 100000 in
 theorem zero_anchor_head2_counts :
@@ -1163,7 +1183,7 @@ theorem zero_anchor_head2_counts :
     zeroAnchorHeadExponentCount 2 4 = 700 ∧
     zeroAnchorHeadExponentCount 2 5 = 120 ∧
     (∀ v : Fin 4 → Fin 6,
-      (reduceProjectorWord 5 (zeroAnchorHeadWord 2 v)).2 = []) := by decide
+      (reduceProjectorWord 5 (zeroAnchorHeadWord 2 v)).2 = []) := by decide +kernel
 
 set_option maxRecDepth 100000 in
 theorem zero_anchor_head3_counts :
@@ -1173,7 +1193,7 @@ theorem zero_anchor_head3_counts :
     zeroAnchorHeadExponentCount 3 4 = 700 ∧
     zeroAnchorHeadExponentCount 3 5 = 120 ∧
     (∀ v : Fin 4 → Fin 6,
-      (reduceProjectorWord 5 (zeroAnchorHeadWord 3 v)).2 = []) := by decide
+      (reduceProjectorWord 5 (zeroAnchorHeadWord 3 v)).2 = []) := by decide +kernel
 
 set_option maxRecDepth 100000 in
 theorem zero_anchor_head4_counts :
@@ -1183,7 +1203,7 @@ theorem zero_anchor_head4_counts :
     zeroAnchorHeadExponentCount 4 4 = 700 ∧
     zeroAnchorHeadExponentCount 4 5 = 120 ∧
     (∀ v : Fin 4 → Fin 6,
-      (reduceProjectorWord 5 (zeroAnchorHeadWord 4 v)).2 = []) := by decide
+      (reduceProjectorWord 5 (zeroAnchorHeadWord 4 v)).2 = []) := by decide +kernel
 
 set_option maxRecDepth 100000 in
 theorem zero_anchor_head5_counts :
@@ -1193,7 +1213,7 @@ theorem zero_anchor_head5_counts :
     zeroAnchorHeadExponentCount 5 4 = 700 ∧
     zeroAnchorHeadExponentCount 5 5 = 120 ∧
     (∀ v : Fin 4 → Fin 6,
-      (reduceProjectorWord 5 (zeroAnchorHeadWord 5 v)).2 = []) := by decide
+      (reduceProjectorWord 5 (zeroAnchorHeadWord 5 v)).2 = []) := by decide +kernel
 
 def oneAnchorWord (p : Fin 5) (v : Fin 4 → Fin 6) : List ReducerSymbol :=
   List.ofFn (fun i => if i = p then none else some (v (p.predAbove i)))
@@ -1207,30 +1227,30 @@ def centralCrossed (v : Fin 4 → Fin 6) : Prop :=
 
 set_option maxRecDepth 100000 in
 theorem central_crossed_count :
-    ((Finset.univ : Finset (Fin 4 → Fin 6)).filter centralCrossed).card = 30 := by decide
+    ((Finset.univ : Finset (Fin 4 → Fin 6)).filter centralCrossed).card = 30 := by decide +kernel
 set_option maxRecDepth 100000 in
 theorem anchor_pos0_counts :
     oneAnchorResidueCount 0 1 [none] = 6 ∧ oneAnchorResidueCount 0 2 [none] = 180 ∧
-    oneAnchorResidueCount 0 3 [none] = 750 ∧ oneAnchorResidueCount 0 4 [none] = 360 := by decide
+    oneAnchorResidueCount 0 3 [none] = 750 ∧ oneAnchorResidueCount 0 4 [none] = 360 := by decide +kernel
 set_option maxRecDepth 100000 in
 theorem anchor_pos4_counts :
     oneAnchorResidueCount 4 1 [none] = 6 ∧ oneAnchorResidueCount 4 2 [none] = 180 ∧
-    oneAnchorResidueCount 4 3 [none] = 750 ∧ oneAnchorResidueCount 4 4 [none] = 360 := by decide
+    oneAnchorResidueCount 4 3 [none] = 750 ∧ oneAnchorResidueCount 4 4 [none] = 360 := by decide +kernel
 set_option maxRecDepth 100000 in
 theorem anchor_pos1_counts :
     oneAnchorResidueCount 1 2 [none] = 30 ∧ oneAnchorResidueCount 1 3 [none] = 390 ∧
     oneAnchorResidueCount 1 4 [none] = 360 ∧ oneAnchorResidueCount 1 2 [] = 6 ∧
-    oneAnchorResidueCount 1 3 [] = 150 ∧ oneAnchorResidueCount 1 4 [] = 360 := by decide
+    oneAnchorResidueCount 1 3 [] = 150 ∧ oneAnchorResidueCount 1 4 [] = 360 := by decide +kernel
 set_option maxRecDepth 100000 in
 theorem anchor_pos3_counts :
     oneAnchorResidueCount 3 2 [none] = 30 ∧ oneAnchorResidueCount 3 3 [none] = 390 ∧
     oneAnchorResidueCount 3 4 [none] = 360 ∧ oneAnchorResidueCount 3 2 [] = 6 ∧
-    oneAnchorResidueCount 3 3 [] = 150 ∧ oneAnchorResidueCount 3 4 [] = 360 := by decide
+    oneAnchorResidueCount 3 3 [] = 150 ∧ oneAnchorResidueCount 3 4 [] = 360 := by decide +kernel
 set_option maxRecDepth 100000 in
 theorem anchor_pos2_ordinary_counts :
     oneAnchorResidueCount 2 2 [none] = 30 ∧ oneAnchorResidueCount 2 3 [none] = 240 ∧
     oneAnchorResidueCount 2 4 [none] = 360 ∧ oneAnchorResidueCount 2 2 [] = 6 ∧
-    oneAnchorResidueCount 2 3 [] = 150 ∧ oneAnchorResidueCount 2 4 [] = 480 := by decide
+    oneAnchorResidueCount 2 3 [] = 150 ∧ oneAnchorResidueCount 2 4 [] = 480 := by decide +kernel
 
 -/
 
@@ -1258,71 +1278,71 @@ def allWordCrossedCount (n e : Nat) : Nat :=
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-theorem all_word_1_counts : allWordCount 1 0 [none] = 1 ∧ allWordCount 1 1 [] = 6 := by decide
-theorem all_word_1_exhaustive : ∀ v : Fin 1 → ReducerSymbol, let r := (reduceProjectorWord 1 (allWord v)).2; r=[] ∨ r=[none] := by decide
+theorem all_word_1_counts : allWordCount 1 0 [none] = 1 ∧ allWordCount 1 1 [] = 6 := by decide +kernel
+theorem all_word_1_exhaustive : ∀ v : Fin 1 → ReducerSymbol, let r := (reduceProjectorWord 1 (allWord v)).2; r=[] ∨ r=[none] := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in theorem all_word_2_counts : allWordCount 2 0 [none]=1 ∧ allWordCount 2 1 [none]=12 ∧ allWordCount 2 1 []=6 ∧ allWordCount 2 2 []=30 := by decide
-set_option maxRecDepth 100000 in theorem all_word_2_exhaustive : ∀ v : Fin 2 → ReducerSymbol, let r := (reduceProjectorWord 2 (allWord v)).2; r=[] ∨ r=[none] := by decide
+set_option maxRecDepth 100000 in theorem all_word_2_counts : allWordCount 2 0 [none]=1 ∧ allWordCount 2 1 [none]=12 ∧ allWordCount 2 1 []=6 ∧ allWordCount 2 2 []=30 := by decide +kernel
+set_option maxRecDepth 100000 in theorem all_word_2_exhaustive : ∀ v : Fin 2 → ReducerSymbol, let r := (reduceProjectorWord 2 (allWord v)).2; r=[] ∨ r=[none] := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in theorem all_word_3_counts : allWordCount 3 0 [none]=1 ∧ allWordCount 3 1 [none]=30 ∧ allWordCount 3 2 [none]=90 ∧ allWordCount 3 1 []=6 ∧ allWordCount 3 2 []=96 ∧ allWordCount 3 3 []=120 := by decide
-set_option maxRecDepth 100000 in theorem all_word_3_exhaustive : ∀ v : Fin 3 → ReducerSymbol, let r := (reduceProjectorWord 3 (allWord v)).2; r=[] ∨ r=[none] := by decide
+set_option maxRecDepth 100000 in theorem all_word_3_counts : allWordCount 3 0 [none]=1 ∧ allWordCount 3 1 [none]=30 ∧ allWordCount 3 2 [none]=90 ∧ allWordCount 3 1 []=6 ∧ allWordCount 3 2 []=96 ∧ allWordCount 3 3 []=120 := by decide +kernel
+set_option maxRecDepth 100000 in theorem all_word_3_exhaustive : ∀ v : Fin 3 → ReducerSymbol, let r := (reduceProjectorWord 3 (allWord v)).2; r=[] ∨ r=[none] := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 1000000 in theorem all_word_4_counts : allWordCount 4 0 [none]=1 ∧ allWordCount 4 1 [none]=54 ∧ allWordCount 4 2 [none]=432 ∧ allWordCount 4 3 [none]=480 ∧ allWordCount 4 1 []=6 ∧ allWordCount 4 2 []=198 ∧ allWordCount 4 3 []=870 ∧ allWordCount 4 4 []=360 := by decide
-set_option maxRecDepth 100000 in set_option maxHeartbeats 1000000 in theorem all_word_4_exhaustive : ∀ v : Fin 4 → ReducerSymbol, let r := (reduceProjectorWord 4 (allWord v)).2; r=[] ∨ r=[none] := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 1000000 in theorem all_word_4_counts : allWordCount 4 0 [none]=1 ∧ allWordCount 4 1 [none]=54 ∧ allWordCount 4 2 [none]=432 ∧ allWordCount 4 3 [none]=480 ∧ allWordCount 4 1 []=6 ∧ allWordCount 4 2 []=198 ∧ allWordCount 4 3 []=870 ∧ allWordCount 4 4 []=360 := by decide +kernel
+set_option maxRecDepth 100000 in set_option maxHeartbeats 1000000 in theorem all_word_4_exhaustive : ∀ v : Fin 4 → ReducerSymbol, let r := (reduceProjectorWord 4 (allWord v)).2; r=[] ∨ r=[none] := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p0 : allWordCount 5 0 [none] = 1 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p0 : allWordCount 5 0 [none] = 1 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p1 : allWordCount 5 1 [none] = 84 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p1 : allWordCount 5 1 [none] = 84 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p2 : allWordCount 5 2 [none] = 1254 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p2 : allWordCount 5 2 [none] = 1254 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p3 : allWordCount 5 3 [none] = 4020 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p3 : allWordCount 5 3 [none] = 4020 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p4 : allWordCount 5 4 [none] = 1800 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p4 : allWordCount 5 4 [none] = 1800 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p5 : allWordCount 5 5 [none] = 0 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_p5 : allWordCount 5 5 [none] = 0 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i0 : allWordCount 5 0 [] = 0 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i0 : allWordCount 5 0 [] = 0 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i1 : allWordCount 5 1 [] = 6 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i1 : allWordCount 5 1 [] = 6 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i2 : allWordCount 5 2 [] = 336 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i2 : allWordCount 5 2 [] = 336 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i3 : allWordCount 5 3 [] = 3156 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i3 : allWordCount 5 3 [] = 3156 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i4 : allWordCount 5 4 [] = 5400 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i4 : allWordCount 5 4 [] = 5400 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
-set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i5 : allWordCount 5 5 [] = 720 := by decide
+set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all_word_5_i5 : allWordCount 5 5 [] = 720 := by decide +kernel
 end CompleteMUBFiveMoment
 
 namespace CompleteMUBFiveMoment
@@ -1330,7 +1350,7 @@ set_option maxRecDepth 100000 in set_option maxHeartbeats 2000000 in theorem all
     ∀ v : Fin 5 → ReducerSymbol,
       let out := reduceProjectorWord 5 (allWord v)
       out.2 = [] ∨ out.2 = [none] ∨
-        (out = (0, allWord v) ∧ isCrossedResidue (allWord v)) := by decide
+        (out = (0, allWord v) ∧ isCrossedResidue (allWord v)) := by decide +kernel
 end CompleteMUBFiveMoment
 
 open scoped BigOperators Matrix ComplexConjugate ComplexOrder
@@ -2604,8 +2624,8 @@ theorem anchored_first_moment_all_words
     CompleteMUBFiveMoment.weighted_residue_eq_counts 1 (by omega) []]
   rw [assignment_eval_anchor, assignment_eval_nil]
   rcases all_word_1_counts with ⟨hp0, hi1⟩
-  have hp1 : allWordCount 1 1 [none] = 0 := by decide
-  have hi0 : allWordCount 1 0 [] = 0 := by decide
+  have hp1 : allWordCount 1 1 [none] = 0 := by decide +kernel
+  have hi0 : allWordCount 1 0 [] = 0 := by decide +kernel
   have hp2 := allWordCount_eq_zero_of_fuel_lt 1 2 [none] (by omega)
   have hp3 := allWordCount_eq_zero_of_fuel_lt 1 3 [none] (by omega)
   have hp4 := allWordCount_eq_zero_of_fuel_lt 1 4 [none] (by omega)
@@ -2634,8 +2654,8 @@ theorem anchored_second_moment_all_words
     CompleteMUBFiveMoment.weighted_residue_eq_counts 2 (by omega) []]
   rw [assignment_eval_anchor, assignment_eval_nil]
   rcases all_word_2_counts with ⟨hp0, hp1, hi1, hi2⟩
-  have hp2 : allWordCount 2 2 [none] = 0 := by decide
-  have hi0 : allWordCount 2 0 [] = 0 := by decide
+  have hp2 : allWordCount 2 2 [none] = 0 := by decide +kernel
+  have hi0 : allWordCount 2 0 [] = 0 := by decide +kernel
   have hp3 := allWordCount_eq_zero_of_fuel_lt 2 3 [none] (by omega)
   have hp4 := allWordCount_eq_zero_of_fuel_lt 2 4 [none] (by omega)
   have hp5 := allWordCount_eq_zero_of_fuel_lt 2 5 [none] (by omega)
@@ -2663,8 +2683,8 @@ theorem anchored_third_moment_all_words
     CompleteMUBFiveMoment.weighted_residue_eq_counts 3 (by omega) []]
   rw [assignment_eval_anchor, assignment_eval_nil]
   rcases all_word_3_counts with ⟨hp0, hp1, hp2, hi1, hi2, hi3⟩
-  have hp3 : allWordCount 3 3 [none] = 0 := by decide
-  have hi0 : allWordCount 3 0 [] = 0 := by decide
+  have hp3 : allWordCount 3 3 [none] = 0 := by decide +kernel
+  have hi0 : allWordCount 3 0 [] = 0 := by decide +kernel
   have hp4 := allWordCount_eq_zero_of_fuel_lt 3 4 [none] (by omega)
   have hp5 := allWordCount_eq_zero_of_fuel_lt 3 5 [none] (by omega)
   have hi4 := allWordCount_eq_zero_of_fuel_lt 3 4 [] (by omega)
@@ -3196,5 +3216,557 @@ theorem complete_mub_degree_five_parent_and_visibility
   exact ⟨complete_mub_degree_five_parent V hV,
     CompleteMUBDegreeFiveAssembly.generalizedVisibility_conversion⟩
 
+
+end CompleteMUBDegreeFiveParent
+
+namespace CompleteMUBDegreeFiveAssembly
+
+noncomputable section
+
+/-- The improved quadratic filter, with integer coefficients. -/
+def improvedFilter (S : Mat6) : Mat6 :=
+  (20 : ℝ) • S ^ 2 - (45 : ℝ) • S + (18 : ℝ) • (1 : Mat6)
+
+/-- An odd sum-of-squares kernel, positive on every positive semidefinite input. -/
+def improvedKernel (S : Mat6) : Mat6 :=
+  (improvedFilter S)ᴴ * S * improvedFilter S
+
+def improvedPolynomial (S : Mat6) : Mat6 :=
+  (400 : ℝ) • S ^ 5 - (1800 : ℝ) • S ^ 4 + (2745 : ℝ) • S ^ 3 -
+    (1620 : ℝ) • S ^ 2 + (324 : ℝ) • S
+
+def improvedParent (P : Fin 7 → Fin 6 → Mat6) (j : Assignment6) : Mat6 :=
+  (1 / 477677088 : ℝ) • improvedKernel (selectedSum P j)
+
+theorem improvedKernel_posSemidef {S : Mat6} (hS : S.PosSemidef) :
+    (improvedKernel S).PosSemidef :=
+  hS.conjTranspose_mul_mul_same (improvedFilter S)
+
+theorem improvedKernel_eq_polynomial {S : Mat6} (hS : S.IsHermitian) :
+    improvedKernel S = improvedPolynomial S := by
+  unfold improvedKernel improvedFilter improvedPolynomial
+  simp only [Matrix.conjTranspose_mul, Matrix.conjTranspose_add,
+    Matrix.conjTranspose_sub, Matrix.conjTranspose_smul, Matrix.conjTranspose_pow,
+    Matrix.conjTranspose_one, hS.eq]
+  norm_num
+  simp only [sub_mul, mul_sub, add_mul, mul_add,
+    Algebra.smul_mul_assoc, Algebra.mul_smul_comm,
+    one_mul, mul_one, pow_succ, pow_zero, mul_assoc]
+  module
+
+theorem conditionalImprovedKernel_eq
+    {P : Fin 7 → Fin 6 → Mat6}
+    (hP : ∀ x a, (P x a).PosSemidef)
+    (hm : FifthMomentIdentities P) (x : Fin 7) (a : Fin 6) :
+    (∑ j : Assignment6,
+      if j x = a then improvedKernel (selectedSum P j) else 0) =
+      (145507104 : ℝ) • P x a + (55361664 : ℝ) • (1 : Mat6) := by
+  have hk (j : Assignment6) :=
+    improvedKernel_eq_polynomial (selectedSum_posSemidef hP j).isHermitian
+  simp_rw [hk]
+  have hexpand :
+      (∑ j : Assignment6,
+        if j x = a then improvedPolynomial (selectedSum P j) else 0) =
+        (400 : ℝ) • conditionalPower P 5 x a -
+          (1800 : ℝ) • conditionalPower P 4 x a +
+          (2745 : ℝ) • conditionalPower P 3 x a -
+          (1620 : ℝ) • conditionalPower P 2 x a +
+          (324 : ℝ) • conditionalPower P 1 x a := by
+    have hpoint (j : Assignment6) :
+        (if j x = a then improvedPolynomial (selectedSum P j) else 0) =
+          (400 : ℝ) • (if j x = a then selectedSum P j ^ 5 else 0) -
+          (1800 : ℝ) • (if j x = a then selectedSum P j ^ 4 else 0) +
+          (2745 : ℝ) • (if j x = a then selectedSum P j ^ 3 else 0) -
+          (1620 : ℝ) • (if j x = a then selectedSum P j ^ 2 else 0) +
+          (324 : ℝ) • (if j x = a then selectedSum P j else 0) := by
+      by_cases h : j x = a <;> simp [h, improvedPolynomial]
+    simp_rw [hpoint]
+    simp only [Finset.sum_add_distrib, Finset.sum_sub_distrib,
+      conditionalPower, pow_one]
+    repeat rw [← Finset.smul_sum]
+  rw [hexpand, hm.power_five x a, hm.power_four x a,
+    hm.power_three x a, hm.power_two x a, hm.power_one x a]
+  module
+
+theorem conditionalImprovedParent_eq
+    {P : Fin 7 → Fin 6 → Mat6}
+    (hP : ∀ x a, (P x a).PosSemidef)
+    (hm : FifthMomentIdentities P) (x : Fin 7) (a : Fin 6) :
+    (∑ j : Assignment6,
+      if j x = a then improvedParent P j else 0) =
+      (56137 / 184289 : ℝ) • P x a +
+        (64076 / 552867 : ℝ) • (1 : Mat6) := by
+  have hscale : (∑ j : Assignment6,
+      if j x = a then improvedParent P j else 0) =
+      (1 / 477677088 : ℝ) • ∑ j : Assignment6,
+        if j x = a then improvedKernel (selectedSum P j) else 0 := by
+    rw [Finset.smul_sum]
+    apply Finset.sum_congr rfl
+    intro j _
+    by_cases h : j x = a <;> simp [h, improvedParent]
+  rw [hscale, conditionalImprovedKernel_eq hP hm x a]
+  module
+
+theorem improvedParentAssembly
+    {P : Fin 7 → Fin 6 → Mat6}
+    (hP : ∀ x a, (P x a).PosSemidef)
+    (hcomplete : ∀ x, ∑ a, P x a = 1)
+    (hm : FifthMomentIdentities P) :
+    IsDepolarizingParent P (56137 / 184289) (improvedParent P) := by
+  refine ⟨?_, ?_, ?_⟩
+  · intro j
+    apply Matrix.nonneg_iff_posSemidef.mp
+    exact smul_nonneg (by norm_num) <|
+      Matrix.nonneg_iff_posSemidef.mpr <|
+        improvedKernel_posSemidef (selectedSum_posSemidef hP j)
+  · have hpartition (x : Fin 7) :
+        (∑ j : Assignment6, improvedParent P j) =
+          ∑ a : Fin 6, ∑ j : Assignment6,
+            if j x = a then improvedParent P j else 0 := by
+      rw [Finset.sum_comm]
+      apply Finset.sum_congr rfl
+      intro j hj
+      simp
+    rw [hpartition 0]
+    simp_rw [conditionalImprovedParent_eq hP hm]
+    rw [Finset.sum_add_distrib, ← Finset.smul_sum, hcomplete 0]
+    simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin]
+    module
+  · intro x a
+    rw [conditionalImprovedParent_eq hP hm x a]
+    congr 1
+    norm_num
+
+end
+end CompleteMUBDegreeFiveAssembly
+
+namespace CompleteMUBDegreeFiveParent
+
+/-- The improved explicit parent for every hypothetical complete dimension-six
+MUB family. No conditional moment is assumed: all five are proved above. -/
+theorem complete_mub_improved_degree_five_parent
+    (V : Fin 7 → Mat6) (hV : IsMUBFamily V) :
+    CompleteMUBDegreeFiveAssembly.IsDepolarizingParent
+      (fun x a => projector (V x) a) (56137 / 184289)
+      (CompleteMUBDegreeFiveAssembly.improvedParent
+        (fun x a => projector (V x) a)) := by
+  apply CompleteMUBDegreeFiveAssembly.improvedParentAssembly
+    (fun x a => projector_posSemidef (V x) a)
+    (complete_family_projector_sum V hV)
+  apply projectorMomentIdentities_of_fifth V hV
+  intro x a
+  exact CompleteMUBDegreeFiveCount.anchored_fifth_moment_all_words
+    (V x) (fun y => V (x.succAbove y))
+    (CompleteMUBFiveMoment.isMUBFamily_cons_succAbove V hV x) a
+
+/-- The improved parent, generalized visibility, and strict increase over the
+previous rational construction. This is not an optimality claim over all POVMs. -/
+theorem complete_mub_improved_parent_and_visibility
+    (V : Fin 7 → Mat6) (hV : IsMUBFamily V) :
+    CompleteMUBDegreeFiveAssembly.IsDepolarizingParent
+        (fun x a => projector (V x) a) (56137 / 184289)
+        (CompleteMUBDegreeFiveAssembly.improvedParent
+          (fun x a => projector (V x) a)) ∧
+      (1 + 5 * (56137 / 184289 : ℝ)) / 6 = 232487 / 552867 ∧
+      (4415 / 14497 : ℝ) < 56137 / 184289 := by
+  refine ⟨complete_mub_improved_degree_five_parent V hV, ?_, ?_⟩ <;> norm_num
+
+end CompleteMUBDegreeFiveParent
+
+
+/-! Exact optimization of the quadratic-filter Rayleigh quotient arising from
+the five complete dimension-six MUB moments. The separate parent assembly
+connects this scalar optimization to actual positive operator measures. -/
+
+namespace QuadraticParentOptimum
+noncomputable section
+open scoped BigOperators
+
+def numerator (a b c : ℝ) : ℝ :=
+  36*a^2+216*a*b+612*a*c+306*b^2+1744*b*c+2513*c^2
+
+def denominator (a b c : ℝ) : ℝ :=
+  252*a^2+1008*a*b+2436*a*c+1218*b^2+6412*b*c+8827*c^2
+
+def cubic (z : ℝ) : ℝ := 42875*z^3-12495*z^2-609*z+133
+
+theorem denominator_sos (a b c : ℝ) :
+    denominator a b c =
+      7*(6*a+12*b+29*c)^2+(70/3)*(3*b+11*c)^2+(350/3)*c^2 := by
+  unfold denominator
+  ring
+
+theorem denominator_pos (a b c : ℝ) (h : a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) :
+    0 < denominator a b c := by
+  rw [denominator_sos]
+  have h0 := sq_nonneg (6*a+12*b+29*c)
+  have h1 := sq_nonneg (3*b+11*c)
+  have h2 := sq_nonneg c
+  by_contra hn
+  have hc : c = 0 := by nlinarith
+  subst c
+  have hb : b = 0 := by nlinarith [sq_nonneg b]
+  subst b
+  have ha : a = 0 := by nlinarith [sq_nonneg a]
+  rcases h with h | h | h <;> contradiction
+
+def pivot (z : ℝ) : ℝ := 252*z-36
+def minor (z : ℝ) : ℝ := 52920*z^2-12096*z-648
+def off12 (z : ℝ) : ℝ := 504*z-108
+def off13 (z : ℝ) : ℝ := 1218*z-306
+def cross (z : ℝ) : ℝ := pivot z*(3206*z-872)-off12 z*off13 z
+
+theorem pivots_pos (z : ℝ) (hz : 3/10 ≤ z) : 0 < pivot z ∧ 0 < minor z := by
+  constructor
+  · dsimp [pivot]; linarith
+  · dsimp [minor]
+    nlinarith [sq_nonneg (z-3/10)]
+
+/-- Fraction-free LDL certificate for the pencil z N - A. -/
+theorem pencil_sos (z a b c : ℝ) :
+    pivot z * minor z * (z*denominator a b c-numerator a b c) =
+      minor z * (pivot z*a+off12 z*b+off13 z*c)^2 +
+        (minor z*b+cross z*c)^2 + pivot z*144*cubic z*c^2 := by
+  unfold cross pivot minor off12 off13 cubic denominator numerator
+  ring
+
+theorem quotient_le_root (z : ℝ) (hz : 3/10 ≤ z) (hroot : cubic z = 0)
+    (a b c : ℝ) (h : a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) :
+    numerator a b c / denominator a b c ≤ z := by
+  have hp := pivots_pos z hz
+  have hprod : 0 < pivot z * minor z := mul_pos hp.1 hp.2
+  have hs := pencil_sos z a b c
+  rw [hroot] at hs
+  have hnonneg : 0 ≤ pivot z * minor z *
+      (z*denominator a b c-numerator a b c) := by
+    rw [hs]
+    simp only [mul_zero, zero_mul, add_zero]
+    exact add_nonneg (mul_nonneg (le_of_lt hp.2) (sq_nonneg _)) (sq_nonneg _)
+  have hdiff : 0 ≤ z*denominator a b c-numerator a b c :=
+    nonneg_of_mul_nonneg_right hnonneg hprod
+  exact (div_le_iff₀ (denominator_pos a b c h)).mpr (by linarith)
+
+theorem root_attained (z : ℝ) (hz : 3/10 ≤ z) (hroot : cubic z = 0) :
+    ∃ a b c : ℝ, (a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) ∧
+      numerator a b c / denominator a b c = z := by
+  let a := off12 z*cross z-off13 z*minor z
+  let b := -(pivot z)*cross z
+  let c := pivot z*minor z
+  have hp := pivots_pos z hz
+  have hc : 0 < c := mul_pos hp.1 hp.2
+  have hn : a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0 := Or.inr (Or.inr (ne_of_gt hc))
+  refine ⟨a, b, c, hn, ?_⟩
+  have hs := pencil_sos z a b c
+  have h1 : pivot z*a+off12 z*b+off13 z*c = 0 := by dsimp [a,b,c]; ring
+  have h2 : minor z*b+cross z*c = 0 := by dsimp [b,c]; ring
+  rw [h1,h2,hroot] at hs
+  have he : z*denominator a b c-numerator a b c = 0 := by
+    have hp0 : pivot z * minor z ≠ 0 := ne_of_gt (mul_pos hp.1 hp.2)
+    apply (mul_eq_zero.mp (show pivot z * minor z *
+      (z*denominator a b c-numerator a b c) = 0 by simpa using hs)).resolve_left hp0
+  apply (div_eq_iff (ne_of_gt (denominator_pos a b c hn))).mpr
+  linarith
+
+theorem cubic_strictMono : StrictMonoOn cubic (Set.Ici (3/10 : ℝ)) := by
+  intro x hx y hy hxy
+  have hx' : 3/10 ≤ x := hx
+  have hy' : 3/10 ≤ y := hy
+  have hfactor : 0 < 42875*(y^2+y*x+x^2)-12495*(y+x)-609 := by
+    nlinarith [sq_nonneg (x-3/10), sq_nonneg (y-3/10),
+      mul_nonneg (sub_nonneg.mpr hx') (sub_nonneg.mpr hy')]
+  have hp := mul_pos (sub_pos.mpr hxy) hfactor
+  have he : cubic y-cubic x =
+      (y-x)*(42875*(y^2+y*x+x^2)-12495*(y+x)-609) := by unfold cubic; ring
+  linarith
+
+/-- A largest real root exists, lies in an explicit rational interval, and is
+exactly the attained maximum of the quadratic-filter quotient. -/
+theorem exact_optimum : ∃ z : ℝ,
+    56137/184289 ≤ z ∧ z ≤ 31/100 ∧ cubic z = 0 ∧
+    (∀ y : ℝ, cubic y = 0 → y ≤ z) ∧
+    (∀ a b c : ℝ, (a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) →
+      numerator a b c / denominator a b c ≤ z) ∧
+    (∃ a b c : ℝ, (a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) ∧
+      numerator a b c / denominator a b c = z) := by
+  have hcont : Continuous cubic := by unfold cubic; fun_prop
+  have hbounds : (0 : ℝ) ∈ Set.Icc (cubic (56137/184289)) (cubic (31/100)) := by
+    norm_num [cubic, Set.mem_Icc]
+  obtain ⟨z, hz, hr⟩ := intermediate_value_Icc
+    (show (56137/184289 : ℝ) ≤ 31/100 by norm_num) hcont.continuousOn hbounds
+  have hz0 : 3/10 ≤ z := le_trans (by norm_num) hz.1
+  refine ⟨z,hz.1,hz.2,hr,?_,quotient_le_root z hz0 hr,root_attained z hz0 hr⟩
+  intro y hy
+  by_contra h
+  have hzy : z < y := lt_of_not_ge h
+  have hy0 : y ∈ Set.Ici (3/10 : ℝ) := le_trans hz0 (le_of_lt hzy)
+  have hh := cubic_strictMono hz0 hy0 hzy
+  rw [hr,hy] at hh
+  exact (lt_irrefl 0) hh
+
+/-- Sums of quadratic-filter squares cannot exceed the same optimum. -/
+theorem sums_quotient_le_root {ι : Type*} [Fintype ι]
+    (z : ℝ) (hz : 3/10 ≤ z) (hr : cubic z = 0)
+    (a b c : ι → ℝ) (h : ∃ i, a i ≠ 0 ∨ b i ≠ 0 ∨ c i ≠ 0) :
+    (∑ i, numerator (a i) (b i) (c i)) /
+        (∑ i, denominator (a i) (b i) (c i)) ≤ z := by
+  classical
+  have hnon (i : ι) : 0 ≤ denominator (a i) (b i) (c i) := by
+    rw [denominator_sos]; positivity
+  have hpos : 0 < ∑ i, denominator (a i) (b i) (c i) := by
+    obtain ⟨i,hi⟩ := h
+    exact Finset.sum_pos' (fun j _ => hnon j) ⟨i, Finset.mem_univ i,
+      denominator_pos (a i) (b i) (c i) hi⟩
+  apply (div_le_iff₀ hpos).mpr
+  rw [Finset.mul_sum]
+  apply Finset.sum_le_sum
+  intro i _
+  by_cases hi : a i ≠ 0 ∨ b i ≠ 0 ∨ c i ≠ 0
+  · exact (div_le_iff₀ (denominator_pos (a i) (b i) (c i) hi)).mp
+      (quotient_le_root z hz hr (a i) (b i) (c i) hi)
+  · push_neg at hi
+    simp [numerator, denominator, hi.1, hi.2.1, hi.2.2]
+
+end
+end QuadraticParentOptimum
+
+
+namespace QuadraticFilterParent
+open scoped BigOperators Matrix MatrixOrder ComplexConjugate ComplexOrder
+noncomputable section
+abbrev Mat := Matrix (Fin 6) (Fin 6) ℂ
+abbrev Assignment := Fin 7 → Fin 6
+def selected (P : Fin 7 → Fin 6 → Mat) (j : Assignment) : Mat := ∑ x, P x (j x)
+def conditional (P : Fin 7 → Fin 6 → Mat) (m : ℕ) (x : Fin 7) (a : Fin 6) : Mat :=
+  ∑ j : Assignment, if j x = a then selected P j ^ m else 0
+
+structure Moments (P : Fin 7 → Fin 6 → Mat) : Prop where
+  one : ∀ x a, conditional P 1 x a = (46656 : ℝ) • P x a + (46656 : ℝ) • (1 : Mat)
+  two : ∀ x a, conditional P 2 x a = (139968 : ℝ) • P x a + (85536 : ℝ) • (1 : Mat)
+  three : ∀ x a, conditional P 3 x a = (396576 : ℝ) • P x a + (196992 : ℝ) • (1 : Mat)
+  four : ∀ x a, conditional P 4 x a = (1130112 : ℝ) • P x a + (504144 : ℝ) • (1 : Mat)
+  five : ∀ x a, conditional P 5 x a = (3256848 : ℝ) • P x a + (1363824 : ℝ) • (1 : Mat)
+
+def filter (a b c : ℝ) (S : Mat) : Mat := a • (1 : Mat) + b • S + c • S^2
+def kernel (a b c : ℝ) (S : Mat) : Mat := (filter a b c S)ᴴ * S * filter a b c S
+def polynomial (a b c : ℝ) (S : Mat) : Mat :=
+  c^2 • S^5 + (2*b*c) • S^4 + (b^2+2*a*c) • S^3 + (2*a*b) • S^2 + a^2 • S
+def parent (P : Fin 7 → Fin 6 → Mat) (a b c : ℝ) (j : Assignment) : Mat :=
+  (1 / (1296 * QuadraticParentOptimum.denominator a b c)) • kernel a b c (selected P j)
+def IsParent (P : Fin 7 → Fin 6 → Mat) (eta : ℝ) (G : Assignment → Mat) : Prop :=
+  (∀ j, (G j).PosSemidef) ∧ (∑ j, G j) = 1 ∧ ∀ x a,
+    (∑ j, if j x = a then G j else 0) = eta • P x a + ((1-eta)/6) • (1 : Mat)
+
+theorem selected_pos {P : Fin 7 → Fin 6 → Mat}
+    (hP : ∀ x a, (P x a).PosSemidef) (j : Assignment) : (selected P j).PosSemidef := by
+  apply Matrix.nonneg_iff_posSemidef.mp
+  exact Finset.sum_nonneg fun x _ => Matrix.nonneg_iff_posSemidef.mpr (hP x (j x))
+
+theorem kernel_eq (a b c : ℝ) {S : Mat} (hS : S.IsHermitian) :
+    kernel a b c S = polynomial a b c S := by
+  unfold kernel filter polynomial
+  simp only [Matrix.conjTranspose_add, Matrix.conjTranspose_smul,
+    Matrix.conjTranspose_pow, Matrix.conjTranspose_one, hS.eq, star_trivial]
+  simp only [add_mul, mul_add, Algebra.smul_mul_assoc, Algebra.mul_smul_comm,
+    one_mul, mul_one, pow_succ, pow_zero, mul_assoc]
+  module
+
+theorem conditional_kernel {P : Fin 7 → Fin 6 → Mat}
+    (hP : ∀ x a, (P x a).PosSemidef) (hM : Moments P) (a b c : ℝ)
+    (x : Fin 7) (y : Fin 6) :
+    (∑ j : Assignment, if j x = y then kernel a b c (selected P j) else 0) =
+      (1296 * QuadraticParentOptimum.numerator a b c) • P x y +
+      (216 * (QuadraticParentOptimum.denominator a b c -
+        QuadraticParentOptimum.numerator a b c)) • (1 : Mat) := by
+  simp_rw [kernel_eq a b c (selected_pos hP _).isHermitian]
+  have hpoint (j : Assignment) :
+      (if j x = y then polynomial a b c (selected P j) else 0) =
+        c^2 • (if j x = y then selected P j ^ 5 else 0) +
+        (2*b*c) • (if j x = y then selected P j ^ 4 else 0) +
+        (b^2+2*a*c) • (if j x = y then selected P j ^ 3 else 0) +
+        (2*a*b) • (if j x = y then selected P j ^ 2 else 0) +
+        a^2 • (if j x = y then selected P j ^ 1 else 0) := by
+    by_cases h : j x = y <;> simp [h, polynomial]
+  simp_rw [hpoint]
+  simp only [Finset.sum_add_distrib, ← Finset.smul_sum]
+  change c^2 • conditional P 5 x y + (2*b*c) • conditional P 4 x y +
+    (b^2+2*a*c) • conditional P 3 x y + (2*a*b) • conditional P 2 x y +
+    a^2 • conditional P 1 x y = _
+  rw [hM.five, hM.four, hM.three, hM.two, hM.one]
+  unfold QuadraticParentOptimum.numerator QuadraticParentOptimum.denominator
+  module
+
+theorem conditional_parent {P : Fin 7 → Fin 6 → Mat}
+    (hP : ∀ x a, (P x a).PosSemidef) (hM : Moments P) (a b c : ℝ)
+    (hne : a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) (x : Fin 7) (y : Fin 6) :
+    (∑ j : Assignment, if j x = y then parent P a b c j else 0) =
+      (QuadraticParentOptimum.numerator a b c / QuadraticParentOptimum.denominator a b c) •
+        P x y + ((1-QuadraticParentOptimum.numerator a b c /
+          QuadraticParentOptimum.denominator a b c)/6) • (1 : Mat) := by
+  have hscale : (∑ j : Assignment, if j x = y then parent P a b c j else 0) =
+      (1 / (1296 * QuadraticParentOptimum.denominator a b c)) •
+        ∑ j : Assignment, if j x = y then kernel a b c (selected P j) else 0 := by
+    rw [Finset.smul_sum]
+    apply Finset.sum_congr rfl
+    intro j _
+    by_cases h : j x = y <;> simp [h, parent]
+  rw [hscale, conditional_kernel hP hM a b c x y, smul_add, smul_smul, smul_smul]
+  have hn := ne_of_gt (QuadraticParentOptimum.denominator_pos a b c hne)
+  congr 2 <;> field_simp <;> ring
+
+/-- Every nonzero quadratic filter gives a fully normalized positive parent
+from the exact five moments. No sign restriction on its numerator is assumed. -/
+theorem parent_assembly {P : Fin 7 → Fin 6 → Mat}
+    (hP : ∀ x a, (P x a).PosSemidef) (hcomplete : ∀ x, ∑ a, P x a = 1)
+    (hM : Moments P) (a b c : ℝ) (hne : a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) :
+    IsParent P (QuadraticParentOptimum.numerator a b c /
+      QuadraticParentOptimum.denominator a b c) (parent P a b c) := by
+  have hn := QuadraticParentOptimum.denominator_pos a b c hne
+  refine ⟨?_, ?_, conditional_parent hP hM a b c hne⟩
+  · intro j
+    apply Matrix.nonneg_iff_posSemidef.mp
+    exact smul_nonneg (by positivity) <| Matrix.nonneg_iff_posSemidef.mpr <|
+      (selected_pos hP j).conjTranspose_mul_mul_same (filter a b c (selected P j))
+  · have hpartition : (∑ j : Assignment, parent P a b c j) =
+        ∑ y : Fin 6, ∑ j : Assignment, if j 0 = y then parent P a b c j else 0 := by
+      rw [Finset.sum_comm]
+      apply Finset.sum_congr rfl
+      intro j _
+      simp
+    rw [hpartition]
+    simp_rw [conditional_parent hP hM a b c hne]
+    rw [Finset.sum_add_distrib, ← Finset.smul_sum, hcomplete 0]
+    simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin]
+    module
+
+def sumParent {ι : Type*} [Fintype ι] (P : Fin 7 → Fin 6 → Mat)
+    (a b c : ι → ℝ) (j : Assignment) : Mat :=
+  (1 / (1296 * ∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i))) •
+    ∑ i, kernel (a i) (b i) (c i) (selected P j)
+
+theorem sum_denominator_pos {ι : Type*} [Fintype ι] (a b c : ι → ℝ)
+    (h : ∃ i, a i ≠ 0 ∨ b i ≠ 0 ∨ c i ≠ 0) :
+    0 < ∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i) := by
+  classical
+  obtain ⟨i,hi⟩ := h
+  refine Finset.sum_pos' (fun j _ => ?_) ⟨i, Finset.mem_univ i,
+    QuadraticParentOptimum.denominator_pos (a i) (b i) (c i) hi⟩
+  rw [QuadraticParentOptimum.denominator_sos]
+  positivity
+
+theorem conditional_sum_kernel {ι : Type*} [Fintype ι]
+    {P : Fin 7 → Fin 6 → Mat} (hP : ∀ x a, (P x a).PosSemidef)
+    (hM : Moments P) (a b c : ι → ℝ) (x : Fin 7) (y : Fin 6) :
+    (∑ j : Assignment, if j x = y then
+      (∑ i, kernel (a i) (b i) (c i) (selected P j)) else 0) =
+      (1296 * ∑ i, QuadraticParentOptimum.numerator (a i) (b i) (c i)) • P x y +
+        (216 * ((∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i)) -
+          ∑ i, QuadraticParentOptimum.numerator (a i) (b i) (c i))) • (1 : Mat) := by
+  have hpoint (j : Assignment) :
+      (if j x = y then (∑ i, kernel (a i) (b i) (c i) (selected P j)) else 0) =
+        ∑ i, if j x = y then kernel (a i) (b i) (c i) (selected P j) else 0 := by
+    by_cases h : j x = y <;> simp [h]
+  simp_rw [hpoint]
+  rw [Finset.sum_comm]
+  simp_rw [conditional_kernel hP hM]
+  simp only [Finset.sum_add_distrib, ← Finset.sum_smul, ← Finset.mul_sum,
+    Finset.sum_sub_distrib]
+
+theorem conditional_sum_parent {ι : Type*} [Fintype ι]
+    {P : Fin 7 → Fin 6 → Mat} (hP : ∀ x a, (P x a).PosSemidef)
+    (hM : Moments P) (a b c : ι → ℝ)
+    (hne : ∃ i, a i ≠ 0 ∨ b i ≠ 0 ∨ c i ≠ 0) (x : Fin 7) (y : Fin 6) :
+    (∑ j : Assignment, if j x = y then sumParent P a b c j else 0) =
+      ((∑ i, QuadraticParentOptimum.numerator (a i) (b i) (c i)) /
+        (∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i))) • P x y +
+      ((1-(∑ i, QuadraticParentOptimum.numerator (a i) (b i) (c i)) /
+        (∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i)))/6) • (1 : Mat) := by
+  have hscale : (∑ j : Assignment, if j x = y then sumParent P a b c j else 0) =
+      (1 / (1296 * ∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i))) •
+        ∑ j : Assignment, if j x = y then
+          (∑ i, kernel (a i) (b i) (c i) (selected P j)) else 0 := by
+    rw [Finset.smul_sum]
+    apply Finset.sum_congr rfl
+    intro j _
+    by_cases h : j x = y <;> simp [h, sumParent]
+  rw [hscale, conditional_sum_kernel hP hM a b c x y, smul_add, smul_smul, smul_smul]
+  have hn := ne_of_gt (sum_denominator_pos a b c hne)
+  congr 2 <;> field_simp <;> ring
+
+/-- An arbitrary nonempty sum of squares of common quadratic filters also
+gives a positive normalized parent, with its exact quotient visibility. -/
+theorem sum_parent_assembly {ι : Type*} [Fintype ι]
+    {P : Fin 7 → Fin 6 → Mat} (hP : ∀ x a, (P x a).PosSemidef)
+    (hcomplete : ∀ x, ∑ a, P x a = 1) (hM : Moments P) (a b c : ι → ℝ)
+    (hne : ∃ i, a i ≠ 0 ∨ b i ≠ 0 ∨ c i ≠ 0) :
+    IsParent P ((∑ i, QuadraticParentOptimum.numerator (a i) (b i) (c i)) /
+      (∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i))) (sumParent P a b c) := by
+  have hn := sum_denominator_pos a b c hne
+  refine ⟨?_, ?_, conditional_sum_parent hP hM a b c hne⟩
+  · intro j
+    apply Matrix.nonneg_iff_posSemidef.mp
+    apply smul_nonneg (by positivity)
+    apply Finset.sum_nonneg
+    intro i _
+    exact Matrix.nonneg_iff_posSemidef.mpr <|
+      (selected_pos hP j).conjTranspose_mul_mul_same (filter (a i) (b i) (c i) (selected P j))
+  · have hpartition : (∑ j : Assignment, sumParent P a b c j) =
+        ∑ y : Fin 6, ∑ j : Assignment, if j 0 = y then sumParent P a b c j else 0 := by
+      rw [Finset.sum_comm]
+      apply Finset.sum_congr rfl
+      intro j _
+      simp
+    rw [hpartition]
+    simp_rw [conditional_sum_parent hP hM a b c hne]
+    rw [Finset.sum_add_distrib, ← Finset.smul_sum, hcomplete 0]
+    simp only [Finset.sum_const, Finset.card_univ, Fintype.card_fin]
+    module
+
+end
+end QuadraticFilterParent
+
+namespace CompleteMUBDegreeFiveParent
+
+/-- The scalar filter optimization uses the actual five complete-family moments. -/
+theorem complete_family_quadratic_moments
+    (V : Fin 7 → Mat6) (hV : IsMUBFamily V) :
+    QuadraticFilterParent.Moments (fun x a => projector (V x) a) := by
+  have hm := projectorMomentIdentities_of_fifth V hV (fun x a =>
+    CompleteMUBDegreeFiveCount.anchored_fifth_moment_all_words
+      (V x) (fun y => V (x.succAbove y))
+      (CompleteMUBFiveMoment.isMUBFamily_cons_succAbove V hV x) a)
+  exact ⟨hm.power_one, hm.power_two, hm.power_three, hm.power_four, hm.power_five⟩
+
+/-- Exact attained optimum in the common-quadratic odd-SOS parent class.
+This is a parent construction for every hypothetical seven-MUB family, not a
+claim that seven MUBs exist or that the optimum over all parents is known. -/
+theorem complete_mub_optimal_odd_sos_parent
+    (V : Fin 7 → Mat6) (hV : IsMUBFamily V) :
+    ∃ z : ℝ, 56137/184289 ≤ z ∧ z ≤ 31/100 ∧
+      QuadraticParentOptimum.cubic z = 0 ∧
+      (∀ y : ℝ, QuadraticParentOptimum.cubic y = 0 → y ≤ z) ∧
+      (∃ a b c : ℝ, (a ≠ 0 ∨ b ≠ 0 ∨ c ≠ 0) ∧
+        QuadraticFilterParent.IsParent (fun x y => projector (V x) y) z
+          (QuadraticFilterParent.parent (fun x y => projector (V x) y) a b c)) ∧
+      (∀ (m : ℕ) (a b c : Fin m → ℝ),
+        (∃ i, a i ≠ 0 ∨ b i ≠ 0 ∨ c i ≠ 0) →
+        QuadraticFilterParent.IsParent (fun x y => projector (V x) y)
+          ((∑ i, QuadraticParentOptimum.numerator (a i) (b i) (c i)) /
+            (∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i)))
+          (QuadraticFilterParent.sumParent (fun x y => projector (V x) y) a b c) ∧
+        (∑ i, QuadraticParentOptimum.numerator (a i) (b i) (c i)) /
+          (∑ i, QuadraticParentOptimum.denominator (a i) (b i) (c i)) ≤ z) := by
+  obtain ⟨z,hlo,hhi,hroot,hlargest,hbound,hattain⟩ := QuadraticParentOptimum.exact_optimum
+  have hm := complete_family_quadratic_moments V hV
+  have hp := fun x a => projector_posSemidef (V x) a
+  have hc := complete_family_projector_sum V hV
+  refine ⟨z,hlo,hhi,hroot,hlargest,?_,?_⟩
+  · obtain ⟨a,b,c,hne,he⟩ := hattain
+    refine ⟨a,b,c,hne,?_⟩
+    have hg := QuadraticFilterParent.parent_assembly hp hc hm a b c hne
+    rwa [he] at hg
+  · intro m a b c hne
+    refine ⟨QuadraticFilterParent.sum_parent_assembly hp hc hm a b c hne, ?_⟩
+    exact QuadraticParentOptimum.sums_quotient_le_root z
+      (le_trans (by norm_num) hlo) hroot a b c hne
 
 end CompleteMUBDegreeFiveParent
