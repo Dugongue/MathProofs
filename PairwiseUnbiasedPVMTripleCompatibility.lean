@@ -45,7 +45,7 @@ import Mathlib.Topology.Order.Compact
 import Mathlib.Topology.Order.IntermediateValue
 
 /-!
-# Compatibility of triples of pairwise mutually unbiased projective measurements
+# Explicit compatibility bounds for pairwise unbiased projective triples
 
 Let `P`, `Q`, and `R` be arbitrary-rank projective measurements with `n > 0`
 outcomes on a finite-dimensional complex space. If every ordered pair satisfies
@@ -59,17 +59,27 @@ Sebastien Designolle and Mate Farkas, "k-fold unbiased measurements and maximal
 incompatibility", arXiv:2609.20728v1 (2026). It does not prove that conjecture
 for arbitrary triples of PVMs.
 
-For ordinary rank-one MUB triples in every fixed dimension `n >= 3`, the same
-explicit parent works at a strictly larger visibility. A single positive
-increment is proved to work uniformly over all such triples in that fixed
-dimension. This strengthens the `(1 + x) / 3` benchmark for this rank-one MUB
-subclass, but gives no numerical increment and no increment uniform in `n`.
-The one-anchor obstruction used for strictness is the argument in Appendix B,
-proof of Theorem 4, of the cited paper.
+For every rank-one MUB triple in dimension `n >= 3`, the same parent attains
+generalized visibility `(1 + x) / 3 + epsilon`, with the explicit positive
+increment `epsilon = s*C / (36*n^4*(C + 4/n))`, where
+`s = 1 / (9*((n+2)*x^2 + 6*x + 1 + 2/n))` and
+`C = 6*x^2 + 24*x/n + 4/n + 8/n^2`. The increment depends only on dimension,
+not the particular bases. This quantifies the strict improvement previously
+obtained by compactness; it does not assert a dimension-independent increment.
+
+The proof makes quantitative the one-anchor obstruction in Appendix B,
+proof of Theorem 4, of the cited paper: a flat unitary with row sums one obeys
+`sum_ij (Re U_ij - 1/n)^2 >= 1/(144*n^2)`. Actual MUB anchor matrices satisfy
+these hypotheses. Projector identities bound complementary leakage by `4/n`,
+and an explicit matrix sum-of-squares Schur identity controls all cross terms.
+This is generalized compatibility visibility, not depolarizing visibility.
+The unrestricted arbitrary-PVM conjecture and the dimension-six MUB existence
+problem remain open; neither is claimed solved here.
 
 The file imports only Mathlib. Every definition, algebraic moment identity,
 positivity certificate, basis-to-projector bridge, and compactness argument
-needed by the exported theorems is included below.
+needed by the exported theorems is included below. All earlier results are
+retained, including the arbitrary-rank parent and uniform rank-one strictness.
 -/
 
 open scoped BigOperators Matrix MatrixOrder Matrix.Norms.L2Operator
@@ -2188,3 +2198,689 @@ theorem mub_uniform_improvement_exists (n : ℕ) (hn : 3≤n) :
   obtain ⟨ε,hε,hparent⟩ := mub_uniform_strict_compatibility n hn x hx hroot
   exact ⟨x,ε,hx,hroot,hε,hparent⟩
 end
+
+/-! Quantitative flat-unitary estimates used in the explicit triple-compatibility
+margin. Intermediate estimates here are not by themselves the parent theorem. -/
+namespace QuantitativeFlatUnitaryGap
+open scoped BigOperators ComplexConjugate Matrix.Norms.Frobenius
+open Matrix
+noncomputable section
+set_option maxHeartbeats 1200000
+
+theorem square_rounding_lipschitz (a b c t : ℝ) (hb : 0 ≤ b) (hc : 0 < c)
+    (he : a^2+b^2=c^2+t^2) (hr : (a+t)^2 ≤ 4*c^2) :
+    (b-c)^2 ≤ 4*(a-t)^2 := by
+  have hp : (b-c)*(b+c) = -(a-t)*(a+t) := by nlinarith
+  have hsq := congrArg (fun x : ℝ => x^2) hp
+  have hlow : c^2 ≤ (b+c)^2 := by nlinarith
+  have h1 := mul_le_mul_of_nonneg_left hlow (sq_nonneg (b-c))
+  have h2 := mul_le_mul_of_nonneg_left hr (sq_nonneg (a-t))
+  have hh : c^2*(b-c)^2 ≤ c^2*(4*(a-t)^2) := by nlinarith [hsq]
+  exact le_of_mul_le_mul_left hh (sq_pos_of_pos hc)
+
+theorem flat_entry_rounding_ratio (n a : ℝ) (hn : 3 ≤ n) (ha : a^2 ≤ n) :
+    (a+1)^2 ≤ 4*(n-1) := by
+  by_cases hna : a ≤ 0
+  · nlinarith
+  · have hp : 4*n ≤ (3*n-5)^2 := by nlinarith [sq_nonneg (n-3)]
+    have hs : (2*a)^2 ≤ (3*n-5)^2 := by nlinarith
+    have hl := (sq_le_sq₀ (by linarith : 0 ≤ 2*a) (by linarith : 0 ≤ 3*n-5)).mp hs
+    nlinarith
+
+variable {m n : Type*} [Fintype m] [Fintype n]
+
+theorem frobenius_sq {𝕜 : Type*} [NormedAddCommGroup 𝕜] (A : Matrix m n 𝕜) :
+    ‖A‖^2 = ∑ i, ∑ j, ‖A i j‖^2 := by
+  rw [Matrix.frobenius_norm_def, ← Real.sqrt_eq_rpow]
+  simp only [Real.rpow_two]
+  exact Real.sq_sqrt (by positivity)
+
+theorem frobenius_sq_real (A : Matrix m n ℝ) :
+    ‖A‖^2 = ∑ i, ∑ j, (A i j)^2 := by
+  rw [frobenius_sq]
+  simp only [Real.norm_eq_abs, sq_abs]
+
+theorem frobenius_sq_gram (A : Matrix m n ℂ) :
+    ‖A‖^2 = (Aᴴ * A).trace.re := by
+  rw [frobenius_sq, Finset.sum_comm]
+  simp_rw [← Complex.normSq_eq_norm_sq, Complex.normSq_apply]
+  simp [Matrix.trace, Matrix.diag, Matrix.mul_apply, Matrix.conjTranspose_apply,
+    Complex.mul_re, pow_two]
+
+theorem frobenius_im_le (A : Matrix m n ℂ) :
+    ‖A.map Complex.im‖ ≤ ‖A‖ := by
+  apply (sq_le_sq₀ (norm_nonneg _) (norm_nonneg _)).mp
+  rw [frobenius_sq_real, frobenius_sq]
+  apply Finset.sum_le_sum
+  intro i _
+  apply Finset.sum_le_sum
+  intro j _
+  have he := Complex.normSq_eq_norm_sq (A i j)
+  simp only [Complex.normSq_apply] at he
+  simp only [Matrix.map_apply]
+  nlinarith [sq_nonneg (A i j).re]
+
+theorem frobenius_real_embed (A : Matrix m n ℝ) :
+    ‖A.map (fun x : ℝ => (x : ℂ))‖ = ‖A‖ := by
+  exact Matrix.frobenius_norm_map_eq A _ (fun x => by simp)
+
+theorem frobenius_unitary_left [DecidableEq m] (U : Matrix m m ℂ)
+    (hU : Uᴴ * U = 1) (A : Matrix m n ℂ) : ‖U*A‖ = ‖A‖ := by
+  apply (sq_eq_sq₀ (norm_nonneg _) (norm_nonneg _)).mp
+  rw [frobenius_sq_gram, frobenius_sq_gram]
+  have he : (U*A)ᴴ * (U*A) = Aᴴ*A := by
+    rw [Matrix.conjTranspose_mul]
+    calc
+      Aᴴ * Uᴴ * (U*A) = Aᴴ * (Uᴴ*U) * A := by simp only [Matrix.mul_assoc]
+      _ = _ := by rw [hU, Matrix.mul_one]
+  rw [he]
+
+/-- Dimension-free Frobenius contraction. This is stronger than applying
+Frobenius submultiplicativity to the imaginary part itself. -/
+theorem imaginary_mul_contraction [DecidableEq m] (U : Matrix m m ℂ)
+    (hU : U*Uᴴ = 1) (A : Matrix m n ℝ) :
+    ‖U.map Complex.im * A‖ ≤ ‖A‖ := by
+  have hleft : Uᴴ*U=1 := mul_eq_one_comm.mp hU
+  let AC := A.map (fun x : ℝ => (x : ℂ))
+  have him : (U*AC).map Complex.im = U.map Complex.im * A := by
+    ext i j
+    simp [Matrix.mul_apply, AC, Complex.mul_im]
+  calc
+    ‖U.map Complex.im * A‖ = ‖(U*AC).map Complex.im‖ := by rw [him]
+    _ ≤ ‖U*AC‖ := frobenius_im_le _
+    _ = ‖AC‖ := frobenius_unitary_left U hleft AC
+    _ = ‖A‖ := frobenius_real_embed A
+
+def center (n : ℕ) : Matrix (Fin n) (Fin n) ℝ := fun _ _ => 1/(n:ℝ)
+def roundingMagnitude (n : ℕ) : ℝ := Real.sqrt ((n:ℝ)-1)/(n:ℝ)
+
+theorem roundingMagnitude_pos {n : ℕ} (hn : 3 ≤ n) : 0 < roundingMagnitude n := by
+  have hnR : (3:ℝ) ≤ n := by exact_mod_cast hn
+  exact div_pos (Real.sqrt_pos.mpr (by linarith)) (by linarith)
+
+theorem roundingMagnitude_sq {n : ℕ} (hn : 3 ≤ n) :
+    (roundingMagnitude n)^2 = ((n:ℝ)-1)/(n:ℝ)^2 := by
+  have hnR : (3:ℝ) ≤ n := by exact_mod_cast hn
+  rw [roundingMagnitude, div_pow, Real.sq_sqrt (by linarith)]
+
+theorem round_flat_entry {n : ℕ} (hn : 3 ≤ n) (z : ℂ)
+    (hz : ‖z‖^2=1/(n:ℝ)) :
+    ∃ k : ℤ, (k=1 ∨ k= -1) ∧
+      ((k:ℝ)*roundingMagnitude n-z.im)^2 ≤ 4*(z.re-1/(n:ℝ))^2 := by
+  have hnR : (3:ℝ) ≤ n := by exact_mod_cast hn
+  have hn0 : (n:ℝ) ≠ 0 := by linarith
+  have hnp : 0 < (n:ℝ)^2 := sq_pos_of_pos (by linarith)
+  have hcs := roundingMagnitude_sq hn
+  have hc := roundingMagnitude_pos hn
+  have hnorm : z.re^2+z.im^2 = 1/(n:ℝ) := by
+    have hh := Complex.normSq_eq_norm_sq z
+    simp only [Complex.normSq_apply] at hh
+    nlinarith
+  have hre : z.re^2 ≤ 1/(n:ℝ) := by nlinarith [sq_nonneg z.im]
+  have hscaled : ((n:ℝ)*z.re)^2 ≤ n := by
+    have hh := mul_le_mul_of_nonneg_left hre (le_of_lt hnp)
+    have hid : (n:ℝ)^2*(1/(n:ℝ)) = n := by field_simp
+    rw [hid] at hh
+    nlinarith
+  have hr0 := flat_entry_rounding_ratio (n:ℝ) ((n:ℝ)*z.re) hnR hscaled
+  have hr : (z.re+1/(n:ℝ))^2 ≤ 4*(roundingMagnitude n)^2 := by
+    apply le_of_mul_le_mul_left (a := (n:ℝ)^2) (a0 := hnp)
+    have h1 : (n:ℝ)^2*(z.re+1/(n:ℝ))^2 = ((n:ℝ)*z.re+1)^2 := by field_simp
+    have h2 : (n:ℝ)^2*(4*(roundingMagnitude n)^2) = 4*((n:ℝ)-1) := by
+      rw [hcs]
+      field_simp
+    rw [h1,h2]
+    exact hr0
+  have he : z.re^2+|z.im|^2 = (roundingMagnitude n)^2+(1/(n:ℝ))^2 := by
+    rw [sq_abs, hcs]
+    have hid : ((n:ℝ)-1)/(n:ℝ)^2+(1/(n:ℝ))^2 = 1/(n:ℝ) := by field_simp; ring
+    rw [hid]
+    exact hnorm
+  have hh := square_rounding_lipschitz z.re |z.im| (roundingMagnitude n) (1/(n:ℝ))
+    (abs_nonneg _) hc he hr
+  by_cases him : 0 ≤ z.im
+  · refine ⟨1, Or.inl rfl, ?_⟩
+    rw [abs_of_nonneg him] at hh
+    simp only [Int.cast_one, one_mul]
+    nlinarith only [hh]
+  · refine ⟨-1, Or.inr rfl, ?_⟩
+    rw [abs_of_neg (lt_of_not_ge him)] at hh
+    simp only [Int.cast_neg, Int.cast_one, neg_one_mul]
+    nlinarith only [hh]
+
+theorem centered_gram {n : ℕ} (hn : 0 < n) (U : Matrix (Fin n) (Fin n) ℂ)
+    (hU : U*Uᴴ=1) (hr : ∀ i, ∑ j, U i j=1) :
+    U.map Complex.im * (U.map Complex.im)ᵀ =
+      1-center n-(U.map Complex.re-center n)*(U.map Complex.re-center n)ᵀ := by
+  have hn0 : (n:ℝ) ≠ 0 := by exact_mod_cast (ne_of_gt hn)
+  have hrow (i : Fin n) : ∑ j, (U i j).re = 1 := by
+    simpa using congrArg Complex.re (hr i)
+  ext i j
+  have hu := congrArg Complex.re (congrFun (congrFun hU i) j)
+  have hreal : (∑ k, (U i k).re*(U j k).re) + (∑ k, (U i k).im*(U j k).im) =
+      (1 : Matrix (Fin n) (Fin n) ℝ) i j := by
+    simpa [Matrix.mul_apply, Matrix.conjTranspose_apply, Complex.mul_re,
+      Finset.sum_add_distrib, Matrix.one_apply, apply_ite] using hu
+  have he : ∑ k, ((U i k).re-1/(n:ℝ))*((U j k).re-1/(n:ℝ)) =
+      (∑ k, (U i k).re*(U j k).re)-1/(n:ℝ) := by
+    simp only [sub_mul, mul_sub, Finset.sum_sub_distrib, ← Finset.sum_mul,
+      ← Finset.mul_sum, hrow, Finset.sum_const, Finset.card_univ, Fintype.card_fin,
+      nsmul_eq_mul, one_mul, mul_one]
+    field_simp
+    ring
+  simp only [Matrix.mul_apply, Matrix.transpose_apply, Matrix.map_apply,
+    Matrix.sub_apply, center]
+  rw [he]
+  linarith
+
+def roundedMatrix {n : ℕ} (K : Matrix (Fin n) (Fin n) ℤ) : Matrix (Fin n) (Fin n) ℝ :=
+  fun i j => (K i j:ℝ)*roundingMagnitude n
+
+theorem rounded_matrix_exists {n : ℕ} (hn : 3 ≤ n) (U : Matrix (Fin n) (Fin n) ℂ)
+    (hflat : ∀ i j, ‖U i j‖^2=1/(n:ℝ)) :
+    ∃ K : Matrix (Fin n) (Fin n) ℤ,
+      (∀ i j, K i j=1 ∨ K i j= -1) ∧
+      ‖roundedMatrix K - U.map Complex.im‖ ≤
+        2*‖U.map Complex.re-center n‖ := by
+  classical
+  choose K hK hbound using fun i j => round_flat_entry hn (U i j) (hflat i j)
+  refine ⟨K, hK, ?_⟩
+  apply (sq_le_sq₀ (norm_nonneg _) (by positivity)).mp
+  rw [mul_pow, frobenius_sq_real, frobenius_sq_real]
+  norm_num only [show (2:ℝ)^2=4 by norm_num]
+  simp only [Matrix.sub_apply, Matrix.map_apply, center, roundedMatrix]
+  calc
+    _ ≤ ∑ i, ∑ j, 4*((U i j).re-1/(n:ℝ))^2 := by
+      exact Finset.sum_le_sum (fun i _ => Finset.sum_le_sum (fun j _ => hbound i j))
+    _ = _ := by simp only [Finset.mul_sum]
+
+theorem gram_perturbation_upper {n : ℕ} (hn : 0 < n) (U : Matrix (Fin n) (Fin n) ℂ)
+    (hU : U*Uᴴ=1) (hr : ∀ i, ∑ j, U i j=1) (C : Matrix (Fin n) (Fin n) ℝ)
+    (hclose : ‖C-U.map Complex.im‖ ≤ 2*‖U.map Complex.re-center n‖) :
+    ‖C*Cᵀ-(1-center n)‖ ≤ 4*‖U.map Complex.re-center n‖+
+      5*‖U.map Complex.re-center n‖^2 := by
+  let B := U.map Complex.im
+  let E := U.map Complex.re-center n
+  let D := C-B
+  have hgram : B*Bᵀ=1-center n-E*Eᵀ := centered_gram hn U hU hr
+  have hid : C*Cᵀ-(1-center n) = B*Dᵀ+D*Bᵀ+D*Dᵀ-E*Eᵀ := by
+    have hi : 1-center n = B*Bᵀ+E*Eᵀ := by rw [hgram]; abel
+    rw [hi]
+    dsimp [D]
+    simp only [Matrix.transpose_sub]
+    noncomm_ring
+  have hbd : ‖B*Dᵀ‖ ≤ ‖D‖ := by
+    simpa only [Matrix.frobenius_norm_transpose] using imaginary_mul_contraction U hU Dᵀ
+  have hdb : ‖D*Bᵀ‖ ≤ ‖D‖ := by
+    have ht : (D*Bᵀ)ᵀ=B*Dᵀ := by simp [Matrix.transpose_mul]
+    rw [← Matrix.frobenius_norm_transpose (D*Bᵀ), ht]
+    exact hbd
+  have hdd : ‖D*Dᵀ‖ ≤ ‖D‖^2 := by
+    simpa only [Matrix.frobenius_norm_transpose, pow_two] using Matrix.frobenius_norm_mul D Dᵀ
+  have hee : ‖E*Eᵀ‖ ≤ ‖E‖^2 := by
+    simpa only [Matrix.frobenius_norm_transpose, pow_two] using Matrix.frobenius_norm_mul E Eᵀ
+  have hnrm : ‖C*Cᵀ-(1-center n)‖ ≤ 2*‖D‖+‖D‖^2+‖E‖^2 := by
+    rw [hid]
+    have h0 := norm_sub_le (B*Dᵀ+D*Bᵀ+D*Dᵀ) (E*Eᵀ)
+    have h1 := norm_add_le (B*Dᵀ+D*Bᵀ) (D*Dᵀ)
+    have h2 := norm_add_le (B*Dᵀ) (D*Bᵀ)
+    linarith
+  change ‖D‖ ≤ 2*‖E‖ at hclose
+  have hs : ‖D‖^2 ≤ 4*‖E‖^2 := by nlinarith [norm_nonneg D, norm_nonneg E]
+  change ‖C*Cᵀ-(1-center n)‖ ≤ 4*‖E‖+5*‖E‖^2
+  linarith
+
+theorem integer_obstruction (n : ℕ) (hn : 3 ≤ n) (k : ℤ) :
+    (n:ℤ)+((n:ℤ)-1)*k ≠ 0 := by
+  intro h
+  have hd : (n:ℤ)-1 ∣ (n:ℤ) := ⟨-k, by nlinarith⟩
+  have hd1 : (n:ℤ)-1 ∣ 1 := by
+    have hh := dvd_sub hd (dvd_refl ((n:ℤ)-1))
+    simpa only [sub_sub_cancel] using hh
+  have hh := Int.le_of_dvd (by norm_num : (0:ℤ)<1) hd1
+  omega
+
+theorem integer_numerator_sq (n : ℕ) (hn : 3 ≤ n) (k : ℤ) :
+    1 ≤ ((n:ℝ)+((n:ℝ)-1)*(k:ℝ))^2 := by
+  have hz := sq_pos_of_ne_zero (integer_obstruction n hn k)
+  have hi : (1:ℤ) ≤ ((n:ℤ)+((n:ℤ)-1)*k)^2 := by omega
+  exact_mod_cast hi
+
+theorem rounded_gram_lower {n : ℕ} (hn : 3 ≤ n) (K : Matrix (Fin n) (Fin n) ℤ) :
+    let C : Matrix (Fin n) (Fin n) ℝ := fun i j => (K i j:ℝ)*roundingMagnitude n
+    3 ≤ 4*(n:ℝ)*‖C*Cᵀ-(1-center n)‖ := by
+  classical
+  intro C
+  let V := C*Cᵀ-(1-center n)
+  have hnR : (3:ℝ) ≤ n := by exact_mod_cast hn
+  have hn0 : (n:ℝ) ≠ 0 := by linarith
+  have hnp : 0 < (n:ℝ)^2 := sq_pos_of_pos (by linarith)
+  have hentry (i j : Fin n) (hij : i ≠ j) : 1 ≤ (n:ℝ)^4*(V i j)^2 := by
+    let k : ℤ := ∑ l, K i l*K j l
+    have hg : (C*Cᵀ) i j = (roundingMagnitude n)^2*(k:ℝ) := by
+      rw [Matrix.mul_apply]
+      simp only [Matrix.transpose_apply, k, C, Int.cast_sum, Int.cast_mul,
+        Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro l _
+      change ((K i l:ℝ)*roundingMagnitude n)*((K j l:ℝ)*roundingMagnitude n) =
+        (roundingMagnitude n)^2*((K i l:ℝ)*(K j l:ℝ))
+      ring
+    have hv : V i j = (roundingMagnitude n)^2*(k:ℝ)+1/(n:ℝ) := by
+      simp [V, Matrix.sub_apply, Matrix.one_apply, hij, center, hg]
+    have hid : (n:ℝ)^2*V i j = (n:ℝ)+((n:ℝ)-1)*(k:ℝ) := by
+      rw [hv, roundingMagnitude_sq hn]
+      field_simp
+      ring
+    have hs := integer_numerator_sq n hn k
+    rw [← hid] at hs
+    nlinarith only [hs]
+  have hcount (i : Fin n) : (∑ j : Fin n, if i=j then (0:ℝ) else 1) = (n:ℝ)-1 := by
+    calc
+      _ = ∑ j : Fin n, ((1:ℝ)-(if i=j then 1 else 0)) := by
+        apply Finset.sum_congr rfl
+        intro j _
+        split_ifs <;> norm_num
+      _ = _ := by simp [Finset.sum_sub_distrib]
+  have hsum : (n:ℝ)*((n:ℝ)-1) ≤ (n:ℝ)^4*‖V‖^2 := by
+    calc
+      _ = ∑ i : Fin n, ∑ j : Fin n, if i=j then (0:ℝ) else 1 := by simp [hcount]; ring
+      _ ≤ (n:ℝ)^4*‖V‖^2 := by
+        rw [frobenius_sq_real]
+        simp only [Finset.mul_sum]
+        apply Finset.sum_le_sum
+        intro i _
+        apply Finset.sum_le_sum
+        intro j _
+        by_cases hij : i=j
+        · rw [if_pos hij]
+          positivity
+        · rw [if_neg hij]
+          exact hentry i j hij
+  have hpoly : 9*(n:ℝ)^2 ≤ 16*(n:ℝ)*((n:ℝ)-1) := by nlinarith
+  have hs : (3:ℝ)^2 ≤ (4*(n:ℝ)*‖V‖)^2 := by
+    apply le_of_mul_le_mul_left (a := (n:ℝ)^2) (a0 := hnp)
+    nlinarith only [hsum, hpoly]
+  exact (sq_le_sq₀ (by norm_num) (by positivity)).mp hs
+
+theorem flat_gap {n : ℕ} (hn : 3 ≤ n) (U : Matrix (Fin n) (Fin n) ℂ)
+    (hunit : U*Uᴴ=1) (hflat : ∀ i j, ‖U i j‖^2=1/(n:ℝ))
+    (hrows : ∀ i, ∑ j, U i j=1) :
+    1/(144*(n:ℝ)^2) ≤ ∑ i, ∑ j, ((U i j).re-1/(n:ℝ))^2 := by
+  obtain ⟨K, hK, hclose⟩ := rounded_matrix_exists hn U hflat
+  let C := roundedMatrix K
+  let E := U.map Complex.re-center n
+  have hn0 : 0 < n := by omega
+  have hnR : (3:ℝ) ≤ n := by exact_mod_cast hn
+  have hlow : 3 ≤ 4*(n:ℝ)*‖C*Cᵀ-(1-center n)‖ := rounded_gram_lower hn K
+  have hu := gram_perturbation_upper hn0 U hunit hrows C hclose
+  change ‖C*Cᵀ-(1-center n)‖ ≤ 4*‖E‖+5*‖E‖^2 at hu
+  have hgap : 3 ≤ 4*(n:ℝ)*(4*‖E‖+5*‖E‖^2) :=
+    hlow.trans (mul_le_mul_of_nonneg_left hu (by positivity))
+  have hbound : 1 ≤ 144*(n:ℝ)^2*‖E‖^2 := by
+    by_cases hd : ‖E‖ ≤ 1
+    · have hdd : ‖E‖^2 ≤ ‖E‖ := by nlinarith [norm_nonneg E]
+      have hm := mul_le_mul_of_nonneg_left hdd (show 0 ≤ (n:ℝ) by positivity)
+      have hnd : 1 ≤ 12*(n:ℝ)*‖E‖ := by nlinarith
+      nlinarith [sq_nonneg (12*(n:ℝ)*‖E‖-1)]
+    · have hn2 : (9:ℝ) ≤ (n:ℝ)^2 := by nlinarith
+      have hd2 : 1 ≤ ‖E‖^2 := by nlinarith
+      have hm := mul_le_mul hn2 hd2 (by norm_num : (0:ℝ) ≤ 1) (sq_nonneg (n:ℝ))
+      nlinarith
+  have he : ‖E‖^2 = ∑ i, ∑ j, ((U i j).re-1/(n:ℝ))^2 := by
+    rw [frobenius_sq_real]
+    rfl
+  rw [← he]
+  apply (div_le_iff₀ (by positivity : 0 < 144*(n:ℝ)^2)).mpr
+  nlinarith only [hbound]
+
+end
+end QuantitativeFlatUnitaryGap
+
+open scoped BigOperators ComplexConjugate
+/-- A quantitative matrix bound, including both stochasticity hypotheses
+from the anchor construction. The proof in fact only needs the row sums. -/
+theorem quantitative_flat_unitary_gap {n : ℕ} (hn : 3 ≤ n)
+    (U : Matrix (Fin n) (Fin n) ℂ) (hunit : U*U.conjTranspose=1)
+    (hflat : ∀ i j, ‖U i j‖^2=1/(n:ℝ))
+    (hrows : ∀ i, ∑ j, U i j=1) (_hcols : ∀ j, ∑ i, U i j=1) :
+    1/(144*(n:ℝ)^2) ≤ ∑ i, ∑ j, ((U i j).re-1/(n:ℝ))^2 :=
+  QuantitativeFlatUnitaryGap.flat_gap hn U hunit hflat hrows
+
+namespace MatrixSchurMargin
+open Matrix MUMSpectral
+open scoped BigOperators MatrixOrder ComplexOrder
+noncomputable section
+set_option maxHeartbeats 800000
+
+theorem compression_margin {n : ℕ} (A K : Mat n) (hA : IsSelfAdjoint A)
+    (hK : K.PosSemidef) (C L d : ℝ) (hC : 0<C) (hL : 0<L)
+    (hleak : (L • (1-A)-(1-A)*K*(1-A)).PosSemidef)
+    (henergy : (A*K*A-d • A).PosSemidef) :
+    (K+C • (1-A)-(C*d/(C+L)) • A).PosSemidef := by
+  let T : Mat n := L • (1:Mat n)+C • (1-A)
+  have ht : IsSelfAdjoint T := by
+    exact ((IsSelfAdjoint.all L).smul (IsSelfAdjoint.one _)).add
+      ((IsSelfAdjoint.all C).smul ((IsSelfAdjoint.one _).sub hA))
+  have hp := (hK.conjTranspose_mul_mul_same T).add
+    ((hleak.smul (show 0≤C*(C+L) by positivity)).add
+      (henergy.smul (show 0≤C*L by positivity)))
+  rw [← Matrix.star_eq_conjTranspose, ht.star_eq] at hp
+  have hid : T*K*T+(C*(C+L)) • (L • (1-A)-(1-A)*K*(1-A))+
+      (C*L) • (A*K*A-d • A) =
+      (L*(C+L)) • (K+C • (1-A))-(C*L*d) • A := by
+    simp only [T, mul_add, add_mul, mul_sub, sub_mul, smul_mul_assoc,
+      mul_smul_comm, smul_smul, one_mul, mul_one, smul_add, smul_sub,
+      Matrix.mul_assoc]
+    module
+  rw [← add_assoc, hid] at hp
+  have hh := hp.smul (show 0≤(L*(C+L))⁻¹ by positivity)
+  have hnorm : (L*(C+L))⁻¹*(L*(C+L))=1 := inv_mul_cancel₀ (by positivity)
+  have hcoef : (L*(C+L))⁻¹*(C*L*d)=C*d/(C+L) := by
+    field_simp
+    <;> ring
+  simpa only [smul_sub, smul_smul, hnorm, one_smul, hcoef] using hh
+
+end
+end MatrixSchurMargin
+
+namespace MUBLeakageBound
+open Matrix MUMSpectral MUMCompatibility
+open scoped BigOperators MatrixOrder ComplexOrder
+noncomputable section
+set_option maxHeartbeats 1200000
+
+variable {n D : ℕ}
+
+theorem chain_squares (hn : 0<n) (P Q R : PVM n D)
+    (hPQ : Unbiased P Q) (hQR : Unbiased Q R) (a : Fin n) :
+    (∑ b, ∑ c, star (P.proj a*Q.proj b*R.proj c)*(P.proj a*Q.proj b*R.proj c)) =
+      (1/(n:ℝ)) • (1:Mat D) := by
+  have hnR : (n:ℝ)≠0 := by exact_mod_cast (ne_of_gt hn)
+  have ht (b c : Fin n) :
+      star (P.proj a*Q.proj b*R.proj c)*(P.proj a*Q.proj b*R.proj c) =
+        ((n:ℝ)⁻¹)^2 • R.proj c := by
+    simp only [star_mul, (P.isProj a).isSelfAdjoint.star_eq,
+      (Q.isProj b).isSelfAdjoint.star_eq, (R.isProj c).isSelfAdjoint.star_eq]
+    calc
+      _ = R.proj c*Q.proj b*(P.proj a*P.proj a)*Q.proj b*R.proj c := by noncomm_ring
+      _ = R.proj c*(Q.proj b*P.proj a*Q.proj b)*R.proj c := by
+        rw [(P.isProj a).isIdempotentElem]
+        noncomm_ring
+      _ = _ := by
+        rw [hPQ.2 a b]
+        simp only [mul_smul_comm, smul_mul_assoc, hQR.2 b c, smul_smul, pow_two]
+  simp only [ht, ← Finset.smul_sum, R.complete, Finset.sum_const,
+    Finset.card_univ, Fintype.card_fin, ← Nat.cast_smul_eq_nsmul ℝ, smul_smul]
+  congr 1
+  field_simp
+
+theorem anticommutator_bound (hn : 0<n) (P Q R : PVM n D)
+    (hPQ : Unbiased P Q) (hPR : Unbiased P R) (hQR : Unbiased Q R) (a : Fin n) :
+    ((4/(n:ℝ)) • (1:Mat D) -
+      (∑ b, ∑ c, star (P.proj a*(Q.proj b*R.proj c+R.proj c*Q.proj b))*
+        (P.proj a*(Q.proj b*R.proj c+R.proj c*Q.proj b)))).PosSemidef := by
+  let X (b c : Fin n) := P.proj a*Q.proj b*R.proj c
+  let Y (b c : Fin n) := P.proj a*R.proj c*Q.proj b
+  have hp : (∑ b, ∑ c, star (X b c-Y b c)*(X b c-Y b c)).PosSemidef := by
+    apply Matrix.posSemidef_sum
+    intro b _
+    apply Matrix.posSemidef_sum
+    intro c _
+    exact Matrix.posSemidef_conjTranspose_mul_self _
+  have hx : (∑ b, ∑ c, star (X b c)*X b c)=(1/(n:ℝ)) • (1:Mat D) :=
+    chain_squares hn P Q R hPQ hQR a
+  have hy : (∑ b, ∑ c, star (Y b c)*Y b c)=(1/(n:ℝ)) • (1:Mat D) := by
+    rw [Finset.sum_comm]
+    exact chain_squares hn P R Q hPR hQR.symm a
+  have ht (b c : Fin n) : star (X b c-Y b c)*(X b c-Y b c) =
+      (2:ℝ) • (star (X b c)*X b c+star (Y b c)*Y b c)-
+      star (X b c+Y b c)*(X b c+Y b c) := by
+    simp only [star_sub, star_add, sub_mul, mul_sub, add_mul, mul_add]
+    module
+  simp only [ht, Finset.sum_sub_distrib, ← Finset.smul_sum, Finset.sum_add_distrib,
+    hx, hy] at hp
+  have he : (2:ℝ) • ((1/(n:ℝ)) • (1:Mat D)+(1/(n:ℝ)) • (1:Mat D))=
+      (4/(n:ℝ)) • (1:Mat D) := by module
+  rw [he] at hp
+  simpa only [X, Y, mul_add, ← Matrix.mul_assoc] using hp
+
+theorem amplitude_leakage (hn : 0<n) (P Q R : PVM n D)
+    (hPQ : Unbiased P Q) (hPR : Unbiased P R) (hQR : Unbiased Q R) (a : Fin n) :
+    ((4/(n:ℝ)) • (1-P.proj a) -
+      (1-P.proj a)*(∑ b, ∑ c, star (amplitudeH P Q R a b c)*amplitudeH P Q R a b c)*
+        (1-P.proj a)).PosSemidef := by
+  let A := P.proj a
+  let B : Mat D := 1-A
+  have hB : IsStarProjection B := (P.isProj a).one_sub
+  have hAB : A*B=0 := by
+    dsimp [A,B]
+    rw [mul_sub, mul_one, (P.isProj a).isIdempotentElem, sub_self]
+  have hh (b c : Fin n) : amplitudeH P Q R a b c*B =
+      (P.proj a*(Q.proj b*R.proj c+R.proj c*Q.proj b))*B := by
+    simp only [amplitudeH, sub_mul, smul_mul_assoc]
+    change _-(2/(n:ℝ)^2) • (A*B)=_
+    rw [hAB, smul_zero, sub_zero]
+  have hp := (anticommutator_bound hn P Q R hPQ hPR hQR a).conjTranspose_mul_mul_same B
+  rw [← Matrix.star_eq_conjTranspose, hB.isSelfAdjoint.star_eq] at hp
+  have hc : B*((4/(n:ℝ)) • (1:Mat D))*B=(4/(n:ℝ)) • B := by
+    rw [mul_smul_comm, smul_mul_assoc, mul_one, hB.isIdempotentElem]
+  have he : B*(∑ b, ∑ c, star (amplitudeH P Q R a b c)*amplitudeH P Q R a b c)*B =
+      B*(∑ b, ∑ c, star (P.proj a*(Q.proj b*R.proj c+R.proj c*Q.proj b))*
+        (P.proj a*(Q.proj b*R.proj c+R.proj c*Q.proj b)))*B := by
+    simp only [Finset.mul_sum, Finset.sum_mul]
+    apply Finset.sum_congr rfl
+    intro b _
+    apply Finset.sum_congr rfl
+    intro c _
+    have hz := congrArg (fun Z : Mat D => star Z*Z) (hh b c)
+    simpa only [star_mul, hB.isSelfAdjoint.star_eq, Matrix.mul_assoc] using hz
+  rw [mul_sub B ((4/(n:ℝ)) • (1:Mat D)), sub_mul, hc, ← he] at hp
+  exact hp
+
+end
+end MUBLeakageBound
+
+namespace MUMQuantitative
+open Matrix MUMSpectral MUMCompatibility MUMAnchor
+open scoped BigOperators ComplexConjugate MatrixOrder ComplexOrder
+noncomputable section
+set_option maxHeartbeats 1600000
+
+variable {n : ℕ} {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℂ E]
+
+def bargmann (P Q R : OrthonormalBasis (Fin n) ℂ E) (a b c : Fin n) : ℂ :=
+  inner ℂ (P a) (Q b)*inner ℂ (Q b) (R c)*inner ℂ (R c) (P a)
+
+def anchorGauge (P Q R : OrthonormalBasis (Fin n) ℂ E) (a : Fin n) : Mat n :=
+  fun b c => (n:ℂ)*bargmann P Q R a b c
+
+theorem anchor_gauge_unitary_flat (hn : 0 < n)
+    (P Q R : OrthonormalBasis (Fin n) ℂ E)
+    (hPQ : ∀ i j, ‖inner ℂ (P i) (Q j)‖^2=1/(n:ℝ))
+    (hQR : ∀ i j, ‖inner ℂ (Q i) (R j)‖^2=1/(n:ℝ))
+    (hRP : ∀ i j, ‖inner ℂ (R i) (P j)‖^2=1/(n:ℝ)) (a : Fin n) :
+    anchorGauge P Q R a * (anchorGauge P Q R a)ᴴ=1 ∧
+      ∀ i j, ‖anchorGauge P Q R a i j‖^2=1/(n:ℝ) := by
+  have hnR : (0:ℝ)<n := by exact_mod_cast hn
+  have hs : (Real.sqrt (n:ℝ))^2=n := Real.sq_sqrt (by positivity)
+  let r : Fin n → ℂ := fun b => (Real.sqrt (n:ℝ):ℂ)*inner ℂ (P a) (Q b)
+  let c : Fin n → ℂ := fun b => (Real.sqrt (n:ℝ):ℂ)*inner ℂ (R b) (P a)
+  have hr (b : Fin n) : ‖r b‖=1 := by
+    apply (sq_eq_sq₀ (norm_nonneg _) (by norm_num)).mp
+    dsimp [r]
+    rw [norm_mul, mul_pow, hPQ, Complex.norm_real, Real.norm_eq_abs, sq_abs, hs]
+    field_simp
+  have hc (b : Fin n) : ‖c b‖=1 := by
+    apply (sq_eq_sq₀ (norm_nonneg _) (by norm_num)).mp
+    dsimp [c]
+    rw [norm_mul, mul_pow, hRP, Complex.norm_real, Real.norm_eq_abs, sq_abs, hs]
+    field_simp
+  let U := Q.toBasis.toMatrix R
+  let Z := Matrix.diagonal r*U*Matrix.diagonal c
+  have hU : U*Uᴴ=1 := Q.toMatrix_orthonormalBasis_self_mul_conjTranspose R
+  have hZ : Z*Zᴴ=1 := diagonal_gauge_unitary U hU r c hr hc
+  have hflat (i j : Fin n) : ‖Z i j‖^2=1/(n:ℝ) := by
+    dsimp [Z]
+    simp only [Matrix.mul_diagonal, Matrix.diagonal_mul, norm_mul, hr i, hc j, one_mul, mul_one]
+    simpa only [U, Module.Basis.toMatrix_apply, OrthonormalBasis.coe_toBasis_repr_apply,
+      OrthonormalBasis.repr_apply_apply] using hQR i j
+  have he : Z=anchorGauge P Q R a := by
+    ext i j
+    have hsC : (Real.sqrt (n:ℝ):ℂ)*(Real.sqrt (n:ℝ):ℂ)=(n:ℂ) := by
+      exact_mod_cast (show Real.sqrt (n:ℝ)*Real.sqrt (n:ℝ)=(n:ℝ) by nlinarith [hs])
+    dsimp [Z, U, r, c, anchorGauge, bargmann]
+    simp only [Matrix.mul_diagonal, Matrix.diagonal_mul, Module.Basis.toMatrix_apply,
+      OrthonormalBasis.coe_toBasis_repr_apply, OrthonormalBasis.repr_apply_apply]
+    rw [← hsC]
+    ring
+  rw [he] at hZ hflat
+  exact ⟨hZ,hflat⟩
+
+theorem anchor_gauge_rows (hn : 0 < n)
+    (P Q R : OrthonormalBasis (Fin n) ℂ E)
+    (hPQ : ∀ i j, ‖inner ℂ (P i) (Q j)‖^2=1/(n:ℝ)) (a b : Fin n) :
+    ∑ c, anchorGauge P Q R a b c=1 := by
+  have hnR : (n:ℝ) ≠ 0 := by exact_mod_cast (ne_of_gt hn)
+  have hnC : (n:ℂ) ≠ 0 := by exact_mod_cast (ne_of_gt hn)
+  have hp : inner ℂ (P a) (Q b)*inner ℂ (Q b) (P a)=(1/(n:ℝ):ℂ) := by
+    rw [← inner_conj_symm (Q b) (P a), Complex.mul_conj, Complex.normSq_eq_norm_sq, hPQ]
+    push_cast
+    rfl
+  calc
+    _ = (n:ℂ)*inner ℂ (P a) (Q b)*(∑ c, inner ℂ (Q b) (R c)*inner ℂ (R c) (P a)) := by
+      simp only [anchorGauge, bargmann, Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro c _
+      ring
+    _ = (n:ℂ)*(inner ℂ (P a) (Q b)*inner ℂ (Q b) (P a)) := by
+      rw [R.sum_inner_mul_inner]
+      ring
+    _ = 1 := by rw [hp]; push_cast; field_simp [hnC]
+
+/-- Explicit energy at every actual MUB anchor. This is the quantitative
+replacement for merely finding a nonzero Bargmann defect. -/
+theorem anchor_energy (hn : 3 ≤ n) (P Q R : OrthonormalBasis (Fin n) ℂ E)
+    (hPQ : ∀ i j, ‖inner ℂ (P i) (Q j)‖^2=1/(n:ℝ))
+    (hQR : ∀ i j, ‖inner ℂ (Q i) (R j)‖^2=1/(n:ℝ))
+    (hRP : ∀ i j, ‖inner ℂ (R i) (P j)‖^2=1/(n:ℝ)) (a : Fin n) :
+    1/(36*(n:ℝ)^4) ≤ ∑ b, ∑ c, (2*(bargmann P Q R a b c).re-2/(n:ℝ)^2)^2 := by
+  have hn0 : 0<n := by omega
+  have hnR : (0:ℝ)<n := by exact_mod_cast hn0
+  have hne : (n:ℝ) ≠ 0 := ne_of_gt hnR
+  obtain ⟨hu,hflat⟩ := anchor_gauge_unitary_flat hn0 P Q R hPQ hQR hRP a
+  have hg := QuantitativeFlatUnitaryGap.flat_gap hn (anchorGauge P Q R a) hu hflat
+    (anchor_gauge_rows hn0 P Q R hPQ a)
+  have hm := mul_le_mul_of_nonneg_left hg (show 0 ≤ 4/(n:ℝ)^2 by positivity)
+  calc
+    1/(36*(n:ℝ)^4) = (4/(n:ℝ)^2)*(1/(144*(n:ℝ)^2)) := by field_simp; ring
+    _ ≤ (4/(n:ℝ)^2)*(∑ b, ∑ c, ((anchorGauge P Q R a b c).re-1/(n:ℝ))^2) := hm
+    _ = _ := by
+      simp only [Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro b _
+      apply Finset.sum_congr rfl
+      intro c _
+      simp only [anchorGauge, Complex.mul_re, Complex.natCast_re, Complex.natCast_im,
+        zero_mul, sub_zero]
+      field_simp
+      ring
+
+theorem anchor_compression (hn : 3 ≤ n) (B P Q R : OrthonormalBasis (Fin n) ℂ E)
+    (hPQ : ∀ i j, ‖inner ℂ (P i) (Q j)‖^2=1/(n:ℝ))
+    (hQR : ∀ i j, ‖inner ℂ (Q i) (R j)‖^2=1/(n:ℝ))
+    (hRP : ∀ i j, ‖inner ℂ (R i) (P j)‖^2=1/(n:ℝ)) (a : Fin n) :
+    ((basisPVM B P).proj a *
+      (∑ b, ∑ c, star (amplitudeH (basisPVM B P) (basisPVM B Q) (basisPVM B R) a b c)*
+        amplitudeH (basisPVM B P) (basisPVM B Q) (basisPVM B R) a b c)*
+      (basisPVM B P).proj a - (1/(36*(n:ℝ)^4)) • (basisPVM B P).proj a).PosSemidef := by
+  let A := (basisPVM B P).proj a
+  let H := amplitudeH (basisPVM B P) (basisPVM B Q) (basisPVM B R) a
+  let d (b c : Fin n) : ℝ := 2*(bargmann P Q R a b c).re-2/(n:ℝ)^2
+  have hA : IsStarProjection A := (basisPVM B P).isProj a
+  have hAA : A*A=A := hA.isIdempotentElem
+  have ht (b c : Fin n) : A*(star (H b c)*H b c)*A=(d b c)^2 • A := by
+    have hh : H b c*A=d b c • A := amplitudeH_mul_anchor B P Q R a b c
+    calc
+      _ = star (H b c*A)*(H b c*A) := by
+        simp only [star_mul, hA.isSelfAdjoint.star_eq, Matrix.mul_assoc]
+      _ = _ := by
+        rw [hh]
+        simp only [star_smul, star_trivial, hA.isSelfAdjoint.star_eq,
+          smul_mul_assoc, mul_smul_comm, smul_smul, hAA, pow_two]
+  change (A*(∑ b, ∑ c, star (H b c)*H b c)*A-(1/(36*(n:ℝ)^4)) • A).PosSemidef
+  simp only [Finset.mul_sum, Finset.sum_mul, ht, ← Finset.sum_smul, ← sub_smul]
+  exact (Matrix.nonneg_iff_posSemidef.mp hA.nonneg).smul
+    (sub_nonneg.mpr (anchor_energy hn P Q R hPQ hQR hRP a))
+
+/-- An explicit, basis-independent increment in generalized compatibility visibility. -/
+def increment (n : ℕ) (x : ℝ) : ℝ :=
+  scale n x*coeffC n x/(36*(n:ℝ)^4*(coeffC n x+4/(n:ℝ)))
+
+theorem increment_pos (hn : 0<n) (x : ℝ) (hx : 0<x) : 0 < increment n x := by
+  have hnR : (0:ℝ)<n := by exact_mod_cast hn
+  have hs := scale_pos hn hx
+  have hC := coeffC_pos hn hx
+  unfold increment
+  positivity
+
+theorem first_marginal_explicit (hn : 3 ≤ n) (B P Q R : OrthonormalBasis (Fin n) ℂ E)
+    (hPQ : ∀ i j, ‖inner ℂ (P i) (Q j)‖^2=1/(n:ℝ))
+    (hQR : ∀ i j, ‖inner ℂ (Q i) (R j)‖^2=1/(n:ℝ))
+    (hRP : ∀ i j, ‖inner ℂ (R i) (P j)‖^2=1/(n:ℝ))
+    (x : ℝ) (hx : 0<x) (hroot : rootEquation n x) (a : Fin n) :
+    ((∑ b, ∑ c, parent (basisPVM B P) (basisPVM B Q) (basisPVM B R) x a b c)-
+      ((1+x)/3+increment n x) • (basisPVM B P).proj a).PosSemidef := by
+  have hn0 : 0<n := by omega
+  have hnR : (0:ℝ)<n := by exact_mod_cast hn0
+  let A := (basisPVM B P).proj a
+  let K := ∑ b, ∑ c, star (amplitudeH (basisPVM B P) (basisPVM B Q) (basisPVM B R) a b c)*
+    amplitudeH (basisPVM B P) (basisPVM B Q) (basisPVM B R) a b c
+  have hpq := basisPVM_unbiased B P Q hPQ
+  have hqr := basisPVM_unbiased B Q R hQR
+  have hpr := (basisPVM_unbiased B R P hRP).symm
+  have hK : K.PosSemidef := amplitude_squares_posSemidef _ _ _ a
+  have hA : IsStarProjection A := (basisPVM B P).isProj a
+  have hh := MatrixSchurMargin.compression_margin A K hA.isSelfAdjoint hK
+    (coeffC n x) (4/(n:ℝ)) (1/(36*(n:ℝ)^4)) (coeffC_pos hn0 hx) (by positivity)
+    (MUBLeakageBound.amplitude_leakage hn0 _ _ _ hpq hpr hqr a)
+    (anchor_compression hn B P Q R hPQ hQR hRP a)
+  have hs := hh.smul (scale_pos hn0 hx).le
+  have hc : scale n x*(coeffC n x*(1/(36*(n:ℝ)^4))/(coeffC n x+4/(n:ℝ)))=
+      increment n x := by simp only [increment, div_eq_mul_inv, _root_.mul_inv_rev]; ring
+  have he : (∑ b, ∑ c, parent (basisPVM B P) (basisPVM B Q) (basisPVM B R) x a b c)-
+      ((1+x)/3+increment n x) • A =
+      scale n x • K+(scale n x*coeffC n x) • (1-A)-increment n x • A := by
+    rw [add_smul, ← sub_sub]
+    rw [marginal_certificate hn0 _ _ _ hpq hpr hqr x hx hroot a]
+  rw [he]
+  simpa only [smul_sub, smul_add, smul_smul, hc] using hs
+
+/-- The same explicit parent attains the displayed strictly improved visibility
+for every rank-one mutually unbiased triple in every dimension at least three. -/
+theorem explicit_parent_margin (hn : 3 ≤ n) (B P Q R : OrthonormalBasis (Fin n) ℂ E)
+    (hPQ : ∀ i j, ‖inner ℂ (P i) (Q j)‖^2=1/(n:ℝ))
+    (hQR : ∀ i j, ‖inner ℂ (Q i) (R j)‖^2=1/(n:ℝ))
+    (hRP : ∀ i j, ‖inner ℂ (R i) (P j)‖^2=1/(n:ℝ))
+    (x : ℝ) (hx : 0<x) (hroot : rootEquation n x) :
+    0 < increment n x ∧ IsParent (basisPVM B P) (basisPVM B Q) (basisPVM B R)
+      ((1+x)/3+increment n x) (parent (basisPVM B P) (basisPVM B Q) (basisPVM B R) x) := by
+  have hn0 : 0<n := by omega
+  have hp := explicit_parent hn0 _ _ _ (basisPVM_unbiased B P Q hPQ)
+    (basisPVM_unbiased B R P hRP).symm (basisPVM_unbiased B Q R hQR) x hx hroot
+  refine ⟨increment_pos hn0 x hx, hp.1, hp.2.1,
+    first_marginal_explicit hn B P Q R hPQ hQR hRP x hx hroot, ?_, ?_⟩
+  · intro b
+    simp_rw [parent_swap12 (basisPVM B P) (basisPVM B Q)]
+    apply first_marginal_explicit hn B Q P R
+    · intro i j; rw [norm_inner_symm]; exact hPQ j i
+    · intro i j; rw [norm_inner_symm]; exact hRP j i
+    · intro i j; rw [norm_inner_symm]; exact hQR j i
+    · exact hx
+    · exact hroot
+  · intro c
+    simp_rw [parent_cycle (basisPVM B P) (basisPVM B Q)]
+    exact first_marginal_explicit hn B R P Q hRP hPQ hQR x hx hroot c
+
+end
+end MUMQuantitative
