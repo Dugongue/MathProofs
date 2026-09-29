@@ -1,4 +1,13 @@
-import Mathlib
+import Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Basic
+import Mathlib.LinearAlgebra.Matrix.Kronecker
+import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
+import Mathlib.LinearAlgebra.Dimension.Constructions
+import Mathlib.LinearAlgebra.Dual.Lemmas
+import Mathlib.Tactic.FinCases
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.Tauto
+import Mathlib.Tactic.Abel
 
 /-! Tensor order reduction over arbitrary fields.
 
@@ -4056,7 +4065,6 @@ end
 section
 open Matrix
 open scoped Kronecker
-attribute [-instance] CStarMatrix.instHMulOfFintypeOfMulOfAddCommMonoid
 
 inductive Tree where
   | leaf (dimension : ℕ)
@@ -4633,7 +4641,6 @@ end
 section
 open Matrix
 open scoped Kronecker
-attribute [-instance] CStarMatrix.instHMulOfFintypeOfMulOfAddCommMonoid
 universe u
 variable {K : Type u} [Field K] {I J L : Type}
   [Fintype I] [Fintype J] [Fintype L]
