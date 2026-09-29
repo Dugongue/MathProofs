@@ -3,6 +3,11 @@ I've tried to assert the novelty of these proofs: all are pending comprehensive 
 Each Lean file imports only Mathlib.
 
 -------------------------------------------
+MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
+
+-------------------------------------------
+PROOFS THAT CLOSE AN EXISTING OPEN PROBLEM/CONJECTURE OR IMPROVE A BEST PUBLISHED BOUND:
+
 PlateauedAdditionDesigns_BorderedRankCharacterization.lean — A self-contained, Mathlib-only answer to Open Problem 4 of Hyun–Kwon–Wang–Wu, Designs, linear codes, plateaued functions, and their interconnections (2026). For every \(r\ge1\) in the nondegenerate parameter range, replaces Theorem 3(iii)’s rank-plus-Reed–Muller embedding condition with the single criterion \(\operatorname{rank}_2\!\begin{pmatrix}M&\mathbf1\\\mathbf1^T&0\end{pmatrix}=m+2\). Proves equivalence with an \(r\)-plateaued addition-design realization having no nonzero linear structures, including the full reconstruction. Also constructs a simple \(2\text{-}(64,28,24)\) design of incidence rank \(9\) showing that the original, unbordered rank condition alone is insufficient already for \(r=1\).
 
 CubicBentSupportCodeDesignAutomorphismGroups.lean — A Mathlib-only formalization answering Open Problem 6 of Hyun–Kwon–Wang–Wu, Designs, linear codes, plateaued functions, and their interconnections (2026) for an infinite family of cubic bent functions with arbitrary quadratic stabilization. The problem asks for simpler, explicit automorphism groups for special bent functions. This proof determines both the full support-code and support-design automorphism groups, replacing Theorem 8’s abstract stabilizer description with an explicit semidirect-product structure, multiplication laws, and exact group orders. It resolves the requested determination for this family—not a classification of all bent functions.
