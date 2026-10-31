@@ -1,0 +1,1507 @@
+{
+  "status": "PASS",
+  "cases": 300,
+  "scope": "Exact rational ranks of finite bivariate examples; not proof of general theorem or novelty",
+  "records": [
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 5
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 3,
+      "exponent": 2,
+      "power_rank": 6
+    },
+    {
+      "root_rank": 3,
+      "exponent": 3,
+      "power_rank": 9
+    },
+    {
+      "root_rank": 3,
+      "exponent": 4,
+      "power_rank": 12
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    },
+    {
+      "root_rank": 4,
+      "exponent": 2,
+      "power_rank": 7
+    },
+    {
+      "root_rank": 4,
+      "exponent": 3,
+      "power_rank": 10
+    },
+    {
+      "root_rank": 4,
+      "exponent": 4,
+      "power_rank": 13
+    }
+  ]
+}
