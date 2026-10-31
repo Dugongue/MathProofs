@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "independent_small_full_inputs": 3000,
+  "huge_binary_scale_cases": [
+    {
+      "exponent_bit_length": 11,
+      "degree_is_scale": true
+    },
+    {
+      "exponent_bit_length": 101,
+      "degree_is_scale": true
+    },
+    {
+      "exponent_bit_length": 1001,
+      "degree_is_scale": true
+    },
+    {
+      "exponent_bit_length": 10001,
+      "degree_is_scale": true
+    }
+  ],
+  "unit_chain_factors": 1001,
+  "unit_chain_binary_degree_bits": 1001,
+  "scope": "Independent exact implementation compared against direct polynomial expansion; huge cases use proved scaled identities; not Lean or novelty evidence"
+}

@@ -1,0 +1,50 @@
+{
+  "point": 1,
+  "branches": [
+    {
+      "direction": 0,
+      "child": {
+        "point": 4,
+        "branches": [
+          {
+            "direction": 9,
+            "child": {
+              "point": 11,
+              "branches": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "direction": 1,
+      "child": {
+        "point": 5,
+        "branches": [
+          {
+            "direction": 12,
+            "child": {
+              "point": 10,
+              "branches": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "direction": 2,
+      "child": {
+        "point": 6,
+        "branches": [
+          {
+            "direction": 3,
+            "child": {
+              "point": 14,
+              "branches": []
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

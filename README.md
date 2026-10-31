@@ -11,6 +11,13 @@ FourOutcomeTripleCompatibility/FourOutcomeTriple_UniversalSOSCertificate.json �
 
 [ROABPHighPowerRoots/PROOF.md](ROABPHighPowerRoots/PROOF.md) — An informal sufficient result addressing the root question in Section 6 of Andrews et al., *On Closure Properties of Read-Once Oblivious Algebraic Branching Programs* (ITCS 2026): can a power have a small ROABP while its root is hard? Over every characteristic-zero field, if g^d has width w with d ≥ w in a given variable order, then g has width one in that same order and is a scalar times a product of univariate polynomials. Includes a mixed-factor multiplicity versus separation-rank lemma and its Wronskian proof, plus 300 exact rational finite checks. The regime d < w remains open; novelty is unestablished. AI-assisted informal proof, internally reviewed, pending independent human review and Lean formalization.
 
+[BinomialProductDegree/PROOF.md](BinomialProductDegree/PROOF.md) — An informal affirmative answer to the explicit-rational version of Guillaume Lagarde's binomial-product degree question: compute the degree, or detect zero, of a product of rational binomials minus one monomial in deterministic polynomial bit time, with all exponents given in binary. Covers arbitrary signs, zero factors, repeated exponents and exact leading cancellation, using a polynomial-size logarithmic-derivative coefficient bank. Includes the full proof, reference algorithm and 3,000 exact comparison cases plus huge-exponent controls. AI-assisted MathProof work; independent human review, novelty assessment and Lean formalization remain pending.
+
+-------------------------------------------
+RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
+
+[ClassicalSubdesignFreeDesign16/PROOF.md](ClassicalSubdesignFreeDesign16/PROOF.md) — Records an affirmative answer via classical constructions to the general-design existence clause of Meidl–Polujan–Pott's (2023) concluding Problem 4 / the first part of Polujan's Open Problem 3.69: a simple 2-(16,4,3) design exists without a 2-(16,4,1) subdesign. Construction credit belongs to Martin Glen Oxenham's 1991 finite-geometric cover work; this is NOT claimed as our own discovery or first recognition. We supply the explicit 60-block witness, a three-case hand proof, portable checks and the connection to the later question. The separate vanishing-flat-restricted and realizability questions are not resolved by this example.
+
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
