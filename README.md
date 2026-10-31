@@ -2,6 +2,11 @@ Lean proofs obtained and formalized with use of AI models, namely some combinati
 I've tried to assert the novelty of these proofs: all are pending comprehensive human validation and formal writeups.
 Each Lean file imports only Mathlib.
 
+----------------------------------
+INFORMAL PROOFS (not formalized yet)
+
+WhiteBoxPITToFactorization.md — A proposed affirmative answer to the first open question in §7 of Bhattacharjee et al.’s (2025) Closure under factorization from a result of Furstenberg: does efficient white-box polynomial identity testing imply efficient deterministic factorization within restricted algebraic models? Gives a constructive reduction for effectively robust classes, including arithmetic formulas, ordinary commutative branching programs, and constant-depth circuits, over characteristic-zero and sufficiently-large-characteristic fields, retaining the paper’s deterministic univariate-factorization assumption. Computes complete irreducible factorizations with multiplicities and scalar unit; for depth-\(\Delta\) circuits, PIT and output depth are bounded by \(\Delta+c\), with \(c\) absolute. Includes the explicit cluster decoder, adaptive partition algorithm, termination and runtime proofs, and polynomial binary-time consequences over ℚ and fixed number fields; the branching-program implication is credited to Sinhababu–Thierauf (2021). Informal and internally audited, pending independent human validation and full Lean formalization of the extensions.
+
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
