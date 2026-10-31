@@ -1,0 +1,13 @@
+{
+  "certificate_sha256": "789a7f0a30510e6cfdaeb0920a0969f9507dc8f1f9467196baa33544acd6df9f",
+  "method": "rational congruence and rigorous interval Gershgorin",
+  "precision_bits": 384,
+  "parent": {
+    "dimension": 9,
+    "every_rigorous_margin_greater_than": "99/100"
+  },
+  "marginal_contact": {
+    "dimension": 106,
+    "every_rigorous_margin_greater_than": "99/100"
+  }
+}

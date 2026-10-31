@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-20T16:41:00.821690+00:00",
+  "checker": "check_sharpness.py",
+  "checker_sha256": "99361e6cb7a635d3f573829a04c859db03a65d97762bc206fecd4e41090fe1cd",
+  "arithmetic": "Exact Python integers representing Gaussian integers; all operators scaled by 4",
+  "dimension": 8,
+  "outcomes_per_measurement": 4,
+  "measurement_count": 3,
+  "projection_rank": 2,
+  "hadamard": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  ],
+  "unitaries": [
+    "I",
+    "i sigma_x",
+    "-i sigma_y",
+    "i sigma_z"
+  ],
+  "pvm_identity_checks": {
+    "hadamard_row_inner_products": 16,
+    "unitary_two_sided_checks": 8,
+    "self_adjoint": 12,
+    "projectivity": 12,
+    "orthogonality_ordered": 36,
+    "completeness": 3,
+    "rank_two_trace": 12,
+    "selected_sum_polynomial": 64,
+    "selected_sum_characteristic_polynomial": 64
+  },
+  "selected_sum_identity": "S*(S^3 - 3*S^2 + (9/4)*S - (3/8)*I) = 0",
+  "scaled_characteristic_coefficients": [
+    1,
+    -24,
+    216,
+    -912,
+    1872,
+    -1728,
+    576,
+    0,
+    0
+  ],
+  "selected_sum_characteristic_polynomial": "t^2*(t^3-3*t^2+(9/4)*t-3/8)^2",
+  "spectral_argument": "Self-adjoint S has eigenvalues among 0, 1+cos(pi/9), 1+cos(5*pi/9), 1+cos(7*pi/9). Characteristic identity gives multiplicity 2 for each. Therefore S <= (1+cos(pi/9))*I for every tuple.",
+  "dual_witness": "Y_(a|x)=P_(a|x)/24, X=(1+cos(pi/9))*I/24. The normalization sum Tr(PY)=1 and all 64 inequalities X>=sum Y hold, so eta_g <= Tr X=(1+cos(pi/9))/3.",
+  "proof_scope": "Independent exact finite matrix audit plus elementary symbolic spectral/SDP reasoning; no Lean kernel certificate."
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "Universal four-outcome triple visibility; exact level-3 SOS attainment and matching dimension-8 sharpness",
+  "authors": "Dugongue with OpenAI Codex assistance",
+  "team": "AI-assisted certificate discovery; archived certificate recovered and independently re-audited on 31 October 2026.",
+  "predecessors": [
+    {
+      "authors": "Sebastien Designolle and Mate Farkas",
+      "source": "https://arxiv.org/abs/2609.20728",
+      "credit": "Conjectured value, higher-rank sharp triple, spectral upper bound, numerical evidence, symmetry reduction and task formulation"
+    },
+    {
+      "authors": "Sebastien Designolle",
+      "source": "https://arxiv.org/abs/2509.10381",
+      "credit": "Universal SOS parent framework"
+    },
+    {
+      "source": "https://github.com/sebastiendesignolle/arXiv-2609.20728",
+      "revision": "92fc8c6ad5c069e88110d328c4ac066edfdb1487",
+      "credit": "Numerical implementation and instance informed discovery; no upstream code is required in replay package"
+    },
+    {
+      "source": "https://github.com/Dugongue/MathProofs",
+      "revision": "5162863a39b0ee232bba2232a9d1aac3391c3ee8",
+      "credit": "Prior pairwise-unbiased parent and four-measurement operator-defect proofs informed contact-space discovery"
+    }
+  ],
+  "new_result": "Exact universal degree-6 parent and marginal Gram certificate; covers all finite dimensions and arbitrary POVMs without unbiasedness hypotheses",
+  "proof_type": "Computer-assisted informal proof; exact rational identities and rigorous interval positivity; not Lean formalized",
+  "priority": "Targeted literature search did not locate an exact independent solution; exhaustive priority not established",
+  "certificate_file": "FourOutcomeTriple_UniversalSOSCertificate.json",
+  "certificate_sha256": "789a7f0a30510e6cfdaeb0920a0969f9507dc8f1f9467196baa33544acd6df9f"
+}
