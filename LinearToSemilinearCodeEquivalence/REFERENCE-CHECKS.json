@@ -1,0 +1,211 @@
+{
+  "pass": true,
+  "total_checks": 273240,
+  "seconds": 0.3588236999930814,
+  "scope": "Exhaustive PGL(2,q) times Frobenius reference stabilizers, not the universal theorem proof",
+  "fields": [
+    {
+      "p": 2,
+      "degree": 2,
+      "q": 4,
+      "irreducible_modulus_ascending": [
+        1,
+        1,
+        1
+      ],
+      "alpha": 2,
+      "frobenius_orbit": [
+        2,
+        3
+      ],
+      "projective_semilinear_maps_checked": 120,
+      "labeled_reference_stabilizer": [
+        {
+          "B": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "frobenius_power": 0
+        }
+      ]
+    },
+    {
+      "p": 2,
+      "degree": 3,
+      "q": 8,
+      "irreducible_modulus_ascending": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "alpha": 2,
+      "frobenius_orbit": [
+        2,
+        4,
+        6
+      ],
+      "projective_semilinear_maps_checked": 1512,
+      "labeled_reference_stabilizer": [
+        {
+          "B": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "frobenius_power": 0
+        }
+      ]
+    },
+    {
+      "p": 3,
+      "degree": 2,
+      "q": 9,
+      "irreducible_modulus_ascending": [
+        1,
+        0,
+        1
+      ],
+      "alpha": 3,
+      "frobenius_orbit": [
+        3,
+        6
+      ],
+      "projective_semilinear_maps_checked": 1440,
+      "labeled_reference_stabilizer": [
+        {
+          "B": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "frobenius_power": 0
+        }
+      ]
+    },
+    {
+      "p": 2,
+      "degree": 4,
+      "q": 16,
+      "irreducible_modulus_ascending": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "alpha": 2,
+      "frobenius_orbit": [
+        2,
+        4,
+        3,
+        5
+      ],
+      "projective_semilinear_maps_checked": 16320,
+      "labeled_reference_stabilizer": [
+        {
+          "B": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "frobenius_power": 0
+        }
+      ]
+    },
+    {
+      "p": 5,
+      "degree": 2,
+      "q": 25,
+      "irreducible_modulus_ascending": [
+        2,
+        0,
+        1
+      ],
+      "alpha": 5,
+      "frobenius_orbit": [
+        5,
+        20
+      ],
+      "projective_semilinear_maps_checked": 31200,
+      "labeled_reference_stabilizer": [
+        {
+          "B": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "frobenius_power": 0
+        }
+      ]
+    },
+    {
+      "p": 3,
+      "degree": 3,
+      "q": 27,
+      "irreducible_modulus_ascending": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "alpha": 3,
+      "frobenius_orbit": [
+        3,
+        5,
+        4
+      ],
+      "projective_semilinear_maps_checked": 58968,
+      "labeled_reference_stabilizer": [
+        {
+          "B": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "frobenius_power": 0
+        }
+      ]
+    },
+    {
+      "p": 2,
+      "degree": 5,
+      "q": 32,
+      "irreducible_modulus_ascending": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "alpha": 2,
+      "frobenius_orbit": [
+        2,
+        4,
+        16,
+        13,
+        27
+      ],
+      "projective_semilinear_maps_checked": 163680,
+      "labeled_reference_stabilizer": [
+        {
+          "B": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "frobenius_power": 0
+        }
+      ]
+    }
+  ]
+}

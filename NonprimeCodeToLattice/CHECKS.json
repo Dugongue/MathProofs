@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "whole_ambient_GL4_F2_size": 20160,
+  "accepted_descent_row_maps": [
+    [
+      1,
+      2,
+      4,
+      8
+    ],
+    [
+      2,
+      3,
+      8,
+      12
+    ],
+    [
+      3,
+      1,
+      12,
+      4
+    ]
+  ],
+  "expected_field_scalar_count": 3,
+  "all_15_nonzero_codeword_weights": {
+    "16": 3,
+    "18": 3,
+    "14": 3,
+    "20": 3,
+    "12": 3
+  },
+  "unrepeated_length": 30,
+  "prime_code_rank": 4,
+  "repeat_factor": 5,
+  "lattice_rank": 150,
+  "repeated_minimum_distance": 60,
+  "shortest_squared_lattice_norm": 4,
+  "shortest_frame": "exactly +/-2 e_i by checked minimum distance and the separate universal proof",
+  "basis_modp_membership_all_rows": true,
+  "basis_determinant": "2^146",
+  "checker_sha256": "d340c9b49c84b524ef78a2b792c541892378085e7eb7fe863c00f45f21a461ce",
+  "meaning": "complete finite descent-group and code/basis checks; not Lean and not a novelty certificate"
+}
