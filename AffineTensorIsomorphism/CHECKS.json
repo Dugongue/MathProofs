@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "stabilizer_cases": [
+    {
+      "field": 2,
+      "GL3_matrices": 168,
+      "covector_stabilizers": 24,
+      "all_stabilizer_identities": true
+    },
+    {
+      "field": 3,
+      "GL3_matrices": 11232,
+      "covector_stabilizers": 432,
+      "all_stabilizer_identities": true
+    }
+  ],
+  "padding_transporter_cases": 200,
+  "cyclic_auxiliary_frame_unique": true,
+  "scope": "Exact finite stabilizer and padding checks; no tensor-system compiler replay or Lean verification"
+}

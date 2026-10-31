@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "method": "exhaustive full GL3(F4) and Frobenius action, plus explicit linear-NO semilinear-YES control",
+  "GL3_F4_size": 181440,
+  "wrapped_automorphism_counts_by_Frobenius_power": [
+    9,
+    0
+  ],
+  "unwrapped_control_transporter_counts_by_Frobenius_power": [
+    0,
+    3
+  ],
+  "wrapping": "one data column and four labelled reference projective classes with multiplicities2,3,4,5",
+  "meaning": "no nonidentity Frobenius or cross-block row transporter survives in this complete finite case; general theorem has separate proof",
+  "checker_sha256": "9c8f9ecf93a598d7e0415c861f57331633326c91c06fae5ff50dffc7dddd59fc"
+}
