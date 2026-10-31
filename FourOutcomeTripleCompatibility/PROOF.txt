@@ -1,0 +1,89 @@
+Universal four-outcome triple visibility: theorem assembly
+
+Status: the exact universal Gram certificate passed an independent audit. Full uncollapsed coefficient identities and normalization were checked over Q(c), the exact contact factorization was checked, and independently implemented Arb interval LDL at 384 bits certified all 9 parent pivots and all 106 contact-Gram pivots strictly positive. The certificate SHA-256 is 789a7f0a30510e6cfdaeb0920a0969f9507dc8f1f9467196baa33544acd6df9f. Audit receipt: verification-receipt.json. This is an informal mathematical result with a machine-checkable algebraic certificate; no Lean verification is asserted.
+
+Let c = cos(π/9) and η⋆ = (1 + c)/3. The relevant real algebraic embedding is determined by 8c³ − 6c − 1 = 0 and 9/10 < c < 47/50.
+
+Theorem. Every triple of four-outcome POVMs on a finite-dimensional complex Hilbert space has generalized incompatibility visibility at least η⋆. Equality occurs for an explicit triple of four-outcome rank-two PVMs on C⁸. Consequently χ_3^g(4) = η⋆.
+
+From the exact universal identities to a parent
+
+For one selected outcome from each PVM write X₁ = P_a, X₂ = Q_b, X₃ = R_c. For {i,j,k} = {1,2,3}, define the nine contact polynomials
+
+f_i = (c² − 1/4)X_i + c(X_iX_j + X_iX_k) + X_iX_jX_k + X_iX_kX_j,
+
+h_ij = X_iX_jX_i − X_i/4  (i ≠ j).
+
+Order them as p = (f₁,f₂,f₃,h₁₂,h₁₃,h₂₁,h₂₃,h₃₁,h₃₂). The certificate supplies a real symmetric 9 × 9 matrix Z over Q(c), and contact polynomial lists l^(x,a), with positive semidefinite Gram matrices Y^(x,a), such that the following are exact identities modulo only the PVM equations:
+
+G_abc = Σ_ij Z_ij p_i* p_j,
+
+Σ_abc G_abc = I,
+
+Σ_{outcomes other than a at setting x} G_abc − η⋆ P_{a|x}
+  = Σ_uv Y^(x,a)_uv (l^(x,a)_u)* l^(x,a)_v.
+
+The PVM equations are self-adjointness, orthogonality of different outcomes within each setting, idempotence, and completeness. No mutual-unbiasedness relation is used in these universal identities. Setting permutations give all three marginal identities from one checked representative when the recorded Gram construction is symmetric.
+
+A positive semidefinite scalar Gram matrix makes the represented operator positive: factor the scalar Gram matrix as B*B, then Σ_ij Z_ij p_i* p_j = Σ_r (Σ_i B_ri p_i)* (Σ_j B_rj p_j). The same argument applies to every marginal residual. Thus the exact identities give G_abc ≥ 0, Σ G_abc = I, and every marginal dominates η⋆ times its original effect. These are precisely the primal feasibility conditions for generalized visibility.
+
+The independent audit checked exact coefficient identities in Q[c]/(8c³ − 6c − 1) without collapsing word orbits: all 6,638 nonzero-word coefficients agree exactly. It also checked normalization independently and the exact factorization Y = B W Bᵀ with W a 106 × 106 matrix. Outward-rounded Arb arithmetic at 384 bits certified strictly positive LDL pivots for the 9 × 9 parent Gram matrix and W at c = cos(π/9). The independent audit uses the original-entry LDL recurrence, separately from the root script’s in-place Schur-complement implementation.
+
+A common finite-dimensional dilation handles all POVMs
+
+Let A_{a|x}, a ∈ {0,1,2,3}, x ∈ {1,2,3}, be arbitrary POVMs on H. Put K = H ⊗ C⁴ and choose the common isometry Vψ = ψ ⊗ |0⟩. For each setting x the map
+
+W_x ψ = Σ_a sqrt(A_{a|x}) ψ ⊗ |a⟩
+
+is an isometry, because W_x*W_x = Σ_a A_{a|x} = I. Extend the isometric identification Vψ ↦ W_xψ to a unitary U_x on K; finite-dimensional orthogonal complements have equal dimensions. Define
+
+P_{a|x} = U_x* (I_H ⊗ |a⟩⟨a|) U_x.
+
+For every x this is a four-outcome PVM, and V*P_{a|x}V = A_{a|x}. All three dilations use the same K and the same compression V.
+
+Apply the universal PVM parent construction on K and set g_abc = V*G_abc V. Compression preserves positivity and sums, hence Σ g_abc = I_H and each marginal satisfies Σ g_abc ≥ η⋆ V*P_{a|x}V = η⋆ A_{a|x}. This proves the POVM statement without any rank, unbiasedness, or equal-trace assumption.
+
+An explicit sharp triple in dimension 8
+
+This construction is prior work of Sébastien Designolle and Máté Farkas, not a new construction of this project. Use
+
+H₄ = [[1,1,1,1], [1,−1,1,−1], [1,1,−1,−1], [1,−1,−1,1]],
+
+and the standard Pauli matrices σ_x, σ_y, σ_z. Put
+
+(E₁,E₂,E₃,E₄) = (I₂, iσ_x, −iσ_y, iσ_z).
+
+On K = C⁴ ⊗ C² define isometries
+
+V_a ψ = |a⟩ ⊗ ψ,
+
+W_b ψ = (1/2) Σ_a (H₄)_ab |a⟩ ⊗ ψ,
+
+Z_d ψ = (1/2) Σ_a (H₄)_ad |a⟩ ⊗ E_a ψ,
+
+and rank-two projections P_a = V_aV_a*, Q_b = W_bW_b*, R_d = Z_dZ_d*. Hadamard orthogonality gives three four-outcome PVMs. The Clifford relations E_a*E_a′ + E_a′*E_a = 2δ_aa′ I₂ and their reversed-adjoint versions give the threefold-unbiased identities. This is exactly the n = 4, rank = 2 Hadamard–Clifford construction in their Theorem 7 and equation (14).
+
+Every selected sum S_abd = P_a + Q_b + R_d has nonzero eigenvalues equal to the roots of
+
+t³ − 3t² + (9/4)t − 3/8.
+
+Its largest eigenvalue is λ = 1 + c: substitute t = 1 + u to obtain u³ − (3/4)u − 1/8 = 0. Therefore S_abd ≤ λI for every outcome string.
+
+For completeness, this spectral statement gives the needed visibility upper bound directly. Suppose G_abd is any normalized positive parent whose marginals dominate η times these three PVMs, and let D = dim K = 8. Multiply each marginal inequality by its projection and take the trace. Summing all settings and outcomes gives
+
+3ηD ≤ Σ_abd Tr(S_abd G_abd) ≤ λ Σ_abd Tr(G_abd) = λD.
+
+The first inequality uses P² = P; the second uses G_abd ≥ 0 and S_abd ≤ λI. Thus η ≤ λ/3 = η⋆. Combined with the universal lower bound, the explicit triple attains equality.
+
+Attribution and scope
+
+The sharp dimension-eight triple, its spectrum, the generalized-visibility SDP, and the universal SOS research framework are from Designolle and Farkas, “k-fold unbiased measurements and maximal incompatibility,” arXiv:2609.20728v1, especially Theorem 7, equation (14), and Sections IV–V:
+
+https://arxiv.org/html/2609.20728v1
+
+Their associated public code is:
+
+https://github.com/sebastiendesignolle/arXiv-2609.20728
+
+The project’s existing PairwiseUnbiasedPVMTripleCompatibility.lean supplies a proved pairwise-unbiased special case and the earlier explicit degree-five parent; it does not itself supply the unrestricted universal marginal inequality. The new mathematical step is the exact universal Gram certificate in FourOutcomeTriple_UniversalSOSCertificate.json, now independently verified by verify.py and audit_primitives.py. The certificate establishes the universal lower bound; the prior Hadamard–Clifford triple establishes sharpness. This is an informal mathematical proof assembly with exact algebra and rigorous interval positivity checks; no Lean verification is asserted.
+
