@@ -21,6 +21,8 @@ FourOutcomeTripleCompatibility/FourOutcomeTriple_UniversalSOSCertificate.json �
 
 [AffineTensorIsomorphism/PROOF.md](AffineTensorIsomorphism/PROOF.md) — An informal TI-completeness theorem for the standard homogeneous affine groups [[A,b],[0,1]] over every field, addressing the affine-family research direction explicitly proposed in Section 1.5 of Chen-Grochow-Qiao-Tang-Zhang; this is not a numbered-conjecture closure. Proves TI_Aff = TI on arbitrary tensors and extends to growing pointwise-fixed quotient blocks. Reuses and credits the Futorny-Grochow-Sergeichuk / CGQTZ tensor-system compiler. Includes the full proof, separate AI-worker audit and exact stabilizer checks; novelty, human review and Lean formalization remain pending.
 
+[FixedCharacteristicTensorIsomorphism/Proof.md](FixedCharacteristicTensorIsomorphism/Proof.md) — An informal proof of the same-characteristic finite-field clause of Grochow and Qiao's Open Question 7.6: for every fixed prime p, ordinary tensor isomorphism over any two finite fields of characteristic p is equivalent under deterministic polynomial-time many-one reductions, on all inputs. The construction is uniform in the supplied extension degrees and uses classical Frobenius representations with published Futorny–Grochow–Sergeichuk compilation. The other field comparisons and a uniform polynomial bound in log p are not claimed. Includes the full proof, attribution, fresh internal audits and bounded novelty review; publication priority, independent human review and Lean formalization remain pending.
+
 -------------------------------------------
 RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 
