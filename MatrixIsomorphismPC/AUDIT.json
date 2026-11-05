@@ -1,0 +1,61 @@
+{
+  "reviews": [
+    {
+      "status": "PASS_INDEPENDENT_INFORMAL_REVIEW_NO_GAP_FOUND",
+      "sha256": "a16dee841e81dfd57758299fbc1c95751e98b2b9d49f52349d38e623a4c1b707",
+      "interfaces": [
+        {
+          "claim": "inverse-transport identity",
+          "result": "Expanded YEY=(I+G)AY-YB(I+F), giving degree3 exactly."
+        },
+        {
+          "claim": "kernel lower-left blocks",
+          "result": "Fixed complement left inverses recover R degree1 and W degree3; coordinates require no new variable or PC+Inv."
+        },
+        {
+          "claim": "two-sided rectangular inverses",
+          "result": "UP=I costs2; PU=I costs4; rectangular trace gives nonzero a-b."
+        },
+        {
+          "claim": "explicit certificate signs",
+          "result": "Expanded VR-QW-Gaa+Fbb equals a-b; correct signs."
+        },
+        {
+          "claim": "all nonconjugate matrices in char0/p>n",
+          "result": "Polynomial-kernel nullities classify F[t] elementary divisors; distinguishing p^k can be chosen degree<=n; integer difference survives stated characteristic."
+        },
+        {
+          "claim": "expanded size",
+          "result": "All degrees<=4 before fixed linear coordinate substitution; monomial expansion remains polynomial in n; arithmetic proof size is distinguished from bit cost."
+        },
+        {
+          "claim": "universal degree2n",
+          "result": "Linear intertwiner ideal radical over closure, detX in ideal, descends over F by linear elimination; determinant telescoping costs2n, no finite-point vanishing inference."
+        },
+        {
+          "claim": "compound improvement",
+          "result": "Cauchy-Binet and telescoping charge max2d+2; Lucas at d=p^vp(a-b) detects first differing digit, including rectangular/zero-sized cases."
+        }
+      ],
+      "scope_caveats": [
+        "Conjugacy only; matrix congruence and optimal-degree lower bounds remain open.",
+        "Algebraic PC certificate size/degree, not a uniform bit-time algorithm over unspecified coefficient fields.",
+        "No Lean verification or novelty certification."
+      ],
+      "review_receipt": "MATRIX-PC-PEER-AUDIT.json"
+    },
+    {
+      "sha256": "a16dee841e81dfd57758299fbc1c95751e98b2b9d49f52349d38e623a4c1b707",
+      "checks": [
+        "Inverse transport identity expands to AY-YB and costs PC degree 3.",
+        "Kernel coordinate R costs degree 1, W degree 3; two-sided rectangular trace contradiction costs 4.",
+        "All nonconjugate pairs covered via elementary-divisor nullities in char 0 / p>n.",
+        "Over algebraic closure the linear intertwiner ideal is radical; det X lies in it, giving degree 2n.",
+        "Compound trace and Lucas digit distinguish nullities at degree 2d+2; no uniform polynomial expanded-size claim for unbounded d."
+      ],
+      "review_receipt": "matrix-pc-independent-audit.json"
+    }
+  ],
+  "formatting_note": "Reviews bind the private mathematical source. Public headings and line endings may differ; uploaded bytes are separately hash-bound by the publisher manifest.",
+  "meaning": "Internal independent AI reviews, not human acceptance, Lean certificates or priority evidence."
+}

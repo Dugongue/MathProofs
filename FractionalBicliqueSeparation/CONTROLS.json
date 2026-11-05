@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "arithmetic": "Exact Fraction and Q(sqrt41), no floating solver",
+  "domino_controls": [
+    {
+      "tensor_power": 1,
+      "all_allowed_rectangles_checked": 21,
+      "weighted_rectangle_norm_square_max": "25/16",
+      "dual_objective_in_Qsqrt41": [
+        "4/5",
+        "1/5"
+      ],
+      "all_dual_constraints_exact": true
+    },
+    {
+      "tensor_power": 2,
+      "all_allowed_rectangles_checked": 2373,
+      "weighted_rectangle_norm_square_max": "625/256",
+      "dual_objective_in_Qsqrt41": [
+        "57/25",
+        "8/25"
+      ],
+      "all_dual_constraints_exact": true
+    }
+  ],
+  "polar_dual_matrix_squared_is_identity": true,
+  "credited_shitov_rectangles": 24,
+  "credited_shitov_ones_covered_exactly": 225,
+  "elapsed_s": 0.07796454429626465,
+  "scope": "Finite exact controls; universal all-k theorem is the written proof, not inferred from these cases."
+}

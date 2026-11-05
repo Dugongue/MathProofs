@@ -1,0 +1,12 @@
+{
+  "verification": "AI-assisted informal mathematics; no Lean verification",
+  "source_target": "Counting in logarithmic space: Hermite 6.4, principal Schur HTML 6.21/PDF 6.22, GL2 HTML 6.27/PDF 6.29.",
+  "claim": "Unary coefficients in FL_nonnegative, hence #L.",
+  "originality": "NOT OUR DISCOVERY; independently audited prior public proof draft.",
+  "prior_source": "https://github.com/fengqiaoqu/schur-principal-logspace/blob/3457716eca612ffdabdb5031a837926874e1e6e9/docs/proof.en.md",
+  "prior_date": "2026-10-22",
+  "upstream_code_bundled": false,
+  "publication_priority": "Unestablished for candidate additions; prior sources credited explicitly.",
+  "external_peer_review": "Pending",
+  "date": "2026-11-04"
+}

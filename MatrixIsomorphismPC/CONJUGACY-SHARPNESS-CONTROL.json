@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "input": "A=J2+J2, B=J2+0+0, n=4; E=XA-BX, XY=YX=I",
+  "number_of_cross_moments": 128,
+  "inverse_equations": 32,
+  "linear_system_rank": 30,
+  "nonzero_moments": [
+    {
+      "monomial": "a*y11",
+      "value": "1"
+    },
+    {
+      "monomial": "b*y31",
+      "value": "1"
+    },
+    {
+      "monomial": "b*y42",
+      "value": "1"
+    },
+    {
+      "monomial": "c*y21",
+      "value": "-1"
+    },
+    {
+      "monomial": "e*y23",
+      "value": "1"
+    },
+    {
+      "monomial": "g*y24",
+      "value": "1"
+    }
+  ],
+  "unspecified_cross_moments": "zero",
+  "linear_and_same_side_quadratic_moments": "zero",
+  "constant_moment": "one",
+  "elapsed_s": 0.13556933403015137,
+  "scope": "Exact rational linear functional; proof additionally shows no lower-degree PC lines can arise from the substituted quadratic-plus-constant inverse system."
+}

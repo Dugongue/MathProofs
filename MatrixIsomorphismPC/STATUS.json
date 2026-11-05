@@ -1,0 +1,12 @@
+{
+  "verification": "AI-assisted informal mathematics; no Lean verification",
+  "claim": "Degree 3, polynomial-size ordinary PC refutations for explicit quiver nonisomorphism and arbitrary labelled matrix-tuple noncongruence in characteristic zero; degree 4 Nullstellensatz certificates. The congruence worst-case degree is exactly 3 in every dimension.",
+  "source_target": "CCC 2023 Open Question 7.3: characteristic-zero upper-bound direction for conjugacy and congruence.",
+  "semantics": "Unsatisfiability over the algebraic closure. Real/rational Witt obstructions disappearing after field extension are not refutable by ordinary algebraic PC.",
+  "sharpness": "Congruence exact worst-case degree 3 in every dimension; conjugacy sharp from dimension 4 in characteristic zero.",
+  "scope_remaining": "Unrestricted small characteristic and optimal size remain open; no tensor or matrix-space mixing claim.",
+  "input_model": "Explicit/unary dimensions; no polynomial dependence on compressed binary dimensions is asserted.",
+  "publication_priority": "Unestablished for candidate additions; prior sources credited explicitly.",
+  "external_peer_review": "Pending",
+  "date": "2026-11-04"
+}

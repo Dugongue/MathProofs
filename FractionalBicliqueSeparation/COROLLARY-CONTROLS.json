@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "all_nonzero_matrices_up_to_3_by_3": 673,
+  "exact_fractional_cover_two_class_via_proved_conflict_characterization": 396,
+  "rank_two_cases": 378,
+  "rank_three_Domino_kernel_cases": 18,
+  "by_shape": [
+    {
+      "rows": 1,
+      "columns": 1,
+      "nonrectangular_two_cover_cases": 0
+    },
+    {
+      "rows": 1,
+      "columns": 2,
+      "nonrectangular_two_cover_cases": 0
+    },
+    {
+      "rows": 1,
+      "columns": 3,
+      "nonrectangular_two_cover_cases": 0
+    },
+    {
+      "rows": 2,
+      "columns": 1,
+      "nonrectangular_two_cover_cases": 0
+    },
+    {
+      "rows": 2,
+      "columns": 2,
+      "nonrectangular_two_cover_cases": 6
+    },
+    {
+      "rows": 2,
+      "columns": 3,
+      "nonrectangular_two_cover_cases": 42
+    },
+    {
+      "rows": 3,
+      "columns": 1,
+      "nonrectangular_two_cover_cases": 0
+    },
+    {
+      "rows": 3,
+      "columns": 2,
+      "nonrectangular_two_cover_cases": 42
+    },
+    {
+      "rows": 3,
+      "columns": 3,
+      "nonrectangular_two_cover_cases": 306
+    }
+  ],
+  "elapsed_s": 0.02092766761779785,
+  "scope": "All finite matrices of each shape1..3 by1..3; exact two-rectangle covers, conflict bipartiteness, rational real rank and reduced kernels. No LP approximate inference."
+}

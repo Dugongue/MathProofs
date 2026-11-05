@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "rectangle_parameters": 289,
+  "exact_no_carry_coefficients_checked": 18785,
+  "Hermite_adjacent_differences_checked": 9505,
+  "max_n": 16,
+  "max_k": 16,
+  "elapsed_seconds": 0.02750253677368164,
+  "scope": "Own independent exact arithmetic controls only; no prior repository code copied; no logspace benchmark or complexity proof claim.",
+  "source_sha256": "4f3a3e9ac2818f2430cd16a7d1776aa59d61b5b1358bd58606ac8696450ac56f"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FINITE_IDENTITY_CONTROLS",
+  "incidence_pairs": 1239486,
+  "m_range": [
+    0,
+    8
+  ],
+  "a_b_range": [
+    1,
+    40
+  ],
+  "minimum_codimension": 1,
+  "huge_core_input_bits": 201,
+  "purpose": "Exact incidence algebra/inequality and primitive-size sanity check; does not certify universal algorithm or novelty."
+}

@@ -1,0 +1,9 @@
+{
+  "verification": "AI-assisted informal mathematics; no Lean verification",
+  "source_target": "Counting in logarithmic space, Question 5.15: unrestricted unary skew SYT in #L.",
+  "root_status": "OPEN; unrestricted source question not closed.",
+  "claim": "Low-Durfee-rank factorial-alternant compression, with the precise parameter regime stated in PROOF.md.",
+  "publication_priority": "Unestablished for candidate additions; prior sources credited explicitly.",
+  "external_peer_review": "Pending",
+  "date": "2026-11-04"
+}
