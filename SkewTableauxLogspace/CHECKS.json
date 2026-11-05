@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "small_exact_three_way_cases": 2888,
+  "negative_column_sort_cases": 1114,
+  "rank_counts": {
+    "0": 139,
+    "1": 1833,
+    "2": 911,
+    "3": 5
+  },
+  "larger_exact_two_way_cases": [
+    {
+      "lambda": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "mu": [
+        9,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "d": 1,
+      "answer": "41137263996739434577920",
+      "column_sign": 1
+    },
+    {
+      "lambda": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "mu": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "d": 5,
+      "answer": "218676050655873312857492158159238266355576754783774395456718694726542192288918773582646385450600613545541000991133962241335091934100181882306560",
+      "column_sign": 1
+    },
+    {
+      "lambda": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "mu": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "d": 3,
+      "answer": "92956980287341854720",
+      "column_sign": -1
+    },
+    {
+      "lambda": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "mu": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "d": 4,
+      "answer": "1",
+      "column_sign": 1
+    }
+  ],
+  "seconds": 0.41791558265686035,
+  "methods": [
+    "direct corner-removal tableau recurrence",
+    "independent Aitken determinant",
+    "integerized interpolation low-column determinant"
+  ],
+  "FL_implementation": false,
+  "Lean_checks": 0
+}

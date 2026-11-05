@@ -1,0 +1,11 @@
+{
+  "verification": "AI-assisted informal mathematics; no Lean verification",
+  "claim": "bc_f(D)=2 < 1/2+sqrt(5/2) <= bp_f^infinity(D), with an all-tensor-powers proof.",
+  "source_target": "SEA 2025 Sections 3-4: missing strict cover/asymptotic-partition separation; rules out the discussed convergence to 2.",
+  "complete_result": "Strict separation and a complete strictness classification when fractional cover number equals 2.",
+  "not_proved": "Exact asymptotic fractional binary rank of the Domino.",
+  "prior_integral_result": "Integral nonmultiplicativity is Shitov July 2026, not our discovery.",
+  "publication_priority": "Unestablished for candidate additions; prior sources credited explicitly.",
+  "external_peer_review": "Pending",
+  "date": "2026-11-04"
+}

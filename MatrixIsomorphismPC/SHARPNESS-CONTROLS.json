@@ -1,0 +1,281 @@
+{
+  "status": "PASS_EXACT_RATIONAL_MOMENT_CONTROLS",
+  "proof_sha256": "bcfdb209f573a16128cba759845c9fd28a1aeebca08cbeb425fc32ed225244b4",
+  "cases": [
+    {
+      "n": 1,
+      "kind": "identity",
+      "rational_source_moment_checks": 3,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 2,
+      "kind": "identity",
+      "rational_source_moment_checks": 12,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 3,
+      "kind": "identity",
+      "rational_source_moment_checks": 27,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 4,
+      "kind": "identity",
+      "rational_source_moment_checks": 48,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 5,
+      "kind": "identity",
+      "rational_source_moment_checks": 75,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 6,
+      "kind": "identity",
+      "rational_source_moment_checks": 108,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 7,
+      "kind": "identity",
+      "rational_source_moment_checks": 147,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 8,
+      "kind": "identity",
+      "rational_source_moment_checks": 192,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 9,
+      "kind": "identity",
+      "rational_source_moment_checks": 243,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 10,
+      "kind": "identity",
+      "rational_source_moment_checks": 300,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 11,
+      "kind": "identity",
+      "rational_source_moment_checks": 363,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 12,
+      "kind": "identity",
+      "rational_source_moment_checks": 432,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 13,
+      "kind": "identity",
+      "rational_source_moment_checks": 507,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 14,
+      "kind": "identity",
+      "rational_source_moment_checks": 588,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 15,
+      "kind": "identity",
+      "rational_source_moment_checks": 675,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 16,
+      "kind": "identity",
+      "rational_source_moment_checks": 768,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 17,
+      "kind": "identity",
+      "rational_source_moment_checks": 867,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 18,
+      "kind": "identity",
+      "rational_source_moment_checks": 972,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 19,
+      "kind": "identity",
+      "rational_source_moment_checks": 1083,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 20,
+      "kind": "identity",
+      "rational_source_moment_checks": 1200,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 2,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 12,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 3,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 27,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 4,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 48,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 5,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 75,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 6,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 108,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 7,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 147,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 8,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 192,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 9,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 243,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 10,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 300,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 11,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 363,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 12,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 432,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 13,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 507,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 14,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 588,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 15,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 675,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 16,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 768,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 17,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 867,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 18,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 972,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 19,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 1083,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    },
+    {
+      "n": 20,
+      "kind": "nonsymmetric",
+      "rational_source_moment_checks": 1200,
+      "all_source_expectations_zero": true,
+      "L_one": 1
+    }
+  ],
+  "total_source_moment_checks": 17217,
+  "scope": "Finite exact moments corroborate uniform formulas; parity lower-bound proof remains mathematical, not inferred from controls."
+}

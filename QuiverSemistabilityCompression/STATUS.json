@@ -1,0 +1,10 @@
+{
+  "verification": "AI-assisted informal mathematics; no Lean verification",
+  "source_target": "Generic acyclic-quiver semistability with binary-encoded dimensions, ICALP 2025 Section 1.7.",
+  "root_status": "OPEN; a partial algorithmic result, not full closure.",
+  "claim": "Reciprocal primitive-core compression with runtime poly(L+min(norm primitive alpha,norm primitive beta)); full classical two-vertex binary decision.",
+  "attribution": "Schofield/Derksen-Weyman saturation and reciprocity; Vergne-Walter hive LP; classical rank-two criterion.",
+  "publication_priority": "Unestablished for candidate additions; prior sources credited explicitly.",
+  "external_peer_review": "Pending",
+  "date": "2026-11-04"
+}

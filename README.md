@@ -5,6 +5,20 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-target-research-results:start -->
+[FractionalBicliqueSeparation/PROOF.md](FractionalBicliqueSeparation/PROOF.md) — **Strict asymptotic fractional biclique cover/partition separation.** An informal all-tensor-powers proof that the Domino has fractional cover number 2 but asymptotic fractional partition number at least 1/2 + sqrt(5/2) > 2. Rules out convergence to 2 discussed by Ghosal–Karrenbauer (SEA 2025, Sections 3–4) and supplies the strict separation missing from their comparison chain; the exact asymptotic value remains open. Includes a complete strictness classification when fractional cover number equals 2, exact controls and internal audits. The integral binary-rank counterexample documented alongside it is Shitov’s prior result, not our discovery.
+
+[MatrixIsomorphismPC/PROOF.md](MatrixIsomorphismPC/PROOF.md) — **Sharp degree-three certificates for matrix conjugacy and congruence.** Informal universal polynomial-size, degree 3 ordinary Polynomial Calculus refutations for nonisomorphic explicit quiver representations and noncongruent labelled matrix tuples in characteristic zero, with stated large-characteristic extensions. Addresses CCC 2023 Open Question 7.3: exact worst-case degree 3 for congruence in every dimension and conjugacy from dimension 4. Includes singular and nonsymmetric matrices; uses endomorphism-algebra block traces and actual degree-3 intertwiner derivations. Congruence unsatisfiability is over the algebraic closure. Unrestricted small characteristic and optimal proof-size complexity remain open.
+
+[QuiverSemistabilityCompression/PROOF.md](QuiverSemistabilityCompression/PROOF.md) — **Reciprocal primitive-core compression.** An exact generic-semistability algorithm and a self-contained classical rank-two branch. The unrestricted binary-dimension question from ICALP 2025 remains open; the numeric core parameter is not silently counted as logarithmic input size.
+
+[SkewTableauxLogspace/PROOF.md](SkewTableauxLogspace/PROOF.md) — **Low-Durfee-rank skew-tableau counting.** An informal positive small-space subtheorem with exact controls. Unrestricted unary skew-SYT Question 5.15 remains open; the proof gives the precise parameter bound.
+
+[CountingLogspacePriorAudit/PROOF.md](CountingLogspacePriorAudit/PROOF.md) — **Credited audit of already-public logspace counting results.** The unary Hermite, principal-Schur and GL2-plethysm FL proof was already posted by fengqiaoqu on 22 October 2026 in [schur-principal-logspace](https://github.com/fengqiaoqu/schur-principal-logspace). Our independent audit found no gap and supplies separate exact diagnostics; explicitly not our discovery. No prior repository code is bundled.
+
+All entries are AI-assisted informal mathematics, not Lean-verified. External human validation and publication priority remain unestablished for the candidate additions.
+<!-- four-target-research-results:end -->
+
 <!-- two-complete-results:start -->
 [StabilizerCodeLU/PROOF.md](StabilizerCodeLU/PROOF.md) — An informal polynomial-time solution of physical local-unitary equivalence for arbitrary qubit stabilizer codes on the same labelled physical qubits, extending the arbitrary-logical-rank case left outside Zhang’s (2026) graph-state and one-logical-qubit algorithm (arXiv:2610.00527v2, Sections 4.3 and 6). Covers every logical dimension k and constructs exact symbolic local-unitary witnesses, with no supplied axes or CSS promise. Combines minimal-support axis extraction, exact diagonal-orbit compression and paired adjugate flag equations that eliminate the remaining Clifford search. Includes the full proof, attribution, separate AI-worker audits and reproducible exact controls. Physical-qubit permutation search is outside the polynomial-time claim. AI-assisted informal proof; independent human validation, publication priority and Lean formalization remain pending.
 

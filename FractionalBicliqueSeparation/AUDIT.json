@@ -1,0 +1,65 @@
+{
+  "reviews": [
+    {
+      "status": "PASS_INDEPENDENT_INFORMAL_AUDIT_NO_GAP_FOUND",
+      "sha256": "e5985dc4648a13f94f118090884c4f353fcc50670456f02cbd48f1a2e5a2ae6c",
+      "interfaces": [
+        {
+          "claim": "fractional exact partition contract",
+          "result": "Matches source Eq4 equality Mx=1, x>=0; using nuclear norm triangle is valid and cover inequality alone would not suffice."
+        },
+        {
+          "claim": "all tensor rectangles",
+          "result": "Each coordinate projection pair is an allowed base rectangle since row and column witnesses are chosen independently from original R,C; enclosing Cartesian products bound product weights. Covers non-product rectangles."
+        },
+        {
+          "claim": "tensor multiplicativity",
+          "result": "Product maximizing rectangle gives reverse beta inequality; singular values tensor-multiply, nuclear norms multiply exactly."
+        },
+        {
+          "claim": "Domino weighted rectangles",
+          "result": "Four inclusion-maximal rectangles exactly; corners weight1+t, stars sqrt(t(2+t))<1+t; monotonicity covers every subrectangle."
+        },
+        {
+          "claim": "weighted nuclear value",
+          "result": "Antisymmetric eigenvalue1; symmetric block determinant-t, eigenvalue difference sqrt(1+6t+t^2), so trace norm1+sqrt(...). Verified algebra directly."
+        },
+        {
+          "claim": "optimization",
+          "result": "z=1/(1+t),u=2z-1 transforms ratio to1/2+u/2+sqrt(2-u^2); Cauchy-Schwarz maximum1/2+sqrt(5/2), attained u=sqrt(2/5), t=(7-2sqrt10)/3>0."
+        },
+        {
+          "claim": "strict source question answer",
+          "result": "Constant2.0811388>2 for every tensor exponent excludes convergence to2, without controlling finite LP optima or interchanging limits."
+        },
+        {
+          "claim": "cover cost and fallout",
+          "result": "Two corner covers cost2; outer diagonal fooling set cost>=2. Products and2^k fooling set give cover exactly2^k, hence exponential separation."
+        },
+        {
+          "claim": "integral parameter distinction",
+          "result": "detD=-1 gives full real rank3; tensor rank3^k lower and row partition upper exactly; not integral multiplicativity closure."
+        }
+      ],
+      "scope_caveats": [
+        "Exact asymptotic fractional rank value remains unknown.",
+        "Norm machinery is classical; priority of this explicit separation requires independent literature novelty work.",
+        "No Lean verification and no TI/PvsNP claim."
+      ],
+      "review_receipt": "BINARY-RANK-PEER-AUDIT.json"
+    },
+    {
+      "sha256": "e5985dc4648a13f94f118090884c4f353fcc50670456f02cbd48f1a2e5a2ae6c",
+      "checks": [
+        "All tensor rectangles controlled by coordinate projections; no product-rectangle assumption.",
+        "Weighted nuclear norm tensorizes exactly; beta=1+t.",
+        "Eigenvalue signs and optimization yield c=1/2+sqrt(5/2)>2.",
+        "Fooling set proves bc_f(D^tensor k)=2^k.",
+        "No exact asymptotic or first-priority conclusion."
+      ],
+      "review_receipt": "binary-rank-independent-audit.json"
+    }
+  ],
+  "formatting_note": "Reviews bind the private mathematical source. Public headings and line endings may differ; uploaded bytes are separately hash-bound by the publisher manifest.",
+  "meaning": "Internal independent AI reviews, not human acceptance, Lean certificates or priority evidence."
+}

@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {
+      "status": "PASS_ROOT_INFORMAL_REVIEW_NO_GAP_FOUND",
+      "sha256": "d59927dcdb5195c3a07c4e65472c104e346666209431438479e6ec44019f321d",
+      "checked": [
+        "Exact binary-dimension scope; no false unary-to-binary transfer.",
+        "Two independent primitive reductions require reciprocity and saturation, both explicitly stated.",
+        "Euler beta computation orientation checked on single-arrow rank-one example.",
+        "Incidence identity AB D=delta(Au+Bz)-q u z checked by expansion; q<=1 forces D>0.",
+        "Stable Jordan-Hoelder argument yields necessity q<=1 without claiming rootclassification novel."
+      ],
+      "scope": "Universal binary polynomial time remains unproved; classical rank-two criterion credited; no Lean/novelty certificate.",
+      "review_receipt": "ROOT-QUIVER-AUDIT.json"
+    }
+  ],
+  "formatting_note": "Reviews bind the private mathematical source. Public headings and line endings may differ; uploaded bytes are separately hash-bound by the publisher manifest.",
+  "meaning": "Internal independent AI reviews, not human acceptance, Lean certificates or priority evidence."
+}
