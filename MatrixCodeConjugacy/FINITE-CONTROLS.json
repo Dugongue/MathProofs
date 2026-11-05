@@ -1,0 +1,357 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite diagnostic controls, not a universal proof certificate.",
+  "nondegenerate_subspaces": [
+    {
+      "q": 2,
+      "M": 1,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 1,
+      "k": 1,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 2,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 2,
+      "k": 1,
+      "total": 3,
+      "nondegenerate": 2
+    },
+    {
+      "q": 2,
+      "M": 2,
+      "k": 2,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 3,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 3,
+      "k": 1,
+      "total": 7,
+      "nondegenerate": 4
+    },
+    {
+      "q": 2,
+      "M": 3,
+      "k": 2,
+      "total": 7,
+      "nondegenerate": 4
+    },
+    {
+      "q": 2,
+      "M": 3,
+      "k": 3,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 4,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 4,
+      "k": 1,
+      "total": 15,
+      "nondegenerate": 8
+    },
+    {
+      "q": 2,
+      "M": 4,
+      "k": 2,
+      "total": 35,
+      "nondegenerate": 20
+    },
+    {
+      "q": 2,
+      "M": 4,
+      "k": 3,
+      "total": 15,
+      "nondegenerate": 8
+    },
+    {
+      "q": 2,
+      "M": 4,
+      "k": 4,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 5,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 2,
+      "M": 5,
+      "k": 1,
+      "total": 31,
+      "nondegenerate": 16
+    },
+    {
+      "q": 2,
+      "M": 5,
+      "k": 2,
+      "total": 155,
+      "nondegenerate": 80
+    },
+    {
+      "q": 2,
+      "M": 5,
+      "k": 3,
+      "total": 155,
+      "nondegenerate": 80
+    },
+    {
+      "q": 2,
+      "M": 5,
+      "k": 4,
+      "total": 31,
+      "nondegenerate": 16
+    },
+    {
+      "q": 2,
+      "M": 5,
+      "k": 5,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 3,
+      "M": 2,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 3,
+      "M": 2,
+      "k": 1,
+      "total": 4,
+      "nondegenerate": 4
+    },
+    {
+      "q": 3,
+      "M": 2,
+      "k": 2,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 3,
+      "M": 3,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 3,
+      "M": 3,
+      "k": 1,
+      "total": 13,
+      "nondegenerate": 9
+    },
+    {
+      "q": 3,
+      "M": 3,
+      "k": 2,
+      "total": 13,
+      "nondegenerate": 9
+    },
+    {
+      "q": 3,
+      "M": 3,
+      "k": 3,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 3,
+      "M": 4,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 3,
+      "M": 4,
+      "k": 1,
+      "total": 40,
+      "nondegenerate": 24
+    },
+    {
+      "q": 3,
+      "M": 4,
+      "k": 2,
+      "total": 130,
+      "nondegenerate": 90
+    },
+    {
+      "q": 3,
+      "M": 4,
+      "k": 3,
+      "total": 40,
+      "nondegenerate": 24
+    },
+    {
+      "q": 3,
+      "M": 4,
+      "k": 4,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 4,
+      "M": 2,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 4,
+      "M": 2,
+      "k": 1,
+      "total": 5,
+      "nondegenerate": 4
+    },
+    {
+      "q": 4,
+      "M": 2,
+      "k": 2,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 4,
+      "M": 3,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 4,
+      "M": 3,
+      "k": 1,
+      "total": 21,
+      "nondegenerate": 16
+    },
+    {
+      "q": 4,
+      "M": 3,
+      "k": 2,
+      "total": 21,
+      "nondegenerate": 16
+    },
+    {
+      "q": 4,
+      "M": 3,
+      "k": 3,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 4,
+      "M": 4,
+      "k": 0,
+      "total": 1,
+      "nondegenerate": 1
+    },
+    {
+      "q": 4,
+      "M": 4,
+      "k": 1,
+      "total": 85,
+      "nondegenerate": 64
+    },
+    {
+      "q": 4,
+      "M": 4,
+      "k": 2,
+      "total": 357,
+      "nondegenerate": 272
+    },
+    {
+      "q": 4,
+      "M": 4,
+      "k": 3,
+      "total": 85,
+      "nondegenerate": 64
+    },
+    {
+      "q": 4,
+      "M": 4,
+      "k": 4,
+      "total": 1,
+      "nondegenerate": 1
+    }
+  ],
+  "small_branch": {
+    "q": 2,
+    "n": 2,
+    "all_codes": 67,
+    "all_dimension_two_source_target_checks": 1225,
+    "nonfailure_checks": 980,
+    "group_size": 6
+  },
+  "projection_incidence": [
+    {
+      "k": 1,
+      "all_subspaces": 127,
+      "nondegenerate": 64,
+      "scalar_commutant": 60,
+      "exceptional_projections": 1,
+      "distinct_projection_values": 64
+    },
+    {
+      "k": 2,
+      "all_subspaces": 2667,
+      "nondegenerate": 1344,
+      "scalar_commutant": 960,
+      "exceptional_projections": 336,
+      "distinct_projection_values": 64
+    },
+    {
+      "k": 3,
+      "all_subspaces": 11811,
+      "nondegenerate": 5376,
+      "scalar_commutant": 4800,
+      "exceptional_projections": 336,
+      "distinct_projection_values": 64
+    }
+  ],
+  "middle_branch": {
+    "q": 2,
+    "n": 3,
+    "code_dimension": 4,
+    "accepted_sources": 4,
+    "all_conjugate_and_random_target_checks": 832,
+    "group_size": 168
+  },
+  "seconds": 2.887
+}

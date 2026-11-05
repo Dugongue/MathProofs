@@ -1,0 +1,20 @@
+{
+  "title": "Arbitrary-Dimension Average-Case Matrix-Code Conjugacy",
+  "attribution": "MathProofs; AI-assisted informal proof candidate",
+  "date": "2026-11-04",
+  "target": "Li-Li-Qiao-Tao-Wang, arXiv:2604.00591v2, Problem 1.6",
+  "primary_source": "https://arxiv.org/html/2604.00591v2",
+  "scope": "For every fixed prime power q, for sufficiently large n depending only on q, every number m of slices and every second tensor; polynomial binary runtime and at least exp(-23/9)/(2048q) good-source fraction.",
+  "answer_contract": "YES with witness, NO, or FAILURE; every nonfailure answer correct.",
+  "internal_review": "Separate AI-worker mathematical review found no gap under the stated scope.",
+  "lean_verified": false,
+  "external_human_validation": "Pending",
+  "publication_priority": "Unestablished",
+  "finite_controls": "Exact diagnostics only; run python controls.py with the Python standard library.",
+  "not_claimed": [
+    "Worst-case polynomial-time TI",
+    "General left-right matrix-code equivalence",
+    "Uniform explicit threshold for growing q",
+    "VP versus VNP separation"
+  ]
+}
