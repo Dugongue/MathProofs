@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "branch_counts_across_actual_small_algorithm_factors": {
+    "T_empty_factors": 1,
+    "T_nonempty_W_empty_factors": 41,
+    "mixed_T_W_factors": 1,
+    "omega_basis_vectors": 138,
+    "omega_actual_label_space_changes": 92,
+    "omega_pure_gauge_representative_changes": 46
+  },
+  "additional_coupled_mixed_fixture": {
+    "n": 6,
+    "k": 3,
+    "source_generators_h_x_z": [
+      [
+        0,
+        60,
+        0
+      ],
+      [
+        0,
+        0,
+        60
+      ],
+      [
+        0,
+        0,
+        15
+      ]
+    ],
+    "T": [
+      0,
+      1
+    ],
+    "W": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "full_algorithm_and_exhaustive_oracle_agree": true
+  },
+  "elapsed_seconds": 0.8213605880737305,
+  "scope": "Counts include 72 standalone omega systems plus omega calls inside 143-case replay and one additional mixed fixture. Gauge means corrections only rewrite stabilizer representatives; label-space change is checked against the source binary span.",
+  "sha256": "0175b49456e70d4a3f9498e1fd1993c2d7b479e43e9e3160a8edc722e5f3d693"
+}

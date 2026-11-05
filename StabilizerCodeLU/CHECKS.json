@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "generic_signed_orbit_lattice_cases": 168,
+  "exact_stabilizer_projector_comparisons": 213,
+  "positive_transformations": 154,
+  "negative_transformations": 59,
+  "arbitrary_k_random_cases_with_k_at_least_2": 95,
+  "max_physical_qubits": 6,
+  "phase_denominators": [
+    4,
+    8,
+    12,
+    20
+  ],
+  "elapsed_seconds": 0.3617222309112549,
+  "meaning": "Bounded exact controls only. Dense projector and full-orbit enumeration appear only in test oracle, not the proposed polynomial algorithm.",
+  "controls_sha256": "0e49942cb9b5af4f26b7f4a6062e712e32f4a7aeb399080b418e4a5830f08e73"
+}

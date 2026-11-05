@@ -1,0 +1,10 @@
+{
+  "kind": "INDEPENDENT_EXHAUSTIVE_FINITE_CONTROL_NOT_UNIVERSAL_PROOF",
+  "status": "PASS",
+  "all_subspaces_F2_6": 2825,
+  "flag_projection_checks": 53675,
+  "successful_flag_preservers": 23795,
+  "physical_RREF_partitions_checked": 2825,
+  "seconds": 0.241,
+  "source_sha256": "9671e3c97fa33a845c59986fb729773bc52e542a72f2bc0b812ebf70601540a1"
+}

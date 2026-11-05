@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "modular_kernel_vs_complete_bruteforce_cases": 96,
+  "universal_grid_orbit_image_vs_integer_torus_Smith_cases": 48,
+  "elapsed_seconds": 0.41352105140686035,
+  "scope": "Exact finite controls; universal grid coverage follows from the separate Cramer/dyadic proof.",
+  "sha256": "7a3299738e2697f3ed43530ae5c934e85a2c693e2eb7c8e3717f3a2076930ffc"
+}
