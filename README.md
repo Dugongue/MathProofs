@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ti-sl-adjoint-multiplicities:start -->
+[SLAdjointMultiplicities/PROOF.md](SLAdjointMultiplicities/PROOF.md) — **Determinants on adjoint multiplicity spaces.** A deterministic same-field ordinary tensor isomorphism oracle algorithm computes the transporter determinant coset in time polynomial in L + 2^w over each fixed finite field. Here w is the largest multiplicity whose determinant contribution survives the pair-adjoint corrections. The result handles radicals, nonsplit factors and center-label permutations, and combines with block assembly when the primitive blocks have logarithmic w. Unrestricted primitive SL-TI remains open. AI-assisted informal proof with exact finite checks.
+<!-- ti-sl-adjoint-multiplicities:end -->
+
 <!-- ti-sl-four-fronts:start -->
 [BalancedQuarticOCI/PROOF.md](BalancedQuarticOCI/PROOF.md) — **TOCI-completeness of a single balanced quartic.** Answers all three explicit completeness cases of Lysikov–Walter Question I.12 (arXiv:2411.04639v2). Two partial traces recover a closed matrix-tag orbit, giving exact reflection of degenerations with dimension doubling. The [product-group extension](BalancedQuarticOCI/PRODUCT-GROUP.md) proves completeness for one bipartite operator and classifies every fixed individually balanced tensor tuple under products of GL groups. The general unbalanced dichotomy remains open.
 

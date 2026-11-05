@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "nonsplit_norm_and_frobenius_checks": 324,
+  "amplified_scalar_centroid_fixture": {
+    "format": [
+      16,
+      12,
+      12
+    ],
+    "pair_adjoint_dimensions": [
+      4,
+      4,
+      4
+    ],
+    "centroid_dimension": 1
+  },
+  "scope": "Finite arithmetic diagnostics for the informal proof"
+}
