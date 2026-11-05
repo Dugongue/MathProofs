@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "n": 25,
+  "logical_qubits": 2,
+  "traced_original_qubits_zero_based": [
+    6,
+    7
+  ],
+  "physical_factor_count": 1,
+  "support_strings": 64,
+  "orbit_basis_size": 94,
+  "exact_preimages_checked": 95,
+  "target_in_full_universal_phase_image": true,
+  "target_changes_binary_stabilizer_space": true,
+  "recovered_phase_denominator": 4,
+  "exact_final_Pauli_sign_correction_checked": true,
+  "elapsed_seconds": 0.811131477355957,
+  "scope": "Coupled mixed stabilizer codes obtained by tracing two physical qubits from credited graph-state LU pair. No assertion that traced pair remains LC-inequivalent. This tests universal phase-image/preimage and exact sign correction, not a full 25-qubit exhaustive-frame oracle.",
+  "sha256": "ccfad48d88140408bbceb82ce1879ccfecd5b39f2a13064a7e6a8db7b288ad8b"
+}

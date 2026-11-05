@@ -1,0 +1,14 @@
+{
+  "title": "Central Rectangular Kronecker Asymptotics",
+  "attribution": "MathProofs; AI-assisted informal proof candidate",
+  "date": "2026-11-04",
+  "target": "Panova, Complexity and asymptotics of structure constants, Open Problem 6.13",
+  "source": "https://arxiv.org/html/2305.02553",
+  "scope": "The exact square-rectangle family with lambda=(ceil(m^2/2),floor(m^2/2)), both parities.",
+  "formula": "g((m^m),(m^m),lambda)=(3 sqrt(3)/pi)(1+1_{m odd})4^m/m^5 [1-2/m+O(m^-2)]",
+  "reviews": "Three independent internal AI reviews of the leading argument; a separate refinement review.",
+  "lean_verified": false,
+  "human_validation": "Pending",
+  "publication_priority": "Unestablished",
+  "controls": "Exact integer coefficients, independent small subset counts and finite tail-bound diagnostics; not the universal proof."
+}

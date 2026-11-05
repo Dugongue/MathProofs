@@ -1,0 +1,20 @@
+{
+  "title": "Polynomial-Time Local-Unitary Equivalence of Labelled Qubit Stabilizer Codes",
+  "attribution": "MathProofs; AI-assisted informal proof candidate",
+  "date": "2026-11-04",
+  "status": "Complete informal argument with three separate internal AI reviews",
+  "target": "The arbitrary-logical-rank labelled-code extension discussed in Zhang, arXiv:2610.00527v2, Sections 4.3 and 6",
+  "source": "https://arxiv.org/html/2610.00527v2",
+  "scope": "Arbitrary valid qubit stabilizer codes, every logical dimension k, fixed physical-qubit labels; deterministic polynomial-bit-time decision and exact symbolic local-unitary witnesses.",
+  "output": "Finite Clifford/Pauli labels and rational-turn phase gates; polynomial description length, not an expanded cyclotomic field.",
+  "not_claimed": [
+    "Polynomial search over qubit permutations",
+    "A specified logical-basis transformation",
+    "An optimized runtime exponent",
+    "A production polynomial implementation from the bounded test programs"
+  ],
+  "lean_verified": false,
+  "human_validation": "Pending",
+  "publication_priority": "Unestablished",
+  "prior_result": "Zhang already solved graph-state and k=1 code LU; not claimed as our discovery."
+}

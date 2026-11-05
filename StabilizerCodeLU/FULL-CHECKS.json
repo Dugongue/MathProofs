@@ -1,0 +1,732 @@
+{
+  "status": "PASS",
+  "phase_orbit_systems": 72,
+  "full_algorithm_vs_exhaustive_Clifford_and_full_y_torus_cases": 143,
+  "accepts": 93,
+  "rejects": 50,
+  "arbitrary_k_cases_k_at_least_2": 83,
+  "max_n": 6,
+  "elapsed_seconds": 0.7793598175048828,
+  "scope": "Exact small controls. Pauli-group/full-y enumeration occurs only as bounded test convenience/oracle, not the polynomial theorem algorithm.",
+  "source_sha256": "59586839479eb2649db0ea01f7468e150187eecb9619d3cfc7f0926bbc69939f",
+  "cases": [
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 2,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 4,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 5,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 4,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 0,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 5,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 0,
+      "accepted": false
+    },
+    {
+      "n": 5,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 6,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 6,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 6,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 1,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 6,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 1,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 6,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 6,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "accepted": true
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 4,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 6,
+      "k": 3,
+      "accepted": false
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "accepted": true,
+      "special": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true,
+      "special": true
+    },
+    {
+      "n": 3,
+      "k": 0,
+      "accepted": true,
+      "special": true
+    }
+  ]
+}
