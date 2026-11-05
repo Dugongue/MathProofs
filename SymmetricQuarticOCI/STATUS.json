@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-04",
+  "verification": "Informal proofs with internal independent AI reviews; no Lean verification.",
+  "priority": "Unestablished; cited prior results and compilers are credited.",
+  "source": "Lysikov–Walter Question I.14.",
+  "established": "Complete affirmative existential answer with one Sym^2(W) tensor Sym^2(W*) and no separate marker inputs.",
+  "overlap": "This also implies the three explicit I.12 cases, already separately established in BalancedQuarticOCI. Do not count those twice.",
+  "scope": "Complex orbit closures with rationally encoded coefficients; not pure covariant symmetric powers or unrestricted SL-TI."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_EXACT_FINITE_FRONTEND_CONTROLS",
+  "proof_sha256": "4640f2ab132da57e3f32e15bdfa687247686336ec18e875f23b291f190659b29",
+  "fields": [
+    2,
+    3,
+    5
+  ],
+  "scalar_pin_checks": 7,
+  "pairing_candidate_checks": 232740,
+  "prefix_mixed_radix_checks": 720,
+  "positive_relation_checks": 270,
+  "negative_relation_checks": 270,
+  "positive_relation_cases_requiring_changed_basis": 264,
+  "padded_function_trilinear_checks": 7200,
+  "different_dimension_multisort_dimension": 18,
+  "singleton_scalar_checks": 73,
+  "scope": "Exact finite corroboration of the typed front end. Terminal ordinary-TI compilation is the published FGS theorem, not a finite control or a new Lean check."
+}

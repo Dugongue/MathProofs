@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-04",
+  "verification": "Informal proofs with internal independent AI reviews; no Lean verification.",
+  "priority": "Unestablished; cited prior results and compilers are credited.",
+  "source": "Lysikov–Walter, arXiv:2411.04639v2, Question I.12.",
+  "established": "All three concrete completeness cases; further dichotomy for every fixed individually balanced product-GL tensor tuple.",
+  "remaining": "The broader arbitrary unbalanced tuple dichotomy is open in this work. No special-linear containment claim.",
+  "proof": [
+    "PROOF.md",
+    "PRODUCT-GROUP.md",
+    "INVARIANT-LIFT.md"
+  ]
+}

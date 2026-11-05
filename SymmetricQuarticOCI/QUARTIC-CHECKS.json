@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "dimensions_n": [
+    1,
+    2,
+    3
+  ],
+  "router_identity_checks": 144,
+  "lifted_source_contractions": 354,
+  "mixed_block_contractions": 198,
+  "contractions_with_same_color_cross_edge": 89,
+  "arbitrary_non_color_preserving_conjugated_contractions": 24,
+  "known_nonclosed_orbit_path_exact_values": 3,
+  "seconds": 0.9420182704925537,
+  "arithmetic": "exact fractions, full sparse symmetric tensor and actual polynomial router extraction",
+  "Lean_checks": 0
+}

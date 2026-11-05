@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "q": 3,
+      "matchings": 12,
+      "full_joint_determinant_set_size": 8,
+      "correlated_local_cosets": true,
+      "all_coordinates_exact": "PASS"
+    },
+    {
+      "q": 5,
+      "matchings": 12,
+      "full_joint_determinant_set_size": 32,
+      "correlated_local_cosets": true,
+      "all_coordinates_exact": "PASS"
+    },
+    {
+      "q": 7,
+      "matchings": 12,
+      "full_joint_determinant_set_size": 36,
+      "correlated_local_cosets": true,
+      "all_coordinates_exact": "PASS"
+    },
+    {
+      "q": 11,
+      "matchings": 12,
+      "full_joint_determinant_set_size": 200,
+      "correlated_local_cosets": true,
+      "all_coordinates_exact": "PASS"
+    }
+  ],
+  "scope": "Exact finite controls of the coset/sign identity on interleaved repeated block types; not a substitute for the proof."
+}

@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "field": "F3",
+  "actual_tensor_pairs": 13,
+  "A_B_combinations_tested": 29952,
+  "cases": [
+    {
+      "case": 0,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": false
+    },
+    {
+      "case": 1,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": true
+    },
+    {
+      "case": 2,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": false
+    },
+    {
+      "case": 3,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": false
+    },
+    {
+      "case": 4,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": false
+    },
+    {
+      "case": 5,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": true
+    },
+    {
+      "case": 6,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": false
+    },
+    {
+      "case": 7,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": true
+    },
+    {
+      "case": 8,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": true
+    },
+    {
+      "case": 9,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": true
+    },
+    {
+      "case": 10,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": true
+    },
+    {
+      "case": 11,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": false
+    },
+    {
+      "case": 12,
+      "transporters": 32,
+      "determinant_triples": 8,
+      "SL_yes": true,
+      "reference_matching_SL_yes": true
+    }
+  ],
+  "fixed_algebra_fixture": {
+    "ambient_elements": 243,
+    "frobenius_fixed_elements": 27,
+    "primitive_idempotents": 3
+  },
+  "source_sha256": "32cc22d4264ef7f6286f57157d6e21439e624420c34c3685467ef1862df84cfb",
+  "scope": "Exhaustive GL transporters on tiny tensors and exact Frobenius algebra fixture; finite controls, not the proof or an SL-TI implementation."
+}
