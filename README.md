@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ti-sl-midpoint-algorithms:start -->
+[SLMidpointAlgorithms/PROOF.md](SLMidpointAlgorithms/PROOF.md) — **Exact midpoint and determinant-coset algorithms for tensor isomorphism.** Gives shared triangular factor elimination, exact unitriangular orbit and midpoint algorithms under explicit hypotheses, and a deterministic ordinary-TI oracle reduction for SL-TI when just one mode has a narrow intrinsic flag. Includes scalar-adjoint primitive families with all modes growing and an oracle-free algorithm for block flag groups with small diagonal images. The unrestricted four-layer midpoint problem remains open. AI-assisted informal proofs with exact finite checks.
+<!-- ti-sl-midpoint-algorithms:end -->
+
 <!-- ti-sl-adjoint-multiplicities:start -->
 [SLAdjointMultiplicities/PROOF.md](SLAdjointMultiplicities/PROOF.md) — **Determinants on adjoint multiplicity spaces.** A deterministic same-field ordinary tensor isomorphism oracle algorithm computes the transporter determinant coset in time polynomial in L + 2^w over each fixed finite field. Here w is the largest multiplicity whose determinant contribution survives the pair-adjoint corrections. The result handles radicals, nonsplit factors and center-label permutations, and combines with block assembly when the primitive blocks have logarithmic w. Unrestricted primitive SL-TI remains open. AI-assisted informal proof with exact finite checks.
 <!-- ti-sl-adjoint-multiplicities:end -->

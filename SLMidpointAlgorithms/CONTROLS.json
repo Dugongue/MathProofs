@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "shared_row_pairs": 4096,
+  "affine_block_linear_part_cases": {
+    "2": 96,
+    "3": 2592
+  },
+  "rank_band_and_determinant_pencil_checks": 243,
+  "scope": "Exact finite checks of row, affine-block and pencil identities."
+}
