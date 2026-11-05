@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-04",
+  "verification": "Informal proofs with internal independent AI reviews; no Lean verification.",
+  "priority": "Unestablished; cited prior results and compilers are credited.",
+  "source": "Grochow–Qiao, SIAM Journal on Computing 2023, Section 7.1, Open Question 7.4.",
+  "established": "Affirmative answer for every fixed finite basis-explicit linear signature and fixed arity, over the same field.",
+  "prior_credit": "Explicit application of prior MathProofs mixed tensor packing, also using the published FGS/CGQTZ fixed-component compiler. The core packing is not a new discovery of this run.",
+  "extension": "Uniform variable signatures and arities with dense data; binary exponents in dimension one handled by addition chains.",
+  "remaining": "A succinct volume/determinant circuit is not an explicit dense tensor; no polynomial SL marker is supplied."
+}

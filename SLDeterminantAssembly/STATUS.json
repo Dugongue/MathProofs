@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-04",
+  "verification": "Informal proofs with internal independent AI reviews; no Lean verification.",
+  "priority": "Unestablished; cited prior results and compilers are credited.",
+  "source": "Project direct-sum/permutation assembly gap for SL-TI; motivated by CGQTZ Question 1.9.",
+  "established": "Deterministic nonadaptive polynomial-time reduction from arbitrary SL-3TI to concise local-centroid SL-3TI at each fixed finite field.",
+  "oracle": "Local SL-TI decision only; no ordinary-TI or transporter oracle is hidden in preprocessing.",
+  "remaining": "Primitive SL-TI to ordinary TI, a single many-one assembly, and varying-field poly(log q) bound are not proved."
+}

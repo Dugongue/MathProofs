@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "nonorthogonal_tag_and_chart_fixtures": [
+    {
+      "n": 1,
+      "sample": 2,
+      "exact_checks": "PASS",
+      "invariant_lift": "PASS"
+    },
+    {
+      "n": 1,
+      "sample": 9,
+      "exact_checks": "PASS",
+      "invariant_lift": "PASS"
+    },
+    {
+      "n": 2,
+      "sample": 2,
+      "exact_checks": "PASS",
+      "invariant_lift": "PASS"
+    },
+    {
+      "n": 2,
+      "sample": 9,
+      "exact_checks": "PASS",
+      "invariant_lift": "PASS"
+    },
+    {
+      "n": 3,
+      "sample": 2,
+      "exact_checks": "PASS",
+      "invariant_lift": "PASS"
+    },
+    {
+      "n": 3,
+      "sample": 9,
+      "exact_checks": "PASS",
+      "invariant_lift": "PASS"
+    }
+  ],
+  "false_positive_controls": {
+    "right_tags_wrong_channel": "rejected",
+    "zero": "rejected"
+  },
+  "genuine_degenerate_orbit_example": [
+    {
+      "t": "1",
+      "nonzero_data": true
+    },
+    {
+      "t": "1/2",
+      "nonzero_data": true
+    },
+    {
+      "t": "-2",
+      "nonzero_data": true
+    },
+    {
+      "t": "0",
+      "nonzero_data": false
+    }
+  ],
+  "scope": "finite encoding and chart checks only; not proof of general closure statement"
+}

@@ -5,6 +5,18 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ti-sl-four-fronts:start -->
+[BalancedQuarticOCI/PROOF.md](BalancedQuarticOCI/PROOF.md) — **TOCI-completeness of a single balanced quartic.** Answers all three explicit completeness cases of Lysikov–Walter Question I.12 (arXiv:2411.04639v2). Two partial traces recover a closed matrix-tag orbit, giving exact reflection of degenerations with dimension doubling. The [product-group extension](BalancedQuarticOCI/PRODUCT-GROUP.md) proves completeness for one bipartite operator and classifies every fixed individually balanced tensor tuple under products of GL groups. The general unbalanced dichotomy remains open.
+
+[SymmetricQuarticOCI/PROOF.md](SymmetricQuarticOCI/PROOF.md) — **TOCI-completeness of one symmetric mixed quartic.** An affirmative answer to Lysikov–Walter Question I.14, with a single tensor in Sym²(W) ⊗ Sym²(W*) and no separate marks. Trace-cancelling internal markers recover the necessary color transfers and lift every contraction invariant. Its implications for I.12 overlap the preceding entry.
+
+[LinearStructureUniversality/PROOF.md](LinearStructureUniversality/PROOF.md) — **Basis-explicit linear-structure universality.** Answers Grochow–Qiao Open Question 7.4 affirmatively for all fixed arities and signatures, over the same field. Makes explicit the application of our prior mixed-system packing and the published FGS compiler to relations, functions, and repeated primal/dual actions. Includes the uniform dense-input extension and the credited prior packing proof. No succinct determinant encoding is claimed.
+
+[SLDeterminantAssembly/PROOF.md](SLDeterminantAssembly/PROOF.md) — **Determinant coset assembly for tensor direct sums.** At every fixed finite field, a deterministic polynomial-time truth-table reduction takes arbitrary SL-TI to SL-TI on concise tensors with local centroid. The exact determinant formula handles matching signs, coordinate changes and deficient modes without a transporter oracle. This closes the block assembly step for the Turing comparison; the primitive reduction to ordinary TI and unrestricted many-one containment remain open.
+
+All four entries are AI-assisted informal proofs, with exact controls and internal reviews. No Lean verification, external validation, or publication-priority claim.
+<!-- ti-sl-four-fronts:end -->
+
 <!-- four-target-research-results:start -->
 [FractionalBicliqueSeparation/PROOF.md](FractionalBicliqueSeparation/PROOF.md) — **Strict asymptotic fractional biclique cover/partition separation.** An informal all-tensor-powers proof that the Domino has fractional cover number 2 but asymptotic fractional partition number at least 1/2 + sqrt(5/2) > 2. Rules out convergence to 2 discussed by Ghosal–Karrenbauer (SEA 2025, Sections 3–4) and supplies the strict separation missing from their comparison chain; the exact asymptotic value remains open. Includes a complete strictness classification when fractional cover number equals 2, exact controls and internal audits. The integral binary-rank counterexample documented alongside it is Shitov’s prior result, not our discovery.
 
