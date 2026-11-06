@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- manin-bilinear-lean-reduction:start -->
+[ManinBilinearReduction/ManinSingleFile.lean](ManinBilinearReduction/ManinSingleFile.lean) — **Manin’s bilinear undecidability conjecture (Conjecture 7.2), provisional Lean formalization.** The single file uses only Mathlib imports. The reduction from number-ring undecidability is Lean-verified, and the provisional endpoint has one explicit placeholder for that arithmetic theorem.
+<!-- manin-bilinear-lean-reduction:end -->
+
 <!-- general-position-polynomial-bounds:start -->
 [GeneralPositionPolynomialBounds/PROOF.md](GeneralPositionPolynomialBounds/PROOF.md) — **General-position polynomial classifications and root bounds.** Informal proofs answering both balanced complete multipartite classification questions in Rather, arXiv:2603.06930v3, §4. Also proves the sharp minimum root modulus over connected graphs of each order, attained exactly by paths and the four-cycle, and exponential growth of the maximum root modulus.
 <!-- general-position-polynomial-bounds:end -->
