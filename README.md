@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- rational-nash-equilibrium:start -->
+[RationalNashEquilibrium/PROOF.md](RationalNashEquilibrium/PROOF.md) — **Rational Nash Equilibrium in Three-Player Zero-Sum Games.** Gives an explicit polynomial-time compactification removing the bounded-witness promise in Berthelsen–Hansen’s reduction, yielding an unconditional $\exists\mathbb Q$-completeness proof. Also gives a conditional halting-completeness result with fixed action sets and two varying pure payoff vectors, assuming Glazer’s Diophantine definition of the integers in the rationals. The hardness classification already appears in the 2024 compendium. AI-assisted informal proof.
+<!-- rational-nash-equilibrium:end -->
+
 <!-- ti-sl-midpoint-algorithms:start -->
 [SLMidpointAlgorithms/PROOF.md](SLMidpointAlgorithms/PROOF.md) — **Exact midpoint and determinant-coset algorithms for tensor isomorphism.** Gives shared triangular factor elimination, exact unitriangular orbit and midpoint algorithms under explicit hypotheses, and a deterministic ordinary-TI oracle reduction for SL-TI when just one mode has a narrow intrinsic flag. Includes scalar-adjoint primitive families with all modes growing and an oracle-free algorithm for block flag groups with small diagonal images. The unrestricted four-layer midpoint problem remains open. AI-assisted informal proofs with exact finite checks.
 <!-- ti-sl-midpoint-algorithms:end -->
