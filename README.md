@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- bilinear-diophantine-undecidability:start -->
+[BilinearDiophantineUndecidability/PROOF.md](BilinearDiophantineUndecidability/PROOF.md) — **Bilinear Diophantine undecidability (Manin, Conjecture 7.2).** Proves undecidability for integer systems built from any fixed nonzero bilinear map, using Koymans–Pagano's theorem, and completes Manin's classification of extension decidability for simply connected finite targets. Also gives a single smooth projective counterexample to Pasten's Diophantine approximation conjecture over ℚ at every completion, conditional on Glazer's claimed Diophantine definition of ℤ in ℚ.
+<!-- bilinear-diophantine-undecidability:end -->
+
 <!-- local-global-r-equivalence:start -->
 [LocalGlobalREquivalence/PROOF.md](LocalGlobalREquivalence/PROOF.md) — **Undecidable Local–Global R-Equivalence on One Smooth Projective Variety.** Assuming the integers are Diophantine in the rationals, proves that deciding R-equivalence of two given rational points is halting-complete on a single fixed smooth projective variety. The input pairs lie on rational curves together over every completion. The construction uses a fixed smooth projective family with spherical real fibers whose rational point sets have either exactly two points or infinitely many. AI-assisted informal proof.
 <!-- local-global-r-equivalence:end -->
