@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- rational-unit-distance:start -->
+[RationalUnitDistance/PROOF.md](RationalUnitDistance/PROOF.md) — **Unit-distance realizability over the reals and rationals (CG64–CG65).** Resolves both open questions in Schaefer, Cardinal and Miltzow's compendium by proving existential-real completeness in every fixed dimension d ≥ 2 for ordinary and induced unit-distance recognition and for unit linkages. Also proves polynomial-time equivalence between rational polynomial solvability and injective unit-edge realization in ℚ²⁴, even for graphs that realize over ℝ and every ℚₚ. Assuming Glazer's claimed integer definition, rational realization is halting-complete even on a family of bounded pathwidth.
+<!-- rational-unit-distance:end -->
+
 <!-- rational-subrings-and-mazur:start -->
 [RationalSubringsAndMazur/PROOF.md](RationalSubringsAndMazur/PROOF.md) — **Hilbert's tenth problem on rational subrings and a Cantor-set strengthening of Mazur's conjecture.** Assuming Glazer's claimed definition of ℤ in ℚ, identifies the many-one degrees of solvability over all subrings of ℚ with enumeration degrees of their inverted prime sets, using one fixed smooth degree-eight family. Also strengthens the known refutation of Mazur's 1992 conjecture to continuum many components inside a single real component of a smooth projective variety, with synchronized Cantor limit sets at all completions.
 <!-- rational-subrings-and-mazur:end -->
