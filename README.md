@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- sparse-graph-distance-number:start -->
+[SparseGraphDistanceNumber/PROOF.md](SparseGraphDistanceNumber/PROOF.md) — **Two bounds for the distance-number of sparse graphs.** An informal proof of Bakhajian and Feldheim's Conjecture 1 gives a uniform bound for fixed treewidth and maximum degree. A separate grid construction answers the bounded-degree question of Carmi, Dujmović, Morin and Wood, giving O(n/√log n) lengths for every fixed degeneracy bound.
+<!-- sparse-graph-distance-number:end -->
+
 <!-- rational-unit-distance:start -->
 [RationalUnitDistance/PROOF.md](RationalUnitDistance/PROOF.md) — **Unit-distance realizability over the reals and rationals (CG64–CG65).** Resolves both open questions in Schaefer, Cardinal and Miltzow's compendium by proving existential-real completeness in every fixed dimension d ≥ 2 for ordinary and induced unit-distance recognition and for unit linkages. Also proves polynomial-time equivalence between rational polynomial solvability and injective unit-edge realization in ℚ²⁴, even for graphs that realize over ℝ and every ℚₚ. Assuming Glazer's claimed integer definition, rational realization is halting-complete even on a family of bounded pathwidth.
 <!-- rational-unit-distance:end -->
