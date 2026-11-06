@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- diophantine-constant-fields:start -->
+[DiophantineConstantFields/PROOF.md](DiophantineConstantFields/PROOF.md) — **Diophantine definitions of constants by rational specialization (Pheidas, AIM Question 4).** Assuming Glazer's claimed definition of ℤ in ℚ, gives one parameter-free definition of the constant field ℚ in every purely transcendental extension of ℚ, and defines the constants in the function field of every ℚ-variety with Zariski-dense rational points. Also records the resulting refutations of Pasten's Conjectures 5.13, 5.14, 5.16, and 5.20 and answers Pheidas's denominator-support question over ℚ.
+<!-- diophantine-constant-fields:end -->
+
 <!-- bilinear-diophantine-undecidability:start -->
 [BilinearDiophantineUndecidability/PROOF.md](BilinearDiophantineUndecidability/PROOF.md) — **Bilinear Diophantine undecidability (Manin, Conjecture 7.2).** Proves undecidability for integer systems built from any fixed nonzero bilinear map, using Koymans–Pagano's theorem, and completes Manin's classification of extension decidability for simply connected finite targets. Also gives a single smooth projective counterexample to Pasten's Diophantine approximation conjecture over ℚ at every completion, conditional on Glazer's claimed Diophantine definition of ℤ in ℚ.
 <!-- bilinear-diophantine-undecidability:end -->
