@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ternary-rational-nash:start -->
+[TernaryRationalNash/PROOF.md](TernaryRationalNash/PROOF.md) — **Rational Nash Equilibria at the Pairwise–Ternary Boundary.** Proves unconditional $\exists\mathbb Q$-completeness for rational equilibrium existence with two actions per player, bounded interaction degree, and a fixed finite alphabet of pointwise zero-sum local payoff tables of arity at most three. Exact Nash equilibrium search is FIXP-complete under the same restrictions. Pairwise games always have a rational equilibrium. Assuming the integers are Diophantine in the rationals, also proves halting-completeness on a fixed-core family of bounded pathwidth and a fixed-graph family with one varying payoff vector. AI-assisted informal proof.
+<!-- ternary-rational-nash:end -->
+
 <!-- rational-nash-equilibrium:start -->
 [RationalNashEquilibrium/PROOF.md](RationalNashEquilibrium/PROOF.md) — **Rational Nash Equilibrium in Three-Player Zero-Sum Games.** Gives an explicit polynomial-time compactification removing the bounded-witness promise in Berthelsen–Hansen’s reduction, yielding an unconditional $\exists\mathbb Q$-completeness proof. Also gives a conditional halting-completeness result with fixed action sets and two varying pure payoff vectors, assuming Glazer’s Diophantine definition of the integers in the rationals. The hardness classification already appears in the 2024 compendium. AI-assisted informal proof.
 <!-- rational-nash-equilibrium:end -->
