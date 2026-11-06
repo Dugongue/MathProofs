@@ -5,6 +5,16 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-and-algebra-open-questions:start -->
+[TensorAndAlgebraOpenQuestions/Smoothed-Exact-TI.md](TensorAndAlgebraOpenQuestions/Smoothed-Exact-TI.md) — **Exact smoothed orthogonal and unitary tensor isomorphism (Open Problem 2, Chizewer–Everett–Mithal–Qiao).** Informal proof of polynomial-bit exact decision after arbitrarily small independent rational-grid perturbations.
+
+[TensorAndAlgebraOpenQuestions/Finite-Field-Orthogonal-TI.md](TensorAndAlgebraOpenQuestions/Finite-Field-Orthogonal-TI.md) — **Finite-field orthogonal tensor isomorphism with nonsplit spectra (orthogonal part of Open Problem 4).** Informal algorithm for squarefree marginal spectra and a positive limiting success fraction over each fixed finite field.
+
+[TensorAndAlgebraOpenQuestions/Positive-Characteristic-PC.md](TensorAndAlgebraOpenQuestions/Positive-Characteristic-PC.md) — **Positive-characteristic Polynomial Calculus for matrix isomorphism (partial progress on CCC 2023 Open Question 7.3).** Informal degree bound from indecomposable multiplicities and polynomial expanded size when the relevant base-p digit position is bounded over a fixed field.
+
+[TensorAndAlgebraOpenQuestions/Nonassociative-Test-Algebras.md](TensorAndAlgebraOpenQuestions/Nonassociative-Test-Algebras.md) — **Quadratic-dimensional nonassociative test algebras (partial progress on Mukhopadhyay–Ramya–Shastri, Section 5, Question 2).** Informal proofs of improved upper bounds and a characteristic-two obstruction to the published commutative construction.
+<!-- tensor-and-algebra-open-questions:end -->
+
 <!-- manin-bilinear-lean-reduction:start -->
 [ManinBilinearReduction/ManinSingleFile.lean](ManinBilinearReduction/ManinSingleFile.lean) — **Manin’s bilinear undecidability conjecture (Conjecture 7.2), provisional Lean formalization.** The single file uses only Mathlib imports. The reduction from number-ring undecidability is Lean-verified, and the provisional endpoint has one explicit placeholder for that arithmetic theorem.
 <!-- manin-bilinear-lean-reduction:end -->
