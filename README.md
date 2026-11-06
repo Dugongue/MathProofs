@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- rational-point-decision:start -->
+[RationalPointDecision/PROOF.md](RationalPointDecision/PROOF.md) — **Rational-point decision on smooth hypersurfaces and marked projective varieties (Poonen).** Gives an unconditional equivalence between Hilbert's tenth problem and point existence on smooth affine hypersurfaces over every fixed number field. Over ℚ it also gives an unconditional equivalence with distinguishing exactly one rational point from infinitely many on smooth projective varieties with a supplied point. Assuming Glazer's claimed integer definition, the latter problem is halting-complete in one fixed smooth projective family.
+<!-- rational-point-decision:end -->
+
 <!-- diophantine-constant-fields:start -->
 [DiophantineConstantFields/PROOF.md](DiophantineConstantFields/PROOF.md) — **Diophantine definitions of constants by rational specialization (Pheidas, AIM Question 4).** Assuming Glazer's claimed definition of ℤ in ℚ, gives one parameter-free definition of the constant field ℚ in every purely transcendental extension of ℚ, and defines the constants in the function field of every ℚ-variety with Zariski-dense rational points. Also records the resulting refutations of Pasten's Conjectures 5.13, 5.14, 5.16, and 5.20 and answers Pheidas's denominator-support question over ℚ.
 <!-- diophantine-constant-fields:end -->
