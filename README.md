@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- rational-subrings-and-mazur:start -->
+[RationalSubringsAndMazur/PROOF.md](RationalSubringsAndMazur/PROOF.md) — **Hilbert's tenth problem on rational subrings and a Cantor-set strengthening of Mazur's conjecture.** Assuming Glazer's claimed definition of ℤ in ℚ, identifies the many-one degrees of solvability over all subrings of ℚ with enumeration degrees of their inverted prime sets, using one fixed smooth degree-eight family. Also strengthens the known refutation of Mazur's 1992 conjecture to continuum many components inside a single real component of a smooth projective variety, with synchronized Cantor limit sets at all completions.
+<!-- rational-subrings-and-mazur:end -->
+
 <!-- rational-point-decision:start -->
 [RationalPointDecision/PROOF.md](RationalPointDecision/PROOF.md) — **Rational-point decision on smooth hypersurfaces and marked projective varieties (Poonen).** Gives an unconditional equivalence between Hilbert's tenth problem and point existence on smooth affine hypersurfaces over every fixed number field. Over ℚ it also gives an unconditional equivalence with distinguishing exactly one rational point from infinitely many on smooth projective varieties with a supplied point. Assuming Glazer's claimed integer definition, the latter problem is halting-complete in one fixed smooth projective family.
 <!-- rational-point-decision:end -->
