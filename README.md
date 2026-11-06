@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- general-position-polynomial-bounds:start -->
+[GeneralPositionPolynomialBounds/PROOF.md](GeneralPositionPolynomialBounds/PROOF.md) — **General-position polynomial classifications and root bounds.** Informal proofs answering both balanced complete multipartite classification questions in Rather, arXiv:2603.06930v3, §4. Also proves the sharp minimum root modulus over connected graphs of each order, attained exactly by paths and the four-cycle, and exponential growth of the maximum root modulus.
+<!-- general-position-polynomial-bounds:end -->
+
 <!-- mathproofs-crossovers:start -->
 [MathProofsCrossovers/PROOF.md](MathProofsCrossovers/PROOF.md) — **Crossovers in tensor isomorphism and binary designs.** Informal proofs of finite-field unitary TI equivalence with ordinary TI (Chen et al., Open Question 1.10), small-Gaussian-noise smoothed orthogonal and unitary TI (Chizewer et al., Open Problem 2), and a classification of minimum-rank bent translation designs (Hyun et al., Open Problem 3). Rules out the direct affine-block extension of Hyun et al. Theorem 6 to all plateaued functions, even with arbitrary block selection and repetitions. Credits the prior complex unitary reduction to Lysikov and Walter. Publication priority remains provisional.
 <!-- mathproofs-crossovers:end -->
