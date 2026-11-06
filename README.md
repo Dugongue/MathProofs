@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- mathproofs-crossovers:start -->
+[MathProofsCrossovers/PROOF.md](MathProofsCrossovers/PROOF.md) — **Crossovers in tensor isomorphism and binary designs.** Informal proofs of finite-field unitary TI equivalence with ordinary TI (Chen et al., Open Question 1.10), small-Gaussian-noise smoothed orthogonal and unitary TI (Chizewer et al., Open Problem 2), and a classification of minimum-rank bent translation designs (Hyun et al., Open Problem 3). Rules out the direct affine-block extension of Hyun et al. Theorem 6 to all plateaued functions, even with arbitrary block selection and repetitions. Credits the prior complex unitary reduction to Lysikov and Walter. Publication priority remains provisional.
+<!-- mathproofs-crossovers:end -->
+
 <!-- sparse-graph-distance-number:start -->
 [SparseGraphDistanceNumber/PROOF.md](SparseGraphDistanceNumber/PROOF.md) — **Two bounds for the distance-number of sparse graphs.** An informal proof of Bakhajian and Feldheim's Conjecture 1 gives a uniform bound for fixed treewidth and maximum degree. A separate grid construction answers the bounded-degree question of Carmi, Dujmović, Morin and Wood, giving O(n/√log n) lengths for every fixed degeneracy bound.
 <!-- sparse-graph-distance-number:end -->
