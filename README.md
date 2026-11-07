@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- rank-two-ring-universality:start -->
+- **Rank-two matrix completion and tensor universality over rings** ([proofs and scope](RankTwoAndRingUniversality/README.md)) proves binary-entry rank-two completion existentially complete, gives a binary rank-two PSD completion corollary and a fixed-finite-field NP-completeness threshold, extends the finite-free tensor equivalences to arbitrary commutative rings, and gives smaller form-to-tensor reductions in small characteristic. Informal proofs with finite gadget checks; prior rank-three completeness is credited, and novelty qualifications are explicit.
+<!-- rank-two-ring-universality:end -->
+
 <!-- tensor-form-questions:start -->
 - **Tensor and cubic-form isomorphism questions** ([proofs and scope](TensorFormQuestions/README.md)) gives an arbitrary-base-ring reduction in the finite-free basis model, an explicit six-variable local-to-global counterexample, and an optimal exponent for algebraically equivariant arity reduction. Also explains rational decidability as a credited classical consequence. Informal proofs, with remaining scope and priority qualifications stated.
 <!-- tensor-form-questions:end -->
