@@ -133,6 +133,11 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- cross-branch-resolutions:start -->
+- **The Missing Complex Hanner Inequality** ([informal proof](CrossBranchResolutions/HANNER.md)) proves the reverse Steinhaus inequality for every finite family of complex Lp functions and 1 ≤ p ≤ 2, resolving the missing range stated by Jenkins–Tkocz. The proof uses an explicit positive-semidefinite regularized Hessian. Independently audited informally; not Lean verified, and publication priority is unconfirmed.
+- **A Counterexample to J-Preorder Loewy Monotonicity** ([informal proof](CrossBranchResolutions/LOEWY.md), [exact computational supplement](CrossBranchResolutions/LOEWY-EQUIVALENCE-SUPPLEMENT.md)) refutes Jonsson's Conjecture 43 using connected characteristic-2 algebras with Loewy lengths 5 and 3; tensor powers give arbitrarily large additive violations. The block-theoretic ingredients are established results, not our discoveries. Independently audited informally; not Lean verified, and priority for recognizing the contradiction is unconfirmed.
+<!-- cross-branch-resolutions:end -->
+
 <!-- rank-two-geometric-universality:start -->
 - **Arithmetic and geometric universality at rank two** ([informal proof](RankTwoGeometricUniversality/PROOF.md)) encodes every affine scheme over Q as a smooth surjective binary rank-two matrix-completion construction, preserving singularities up to smooth variables. Combines local witnesses and smoothing to retain H10(Q)-equivalence even for smooth geometrically integral completion spaces solvable over every completion of Q. Undecidability is conditional; the new strengthening has author audit only, with no Lean certification or established priority.
 <!-- rank-two-geometric-universality:end -->
