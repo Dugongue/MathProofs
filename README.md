@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- lean-library-crossovers:start -->
+- **Four crossovers from the Lean library and MathProofs** ([informal proofs](LeanLibraryCrossovers/PROOF.md)) refutes Lovett–Zhang Conjecture 37, answers the block-graph general d-position question, resolves Agrawal–Saxena's all-field cubic-form reduction question, and proves Cody–Moore Conjecture 7.6. The note also treats degree padding and smooth quartic point counts.
+<!-- lean-library-crossovers:end -->
+
 -------------------------------------------
 PROOFS THAT CLOSE AN EXISTING OPEN PROBLEM/CONJECTURE OR IMPROVE A BEST PUBLISHED BOUND:
 
