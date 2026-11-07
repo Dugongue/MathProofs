@@ -1,0 +1,64 @@
+# Near-cube-root arity reduction for tensor isomorphism
+
+**Theorem.** Over every field, explicitly given order-\(d\) tensor isomorphism, for \(d\ge 3\), reduces by an objectwise affine-linear map to ordinary three-tensor isomorphism. If the input mode dimensions are at most \(n\), the largest output mode is at most \(\operatorname{poly}(d)n^{\lceil d/3\rceil}\). The map preserves transporters in both directions with a forward homomorphic lift and a homomorphic recovery that is a left inverse. The running time is polynomial in the explicitly given tensor size and the format description.
+
+Grochow and Qiao's Open Question 7.8 asks for \(\operatorname{poly}(d)n^{(d/3)(1+o(1))}\) dimensions. The theorem meets that bound with \(o(1)=O(1/d)\), in the arity-asymptotic sense, and has exponent exactly \(d/3\) whenever \(3\mid d\). For a separate interpretation requiring \(o(1)\to0\) as \(n\to\infty\) at fixed \(d\), it leaves the additive rounding in the exponent when \(3\nmid d\). [Open Question 7.8 and §2.3](https://epubs.siam.org/eprint/VA7M2DT6DFQMVDVWIBBN/full)
+
+## A single product map with logarithmically many markers
+
+Divide the input mode labels into three nonempty groups \(I_1,I_2,I_3\) of sizes differing by at most one. Choose an ordered binary tree on the leaves of each group, keeping the original mode order within a group. For each node \(u\), let \(W_u\) be the tensor product of the input mode spaces at its leaves. At an internal node \(u\) with left child \(v\) and right child \(w\), let \(\mu_u:W_v\otimes W_w\to W_u\) be the canonical tensor-product identification. All node spaces are separately labeled copies, including when they have the same dimension.
+
+Put \(X=\bigoplus_u W_u\). Write \(b\) for the number of nodes and \(t=\lceil\log_2 b\rceil\). Assign binary codes \(0,\ldots,b-1\) to the nodes. For each bit \(j\) let \(P_j:X\to X\) be the projection acting by that bit on each node. Their joint eigenspaces are exactly the summands \(W_u\), over any field. Define one bilinear map \(M:X\times X\to X\) whose restriction to \(W_v\times W_w\) for each ordered sibling pair is \(\mu_u\), placed in its parent summand \(W_u\). All other restrictions are zero.
+
+If \(A\in\operatorname{GL}(X)\) preserves the \(P_j\) and \(M\), it acts separately on the \(W_u\). The equality \(A M=M(A,A)\) on every sibling pair forces the map on its parent to be the tensor product of the two child maps. Thus the maps on all nodes are exactly those induced by the maps on the original input factors. Conversely any original factor maps extend in precisely this manner. A grouped input tensor sits in the triple tensor product of the three root spaces, inside \(X\otimes X\otimes X\). Transporting it while preserving \(P_j,M\) is therefore exactly the original order-\(d\) isomorphism.
+
+## Encode the shared maps as a partitioned three-tensor
+
+In mode \(i\in\{1,2,3\}\), use the labeled summands \(X_i^+,X_i^-,L_i\) of types \(X,X^*,F\). In mode 3 add \(t\) labeled lines \(L_{3,j}\). Define a tensor by specifying the following disjoint blocks.
+
+1. Put the grouped input tensor in \(X_1^+\otimes X_2^+\otimes X_3^+\).
+2. Put \(M\) in \(X_1^-\otimes X_2^-\otimes X_3^+\).
+3. Put \(P_j\) in \(X_1^+\otimes X_2^-\otimes L_{3,j}\), identifying an endomorphism with its \(X\otimes X^*\) tensor and using the basis vector of the line.
+4. For every pair \(i\ne j\), put the canonical coevaluation tensor in \(X_i^+\otimes X_j^-\) tensored with the basis vector in the remaining \(L_k\).
+5. Put coefficient \(1\) on each of \(L_1\otimes L_2\otimes L_3\) and \(L_1\otimes L_2\otimes L_{3,j}\). Set all unspecified blocks to zero.
+
+For a partition-respecting transporter write \(c_i\) for its action on \(L_i\). The scalar blocks force \(c_1c_2c_3=1\) and the action on every \(L_{3,j}\) to be \(c_3\). Divide the actions on \(X_i^+,X_i^-\) by \(c_i\). These normalized actions preserve the coevaluations, because each equation has total scalar multiplier \(c_1c_2c_3=1\). A preserved coevaluation identifies the normalized negative action in one mode with the inverse transpose of the normalized positive action in its partner. The bipartite graph on three positive and three negative copies with the six off-diagonal pairs is connected. Hence all normalized positive actions are one common \(A\) and all normalized negative actions are \(A^{-T}\). The same scalar cancellation on the other tensor blocks now gives precisely the projection, product, and data constraints above.
+
+Restriction of this common normalized action to the leaves recovers the original witness. It is multiplicative under composition and regular on the allowed group because each \(c_i\) is the invertible coordinate on a marked line. Conversely an original witness lifts by using its node maps on every positive copy, their inverse transposes on negative copies, and \(1\) on each marked line. This is a regular group homomorphism and the recovery is a left inverse.
+
+## Remove the partitions
+
+Apply Theorem 5.1 of Grochow and Qiao IV. Its maximum output side is at most a polynomial in the number of parts times \(2^{N+M+L}\) times the maximum input side plus one, where \((N,M,L)\) are the numbers of parts. Here they are \((3,3,3+t)\), so this factor is polynomial in \(b=O(d)\). The construction uses only fixed zero and one entries and copied original coefficients. [Linear-length partition compiler, Theorem 5.1](https://arxiv.org/html/2306.16317#S5)
+
+For the transporter claim in the unpartitioning, observe first that the partitioned input is concise in each mode, including if the grouped data tensor is zero. In each \(X_i^\pm\) the appropriate coevaluation exposes its entire space on a block distinguished from the other summands. The common scalar lines in modes 1 and 2 are exposed by the scalar blocks. In mode 3, \(L_3\) is exposed by the coevaluation in \(X_1^-\otimes X_2^+\), while the \(L_{3,j}\) are separated by the operators \(P_j\) in the opposite block. Those operators are linearly independent since the codes contain the single-bit code \(2^j\) for every bit used. Here conciseness means the linear support in every mode equals its entire mode space.
+
+Each unpartitioning stage in the proof of Theorem 5.1 appends a block of marker slices with separate identity tags. Its output stays concise. The original slices already span the original row and column supports. In the new slices, the disjoint tag identities and the further identity blocks expose every added row and column. The marker slices are independent modulo the original slices by those separate tags. The proof of Theorem 5.1 also gives the zero upper-right block \(R_{12}=0\) on the depth action of the stage, hence an induced action on the quotient by the marker-depth subspace. On those original depth slices, there is no contribution from the markers. Therefore the original row and column subspaces must be preserved by the other two mode maps, since the original tensor is concise on both. The recovery of the earlier transporter is by these two restrictions and the depth quotient. Those operations are regular group homomorphisms. The forward block-diagonal lifts in the compiler, using contragredients on the identity-paired copies, are regular and recover to the identity. Apply this reasoning in succession for the three stages, with their cyclic choice of the sliced mode.
+
+## The rounding is necessary for equivariant algebraic reductions
+
+Assume \(n\ge2\) and all input factors have dimension \(n\). Consider an algebraically equivariant polynomial kernel reduction \(r\) to \(W_1\otimes W_2\otimes W_3\), with an algebraic group homomorphism from \(\prod_{i=1}^d\mathrm{GL}(V_i)\) to \(\prod_{j=1}^3\mathrm{GL}(W_j)\) implementing its equivariance. It suffices to work over an algebraically closed field, in any characteristic. Then at least one output side has dimension at least \(n^{\lceil d/3\rceil}\).
+
+Indeed, a nonzero pure tensor \(x=e_1\otimes\cdots\otimes e_1\) lies in a different input orbit from \(0\). Therefore \(r(x)\ne r(0)\), and a positive-degree homogeneous component \(r_k\) of \(r\) has \(r_k(x)\ne0\). Each homogeneous component is still equivariant because both actions are linear. Let \(T\) be the product of the diagonal tori in the \(d\) copies of \(\mathrm{SL}_n\). The input vector \(x\) has weight \((\varepsilon_1,\ldots,\varepsilon_1)\), with \(\varepsilon_1\) the first coordinate character on one factor. By homogeneity and equivariance, \(r_k(x)\) has weight \(k(\varepsilon_1,\ldots,\varepsilon_1)\). Its projection to each of the \(d\) character lattices \(\mathbb Z^n/\mathbb Z(1,\ldots,1)\) is nonzero.
+
+A weight in \(W_1\otimes W_2\otimes W_3\) is a sum of three weights, one from each output mode. Thus some weight of one output mode has nonzero projection on at least \(\lceil d/3\rceil\) input factors. The weight set of that same mode is invariant under the product of the Weyl groups, by conjugating \(T\) with determinant-one monomial matrices in the input. A nonzero character in \(\mathbb Z^n/\mathbb Z(1,\ldots,1)\) has at least \(n\) distinct Weyl conjugates. To see this, represent the character by an integer tuple. A permutation fixing the class changes that tuple by a constant tuple, whose constant must be zero by taking the sum. The tuple is nonconstant, so one value occurs \(s\) times with \(1\le s\le n-1\). Distinct choices of those \(s\) positions already give at least \(\binom ns\ge n\) conjugates. Taking the product over the nonzero factor projections produces at least \(n^{\lceil d/3\rceil}\) distinct weights in one output mode. Their weight spaces are nonzero and independent, yielding the bound.
+
+Consequently the exponent of the constructive upper bound is optimal for all \(d\) among algebraically equivariant reductions, even allowing nonlinear polynomial maps. In the fixed-\(d\) reading of the question, this rules out the exponent \(d/3+o(1)\) in this equivariant model when \(3\nmid d\). This lower bound does not apply to a general nonequivariant kernel map or to a finite-field reduction with only finite-point equivariance.
+
+
+## Unequal input widths
+
+For arbitrary positive input widths \(n_1,\ldots,n_d\), put \(P=\prod_i n_i\) and define
+\[
+B=\min_{(I_1,I_2,I_3)}\ \max_{j=1,2,3}\prod_{i\in I_j}n_i,
+\]
+where the minimum is over partitions of the mode labels into three nonempty groups. Using a minimizing partition in the construction above gives maximum output width \(\operatorname{poly}(d)B\). Every node-space dimension is at most the product of the dimensions in its group. A minimizing partition can be computed in polynomial time in the dense input size. After processing a prefix of modes, record the current products for the first two groups and the three nonempty flags. The product for the third group follows from the known prefix product. Each of the first two products lies in \(\{1,\ldots,P\}\), so at most \(O(dP^2)\) states suffice across all stages, with three transitions per state. Compare the three products at the last stage and recover the minimizing partition by backtracking.
+
+The lower bound for equivariant algebraic reductions is at least \(B\). In the torus proof assign each input factor of width \(n_i\ge2\) to one of the three selected output weights having nonzero projection onto its character lattice. Each assigned factor contributes a Weyl orbit of size at least \(n_i\), so the output width of that group is at least the corresponding product. Assign the width-one factors arbitrarily. If this creates an empty group, split off one mode from a group with at least two modes. Such a split cannot increase the maximum group product. Since \(d\ge3\), repeating this yields three nonempty groups and proves the asserted bound. Thus the minimax product gives the right dimension scale up to a polynomial in the arity in the same equivariant model.
+
+
+## Dimensions and exact scope
+
+Each node space has dimension at most \(n^{\lceil d/3\rceil}\) and \(X\) has \(O(d)\) summands. The partitioned dimensions are at most \(2\dim X+t+1\), hence the final dimension bound. More concretely, each node dimension is at most the original number of coefficients \(\prod_i\dim V_i\). Thus the reduction takes polynomial time even when the mode sizes are very unequal. Zero-dimensional modes, if included in the format convention, have only the zero tensor for that common format and can be dispatched directly.
+
+This is an informal proof. It uses the published linear-length unpartitioning theorem, with an explicit construction that keeps the number of blocks logarithmic in the arity rather than one block per factor. A search for the exact question and the arity bound found the stated \(O(d^2 n^{\lfloor d/2\rfloor})\) prior construction, and did not locate this logarithmic-marker construction. Publication priority is provisional.
+

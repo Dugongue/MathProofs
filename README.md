@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- tensor-form-questions:start -->
+- **Tensor and cubic-form isomorphism questions** ([proofs and scope](TensorFormQuestions/README.md)) gives an arbitrary-base-ring reduction in the finite-free basis model, an explicit six-variable local-to-global counterexample, and an optimal exponent for algebraically equivariant arity reduction. Also explains rational decidability as a credited classical consequence. Informal proofs, with remaining scope and priority qualifications stated.
+<!-- tensor-form-questions:end -->
+
 <!-- lean-library-crossovers:start -->
 - **Four crossovers from the Lean library and MathProofs** ([informal proofs](LeanLibraryCrossovers/PROOF.md)) refutes Lovett–Zhang Conjecture 37, answers the block-graph general d-position question, resolves Agrawal–Saxena's all-field cubic-form reduction question, and proves Cody–Moore Conjecture 7.6. The note also treats degree padding and smooth quartic point counts.
 <!-- lean-library-crossovers:end -->
