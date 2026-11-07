@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- generic-ordinary-four-ti:start -->
+- **High-Coverage Ordinary Four-Tensor Isomorphism** ([informal proof](GenericOrdinaryFourTI/PROOF.md), [exact switch checks](GenericOrdinaryFourTI/check_switches.py)). Transfers the spectral approach of Problem 1.8 to the ordinary general-linear action. For $n\geq37$, a zero-error algorithm decides on at least a $1-16n^4/q$ fraction of uniform first inputs in expected polynomial bit time, with a deterministic algorithm in fixed characteristic. The construction extends to every even tensor order in polynomial dense-input time. The coverage guarantee is for growing fields and leaves the fixed-field LLQTW v2 Problem 1.7 open.
+<!-- generic-ordinary-four-ti:end -->
+
 <!-- full-cut-tensor-isomorphism:start -->
 - **Full-Cut-Rank Tensor Isomorphism** ([informal proof](FullCutTensorIsomorphism/PROOF.md), [exact marker certificate](FullCutTensorIsomorphism/verify_marker.py)). A linear-side affine reduction embeds unrestricted four-tensor isomorphism in tensors with all pair flattenings invertible and scalar centroid, over characteristic 5 and characteristic zero. The outputs also rule out cyclic covariants and, over fixed finite fields, polynomial-size intrinsic frame lists. This transfers the order-four case of Grochow–Qiao Question 7.8 to a sharply restricted promise.
 <!-- full-cut-tensor-isomorphism:end -->
