@@ -1,0 +1,21 @@
+{
+  "sage_positive_certificates_independently_verified": 15,
+  "sage_cases": 11,
+  "sage_incidence_cases": 8,
+  "gap_completed_cases": 10,
+  "product_m4ri_cases": 11,
+  "gap_11case_total_timeout_seconds": 600,
+  "corpus_sha256": "4280b76e355322f6cf778c604f28332735267599569e5323392d897a9484e826",
+  "runtime_startup_in_primary_timing": false,
+  "source_hashes": {
+    "src/design_boolean/core.py": "d5c7322a8414207142214659eeed453f17702e9bc303484c2249ef44b838d391",
+    "src/design_boolean/native.py": "380d85cd62aea5be7822cac1037c92fd64e89e861afb154bc5fa7b6c32c591ef",
+    "src/design_boolean/io.py": "224f7049b0c9ca2827c7366701a261e7d7b9d5accbb41af1ff2c8217733b20f0",
+    "native/design_boolean.cpp": "cb32b1371afbc9b3a089ac18ceb0297823fa7a31dbc3abd3045cce3fff379e4e",
+    "benchmarks/sage_m4ri_sage.py": "3d59b07e1b6c1cd9d6f2c536e6b7ae3541127c22727707cbcbd1a284ebe53577",
+    "benchmarks/gap_pipeline.g": "2387695861058bd4029e930edac9fd7b12b57c8e1b95f6df6917fa976634cf47",
+    "benchmarks/gap_streaming.py": "901f71cc77d96a12a9a073c2bbcffce0a9e52dfe3309e93038ab4cdab3044cc3",
+    "benchmarks/compare_backends.py": "9579646006efe75940b352b60546c17ddc45c08d42aa1c52e4aef7c86af6411f"
+  },
+  "post_timing_change": "Unicode stdout escaping was made portable; timed fixture ASCII output and recognition arithmetic are unchanged."
+}

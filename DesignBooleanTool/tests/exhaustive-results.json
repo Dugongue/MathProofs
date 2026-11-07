@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "truth_tables": 65536,
+  "counts": {
+    "rejected": 64640,
+    "recognized": 896
+  },
+  "scope": "Every four-variable truth table converted to a normalized-rank-pass candidate; not every binary incidence matrix",
+  "methods": [
+    "native-certificate",
+    "native-explicit",
+    "python-explicit"
+  ],
+  "independent_expectation": "Walsh coefficients from truth-mask Hamming distances",
+  "wall_seconds": 5.079139300039969
+}

@@ -1,0 +1,621 @@
+{
+  "schema": 1,
+  "environment": {
+    "python": "3.13.5",
+    "system": "Windows",
+    "machine": "AMD64"
+  },
+  "methodology": {
+    "repeats": 5,
+    "warmups": 1,
+    "input": "Same preparsed dense integer incidence lists",
+    "scope": "Validation, coordinate recovery, full truth table and exact realization checks; all conversion and certificate construction included; JSON parsing and startup excluded",
+    "native_validation": "certificate-first proof or explicit block/pair counts, respectively",
+    "m4ri_reference": "Actual supplied M4RI DLL rank with independent Python full-pipeline adapter; not a complete Sage runtime",
+    "scheduling": "Run serialized with external backends after runtime extraction finishes",
+    "limitations": "Single host; fixed generated and published corpus; no universal speed claim"
+  },
+  "source_hashes": {
+    "src/design_boolean/core.py": "d5c7322a8414207142214659eeed453f17702e9bc303484c2249ef44b838d391",
+    "src/design_boolean/native.py": "380d85cd62aea5be7822cac1037c92fd64e89e861afb154bc5fa7b6c32c591ef",
+    "native/design_boolean.cpp": "cb32b1371afbc9b3a089ac18ceb0297823fa7a31dbc3abd3045cce3fff379e4e",
+    "benchmarks/reference.py": "061dfe8340ec7d0fad383c6151c4348563c2b0758bac1f4789187467fe0ee8a2",
+    "benchmarks/compare_backends.py": "9579646006efe75940b352b60546c17ddc45c08d42aa1c52e4aef7c86af6411f"
+  },
+  "cases": [
+    {
+      "id": "published-example-1",
+      "expected_status": "recognized",
+      "provenance": "exact-published-function",
+      "points": 64,
+      "blocks": 64,
+      "incidence_sha256": "d067389b7cd70c65a6cdb9cc9208bf91de3962c87d06a1e3e93d1008f6621a68",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.245,
+          "minimum_ms": 0.2347,
+          "samples_ms": [
+            0.2701,
+            0.235,
+            0.2347,
+            0.2807,
+            0.245
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 0.2576,
+          "minimum_ms": 0.2407,
+          "samples_ms": [
+            0.2859,
+            0.2933,
+            0.2576,
+            0.2509,
+            0.2407
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 1.3948,
+          "minimum_ms": 1.3652,
+          "samples_ms": [
+            1.438,
+            1.3652,
+            1.3783,
+            1.3948,
+            1.4309
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 1.8731,
+          "minimum_ms": 1.8233,
+          "samples_ms": [
+            1.8861,
+            1.8233,
+            1.9214,
+            1.8731,
+            1.8431
+          ]
+        }
+      }
+    },
+    {
+      "id": "published-example-2",
+      "expected_status": "recognized",
+      "provenance": "exact-published-function",
+      "points": 16,
+      "blocks": 32,
+      "incidence_sha256": "409e8ac71e75fd2950b2aa364118d1f69969ea524c94371955d383e504f935e8",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.1951,
+          "minimum_ms": 0.178,
+          "samples_ms": [
+            0.2334,
+            0.1959,
+            0.1951,
+            0.1936,
+            0.178
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 0.1773,
+          "minimum_ms": 0.1406,
+          "samples_ms": [
+            0.1406,
+            0.1415,
+            0.1984,
+            0.1851,
+            0.1773
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 0.3105,
+          "minimum_ms": 0.289,
+          "samples_ms": [
+            0.3506,
+            0.313,
+            0.289,
+            0.3032,
+            0.3105
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 0.3385,
+          "minimum_ms": 0.3285,
+          "samples_ms": [
+            0.3316,
+            0.3285,
+            0.3385,
+            0.9397,
+            0.3522
+          ]
+        }
+      }
+    },
+    {
+      "id": "published-example-2-permuted",
+      "expected_status": "recognized",
+      "provenance": "exact-published-function",
+      "points": 16,
+      "blocks": 32,
+      "incidence_sha256": "e0690bb6b5f31d88a50f3a4a131566b687d9b0a72a8d89008c08a3a4e5a7ab7a",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.1569,
+          "minimum_ms": 0.1429,
+          "samples_ms": [
+            0.1535,
+            0.2015,
+            0.1801,
+            0.1569,
+            0.1429
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 0.1726,
+          "minimum_ms": 0.1398,
+          "samples_ms": [
+            0.1726,
+            0.1811,
+            0.148,
+            0.1398,
+            0.1896
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 0.2869,
+          "minimum_ms": 0.2803,
+          "samples_ms": [
+            0.2869,
+            0.2803,
+            0.281,
+            0.3091,
+            0.2944
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 0.3358,
+          "minimum_ms": 0.3243,
+          "samples_ms": [
+            0.3358,
+            0.3638,
+            0.3454,
+            0.3297,
+            0.3243
+          ]
+        }
+      }
+    },
+    {
+      "id": "quadratic-family-m4",
+      "expected_status": "recognized",
+      "provenance": "published-family-instantiation",
+      "points": 16,
+      "blocks": 16,
+      "incidence_sha256": "fa9b10527fa1bcbd273d112a68e71dfd4019c9291db417ca8d7e150453dbccab",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.1421,
+          "minimum_ms": 0.1332,
+          "samples_ms": [
+            0.1942,
+            0.1421,
+            0.1332,
+            0.1361,
+            0.1788
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 0.1393,
+          "minimum_ms": 0.1337,
+          "samples_ms": [
+            0.1391,
+            0.1393,
+            0.1337,
+            0.1566,
+            0.1505
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 0.2133,
+          "minimum_ms": 0.2032,
+          "samples_ms": [
+            0.2032,
+            0.2037,
+            0.2172,
+            0.2133,
+            0.2264
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 0.2154,
+          "minimum_ms": 0.2127,
+          "samples_ms": [
+            0.2497,
+            0.2525,
+            0.2154,
+            0.2138,
+            0.2127
+          ]
+        }
+      }
+    },
+    {
+      "id": "cubic-mm-family-m6",
+      "expected_status": "recognized",
+      "provenance": "published-family-instantiation",
+      "points": 64,
+      "blocks": 64,
+      "incidence_sha256": "7ff0f3ab21582f1fdba222f01c8e640d5081fb0cc3529a6c5e583e1b2fe5465e",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.2695,
+          "minimum_ms": 0.2412,
+          "samples_ms": [
+            0.2729,
+            0.2695,
+            0.2521,
+            0.2412,
+            0.2756
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 0.2551,
+          "minimum_ms": 0.2447,
+          "samples_ms": [
+            0.2551,
+            0.2489,
+            0.2805,
+            0.2726,
+            0.2447
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 1.4363,
+          "minimum_ms": 1.3765,
+          "samples_ms": [
+            1.5291,
+            1.3876,
+            1.4363,
+            1.4688,
+            1.3765
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 1.8583,
+          "minimum_ms": 1.8208,
+          "samples_ms": [
+            1.8296,
+            1.8583,
+            1.8621,
+            1.8208,
+            1.9141
+          ]
+        }
+      }
+    },
+    {
+      "id": "plateaued-stabilization-m7",
+      "expected_status": "recognized",
+      "provenance": "derived-family-instantiation",
+      "points": 64,
+      "blocks": 128,
+      "incidence_sha256": "7cadbaeb3e054ecf68f9fec0af4341d6812c879980c652689ec8bd9226814e8e",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.3236,
+          "minimum_ms": 0.3109,
+          "samples_ms": [
+            0.3109,
+            0.3316,
+            0.358,
+            0.3236,
+            0.3142
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 0.3676,
+          "minimum_ms": 0.3502,
+          "samples_ms": [
+            0.3676,
+            0.3502,
+            0.3786,
+            0.3525,
+            0.3721
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 2.3445,
+          "minimum_ms": 2.2601,
+          "samples_ms": [
+            2.2785,
+            2.4107,
+            2.3445,
+            2.2601,
+            2.3706
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 3.3589,
+          "minimum_ms": 3.3197,
+          "samples_ms": [
+            3.3197,
+            3.3827,
+            3.3727,
+            3.3402,
+            3.3589
+          ]
+        }
+      }
+    },
+    {
+      "id": "proof-counterexample-64x128",
+      "expected_status": "not_recognized",
+      "provenance": "project-proof-counterexample",
+      "points": 64,
+      "blocks": 128,
+      "incidence_sha256": "da6e1c75b99997ce20ee192d0d19204f2194208e6b60b4cfb5a91f922d75198e",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.2266,
+          "minimum_ms": 0.2088,
+          "samples_ms": [
+            0.257,
+            0.2266,
+            0.2088,
+            0.2225,
+            0.2511
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 0.2397,
+          "minimum_ms": 0.2276,
+          "samples_ms": [
+            0.2324,
+            0.2475,
+            0.2276,
+            0.2752,
+            0.2397
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 1.8705,
+          "minimum_ms": 1.8466,
+          "samples_ms": [
+            1.8466,
+            1.8802,
+            1.8469,
+            1.9852,
+            1.8705
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 2.0033,
+          "minimum_ms": 1.9948,
+          "samples_ms": [
+            1.9948,
+            2.0057,
+            2.0033,
+            1.9961,
+            2.0285
+          ]
+        }
+      }
+    },
+    {
+      "id": "published-example-4-negative",
+      "expected_status": "not_recognized",
+      "provenance": "exact-published-design-construction",
+      "points": 256,
+      "blocks": 256,
+      "incidence_sha256": "ff7a41c5ead3eedc7b525d1068d69ac11d1322064464a20ec0d4dfe2c88ecb27",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 0.7748,
+          "minimum_ms": 0.7581,
+          "samples_ms": [
+            0.7775,
+            0.7748,
+            0.7869,
+            0.7581,
+            0.76
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 1.1065,
+          "minimum_ms": 1.0924,
+          "samples_ms": [
+            1.1437,
+            1.1065,
+            1.0924,
+            1.1387,
+            1.0928
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 16.2064,
+          "minimum_ms": 16.1832,
+          "samples_ms": [
+            16.2064,
+            16.2934,
+            16.1832,
+            16.4004,
+            16.1976
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 17.5051,
+          "minimum_ms": 17.3469,
+          "samples_ms": [
+            17.7625,
+            17.5051,
+            17.4799,
+            17.5374,
+            17.3469
+          ]
+        }
+      }
+    },
+    {
+      "id": "stress-quadratic-family-m8",
+      "expected_status": "recognized",
+      "provenance": "published-family-instantiation",
+      "points": 256,
+      "blocks": 256,
+      "incidence_sha256": "7cc6214326ba89f237295e7db368c490e7990d05e445120f7b132b20281012f5",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 1.0354,
+          "minimum_ms": 0.9937,
+          "samples_ms": [
+            1.1252,
+            1.0616,
+            0.9937,
+            1.0354,
+            1.0309
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 1.378,
+          "minimum_ms": 1.3398,
+          "samples_ms": [
+            1.4448,
+            1.3398,
+            1.378,
+            1.405,
+            1.3485
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 17.3914,
+          "minimum_ms": 17.3597,
+          "samples_ms": [
+            17.3914,
+            17.4335,
+            17.3597,
+            17.4226,
+            17.3901
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 27.0369,
+          "minimum_ms": 26.8419,
+          "samples_ms": [
+            26.8639,
+            26.8419,
+            27.0369,
+            27.4622,
+            27.4392
+          ]
+        }
+      }
+    },
+    {
+      "id": "stress-plateaued-stabilization-m9",
+      "expected_status": "recognized",
+      "provenance": "derived-family-instantiation",
+      "points": 256,
+      "blocks": 512,
+      "incidence_sha256": "5f8fac6c442bba205cab0ee83b8e568ea68f3f9f65b157a71dddab8c096c20f9",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 1.6704,
+          "minimum_ms": 1.6075,
+          "samples_ms": [
+            1.6704,
+            1.7828,
+            1.6691,
+            1.6075,
+            1.6961
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 2.3122,
+          "minimum_ms": 2.2694,
+          "samples_ms": [
+            2.3044,
+            2.4025,
+            2.3507,
+            2.2694,
+            2.3122
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 32.7824,
+          "minimum_ms": 32.6491,
+          "samples_ms": [
+            32.6491,
+            32.7,
+            32.7824,
+            33.4358,
+            32.8936
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 52.8149,
+          "minimum_ms": 52.4251,
+          "samples_ms": [
+            52.8827,
+            52.8149,
+            53.0239,
+            52.4251,
+            52.7898
+          ]
+        }
+      }
+    },
+    {
+      "id": "stress-quadratic-family-m10",
+      "expected_status": "recognized",
+      "provenance": "published-family-instantiation",
+      "points": 1024,
+      "blocks": 1024,
+      "incidence_sha256": "f15ded831d34b0525714be78d55905901f7ec4438310d4586a1ed8c5aec4d247",
+      "measurements": {
+        "native_certificate": {
+          "median_ms": 11.2725,
+          "minimum_ms": 10.8393,
+          "samples_ms": [
+            10.8393,
+            11.2059,
+            11.6125,
+            11.2725,
+            11.5818
+          ]
+        },
+        "native_explicit": {
+          "median_ms": 31.7166,
+          "minimum_ms": 31.3497,
+          "samples_ms": [
+            32.2048,
+            31.7166,
+            31.6661,
+            31.759,
+            31.3497
+          ]
+        },
+        "python_explicit": {
+          "median_ms": 312.4248,
+          "minimum_ms": 311.563,
+          "samples_ms": [
+            312.9315,
+            319.0165,
+            312.4248,
+            312.0301,
+            311.563
+          ]
+        },
+        "m4ri_reference": {
+          "median_ms": 498.3784,
+          "minimum_ms": 497.5563,
+          "samples_ms": [
+            498.5981,
+            498.3784,
+            499.3248,
+            497.9313,
+            497.5563
+          ]
+        }
+      }
+    }
+  ]
+}

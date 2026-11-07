@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "design-boolean"
+version = "0.2.0"
+description = "Recognize and reconstruct plateaued Boolean functions from binary incidence designs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "MathProofs contributors"}]
+keywords = ["boolean-functions", "combinatorial-designs", "coding-theory", "plateaued", "walsh"]
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Mathematics"]
+dependencies = []
+
+[project.scripts]
+design-boolean = "design_boolean.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+design_boolean = ["_native_src/*.cpp"]

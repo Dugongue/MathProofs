@@ -1,0 +1,2 @@
+# Optional; the recognition runtime has no external dependencies.
+sympy==1.14.0

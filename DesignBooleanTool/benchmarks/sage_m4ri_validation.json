@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "backend": "actual upstream M4RI",
+  "upstream_repository": "https://github.com/malb/m4ri",
+  "commit": "397a70fcffeb17b0c25c0aa40231145fc392317f",
+  "version": "20260122",
+  "compiler": "MinGW GCC",
+  "flags": [
+    "-O3",
+    "-march=native",
+    "-msse2",
+    "-shared",
+    "-static-libgcc"
+  ],
+  "sse2": true,
+  "openmp": false,
+  "configured_cache_bytes": [
+    32768,
+    262144,
+    8388608
+  ],
+  "configuration_note": "Explicit cache constants, not auto-detected; generated config only, upstream arithmetic unchanged",
+  "correctness_cases": 110,
+  "correctness_scope": "Independent binary-rank comparison on rectangular random matrices, zero dimensions and 64-bit word boundaries",
+  "binary_sha256": "695c663fe26d179a852eb649753f7497c8ccddb16e1017612eeb582bf043d5f8",
+  "sage_smoke": {
+    "version": "9.3",
+    "python": "3.7.10",
+    "m4ri_version": "20200115",
+    "cases": 4,
+    "spectral_mode": "PASS",
+    "incidence_mode": "PASS",
+    "timings": "Smoke only; final timings are collected separately by the parent harness"
+  },
+  "license": "Upstream M4RI GPL-2.0-or-later, kept in external checkout; no upstream sources or DLL redistributed here"
+}
