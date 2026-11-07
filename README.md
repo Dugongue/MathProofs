@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- tensor-frame-recovery:start -->
+- **Tensor Frame Recovery and Cyclic Quotients** ([weighted four-tensors](TensorFrameRecovery/PROOFS.md), [cyclic quotient proof](TensorFrameRecovery/CYCLIC-QUOTIENT.md)). Partial progress on Grochow–Qiao Question 7.8. Raw frame recovery compresses the weighted cyclic support to dimension $O(n^{2/3})$ and gives linear dimension for group-table supports under a principal-block criterion. A separate compact quotient method reaches the ambient counting exponent for cyclic covariants with arbitrary payloads, including repeated roots and zero components. Informal proofs.
+<!-- tensor-frame-recovery:end -->
+
 <!-- fractional-tensor-order:start -->
 - **Fractional-Exponent Tensor Order Reduction** ([informal proofs](FractionalTensorOrder/PROOFS.md), [exact examples](FractionalTensorOrder/check_examples.py)). Progress on Grochow–Qiao Question 7.8. Intrinsic cut supports and centroid blocks improve the balanced reduction on structural promises. Spectral canonization reaches the counting exponent on a checkable class over fixed finite fields, and a finite-point lower bound proves that a single group lift with orbitwise injectivity forces the rounded exponent. The all-input polynomial-time question remains open.
 <!-- fractional-tensor-order:end -->
