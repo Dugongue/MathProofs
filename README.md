@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- rank-two-geometric-universality:start -->
+- **Arithmetic and geometric universality at rank two** ([informal proof](RankTwoGeometricUniversality/PROOF.md)) encodes every affine scheme over Q as a smooth surjective binary rank-two matrix-completion construction, preserving singularities up to smooth variables. Combines local witnesses and smoothing to retain H10(Q)-equivalence even for smooth geometrically integral completion spaces solvable over every completion of Q. Undecidability is conditional; the new strengthening has author audit only, with no Lean certification or established priority.
+<!-- rank-two-geometric-universality:end -->
+
 <!-- rank-two-ring-universality:start -->
 - **Rank-two matrix completion and tensor universality over rings** ([proofs and scope](RankTwoAndRingUniversality/README.md)) proves binary-entry rank-two completion existentially complete, gives a binary rank-two PSD completion corollary and a fixed-finite-field NP-completeness threshold, extends the finite-free tensor equivalences to arbitrary commutative rings, and gives smaller form-to-tensor reductions in small characteristic. Informal proofs with finite gadget checks; prior rank-three completeness is credited, and novelty qualifications are explicit.
 <!-- rank-two-ring-universality:end -->
