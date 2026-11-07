@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- fixed-field-ordinary-four-ti:start -->
+- **Ordinary Four-Tensor Isomorphism at Fixed Field Size** ([informal proof](FixedFieldOrdinaryFourTI/PROOF.md), [exact checks](FixedFieldOrdinaryFourTI/check_examples.py)). Answers LLQTW arXiv v2 Problem 1.7 affirmatively. Deterministic polynomial-time recognition over each fixed finite field covers a fraction tending to $1-c(q)^3$ of uniform first inputs, with exact decisions against every second tensor. Handles singular kernel forms and repeated spectra, and gives an $O(n^{4/3})$-dimension objectwise ordinary 3TI reduction on recognized inputs. The all-invertible sector remains open.
+<!-- fixed-field-ordinary-four-ti:end -->
+
 <!-- problem18-four-levers:start -->
 - **Four Directions from Problem 1.8** ([informal proofs](Problem18FourLevers/PROOFS.md), [Lean block assembly](Problem18FourLevers/BlockOracle.lean), [exact finite checks](Problem18FourLevers/check_examples.py)). Gives a graph encoding with controlled Gram collisions, a positive-density orthogonal search theorem for alternating forms, and a linear-side reduction from ordinary TI to tensors with fixed invertible Grams. The alternating-form result concerns orthogonal masks and does not break ALTEQ. Lean checks the zero-error matching interface for composing partial block decisions.
 <!-- problem18-four-levers:end -->
