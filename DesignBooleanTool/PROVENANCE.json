@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "proof_source": {
+    "repository": "https://github.com/Dugongue/MathProofs",
+    "path": "PlateauedAdditionDesigns_BorderedRankCharacterization.lean",
+    "sha256": "cedabf2417ea520273808df7d0011bde21791a9920bcebaa151f3df804212ac9",
+    "theorems": [
+      "BinaryDesignRank.bordered_rank_iff",
+      "PlateauedDesign.linearize",
+      "PlateauedDesign.reconstruct",
+      "PlateauedDesign.complete_characterization",
+      "PlateauedDesign.open_problem_4"
+    ]
+  },
+  "software_verification": "Exact arithmetic and independent tests; not Lean-extracted or kernel-verified executable",
+  "upstream_paper": "https://arxiv.org/abs/2605.24355v1",
+  "implementation_sources": {
+    "src/design_boolean/core.py": "d5c7322a8414207142214659eeed453f17702e9bc303484c2249ef44b838d391",
+    "src/design_boolean/native.py": "380d85cd62aea5be7822cac1037c92fd64e89e861afb154bc5fa7b6c32c591ef",
+    "native/design_boolean.cpp": "cb32b1371afbc9b3a089ac18ceb0297823fa7a31dbc3abd3045cce3fff379e4e"
+  }
+}

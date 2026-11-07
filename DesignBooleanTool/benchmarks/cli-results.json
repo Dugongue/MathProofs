@@ -1,0 +1,89 @@
+{
+  "scope": "Fresh CLI process from unrelated folder; same JSON input; all parsing, recognition, certificate construction and stdout JSON included; parent parsing excluded",
+  "repeats": 5,
+  "warmups": 1,
+  "methods": "Installed v0.1 Python implementation versus installed v0.2 with explicitly built native backend",
+  "cases": [
+    {
+      "id": "plateaued-stabilization-m5",
+      "points": 16,
+      "blocks": 32,
+      "measurements": {
+        "python_v0_1": {
+          "median_ms": 114.6544,
+          "samples_ms": [
+            117.1227,
+            114.6544,
+            112.214,
+            117.1044,
+            114.3988
+          ]
+        },
+        "native_v0_2": {
+          "median_ms": 124.5338,
+          "samples_ms": [
+            124.5338,
+            126.3126,
+            124.809,
+            120.1944,
+            122.408
+          ]
+        }
+      }
+    },
+    {
+      "id": "quadratic-family-m8",
+      "points": 256,
+      "blocks": 256,
+      "measurements": {
+        "python_v0_1": {
+          "median_ms": 137.7887,
+          "samples_ms": [
+            135.9242,
+            137.188,
+            139.2238,
+            137.7887,
+            141.9049
+          ]
+        },
+        "native_v0_2": {
+          "median_ms": 126.3822,
+          "samples_ms": [
+            131.3395,
+            127.7997,
+            126.3822,
+            126.2196,
+            125.0291
+          ]
+        }
+      }
+    },
+    {
+      "id": "quadratic-family-m10",
+      "points": 1024,
+      "blocks": 1024,
+      "measurements": {
+        "python_v0_1": {
+          "median_ms": 500.495,
+          "samples_ms": [
+            497.0306,
+            500.495,
+            518.63,
+            501.4637,
+            499.6384
+          ]
+        },
+        "native_v0_2": {
+          "median_ms": 194.8257,
+          "samples_ms": [
+            209.7069,
+            200.8921,
+            194.407,
+            194.7491,
+            194.8257
+          ]
+        }
+      }
+    }
+  ]
+}

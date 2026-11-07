@@ -1,0 +1,7 @@
+{
+  "status": "TIMEOUT",
+  "timeout_seconds": 600,
+  "attempt": "Eleven-case job with one warmup and five timed repetitions per case",
+  "interpretation": "The whole job did not finish; no per-call lower bound or missing-case median is inferred",
+  "followup": "Checkpointed ten-case run, excluding the 1024x1024 generated case, completed with five timed repetitions per case"
+}

@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "scope": "exact fixture integrity, not recognizer output",
+  "fixtures": [
+    {
+      "file": "published-example-1.json",
+      "points": 64,
+      "blocks": 64,
+      "simple": true,
+      "block_sizes": {
+        "28": 64
+      },
+      "replication_numbers": {
+        "28": 64
+      },
+      "pair_counts": {
+        "12": 2016
+      },
+      "binary_rank": 8,
+      "bordered_rank": 8
+    },
+    {
+      "file": "published-example-2.json",
+      "points": 16,
+      "blocks": 32,
+      "simple": true,
+      "block_sizes": {
+        "6": 32
+      },
+      "replication_numbers": {
+        "12": 16
+      },
+      "pair_counts": {
+        "4": 120
+      },
+      "binary_rank": 7,
+      "bordered_rank": 7
+    },
+    {
+      "file": "published-example-2-permuted.json",
+      "points": 16,
+      "blocks": 32,
+      "simple": true,
+      "block_sizes": {
+        "6": 32
+      },
+      "replication_numbers": {
+        "12": 16
+      },
+      "pair_counts": {
+        "4": 120
+      },
+      "binary_rank": 7,
+      "bordered_rank": 7
+    },
+    {
+      "file": "quadratic-family-m4.json",
+      "points": 16,
+      "blocks": 16,
+      "simple": true,
+      "block_sizes": {
+        "6": 16
+      },
+      "replication_numbers": {
+        "6": 16
+      },
+      "pair_counts": {
+        "2": 120
+      },
+      "binary_rank": 6,
+      "bordered_rank": 6
+    },
+    {
+      "file": "cubic-mm-family-m6.json",
+      "points": 64,
+      "blocks": 64,
+      "simple": true,
+      "block_sizes": {
+        "28": 64
+      },
+      "replication_numbers": {
+        "28": 64
+      },
+      "pair_counts": {
+        "12": 2016
+      },
+      "binary_rank": 8,
+      "bordered_rank": 8
+    },
+    {
+      "file": "plateaued-stabilization-m7.json",
+      "points": 64,
+      "blocks": 128,
+      "simple": true,
+      "block_sizes": {
+        "28": 128
+      },
+      "replication_numbers": {
+        "56": 64
+      },
+      "pair_counts": {
+        "24": 2016
+      },
+      "binary_rank": 9,
+      "bordered_rank": 9
+    },
+    {
+      "file": "proof-counterexample-64x128.json",
+      "points": 64,
+      "blocks": 128,
+      "simple": true,
+      "block_sizes": {
+        "28": 128
+      },
+      "replication_numbers": {
+        "56": 64
+      },
+      "pair_counts": {
+        "24": 2016
+      },
+      "binary_rank": 9,
+      "bordered_rank": 10
+    },
+    {
+      "file": "published-example-4-negative.json",
+      "points": 256,
+      "blocks": 256,
+      "simple": true,
+      "block_sizes": {
+        "120": 256
+      },
+      "replication_numbers": {
+        "120": 256
+      },
+      "pair_counts": {
+        "56": 32640
+      },
+      "binary_rank": 30,
+      "bordered_rank": 30
+    }
+  ]
+}

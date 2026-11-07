@@ -1,0 +1,25 @@
+Design Boolean 0.2.0
+Copyright 2026 MathProofs contributors.
+
+This original implementation follows the constructive mathematical argument in
+PlateauedAdditionDesigns_BorderedRankCharacterization.lean, MathProofs.
+https://github.com/Dugongue/MathProofs
+
+The design families and examples are credited to Jong Yoon Hyun, Jieun Kwon,
+Jiaxin Wang and Yansheng Wu, Designs, linear codes, plateaued functions, and
+their interconnections, arXiv:2605.24355v1.
+https://arxiv.org/abs/2605.24355
+The authors' paper credits the Example 2 function to Hodzic, Pasalic, Wei and
+Zhang (2019), Example 4.1. See published-examples.md for exact references.
+
+The proof's bordered-rank characterization and the normalized TSDP baseline
+are distinguished in the algorithm and benchmark documentation.
+No upstream paper prose, third-party executable implementation, SageMath,
+SymPy or external Lean library is bundled in the runtime package.
+Optional comparisons and conversion methods do not transfer their libraries'
+licenses to this original source; those libraries retain their own notices.
+
+The optional native implementation is original C++ source under Apache-2.0.
+Native binaries are built explicitly by the user and are not bundled.
+GCC runtime components, if linked by a local compiler, retain their licenses
+and applicable GCC Runtime Library Exception; MinGW components retain theirs.

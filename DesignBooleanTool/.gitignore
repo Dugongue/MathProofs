@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+benchmark-local/
+
+*.dll
+*.so
+*.dylib
+benchmark-local/
+*.local.json

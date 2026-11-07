@@ -1,0 +1,41 @@
+{
+  "software_version": "0.2.0",
+  "arithmetic": "integer and GF(2)",
+  "tests": {
+    "unittest_methods": 34,
+    "checkpoint_transport_methods": 3,
+    "result": "PASS",
+    "exhaustive_four_variable_truth_tables": 65536,
+    "exhaustive_scope": "Every four-variable truth table converted to a normalized-rank-pass candidate; not every binary incidence matrix",
+    "independent_certificate_arithmetic": "Direct character sums, truth-mask Hamming distances and entrywise realization checks"
+  },
+  "fixtures": {
+    "count": 8,
+    "result": "PASS",
+    "exact_published_positive_functions": 2,
+    "exact_published_negative_designs": 1
+  },
+  "benchmark": {
+    "cases": 11,
+    "repeats": 5,
+    "sage": "Actual SageMath 9.3, Python 3.7.10, bundled M4RI 20200115; archived Windows runtime",
+    "m4ri": "Actual M4RI 20260122 plus independent Python reconstruction; not a rank-kernel speed claim",
+    "gap": "Actual GAP 4.16.1 / DESIGN 1.8.2; 10 completed cases",
+    "gap_11_case_job": "600-second total timeout; no missing-case median or per-call bound inferred",
+    "results": "benchmarks/README.md",
+    "fresh_cli_cases": 3,
+    "small_cli_caveat": "Small native CLI calls can be slower because startup dominates"
+  },
+  "installation": {
+    "offline_stdlib_wheel": "PASS",
+    "fresh_venv_install": "PASS",
+    "isolated_import_from_unrelated_folder": "PASS",
+    "installed_console_entrypoint": "PASS",
+    "installed_native_source_build": "PASS"
+  },
+  "core_sha256": "d5c7322a8414207142214659eeed453f17702e9bc303484c2249ef44b838d391",
+  "verification_limit": "Python software is not Lean-extracted or kernel-verified",
+  "publication": "Prepared only; not executed",
+  "native_sha256": "cb32b1371afbc9b3a089ac18ceb0297823fa7a31dbc3abd3045cce3fff379e4e",
+  "mathematics": "VALIDATION-THEOREM.md is informal and independently reviewed; executable checks are not Lean extraction"
+}

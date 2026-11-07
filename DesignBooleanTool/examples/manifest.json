@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "fixtures": [
+    {
+      "file": "published-example-1.json",
+      "sha256": "491a0a4fe58e59acb86ec996176089b0d3d0bb046149a1361332575b4ef8d968",
+      "expected": {
+        "recognized": true,
+        "m": 6,
+        "r": 0,
+        "points": 64,
+        "blocks": 64,
+        "block_size": 28,
+        "lambda": 12,
+        "bordered_rank": 8
+      },
+      "provenance": {
+        "kind": "exact-published-function",
+        "paper": "https://arxiv.org/html/2605.24355v1",
+        "location": "Section IV-A, Example 1",
+        "formula": "f(x1,x2,x3,y1,y2,y3)=x1*y1+x2*y2+x3*y3",
+        "published_instance": true,
+        "description": "The incidence matrix is regenerated from the exact published function; its entries are not transcribed from a printed matrix."
+      }
+    },
+    {
+      "file": "published-example-2.json",
+      "sha256": "f849047a6c213f93842cbab32c5f9048c121258afa4beb14029c67295b4affc0",
+      "expected": {
+        "recognized": true,
+        "m": 5,
+        "r": 1,
+        "points": 16,
+        "blocks": 32,
+        "block_size": 6,
+        "lambda": 4,
+        "bordered_rank": 7
+      },
+      "provenance": {
+        "kind": "exact-published-function",
+        "paper": "https://arxiv.org/html/2605.24355v1",
+        "location": "Section VI-A, Example 2",
+        "formula": "f(x1,x2,x3,x4,x5)=x1*x3+x2*x4+x1*x2*x5",
+        "published_instance": true,
+        "description": "The paper explicitly identifies this simple 2-(16,6,4) addition design. It cites Hodzic-Pasalic-Wei-Zhang (2019), Example 4.1 for the function."
+      }
+    },
+    {
+      "file": "published-example-2-permuted.json",
+      "sha256": "c58157a3143f126567abc90aac03400698c2e664e8207b132a41038fe5747c7b",
+      "expected": {
+        "recognized": true,
+        "m": 5,
+        "r": 1,
+        "points": 16,
+        "blocks": 32,
+        "block_size": 6,
+        "lambda": 4,
+        "bordered_rank": 7
+      },
+      "provenance": {
+        "kind": "exact-published-function",
+        "paper": "https://arxiv.org/html/2605.24355v1",
+        "location": "Section VI-A, Example 2",
+        "formula": "f(x1,x2,x3,x4,x5)=x1*x3+x2*x4+x1*x2*x5",
+        "published_instance": true,
+        "description": "The paper explicitly identifies this simple 2-(16,6,4) addition design. It cites Hodzic-Pasalic-Wei-Zhang (2019), Example 4.1 for the function."
+      }
+    },
+    {
+      "file": "quadratic-family-m4.json",
+      "sha256": "00967a79d6af9121c72a24ec75038fdfed104c2f2f9845ce7b74f108c83dc968",
+      "expected": {
+        "recognized": true,
+        "m": 4,
+        "r": 0,
+        "points": 16,
+        "blocks": 16,
+        "block_size": 6,
+        "lambda": 2,
+        "bordered_rank": 6
+      },
+      "provenance": {
+        "kind": "published-family-instantiation",
+        "paper": "https://arxiv.org/html/2605.24355v1",
+        "location": "Section II-B, Maiorana-McFarland construction",
+        "formula": "f(x,y)=dot(x,y)",
+        "published_instance": false,
+        "description": "Generated family instance, not asserted to be an individually printed example."
+      }
+    },
+    {
+      "file": "cubic-mm-family-m6.json",
+      "sha256": "c7d819b1a2bfb146d67ad02bf1f58b6827528372468e6037f70b7a2744b975b9",
+      "expected": {
+        "recognized": true,
+        "m": 6,
+        "r": 0,
+        "points": 64,
+        "blocks": 64,
+        "block_size": 28,
+        "lambda": 12,
+        "bordered_rank": 8
+      },
+      "provenance": {
+        "kind": "published-family-instantiation",
+        "paper": "https://arxiv.org/html/2605.24355v1",
+        "location": "Section II-B, Maiorana-McFarland construction",
+        "formula": "f(x,y)=dot(x,y)+y1*y2*y3",
+        "published_instance": false,
+        "description": "Generated family instance, not asserted to be an individually printed example."
+      }
+    },
+    {
+      "file": "plateaued-stabilization-m7.json",
+      "sha256": "c715c000090aa025b40857cf99c2d398299842d18492d1c0f833ec87d3ba6a74",
+      "expected": {
+        "recognized": true,
+        "m": 7,
+        "r": 1,
+        "points": 64,
+        "blocks": 128,
+        "block_size": 28,
+        "lambda": 24,
+        "bordered_rank": 9
+      },
+      "provenance": {
+        "kind": "derived-family-instantiation",
+        "paper": "https://arxiv.org/html/2605.24355v1",
+        "location": "Example 2 plus disjoint quadratic stabilization",
+        "formula": "Example2(x1,...,x5)+x6*x7+x8*x9+...",
+        "published_instance": false,
+        "description": "Our larger test instance obtained from the published five-variable example; not a claimed printed example."
+      }
+    },
+    {
+      "file": "proof-counterexample-64x128.json",
+      "sha256": "c342c4affcef2dc5cdd7af850d9b8ca52276bf7cfbaceb3ce46710c84c0ce91f",
+      "expected": {
+        "recognized": false,
+        "points": 64,
+        "blocks": 128,
+        "block_size": 28,
+        "lambda": 24,
+        "binary_rank": 9,
+        "m": 7,
+        "r": 1
+      },
+      "provenance": {
+        "kind": "project-proof-counterexample",
+        "source": "PlateauedAdditionDesigns_BorderedRankCharacterization.lean",
+        "declarations": [
+          "SumFreeCounterexample.counterexample",
+          "SumFreeCounterexample.not_plateaued_addition_design"
+        ],
+        "published_instance": false,
+        "description": "Own proof fixture; not attributed to the paper."
+      }
+    },
+    {
+      "file": "published-example-4-negative.json",
+      "sha256": "6e81269cf4e965a9cf05caadeb07b71324c9b4b0d0a563483bd88e1d5bb30d2b",
+      "expected": {
+        "recognized": false,
+        "m": 8,
+        "r": 0,
+        "points": 256,
+        "blocks": 256,
+        "block_size": 120,
+        "lambda": 56,
+        "binary_rank": 30
+      },
+      "provenance": {
+        "kind": "exact-published-design-construction",
+        "paper": "https://arxiv.org/html/2605.24355v1",
+        "location": "Section VIII, Example 4 and Theorem 10",
+        "formula": "g(x,y)=Tr(x*y^14); h(x,y)=Tr(alpha*x*y^14); M[x,b]=g(b)+h(x+b)+g(x)+h(x)",
+        "field": "GF(16), alpha^4+alpha+1=0, alpha encoded by integer 2",
+        "published_instance": true,
+        "description": "Regenerated from the published finite-field formula; rank 30 is independently checked."
+      }
+    }
+  ]
+}

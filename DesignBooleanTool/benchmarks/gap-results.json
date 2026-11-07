@@ -1,0 +1,187 @@
+{
+  "status": "COMPLETE",
+  "backend": {
+    "gap": "4.16.1",
+    "design": "1.8.2"
+  },
+  "methodology": {
+    "repeats": 5,
+    "warmup": 1,
+    "clock": "GAP NanosecondsSinceEpoch",
+    "scope": "Preparsed GAP integer incidence -> actual DESIGN validation -> GF(2) coordinates -> reconstruction -> full exact certificate checks",
+    "process_wall_seconds": 34.141260600066744,
+    "timeout_seconds": 240.0,
+    "reconstruction": "Original adapter; not a claimed DESIGN built-in",
+    "checkpointing": "Closed per-case files preserve completed results on timeout; resume requires identical source/fixture contract"
+  },
+  "requested_cases": [
+    "published-example-1",
+    "published-example-2",
+    "published-example-2-permuted",
+    "quadratic-family-m4",
+    "cubic-mm-family-m6",
+    "plateaued-stabilization-m7",
+    "proof-counterexample-64x128",
+    "published-example-4-negative",
+    "stress-quadratic-family-m8",
+    "stress-plateaued-stabilization-m9"
+  ],
+  "cases": [
+    {
+      "id": "published-example-1",
+      "points": 64,
+      "blocks": 64,
+      "status": "recognized",
+      "median_ms": 15.4972,
+      "samples_ms": [
+        15.6742,
+        15.3018,
+        15.5706,
+        15.4972,
+        15.3157
+      ],
+      "independent_certificate_verified": true
+    },
+    {
+      "id": "published-example-2",
+      "points": 16,
+      "blocks": 32,
+      "status": "recognized",
+      "median_ms": 0.9431,
+      "samples_ms": [
+        0.9431,
+        1.0019,
+        0.9631,
+        0.9345,
+        0.9269
+      ],
+      "independent_certificate_verified": true
+    },
+    {
+      "id": "published-example-2-permuted",
+      "points": 16,
+      "blocks": 32,
+      "status": "recognized",
+      "median_ms": 0.9467,
+      "samples_ms": [
+        0.9299,
+        0.9467,
+        0.9716,
+        1.1109,
+        0.9423
+      ],
+      "independent_certificate_verified": true
+    },
+    {
+      "id": "quadratic-family-m4",
+      "points": 16,
+      "blocks": 16,
+      "status": "recognized",
+      "median_ms": 0.5867,
+      "samples_ms": [
+        0.5867,
+        0.5891,
+        0.5869,
+        0.5857,
+        0.5861
+      ],
+      "independent_certificate_verified": true
+    },
+    {
+      "id": "cubic-mm-family-m6",
+      "points": 64,
+      "blocks": 64,
+      "status": "recognized",
+      "median_ms": 15.5941,
+      "samples_ms": [
+        15.2144,
+        15.9553,
+        15.3745,
+        23.5554,
+        15.5941
+      ],
+      "independent_certificate_verified": true
+    },
+    {
+      "id": "plateaued-stabilization-m7",
+      "points": 64,
+      "blocks": 128,
+      "status": "recognized",
+      "median_ms": 30.3527,
+      "samples_ms": [
+        29.6092,
+        30.3527,
+        29.9021,
+        38.2497,
+        33.5008
+      ],
+      "independent_certificate_verified": true
+    },
+    {
+      "id": "proof-counterexample-64x128",
+      "points": 64,
+      "blocks": 128,
+      "status": "not_recognized",
+      "median_ms": 28.4401,
+      "samples_ms": [
+        28.5332,
+        28.4401,
+        28.2826,
+        36.9201,
+        28.1059
+      ],
+      "independent_certificate_verified": false
+    },
+    {
+      "id": "published-example-4-negative",
+      "points": 256,
+      "blocks": 256,
+      "status": "not_recognized",
+      "median_ms": 1146.998,
+      "samples_ms": [
+        1124.2612,
+        1146.998,
+        1131.9469,
+        1184.0056,
+        1180.0146
+      ],
+      "independent_certificate_verified": false
+    },
+    {
+      "id": "stress-quadratic-family-m8",
+      "points": 256,
+      "blocks": 256,
+      "status": "recognized",
+      "median_ms": 1136.7303,
+      "samples_ms": [
+        1120.2477,
+        1128.6976,
+        1136.7303,
+        1174.282,
+        1222.7775
+      ],
+      "independent_certificate_verified": true
+    },
+    {
+      "id": "stress-plateaued-stabilization-m9",
+      "points": 256,
+      "blocks": 512,
+      "status": "recognized",
+      "median_ms": 2216.3484,
+      "samples_ms": [
+        2181.9613,
+        2230.0702,
+        2219.7449,
+        2192.8224,
+        2216.3484
+      ],
+      "independent_certificate_verified": true
+    }
+  ],
+  "pending_cases": [],
+  "partial_samples_unverified_ms": {},
+  "source_hashes": {
+    "gap_streaming.py": "901f71cc77d96a12a9a073c2bbcffce0a9e52dfe3309e93038ab4cdab3044cc3",
+    "gap_pipeline.g": "2387695861058bd4029e930edac9fd7b12b57c8e1b95f6df6917fa976634cf47"
+  }
+}
