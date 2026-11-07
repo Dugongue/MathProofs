@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- fractional-tensor-order:start -->
+- **Fractional-Exponent Tensor Order Reduction** ([informal proofs](FractionalTensorOrder/PROOFS.md), [exact examples](FractionalTensorOrder/check_examples.py)). Progress on Grochow–Qiao Question 7.8. Intrinsic cut supports and centroid blocks improve the balanced reduction on structural promises. Spectral canonization reaches the counting exponent on a checkable class over fixed finite fields, and a finite-point lower bound proves that a single group lift with orbitwise injectivity forces the rounded exponent. The all-input polynomial-time question remains open.
+<!-- fractional-tensor-order:end -->
+
 <!-- exact-tree-network-descent:start -->
 - **Exact Tree Network Descent** ([overview](ExactTreeNetworkDescent/README.md), [ten informal proofs](ExactTreeNetworkDescent/PROOFS.md)). Exact polynomial-core realization at every minimum edge width over a two-parameter polynomial ring, with a compressed polynomial-time algorithm in the homogeneous case. Dedekind-domain results give a sharp extra-state allowance and ideal-class cancellation. The note credits the classical matrix threshold and distinguishes it from the tree and algorithmic extensions.
 <!-- exact-tree-network-descent:end -->
