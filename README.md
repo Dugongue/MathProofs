@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- exact-tree-network-descent:start -->
+- **Exact Tree Network Descent** ([overview](ExactTreeNetworkDescent/README.md), [ten informal proofs](ExactTreeNetworkDescent/PROOFS.md)). Exact polynomial-core realization at every minimum edge width over a two-parameter polynomial ring, with a compressed polynomial-time algorithm in the homogeneous case. Dedekind-domain results give a sharp extra-state allowance and ideal-class cancellation. The note credits the classical matrix threshold and distinguishes it from the tree and algorithmic extensions.
+<!-- exact-tree-network-descent:end -->
+
 <!-- design-boolean-tool:start -->
 **Design Boolean: constructive recognition and reconstruction tool.** [Software, examples and usage](DesignBooleanTool/README.md) implementing our bordered-rank characterization for Open Problem 4 on plateaued-function addition designs. Version 0.2 adds optional native C++ execution and an independently reviewed certificate-first validation argument. On the measured 1024 × 1024 case, full in-memory reconstruction and checking took 11.3 ms versus 366 ms for the SageMath 9.3 adapter; fresh CLI wall time improved from 500 ms to 195 ms. Actual M4RI and GAP DESIGN comparisons, raw samples and limitations are in the [benchmark report](DesignBooleanTool/benchmarks/README.md). These are version-specific adapter measurements, not a current-Sage or state-of-the-art claim. The software passes 34 tests and a 65,536-case structured exhaustive check; the executable and new validation argument are not Lean-verified. Apache-2.0; published examples and mathematical sources are credited in the package.
 <!-- design-boolean-tool:end -->
