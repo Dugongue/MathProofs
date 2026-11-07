@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- full-cut-tensor-isomorphism:start -->
+- **Full-Cut-Rank Tensor Isomorphism** ([informal proof](FullCutTensorIsomorphism/PROOF.md), [exact marker certificate](FullCutTensorIsomorphism/verify_marker.py)). A linear-side affine reduction embeds unrestricted four-tensor isomorphism in tensors with all pair flattenings invertible and scalar centroid, over characteristic 5 and characteristic zero. The outputs also rule out cyclic covariants and, over fixed finite fields, polynomial-size intrinsic frame lists. This transfers the order-four case of Grochow–Qiao Question 7.8 to a sharply restricted promise.
+<!-- full-cut-tensor-isomorphism:end -->
+
 <!-- tensor-frame-recovery:start -->
 - **Tensor Frame Recovery and Cyclic Quotients** ([weighted four-tensors](TensorFrameRecovery/PROOFS.md), [cyclic quotient proof](TensorFrameRecovery/CYCLIC-QUOTIENT.md)). Partial progress on Grochow–Qiao Question 7.8. Raw frame recovery compresses the weighted cyclic support to dimension $O(n^{2/3})$ and gives linear dimension for group-table supports under a principal-block criterion. A separate compact quotient method reaches the ambient counting exponent for cyclic covariants with arbitrary payloads, including repeated roots and zero components. Informal proofs.
 <!-- tensor-frame-recovery:end -->
