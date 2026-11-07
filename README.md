@@ -133,6 +133,10 @@ RESOLUTIONS VIA PRIOR WORK (not claimed as our discoveries)
 -------------------------------------------
 MISC PROOFS (RESULTS THAT SEEM SIGNIFICANT BUT DO NOT CLOSE AN EXPLICIT OPEN PROBLEM/CONJECTURE)
 
+<!-- problem18-four-levers:start -->
+- **Four Directions from Problem 1.8** ([informal proofs](Problem18FourLevers/PROOFS.md), [Lean block assembly](Problem18FourLevers/BlockOracle.lean), [exact finite checks](Problem18FourLevers/check_examples.py)). Gives a graph encoding with controlled Gram collisions, a positive-density orthogonal search theorem for alternating forms, and a linear-side reduction from ordinary TI to tensors with fixed invertible Grams. The alternating-form result concerns orthogonal masks and does not break ALTEQ. Lean checks the zero-error matching interface for composing partial block decisions.
+<!-- problem18-four-levers:end -->
+
 <!-- generic-ordinary-four-ti:start -->
 - **High-Coverage Ordinary Four-Tensor Isomorphism** ([informal proof](GenericOrdinaryFourTI/PROOF.md), [exact switch checks](GenericOrdinaryFourTI/check_switches.py)). Transfers the spectral approach of Problem 1.8 to the ordinary general-linear action. For $n\geq37$, a zero-error algorithm decides on at least a $1-16n^4/q$ fraction of uniform first inputs in expected polynomial bit time, with a deterministic algorithm in fixed characteristic. The construction extends to every even tensor order in polynomial dense-input time. The coverage guarantee is for growing fields and leaves the fixed-field LLQTW v2 Problem 1.7 open.
 <!-- generic-ordinary-four-ti:end -->
