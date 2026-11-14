@@ -302,3 +302,10 @@ Pending formalizations:
 
 [Proof](KroneckerDegenerationDepth/Proof.md). Computes the longest strict-equivalence degeneration chain for complex square pencils, with exactly n(n+1)/2 steps, and for n × (n+1) pencils, with n(n+1)/2+n steps. A potential on Kronecker data handles all eigenvalues. Also gives the exact special-linear square height and the difference level on fixed finite spectral support. This answers the exact-height question raised in the Depth Hierarchy work. Publication priority remains unverified.
 <!-- kronecker-degeneration-depth:end -->
+
+
+<!-- linear-length-classical-tensor-actions:start -->
+### Linear-Length Reductions Between the Five Classical Tensor Actions (informal)
+
+[Proof](LinearLengthClassicalTensorActions/Proof.md). Answers the linear-length question in Chen–Grochow–Qiao–Tang–Zhang, Section 1.5, for standard complex and finite-field unitary groups and standard orthogonal groups. Two rank-marked slices recover each coordinate block by intersection. All five actions are pairwise equivalent via constant-free kernel p-projections with linear side-length blow-up, uniformly over the field. [Original question](https://arxiv.org/html/2306.03135v2#S1.SS5)
+<!-- linear-length-classical-tensor-actions:end -->
