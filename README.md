@@ -255,3 +255,18 @@ CFR525.lean - An affirmative answer to the CFR(5,25) open instance listed by Ros
 
 Pending formalizations:
 * Chizewer, Everett, Mithal, and Qiao (2026) [https://arxiv.org/html/2603.27128v1] — Open Problem 4: “Can average-case polynomial-time algorithms be devised for tensor orthogonal and unitary isomorphism over finite fields?”; also Li, Li, Qiao, Tao, and Wang (2026) [https://arxiv.org/html/2604.00591v1] — Problem 1.8: “Can average-case polynomial-time algorithms be devised for 3-tensor isomorphism over finite fields under orthogonal and unitary group actions?” — Here answered affirmatively for cubical tensors under the standard matrix-isometry actions.
+
+
+<!-- bivariate-polynomial-rank-separations:start -->
+### Bivariate Polynomial Rank Separations via Squared Interpolation (informal)
+
+[Proof](BivariatePolynomialRankSeparations/Proof.md). Proves all three clauses of [De las Cuevas–Klingler–Netzer, Conjecture 46](https://arxiv.org/abs/2109.06680). Squared Lagrange interpolation transfers known matrix rank separations to bivariate real polynomials and preserves ordinary, separable, and SOS-purification ranks exactly.
+
+### Classical-group tensor isomorphism (Lean)
+
+[OrthogonalTIStandalone.lean](OrthogonalTIStandalone.lean) — Orthogonal tensor isomorphism reductions under the stated split-form hypotheses and in characteristic two, with an affine reduction obstruction over ordered fields. Partial progress on Chen–Grochow–Qiao–Tang–Zhang, Open Question 7.1.
+
+[LeviHardnessStandalone.lean](LeviHardnessStandalone.lean) — Tensor isomorphism hardness for five group actions under the file's GL Levi-section hypotheses, with a special-linear instance.
+
+[UnitaryTransporterFibersStandalone.lean](UnitaryTransporterFibersStandalone.lean) — A transporter-fibre equivalence and matching cardinalities for hyperbolic unitary padding, with an isomorphism decision equivalence under the stated Hermitian-form hypotheses.
+<!-- bivariate-polynomial-rank-separations:end -->

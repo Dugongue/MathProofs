@@ -6735,6 +6735,7 @@ theorem matOf_equivOf {n : ℕ} (P : Matrix (S n) (S n) K) (hP : IsUnit P) :
   rw [Matrix.toLin'_apply, Matrix.toLin'_apply, matOf_mulVec, hypVec_equivOf,
     LinearEquiv.apply_symm_apply]
 
+set_option synthInstance.maxHeartbeats 200000 in
 /-- `spAct` by equivalences of `Hyp` is `glActMat` by their matrices, through `congrH`. -/
 theorem spAct_congrH {n : ℕ} (g₁ g₂ g₃ : H K n ≃ₗ[K] H K n)
     (T : (S n → K) ⊗[K] ((S n → K) ⊗[K] (S n → K))) :
