@@ -316,3 +316,10 @@ Pending formalizations:
 
 [Proof](ArbitraryTensorMatrixSpaceProjections/Proof.md). Answers Grochow and Qiao's question in Remark 2.5 of *Tensor Isomorphism-Completeness* for both alternating matrix-space isometry and matrix-space conjugacy. The reductions satisfy all five requested properties on arbitrary 3-tensors over any field, including degenerate tensors, with linear output side lengths. The alternating projection is in the independent alternating coordinates. [Original question](https://doi.org/10.1137/21M1441110)
 <!-- arbitrary-tensor-matrix-space-projections:end -->
+
+
+<!-- determinant-cosets-by-castling:start -->
+### Determinant Cosets from Castling and Normalized Matrix Pencils (informal)
+
+[Proof](DeterminantCosetsByCastling/PROOF.md). Computes the joint transporter determinant coset over F3 with ordinary TI decision in time exponential only in the smaller flattening rank or image codimension, and polynomial in the written input size. Includes rank-deficient flattenings and arbitrary stabilizers, with a separate polynomial test for anchored pencils with a squarefree trace operator. Partial progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9. [Original question](https://arxiv.org/html/2306.03135v2#S1.SS5)
+<!-- determinant-cosets-by-castling:end -->
