@@ -5,6 +5,24 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- audited-informal-open-problems:start -->
+[AmannNilpotentRigidity/Proof.md](AmannNilpotentRigidity/Proof.md) — Amann, Theorem 2.2 conjecture. A uniform cohomology-ring obstruction gives quasi-isometric rigidity for the stated family for every k ≥ 2. Informal proof. [Original paper](https://arxiv.org/abs/1710.04542)
+
+[NormalizedQuarticTensorCones/ExactMembership.md](NormalizedQuarticTensorCones/ExactMembership.md) — Ke–Honorio cone-membership question. Exact membership in the paired-entry normalized Carathéodory symmetric tensor cone is NP-complete at order four, even with balance. Informal proof. [Original paper](https://jmlr.org/papers/volume23/22-0232/22-0232.pdf)
+
+[NormalizedQuarticTensorCones/Positivity.md](NormalizedQuarticTensorCones/Positivity.md) — Ke–Honorio, Appendix C. Positive semidefiniteness testing is coNP-hard for quartic tensors with the prescribed paired-index entries fixed to one. Informal proof. [Original paper](https://jmlr.org/papers/volume23/22-0232/22-0232.pdf)
+
+[ExceptionalCopositivePlus/Proof.md](ExceptionalCopositivePlus/Proof.md) — Bomze–Dür exceptional copositive-plus question. Gives an exceptional boundary example and a separate 3 × 3 counterexample to Theorem 4.8 and Corollary 4.14 as printed. Informal proof. [Original paper](https://doi.org/10.1007/s10013-024-00722-x)
+
+[PositivePolynomialBorderRank/Proof.md](PositivePolynomialBorderRank/Proof.md) — Klingler–Netzer–De las Cuevas, Outlook question. Positive polynomial decompositions can have an unbounded gap between SOS rank and border SOS rank. Informal proof. [Original paper](https://doi.org/10.22331/q-2025-02-26-1649)
+
+[ReflectionPositivityCoarseGraining/Proof.md](ReflectionPositivityCoarseGraining/Proof.md) — A two-spin counterexample to the reflection-positivity implication posed in MathOverflow 503899 under its stated channel hypotheses. Informal proof. [Original question](https://mathoverflow.net/questions/503899)
+
+[SymplecticSpectrumPreservers/Proof.md](SymplecticSpectrumPreservers/Proof.md) — Dinov, Problem 4.8. A linear map preserving all covariance symplectic spectra is symplectic or antisymplectic. Finite probes suffice. Informal proof. [Original preprint](https://arxiv.org/html/2607.07851v1)
+
+[SymmetricSubgraphCircuits/Proof.md](SymmetricSubgraphCircuits/Proof.md) — Grochow–Jacob, Open Question 1.11, symmetric-circuit version. Paths rule out an exponent bounded by a constant times pattern treewidth. Informal proof. [Original question](https://arxiv.org/html/2606.26244v2)
+<!-- audited-informal-open-problems:end -->
+
 <!-- tensor-and-algebra-open-questions:start -->
 [TensorAndAlgebraOpenQuestions/Smoothed-Exact-TI.md](TensorAndAlgebraOpenQuestions/Smoothed-Exact-TI.md) — **Exact smoothed orthogonal and unitary tensor isomorphism (Open Problem 2, Chizewer–Everett–Mithal–Qiao).** Informal proof of polynomial-bit exact decision after arbitrarily small independent rational-grid perturbations.
 
