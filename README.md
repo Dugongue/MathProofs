@@ -288,3 +288,10 @@ Pending formalizations:
 
 [UnitaryTransporterFibersStandalone.lean](UnitaryTransporterFibersStandalone.lean) — A transporter-fibre equivalence and matching cardinalities for hyperbolic unitary padding, with an isomorphism decision equivalence under the stated Hermitian-form hypotheses.
 <!-- bivariate-polynomial-rank-separations:end -->
+
+
+<!-- concise-tensor-degeneration-depth:start -->
+### Quadratic Degeneration Depth on the Concise Tensor Locus (informal)
+
+[Proof](ConciseTensorDegenerationDepth/Proof.md). Constructs quadratic-length strict degeneration chains for ordinary and special-linear tensor isomorphism even when all three flattenings have full rank, an identity slice is fixed, and the entire slice determinant polynomial is constant across the chain. Also constructs actions with closed individual orbits and arbitrarily high difference rank of the orbit relation. The first result strengthens the pencil-chain construction to the concise fixed-determinant setting. Publication priority remains unverified.
+<!-- concise-tensor-degeneration-depth:end -->
