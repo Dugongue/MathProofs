@@ -309,3 +309,10 @@ Pending formalizations:
 
 [Proof](LinearLengthClassicalTensorActions/Proof.md). Answers the linear-length question in Chen–Grochow–Qiao–Tang–Zhang, Section 1.5, for standard complex and finite-field unitary groups and standard orthogonal groups. Two rank-marked slices recover each coordinate block by intersection. All five actions are pairwise equivalent via constant-free kernel p-projections with linear side-length blow-up, uniformly over the field. [Original question](https://arxiv.org/html/2306.03135v2#S1.SS5)
 <!-- linear-length-classical-tensor-actions:end -->
+
+
+<!-- arbitrary-tensor-matrix-space-projections:start -->
+### Projection Reductions from Arbitrary Tensors to Matrix Spaces (informal)
+
+[Proof](ArbitraryTensorMatrixSpaceProjections/Proof.md). Answers Grochow and Qiao's question in Remark 2.5 of *Tensor Isomorphism-Completeness* for both alternating matrix-space isometry and matrix-space conjugacy. The reductions satisfy all five requested properties on arbitrary 3-tensors over any field, including degenerate tensors, with linear output side lengths. The alternating projection is in the independent alternating coordinates. [Original question](https://doi.org/10.1137/21M1441110)
+<!-- arbitrary-tensor-matrix-space-projections:end -->
