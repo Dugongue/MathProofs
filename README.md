@@ -295,3 +295,10 @@ Pending formalizations:
 
 [Proof](ConciseTensorDegenerationDepth/Proof.md). Constructs quadratic-length strict degeneration chains for ordinary and special-linear tensor isomorphism even when all three flattenings have full rank, an identity slice is fixed, and the entire slice determinant polynomial is constant across the chain. Also constructs actions with closed individual orbits and arbitrarily high difference rank of the orbit relation. The first result strengthens the pencil-chain construction to the concise fixed-determinant setting. Publication priority remains unverified.
 <!-- concise-tensor-degeneration-depth:end -->
+
+
+<!-- kronecker-degeneration-depth:start -->
+### Exact Degeneration Depth of Matrix Pencils (informal)
+
+[Proof](KroneckerDegenerationDepth/Proof.md). Computes the longest strict-equivalence degeneration chain for complex square pencils, with exactly n(n+1)/2 steps, and for n × (n+1) pencils, with n(n+1)/2+n steps. A potential on Kronecker data handles all eigenvalues. Also gives the exact special-linear square height and the difference level on fixed finite spectral support. This answers the exact-height question raised in the Depth Hierarchy work. Publication priority remains unverified.
+<!-- kronecker-degeneration-depth:end -->
