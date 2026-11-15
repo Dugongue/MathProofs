@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-and-graph-complexity:start -->
+[IsomorphismAndGraphComplexity/PROOF.md](IsomorphismAndGraphComplexity/PROOF.md) — Abelian group isomorphism, symmetric-group occurrences, and two complexity classifications. Answers Grochow–Kardeş–Levet Question 7.3 with a quasipolynomial DNF lower bound on valid Abelian Cayley tables, and resolves the converse after Grochow–Urisman Lemma 6.11(2) with a counterexample and an exact sufficient padding bound. Reduces linear code equivalence to lattice isomorphism over every fixed non-prime finite field and proves $\Theta_2^{\mathrm P}$-completeness of Monophonic Position Set at diameter two. An additional note addresses the algorithmic clauses of Kaygorodov–Martín González–Viruel Question 50. AI-assisted informal proofs.
+<!-- isomorphism-and-graph-complexity:end -->
+
 <!-- audited-informal-open-problems:start -->
 [AmannNilpotentRigidity/Proof.md](AmannNilpotentRigidity/Proof.md) — Amann, Theorem 2.2 conjecture. A uniform cohomology-ring obstruction gives quasi-isometric rigidity for the stated family for every k ≥ 2. Informal proof. [Original paper](https://arxiv.org/abs/1710.04542)
 
