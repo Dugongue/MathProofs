@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- torsor-proof-circuit-crossovers:start -->
+[Torsors, proof complexity, and group circuits](IsomorphismAndProofComplexityCrossovers/AUDIT.md) — AI-assisted informal proofs. Realizes torsors of linear algebraic groups as ordinary three-tensor transporters up to explicit split rational factors. Gives an explicit rational pair of side length 328 with geometrically connected stabilizers that is isomorphic over every completion and inequivalent over the rationals. Proves exact exponential Geometric IPS degree on an explicit Boolean polynomial system despite a linear-size ordinary certificate, a sparse simulation for low-pointwise-rank inversion over finite fields, and a quantitative depth bound for arbitrary Cayley-table subgroup membership. Includes the [supporting inversion proofs](InversionProofComplexity/AUDIT.md).
+<!-- torsor-proof-circuit-crossovers:end -->
+
 <!-- inversion-proof-complexity:start -->
 [Inversion in algebraic proofs of tensor nonisomorphism](InversionProofComplexity/AUDIT.md) — AI-assisted informal proofs. On explicit concise semisimple multiplication tensors in every fixed positive characteristic, ordinary Polynomial Calculus needs exponential sparse size while fully annotated degree-five PC+INV refutations have polynomial size and use one inversion with variable-or-zero entries. Gives a sharp symbolic-rank and degree bound on eliminating inversion steps, exact proof-degree transfer under regular-sequence pullbacks, and an exponential ordinary-PC versus polynomial annotated PC+INV separation for succinct special-group isomorphism equations. Also gives a polynomial-size Geometric IPS construction from one-linear-form certificates with finite-field axioms. Includes scope, attribution, and exact controls.
 <!-- inversion-proof-complexity:end -->
