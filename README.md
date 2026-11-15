@@ -501,3 +501,8 @@ Pending formalizations:
 <!-- raw-residue-determinant-tests:start -->
 [Determinant Constraints on Raw Residue Tensors](RawResidueDeterminantTests/PROOF.md) — Partial progress on Chen–Grochow–Qiao–Tang–Zhang, Open Question 1.9. Informal proofs of one-instance reductions for intrinsic block graphs, semilinear adjoint fields and radical filtrations under explicit conditions. An additional exact polynomial-time algorithm uses low-rank moments and applies to a growing family with absolutely irreducible determinants and scalar stabilizers. The unrestricted reduction remains open.
 <!-- raw-residue-determinant-tests:end -->
+
+
+<!-- higher-order-measurements-and-algebra:start -->
+[Higher-Order Measurements and Algebra](HigherOrderMeasurementsAndAlgebra/PROOF.md) — Four informal answers. Resolves Designolle–Farkas's algebraic versus spectral $k$-fold unbiasedness question and their maximal-eigenspace parent criterion at arbitrary order and rank. Answers Hu–van Melkebeek's Section 5 multilinear sparsity-lifting question with exact width in every ROABP order. Proves Kaygorodov–Martín González–Viruel Conjecture 8 on polynomial-on-residue-classes counts of perfect evolution algebras. A separate note corrects the characteristic-two distribution in the finite-field consequence of their Conjecture 2.
+<!-- higher-order-measurements-and-algebra:end -->
