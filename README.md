@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- inversion-proof-complexity:start -->
+[Inversion in algebraic proofs of tensor nonisomorphism](InversionProofComplexity/AUDIT.md) — AI-assisted informal proofs. On explicit concise semisimple multiplication tensors in every fixed positive characteristic, ordinary Polynomial Calculus needs exponential sparse size while fully annotated degree-five PC+INV refutations have polynomial size and use one inversion with variable-or-zero entries. Gives a sharp symbolic-rank and degree bound on eliminating inversion steps, exact proof-degree transfer under regular-sequence pullbacks, and an exponential ordinary-PC versus polynomial annotated PC+INV separation for succinct special-group isomorphism equations. Also gives a polynomial-size Geometric IPS construction from one-linear-form certificates with finite-field axioms. Includes scope, attribution, and exact controls.
+<!-- inversion-proof-complexity:end -->
+
 <!-- matrix-code-equivalence-benchmark:start -->
 [Matrix-Code Equivalence benchmark](MatrixCodeEquivalenceBenchmark/README.md) — Executable prime-field solver and packed binary backend extending the tensor rank-profile method to left–right equivalence of matrix codes. It decided all 89 independently labelled pairs of published Morrison representatives and recovered a witness for the 4 × 6 Oxford MEDS teaching example. It beat an exact two-row reference on four of six matched Morrison pairs, and on a synthetic rectangular binary cohort the richer rank profiles improved end-to-end time by 18.5× against the same solver with single-word ranks. Includes informal proofs, exact controls, runnable code and raw timings.
 <!-- matrix-code-equivalence-benchmark:end -->
