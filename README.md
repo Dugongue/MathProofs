@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- logspace-minimum-generation-lean-steps-1-to-4:start -->
+[Cayley-table input and quotient access in Lean](LogspaceMinimumGenerationLeanSteps1To4/README.md) — Verified components for Question 8.1 covering raw table decoding, connectivity-to-word search, subgroup and chief queries, and the residual replay interface. The unrestricted search theorem remains informal.
+<!-- logspace-minimum-generation-lean-steps-1-to-4:end -->
+
 <!-- logspace-minimum-generation-lean:start -->
 [Lean components for logspace minimum generation](LogspaceMinimumGenerationLean/README.md) — Verified Cayley-table, Frattini and Gaschütz lifting, quotient replay, and semisimple generation lemmas for Collins–Grochow–Levet–Weiß Question 8.1. The complete search proof is informal. The existence of the unrestricted logspace machine remains to be formalized.
 <!-- logspace-minimum-generation-lean:end -->
