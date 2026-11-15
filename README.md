@@ -400,3 +400,22 @@ Pending formalizations:
 
 [Proof](SLQuadraticPencilCharacters/Proof.md). Gives a same-field many-one reduction from SL-TI to ordinary TI over $\mathbb F_3$ on an odd balanced pencil class. The geometric determinant factors have bounded degree and a fixed common field of definition. Two quadratic factors whose matrix ratio has squarefree characteristic polynomial suffice, even with an unbounded number of other factors. The construction recovers the relevant factors and reads the label determinant using the resulting commutative algebra.
 <!-- determinant-character-reductions-november-14:end -->
+
+
+<!-- step-17-determinant-reductions-november-14:start -->
+### Determinant Profiles from Bounded-Rank Peirce Frames (informal)
+
+[Proof](SLBoundedRankFrames/Proof.md). Gives a deterministic ordinary-TI Turing reduction for truncated triangular multiplication tensors with a raw bounded-rank slice frame of bounded codimension. The complementary blocks can grow arbitrarily. The algorithm computes the full determinant profile and needs no supplied frames.
+
+### Quadratic Pencil Orientation over Separate Factor Fields (informal)
+
+[Proof](SLSeparateFactorFields/Proof.md). Gives a deterministic same-field many-one reduction for total-determinant-one TI over fixed odd finite fields when the absolute pencil factors have bounded degree and two quadratic factors give a nonsingular denominator and a squarefree ratio. Individual factors may require a common splitting field of superpolynomial degree.
+
+### Determinant Characters from Quadratic Pencils with Repeated Spectrum (informal)
+
+[Proof](SLRepeatedPencilSpectrum/Proof.md). Gives a same-field many-one reduction for a weighted label and matrix determinant character with two quadratic factors. It handles repeated and nilpotent ratios when the contributing primary multiplicity widths are logarithmic and either the factor count is bounded or a one-dimensional residue-field terminal represents the matrix determinant ratio.
+
+### Raw Pfaffian Tests for Tensor Determinant Characters (informal)
+
+[Proof](SLCartanPfaffian/Proof.md). Gives a deterministic same-field many-one reduction for the total determinant under a bounded-degree, bounded-count Pfaffian factor promise. A growing raw family has a polynomial-time filter for all determinant characters, including the weights arising from the triangular multiplication construction.
+<!-- step-17-determinant-reductions-november-14:end -->
