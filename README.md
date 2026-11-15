@@ -476,3 +476,18 @@ Pending formalizations:
 
 [Proof](SLLocalFrobeniusTwists/Proof.md). Gives a single ordinary TI test for determinant-one isomorphism of every local Frobenius algebra in characteristic two. For odd fields, a square-zero filtration and the residue-field twists of its middle multiplication remove paired determinants, with exact width-free examples over quadratic residue fields.
 <!-- marked-shears-and-frobenius-determinants-november-14:end -->
+
+
+<!-- lean-library-transfers-november-14:start -->
+### Raw Determinant Profiles from Rectangular Pencil Components (informal)
+
+[Proof](RectangularPencilDeterminantProfiles/Proof.md). Gives a polynomial-time ordinary-TI Turing reduction for the full determinant profile over every fixed finite field when factors of maximal minors on bounded indecomposable components supply covectors spanning to logarithmic codimension. An explicit growing balanced family over F₃ has identically zero full determinant and only rectangular indecomposable components.
+
+### Eliminating Generic Auxiliary Inputs from Symmetric Arithmetic Circuits (informal)
+
+[Proof](PermanentAuxiliaryInputSymmetrization/Proof.md). Gives a deterministic joint interpolation certificate for deleting many generic dense linear inputs while preserving an invariant polynomial. An exact injection-sum circuit symmetrizes marked-vertex linear inputs without listing their placements. These conclusions apply to the stated circuit representations and give restricted permanent lower bounds.
+
+### Local Zariski Closures and Simultaneous Recurrence over Number Fields (informal)
+
+[Proof](LocalZariskiClosureNumberFields/Proof.md). Uses Faltings and Mordell–Lang to describe local Zariski closures for projective curves and subvarieties of abelian varieties. It proves simultaneous-place recurrence outside a finite exceptional set for dimension-one Diophantine presentations and identifies Mordell–Weil input reusable in the Manin formalization.
+<!-- lean-library-transfers-november-14:end -->
