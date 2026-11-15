@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-isomorphism-proof-crossovers:start -->
+[Four crossovers in isomorphism and proof complexity](IsomorphismProofCrossovers/AUDIT.md) — AI-assisted informal proofs. Shows every inconsistent polynomial system refutes at its maximum axiom degree in the published PC+INV proof-line degree model, giving degree-three geometric tensor nonisomorphism refutations and refuting Galesi–Grochow–Pitassi–She Conjecture 1.7. With charged circuit annotations, PC+INV and the Ideal Proof System have polynomial-size translations in both directions. Extends both perfect product quotient cases of Grochow–Qiao Theorem 7.1 to arbitrary abelian centers in polynomial Cayley-table time. Gives a balanced orthogonal and unitary d-to-3 tensor reduction of total side dimension O(n^ceil(d/3)), and explicit sparse closed symmetric quartic orbits requiring invariant degree Θ(n·2^n) to separate. Includes exact finite controls. Novelty remains subject to review.
+<!-- four-isomorphism-proof-crossovers:end -->
+
 <!-- central-extension-cosets:start -->
 [Group isomorphism through central extension cosets](CentralExtensionCosets/PROOF.md) — AI-assisted informal proof, not Lean-verified; publication priority unestablished. Combines finite-ring unit orbits, prime-power subgroup transport, and extension cohomology to process solvable cosets of quotient maps in polynomial Cayley-table time for central kernels. For raw class-two groups, gives polynomial time times complete-flag counts for the equal-order cyclic blocks of the central quotient; in particular, polynomial time when those multiplicities are bounded, without a bound on total rank or exponents. Includes witnesses, full isomorphism cosets and exact counts. Does not claim an unrestricted record or closure of the general abelian-radical or TI versus SL-TI questions.
 <!-- central-extension-cosets:end -->
