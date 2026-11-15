@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- group-isomorphism-and-epimorphisms:start -->
+[Group isomorphism search, counting, and epimorphisms](GroupIsomorphismAndEpimorphisms/PROOF.md) — AI-assisted informal proofs. Search, exact counting, and automorphism generators reduce in polynomial time to isomorphism decision for every finite $p$-group, using only same-prime $p$-group queries. A separate reduction keeps Frattini-class-two queries inside that class. Answers Grochow–Srivastava–Thakkar Open Question 3(1), the constant-size clause of 3(2), and the cited odd generalized-Heisenberg quotient case of 3(3) with constructive algorithms and exact epimorphism counts.
+<!-- group-isomorphism-and-epimorphisms:end -->
+
 <!-- simple-quasigroups-and-circuit-bounds:start -->
 [Simple quasigroup generators, Cayley circuit bounds, and graph multiplicities](SimpleQuasigroupsAndCircuitBounds/PROOF.md) — AI-assisted informal proofs. Answers Grochow–Kardeş–Levet's finite-simple-quasigroup generation question by constructing simple loops of order $8^m$ requiring exactly $2m$ generators. Extends Cayley-table lower bounds to depth-three circuits with bounded output fan-in. Gives a sublinear graph-size exponent for the multiplicity-obstruction part of Grochow–Urisman Question 1.10, with a separate degree-dependent factor, and proves the Carlson–Kovács factorization assertion for every finite $p$-group with central Frattini subgroup.
 <!-- simple-quasigroups-and-circuit-bounds:end -->
