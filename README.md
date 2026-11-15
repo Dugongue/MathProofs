@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- group-graph-tensor-crossovers:start -->
+[Group, graph, and tensor isomorphism crossovers](GroupGraphTensorCrossovers/PROOF.md) — AI-assisted informal proofs. Answers Skresanov's generator-bound question for lifting over arbitrary abelian kernels and the abelian-radical extension part of Grochow–Qiao Open Problem 8.1. Gives NP-completeness of succinct Fitting-free Group Epimorphism even on a family with polynomial-time isomorphism, exact epimorphism counting for coprime elementary-abelian layers from Cayley tables, and polynomial Frattini-coset lifting under bounded composition factors. The graph-tensor constructions preserve exact transporters and permutation parity, allow raw tensor decoding, and transfer a linear refutation-degree lower bound to sparse cubic-form equivalence.
+<!-- group-graph-tensor-crossovers:end -->
+
 <!-- group-isomorphism-and-epimorphisms:start -->
 [Group isomorphism search, counting, and epimorphisms](GroupIsomorphismAndEpimorphisms/PROOF.md) — AI-assisted informal proofs. Search, exact counting, and automorphism generators reduce in polynomial time to isomorphism decision for every finite $p$-group, using only same-prime $p$-group queries. A separate reduction keeps Frattini-class-two queries inside that class. Answers Grochow–Srivastava–Thakkar Open Question 3(1), the constant-size clause of 3(2), and the cited odd generalized-Heisenberg quotient case of 3(3) with constructive algorithms and exact epimorphism counts.
 <!-- group-isomorphism-and-epimorphisms:end -->
