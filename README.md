@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- logspace-minimum-generation-lean:start -->
+[Lean components for logspace minimum generation](LogspaceMinimumGenerationLean/README.md) — Verified Cayley-table, Frattini and Gaschütz lifting, quotient replay, and semisimple generation lemmas for Collins–Grochow–Levet–Weiß Question 8.1. The complete search proof is informal. The existence of the unrestricted logspace machine remains to be formalized.
+<!-- logspace-minimum-generation-lean:end -->
+
 <!-- logspace-minimum-generation:start -->
 [Minimum generating sets in deterministic logspace](LogspaceMinimumGeneration/Proof.md) — Informal proof answering Collins–Grochow–Levet–Weiß Question 8.1. Given the Cayley table of an arbitrary finite group, the algorithm outputs an actual minimum generating set in logarithmic workspace. It queries the alternating solvable-radical and semisimple-socle quotients directly from the input and uses separate lifting algorithms for the two kinds of layers. Includes the [generator-number proof and supporting results](LogspaceMinimumGeneration/README.md). Publication priority is unestablished.
 <!-- logspace-minimum-generation:end -->
