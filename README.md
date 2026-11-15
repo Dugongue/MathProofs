@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- simple-quasigroups-and-circuit-bounds:start -->
+[Simple quasigroup generators, Cayley circuit bounds, and graph multiplicities](SimpleQuasigroupsAndCircuitBounds/PROOF.md) — AI-assisted informal proofs. Answers Grochow–Kardeş–Levet's finite-simple-quasigroup generation question by constructing simple loops of order $8^m$ requiring exactly $2m$ generators. Extends Cayley-table lower bounds to depth-three circuits with bounded output fan-in. Gives a sublinear graph-size exponent for the multiplicity-obstruction part of Grochow–Urisman Question 1.10, with a separate degree-dependent factor, and proves the Carlson–Kovács factorization assertion for every finite $p$-group with central Frattini subgroup.
+<!-- simple-quasigroups-and-circuit-bounds:end -->
+
 <!-- cayley-circuits-and-decompositions:start -->
 [Cayley-table lower bounds, quasigroup decomposition, and characteristic-two symmetrization](CayleyCircuitsAndDecompositions/PROOF.md) — AI-assisted informal proofs. Answers Grochow–Kardeş–Levet Question 7.1 and strengthens the bound for Question 7.3 with $2^{\Omega(\sqrt n)}$ lower bounds for both CNFs and DNFs on valid Abelian Cayley tables along an infinite sequence of orders $n=3^r$. Answers Johnson–Levet–Vojtěchovský–Widholm Question 7.4 with a deterministic polynomial-time algorithm for fully refined direct product decomposition of arbitrary quasigroups. Answers the symmetrization part of Ivanyos–Qiao's characteristic-two question constructively over every characteristic-two field. Also refutes Osterlund's Loewy-length conjecture for regular-module tensor products and resolves the Frattini-class-two case of Carlson–Kovács over arbitrary coefficient fields of characteristic $p$.
 <!-- cayley-circuits-and-decompositions:end -->
