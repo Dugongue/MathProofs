@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- hypoworlds-case-proofs:start -->
+[HypoworldsCaseProofs/PROOF.md](HypoworldsCaseProofs/PROOF.md) — Five AI-assisted informal results using exhaustive case crossing. Gives a quasipolynomial versus $2^{\Theta((\log n)^3)}$ depth-three/DNF separation on the same canonical Group Isomorphism promise, sharp symmetric-group occurrence recovery in even degree, and $\Theta_2^{\mathrm P}$-completeness for both monophonic position colouring variants at diameter two. Also constructs an absolutely simple evolution-algebra Hasse counterexample over $\mathbb Q(\sqrt{-3})$ and classifies the maximal automorphism orders and equality types of simple evolution algebras over every field.
+<!-- hypoworlds-case-proofs:end -->
+
 <!-- isomorphism-and-graph-complexity:start -->
 [IsomorphismAndGraphComplexity/PROOF.md](IsomorphismAndGraphComplexity/PROOF.md) — Abelian group isomorphism, symmetric-group occurrences, and two complexity classifications. Answers Grochow–Kardeş–Levet Question 7.3 with a quasipolynomial DNF lower bound on valid Abelian Cayley tables, and resolves the converse after Grochow–Urisman Lemma 6.11(2) with a counterexample and an exact sufficient padding bound. Reduces linear code equivalence to lattice isomorphism over every fixed non-prime finite field and proves $\Theta_2^{\mathrm P}$-completeness of Monophonic Position Set at diameter two. An additional note addresses the algorithmic clauses of Kaygorodov–Martín González–Viruel Question 50. AI-assisted informal proofs.
 <!-- isomorphism-and-graph-complexity:end -->
