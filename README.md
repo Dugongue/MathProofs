@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-isomorphism-structural-combinations:start -->
+[Four structural combinations for tensor isomorphism](TensorIsomorphismStructuralCombinations/COMBINATIONS.md) — AI-assisted informal proofs. Reduces arbitrary ordered 3-tensor isomorphism over any field to abstract isomorphism of smooth rational projective varieties with a fixed Tate motive per format. Realizes prescribed Frobenius isomorphism profiles and every finite abelian everywhere-local genus. Gives graph-isomorphism equivalences for recognizable wide Peirce and recoverable rank-one tensor classes, with separate determinant-one results.
+<!-- tensor-isomorphism-structural-combinations:end -->
+
 <!-- torsor-proof-circuit-crossovers:start -->
 [Torsors, proof complexity, and group circuits](IsomorphismAndProofComplexityCrossovers/AUDIT.md) — AI-assisted informal proofs. Realizes torsors of linear algebraic groups as ordinary three-tensor transporters up to explicit split rational factors. Gives an explicit rational pair of side length 328 with geometrically connected stabilizers that is isomorphic over every completion and inequivalent over the rationals. Proves exact exponential Geometric IPS degree on an explicit Boolean polynomial system despite a linear-size ordinary certificate, a sparse simulation for low-pointwise-rank inversion over finite fields, and a quantitative depth bound for arbitrary Cayley-table subgroup membership. Includes the [supporting inversion proofs](InversionProofComplexity/AUDIT.md).
 <!-- torsor-proof-circuit-crossovers:end -->
