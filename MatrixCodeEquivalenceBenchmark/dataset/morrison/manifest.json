@@ -1,0 +1,2212 @@
+[
+  {
+    "file": "morrison-f2-2x2-g01-g02.txt",
+    "sha256": "2c547d5183f7eb89a823b7a27c680678ecefccae918e238e1a9d17d4626d72f8",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      1,
+      2
+    ],
+    "parameters": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      3,
+      1
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g01-g02.txt",
+    "sha256": "cb2b2af03b4f46fe762d705edd227ac9320b080a63811a04d88df62e7d774fe1",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      1,
+      2
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      7,
+      3
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 3,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g01-g03.txt",
+    "sha256": "f682e3d0332004778143a818cc752291e73092301092557cb07ebb2c3ce913d4",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      1,
+      3
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      7,
+      1
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 3,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g01-g04.txt",
+    "sha256": "1da021bd63c9dd6deafa87c9270ab7a4781804ae25b2f0335078064da34a46c8",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      1,
+      4
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      7,
+      5
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g01-g05.txt",
+    "sha256": "b355b279ad381bf7d26434e7e70c836f70728b0ebabacd5f990584a7ba7b2c99",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      1,
+      5
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      7,
+      3
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g02-g03.txt",
+    "sha256": "c3a41fb2be43860e8c0ff0f2fd6cd24ce0101fe2d7f4889e6b378700a2cf9b29",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      2,
+      3
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      3,
+      1
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 1,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g02-g04.txt",
+    "sha256": "10f0fefd8092f12d1c51580a7614e8b186c19f5d62e81875a38cb1ba527f0d26",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      2,
+      4
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      3,
+      5
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g02-g05.txt",
+    "sha256": "57c836f96ba75552cbb44c53d0a49a2feb4c9ea336ae292f469f4134436171d8",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      2,
+      5
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      3,
+      3
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g03-g04.txt",
+    "sha256": "a9b4d973cfcce63fc2901e881914527252c42983a9389eac001ac633ee2bee68",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      3,
+      4
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      1,
+      5
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g03-g05.txt",
+    "sha256": "6f8e1e4a67e80b83b028defe365b2c52424dc6307959c79ce9f1b671b8367896",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      3,
+      5
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      1,
+      3
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f2-2x3-g04-g05.txt",
+    "sha256": "5c0157ab814ecabe3be78b31c01c6ced1b64be2703d27ca1b9a9c9db5b93d1df",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 1,
+    "generators": [
+      4,
+      5
+    ],
+    "parameters": [
+      2,
+      2,
+      3,
+      3
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      5,
+      3
+    ],
+    "left_projective_matrices_checked": 6,
+    "maximum_right_space_nullity": 5,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g02.txt",
+    "sha256": "0dc3309b5533b59c123c3729a5a123ef4782725994a4cf1d0e9f788862091a2e",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      2
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g03.txt",
+    "sha256": "5733c208bd247bc829c6459ca6ed842017683b737a65b919dc89535e6335bdba",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      3
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g04.txt",
+    "sha256": "998cd196f6226fa1068bb65c59b705680800653506eb456fb82cc9f22b0028a2",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      4
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g05.txt",
+    "sha256": "29499be0cbe0fc67fbfa23ccea08680ba0c88d7fae08d21e381baff1b1b15d9c",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      5
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g06.txt",
+    "sha256": "7b0e73e24713384720ee6d2e13feeb6386694b28a508e84b6fa40c811354e99f",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      6
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "equivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 3,
+    "maximum_right_space_nullity": 8,
+    "witness": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g07.txt",
+    "sha256": "3a958176600ca8e84c96a6e0e0654c6015caa063a01ed6301a3c4753263a500a",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      7
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      16
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g08.txt",
+    "sha256": "efc26e442e0f3fcc8a27568811b7e23738e0cb75567cd47933dcea7b04777290",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      8
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g09.txt",
+    "sha256": "a8fdd19d78a6f6c261dd3279203f1079cf16f5f59839f1eb68039cfd6597d63a",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g10.txt",
+    "sha256": "4838997bd239d61db90bd1509b6a8fc4b01fee7244cf8386ea4a6fa3a3b22e35",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g11.txt",
+    "sha256": "a50c8f6de37204c91e48d91c61d38443b20b8841d269479a6d6a646bc6a22761",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g12.txt",
+    "sha256": "3fcd69738d8043f0c7a4494e2fcb2e4c97466204559e07b18c9faa72958880d4",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g01-g13.txt",
+    "sha256": "5349eba1d840ea44b27b9b1e47ba1c4f74c04b6edf7cdbdfefd429c43b9399da",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      1,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g03.txt",
+    "sha256": "1efb77130a408c80e66cf8f05c26d8726d60ed89d51b33bd5b4395610ffb5d84",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      3
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g04.txt",
+    "sha256": "e5c3a65a522353ba7e3fe02abdab0bb12a3581e60c438b92da56d7adc39b8c04",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      4
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g05.txt",
+    "sha256": "7d6255e0d67b5bff0a3dddd762291675ecf07f8f41849d14de50edad054092cf",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      5
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g06.txt",
+    "sha256": "8f130254090d4ed15b0f32ee175e181166041d5f5633d268bf2feec71f0b1c62",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      6
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g07.txt",
+    "sha256": "727576a15be7dbd96827809b4a46bca1fd8f546194b2a68a0f50bd8740a24269",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      7
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      16
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g08.txt",
+    "sha256": "926738fc681fe36ab85ed15e0efa7e106ab725c2ac3d40ea2d30be861f3d5e10",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      8
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g09.txt",
+    "sha256": "f1cbfbed0cf6460271dbd0cdf792c94f6596b7e8a2ca537c819361aa2936b956",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g10.txt",
+    "sha256": "0800432e9fa064bc64f50948bb2b31defca6a3acf51484a75e54a73029e21c3f",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g11.txt",
+    "sha256": "25310039bb4348e20ebd109c66f1e68f37c5c3b7c0982310cfef8602ef6a1d67",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g12.txt",
+    "sha256": "a40c5b3bf2d3f8737ee6770192e390277f7f9f1a470ee1ba74288ef0294cb4fe",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g02-g13.txt",
+    "sha256": "6311e0b042671784c4fe15e362df3519a6a08533e75328b2f12ed1ec9392c931",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      2,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g04.txt",
+    "sha256": "92b2a2c5a249075c123602860130a322466ae51b64935e70076cdab4b7c59201",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      4
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g05.txt",
+    "sha256": "729aa0c9dc88ed44519e82dfccdb638ef6426cfdc4fc47690a457d1994af0fd5",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      5
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g06.txt",
+    "sha256": "c745080ee03349c60c4df3a3e8dbd54686b812e62169410f2c9b09d9ca0de92e",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      6
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g07.txt",
+    "sha256": "f653a7736575e674db8dd875353aa2a7f9d78454a175cdfd32cddb2dc45d497f",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      7
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      16
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g08.txt",
+    "sha256": "b7faf1663db298a65449c2bcb3a4e2e6af0409ba21652bfab62cc9b389b06fbd",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      8
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g09.txt",
+    "sha256": "675cd1f97fa99573b89843a0b256d329eed03a719976ae88c196a1c9dc879103",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g10.txt",
+    "sha256": "090b6dd739043acbd1be9ca5a3c4049a3303308f0b964c6ed519a9fe669d668f",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g11.txt",
+    "sha256": "b07bc8adfb969fa9ecb3092aca6f72898243cfbe6fdf9501cc40e40d210a6dd9",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g12.txt",
+    "sha256": "4fe720e65f021aac73a857e049f0a83b1b3fd1a963a42b14788f3a02dd67b8af",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g03-g13.txt",
+    "sha256": "6fdea94c715f4d4aa55acecce9e30e0ee59274e1e04a5c3a300d07164419d2c8",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      3,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g05.txt",
+    "sha256": "b4af9c9d24b56fff8801be7e6d70ff1cf32cf223d596d59e30dcb597a2a5f9f0",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      5
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g06.txt",
+    "sha256": "92479d3d936be54cc364b0231af67b457c9a2f2321c5493f5cc23196076b54d2",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      6
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g07.txt",
+    "sha256": "3ec4fa23cb28132a2f787189027e51400ebe56197db840b2e4e5450049bdde15",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      7
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      16
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g08.txt",
+    "sha256": "44f04b06eac7ff4ff8482e507d5de5266d1e0281aafb1613721c5b75c1708117",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      8
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g09.txt",
+    "sha256": "faf35c74713a29f19689dc0dbb008a976cb3f007a671cb21ca38780283faf3cb",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g10.txt",
+    "sha256": "4369c3c7d27fb3f213f806aca6c6c6e0248e8436a8eb8f089f84e5f075d9d1b9",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g11.txt",
+    "sha256": "8257054ffec956aafb11a751ff58d132b267de370562911c906e96050f0a1cff",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g12.txt",
+    "sha256": "6ace02efc7a54f0da61f70b5f50937d818fd063a6dbe83dedd858fcb80ec8d84",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g04-g13.txt",
+    "sha256": "ec4b9d5e106edfd27ef12f21a0627ce9dc3344e3eaee990624669bb9fb6e6dc6",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      4,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g06.txt",
+    "sha256": "70acd780fe4ba22bb0ef80d9585a4fddb44c765c4312ded8f29d2edeee58a0db",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      6
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g07.txt",
+    "sha256": "aeefdc623247910e5c2654f61bbaf98a98714ffbda7419ff24ff29466ae6083d",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      7
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      16
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g08.txt",
+    "sha256": "8885102818534226ec30e598a30812a2b46a03a3baac5a65dcb18548e1220cee",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      8
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g09.txt",
+    "sha256": "ab64e9ed8a00b432871f9ce3417ad9703687b436d4171731c9019c2858e6b921",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g10.txt",
+    "sha256": "9fd48d71c51c90b3415af85af7a7185c6f12e491499eea1f7fe0dc642cb721dc",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "equivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 2,
+    "maximum_right_space_nullity": 4,
+    "witness": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g11.txt",
+    "sha256": "cb1a09a0a7dae2f5a582e25c7766d6599bc1ea03840b5a6bf6938d0400050fc9",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g12.txt",
+    "sha256": "97216d9fe8813dc68b06c47af0625bb74cfca2679b0c424008fa587dbd0b582d",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g05-g13.txt",
+    "sha256": "dab194efd449b3036e89b97ceab8e8d6f51ab0d883d2a551f29414132afd5ef9",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      5,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g06-g07.txt",
+    "sha256": "c912e1e1c0a1651a40e20c5b7cdd29fa8dff2ac136debed28915694eb8c517af",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      6,
+      7
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      16
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g06-g08.txt",
+    "sha256": "12205e6324e8273158642e8f4b244bd6752034015d4c825e6f20f012c6cafe88",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      6,
+      8
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g06-g09.txt",
+    "sha256": "9d969baa7874f91b3aa9e99df0eb7157f2e9321b58569641da34b3efeb46486d",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      6,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g06-g10.txt",
+    "sha256": "df7b82f2bcbfac7a76742f2da663674bf57d0a068fa6df3a0edda9ec9f2362b6",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      6,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g06-g11.txt",
+    "sha256": "6bc9de974db5ed31898272c3c88a46ffddd33e401706ab12e2d56bd6f53fc767",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      6,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g06-g12.txt",
+    "sha256": "a28fa9b5e35c687b839bcba33b081b952172293b834958d5136b197dfb6b653d",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      6,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g06-g13.txt",
+    "sha256": "b013d741c23bdba3bde86bcf8d75c04b71751ab3dafe5ff3fd65c0b15a4d1bb3",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      6,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g07-g08.txt",
+    "sha256": "2c779468e907d0e389f06b96aca82afef25f4a1a4e42bb14a286824648dadd2a",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      7,
+      8
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      16,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g07-g09.txt",
+    "sha256": "9372a0dc221fc0f75e1f4686541d904f575c7886bf804eb7c8ffd88270149f88",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      7,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      16,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g07-g10.txt",
+    "sha256": "6e206b484c3db57acac51376625b6b07fca52890bcdb025e139ac36e62cb3f4f",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      7,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      16,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 0,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g07-g11.txt",
+    "sha256": "02646d562e68e1e58ac7d9eeecca082c6937c0ebf8cb6f10cc7ac38aa53651b5",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      7,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      16,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g07-g12.txt",
+    "sha256": "45f8473c5595c96c092c5eedf9f3c59c5005e28e92ec9dc180dc19aef5fd2e36",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      7,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      16,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g07-g13.txt",
+    "sha256": "312c99081a7539d36a722f1fbf580acbc8c041299fc78bca854e0be31d59e734",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      7,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      16,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g08-g09.txt",
+    "sha256": "dccbfd8ecb8ded26a12f2390bf53087be64ba230d16b5e0d495e312d3d7ec4aa",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      8,
+      9
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      32
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 10,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g08-g10.txt",
+    "sha256": "ec19247a217fdef2bc7fae241c3b271170ece29337059b66f5a97538aa2427b3",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      8,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g08-g11.txt",
+    "sha256": "6297b83ffad0bcaab46675bb45f5fb0b14908b75db3a1077ca3c0a9310122253",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      8,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g08-g12.txt",
+    "sha256": "e938145422a67027191f899c1f82e7f84aa40d3df1ee072db56b2671db1d9200",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      8,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g08-g13.txt",
+    "sha256": "5bdc0c86245fb46a07c4077341098372fd9e99060d91d0e02e11d9ae41398901",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      8,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 7,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g09-g10.txt",
+    "sha256": "db5abd4b81f553a86c0b8def60a018c067b4337961f1e7914db63ed6076b3f50",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      9,
+      10
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      32,
+      0
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g09-g11.txt",
+    "sha256": "b2868db02cae7f77c2209970f45665bbca4f03dbee0915dbcb875e1fe23b29ce",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      9,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      32,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g09-g12.txt",
+    "sha256": "f7d4fea47cb77ac32b39331891a21f5c6e44746f712008505b44e23afcc58e3e",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      9,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      32,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 8,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g09-g13.txt",
+    "sha256": "775048f5f791e3c03c70b2b4ba6bfb89f23ad13c5c53a516108715184580fa70",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      9,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      32,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 10,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g10-g11.txt",
+    "sha256": "be784fc619d36135b70644f570026643c9fed6e67dc2d0f07e9c5b509f044a19",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      10,
+      11
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      8
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g10-g12.txt",
+    "sha256": "c925e7ebd297a69c0672ae443456fcde38d9e300928c853f066f12167625fa23",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      10,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 2,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g10-g13.txt",
+    "sha256": "0319c9eb648af9a3832d532aefd4fb7e67c3381a3aadc9ccd8e6377e802fe13e",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      10,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      0,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g11-g12.txt",
+    "sha256": "93075c2c757d3645a4e74aca8da5baac5e6878e9e2e7a57297f159874dd37f13",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      11,
+      12
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      4
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 4,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g11-g13.txt",
+    "sha256": "083baed2de01380a129133bf64db9901bc777b28ab0510fbe8407487cd034a19",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      11,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      8,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  },
+  {
+    "file": "morrison-f3-2x4-g12-g13.txt",
+    "sha256": "c8212421cc993db6d6d63eb2214e425fde74c9614b8ff79892a3e76c3bf8f5ae",
+    "source": "https://arxiv.org/abs/1505.07363",
+    "source_table": 2,
+    "generators": [
+      12,
+      13
+    ],
+    "parameters": [
+      3,
+      2,
+      4,
+      4
+    ],
+    "label": "inequivalent",
+    "published_rank_one_counts": [
+      4,
+      20
+    ],
+    "left_projective_matrices_checked": 24,
+    "maximum_right_space_nullity": 6,
+    "witness": null
+  }
+]

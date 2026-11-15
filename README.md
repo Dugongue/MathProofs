@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- matrix-code-equivalence-benchmark:start -->
+[Matrix-Code Equivalence benchmark](MatrixCodeEquivalenceBenchmark/README.md) — Executable prime-field solver and packed binary backend extending the tensor rank-profile method to left–right equivalence of matrix codes. It decided all 89 independently labelled pairs of published Morrison representatives and recovered a witness for the 4 × 6 Oxford MEDS teaching example. It beat an exact two-row reference on four of six matched Morrison pairs, and on a synthetic rectangular binary cohort the richer rank profiles improved end-to-end time by 18.5× against the same solver with single-word ranks. Includes informal proofs, exact controls, runnable code and raw timings.
+<!-- matrix-code-equivalence-benchmark:end -->
+
 <!-- balanced-ti-benchmarks:start -->
 [Balanced Tensor Isomorphism benchmark](BalancedTensorBenchmark/README.md) — Executable binary tensor-isomorphism pipeline using the balanced product trees. Includes an implicit encoder, smaller exact rank and spectral tags, exact native backends, and reproducible Traces and CaDiCaL comparisons. The implicit pipeline decided 106 of 106 inputs. With the same grouped-rank backend and a 250 ms native budget, balanced groups completed 105 of 106 and the half split completed 74. With a common fallback, the balanced layout reduced median order-12 runtime from 11.77 ms to 9.61 ms. The executable and smaller tag proofs were reviewed informally, with exact controls. The original reduction has its separate Lean certificate.
 <!-- balanced-ti-benchmarks:end -->

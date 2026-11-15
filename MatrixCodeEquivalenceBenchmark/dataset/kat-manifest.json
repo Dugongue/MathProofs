@@ -1,0 +1,114 @@
+[
+  {
+    "source": "https://www.meds-pqc.org/KAT/MEDS-KAT-2023-07-26.tgz",
+    "archive_sha256": "4045fbde6d2c6a4ccce1df5c46230e227ad5961047a4d172cf502622b3250760",
+    "member": "PQCsignKAT_MEDS13220.rsp",
+    "count": 0,
+    "code_index": 1,
+    "file": "kat-meds13220-000-g0-to-g1.txt",
+    "parameters": [
+      4093,
+      14,
+      14,
+      14
+    ],
+    "label": "equivalent-by-official-key-generation",
+    "sha256": "8c8dcc7507099b852fe50818e7f757107317762526cd75e2e5bd2764379ba9d4"
+  },
+  {
+    "source": "https://www.meds-pqc.org/KAT/MEDS-KAT-2023-07-26.tgz",
+    "archive_sha256": "4045fbde6d2c6a4ccce1df5c46230e227ad5961047a4d172cf502622b3250760",
+    "member": "PQCsignKAT_MEDS134180.rsp",
+    "count": 0,
+    "code_index": 1,
+    "file": "kat-meds134180-000-g0-to-g1.txt",
+    "parameters": [
+      2039,
+      30,
+      30,
+      30
+    ],
+    "label": "equivalent-by-official-key-generation",
+    "sha256": "dd0b361c226910addafdc4ab97fa136bb016b3801394a47dc2d40ed25a4e3db8"
+  },
+  {
+    "source": "https://www.meds-pqc.org/KAT/MEDS-KAT-2023-07-26.tgz",
+    "archive_sha256": "4045fbde6d2c6a4ccce1df5c46230e227ad5961047a4d172cf502622b3250760",
+    "member": "PQCsignKAT_MEDS167717.rsp",
+    "count": 0,
+    "code_index": 1,
+    "file": "kat-meds167717-000-g0-to-g1.txt",
+    "parameters": [
+      2039,
+      30,
+      30,
+      30
+    ],
+    "label": "equivalent-by-official-key-generation",
+    "sha256": "dd0b361c226910addafdc4ab97fa136bb016b3801394a47dc2d40ed25a4e3db8"
+  },
+  {
+    "source": "https://www.meds-pqc.org/KAT/MEDS-KAT-2023-07-26.tgz",
+    "archive_sha256": "4045fbde6d2c6a4ccce1df5c46230e227ad5961047a4d172cf502622b3250760",
+    "member": "PQCsignKAT_MEDS41711.rsp",
+    "count": 0,
+    "code_index": 1,
+    "file": "kat-meds41711-000-g0-to-g1.txt",
+    "parameters": [
+      4093,
+      22,
+      22,
+      22
+    ],
+    "label": "equivalent-by-official-key-generation",
+    "sha256": "5c192ef227ef53c2b2f99e09b05e696010aaed1e899cffd5c5026b94e0c362e9"
+  },
+  {
+    "source": "https://www.meds-pqc.org/KAT/MEDS-KAT-2023-07-26.tgz",
+    "archive_sha256": "4045fbde6d2c6a4ccce1df5c46230e227ad5961047a4d172cf502622b3250760",
+    "member": "PQCsignKAT_MEDS55604.rsp",
+    "count": 0,
+    "code_index": 1,
+    "file": "kat-meds55604-000-g0-to-g1.txt",
+    "parameters": [
+      4093,
+      22,
+      22,
+      22
+    ],
+    "label": "equivalent-by-official-key-generation",
+    "sha256": "5c192ef227ef53c2b2f99e09b05e696010aaed1e899cffd5c5026b94e0c362e9"
+  },
+  {
+    "source": "https://www.meds-pqc.org/KAT/MEDS-KAT-2023-07-26.tgz",
+    "archive_sha256": "4045fbde6d2c6a4ccce1df5c46230e227ad5961047a4d172cf502622b3250760",
+    "member": "PQCsignKAT_MEDS9923.rsp",
+    "count": 0,
+    "code_index": 1,
+    "file": "kat-meds9923-000-g0-to-g1.txt",
+    "parameters": [
+      4093,
+      14,
+      14,
+      14
+    ],
+    "label": "equivalent-by-official-key-generation",
+    "sha256": "8c8dcc7507099b852fe50818e7f757107317762526cd75e2e5bd2764379ba9d4"
+  },
+  {
+    "source": "https://www.meds-pqc.org/KAT/MEDS-KAT-2023-07-26.tgz",
+    "archive_sha256": "4045fbde6d2c6a4ccce1df5c46230e227ad5961047a4d172cf502622b3250760",
+    "member": "PQCsignKAT_toy.rsp",
+    "count": 0,
+    "code_index": 1,
+    "file": "kat-toy-000-g0-to-g1.txt",
+    "parameters": [
+      8191,
+      10,
+      10,
+      10
+    ],
+    "label": "equivalent-by-official-key-generation",
+    "sha256": "a9d7e87657e0de5ee14ee790a9188ac75bac1700e96e3ec1ac034e398ba9ed4f"
+  }
+]

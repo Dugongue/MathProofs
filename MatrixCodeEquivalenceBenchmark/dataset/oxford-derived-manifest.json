@@ -1,0 +1,62 @@
+[
+  {
+    "source": "https://www.maths.ox.ac.uk/system/files/inline-files/meds.pdf",
+    "parameters": [
+      13,
+      4,
+      6,
+      5
+    ],
+    "classification": "derived-rebase",
+    "replicas": 1,
+    "label": "equivalent",
+    "verified_constructed_witness": true,
+    "file": "oxford-rebased.txt",
+    "sha256": "4082cae76ec194299c762ab345b20eb994891f5d61aefd32c08cf801161147b7"
+  },
+  {
+    "source": "https://www.maths.ox.ac.uk/system/files/inline-files/meds.pdf",
+    "parameters": [
+      13,
+      8,
+      12,
+      5
+    ],
+    "classification": "derived-amplification",
+    "replicas": 2,
+    "label": "equivalent",
+    "verified_constructed_witness": true,
+    "file": "oxford-derived-r2.txt",
+    "sha256": "a91abd51e1c913fe0a055c1faa79ab14d08e92e52a26f2b2b5fee90878361256"
+  },
+  {
+    "source": "https://www.maths.ox.ac.uk/system/files/inline-files/meds.pdf",
+    "parameters": [
+      13,
+      12,
+      18,
+      5
+    ],
+    "classification": "derived-amplification",
+    "replicas": 3,
+    "label": "equivalent",
+    "verified_constructed_witness": true,
+    "file": "oxford-derived-r3.txt",
+    "sha256": "99c148a869280bfe6eb2ffbff4ae072de8f3b08022aac00393e191256e2cabf3"
+  },
+  {
+    "source": "https://www.maths.ox.ac.uk/system/files/inline-files/meds.pdf",
+    "parameters": [
+      13,
+      16,
+      24,
+      5
+    ],
+    "classification": "derived-amplification",
+    "replicas": 4,
+    "label": "equivalent",
+    "verified_constructed_witness": true,
+    "file": "oxford-derived-r4.txt",
+    "sha256": "9d5b279b1cb04a22cd627e3e15096980dd2277a5e89734e12c4ecf8077163d4f"
+  }
+]

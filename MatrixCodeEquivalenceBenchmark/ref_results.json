@@ -1,0 +1,3349 @@
+{
+  "semantics": "Elapsed wall-clock milliseconds from reading one fixture through status or verified witness, excluding Python interpreter startup",
+  "cadical_version": "2.1.2",
+  "morrison_cadical": [
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.8765999809838831,
+      "variables": 201,
+      "clauses": 585,
+      "build_ms": 5.933100008405745,
+      "result": "no",
+      "search_ms": 21.217100002104416,
+      "verify_ms": 0.002100015990436077,
+      "total_ms": 28.746099997079
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.21769999875687063,
+      "variables": 171,
+      "clauses": 483,
+      "build_ms": 1.871399988885969,
+      "result": "no",
+      "search_ms": 18.228500004624948,
+      "verify_ms": 0.001800013706088066,
+      "total_ms": 21.067699999548495
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.2379999787081033,
+      "variables": 8805,
+      "clauses": 28213,
+      "build_ms": 60.66990000545047,
+      "result": "no",
+      "search_ms": 1142.9846000100952,
+      "verify_ms": 0.001400010660290718,
+      "total_ms": 1204.6339999942575
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.21309999283403158,
+      "variables": 10055,
+      "clauses": 32243,
+      "build_ms": 71.15179998800159,
+      "result": "no",
+      "search_ms": 396.2885000219103,
+      "verify_ms": 0.0016999838408082724,
+      "total_ms": 468.5080999915954
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.2193999825976789,
+      "variables": 8133,
+      "clauses": 26017,
+      "build_ms": 54.357700020773336,
+      "result": "yes",
+      "search_ms": 38.54099998716265,
+      "left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "right": [
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "verify_ms": 2.0360999915283173,
+      "total_ms": 95.90709998155944
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.21150000975467265,
+      "variables": 9605,
+      "clauses": 30773,
+      "build_ms": 65.21739999880083,
+      "result": "yes",
+      "search_ms": 119.10109999007545,
+      "left": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "right": [
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "verify_ms": 2.227899996796623,
+      "total_ms": 187.5049000082072
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.20989999757148325,
+      "variables": 201,
+      "clauses": 585,
+      "build_ms": 1.9345000036992133,
+      "result": "no",
+      "search_ms": 18.506299995351583,
+      "verify_ms": 0.001400010660290718,
+      "total_ms": 21.32159998291172
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.2066000015474856,
+      "variables": 171,
+      "clauses": 483,
+      "build_ms": 1.777500001480803,
+      "result": "no",
+      "search_ms": 17.381300014676526,
+      "verify_ms": 0.0024999899324029684,
+      "total_ms": 20.098900015000254
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.21019999985583127,
+      "variables": 8805,
+      "clauses": 28213,
+      "build_ms": 59.0465999848675,
+      "result": "no",
+      "search_ms": 1095.5942000146024,
+      "verify_ms": 0.001500011421740055,
+      "total_ms": 1155.5972000060137
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.21170001127757132,
+      "variables": 10055,
+      "clauses": 32243,
+      "build_ms": 72.78670000960119,
+      "result": "no",
+      "search_ms": 429.6336999977939,
+      "verify_ms": 0.0015999830793589354,
+      "total_ms": 503.4192000166513
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.21490000654011965,
+      "variables": 8133,
+      "clauses": 26017,
+      "build_ms": 60.69509999360889,
+      "result": "yes",
+      "search_ms": 39.12319999653846,
+      "left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "right": [
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "verify_ms": 1.889200008008629,
+      "total_ms": 102.65260000596754
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.215600011870265,
+      "variables": 9605,
+      "clauses": 30773,
+      "build_ms": 64.48669999372214,
+      "result": "yes",
+      "search_ms": 120.12659999891184,
+      "left": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "right": [
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "verify_ms": 2.207999990787357,
+      "total_ms": 187.77750001754612
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.2108000044245273,
+      "variables": 201,
+      "clauses": 585,
+      "build_ms": 1.9366999913472682,
+      "result": "no",
+      "search_ms": 17.351399990729988,
+      "verify_ms": 0.001500011421740055,
+      "total_ms": 20.17179998802021
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.20699997548945248,
+      "variables": 171,
+      "clauses": 483,
+      "build_ms": 1.7735000001266599,
+      "result": "no",
+      "search_ms": 16.392200021073222,
+      "verify_ms": 0.0014999823179095984,
+      "total_ms": 19.043799984501675
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.20909999147988856,
+      "variables": 8805,
+      "clauses": 28213,
+      "build_ms": 64.69339999603108,
+      "result": "no",
+      "search_ms": 1185.9713000012562,
+      "verify_ms": 0.002700020559132099,
+      "total_ms": 1252.088300010655
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.32920000376179814,
+      "variables": 10055,
+      "clauses": 32243,
+      "build_ms": 75.38090000161901,
+      "result": "no",
+      "search_ms": 495.5587000004016,
+      "verify_ms": 0.0019999861251562834,
+      "total_ms": 572.0965999935288
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.231999991228804,
+      "variables": 8133,
+      "clauses": 26017,
+      "build_ms": 65.32930000685155,
+      "result": "yes",
+      "search_ms": 48.27979998663068,
+      "left": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "right": [
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "verify_ms": 2.057500008959323,
+      "total_ms": 116.69860000256449
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.24429999757558107,
+      "variables": 9605,
+      "clauses": 30773,
+      "build_ms": 77.62689999071881,
+      "result": "yes",
+      "search_ms": 146.8079000187572,
+      "left": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "right": [
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ],
+      "verify_ms": 2.286199975060299,
+      "total_ms": 227.74509998271242
+    }
+  ],
+  "oxford_cadical": [
+    {
+      "case": "oxford-meds-13-4-6-5.txt",
+      "format": [
+        13,
+        4,
+        6,
+        5
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.7151000027079135,
+      "variables": 357677,
+      "clauses": 1154861,
+      "build_ms": 2225.885899999412,
+      "result": "timeout",
+      "search_ms": 5031.715799996164,
+      "verify_ms": 0.07690000347793102,
+      "total_ms": 7260.653800010914
+    },
+    {
+      "case": "oxford-derived-r2.txt",
+      "format": [
+        13,
+        8,
+        12,
+        5
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 1.392900012433529,
+      "result": "construction_limit",
+      "clauses": 3000001,
+      "build_ms": 6690.477199997986,
+      "total_ms": 6691.871000017272
+    },
+    {
+      "case": "oxford-derived-r3.txt",
+      "format": [
+        13,
+        12,
+        18,
+        5
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.5480000108946115,
+      "result": "construction_limit",
+      "clauses": 3000001,
+      "build_ms": 7238.936099980492,
+      "total_ms": 7239.485099999001
+    },
+    {
+      "case": "oxford-derived-r4.txt",
+      "format": [
+        13,
+        16,
+        24,
+        5
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.9131999977398664,
+      "result": "construction_limit",
+      "clauses": 3000001,
+      "build_ms": 10133.341299981112,
+      "total_ms": 10134.255299984943
+    },
+    {
+      "case": "oxford-rebased.txt",
+      "format": [
+        13,
+        4,
+        6,
+        5
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.2519999979995191,
+      "variables": 353680,
+      "clauses": 1141743,
+      "build_ms": 2149.1329000273254,
+      "result": "timeout",
+      "search_ms": 5022.274499991909,
+      "verify_ms": 0.08369999704882503,
+      "total_ms": 7173.909800010733
+    }
+  ],
+  "kat_cadical": [
+    {
+      "case": "kat-meds134180-000-g0-to-g1.txt",
+      "format": [
+        2039,
+        30,
+        30,
+        30
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 10.538899980019778,
+      "result": "construction_limit",
+      "clauses": 500001,
+      "build_ms": 993.0999000207521,
+      "total_ms": 1003.6397999792825
+    },
+    {
+      "case": "kat-meds41711-000-g0-to-g1.txt",
+      "format": [
+        4093,
+        22,
+        22,
+        22
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 3.4721000120043755,
+      "result": "construction_limit",
+      "clauses": 500001,
+      "build_ms": 1049.8891999886837,
+      "total_ms": 1053.3628000121098
+    },
+    {
+      "case": "kat-meds9923-000-g0-to-g1.txt",
+      "format": [
+        4093,
+        14,
+        14,
+        14
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 1.0802999895531684,
+      "result": "construction_limit",
+      "clauses": 500001,
+      "build_ms": 915.6604000017978,
+      "total_ms": 916.7414999974426
+    },
+    {
+      "case": "kat-toy-000-g0-to-g1.txt",
+      "format": [
+        8191,
+        10,
+        10,
+        10
+      ],
+      "backend": "CaDiCaL",
+      "read_ms": 0.5222999898251146,
+      "result": "construction_limit",
+      "clauses": 500001,
+      "build_ms": 1081.0935000190511,
+      "total_ms": 1081.6166999866255
+    }
+  ],
+  "oxford_rank_anchor_sat": [
+    {
+      "case": "oxford-meds-13-4-6-5.txt",
+      "format": [
+        13,
+        4,
+        6,
+        5
+      ],
+      "backend": "CaDiCaL rank-anchor",
+      "read_ms": 0.7425999792758375,
+      "points": 30941,
+      "anchor_count": 12,
+      "profile_ms": 208.04100000532344,
+      "result": "unknown",
+      "build_ms": 195.71920001180843,
+      "clauses": 89125,
+      "reason": "SAT timeout",
+      "sat_ms": 11610.132300003897,
+      "lift_ms": 0.0,
+      "models": 0,
+      "total_ms": 12015.645799983758
+    },
+    {
+      "case": "oxford-rebased.txt",
+      "format": [
+        13,
+        4,
+        6,
+        5
+      ],
+      "backend": "CaDiCaL rank-anchor",
+      "read_ms": 0.2694999857340008,
+      "points": 30941,
+      "anchor_count": 12,
+      "profile_ms": 246.489900018787,
+      "result": "unknown",
+      "build_ms": 213.12649999163114,
+      "clauses": 92875,
+      "reason": "SAT timeout",
+      "sat_ms": 11555.410100001609,
+      "lift_ms": 0.0,
+      "models": 0,
+      "total_ms": 12016.28779998282
+    }
+  ],
+  "oxford_hull": [
+    {
+      "case": "oxford-derived-r2.txt",
+      "format": [
+        13,
+        8,
+        12,
+        5
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        279,
+        284
+      ],
+      "collisions": 0,
+      "attempts": 8192,
+      "read_ms": 0.9791999764274806,
+      "build_ms": 20.892900007311255,
+      "search_ms": 1972.7324999985285,
+      "total_ms": 1994.6045999822672
+    },
+    {
+      "case": "oxford-derived-r3.txt",
+      "format": [
+        13,
+        12,
+        18,
+        5
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        262,
+        274
+      ],
+      "collisions": 0,
+      "attempts": 8192,
+      "read_ms": 0.6234000029508024,
+      "build_ms": 1.375799998641014,
+      "search_ms": 2547.53549999441,
+      "total_ms": 2549.534699996002
+    },
+    {
+      "case": "oxford-derived-r4.txt",
+      "format": [
+        13,
+        16,
+        24,
+        5
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "time budget",
+      "anchors": [
+        256,
+        263
+      ],
+      "collisions": 0,
+      "attempts": 7715,
+      "read_ms": 0.7860999903641641,
+      "build_ms": 1.7039999947883189,
+      "search_ms": 4997.682300017914,
+      "total_ms": 5000.172400003066
+    },
+    {
+      "case": "oxford-meds-13-4-6-5.txt",
+      "format": [
+        13,
+        4,
+        6,
+        5
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "time budget",
+      "anchors": [
+        159,
+        153
+      ],
+      "collisions": 1955,
+      "attempts": 4999,
+      "read_ms": 0.32969997846521437,
+      "build_ms": 0.8575000101700425,
+      "search_ms": 5025.069600000279,
+      "total_ms": 5026.256799988914
+    },
+    {
+      "case": "oxford-rebased.txt",
+      "format": [
+        13,
+        4,
+        6,
+        5
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "time budget",
+      "anchors": [
+        173,
+        165
+      ],
+      "collisions": 2324,
+      "attempts": 5392,
+      "read_ms": 0.3265000123064965,
+      "build_ms": 0.7533999742008746,
+      "search_ms": 5007.6685000094585,
+      "total_ms": 5008.748399995966
+    }
+  ],
+  "morrison_hull": [
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 1024,
+      "read_ms": 0.7689000049140304,
+      "build_ms": 17.46070000808686,
+      "search_ms": 73.14490000135265,
+      "total_ms": 91.37450001435354
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 1024,
+      "read_ms": 0.277700019069016,
+      "build_ms": 0.5471000040415674,
+      "search_ms": 83.64929998060688,
+      "total_ms": 84.47410000371747
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 1024,
+      "read_ms": 0.2778000198304653,
+      "build_ms": 0.44319999869912863,
+      "search_ms": 124.72939997678623,
+      "total_ms": 125.45039999531582
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 1024,
+      "read_ms": 0.24660001508891582,
+      "build_ms": 0.4430999979376793,
+      "search_ms": 120.06709998240694,
+      "total_ms": 120.75679999543354
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 1024,
+      "read_ms": 0.2558999985922128,
+      "build_ms": 0.43489999370649457,
+      "search_ms": 85.62460000393912,
+      "total_ms": 86.31539999623783
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 1024,
+      "read_ms": 0.2921000123023987,
+      "build_ms": 0.4361000028438866,
+      "search_ms": 153.24310000869446,
+      "total_ms": 153.97130002384074
+    }
+  ],
+  "kat_hull": [
+    {
+      "case": "kat-meds13220-000-g0-to-g1.txt",
+      "format": [
+        4093,
+        14,
+        14,
+        14
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 128,
+      "read_ms": 2.6344000070821494,
+      "build_ms": 44.68979997909628,
+      "search_ms": 79.29090000106953,
+      "total_ms": 126.61509998724796
+    },
+    {
+      "case": "kat-meds134180-000-g0-to-g1.txt",
+      "format": [
+        2039,
+        30,
+        30,
+        30
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 128,
+      "read_ms": 8.458299998892471,
+      "build_ms": 53.37310000322759,
+      "search_ms": 443.5488000162877,
+      "total_ms": 505.3802000184078
+    },
+    {
+      "case": "kat-meds167717-000-g0-to-g1.txt",
+      "format": [
+        2039,
+        30,
+        30,
+        30
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 128,
+      "read_ms": 8.617200015578419,
+      "build_ms": 53.148799983318895,
+      "search_ms": 434.4874999951571,
+      "total_ms": 496.25349999405444
+    },
+    {
+      "case": "kat-meds41711-000-g0-to-g1.txt",
+      "format": [
+        4093,
+        22,
+        22,
+        22
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 128,
+      "read_ms": 3.290100023150444,
+      "build_ms": 36.609799979487434,
+      "search_ms": 166.61270000622608,
+      "total_ms": 206.51260000886396
+    },
+    {
+      "case": "kat-meds55604-000-g0-to-g1.txt",
+      "format": [
+        4093,
+        22,
+        22,
+        22
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 128,
+      "read_ms": 3.333200002089143,
+      "build_ms": 39.06219999771565,
+      "search_ms": 161.57070000190288,
+      "total_ms": 203.96610000170767
+    },
+    {
+      "case": "kat-meds9923-000-g0-to-g1.txt",
+      "format": [
+        4093,
+        14,
+        14,
+        14
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 128,
+      "read_ms": 1.865800004452467,
+      "build_ms": 20.02820000052452,
+      "search_ms": 55.75559998396784,
+      "total_ms": 77.64959998894483
+    },
+    {
+      "case": "kat-toy-000-g0-to-g1.txt",
+      "format": [
+        8191,
+        10,
+        10,
+        10
+      ],
+      "backend": "Highway to Hull adaptation (NumPy)",
+      "result": "unknown",
+      "seed": 1,
+      "reason": "sample budget",
+      "anchors": [
+        0,
+        0
+      ],
+      "collisions": 0,
+      "attempts": 128,
+      "read_ms": 0.6227999983821064,
+      "build_ms": 18.20280001265928,
+      "search_ms": 38.788999983808026,
+      "total_ms": 57.614599994849414
+    }
+  ],
+  "morrison_projective_gl2": [
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.7769000076223165,
+      "search_ms": 0.8987000037450343,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.0044000043999403715,
+      "total_ms": 1.6800000157672912
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.30519999563694,
+      "search_ms": 1.059800008079037,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.0029999937396496534,
+      "total_ms": 1.3679999974556267
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.19640001119114459,
+      "search_ms": 17.711399996187538,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.0031999952625483274,
+      "total_ms": 17.91100000264123
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.25859999004751444,
+      "search_ms": 343.2289999909699,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0045000051613897085,
+      "total_ms": 343.4920999861788
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.26959998649545014,
+      "search_ms": 2.4896000104490668,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.20599999697878957,
+      "total_ms": 2.9651999939233065
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.2869000018108636,
+      "search_ms": 0.9900999721139669,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.17630000365898013,
+      "total_ms": 1.4532999775838107
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.1875000016298145,
+      "search_ms": 0.884400011273101,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.0019999861251562834,
+      "total_ms": 1.0738999990280718
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.1686000032350421,
+      "search_ms": 1.0494999878574163,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.001800013706088066,
+      "total_ms": 1.2199000047985464
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16640001558698714,
+      "search_ms": 18.637400004081428,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.004199973773211241,
+      "total_ms": 18.807999993441626
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.2449000021442771,
+      "search_ms": 362.86110000219196,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0047000066842883825,
+      "total_ms": 363.1107000110205
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.2513999934308231,
+      "search_ms": 2.4446999887004495,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.18190001719631255,
+      "total_ms": 2.877999999327585
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.2793000021483749,
+      "search_ms": 1.6740999999456108,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.20229999790899456,
+      "total_ms": 2.1557000000029802
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.24759999359957874,
+      "search_ms": 0.8792000007815659,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.0033999967854470015,
+      "total_ms": 1.1301999911665916
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.21279999054968357,
+      "search_ms": 1.0532000160310417,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.0025999906938523054,
+      "total_ms": 1.2685999972745776
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.20099998801015317,
+      "search_ms": 17.713500012177974,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.0043000036384910345,
+      "total_ms": 17.918800003826618
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.22409998928196728,
+      "search_ms": 348.986099998001,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0039000005926936865,
+      "total_ms": 349.21409998787567
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.24179997853934765,
+      "search_ms": 2.4412000202573836,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.17709998064674437,
+      "total_ms": 2.8600999794434756
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.222400005441159,
+      "search_ms": 1.0077999904751778,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.1720000000204891,
+      "total_ms": 1.4021999959368259
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.18090000958181918,
+      "search_ms": 0.8616000122856349,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.0019999861251562834,
+      "total_ms": 1.0445000079926103
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16980001237243414,
+      "search_ms": 1.0374999837949872,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.001900014467537403,
+      "total_ms": 1.2092000106349587
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16880000475794077,
+      "search_ms": 29.62180000031367,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.0043000036384910345,
+      "total_ms": 29.7949000087101
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.26440000510774553,
+      "search_ms": 346.58790001412854,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0040000013541430235,
+      "total_ms": 346.8563000205904
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.24659998598508537,
+      "search_ms": 2.443800010951236,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.18049997743219137,
+      "total_ms": 2.8708999743685126
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.22909999825060368,
+      "search_ms": 0.992199988104403,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.17159999697469175,
+      "total_ms": 1.3928999833296984
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.17600000137463212,
+      "search_ms": 0.8731999841984361,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.001800013706088066,
+      "total_ms": 1.0509999992791563
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16269998741336167,
+      "search_ms": 1.066600001649931,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.0019999861251562834,
+      "total_ms": 1.231299975188449
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.17469999147579074,
+      "search_ms": 17.41500000935048,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.0039000005926936865,
+      "total_ms": 17.593600001418963
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.22759998682886362,
+      "search_ms": 337.13739999802783,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0037999998312443495,
+      "total_ms": 337.36879998468794
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.2305000089108944,
+      "search_ms": 2.412500005448237,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.1734999823383987,
+      "total_ms": 2.81649999669753
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.17919999663718045,
+      "search_ms": 0.9791000047698617,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.1705000177025795,
+      "total_ms": 1.3288000191096216
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16670001787133515,
+      "search_ms": 0.8678000012878329,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.0017999846022576094,
+      "total_ms": 1.0363000037614256
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.1618000096641481,
+      "search_ms": 1.0423999920021743,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.002200016751885414,
+      "total_ms": 1.2064000184182078
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16840000171214342,
+      "search_ms": 17.9647000040859,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.0031999952625483274,
+      "total_ms": 18.13630000106059
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.23249999503605068,
+      "search_ms": 364.1093999904115,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0042000028770416975,
+      "total_ms": 364.34609998832457
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.2511999919079244,
+      "search_ms": 2.4093999818433076,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.17450001905672252,
+      "total_ms": 2.8350999928079545
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.18279999494552612,
+      "search_ms": 0.9802999848034233,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.16920000780373812,
+      "total_ms": 1.3322999875526875
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.1635999942664057,
+      "search_ms": 0.8579000132158399,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.0017999846022576094,
+      "total_ms": 1.0232999920845032
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.15769997844472528,
+      "search_ms": 1.054599997587502,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.001800013706088066,
+      "total_ms": 1.2140999897383153
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16230001347139478,
+      "search_ms": 17.262999986996874,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.0033999967854470015,
+      "total_ms": 17.428699997253716
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.2919999824371189,
+      "search_ms": 337.2903999988921,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0043000036384910345,
+      "total_ms": 337.5866999849677
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.2381000085733831,
+      "search_ms": 2.4247999826911837,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.17480002134107053,
+      "total_ms": 2.8377000126056373
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.18549998640082777,
+      "search_ms": 0.9787000017240644,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.16870000399649143,
+      "total_ms": 1.3328999921213835
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.1618000096641481,
+      "search_ms": 0.8574999810662121,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.001900014467537403,
+      "total_ms": 1.0212000051978976
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.15730000450275838,
+      "search_ms": 1.0356999991927296,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.001800013706088066,
+      "total_ms": 1.194800017401576
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16610001330263913,
+      "search_ms": 17.437699978472665,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.0035999983083456755,
+      "total_ms": 17.60739999008365
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.22490002447739244,
+      "search_ms": 337.05159998498857,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0037999998312443495,
+      "total_ms": 337.2803000092972
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.23170001804828644,
+      "search_ms": 2.3922999971546233,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.1737999846227467,
+      "total_ms": 2.7977999998256564
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.1736000122036785,
+      "search_ms": 0.9697999921627343,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.16930000856518745,
+      "total_ms": 1.3127000129316002
+    },
+    {
+      "case": "morrison-f2-2x3-g02-g05.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.1604999997653067,
+      "search_ms": 0.8772000146564096,
+      "left_maps": 6,
+      "max_right_nullity": 2,
+      "verify_ms": 0.0019999861251562834,
+      "total_ms": 1.0397000005468726
+    },
+    {
+      "case": "morrison-f2-2x3-g01-g02.txt",
+      "format": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.16590001177974045,
+      "search_ms": 1.0870999831240624,
+      "left_maps": 6,
+      "max_right_nullity": 3,
+      "verify_ms": 0.001900014467537403,
+      "total_ms": 1.2549000093713403
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g03.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.1750999945215881,
+      "search_ms": 21.447300008730963,
+      "left_maps": 24,
+      "max_right_nullity": 4,
+      "verify_ms": 0.006199989002197981,
+      "total_ms": 21.62859999225475
+    },
+    {
+      "case": "morrison-f3-2x4-g08-g11.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "no",
+      "read_ms": 0.35149999894201756,
+      "search_ms": 338.00990000599995,
+      "left_maps": 24,
+      "max_right_nullity": 6,
+      "verify_ms": 0.0039000005926936865,
+      "total_ms": 338.36530000553466
+    },
+    {
+      "case": "morrison-f3-2x4-g01-g06.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.2605999761726707,
+      "search_ms": 2.390300011029467,
+      "left_maps": 3,
+      "max_right_nullity": 8,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "right": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "verify_ms": 0.17330000991933048,
+      "total_ms": 2.824199997121468
+    },
+    {
+      "case": "morrison-f3-2x4-g05-g10.txt",
+      "format": [
+        3,
+        2,
+        4,
+        4
+      ],
+      "backend": "Projective GL2 and right-kernel enumeration",
+      "result": "yes",
+      "read_ms": 0.18339999951422215,
+      "search_ms": 0.977999996393919,
+      "left_maps": 2,
+      "max_right_nullity": 4,
+      "left": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mixing": [
+        [
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "verify_ms": 0.1689000055193901,
+      "total_ms": 1.3303000014275312
+    }
+  ]
+}
