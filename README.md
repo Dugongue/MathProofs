@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-isomorphism-advances:start -->
+[Four advances in tensor, group, and geometric isomorphism](TensorIsomorphismAdvances/RESULTS.md) — AI-assisted informal proofs. Gives unrestricted tensor-isomorphism encodings by pure quadratic Hamiltonian shears and smooth rational Fano varieties of Picard rank two, a compact class-two group family with fixed commuting relations, character-degree multiplicities and bounded-generator probe counts, and an exact number-field norm obstruction in regular semisimple determinant-one binary pencils.
+<!-- tensor-isomorphism-advances:end -->
+
 <!-- further-isomorphism-transfers:start -->
 [Four further isomorphism transfers](FurtherIsomorphismTransfers/RESULTS.md) — AI-assisted informal proofs. Gives an exact reduction of arbitrary ordered 3-tensor isomorphism to polynomial conjugacy of quadratic symplectic maps over any field, a deterministic polynomial-time rational TI and SL-TI algorithm for square three-slice pencils with geometrically irreducible determinant, and graph-isomorphism equivalences for isospectral entanglement-breaking channels and specified persistence local systems.
 <!-- further-isomorphism-transfers:end -->
