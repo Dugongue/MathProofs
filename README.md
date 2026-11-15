@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- cayley-table-and-group-algebra:start -->
+[Cayley-table and modular group algebra results](CayleyTableAndGroupAlgebra/PROOF.md) — AI-assisted informal proofs answering Johnson, Levet, Vojtěchovský and Widholm’s Questions 7.1–7.3 and 7.5. They prove bounded count-free Weisfeiler–Leman dimension for uniquely decomposable groups, constant-round counting Weisfeiler–Leman without uniqueness, and deterministic logspace algorithms for fully refined group decomposition and central quasigroup isomorphism. The two Weisfeiler–Leman results apply to groups with boundedly generated indecomposable factors. They answer García-Lucas, del Río and Sakurai’s Remark 7 over all characteristic-p fields. The collection also gives sharp Cayley-table recovery bounds, including a negative answer to Huh’s Open Problem 2 under scalar tensor-entry sampling. The modular group algebra proof recovers Sakurai’s earlier answer to Question D.
+<!-- cayley-table-and-group-algebra:end -->
+
 <!-- hypoworlds-case-proofs:start -->
 [HypoworldsCaseProofs/PROOF.md](HypoworldsCaseProofs/PROOF.md) — Five AI-assisted informal results using exhaustive case crossing. Gives a quasipolynomial versus $2^{\Theta((\log n)^3)}$ depth-three/DNF separation on the same canonical Group Isomorphism promise, sharp symmetric-group occurrence recovery in even degree, and $\Theta_2^{\mathrm P}$-completeness for both monophonic position colouring variants at diameter two. Also constructs an absolutely simple evolution-algebra Hasse counterexample over $\mathbb Q(\sqrt{-3})$ and classifies the maximal automorphism orders and equality types of simple evolution algebras over every field.
 <!-- hypoworlds-case-proofs:end -->
