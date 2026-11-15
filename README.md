@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-coordinate-recovery:start -->
+[Recovering hidden coordinates directly from tensors](TensorCoordinateRecovery/RESULTS.md) — AI-assisted informal proofs. Gives constructive ordinary and determinant-one isomorphism on a generic crossed-flattening class, maximal pairwise repetition extraction and recovery of labeled slice subspaces, stable block recovery in noisy data, and growing-width determinant-labeled pencil algorithms.
+<!-- tensor-coordinate-recovery:end -->
+
 <!-- four-isomorphism-research-bets:start -->
 [Four algorithmic results on pencils, groups, channels, and designs](FourIsomorphismResearchBets/RESULTS.md) — AI-assisted informal proofs. Constructs rational binary-pencil transporters and isolates the determinant-one norm conditions, recovers rank-metric quotient information with group Weisfeiler–Leman refinement, derives quantitative separation and graph recovery for noisy isospectral Choi matrices, and reconstructs vectorial bent functions from unlabeled vanishing-flat designs.
 <!-- four-isomorphism-research-bets:end -->
