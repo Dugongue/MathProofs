@@ -1,0 +1,147 @@
+{
+  "source": "https://doi.org/10.5281/zenodo.8190849",
+  "license": "CC BY 4.0",
+  "publisher_md5": "337c77550fbdb2b6c6d07b6f4e769920",
+  "source_sha256": "a954825ad3f38dc795a39f5958cc91eac64e9cfe83d2a4528a883e053ca2302a",
+  "total_publisher_records": 10276,
+  "variants": {
+    "native-q": {
+      "inputs": 10276,
+      "outcomes": {
+        "first-cut-singular": 10276
+      },
+      "by_crystal_system": {
+        "cubic": {
+          "first-cut-singular": 4217
+        },
+        "hexagonal": {
+          "first-cut-singular": 1396
+        },
+        "monoclinic": {
+          "first-cut-singular": 550
+        },
+        "orthorhombic": {
+          "first-cut-singular": 1334
+        },
+        "tetragonal": {
+          "first-cut-singular": 1963
+        },
+        "triclinic": {
+          "first-cut-singular": 60
+        },
+        "trigonal": {
+          "first-cut-singular": 756
+        }
+      },
+      "independent_coverage_seconds_excluding_load_and_serialization": 0.7567654015729204,
+      "normalized_sha256": "ea45c89cc7fa83af68e7105ac73cea8d1380ef32597c10fd152fdf8b3146179c"
+    },
+    "native-f2": {
+      "inputs": 10276,
+      "outcomes": {
+        "first-cut-singular": 10276
+      },
+      "by_crystal_system": {
+        "cubic": {
+          "first-cut-singular": 4217
+        },
+        "hexagonal": {
+          "first-cut-singular": 1396
+        },
+        "monoclinic": {
+          "first-cut-singular": 550
+        },
+        "orthorhombic": {
+          "first-cut-singular": 1334
+        },
+        "tetragonal": {
+          "first-cut-singular": 1963
+        },
+        "triclinic": {
+          "first-cut-singular": 60
+        },
+        "trigonal": {
+          "first-cut-singular": 756
+        }
+      },
+      "independent_coverage_seconds_excluding_load_and_serialization": 0.16546569971251301,
+      "normalized_sha256": "34d71a2a2646e92c4fa03f173860e3a6c69d9ff6d3d4a689a55476e458bbb117"
+    },
+    "regrouped-q": {
+      "inputs": 10276,
+      "outcomes": {
+        "covered": 104,
+        "non-scalar-commutant": 10172
+      },
+      "by_crystal_system": {
+        "cubic": {
+          "non-scalar-commutant": 4217
+        },
+        "hexagonal": {
+          "non-scalar-commutant": 1396
+        },
+        "monoclinic": {
+          "non-scalar-commutant": 550
+        },
+        "orthorhombic": {
+          "non-scalar-commutant": 1334
+        },
+        "tetragonal": {
+          "non-scalar-commutant": 1963
+        },
+        "triclinic": {
+          "covered": 57,
+          "non-scalar-commutant": 3
+        },
+        "trigonal": {
+          "covered": 47,
+          "non-scalar-commutant": 709
+        }
+      },
+      "independent_coverage_seconds_excluding_load_and_serialization": 10.68720290058991,
+      "normalized_sha256": "a8624237578aa9a2da5d2350275a9c67c077d8988227c204f82029b553223bd3"
+    },
+    "regrouped-f2": {
+      "inputs": 10276,
+      "outcomes": {
+        "covered": 3,
+        "first-cut-singular": 9361,
+        "non-scalar-commutant": 912
+      },
+      "by_crystal_system": {
+        "cubic": {
+          "first-cut-singular": 3614,
+          "non-scalar-commutant": 603
+        },
+        "hexagonal": {
+          "first-cut-singular": 1367,
+          "non-scalar-commutant": 29
+        },
+        "monoclinic": {
+          "first-cut-singular": 487,
+          "non-scalar-commutant": 63
+        },
+        "orthorhombic": {
+          "first-cut-singular": 1268,
+          "non-scalar-commutant": 66
+        },
+        "tetragonal": {
+          "first-cut-singular": 1825,
+          "non-scalar-commutant": 138
+        },
+        "triclinic": {
+          "covered": 2,
+          "first-cut-singular": 53,
+          "non-scalar-commutant": 5
+        },
+        "trigonal": {
+          "covered": 1,
+          "first-cut-singular": 747,
+          "non-scalar-commutant": 8
+        }
+      },
+      "independent_coverage_seconds_excluding_load_and_serialization": 0.2747181009617634,
+      "normalized_sha256": "1d643fa2976d01185063be0c84d4ca52e8fb3088fc249fc353da4b886d8c85f2"
+    }
+  }
+}

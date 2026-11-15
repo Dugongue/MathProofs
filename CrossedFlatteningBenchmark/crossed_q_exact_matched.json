@@ -1,0 +1,134 @@
+{
+  "trials": [
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "repeat": 0,
+      "crossed_integer": 0.1442281999916304,
+      "hensel": 0.16952129997662269
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "repeat": 0,
+      "hensel": 0.17509859998244792,
+      "crossed_integer": 0.13838859999668784
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "repeat": 0,
+      "crossed_integer": 0.1358769999933429,
+      "hensel": 0.14618869998957962
+    },
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "repeat": 1,
+      "hensel": 0.15194969999720342,
+      "crossed_integer": 0.13209999998798594
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "repeat": 1,
+      "crossed_integer": 0.13381200001458637,
+      "hensel": 0.16778010001871735
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "repeat": 1,
+      "hensel": 0.14249880000716075,
+      "crossed_integer": 0.12962579997838475
+    },
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "repeat": 2,
+      "crossed_integer": 0.129879299987806,
+      "hensel": 0.14808909999555908
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "repeat": 2,
+      "hensel": 0.16727720000199042,
+      "crossed_integer": 0.13094679999630898
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "repeat": 2,
+      "crossed_integer": 0.12847820000024512,
+      "hensel": 0.1440600999922026
+    },
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "repeat": 3,
+      "hensel": 0.1526875999988988,
+      "crossed_integer": 0.13216619999730028
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "repeat": 3,
+      "crossed_integer": 0.13721399998757988,
+      "hensel": 0.1732569000159856
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "repeat": 3,
+      "hensel": 0.14401819999329746,
+      "crossed_integer": 0.12919750000583008
+    },
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "repeat": 4,
+      "crossed_integer": 0.1345574999868404,
+      "hensel": 0.15229769999859855
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "repeat": 4,
+      "hensel": 0.17185539999627508,
+      "crossed_integer": 0.13255340000614524
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "repeat": 4,
+      "crossed_integer": 0.13302000000840053,
+      "hensel": 0.14892730000428855
+    },
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "repeat": 5,
+      "hensel": 0.15528599999379367,
+      "crossed_integer": 0.1404989000002388
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "repeat": 5,
+      "crossed_integer": 0.14008880002074875,
+      "hensel": 0.16999789999681525
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "repeat": 5,
+      "hensel": 0.14385629998287186,
+      "crossed_integer": 0.13264039999921806
+    },
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "repeat": 6,
+      "crossed_integer": 0.130206800007727,
+      "hensel": 0.14847569999983534
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "repeat": 6,
+      "hensel": 0.16700099999434315,
+      "crossed_integer": 0.13748330000089481
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "repeat": 6,
+      "crossed_integer": 0.1331550999893807,
+      "hensel": 0.14653520000865683
+    }
+  ],
+  "medians": {
+    "crossed_integer": 0.13302000000840053,
+    "hensel": 0.15229769999859855
+  }
+}

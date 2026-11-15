@@ -1,0 +1,196 @@
+{
+  "source_catalogue": "https://neilsloane.com/oadir/index.html",
+  "matching_links": 23,
+  "normalized": 23,
+  "selection": "Pure-level linked text entries with 3 to 9 levels, at least four columns, at most 256 runs and strength at least two.",
+  "conversion": "Use the first four listed factors; count row multiplicities modulo two.",
+  "license_note": "No explicit redistribution license found for the Sloane catalogue. Fetch original data from source URLs. Generated JSONL was used locally.",
+  "download_failures": {},
+  "normalized_sha256": "4d31dc6c54c71d790e47af2a59fae62a824a88934a77cc9e95dfa87a8579d501",
+  "sources": [
+    {
+      "id": "oa.128.17.8.2",
+      "source": "https://neilsloane.com/oadir/oa.128.17.8.2.txt",
+      "source_sha256": "2559146e604d0180f0ccb910d40691460c542a4ab08d9f9d753add1e12d522a8",
+      "runs": 128,
+      "source_width": 17,
+      "strength": 2
+    },
+    {
+      "id": "oa.16.5.4.2.a",
+      "source": "https://neilsloane.com/oadir/oa.16.5.4.2.a.txt",
+      "source_sha256": "dfe78040e7c4b2bdbdcb1b2a1c0f599b8c8a80cf5c1a48214404ca7eaf82f929",
+      "runs": 16,
+      "source_width": 5,
+      "strength": 2
+    },
+    {
+      "id": "oa.16.5.4.2",
+      "source": "https://neilsloane.com/oadir/oa.16.5.4.2.txt",
+      "source_sha256": "59304c62586369d7c748839bf19ff379ed8cda96b38e6b04b6710bbbcd68c3a5",
+      "runs": 16,
+      "source_width": 5,
+      "strength": 2
+    },
+    {
+      "id": "oa.162.19.9.2",
+      "source": "https://neilsloane.com/oadir/oa.162.19.9.2.txt",
+      "source_sha256": "cb18aafc6d3674932b362a8ed4a6129f27b71f073313597d2e39ed1915b9d00f",
+      "runs": 162,
+      "source_width": 19,
+      "strength": 2
+    },
+    {
+      "id": "oa.18.7.3.2",
+      "source": "https://neilsloane.com/oadir/oa.18.7.3.2.txt",
+      "source_sha256": "b069e39d801860a554a0bda68fa8a7057196854a9dbbe6b7d1c754df1b3083e5",
+      "runs": 18,
+      "source_width": 7,
+      "strength": 2
+    },
+    {
+      "id": "oa.18.7.3.2.ugly",
+      "source": "https://neilsloane.com/oadir/oa.18.7.3.2.ugly.txt",
+      "source_sha256": "f6746fd1481b93819f4f8af84ef3660a07bcea1f05975fe087bb3caaedac61f9",
+      "runs": 18,
+      "source_width": 7,
+      "strength": 2
+    },
+    {
+      "id": "oa.243.20.3.3",
+      "source": "https://neilsloane.com/oadir/oa.243.20.3.3.txt",
+      "source_sha256": "fa456b9af52606f145f1740c71471762c95e42b924b84f3a0d3c797515f77890",
+      "runs": 243,
+      "source_width": 20,
+      "strength": 3
+    },
+    {
+      "id": "oa.25.6.5.2",
+      "source": "https://neilsloane.com/oadir/oa.25.6.5.2.txt",
+      "source_sha256": "8b3238636f2ba6311bdd0b0fa687b93e992f583b817e5576c01e157495864b06",
+      "runs": 25,
+      "source_width": 6,
+      "strength": 2
+    },
+    {
+      "id": "oa.256.17.4.3",
+      "source": "https://neilsloane.com/oadir/oa.256.17.4.3.txt",
+      "source_sha256": "fbbafedfe1c3b270b0e1d076b99ababe3d0c4d90300e0678501d377e7520cd89",
+      "runs": 256,
+      "source_width": 17,
+      "strength": 3
+    },
+    {
+      "id": "oa.27.13.3.2",
+      "source": "https://neilsloane.com/oadir/oa.27.13.3.2.txt",
+      "source_sha256": "59fa111d59ddfa809439662ecd0e44eb8013dc5c20c19ec6341d6ab87ac37993",
+      "runs": 27,
+      "source_width": 13,
+      "strength": 2
+    },
+    {
+      "id": "oa.32.9.4.2.a",
+      "source": "https://neilsloane.com/oadir/oa.32.9.4.2.a.txt",
+      "source_sha256": "04cb1c00161e82358e31b8a7c7e5186fca122fbff3235f50e885fc99ad1999d0",
+      "runs": 32,
+      "source_width": 9,
+      "strength": 2
+    },
+    {
+      "id": "oa.32.9.4.2",
+      "source": "https://neilsloane.com/oadir/oa.32.9.4.2.txt",
+      "source_sha256": "c478c9a336364661bf836e03bdc51b1caf24591f762342571115f69e8cf98307",
+      "runs": 32,
+      "source_width": 9,
+      "strength": 2
+    },
+    {
+      "id": "oa.36.13.3.2",
+      "source": "https://neilsloane.com/oadir/oa.36.13.3.2.txt",
+      "source_sha256": "5d586ae610667105c02e8b23c15373c8a6d0dea79b62d5fe745be540fc6c16f9",
+      "runs": 36,
+      "source_width": 13,
+      "strength": 2
+    },
+    {
+      "id": "oa.49.8.7.2",
+      "source": "https://neilsloane.com/oadir/oa.49.8.7.2.txt",
+      "source_sha256": "2172f1ded561a73ec959cd74856fbd453d1dc43186f95a43a0f1242fc40923fb",
+      "runs": 49,
+      "source_width": 8,
+      "strength": 2
+    },
+    {
+      "id": "oa.50.11.5.2",
+      "source": "https://neilsloane.com/oadir/oa.50.11.5.2.txt",
+      "source_sha256": "4ff707e26e83e820fd24c46c2e91d228059815da5f20acc8ed3e59adb4db98f5",
+      "runs": 50,
+      "source_width": 11,
+      "strength": 2
+    },
+    {
+      "id": "oa.54.5.3.3.a",
+      "source": "https://neilsloane.com/oadir/oa.54.5.3.3.a.txt",
+      "source_sha256": "7a60633f5ad266983824540955eb7c86e2024021f688822d2d3bbab2a0ce7150",
+      "runs": 54,
+      "source_width": 5,
+      "strength": 3
+    },
+    {
+      "id": "oa.64.21.4.2",
+      "source": "https://neilsloane.com/oadir/oa.64.21.4.2.txt",
+      "source_sha256": "c77b396a660c89bf0dc072a8be9ea80753c59b0edbad7776ecb1cdd889fda9b0",
+      "runs": 64,
+      "source_width": 21,
+      "strength": 2
+    },
+    {
+      "id": "oa.64.6.4.3",
+      "source": "https://neilsloane.com/oadir/oa.64.6.4.3.txt",
+      "source_sha256": "5f5d1073a5707a0b3fed304a152b60326736ffe42b455d1dada7aee66f9c6c08",
+      "runs": 64,
+      "source_width": 6,
+      "strength": 3
+    },
+    {
+      "id": "oa.64.9.8.2",
+      "source": "https://neilsloane.com/oadir/oa.64.9.8.2.txt",
+      "source_sha256": "ff39f9007e6883147b749c2d556afb384f6b7eec5d15938a9ffa18a2f74cf7dc",
+      "runs": 64,
+      "source_width": 9,
+      "strength": 2
+    },
+    {
+      "id": "oa.81.10.9.2",
+      "source": "https://neilsloane.com/oadir/oa.81.10.9.2.txt",
+      "source_sha256": "04861b81aec964b107491bb646766e102810cf7f2cb800829d0bfc7925cbe1ee",
+      "runs": 81,
+      "source_width": 10,
+      "strength": 2
+    },
+    {
+      "id": "oa.81.40.3.2",
+      "source": "https://neilsloane.com/oadir/oa.81.40.3.2.txt",
+      "source_sha256": "b252cf33ba0a985dfb137cdeef8ba360456a44277c86921d86520d9651e2ae05",
+      "runs": 81,
+      "source_width": 40,
+      "strength": 2
+    },
+    {
+      "id": "oa.9.4.3.2",
+      "source": "https://neilsloane.com/oadir/oa.9.4.3.2.txt",
+      "source_sha256": "2664cd32e17bd5a359808d8030d5be99208d9f1190fd6caebb7502b9f9df7627",
+      "runs": 9,
+      "source_width": 4,
+      "strength": 2
+    },
+    {
+      "id": "oa.98.15.7.2",
+      "source": "https://neilsloane.com/oadir/oa.98.15.7.2.txt",
+      "source_sha256": "e502ad43f26cd6a89f6a4daa138ca59ea76b2b97f75c552e9432a9d0d6e2f937",
+      "runs": 98,
+      "source_width": 15,
+      "strength": 2
+    }
+  ]
+}

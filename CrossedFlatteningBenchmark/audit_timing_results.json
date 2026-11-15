@@ -1,0 +1,155 @@
+{
+  "data_elasticity_native-q-fast-warm": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 3,
+    "fallback:unknown": 3,
+    "pairs": 4,
+    "baseline:verified_yes": 1,
+    "fallback:verified_yes": 1
+  },
+  "data_elasticity_native-q-fast": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 3,
+    "fallback:unknown": 3,
+    "pairs": 4,
+    "baseline:verified_yes": 1,
+    "fallback:verified_yes": 1
+  },
+  "data_elasticity_native-q-z3": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 4,
+    "pairs": 4
+  },
+  "data_elasticity_native-q": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 3,
+    "pairs": 4,
+    "baseline:verified_yes": 1
+  },
+  "data_elasticity_regrouped-f2-warm": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 7,
+    "pairs": 10,
+    "crossed:verified_yes": 3,
+    "crossed:no": 3,
+    "crossed:no_no_rank certificate": 3,
+    "baseline:no": 3,
+    "baseline:no_no_rank certificate": 3
+  },
+  "data_elasticity_regrouped-f2": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 7,
+    "pairs": 10,
+    "crossed:verified_yes": 3,
+    "crossed:no": 3,
+    "crossed:no_no_rank certificate": 3,
+    "baseline:no": 3,
+    "baseline:no_no_rank certificate": 3
+  },
+  "data_elasticity_regrouped-q-fast-warm": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 10,
+    "fallback:unknown": 3,
+    "pairs": 14,
+    "baseline:verified_yes": 4,
+    "fallback:verified_yes": 1,
+    "crossed:verified_yes": 7,
+    "crossed:no": 3,
+    "crossed:no_no_intertwiner dimension": 3
+  },
+  "data_elasticity_regrouped-q-fast": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 10,
+    "fallback:unknown": 3,
+    "pairs": 14,
+    "baseline:verified_yes": 4,
+    "fallback:verified_yes": 1,
+    "crossed:verified_yes": 7,
+    "crossed:no": 3,
+    "crossed:no_no_intertwiner dimension": 3
+  },
+  "data_elasticity_regrouped-q-z3": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 14,
+    "pairs": 14,
+    "crossed:verified_yes": 7,
+    "crossed:no": 3,
+    "crossed:no_no_intertwiner dimension": 3
+  },
+  "data_elasticity_regrouped-q": {
+    "crossed:unknown": 4,
+    "baseline:unknown": 10,
+    "pairs": 14,
+    "baseline:verified_yes": 4,
+    "crossed:verified_yes": 7,
+    "crossed:no": 3,
+    "crossed:no_no_intertwiner dimension": 3
+  },
+  "data_sloane_oa-warm": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 4,
+    "pairs": 6,
+    "crossed:no": 2,
+    "crossed:no_no_rank certificate": 2,
+    "baseline:no": 2,
+    "baseline:no_no_rank certificate": 2
+  },
+  "data_sloane_oa": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 4,
+    "pairs": 6,
+    "crossed:no": 2,
+    "crossed:no_no_rank certificate": 2,
+    "baseline:no": 2,
+    "baseline:no_no_rank certificate": 2
+  },
+  "semeion-native-warm": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 6,
+    "pairs": 9,
+    "crossed:verified_yes": 2,
+    "crossed:no": 3,
+    "crossed:no_no_rank certificate": 3,
+    "baseline:no": 3,
+    "baseline:no_no_rank certificate": 3
+  },
+  "semeion-native": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 6,
+    "pairs": 9,
+    "crossed:verified_yes": 2,
+    "crossed:no": 3,
+    "crossed:no_no_rank certificate": 3,
+    "baseline:no": 3,
+    "baseline:no_no_rank certificate": 3
+  },
+  "semeion-regrouped-warm": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 5,
+    "pairs": 8,
+    "crossed:verified_yes": 1,
+    "crossed:no": 3,
+    "crossed:no_no_rank certificate": 3,
+    "baseline:no": 3,
+    "baseline:no_no_rank certificate": 3
+  },
+  "semeion-regrouped": {
+    "crossed:unknown": 4,
+    "baseline:verified_yes": 5,
+    "pairs": 8,
+    "crossed:verified_yes": 1,
+    "crossed:no": 3,
+    "crossed:no_no_rank certificate": 3,
+    "baseline:no": 3,
+    "baseline:no_no_rank certificate": 3
+  },
+  "published_corank_reimplementation": {
+    "fixed:unknown": 22,
+    "all:unknown": 22,
+    "pairs": 33,
+    "fixed:no": 11,
+    "fixed:no_no_rank certificate": 11,
+    "all:no": 11,
+    "all:no_no_rank certificate": 11
+  }
+}

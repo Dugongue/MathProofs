@@ -1,0 +1,1300 @@
+{
+  "data_elasticity_native-q": [
+    {
+      "id": "data_elasticity_native-q-000",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.008060499996645376,
+      "warm_fractionfree_s": 0.001820749996113591,
+      "cold_fractionfree_s": 0.12726330000441521,
+      "warm_fractionfree_runs": [
+        0.0018577000009827316,
+        0.0018552999827079475,
+        0.0017862000095192343,
+        0.0017805999959819019
+      ],
+      "cold_fractionfree_runs": [
+        0.12786510001751594,
+        0.12678829999640584,
+        0.12726330000441521
+      ],
+      "proof": {
+        "ranks": [
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "commutants": [
+          null,
+          null
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.11271220000344329,
+      "cold_baseline_s": 0.13994570000795648,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_native-q-001",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.007385500008240342,
+      "warm_fractionfree_s": 0.0019292499928269535,
+      "cold_fractionfree_s": 0.12730559997726232,
+      "warm_fractionfree_runs": [
+        0.0019199999806005508,
+        0.0019385000050533563,
+        0.0019997000053990632,
+        0.0018276999762747437
+      ],
+      "cold_fractionfree_runs": [
+        0.12531289999606088,
+        0.12730559997726232,
+        0.1279426999972202
+      ],
+      "proof": {
+        "ranks": [
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "commutants": [
+          null,
+          null
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.11272010000539012,
+      "cold_baseline_s": 0.14160529998480342,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_native-q-002",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.007161700021242723,
+      "warm_fractionfree_s": 0.0018036499968729913,
+      "cold_fractionfree_s": 0.12622570001985878,
+      "warm_fractionfree_runs": [
+        0.0019152000022586435,
+        0.0018118000007234514,
+        0.0017516000079922378,
+        0.0017954999930225313
+      ],
+      "cold_fractionfree_runs": [
+        0.12622570001985878,
+        0.1268100000161212,
+        0.12599410000257194
+      ],
+      "proof": {
+        "ranks": [
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "commutants": [
+          null,
+          null
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.11238880001474172,
+      "cold_baseline_s": 0.14216859999578446,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_native-q-003",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.006226400000741705,
+      "warm_fractionfree_s": 0.0016946999967331067,
+      "cold_fractionfree_s": 0.12705330000608228,
+      "warm_fractionfree_runs": [
+        0.001795300020603463,
+        0.0017027999856509268,
+        0.001654499996220693,
+        0.0016866000078152865
+      ],
+      "cold_fractionfree_runs": [
+        0.12807750000501983,
+        0.1267828999843914,
+        0.12705330000608228
+      ],
+      "proof": {
+        "ranks": [
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "commutants": [
+          null,
+          null
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.10918669999227859,
+      "cold_baseline_s": 0.15124870001454838,
+      "baseline_status": "yes"
+    }
+  ],
+  "data_elasticity_regrouped-q": [
+    {
+      "id": "data_elasticity_regrouped-q-000",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.028520599997136742,
+      "warm_fractionfree_s": 0.0031732000061310828,
+      "cold_fractionfree_s": 0.12808100000256673,
+      "warm_fractionfree_runs": [
+        0.0033368000003974885,
+        0.0031857000140007585,
+        0.0031485999934375286,
+        0.003160699998261407
+      ],
+      "cold_fractionfree_runs": [
+        0.12807759997667745,
+        0.12808100000256673,
+        0.1328262999886647
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.1310675000131596,
+      "cold_baseline_s": 0.13915500001166947,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-001",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.023748200008412823,
+      "warm_fractionfree_s": 0.003012699991813861,
+      "cold_fractionfree_s": 0.12842449999880046,
+      "warm_fractionfree_runs": [
+        0.0030777000065427274,
+        0.0030297999910544604,
+        0.0029955999925732613,
+        0.002879200008464977
+      ],
+      "cold_fractionfree_runs": [
+        0.13324540000758134,
+        0.12761110000428744,
+        0.12842449999880046
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.12577760001295246,
+      "cold_baseline_s": 0.14340589998755604,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-002",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.024102399998810142,
+      "warm_fractionfree_s": 0.002926899993326515,
+      "cold_fractionfree_s": 0.127861999993911,
+      "warm_fractionfree_runs": [
+        0.0030595000134781003,
+        0.002895599987823516,
+        0.002955200005089864,
+        0.002898599981563166
+      ],
+      "cold_fractionfree_runs": [
+        0.1277764999831561,
+        0.1282700999872759,
+        0.127861999993911
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.12709449999965727,
+      "cold_baseline_s": 0.1431064999778755,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-003",
+      "status": "unknown",
+      "stratum": "unconditional planted",
+      "warm_original_s": 0.022095699998317286,
+      "warm_fractionfree_s": 0.0029048499854980037,
+      "cold_fractionfree_s": 0.12860399999772198,
+      "warm_fractionfree_runs": [
+        0.003086899989284575,
+        0.002896099991630763,
+        0.0028713000065181404,
+        0.0029135999793652445
+      ],
+      "cold_fractionfree_runs": [
+        0.12766639998881146,
+        0.12860399999772198,
+        0.12893669999903068
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "status": "unknown",
+        "reason": "outside scalar-commutant class"
+      },
+      "cold_original_s": 0.12954209998133592,
+      "cold_baseline_s": 0.15040089999092743,
+      "baseline_status": "yes"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-004",
+      "status": "yes",
+      "stratum": "covered planted",
+      "warm_original_s": 0.23832319999928586,
+      "warm_fractionfree_s": 0.0068806500057689846,
+      "cold_fractionfree_s": 0.13315710000460967,
+      "warm_fractionfree_runs": [
+        0.007034299982478842,
+        0.006817300018155947,
+        0.0069432000163942575,
+        0.006818099995143712
+      ],
+      "cold_fractionfree_runs": [
+        0.13478890000260435,
+        0.13257590000284836,
+        0.13315710000460967
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "yes",
+        "reason": "verified",
+        "witness": [
+          [
+            [
+              "1",
+              "0",
+              "-1"
+            ],
+            [
+              "-3",
+              "-1",
+              "1"
+            ],
+            [
+              "3",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "1",
+              "0"
+            ],
+            [
+              "-2",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "-2",
+              "-2",
+              "-1"
+            ],
+            [
+              "1",
+              "2",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "3",
+              "5",
+              "-4"
+            ],
+            [
+              "2",
+              "3",
+              "-2"
+            ]
+          ]
+        ]
+      },
+      "cold_original_s": 0.34772019999218173,
+      "cold_baseline_s": 0.150872199999867,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-005",
+      "status": "yes",
+      "stratum": "covered planted",
+      "warm_original_s": 0.24073390002013184,
+      "warm_fractionfree_s": 0.006858500011730939,
+      "cold_fractionfree_s": 0.13078800000948831,
+      "warm_fractionfree_runs": [
+        0.006948100024601445,
+        0.0068079000047873706,
+        0.006702500017127022,
+        0.006909100018674508
+      ],
+      "cold_fractionfree_runs": [
+        0.13210220000473782,
+        0.13078800000948831,
+        0.13058089997502975
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "yes",
+        "reason": "verified",
+        "witness": [
+          [
+            [
+              "1",
+              "1",
+              "2"
+            ],
+            [
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "-1",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0",
+              "-2"
+            ],
+            [
+              "0",
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "-1",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1",
+              "-1",
+              "2"
+            ],
+            [
+              "-1",
+              "0",
+              "0"
+            ],
+            [
+              "-1",
+              "1",
+              "-3"
+            ]
+          ],
+          [
+            [
+              "2",
+              "1",
+              "-2"
+            ],
+            [
+              "3",
+              "1",
+              "-4"
+            ],
+            [
+              "-2",
+              "-1",
+              "3"
+            ]
+          ]
+        ]
+      },
+      "cold_original_s": 0.3460699000279419,
+      "cold_baseline_s": 0.15596230002120137,
+      "baseline_status": "yes"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-006",
+      "status": "yes",
+      "stratum": "covered planted",
+      "warm_original_s": 0.2516493999864906,
+      "warm_fractionfree_s": 0.006887600015033968,
+      "cold_fractionfree_s": 0.1311940000159666,
+      "warm_fractionfree_runs": [
+        0.007145999989006668,
+        0.006874100014101714,
+        0.006901100015966222,
+        0.006865899980766699
+      ],
+      "cold_fractionfree_runs": [
+        0.13103450002381578,
+        0.1311940000159666,
+        0.13186140000470914
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "yes",
+        "reason": "verified",
+        "witness": [
+          [
+            [
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0",
+              "-1"
+            ],
+            [
+              "-1",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0",
+              "4/3"
+            ],
+            [
+              "0",
+              "1/3",
+              "0"
+            ],
+            [
+              "1/3",
+              "0",
+              "1/3"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "3"
+            ],
+            [
+              "3",
+              "0",
+              "3"
+            ],
+            [
+              "3",
+              "3",
+              "6"
+            ]
+          ]
+        ]
+      },
+      "cold_original_s": 0.3594712999765761,
+      "cold_baseline_s": 0.17254560001310892,
+      "baseline_status": "yes"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-007",
+      "status": "yes",
+      "stratum": "covered planted",
+      "warm_original_s": 0.23670189999393187,
+      "warm_fractionfree_s": 0.007046700004138984,
+      "cold_fractionfree_s": 0.1325868999992963,
+      "warm_fractionfree_runs": [
+        0.007099099981132895,
+        0.006958200014196336,
+        0.007063700002618134,
+        0.0070297000056598336
+      ],
+      "cold_fractionfree_runs": [
+        0.13307359997997992,
+        0.1325868999992963,
+        0.132130199985113
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "yes",
+        "reason": "verified",
+        "witness": [
+          [
+            [
+              "1",
+              "1",
+              "-1"
+            ],
+            [
+              "1",
+              "0",
+              "-1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1/4",
+              "0",
+              "1/2"
+            ],
+            [
+              "0",
+              "0",
+              "-1/4"
+            ],
+            [
+              "1/4",
+              "1/4",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1",
+              "1",
+              "0"
+            ],
+            [
+              "-2",
+              "-1",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "-1"
+            ]
+          ],
+          [
+            [
+              "-8",
+              "8",
+              "-12"
+            ],
+            [
+              "-4",
+              "4",
+              "-4"
+            ],
+            [
+              "0",
+              "-4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "cold_original_s": 0.340580600022804,
+      "cold_baseline_s": 0.14417339998180978,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-008",
+      "status": "yes",
+      "stratum": "covered planted",
+      "warm_original_s": 0.22532779999892227,
+      "warm_fractionfree_s": 0.006746250015567057,
+      "cold_fractionfree_s": 0.13226750001194887,
+      "warm_fractionfree_runs": [
+        0.006903899979079142,
+        0.006748200015863404,
+        0.00674430001527071,
+        0.006729599990649149
+      ],
+      "cold_fractionfree_runs": [
+        0.13210969997453503,
+        0.13226750001194887,
+        0.13394200001494028
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "yes",
+        "reason": "verified",
+        "witness": [
+          [
+            [
+              "-1",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "1",
+              "1"
+            ],
+            [
+              "-1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0",
+              "1/2"
+            ],
+            [
+              "-1/2",
+              "1/2",
+              "0"
+            ],
+            [
+              "3/2",
+              "0",
+              "1/2"
+            ]
+          ],
+          [
+            [
+              "0",
+              "2",
+              "-2"
+            ],
+            [
+              "2",
+              "0",
+              "0"
+            ],
+            [
+              "2",
+              "0",
+              "2"
+            ]
+          ]
+        ]
+      },
+      "cold_original_s": 0.33335810000426136,
+      "cold_baseline_s": 0.146306899987394,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-009",
+      "status": "yes",
+      "stratum": "covered permutation",
+      "warm_original_s": 0.21160839998628944,
+      "warm_fractionfree_s": 0.006554699983098544,
+      "cold_fractionfree_s": 0.13142589997733012,
+      "warm_fractionfree_runs": [
+        0.006646800000453368,
+        0.00650719998520799,
+        0.006435200019041076,
+        0.0066021999809890985
+      ],
+      "cold_fractionfree_runs": [
+        0.13142589997733012,
+        0.13237999999546446,
+        0.13108279998414218
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "yes",
+        "reason": "verified",
+        "witness": [
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "cold_original_s": 0.31393420000676997,
+      "cold_baseline_s": 0.1454185999755282,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-010",
+      "status": "yes",
+      "stratum": "covered permutation",
+      "warm_original_s": 0.19733120000455528,
+      "warm_fractionfree_s": 0.006523400021251291,
+      "cold_fractionfree_s": 0.13085819999105297,
+      "warm_fractionfree_runs": [
+        0.006465400016168132,
+        0.00658140002633445,
+        0.006582200003322214,
+        0.006434800015995279
+      ],
+      "cold_fractionfree_runs": [
+        0.13085819999105297,
+        0.13120879998314194,
+        0.13055739999981597
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "yes",
+        "reason": "verified",
+        "witness": [
+          [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "cold_original_s": 0.30338040000060573,
+      "cold_baseline_s": 0.14873200000147335,
+      "baseline_status": "yes"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-011",
+      "status": "no",
+      "stratum": "same-rank trace negative",
+      "warm_original_s": 0.28893509999033995,
+      "warm_fractionfree_s": 0.004671350005082786,
+      "cold_fractionfree_s": 0.1305065999913495,
+      "warm_fractionfree_runs": [
+        0.004898899991530925,
+        0.004643699998268858,
+        0.004693599999882281,
+        0.004649100010283291
+      ],
+      "cold_fractionfree_runs": [
+        0.1298166000051424,
+        0.13098260000697337,
+        0.1305065999913495
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "no",
+        "reason": "local intertwiners"
+      },
+      "cold_original_s": 0.39648870000382885,
+      "cold_baseline_s": 0.14867850000155158,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-012",
+      "status": "no",
+      "stratum": "same-rank trace negative",
+      "warm_original_s": 0.3051310000009835,
+      "warm_fractionfree_s": 0.00483080001140479,
+      "cold_fractionfree_s": 0.12899910000851378,
+      "warm_fractionfree_runs": [
+        0.004820000001927838,
+        0.004765300021972507,
+        0.004841600020881742,
+        0.0048781999794300646
+      ],
+      "cold_fractionfree_runs": [
+        0.13198499998543411,
+        0.12899910000851378,
+        0.12863809999544173
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "no",
+        "reason": "local intertwiners"
+      },
+      "cold_original_s": 0.41597689999616705,
+      "cold_baseline_s": 0.13951919999090023,
+      "baseline_status": "unknown"
+    },
+    {
+      "id": "data_elasticity_regrouped-q-013",
+      "status": "no",
+      "stratum": "same-rank trace negative",
+      "warm_original_s": 0.28999069999554195,
+      "warm_fractionfree_s": 0.004681649996200576,
+      "cold_fractionfree_s": 0.13014449999900535,
+      "warm_fractionfree_runs": [
+        0.0047821999760344625,
+        0.004660900012822822,
+        0.004652100004022941,
+        0.004702399979578331
+      ],
+      "cold_fractionfree_runs": [
+        0.13032359999488108,
+        0.12916080001741648,
+        0.13014449999900535
+      ],
+      "proof": {
+        "ranks": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "commutants": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "no",
+        "reason": "local intertwiners"
+      },
+      "cold_original_s": 0.397215499979211,
+      "cold_baseline_s": 0.14112139999633655,
+      "baseline_status": "unknown"
+    }
+  ]
+}

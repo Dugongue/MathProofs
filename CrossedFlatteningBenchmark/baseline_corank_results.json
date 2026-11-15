@@ -1,0 +1,1786 @@
+{
+  "method": "arXiv:2604.00591 \u00a74, independent binary implementation",
+  "timeout_seconds": 2,
+  "timing": "in-process parse through witness verification",
+  "families": {
+    "data_elasticity_regrouped-f2": {
+      "cases": 10,
+      "rows": [
+        {
+          "id": "data_elasticity_regrouped-f2-000",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 7",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 7"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-000",
+            "read_seconds": 0.0008362000226043165,
+            "elapsed_seconds": 0.0010082000226248056
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 7",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 7",
+              "flattening corank 7",
+              "flattening corank 7"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-000",
+            "read_seconds": 0.00021199998445808887,
+            "elapsed_seconds": 0.000617499987129122
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-001",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 1",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 1"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-001",
+            "read_seconds": 0.00019029999384656549,
+            "elapsed_seconds": 0.0003376999811735004
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 1",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 1",
+              "flattening corank 6",
+              "flattening corank 1"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-001",
+            "read_seconds": 0.00019469999824650586,
+            "elapsed_seconds": 0.0005878999945707619
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-002",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 1",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 1"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-002",
+            "read_seconds": 0.00018810000619851053,
+            "elapsed_seconds": 0.00033469998743385077
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 1",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 1",
+              "flattening corank 6",
+              "flattening corank 1"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-002",
+            "read_seconds": 0.00019230000907555223,
+            "elapsed_seconds": 0.000587500020628795
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-003",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 4",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 4"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-003",
+            "read_seconds": 0.00019119997159577906,
+            "elapsed_seconds": 0.0003468999930191785
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 4",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 4",
+              "flattening corank 4",
+              "flattening corank 4"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-003",
+            "read_seconds": 0.0001947999990079552,
+            "elapsed_seconds": 0.0006019999855197966
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-004",
+          "expected": "yes",
+          "stratum": "covered planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-004",
+            "read_seconds": 0.00020179999410174787,
+            "elapsed_seconds": 0.00035940000088885427
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 0",
+              "source kernel code contains no invertible matrix",
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-004",
+            "read_seconds": 0.00022960000205785036,
+            "elapsed_seconds": 0.0007100999937392771
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-005",
+          "expected": "yes",
+          "stratum": "covered planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-005",
+            "read_seconds": 0.0001959000073838979,
+            "elapsed_seconds": 0.00034080000477842987
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 0",
+              "source kernel code contains no invertible matrix",
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-005",
+            "read_seconds": 0.00020310000400058925,
+            "elapsed_seconds": 0.0006672999879810959
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-006",
+          "expected": "yes",
+          "stratum": "covered planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-006",
+            "read_seconds": 0.00019069999689236283,
+            "elapsed_seconds": 0.0003353999927639961
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 0",
+              "source kernel code contains no invertible matrix",
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-006",
+            "read_seconds": 0.00019740001880563796,
+            "elapsed_seconds": 0.0006627000111620873
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-007",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-007",
+            "read_seconds": 0.0001883000077214092,
+            "elapsed_seconds": 0.00033229999826289713
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-007",
+            "read_seconds": 0.0001944000250659883,
+            "elapsed_seconds": 0.00033710000570863485
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-008",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-008",
+            "read_seconds": 0.00018930001533590257,
+            "elapsed_seconds": 0.00033629999961704016
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-008",
+            "read_seconds": 0.0001951000012923032,
+            "elapsed_seconds": 0.0003381000133231282
+          }
+        },
+        {
+          "id": "data_elasticity_regrouped-f2-009",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-009",
+            "read_seconds": 0.00018400000408291817,
+            "elapsed_seconds": 0.00032690001535229385
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_elasticity_regrouped-f2-009",
+            "read_seconds": 0.00018870001076720655,
+            "elapsed_seconds": 0.00033060001442208886
+          }
+        }
+      ],
+      "fixed": {
+        "unknown": 7,
+        "no": 3
+      },
+      "all": {
+        "unknown": 7,
+        "no": 3
+      }
+    },
+    "data_sloane_oa": {
+      "cases": 6,
+      "rows": [
+        {
+          "id": "data_sloane_oa-000",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "id": "data_sloane_oa-000",
+            "read_seconds": 0.0008759000047575682,
+            "elapsed_seconds": 0.0037988999974913895
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 0",
+              "flattening corank 0",
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              7,
+              7,
+              7,
+              7
+            ],
+            "id": "data_sloane_oa-000",
+            "read_seconds": 0.0008997000113595277,
+            "elapsed_seconds": 0.00962300001992844
+          }
+        },
+        {
+          "id": "data_sloane_oa-001",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 8",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 8"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "data_sloane_oa-001",
+            "read_seconds": 0.000315399985993281,
+            "elapsed_seconds": 0.00070369997411035
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 8",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 8",
+              "flattening corank 8",
+              "flattening corank 8"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "data_sloane_oa-001",
+            "read_seconds": 0.0002584000176284462,
+            "elapsed_seconds": 0.0013568000285886228
+          }
+        },
+        {
+          "id": "data_sloane_oa-002",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 4",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 4"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_sloane_oa-002",
+            "read_seconds": 0.00021389999892562628,
+            "elapsed_seconds": 0.00036750000435858965
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 4",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 4",
+              "flattening corank 4",
+              "flattening corank 4"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_sloane_oa-002",
+            "read_seconds": 0.00019890000112354755,
+            "elapsed_seconds": 0.000604200002271682
+          }
+        },
+        {
+          "id": "data_sloane_oa-003",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 6",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 6"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_sloane_oa-003",
+            "read_seconds": 0.00018909998470917344,
+            "elapsed_seconds": 0.00034119997872039676
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 6",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 6",
+              "flattening corank 6",
+              "flattening corank 6"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_sloane_oa-003",
+            "read_seconds": 0.00019580000662244856,
+            "elapsed_seconds": 0.000600200000917539
+          }
+        },
+        {
+          "id": "data_sloane_oa-004",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_sloane_oa-004",
+            "read_seconds": 0.00018760000239126384,
+            "elapsed_seconds": 0.0003372000064700842
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              3,
+              3,
+              3,
+              3
+            ],
+            "id": "data_sloane_oa-004",
+            "read_seconds": 0.00019729998894035816,
+            "elapsed_seconds": 0.0003456000122241676
+          }
+        },
+        {
+          "id": "data_sloane_oa-005",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "data_sloane_oa-005",
+            "read_seconds": 0.00024020002456381917,
+            "elapsed_seconds": 0.0006021000153850764
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "data_sloane_oa-005",
+            "read_seconds": 0.0002519999979995191,
+            "elapsed_seconds": 0.0006357999809551984
+          }
+        }
+      ],
+      "fixed": {
+        "unknown": 4,
+        "no": 2
+      },
+      "all": {
+        "unknown": 4,
+        "no": 2
+      }
+    },
+    "semeion-native": {
+      "cases": 9,
+      "rows": [
+        {
+          "id": "semeion-native-000",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 11",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 11"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-000",
+            "read_seconds": 0.0002437999937683344,
+            "elapsed_seconds": 0.0006288999866228551
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 10",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 11",
+              "flattening corank 10",
+              "flattening corank 10"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-000",
+            "read_seconds": 0.0002505000156816095,
+            "elapsed_seconds": 0.001347100012935698
+          }
+        },
+        {
+          "id": "semeion-native-001",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 4",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 4"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-001",
+            "read_seconds": 0.0002410999732092023,
+            "elapsed_seconds": 0.0006364999862853438
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "source kernel code contains no invertible matrix",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 4",
+              "flattening corank 5",
+              "source kernel code contains no invertible matrix"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-001",
+            "read_seconds": 0.0002488000027369708,
+            "elapsed_seconds": 0.00141789999906905
+          }
+        },
+        {
+          "id": "semeion-native-002",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 10",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 10"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-002",
+            "read_seconds": 0.00025939999613910913,
+            "elapsed_seconds": 0.0006548000092152506
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 9",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 10",
+              "flattening corank 7",
+              "flattening corank 9"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-002",
+            "read_seconds": 0.000298400002066046,
+            "elapsed_seconds": 0.0014467000146396458
+          }
+        },
+        {
+          "id": "semeion-native-003",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 4",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 4"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-003",
+            "read_seconds": 0.0003234000178053975,
+            "elapsed_seconds": 0.0007205000147223473
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "source stabilizer exceeds published cutoff",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 4",
+              "flattening corank 4",
+              "source stabilizer exceeds published cutoff"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-003",
+            "read_seconds": 0.0002799999783746898,
+            "elapsed_seconds": 0.0019712999928742647
+          }
+        },
+        {
+          "id": "semeion-native-004",
+          "expected": "yes",
+          "stratum": "covered planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-004",
+            "read_seconds": 0.0003184000088367611,
+            "elapsed_seconds": 0.0006863000162411481
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 0",
+              "source kernel code contains no invertible matrix",
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-004",
+            "read_seconds": 0.00028589999419637024,
+            "elapsed_seconds": 0.001429600000847131
+          }
+        },
+        {
+          "id": "semeion-native-005",
+          "expected": "yes",
+          "stratum": "covered planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-005",
+            "read_seconds": 0.00024330001906491816,
+            "elapsed_seconds": 0.0006114999996498227
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 0",
+              "flattening corank 4",
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-005",
+            "read_seconds": 0.0002507000172045082,
+            "elapsed_seconds": 0.0013565000263042748
+          }
+        },
+        {
+          "id": "semeion-native-006",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-006",
+            "read_seconds": 0.00024009999469853938,
+            "elapsed_seconds": 0.0006165000086184591
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-006",
+            "read_seconds": 0.00024289998691529036,
+            "elapsed_seconds": 0.0006184999947436154
+          }
+        },
+        {
+          "id": "semeion-native-007",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-007",
+            "read_seconds": 0.0002373000024817884,
+            "elapsed_seconds": 0.0006370999908540398
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-007",
+            "read_seconds": 0.00024870000197552145,
+            "elapsed_seconds": 0.0006273000035434961
+          }
+        },
+        {
+          "id": "semeion-native-008",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-008",
+            "read_seconds": 0.00023750000400468707,
+            "elapsed_seconds": 0.0006200000061653554
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-native-008",
+            "read_seconds": 0.00024229998234659433,
+            "elapsed_seconds": 0.0006241000082809478
+          }
+        }
+      ],
+      "fixed": {
+        "unknown": 6,
+        "no": 3
+      },
+      "all": {
+        "unknown": 6,
+        "no": 3
+      }
+    },
+    "semeion-regrouped": {
+      "cases": 8,
+      "rows": [
+        {
+          "id": "semeion-regrouped-000",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 10",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 10"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-000",
+            "read_seconds": 0.0002410000015515834,
+            "elapsed_seconds": 0.0006315000064205378
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 10",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 10",
+              "flattening corank 11",
+              "flattening corank 10"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-000",
+            "read_seconds": 0.00024289998691529036,
+            "elapsed_seconds": 0.0013592999894171953
+          }
+        },
+        {
+          "id": "semeion-regrouped-001",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 5",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 5"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-001",
+            "read_seconds": 0.00023800000781193376,
+            "elapsed_seconds": 0.0006266999989748001
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "source kernel code contains no invertible matrix",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 5",
+              "flattening corank 4",
+              "source kernel code contains no invertible matrix"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-001",
+            "read_seconds": 0.0002457000082358718,
+            "elapsed_seconds": 0.0014260000025387853
+          }
+        },
+        {
+          "id": "semeion-regrouped-002",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 7",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 7"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-002",
+            "read_seconds": 0.0003555000002961606,
+            "elapsed_seconds": 0.0007698000117670745
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 9",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 7",
+              "flattening corank 10",
+              "flattening corank 9"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-002",
+            "read_seconds": 0.00028730000485666096,
+            "elapsed_seconds": 0.0014525000005960464
+          }
+        },
+        {
+          "id": "semeion-regrouped-003",
+          "expected": "yes",
+          "stratum": "unconditional planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 4",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 4"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-003",
+            "read_seconds": 0.0002761000068858266,
+            "elapsed_seconds": 0.0006646999972872436
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "source stabilizer exceeds published cutoff",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 4",
+              "flattening corank 4",
+              "source stabilizer exceeds published cutoff"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-003",
+            "read_seconds": 0.00026110000908374786,
+            "elapsed_seconds": 0.0016428000235464424
+          }
+        },
+        {
+          "id": "semeion-regrouped-004",
+          "expected": "yes",
+          "stratum": "covered planted",
+          "fixed": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "declines": [
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-004",
+            "read_seconds": 0.0002445999998599291,
+            "elapsed_seconds": 0.0006130000110715628
+          },
+          "all": {
+            "status": "unknown",
+            "reason": "flattening corank 0",
+            "axes": [
+              0,
+              3,
+              1,
+              2
+            ],
+            "declines": [
+              "flattening corank 0",
+              "flattening corank 2",
+              "flattening corank 0"
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-004",
+            "read_seconds": 0.0002468999882694334,
+            "elapsed_seconds": 0.0013149000005796552
+          }
+        },
+        {
+          "id": "semeion-regrouped-005",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-005",
+            "read_seconds": 0.00023720000172033906,
+            "elapsed_seconds": 0.0006211000145412982
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-005",
+            "read_seconds": 0.00024279998615384102,
+            "elapsed_seconds": 0.0006267999997362494
+          }
+        },
+        {
+          "id": "semeion-regrouped-006",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-006",
+            "read_seconds": 0.00023789997794665396,
+            "elapsed_seconds": 0.0006204999808687717
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-006",
+            "read_seconds": 0.00024120000307448208,
+            "elapsed_seconds": 0.0006224999960977584
+          }
+        },
+        {
+          "id": "semeion-regrouped-007",
+          "expected": "no",
+          "stratum": "rank negative",
+          "fixed": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-007",
+            "read_seconds": 0.00023630002397112548,
+            "elapsed_seconds": 0.0006151999987196177
+          },
+          "all": {
+            "status": "no",
+            "reason": "different flattening ranks",
+            "axes": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "solver": "corank-three",
+            "field": 2,
+            "dims": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "id": "semeion-regrouped-007",
+            "read_seconds": 0.00025370001094415784,
+            "elapsed_seconds": 0.0006313000048976392
+          }
+        }
+      ],
+      "fixed": {
+        "unknown": 5,
+        "no": 3
+      },
+      "all": {
+        "unknown": 5,
+        "no": 3
+      }
+    }
+  }
+}

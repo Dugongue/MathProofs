@@ -1,0 +1,315 @@
+{
+  "semeion-native": {
+    "singular": 1590,
+    "total": 1593,
+    "both_full": 3,
+    "published_rank_gate": 388,
+    "scalar": 2,
+    "nonscalar": 1
+  },
+  "semeion-regrouped": {
+    "singular": 1592,
+    "total": 1593,
+    "both_full": 1,
+    "published_rank_gate": 271,
+    "scalar": 1
+  },
+  "sloane_by_level": {
+    "8": {
+      "singular": 1,
+      "total": 2,
+      "both_full": 1,
+      "nonscalar": 1
+    },
+    "4": {
+      "nonscalar": 2,
+      "total": 7,
+      "both_full": 2,
+      "singular": 5
+    },
+    "9": {
+      "singular": 1,
+      "total": 2,
+      "both_full": 1,
+      "nonscalar": 1
+    },
+    "3": {
+      "singular": 7,
+      "total": 8,
+      "both_full": 1,
+      "nonscalar": 1
+    },
+    "5": {
+      "nonscalar": 1,
+      "total": 2,
+      "both_full": 1,
+      "singular": 1
+    },
+    "7": {
+      "nonscalar": 1,
+      "total": 2,
+      "both_full": 1,
+      "singular": 1
+    }
+  },
+  "sloane_records": {
+    "oa.128.17.8.2": {
+      "id": "oa.128.17.8.2",
+      "ranks": [
+        32,
+        32
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.16.5.4.2.a": {
+      "id": "oa.16.5.4.2.a",
+      "ranks": [
+        16,
+        16
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "nonscalar",
+      "commutants": [
+        16,
+        16
+      ],
+      "method": "exact"
+    },
+    "oa.16.5.4.2": {
+      "id": "oa.16.5.4.2",
+      "ranks": [
+        16,
+        16
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "nonscalar",
+      "commutants": [
+        16,
+        16
+      ],
+      "method": "exact"
+    },
+    "oa.162.19.9.2": {
+      "id": "oa.162.19.9.2",
+      "ranks": [
+        54,
+        54
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.18.7.3.2": {
+      "id": "oa.18.7.3.2",
+      "ranks": [
+        5,
+        5
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.18.7.3.2.ugly": {
+      "id": "oa.18.7.3.2.ugly",
+      "ranks": [
+        6,
+        6
+      ],
+      "equal_corank_3_eligible": true,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.243.20.3.3": {
+      "id": "oa.243.20.3.3",
+      "ranks": [
+        1,
+        1
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.25.6.5.2": {
+      "id": "oa.25.6.5.2",
+      "ranks": [
+        25,
+        25
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "nonscalar",
+      "commutants": [
+        25,
+        25
+      ],
+      "method": "exact"
+    },
+    "oa.256.17.4.3": {
+      "id": "oa.256.17.4.3",
+      "ranks": [
+        1,
+        1
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.27.13.3.2": {
+      "id": "oa.27.13.3.2",
+      "ranks": [
+        3,
+        3
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.32.9.4.2.a": {
+      "id": "oa.32.9.4.2.a",
+      "ranks": [
+        8,
+        8
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.32.9.4.2": {
+      "id": "oa.32.9.4.2",
+      "ranks": [
+        8,
+        8
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.36.13.3.2": {
+      "id": "oa.36.13.3.2",
+      "ranks": [
+        5,
+        5
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.49.8.7.2": {
+      "id": "oa.49.8.7.2",
+      "ranks": [
+        49,
+        49
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "nonscalar",
+      "commutants": [
+        49,
+        49
+      ],
+      "method": "exact"
+    },
+    "oa.50.11.5.2": {
+      "id": "oa.50.11.5.2",
+      "ranks": [
+        20,
+        20
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.54.5.3.3.a": {
+      "id": "oa.54.5.3.3.a",
+      "ranks": [
+        3,
+        3
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.64.21.4.2": {
+      "id": "oa.64.21.4.2",
+      "ranks": [
+        4,
+        4
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.64.6.4.3": {
+      "id": "oa.64.6.4.3",
+      "ranks": [
+        4,
+        4
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.64.9.8.2": {
+      "id": "oa.64.9.8.2",
+      "ranks": [
+        64,
+        64
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "nonscalar",
+      "commutants": [
+        64,
+        64
+      ],
+      "method": "exact"
+    },
+    "oa.81.10.9.2": {
+      "id": "oa.81.10.9.2",
+      "ranks": [
+        81,
+        81
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "nonscalar",
+      "commutants": [
+        81,
+        81
+      ],
+      "method": "exact"
+    },
+    "oa.81.40.3.2": {
+      "id": "oa.81.40.3.2",
+      "ranks": [
+        1,
+        1
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    },
+    "oa.9.4.3.2": {
+      "id": "oa.9.4.3.2",
+      "ranks": [
+        9,
+        9
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "nonscalar",
+      "commutants": [
+        9,
+        9
+      ],
+      "method": "exact"
+    },
+    "oa.98.15.7.2": {
+      "id": "oa.98.15.7.2",
+      "ranks": [
+        42,
+        42
+      ],
+      "equal_corank_3_eligible": false,
+      "gate": "singular",
+      "method": "exact"
+    }
+  }
+}

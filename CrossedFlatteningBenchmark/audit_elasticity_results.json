@@ -1,0 +1,132 @@
+{
+  "native-f2": {
+    "outcomes": {
+      "first-cut-singular": 10276
+    },
+    "per_crystal_system": {
+      "cubic": {
+        "first-cut-singular": 4217
+      },
+      "hexagonal": {
+        "first-cut-singular": 1396
+      },
+      "monoclinic": {
+        "first-cut-singular": 550
+      },
+      "orthorhombic": {
+        "first-cut-singular": 1334
+      },
+      "tetragonal": {
+        "first-cut-singular": 1963
+      },
+      "triclinic": {
+        "first-cut-singular": 60
+      },
+      "trigonal": {
+        "first-cut-singular": 756
+      }
+    },
+    "rank_corank3_count": 972
+  },
+  "regrouped-f2": {
+    "outcomes": {
+      "first-cut-singular": 9361,
+      "non-scalar-commutant": 912,
+      "covered": 3
+    },
+    "per_crystal_system": {
+      "cubic": {
+        "first-cut-singular": 3614,
+        "non-scalar-commutant": 603
+      },
+      "hexagonal": {
+        "first-cut-singular": 1367,
+        "non-scalar-commutant": 29
+      },
+      "monoclinic": {
+        "first-cut-singular": 487,
+        "non-scalar-commutant": 63
+      },
+      "orthorhombic": {
+        "first-cut-singular": 1268,
+        "non-scalar-commutant": 66
+      },
+      "tetragonal": {
+        "first-cut-singular": 1825,
+        "non-scalar-commutant": 138
+      },
+      "triclinic": {
+        "first-cut-singular": 53,
+        "non-scalar-commutant": 5,
+        "covered": 2
+      },
+      "trigonal": {
+        "first-cut-singular": 747,
+        "non-scalar-commutant": 8,
+        "covered": 1
+      }
+    },
+    "rank_corank3_count": 1512
+  },
+  "native-q": {
+    "outcomes": {
+      "first-cut-singular": 10276
+    },
+    "per_crystal_system": {
+      "cubic": {
+        "first-cut-singular": 4217
+      },
+      "hexagonal": {
+        "first-cut-singular": 1396
+      },
+      "monoclinic": {
+        "first-cut-singular": 550
+      },
+      "orthorhombic": {
+        "first-cut-singular": 1334
+      },
+      "tetragonal": {
+        "first-cut-singular": 1963
+      },
+      "triclinic": {
+        "first-cut-singular": 60
+      },
+      "trigonal": {
+        "first-cut-singular": 756
+      }
+    },
+    "rank_corank3_count": 10276
+  },
+  "regrouped-q": {
+    "outcomes": {
+      "non-scalar-commutant": 10172,
+      "covered": 104
+    },
+    "per_crystal_system": {
+      "cubic": {
+        "non-scalar-commutant": 4217
+      },
+      "hexagonal": {
+        "non-scalar-commutant": 1396
+      },
+      "monoclinic": {
+        "non-scalar-commutant": 550
+      },
+      "orthorhombic": {
+        "non-scalar-commutant": 1334
+      },
+      "tetragonal": {
+        "non-scalar-commutant": 1963
+      },
+      "triclinic": {
+        "covered": 57,
+        "non-scalar-commutant": 3
+      },
+      "trigonal": {
+        "non-scalar-commutant": 709,
+        "covered": 47
+      }
+    },
+    "rank_corank3_count": 0
+  }
+}

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- crossed-flattening-benchmark:start -->
+[Crossed-flattening tensor-isomorphism benchmark](CrossedFlatteningBenchmark/BENCHMARK.md) — Benchmark of constructive exact tensor matching on published MatTen, Semeion and orthogonal-array inputs. Reports complete coverage censuses, exact witness checks, cold and resident runtime measurements against CaDiCaL and Z3 adapters, and the effect of fraction-free rational arithmetic.
+<!-- crossed-flattening-benchmark:end -->
+
 <!-- tensor-coordinate-recovery:start -->
 [Recovering hidden coordinates directly from tensors](TensorCoordinateRecovery/RESULTS.md) — AI-assisted informal proofs. Gives constructive ordinary and determinant-one isomorphism on a generic crossed-flattening class, maximal pairwise repetition extraction and recovery of labeled slice subspaces, stable block recovery in noisy data, and growing-width determinant-labeled pencil algorithms.
 <!-- tensor-coordinate-recovery:end -->
