@@ -350,3 +350,34 @@ Pending formalizations:
 
 [Proof](SingleGroupOCIClassification/Proof.md). Classifies every fixed single-group tensor tuple signature with rational input coordinates into deterministic polynomial-time, EqSLP-complete, or TOCI-complete cases. EqSLP is the zero test for integer straight-line programs and belongs to coRP. This extends the pure-power result to mixed slots and gives the one-group part of Lysikov and Walter's Question I.12 with a separate bit-complexity classification. [Original question](https://arxiv.org/html/2411.04639v2#S1.SS4)
 <!-- november-14-tensor-results:end -->
+
+
+<!-- november-14-frontier-round-two:start -->
+### Subcubic Homomorphisms Distinguish Graphs of Adjacency Nullity Two (informal)
+
+[Proof](SubcubicNullityTwo/Proof.md) and [exhaustive C++ verifier](SubcubicNullityTwo/CheckSmallSubcubic.cpp). Answers Maehara's Problem 2 affirmatively. Equal subcubic homomorphism counts imply isomorphism when the adjacency matrix has nullity at most two. The proof uses a tensor splitting theorem to reduce every possible exception to an exact calculation on at most eight vertices. Maehara's nullity-three examples show the bound is sharp. [Original question](https://arxiv.org/html/2610.09042v2#S5)
+
+### Quantum Nonvanishing and Logarithmic Degree for Graph Homomorphisms (informal)
+
+[Proof](BoundedDegreeHomomorphismNonvanishing/Proof.md). Answers Cai and Young's question following Corollary 6.2. For every degree bound of at least two, the equality and adjacency signature family is quantum-nonvanishing exactly when the adjacency matrix is nonsingular. The proof also determines the least adjacency nullity at which degree-$d$ probes can fail to distinguish nonisomorphic graphs for every $d\ge4$. The threshold is $2^d-d-2$. [Original question](https://arxiv.org/html/2509.10991v1#S6.SS1)
+
+### Classification of Tensor Orbit Closures for Products of General Linear Groups (informal)
+
+[Proof](ProductGroupOCIClassification/Proof.md). Answers the three concrete completeness questions in Lysikov and Walter's Question I.12. Every fixed product-group tensor signature on rational inputs gives a problem in P, one equivalent to integer straight-line-program zero testing (EqSLP), or a TOCI-complete problem. This gives a randomized dichotomy and identifies the additional complexity statement required for the deterministic dichotomy. [Original question](https://arxiv.org/html/2411.04639v2#S1.SS4)
+
+### Exponential Sparse Polynomial Calculus Lower Bounds for Tensor Isomorphism (informal)
+
+[Positive characteristic](TensorSparsePCBounds/Proof.md) and [characteristic zero](TensorSparsePCBounds/CharacteristicZero.md). Proves sparse monomial-count lower bounds exponential in the tensor side length for the standard 3-tensor isomorphism equations over every fixed field. The positive-characteristic construction also applies to the standard matrix conjugacy, congruence and equivalence equations. This addresses the lower-bound directions of Galesi, Grochow, Pitassi and She's Open Questions 7.2 and 7.3. [Original questions](https://arxiv.org/html/2305.19320#S7.SS2)
+
+### Orthogonal Tensor Isomorphism with Marginal Multiplicity Two (informal)
+
+[Proof](OrthogonalMultiplicityTwo/Proof.md). Gives a randomized polynomial bit-time algorithm from raw rational tensors of fixed order when every mode Gram eigenspace has dimension at most two, including tensors with arbitrary zeros. This addresses the real orthogonal multiplicity-two case of Chizewer, Everett, Mithal and Qiao's Open Problem 5. [Original question](https://arxiv.org/html/2603.27128v1#S1.SS5)
+
+### Explicit Output Lower Bound for Graph Separating Modules (informal)
+
+[Proof](GrochowUrismanExplicitOutput/Proof.md). Rules out a uniform runtime of $f(d)n^{o(d)}$ for outputting the expanded polynomial lists used in Grochow and Urisman's Theorem 3.1. This answers the sublinear-exponent version of the first part of Open Question 1.10 in that explicit output model. [Original question](https://arxiv.org/html/2606.26244v2)
+
+### Treewidth Alone Cannot Bound Symmetric Subgraph Circuits (informal)
+
+[Proof](GrochowUrismanSymmetricSubgraphCircuits/Proof.md). Answers the symmetric-circuit form of Grochow and Urisman's Open Question 1.11 in the negative. Matchings of treewidth one defeat every size bound of the proposed form, even with an arbitrary pattern-dependent factor. This is a deduction from Dawar, Pago and Seppelt's published classification for sublinear bipartite patterns. [Original question](https://arxiv.org/html/2606.26244v2)
+<!-- november-14-frontier-round-two:end -->
