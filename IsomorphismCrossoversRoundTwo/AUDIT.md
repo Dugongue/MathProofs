@@ -1,0 +1,23 @@
+# Four proofs from the second isomorphism crossover round
+
+These are AI-assisted informal proofs. The primary comparisons below concern exact theorem scope. Publication priority is unestablished.
+
+| Proof | Claim | Scope checked |
+|---|---|---|
+| [Finite-ring tensor isomorphism](tensors.md) | For fixed finite commutative $R$ of characteristic $p^e$, tensor isomorphism on explicit module presentations and on free modules is equivalent to ordinary TI over $\mathbb F_p$. | The weighted digit algebra retains carries. Pullback preserves truncated products, and the digit images recover actual points and maps. Construction uses sparse interpolation. Dependence on $p^e$ is fixed in the polynomial bound. |
+| [Symmetric quartic degeneration](geometry.md) | One symmetric balanced quartic of side $O(n^{\lceil d/4\rceil})$ preserves the full degeneration order of an ordinary tensor. Directed containment is NP-hard even when all polynomial invariants agree. | Both marker orbits are closed and explicit regular sections recover their fibers. The complexity claim uses rational inputs with complex orbit closures. Invariant equality holds within every fixed output format of the construction. |
+| [Abelian group canonization](boolean.md), [canonical labeling](boolean-labeling.md) and [nilpotent minimum generators](nilpotent-generators.md) | Isomorphism, cyclic basis extraction and canonical labeling for abelian Cayley tables are in logspace-uniform FOLL. The parallel greedy method also computes a minimum generating set for every nilpotent group in deterministic logspace and in uniform FOLL. | Quotient membership makes all greedy decisions in parallel. Sparse hashing lists the chosen bases. The nilpotent result supplies the constructive logspace algorithm requested in Collins–Grochow–Levet–Weiß Remark 7.7. |
+| [Central extensions beyond the socle](groups.md) | Polynomial time for the coprime permutation-kernel case and for the stated bounded-generator prime-detection condition, with witness, coset and count. Also treats bounded simple-factor orbit sizes. | Joint restriction detects scalar classes, each fiber keeps the two restrictions correlated, and coset intersection preserves common maps across primes. The unrestricted Open Problem 8.3 remains open in this proof. |
+
+The tensor checks cover 11,315 overweight digit coefficients over binary and ternary groups. The geometry checks reproduce trace-marker extraction in three exact rational fixtures. `check_group_restriction.py` compares whole-extension coboundaries with separate restrictions for four exact finite classes. `check_abelian_basis.py` checks basis recovery under 80 relabelings. These controls supplement the written arguments. All four results are informal.
+
+The [simplicity and socle proof](boolean-simple.md) gives a second answer to a published question on the Boolean route. Logspace-uniform FOLL recognizes simple groups from arbitrary Cayley tables, answering Collins–Levet Question 8.2. It also outputs every minimal normal subgroup and the nonabelian simple factors of the socle. The key width bound uses the Liebeck–Shalev normal subset theorem within simple direct factors. The circuit checks small product balls for closure and minimality, so it needs no uniform diameter claim for arbitrary groups.
+
+## Discovery across the DAG
+
+- Lucas's digit identity in Mathlib surfaced via a search for weighted digit carries, after Witt-vector source results had suggested the right filtration. It combines with a mixed-variance tensor system compiler to transfer ring-linear maps and tensor constructors.
+- The geometry proof combines the named-prefix compiler with regular sections for two closed marker orbits. Related sources were found in the earlier symplectic orbit work and in the signalizer functor and spectral projector catalogs. The new sections are proved directly.
+- The group proof draws on central-cover calculations from the simple amenable group catalog and on transfer and inflation–restriction declarations surfaced through the cohomology catalog. It combines these with the prior bit-position hypergraphs. The arguments in the proof are explicit.
+- The Boolean proof combines the table-power predicate and subgroup membership with deterministic gap counting and order-filtered basis extraction. Its hash layer uses pairwise independence on the full set of affine maps, independently of the table labeling.
+
+The companion [product-quotient proof](ProductQuotientProof.md) and [fixed-quotient lifting proof](AbelianExtensionLinearization.md) are included for the group theorem. This package contains project-authored proof text and checks, with credits to published ingredients. Source catalog hits are discovery evidence rather than Lean certificates.
