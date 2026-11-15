@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- balanced-ti-benchmarks:start -->
+[Balanced Tensor Isomorphism benchmark](BalancedTensorBenchmark/README.md) — Executable binary tensor-isomorphism pipeline using the balanced product trees. Includes an implicit encoder, smaller exact rank and spectral tags, exact native backends, and reproducible Traces and CaDiCaL comparisons. The implicit pipeline decided 106 of 106 inputs. With the same grouped-rank backend and a 250 ms native budget, balanced groups completed 105 of 106 and the half split completed 74. With a common fallback, the balanced layout reduced median order-12 runtime from 11.77 ms to 9.61 ms. The executable and smaller tag proofs were reviewed informally, with exact controls. The original reduction has its separate Lean certificate.
+<!-- balanced-ti-benchmarks:end -->
+
 <!-- isomorphism-crossovers-round-three:start -->
 [Cayley group membership and tensor isomorphism crossovers](IsomorphismCrossoversRoundThree/AUDIT.md) — AI-assisted informal proofs. Gives polynomial-size uniform circuits of depth o(log n) for subgroup membership in arbitrary Cayley tables and depth O(log log n) when the generated subgroup has bounded-rank nonabelian composition factors, addressing part of Stober–Thumm–Weiß Question 39(2). Reduces finite-field tensor isomorphism to literal scalar extensions in the same fixed characteristic at unchanged tensor dimensions. Establishes constant-degree Polynomial Calculus equivalence for graph isomorphism and Grigoriev bare multiplication tensors, a variant of Galesi–Grochow–Pitassi–She Question 7.5. Gives a fixed-signature algebraic reduction for special-linear orbit closure intersection of all matrix pencils, the one-mode-dimension-two case of Lysikov–Walter Question I.13, using Pervouchine’s invariant classification. Publication priority is unestablished.
 <!-- isomorphism-crossovers-round-three:end -->

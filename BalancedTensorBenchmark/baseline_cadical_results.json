@@ -1,0 +1,4084 @@
+{
+  "backend": "CaDiCaL 2.1.2",
+  "repeats_for_decisions": 3,
+  "timeout_s": 2,
+  "method": "Read tensor pair; build exact staged Tseitin CNF; start new native solver; verify SAT witness on original tensor.",
+  "summary": [
+    {
+      "format": [
+        2,
+        2,
+        2
+      ],
+      "cases": 2,
+      "statuses": {
+        "decided": 6
+      },
+      "median_decided_total_ms": 17.51634999527596,
+      "median_build_ms": 0.4894500016234815,
+      "median_decided_solver_with_process_ms": 15.808700016350485
+    },
+    {
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "cases": 4,
+      "statuses": {
+        "decided": 12
+      },
+      "median_decided_total_ms": 18.04019999690354,
+      "median_build_ms": 0.7001999911153689,
+      "median_decided_solver_with_process_ms": 16.14579999295529
+    },
+    {
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "cases": 4,
+      "statuses": {
+        "decided": 12
+      },
+      "median_decided_total_ms": 96.70920000644401,
+      "median_build_ms": 3.7611500010825694,
+      "median_decided_solver_with_process_ms": 91.70424999319948
+    },
+    {
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "cases": 4,
+      "statuses": {
+        "decided": 12
+      },
+      "median_decided_total_ms": 23.84064999932889,
+      "median_build_ms": 2.5064999936148524,
+      "median_decided_solver_with_process_ms": 19.74089999566786
+    },
+    {
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "cases": 4,
+      "statuses": {
+        "decided": 12
+      },
+      "median_decided_total_ms": 48.96225000265986,
+      "median_build_ms": 6.980699996347539,
+      "median_decided_solver_with_process_ms": 40.12730000249576
+    },
+    {
+      "format": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "cases": 4,
+      "statuses": {
+        "timeout": 3,
+        "decided": 3
+      },
+      "median_decided_total_ms": 1120.7590000121854,
+      "median_build_ms": 61.72840000363067,
+      "median_decided_solver_with_process_ms": 1053.0441000009887
+    },
+    {
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "cases": 2,
+      "statuses": {
+        "decided": 6
+      },
+      "median_decided_total_ms": 159.65659997891635,
+      "median_build_ms": 12.493349990108982,
+      "median_decided_solver_with_process_ms": 144.91684999666177
+    },
+    {
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "cases": 2,
+      "statuses": {
+        "decided": 1,
+        "timeout": 2
+      },
+      "median_decided_total_ms": 1799.9528000073042,
+      "median_build_ms": 68.8042999827303,
+      "median_decided_solver_with_process_ms": 1724.3630000157282
+    },
+    {
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "cases": 2,
+      "statuses": {
+        "timeout": 2
+      },
+      "median_decided_total_ms": null,
+      "median_build_ms": 470.9935000137193,
+      "median_decided_solver_with_process_ms": null
+    }
+  ],
+  "samples": [
+    {
+      "case": "d3-222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00018829997861757874,
+      "build_s": 0.0016159999941010028,
+      "dimacs_bytes": 2125,
+      "variables": 70,
+      "clauses": 202,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 6.0999998822808266e-05,
+      "solver_including_process_s": 0.01615069998661056,
+      "total_s": 0.02062989998375997,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d3-222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0001925000105984509,
+      "build_s": 0.000512800004798919,
+      "dimacs_bytes": 2125,
+      "variables": 70,
+      "clauses": 202,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 5.5899989092722535e-05,
+      "solver_including_process_s": 0.01602040001307614,
+      "total_s": 0.017783200019039214,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d3-222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00018730000010691583,
+      "build_s": 0.0004884999943897128,
+      "dimacs_bytes": 2125,
+      "variables": 70,
+      "clauses": 202,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 5.329999839887023e-05,
+      "solver_including_process_s": 0.01583230000687763,
+      "total_s": 0.01753459998872131,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d3-222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00019329998758621514,
+      "build_s": 0.0004765000194311142,
+      "dimacs_bytes": 2000,
+      "variables": 66,
+      "clauses": 190,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 5.299999611452222e-05,
+      "solver_including_process_s": 0.0156278999929782,
+      "total_s": 0.017341399972792715,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d3-222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00020569999469444156,
+      "build_s": 0.00048710001283325255,
+      "dimacs_bytes": 2000,
+      "variables": 66,
+      "clauses": 190,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 5.49999822396785e-05,
+      "solver_including_process_s": 0.015598199999658391,
+      "total_s": 0.01734220000798814,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d3-222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00018760000239126384,
+      "build_s": 0.0004904000088572502,
+      "dimacs_bytes": 2000,
+      "variables": 66,
+      "clauses": 190,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 5.2099989261478186e-05,
+      "solver_including_process_s": 0.01578510002582334,
+      "total_s": 0.017498100001830608,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-2222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0001880000054370612,
+      "build_s": 0.0007111000013537705,
+      "dimacs_bytes": 5408,
+      "variables": 153,
+      "clauses": 473,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 9.2999980552122e-05,
+      "solver_including_process_s": 0.016671800025505945,
+      "total_s": 0.018650800018804148,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-2222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0001947999990079552,
+      "build_s": 0.0006733000045642257,
+      "dimacs_bytes": 5408,
+      "variables": 153,
+      "clauses": 473,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 9.210000280290842e-05,
+      "solver_including_process_s": 0.016330899990862235,
+      "total_s": 0.01832880001165904,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-2222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00019200000679120421,
+      "build_s": 0.000672800000756979,
+      "dimacs_bytes": 5408,
+      "variables": 153,
+      "clauses": 473,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 9.439999121241271e-05,
+      "solver_including_process_s": 0.01569190001464449,
+      "total_s": 0.017617999983485788,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-2222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00019489999976940453,
+      "build_s": 0.0007324999896809459,
+      "dimacs_bytes": 6037,
+      "variables": 167,
+      "clauses": 521,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 9.190000128000975e-05,
+      "solver_including_process_s": 0.01584259999799542,
+      "total_s": 0.017840300017269328,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-2222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00020569999469444156,
+      "build_s": 0.0007103999960236251,
+      "dimacs_bytes": 6037,
+      "variables": 167,
+      "clauses": 521,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 9.210000280290842e-05,
+      "solver_including_process_s": 0.015969400003086776,
+      "total_s": 0.01801609998801723,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-2222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0001956000050995499,
+      "build_s": 0.0007057999901007861,
+      "dimacs_bytes": 6037,
+      "variables": 167,
+      "clauses": 521,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 9.479999425821006e-05,
+      "solver_including_process_s": 0.01669020002009347,
+      "total_s": 0.018657400010852143,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-2222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00019719998817890882,
+      "build_s": 0.000661700003547594,
+      "dimacs_bytes": 5410,
+      "variables": 153,
+      "clauses": 473,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.016636300017125905,
+      "total_s": 0.018470500013791025,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d4-2222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0001970999874174595,
+      "build_s": 0.0006780999829061329,
+      "dimacs_bytes": 5410,
+      "variables": 153,
+      "clauses": 473,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.015861099993344396,
+      "total_s": 0.017749999999068677,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d4-2222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00020089998724870384,
+      "build_s": 0.0006957000005058944,
+      "dimacs_bytes": 5410,
+      "variables": 153,
+      "clauses": 473,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.015822999994270504,
+      "total_s": 0.017701399978250265,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d4-2222-no-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00019639998208731413,
+      "build_s": 0.00072900002123788,
+      "dimacs_bytes": 6038,
+      "variables": 167,
+      "clauses": 521,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.016117299994220957,
+      "total_s": 0.018030199978966266,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d4-2222-no-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00019550000433810055,
+      "build_s": 0.0006983999919611961,
+      "dimacs_bytes": 6038,
+      "variables": 167,
+      "clauses": 521,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.016174299991689622,
+      "total_s": 0.01805020001484081,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d4-2222-no-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00019690001499839127,
+      "build_s": 0.0007019999902695417,
+      "dimacs_bytes": 6038,
+      "variables": 167,
+      "clauses": 521,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.016200799989746884,
+      "total_s": 0.01809940001112409,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d6-222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00021649998961947858,
+      "build_s": 0.002605600020615384,
+      "dimacs_bytes": 39969,
+      "variables": 939,
+      "clauses": 3115,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0003738999948836863,
+      "solver_including_process_s": 0.01924910000525415,
+      "total_s": 0.023462199984351173,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0002179000002797693,
+      "build_s": 0.002484199998434633,
+      "dimacs_bytes": 39969,
+      "variables": 939,
+      "clauses": 3115,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0007230000046547502,
+      "solver_including_process_s": 0.01982560000033118,
+      "total_s": 0.02449549999437295,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0003096000000368804,
+      "build_s": 0.004057599988300353,
+      "dimacs_bytes": 39969,
+      "variables": 939,
+      "clauses": 3115,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.00037510000402107835,
+      "solver_including_process_s": 0.019953799986978993,
+      "total_s": 0.02580219999072142,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-222222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0002300000051036477,
+      "build_s": 0.00250840000808239,
+      "dimacs_bytes": 40982,
+      "variables": 959,
+      "clauses": 3191,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.00037819999852217734,
+      "solver_including_process_s": 0.017963599995709956,
+      "total_s": 0.022134099999675527,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-222222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00022109999554231763,
+      "build_s": 0.0025070999981835485,
+      "dimacs_bytes": 40982,
+      "variables": 959,
+      "clauses": 3191,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.0003806000167969614,
+      "solver_including_process_s": 0.01865769998403266,
+      "total_s": 0.022788100002799183,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-222222-iso-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.000277700019069016,
+      "build_s": 0.004194300010567531,
+      "dimacs_bytes": 40982,
+      "variables": 959,
+      "clauses": 3191,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.00037140000495128334,
+      "solver_including_process_s": 0.01800009998260066,
+      "total_s": 0.02395920001436025,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00022149999858811498,
+      "build_s": 0.0024896999821066856,
+      "dimacs_bytes": 39966,
+      "variables": 939,
+      "clauses": 3115,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.01995710001210682,
+      "total_s": 0.023728800006210804,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d6-222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00022539999918080866,
+      "build_s": 0.0025058999890461564,
+      "dimacs_bytes": 39966,
+      "variables": 939,
+      "clauses": 3115,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.020242300000973046,
+      "total_s": 0.02401399999507703,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d6-222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00021580001339316368,
+      "build_s": 0.002436400012811646,
+      "dimacs_bytes": 39966,
+      "variables": 939,
+      "clauses": 3115,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.019461399991996586,
+      "total_s": 0.023122799990233034,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d6-222222-no-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00022069999249652028,
+      "build_s": 0.0025201999815180898,
+      "dimacs_bytes": 40977,
+      "variables": 959,
+      "clauses": 3191,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.01965619999100454,
+      "total_s": 0.023453300003893673,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d6-222222-no-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00022250000620260835,
+      "build_s": 0.002505199983716011,
+      "dimacs_bytes": 40977,
+      "variables": 959,
+      "clauses": 3191,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.0202047000057064,
+      "total_s": 0.023952499992446974,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d6-222222-no-01.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00021860000560991466,
+      "build_s": 0.0024842999991960824,
+      "dimacs_bytes": 40977,
+      "variables": 959,
+      "clauses": 3191,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.020679799985373393,
+      "total_s": 0.02441839998937212,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d8-22222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00026790000265464187,
+      "build_s": 0.014482500002486631,
+      "dimacs_bytes": 261046,
+      "variables": 5235,
+      "clauses": 17613,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0018958000000566244,
+      "solver_including_process_s": 0.09431939999922179,
+      "total_s": 0.1120377000188455,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d8-22222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00028719997499138117,
+      "build_s": 0.01237579999724403,
+      "dimacs_bytes": 261046,
+      "variables": 5235,
+      "clauses": 17613,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0018612999992910773,
+      "solver_including_process_s": 0.10473880000063218,
+      "total_s": 0.12033369997516274,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d8-22222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0002817999920807779,
+      "build_s": 0.012488099979236722,
+      "dimacs_bytes": 261046,
+      "variables": 5235,
+      "clauses": 17613,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0018649999983608723,
+      "solver_including_process_s": 0.09434510002029128,
+      "total_s": 0.11005280000972562,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d8-22222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0002928999892901629,
+      "build_s": 0.012439200014341623,
+      "dimacs_bytes": 261053,
+      "variables": 5235,
+      "clauses": 17613,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.2151255999924615,
+      "total_s": 0.2290824999799952,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d8-22222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.000322499981848523,
+      "build_s": 0.013443300005747005,
+      "dimacs_bytes": 261053,
+      "variables": 5235,
+      "clauses": 17613,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.18998520000604913,
+      "total_s": 0.20489039999665692,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d8-22222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.00028059998294338584,
+      "build_s": 0.012498600000981241,
+      "dimacs_bytes": 261053,
+      "variables": 5235,
+      "clauses": 17613,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.18509489999269135,
+      "total_s": 0.19897949998266995,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d10-2222222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0004989999870304018,
+      "build_s": 0.06434660000377335,
+      "dimacs_bytes": 1476458,
+      "variables": 26471,
+      "clauses": 89107,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.00948680000146851,
+      "solver_including_process_s": 1.7243630000157282,
+      "total_s": 1.7999528000073042,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d10-2222222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0005175999831408262,
+      "build_s": 0.0688042999827303,
+      "dimacs_bytes": 1476458,
+      "variables": 26471,
+      "clauses": 89107,
+      "status": "timeout",
+      "solver_including_process_s": 2.025597600004403,
+      "total_s": 2.096323299978394,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d10-2222222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0006083000043872744,
+      "build_s": 0.09879620000720024,
+      "dimacs_bytes": 1476448,
+      "variables": 26471,
+      "clauses": 89107,
+      "status": "timeout",
+      "solver_including_process_s": 2.0236036000133026,
+      "total_s": 2.124646299984306,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d12-222222222222-iso-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0015379000105895102,
+      "build_s": 0.5906915000232402,
+      "dimacs_bytes": 7858851,
+      "variables": 130979,
+      "clauses": 440505,
+      "status": "timeout",
+      "solver_including_process_s": 2.0243807999941055,
+      "total_s": 2.618595500010997,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d12-222222222222-no-00.ti",
+      "format": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "read_s": 0.0012567999947350472,
+      "build_s": 0.3512955000041984,
+      "dimacs_bytes": 7858844,
+      "variables": 130979,
+      "clauses": 440505,
+      "status": "timeout",
+      "solver_including_process_s": 2.0317360000044573,
+      "total_s": 2.3860137999872677,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d4-3333-iso-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00038809998659417033,
+      "build_s": 0.005410000012489036,
+      "dimacs_bytes": 62852,
+      "variables": 1350,
+      "clauses": 4579,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0004715999821200967,
+      "solver_including_process_s": 0.059762499993667006,
+      "total_s": 0.06746669998392463,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-3333-iso-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0003015999973285943,
+      "build_s": 0.0038422000070568174,
+      "dimacs_bytes": 62852,
+      "variables": 1350,
+      "clauses": 4579,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.00044750000233761966,
+      "solver_including_process_s": 0.06165859999600798,
+      "total_s": 0.067479799996363,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-3333-iso-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0002463999844621867,
+      "build_s": 0.005350699997507036,
+      "dimacs_bytes": 62852,
+      "variables": 1350,
+      "clauses": 4579,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0005949999904260039,
+      "solver_including_process_s": 0.05991599999833852,
+      "total_s": 0.06752439998672344,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-3333-iso-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00027409999165683985,
+      "build_s": 0.0038275000115390867,
+      "dimacs_bytes": 63994,
+      "variables": 1371,
+      "clauses": 4654,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.0004369000089354813,
+      "solver_including_process_s": 0.13968439999734983,
+      "total_s": 0.14538639999227598,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-3333-iso-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00023880001390352845,
+      "build_s": 0.004109299974516034,
+      "dimacs_bytes": 63994,
+      "variables": 1371,
+      "clauses": 4654,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.00043039998854510486,
+      "solver_including_process_s": 0.12768400003551506,
+      "total_s": 0.13363290001871064,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-3333-iso-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0002550999925006181,
+      "build_s": 0.0037452999968081713,
+      "dimacs_bytes": 63994,
+      "variables": 1371,
+      "clauses": 4654,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.00043289997847750783,
+      "solver_including_process_s": 0.13160780002363026,
+      "total_s": 0.13714020000770688,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d4-3333-no-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00023350000265054405,
+      "build_s": 0.0035256000119261444,
+      "dimacs_bytes": 62855,
+      "variables": 1350,
+      "clauses": 4579,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.11631290000514127,
+      "total_s": 0.12117630001739599,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d4-3333-no-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0002395999908912927,
+      "build_s": 0.0035071000165771693,
+      "dimacs_bytes": 62855,
+      "variables": 1350,
+      "clauses": 4579,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.12677569998777471,
+      "total_s": 0.13159710000036284,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d4-3333-no-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00024110000231303275,
+      "build_s": 0.003592599998228252,
+      "dimacs_bytes": 62855,
+      "variables": 1350,
+      "clauses": 4579,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.12016180000500754,
+      "total_s": 0.12507639999967068,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d4-3333-no-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00023689999943599105,
+      "build_s": 0.0037770000053569674,
+      "dimacs_bytes": 63999,
+      "variables": 1371,
+      "clauses": 4654,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.06570890001603402,
+      "total_s": 0.0708407000056468,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d4-3333-no-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0002410000015515834,
+      "build_s": 0.0037035999994259328,
+      "dimacs_bytes": 63999,
+      "variables": 1371,
+      "clauses": 4654,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.06575930002145469,
+      "total_s": 0.07079520000843331,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d4-3333-no-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00024120000307448208,
+      "build_s": 0.0036343999963719398,
+      "dimacs_bytes": 63999,
+      "variables": 1371,
+      "clauses": 4654,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.06709559998125769,
+      "total_s": 0.07224209999549203,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d6-333333-iso-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0004340999876148999,
+      "build_s": 0.045619399985298514,
+      "dimacs_bytes": 1027333,
+      "variables": 18112,
+      "clauses": 62308,
+      "status": "timeout",
+      "solver_including_process_s": 2.0240580000099726,
+      "total_s": 2.0716848999727517,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-333333-iso-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0006516000139527023,
+      "build_s": 0.05200260001583956,
+      "dimacs_bytes": 1036154,
+      "variables": 18250,
+      "clauses": 62797,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.007368199992924929,
+      "solver_including_process_s": 0.981781200011028,
+      "total_s": 1.0435452999954578,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-333333-iso-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0005582000012509525,
+      "build_s": 0.06429880001815036,
+      "dimacs_bytes": 1036154,
+      "variables": 18250,
+      "clauses": 62797,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.006349300005240366,
+      "solver_including_process_s": 1.193228399992222,
+      "total_s": 1.2659602999920025,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-333333-iso-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0005671000108122826,
+      "build_s": 0.059157999989110976,
+      "dimacs_bytes": 1036154,
+      "variables": 18250,
+      "clauses": 62797,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "verify_s": 0.006549900019308552,
+      "solver_including_process_s": 1.0530441000009887,
+      "total_s": 1.1207590000121854,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-333333-no-00.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.0007851000118535012,
+      "build_s": 0.07391829998232424,
+      "dimacs_bytes": 1027357,
+      "variables": 18112,
+      "clauses": 62308,
+      "status": "timeout",
+      "solver_including_process_s": 2.0245964000059757,
+      "total_s": 2.1008977000019513,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d6-333333-no-01.ti",
+      "format": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "read_s": 0.00046270000166259706,
+      "build_s": 0.07649429998127744,
+      "dimacs_bytes": 1036144,
+      "variables": 18250,
+      "clauses": 62797,
+      "status": "timeout",
+      "solver_including_process_s": 2.015336699987529,
+      "total_s": 2.0935456000152044,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d6-232322-iso-00.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.0003519000019878149,
+      "build_s": 0.006873800011817366,
+      "dimacs_bytes": 127492,
+      "variables": 2617,
+      "clauses": 8833,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.0009355999936815351,
+      "solver_including_process_s": 0.03428300001542084,
+      "total_s": 0.04356630000984296,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-232322-iso-00.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.00025439998717047274,
+      "build_s": 0.0065802999888546765,
+      "dimacs_bytes": 127492,
+      "variables": 2617,
+      "clauses": 8833,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.0009297000069636852,
+      "solver_including_process_s": 0.0341199999966193,
+      "total_s": 0.04294029998709448,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-232322-iso-00.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.00026050000451505184,
+      "build_s": 0.006906499998876825,
+      "dimacs_bytes": 127492,
+      "variables": 2617,
+      "clauses": 8833,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.0009407000034116209,
+      "solver_including_process_s": 0.033684800000628456,
+      "total_s": 0.04287440000916831,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-232322-iso-01.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.00026369999977760017,
+      "build_s": 0.006800599978305399,
+      "dimacs_bytes": 128203,
+      "variables": 2627,
+      "clauses": 8879,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.0009353000205010176,
+      "solver_including_process_s": 0.028686399979051203,
+      "total_s": 0.03780180000467226,
+      "repeat": 0,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-232322-iso-01.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.00027639998006634414,
+      "build_s": 0.007436999992933124,
+      "dimacs_bytes": 128203,
+      "variables": 2627,
+      "clauses": 8879,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.0009537000150885433,
+      "solver_including_process_s": 0.028897899988805875,
+      "total_s": 0.038775699998950586,
+      "repeat": 1,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-232322-iso-01.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.0003493999829515815,
+      "build_s": 0.007526300003519282,
+      "dimacs_bytes": 128203,
+      "variables": 2627,
+      "clauses": 8879,
+      "status": "decided",
+      "isomorphic": true,
+      "witness": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "verify_s": 0.0009435999963898212,
+      "solver_including_process_s": 0.029234299989184365,
+      "total_s": 0.039223300002049655,
+      "repeat": 2,
+      "expected": "yes"
+    },
+    {
+      "case": "d6-232322-no-00.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.0002510000194888562,
+      "build_s": 0.006914500001585111,
+      "dimacs_bytes": 127484,
+      "variables": 2617,
+      "clauses": 8833,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.04642270001932047,
+      "total_s": 0.05470629999763332,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d6-232322-no-00.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.00026729999808594584,
+      "build_s": 0.006975600001169369,
+      "dimacs_bytes": 127484,
+      "variables": 2617,
+      "clauses": 8833,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.04632140000467189,
+      "total_s": 0.05472469999222085,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d6-232322-no-00.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.00028390000807121396,
+      "build_s": 0.00698579999152571,
+      "dimacs_bytes": 127484,
+      "variables": 2617,
+      "clauses": 8833,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.04597159998957068,
+      "total_s": 0.05435819999547675,
+      "repeat": 2,
+      "expected": "no"
+    },
+    {
+      "case": "d6-232322-no-01.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.0002514999941922724,
+      "build_s": 0.007262400002218783,
+      "dimacs_bytes": 128217,
+      "variables": 2627,
+      "clauses": 8879,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.06423369998810813,
+      "total_s": 0.07286200000089593,
+      "repeat": 0,
+      "expected": "no"
+    },
+    {
+      "case": "d6-232322-no-01.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.0002550999925006181,
+      "build_s": 0.007507400005124509,
+      "dimacs_bytes": 128217,
+      "variables": 2627,
+      "clauses": 8879,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.06468090001726523,
+      "total_s": 0.07358209998346865,
+      "repeat": 1,
+      "expected": "no"
+    },
+    {
+      "case": "d6-232322-no-01.ti",
+      "format": [
+        2,
+        3,
+        2,
+        3,
+        2,
+        2
+      ],
+      "read_s": 0.0002655999851413071,
+      "build_s": 0.007338700001128018,
+      "dimacs_bytes": 128217,
+      "variables": 2627,
+      "clauses": 8879,
+      "status": "decided",
+      "isomorphic": false,
+      "solver_including_process_s": 0.06463969999458641,
+      "total_s": 0.07335960000636987,
+      "repeat": 2,
+      "expected": "no"
+    }
+  ]
+}
