@@ -323,3 +323,30 @@ Pending formalizations:
 
 [Proof](DeterminantCosetsByCastling/PROOF.md). Computes the joint transporter determinant coset over F3 with ordinary TI decision in time exponential only in the smaller flattening rank or image codimension, and polynomial in the written input size. Includes rank-deficient flattenings and arbitrary stabilizers, with a separate polynomial test for anchored pencils with a squarefree trace operator. Partial progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9. [Original question](https://arxiv.org/html/2306.03135v2#S1.SS5)
 <!-- determinant-cosets-by-castling:end -->
+
+
+<!-- november-14-tensor-results:start -->
+### Degree Raising for Form Equivalence (informal)
+
+[Proof](FormDegreeRaising/Proof.md). Resolves the fixed-degree reduction proposed in Appendix A of Grochow and Qiao's *Tensor Isomorphism-Completeness*. The proposed monomial padding works exactly when every nonzero (d-m)-th power is an m-th power. A replacement kernel reduction works over every field for each fixed m < d. [Original question](https://doi.org/10.1137/21M1441110)
+
+### Linear-Length Reductions Between Classical Tensor Actions (informal)
+
+[Proof](FiniteUnitaryLinearLength/Proof.md). Answers the linear-length question in Chen, Grochow, Qiao, Tang and Zhang's Section 1.5 for standard unitary actions over finite fields and over the complex numbers, and standard orthogonal actions over the reals. Fixed couplings and rank markers give reductions in all directions with linear output side lengths. [Original question](https://arxiv.org/html/2306.03135v2#S1.SS5)
+
+### A Single Fully Symmetric Cubic Is TOCI-Complete (informal)
+
+[Proof](SymmetricCubicOCI/Proof.md). Strengthens our earlier answer to Lysikov and Walter's Question I.14. Orbit closure intersection for one fully symmetric tensor under the complex orthogonal group is TOCI-complete in each fixed degree at least three. The reduction packs two unrestricted cubics into a single symmetric cubic using closed marker orbits and the Laplacian splitting. [Original question](https://arxiv.org/html/2411.04639v2#S1.SS4)
+
+### Exact Tensor Isomorphism with Arbitrarily Small Discrete Noise (informal)
+
+[Proof](SmoothedOrthogonalUnitaryTI/Proof.md). Gives a bounded rational-grid version of the exact smoothed decision problem in Chizewer, Everett, Mithal and Qiao's Open Problem 2. The algorithm is deterministic and polynomial in the input bits. With high probability over arbitrarily small noise added to the first tensor, it decides orthogonal or unitary isomorphism for every second tensor. This complements the Gaussian result in [MathProofs Crossovers](MathProofsCrossovers/PROOF.md). [Original question](https://arxiv.org/html/2603.27128v1#S1.SS5)
+
+### Pure-Power Tensor Orbit-Closure Dichotomy (informal)
+
+[Proof](PureTensorOCIDichotomy/Proof.md). Classifies the pure-power single-group part of Lysikov and Walter's Question I.12. For fixed primal and dual maximum orders, orbit closure intersection is TOCI-complete if both orders are at least two and one is at least three. The remaining pure-power cases are in polynomial time over rational or fixed number field coefficients. [Original question](https://arxiv.org/html/2411.04639v2#S1.SS4)
+
+### Classification of Tensor Orbit Closures for One General Linear Group (informal)
+
+[Proof](SingleGroupOCIClassification/Proof.md). Classifies every fixed single-group tensor tuple signature with rational input coordinates into deterministic polynomial-time, EqSLP-complete, or TOCI-complete cases. EqSLP is the zero test for integer straight-line programs and belongs to coRP. This extends the pure-power result to mixed slots and gives the one-group part of Lysikov and Walter's Question I.12 with a separate bit-complexity classification. [Original question](https://arxiv.org/html/2411.04639v2#S1.SS4)
+<!-- november-14-tensor-results:end -->
