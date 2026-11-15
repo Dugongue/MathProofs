@@ -491,3 +491,8 @@ Pending formalizations:
 
 [Proof](LocalZariskiClosureNumberFields/Proof.md). Uses Faltings and Mordell–Lang to describe local Zariski closures for projective curves and subvarieties of abelian varieties. It proves simultaneous-place recurrence outside a finite exceptional set for dimension-one Diophantine presentations and identifies Mordell–Weil input reusable in the Manin formalization.
 <!-- lean-library-transfers-november-14:end -->
+
+
+<!-- ti-determinant-profiles-literature:start -->
+[Tensor Determinant Profiles](TensorDeterminantProfileMethods/PROOF.md) — Partial progress on Chen–Grochow–Qiao–Tang–Zhang, Open Question 1.9. Four informal methods give exact determinant tests on fixed-finite-field classes using unordered pencil factors, Frobenius frames, semisimple derivation envelopes and ordered form tuples. Includes polynomial-size ordinary-TI instances on the stated classes and an adaptive reduction for arbitrary split-factor matches with a small common kernel. Unrestricted SL-TI containment remains open.
+<!-- ti-determinant-profiles-literature:end -->
