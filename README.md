@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- subquadratic-exponent-ring-tensor-isomorphism:start -->
+[Subquadratic-Exponent Tensor Isomorphism over Fixed Integer Moduli](SubquadraticExponentRingTensorIsomorphism/PROOF.md) — Gives an exact $2^{O(n^{7/4}\log(n+2))}$-time algorithm for unrestricted free three-tensor isomorphism over every fixed even integer modulus, including $\mathbb Z/4\mathbb Z$, and a $2^{O(n^{3/2}\log^2(n+2))}$ bound for fixed odd moduli. Combines linear-size alternating markers, short probe lists and ordered tuple isometry. Includes a separate [class-2 group encoding](SubquadraticExponentRingTensorIsomorphism/GROUP.md) and exact finite checks for that encoding. Informal proof with independent mathematical audits. Publication priority unestablished.
+<!-- subquadratic-exponent-ring-tensor-isomorphism:end -->
+
 <!-- prime-power-tensor-isomorphism:start -->
 [Prime-Power Tensor Isomorphism](PrimePowerTensorIsomorphism/PROOF.md) — Reduces unrestricted tensor isomorphism over $\mathbb Z/4\mathbb Z$ to ordinary binary tensor isomorphism by retaining the carry in a quadratic augmentation quotient. Proves deterministic polynomial-time many-one equivalence of the free and arbitrary-module versions over fixed finite commutative rings with the same prime divisors of their characteristics. The [audit](PrimePowerTensorIsomorphism/AUDIT.md) credits the established carry machinery and explains the connection to the same-characteristic finite-field clause of Grochow–Qiao’s Open Question 7.6. Informal proof. Publication priority unestablished.
 <!-- prime-power-tensor-isomorphism:end -->
