@@ -457,3 +457,22 @@ Pending formalizations:
 
 [Proof](SLEverywhereSingularPencils/Proof.md). Gives a deterministic same-field many-one equivalence between balanced unit-side multiplication-tensor SL-TI and a raw class of everywhere-singular square pencils. A binary-form marker, ordered Kronecker blocks and determinant-preserving shears implement the reduction in linear mode dimensions at fixed field size. It preserves SL-TI with no supplied anchors.
 <!-- tensor-scalar-shear-and-singular-reductions-november-14:end -->
+
+
+<!-- marked-shears-and-frobenius-determinants-november-14:start -->
+### Exact Marked Shears via Quotient Flags and Spectral Shifts (informal)
+
+[Proof](SLMarkedShearAlgorithms/Proof.md). Gives a polynomial-time ordinary-TI Turing reduction for the full determinant profile of any prescribed marked-subspace and label-quotient branch, with arbitrary nonscalar shears. Spectral compression lists at most n feasible scalar shifts on an n-dimensional matrix tuple. It gives oracle-free algorithms for several nonscalar anchor classes.
+
+### Determinant Profiles for Long Nilpotent Anchors (informal)
+
+[Proof](SLLongNilpotentAnchors/Proof.md). Gives an oracle-free polynomial-time determinant-profile algorithm for prescribed branches with a commutative split local anchor algebra, free modules, commuting residual slices, and residual endomorphism quotient a product of base fields. The nilpotence length and radical dimensions are unrestricted.
+
+### Algebra-Isomorphism Determinants from the Frobenius Socle (informal)
+
+[Proof](SLFrobeniusSocle/Proof.md). Uses the right regular module of a Frobenius algebra to read the determinant square from socle norms, with polynomial-time ordinary-TI tests for bounded numbers of simple factors and logarithmic simple matrix sizes. Over any fixed field complementary radical-annihilator filtration cells cancel in pairs, leaving exact determinant tests when the diagonal cells are small or admit the specified alternating forms.
+
+### Determinant-One Isomorphism of Local Frobenius Algebras (informal)
+
+[Proof](SLLocalFrobeniusTwists/Proof.md). Gives a single ordinary TI test for determinant-one isomorphism of every local Frobenius algebra in characteristic two. For odd fields, a square-zero filtration and the residue-field twists of its middle multiplication remove paired determinants, with exact width-free examples over quadratic residue fields.
+<!-- marked-shears-and-frobenius-determinants-november-14:end -->
