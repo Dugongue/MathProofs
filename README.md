@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- central-extension-cosets:start -->
+[Group isomorphism through central extension cosets](CentralExtensionCosets/PROOF.md) — AI-assisted informal proof, not Lean-verified; publication priority unestablished. Combines finite-ring unit orbits, prime-power subgroup transport, and extension cohomology to process solvable cosets of quotient maps in polynomial Cayley-table time for central kernels. For raw class-two groups, gives polynomial time times complete-flag counts for the equal-order cyclic blocks of the central quotient; in particular, polynomial time when those multiplicities are bounded, without a bound on total rank or exponents. Includes witnesses, full isomorphism cosets and exact counts. Does not claim an unrestricted record or closure of the general abelian-radical or TI versus SL-TI questions.
+<!-- central-extension-cosets:end -->
+
 <!-- abelian-extension-linearization:start -->
 [Polynomial isomorphism of diagrams of abelian group extensions](AbelianExtensionLinearization/PROOF.md) — AI-assisted informal proof. Reduces simultaneous isomorphism of abelian extensions, with supplied quotient isomorphisms, commuting arrows, and marked elements, to one finite-module isomorphism instance. Decision and search are polynomial in the bit length of explicit quotient/action/cocycle data, with binary-encoded kernels. Cayley-table inputs also admit full cosets and exact counts without computing ring unit groups. Answers Skresanov’s quotient-generator question and the Theorem 6.11 extension requested in the first part of Grochow–Qiao Open Problem 8.1; does not settle its unrestricted polynomial-time question.
 <!-- abelian-extension-linearization:end -->
