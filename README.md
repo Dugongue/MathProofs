@@ -496,3 +496,8 @@ Pending formalizations:
 <!-- ti-determinant-profiles-literature:start -->
 [Tensor Determinant Profiles](TensorDeterminantProfileMethods/PROOF.md) — Partial progress on Chen–Grochow–Qiao–Tang–Zhang, Open Question 1.9. Four informal methods give exact determinant tests on fixed-finite-field classes using unordered pencil factors, Frobenius frames, semisimple derivation envelopes and ordered form tuples. Includes polynomial-size ordinary-TI instances on the stated classes and an adaptive reduction for arbitrary split-factor matches with a small common kernel. Unrestricted SL-TI containment remains open.
 <!-- ti-determinant-profiles-literature:end -->
+
+
+<!-- raw-residue-determinant-tests:start -->
+[Determinant Constraints on Raw Residue Tensors](RawResidueDeterminantTests/PROOF.md) — Partial progress on Chen–Grochow–Qiao–Tang–Zhang, Open Question 1.9. Informal proofs of one-instance reductions for intrinsic block graphs, semilinear adjoint fields and radical filtrations under explicit conditions. An additional exact polynomial-time algorithm uses low-rank moments and applies to a growing family with absolutely irreducible determinants and scalar stabilizers. The unrestricted reduction remains open.
+<!-- raw-residue-determinant-tests:end -->
