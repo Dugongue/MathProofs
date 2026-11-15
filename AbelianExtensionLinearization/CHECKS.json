@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "extension_inputs": 36,
+  "pair_checks": 180,
+  "isomorphic_pairs": 39,
+  "nonisomorphic_pairs": 141,
+  "marked_checks": 540,
+  "nonminimal_annihilator_checks": 12,
+  "diagram_loop_checks": 31,
+  "scope": "Finite controls only; not a formal proof or implementation of the polynomial module-isomorphism algorithm."
+}

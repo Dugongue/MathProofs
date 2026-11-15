@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- abelian-extension-linearization:start -->
+[Polynomial isomorphism of diagrams of abelian group extensions](AbelianExtensionLinearization/PROOF.md) — AI-assisted informal proof. Reduces simultaneous isomorphism of abelian extensions, with supplied quotient isomorphisms, commuting arrows, and marked elements, to one finite-module isomorphism instance. Decision and search are polynomial in the bit length of explicit quotient/action/cocycle data, with binary-encoded kernels. Cayley-table inputs also admit full cosets and exact counts without computing ring unit groups. Answers Skresanov’s quotient-generator question and the Theorem 6.11 extension requested in the first part of Grochow–Qiao Open Problem 8.1; does not settle its unrestricted polynomial-time question.
+<!-- abelian-extension-linearization:end -->
+
 <!-- group-graph-tensor-crossovers:start -->
 [Group, graph, and tensor isomorphism crossovers](GroupGraphTensorCrossovers/PROOF.md) — AI-assisted informal proofs. Answers Skresanov's generator-bound question for lifting over arbitrary abelian kernels and the abelian-radical extension part of Grochow–Qiao Open Problem 8.1. Gives NP-completeness of succinct Fitting-free Group Epimorphism even on a family with polynomial-time isomorphism, exact epimorphism counting for coprime elementary-abelian layers from Cayley tables, and polynomial Frattini-coset lifting under bounded composition factors. The graph-tensor constructions preserve exact transporters and permutation parity, allow raw tensor decoding, and transfer a linear refutation-degree lower bound to sparse cubic-form equivalence.
 <!-- group-graph-tensor-crossovers:end -->
