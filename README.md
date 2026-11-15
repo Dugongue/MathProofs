@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- prime-power-tensor-isomorphism:start -->
+[Prime-Power Tensor Isomorphism](PrimePowerTensorIsomorphism/PROOF.md) — Reduces unrestricted tensor isomorphism over $\mathbb Z/4\mathbb Z$ to ordinary binary tensor isomorphism by retaining the carry in a quadratic augmentation quotient. Proves deterministic polynomial-time many-one equivalence of the free and arbitrary-module versions over fixed finite commutative rings with the same prime divisors of their characteristics. Includes an independent exhaustive check of the quadratic encoding on small modules. Informal proof. Publication priority unestablished.
+<!-- prime-power-tensor-isomorphism:end -->
+
 <!-- crossed-flattening-benchmark:start -->
 [Crossed-flattening tensor-isomorphism benchmark](CrossedFlatteningBenchmark/BENCHMARK.md) — Benchmark of constructive exact tensor matching on published MatTen, Semeion and orthogonal-array inputs. Reports complete coverage censuses, exact witness checks, cold and resident runtime measurements against CaDiCaL and Z3 adapters, and the effect of fraction-free rational arithmetic.
 <!-- crossed-flattening-benchmark:end -->
