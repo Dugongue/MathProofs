@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-isomorphism-research-bets:start -->
+[Four algorithmic results on pencils, groups, channels, and designs](FourIsomorphismResearchBets/RESULTS.md) — AI-assisted informal proofs. Constructs rational binary-pencil transporters and isolates the determinant-one norm conditions, recovers rank-metric quotient information with group Weisfeiler–Leman refinement, derives quantitative separation and graph recovery for noisy isospectral Choi matrices, and reconstructs vectorial bent functions from unlabeled vanishing-flat designs.
+<!-- four-isomorphism-research-bets:end -->
+
 <!-- tensor-isomorphism-advances:start -->
 [Four advances in tensor, group, and geometric isomorphism](TensorIsomorphismAdvances/RESULTS.md) — AI-assisted informal proofs. Gives unrestricted tensor-isomorphism encodings by pure quadratic Hamiltonian shears and smooth rational Fano varieties of Picard rank two, a compact class-two group family with fixed commuting relations, character-degree multiplicities and bounded-generator probe counts, and an exact number-field norm obstruction in regular semisimple determinant-one binary pencils.
 <!-- tensor-isomorphism-advances:end -->
