@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- cayley-circuits-and-decompositions:start -->
+[Cayley-table lower bounds, quasigroup decomposition, and characteristic-two symmetrization](CayleyCircuitsAndDecompositions/PROOF.md) — AI-assisted informal proofs. Answers Grochow–Kardeş–Levet Question 7.1 and strengthens the bound for Question 7.3 with $2^{\Omega(\sqrt n)}$ lower bounds for both CNFs and DNFs on valid Abelian Cayley tables along an infinite sequence of orders $n=3^r$. Answers Johnson–Levet–Vojtěchovský–Widholm Question 7.4 with a deterministic polynomial-time algorithm for fully refined direct product decomposition of arbitrary quasigroups. Answers the symmetrization part of Ivanyos–Qiao's characteristic-two question constructively over every characteristic-two field. Also refutes Osterlund's Loewy-length conjecture for regular-module tensor products and resolves the Frattini-class-two case of Carlson–Kovács over arbitrary coefficient fields of characteristic $p$.
+<!-- cayley-circuits-and-decompositions:end -->
+
 <!-- cayley-table-and-group-algebra:start -->
 [Cayley-table and modular group algebra results](CayleyTableAndGroupAlgebra/PROOF.md) — AI-assisted informal proofs answering Johnson, Levet, Vojtěchovský and Widholm’s Questions 7.1–7.3 and 7.5. They prove bounded count-free Weisfeiler–Leman dimension for uniquely decomposable groups, constant-round counting Weisfeiler–Leman without uniqueness, and deterministic logspace algorithms for fully refined group decomposition and central quasigroup isomorphism. The two Weisfeiler–Leman results apply to groups with boundedly generated indecomposable factors. They answer García-Lucas, del Río and Sakurai’s Remark 7 over all characteristic-p fields. The collection also gives sharp Cayley-table recovery bounds, including a negative answer to Huh’s Open Problem 2 under scalar tensor-entry sampling. The modular group algebra proof recovers Sakurai’s earlier answer to Question D.
 <!-- cayley-table-and-group-algebra:end -->
