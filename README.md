@@ -5,6 +5,16 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- generation-and-algebraic-equivalence:start -->
+[Exact Generation, Principal Minors, and Algebraic Equivalence](GenerationAndAlgebraicEquivalence/README.md) — Informal proofs.
+
+- [Exact magma generation](GenerationAndAlgebraicEquivalence/ExactMagmaGeneration.md) is DP-complete. Answers Collins–Grochow–Levet–Weiß, §7.3.
+- [Regular transformation semigroup rank](GenerationAndAlgebraicEquivalence/RegularTransformationSemigroups.md) satisfies the Stirling-number bound of Gray's Open Problem 2.
+- [Characteristic-two symmetrization](GenerationAndAlgebraicEquivalence/CharacteristicTwoSymmetrization.md) has a constructive deterministic polynomial-time algorithm. This covers the symmetrization task of Ivanyos–Qiao's first open problem.
+- [Extension-field code equivalence to lattices](GenerationAndAlgebraicEquivalence/CodeEquivalenceToLattice.md) gives bit-polynomial reductions for the permutation and signed-permutation variants.
+- [Principal-minor oracle reconstruction](GenerationAndAlgebraicEquivalence/PrincipalMinorOracle.md) requires exponentially many individual-minor queries, answering the oracle question of Aravind et al.
+<!-- generation-and-algebraic-equivalence:end -->
+
 <!-- four-tensor-and-group-isomorphism-results:start -->
 [Four Tensor and Group Isomorphism Results](FourTensorAndGroupIsomorphismResults/README.md) — Four informal proofs.
 
