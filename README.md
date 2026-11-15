@@ -438,3 +438,22 @@ Pending formalizations:
 
 [Proof](SLRadicalSymbolDeterminants/Proof.md). Builds further module equations from paired anchored slices and a prescribed label quotient map. Extracts the equations through the radical layers and removes unknown scalar shears by a characteristic-power polynomial. A growing example with a nonsemisimple anchor algebra and an unbounded initial active width has new width one.
 <!-- tensor-determinant-character-compilers-november-14:end -->
+
+
+<!-- tensor-scalar-shear-and-singular-reductions-november-14:start -->
+### Determinant Cosets from Marked Slice Modules (informal)
+
+[Proof](SLSliceShearCosets/Proof.md). Gives a deterministic polynomial-time algorithm for simultaneous conjugacy of ordered matrix tuples up to independent scalar shifts. It computes all shifts and the exact determinant coset. This closes the marked scalar-shear case for tensor pencils with an invertible anchor and prescribed label quotient. A separate iterative bimodule relaxation gives one ordinary TI instance on broader marked branches under a computable determinant-image or surviving-width condition.
+
+### Exact Determinant Profiles from Singular Quadratic Factors (informal)
+
+[Proof](SLRawSingularFactors/Proof.md). Gives a raw polynomial-time determinant-profile algorithm over each fixed finite field, including even characteristic, under a local determinant-factor and affine-dimension criterion. The pencil may be rectangular or identically singular. Only the indecomposable regular summands supplying the chosen marks need bounded-degree determinant factors.
+
+### Nonadaptive Determinant-Profile Assembly for Intrinsic Tensor Summands (informal)
+
+[Proof](SLParallelSummandAssembly/Proof.md). Assembles the exact determinant profile using O(N) parallel ordinary TI queries for N summands of arbitrary unknown isotypes, given local many-one determinant tests. It also gives a one-instance construction when the number of isotypes or the exact class multiplicities are supplied, and a separate one-instance result when object-wise local tests need only a bounded number of orientation corrections.
+
+### Special-Linear Tensor Isomorphism on Everywhere-Singular Pencils (informal)
+
+[Proof](SLEverywhereSingularPencils/Proof.md). Gives a deterministic same-field many-one equivalence between balanced unit-side multiplication-tensor SL-TI and a raw class of everywhere-singular square pencils. A binary-form marker, ordered Kronecker blocks and determinant-preserving shears implement the reduction in linear mode dimensions at fixed field size. It preserves SL-TI with no supplied anchors.
+<!-- tensor-scalar-shear-and-singular-reductions-november-14:end -->
