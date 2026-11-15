@@ -419,3 +419,22 @@ Pending formalizations:
 
 [Proof](SLCartanPfaffian/Proof.md). Gives a deterministic same-field many-one reduction for the total determinant under a bounded-degree, bounded-count Pfaffian factor promise. A growing raw family has a polynomial-time filter for all determinant characters, including the weights arising from the triangular multiplication construction.
 <!-- step-17-determinant-reductions-november-14:end -->
+
+
+<!-- tensor-determinant-character-compilers-november-14:start -->
+### Determinant Characters from Intrinsic Tensor Summands (informal)
+
+[Proof](SLIntrinsicSummands/Proof.md). Recovers the intrinsic direct summands of a concise tensor and compiles their exact determinant test into one ordinary TI instance when polynomially computed invariant buckets have logarithmic size and the local character tests have many-one reductions. A local-centroid terminal reads the determinant through Jordan-length quotients of an intrinsic principal nilpotent ideal. Omitting optional normalization padding reduces arbitrary tensors to a constant list of concise indecomposable multiplication-tensor character tests.
+
+### Determinant Characters from Singular Anchored Slices (informal)
+
+[Proof](SLSingularAnchorFlags/Proof.md). Gives a single ordinary TI instance for ordered anchored slices when the relevant simple-module widths are logarithmic. It allows singular and rectangular slices and arbitrary finite center degrees. It also recovers the anchor choices from raw inputs in an everywhere-singular family built from left and right Kronecker blocks. High multiplicities of just two such blocks can encode an arbitrary concise prescribed-character instance.
+
+### Raw Tensor Matching from a Tuple of Determinant Factors (informal)
+
+[Proof](SLMatchingDeterminantFactors/Proof.md). Computes the full transporter determinant profile in polynomial time over each fixed odd finite field when the absolute determinant factors have bounded degree and a constant tuple of recovered factors gives a nonsingular rational combination and a logarithmic-dimensional space of relative intertwiners. Additional marks can be defined over separate extension fields. No anchors are supplied. An explicit growing family has scalar stabilizer, no rank-one slice, and only singular quadratic determinant factors.
+
+### Determinant Characters from Radical Symbols of Anchored Pencils (informal)
+
+[Proof](SLRadicalSymbolDeterminants/Proof.md). Builds further module equations from paired anchored slices and a prescribed label quotient map. Extracts the equations through the radical layers and removes unknown scalar shears by a characteristic-power polynomial. A growing example with a nonsemisimple anchor algebra and an unbounded initial active width has new width one.
+<!-- tensor-determinant-character-compilers-november-14:end -->
