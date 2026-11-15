@@ -381,3 +381,22 @@ Pending formalizations:
 
 [Proof](GrochowUrismanSymmetricSubgraphCircuits/Proof.md). Answers the symmetric-circuit form of Grochow and Urisman's Open Question 1.11 in the negative. Matchings of treewidth one defeat every size bound of the proposed form, even with an arbitrary pattern-dependent factor. This is a deduction from Dawar, Pago and Seppelt's published classification for sublinear bipartite patterns. [Original question](https://arxiv.org/html/2606.26244v2)
 <!-- november-14-frontier-round-two:end -->
+
+
+<!-- determinant-character-reductions-november-14:start -->
+### Every Determinant Character Reduces to Unit-Side SL-TI (informal)
+
+[Proof](SLCharacterNormalization/Proof.md). Gives a deterministic same-field reduction for every prescribed determinant character over each fixed finite field, including when $q-1$ has repeated prime factors. The target is a pair of associative multiplication tensors of equal cubic side length congruent to one modulo $q-1$. The side grows linearly in the sum of the input sides at fixed field size. This restricts the targets needed for the forward direction of Chen, Grochow, Qiao, Tang and Zhang's Open Question 1.9. [Original question](https://arxiv.org/html/2306.03135v2#S1.SS5)
+
+### Determinant Recovery from Paired Bilinear Forms (informal)
+
+[Proof](SLResidualBilinearForms/Proof.md). Gives an exact ordinary-TI construction for anchored branches over each fixed finite field. It reads the determinant on a large residual space through the adjoint algebra of a paired tuple of bilinear forms. The exterior-algebra cost only depends on the dimensions of the simple factors whose determinant contributions survive. Explicit growing families separate this criterion from the earlier successive-radical bound.
+
+### Raw Anchor Recovery from Rank-One Slice Frames (informal)
+
+[Proof](SLRawRankOneAnchors/Proof.md). Gives a deterministic polynomial-time determinant-profile algorithm for a raw pencil class with a large rank-one frame, a bounded-dimensional quotient, and a checkable matrix-generation condition. The proof recovers the frame and generates matched anchors from the original tensors. The class includes growing scalar-adjoint examples up to arbitrary independent basis changes.
+
+### Determinant Characters from Quadratic Pencil Factors (informal)
+
+[Proof](SLQuadraticPencilCharacters/Proof.md). Gives a same-field many-one reduction from SL-TI to ordinary TI over $\mathbb F_3$ on an odd balanced pencil class. The geometric determinant factors have bounded degree and a fixed common field of definition. Two quadratic factors whose matrix ratio has squarefree characteristic polynomial suffice, even with an unbounded number of other factors. The construction recovers the relevant factors and reads the label determinant using the resulting commutative algebra.
+<!-- determinant-character-reductions-november-14:end -->
