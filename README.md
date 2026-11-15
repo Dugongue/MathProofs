@@ -5,6 +5,17 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-tensor-and-group-isomorphism-results:start -->
+[Four Tensor and Group Isomorphism Results](FourTensorAndGroupIsomorphismResults/README.md) — Four informal proofs.
+
+- [Class-two groups with bounded derived exponent](FourTensorAndGroupIsomorphismResults/group.md). Gives $N^{\widetilde O(\sqrt{\log_p N})}$ isomorphism time for odd $p$ with bounded commutator exponent and for $2$-groups with elementary abelian derived subgroup. The groups themselves may have unbounded exponent.
+- [Determinant-resolved tensor isomorphism](FourTensorAndGroupIsomorphismResults/sl.md). Searches and counts transporters by determinant triple over fixed finite commutative rings with a subquadratic exponent in the side length.
+- [Balanced order reduction](FourTensorAndGroupIsomorphismResults/order.md). Changes order-$d$ free tensors to three-tensors with side length $O(d^6 n^{\lceil d/3\rceil})$ over any commutative ring.
+- [Nonfree tensor isomorphism](FourTensorAndGroupIsomorphismResults/torsion.md). Gives subquadratic-exponent time for tensors in arbitrary explicitly presented modules over fixed finite principal ideal rings, using the original generator counts.
+
+Internal mathematical audits and attribution included. Publication priority unestablished.
+<!-- four-tensor-and-group-isomorphism-results:end -->
+
 <!-- subquadratic-exponent-ring-tensor-isomorphism:start -->
 [Subquadratic-Exponent Tensor Isomorphism over Fixed Integer Moduli](SubquadraticExponentRingTensorIsomorphism/PROOF.md) — Gives an exact $2^{O(n^{7/4}\log(n+2))}$-time algorithm for unrestricted free three-tensor isomorphism over every fixed even integer modulus, including $\mathbb Z/4\mathbb Z$, and a $2^{O(n^{3/2}\log^2(n+2))}$ bound for fixed odd moduli. Combines linear-size alternating markers, short probe lists and ordered tuple isometry. Includes a separate [class-2 group encoding](SubquadraticExponentRingTensorIsomorphism/GROUP.md) and exact finite checks for that encoding. Informal proof with independent mathematical audits. Publication priority unestablished.
 <!-- subquadratic-exponent-ring-tensor-isomorphism:end -->
