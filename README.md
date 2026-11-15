@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- logspace-minimum-generation:start -->
+[Minimum generating sets in deterministic logspace](LogspaceMinimumGeneration/Proof.md) — Informal proof answering Collins–Grochow–Levet–Weiß Question 8.1. Given the Cayley table of an arbitrary finite group, the algorithm outputs an actual minimum generating set in logarithmic workspace. It queries the alternating solvable-radical and semisimple-socle quotients directly from the input and uses separate lifting algorithms for the two kinds of layers. Includes the [generator-number proof and supporting results](LogspaceMinimumGeneration/README.md). Publication priority is unestablished.
+<!-- logspace-minimum-generation:end -->
+
 <!-- generation-and-algebraic-equivalence:start -->
 [Exact Generation, Principal Minors, and Algebraic Equivalence](GenerationAndAlgebraicEquivalence/README.md) — Informal proofs.
 
