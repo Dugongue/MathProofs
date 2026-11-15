@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- further-isomorphism-transfers:start -->
+[Four further isomorphism transfers](FurtherIsomorphismTransfers/RESULTS.md) — AI-assisted informal proofs. Gives an exact reduction of arbitrary ordered 3-tensor isomorphism to polynomial conjugacy of quadratic symplectic maps over any field, a deterministic polynomial-time rational TI and SL-TI algorithm for square three-slice pencils with geometrically irreducible determinant, and graph-isomorphism equivalences for isospectral entanglement-breaking channels and specified persistence local systems.
+<!-- further-isomorphism-transfers:end -->
+
 <!-- tensor-isomorphism-structural-combinations:start -->
 [Four structural combinations for tensor isomorphism](TensorIsomorphismStructuralCombinations/COMBINATIONS.md) — AI-assisted informal proofs. Reduces arbitrary ordered 3-tensor isomorphism over any field to abstract isomorphism of smooth rational projective varieties with a fixed Tate motive per format. Realizes prescribed Frobenius isomorphism profiles and every finite abelian everywhere-local genus. Gives graph-isomorphism equivalences for recognizable wide Peirce and recoverable rank-one tensor classes, with separate determinant-one results.
 <!-- tensor-isomorphism-structural-combinations:end -->
