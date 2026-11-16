@@ -1,0 +1,93 @@
+# Linear-length tensor isomorphism over commutative rings
+
+## Theorem
+
+Let $R\ne0$ be a commutative unital ring. Fix a finite type of labelled tensors of order at most three on named finite free $R$-modules, with repeated names and primal and dual occurrences allowed. Isomorphism of two systems of this type reduces to ordinary free-module 3-Tensor Isomorphism over $R$. The reduction uses $O(N+1)$ side length, where $N$ is the sum of the input module ranks and the implicit constant depends only on the type. It allows zero tensors, nonconcise tensors and zero divisors, and uses no division or rank oracle.
+
+In particular, the five actions on free 3-way arrays in Grochow–Qiao–Stange–Sun, Definition 1.3, admit reductions in both directions with linear side length over every $R$. The targets can be symmetric or alternating slices for action 2, symmetric or alternating trilinear tensors for action 4, and associative unital multiplication tables for action 5. Alternating here has the vanishing-on-repeated-arguments convention, including in characteristic two. For $R=\mathbb Z/p^e\mathbb Z$, all output modules are free, and the sum of their base-$p$ logarithmic cardinalities grows by a constant factor, uniformly in $p,e$.
+
+The result improves the output side-length bound for the free-module problems treated by the commutative-ring sequel. Its Theorem 1.6 also permits arbitrary finite modules. This proof works with free modules. [Grochow–Qiao–Stange–Sun, Part V, Theorems 1.4 and 1.6 and §3.3](https://arxiv.org/html/2611.00735v1#S3.SS3)
+
+## 1. Three sets of copies of the named modules
+
+Express a tensor $t\in E\otimes F\otimes H$ as the coefficient table of a bilinear map $E^*\times F^*\to H$. The natural identification uses finite free duality. It identifies tensor transport with the equation $h_H t=t'(h_{E^*},h_{F^*})$. For lower-order tensors pad with a copy of a one-dimensional scalar sort in a missing position, using its vector $1$ or its dual. Include the fixed multiplication map on this scalar sort. Preservation of multiplication implies that the scalar sort acts by $1$, since its change of basis is a unit $\lambda$ with $\lambda^2=\lambda$.
+
+For each name take two reference indices with underlying modules the given free module and its dual. For each data occurrence make a separate index of its appropriate variance, after converting to bilinear-map variance. Each occurrence records its reference index. Let $I$ be the resulting list of reference and occurrence indices. For every $i\in I$ make three copies $X_i,Y_i,Z_i$ of its module $E_i$. Add copies $X_0,Y_0,Z_0$ of $R$. For each occurrence $u$ with reference $r(u)$, add a private scalar summand $Y_{b(u)}=R$. Write $X,Y,Z$ for the direct sums in the three positions.
+
+Define one bilinear map $M:X\times Y\to Z$. The following rules specify the only nonzero typed blocks.
+
+- Multiplication $X_0\times Y_0\to Z_0$.
+- Scalar multiplication $X_i\times Y_0\to Z_i$ and $X_0\times Y_i\to Z_i$ for every $i$.
+- Multiplication $X_0\times Y_{b(u)}\to Z_0$ and the scalar-copy map $X_u\times Y_{b(u)}\to Z_{r(u)}$.
+- For each name with reference indices $i^+,i^-$, the evaluation pairing $X_{i^+}\times Y_{i^-}\to Z_0$.
+- For each data component, its bilinear map $X_u\times Y_v\to Z_w$ in its private occurrence indices. This includes the scalar multiplication component when padding is used.
+
+No pair of summand indices occurs in two rules. In particular the data use fresh occurrence indices in both input positions. The map is an explicit array containing input entries and structural zeros and ones.
+
+Suppose that an isomorphism of two such maps preserves each specified summand of $X,Y$. It automatically preserves the $Z_i$ and $Z_0$, which are the images of $X_i\times Y_0$ and $X_0\times Y_0$. Let $a,b$ be the units on $X_0,Y_0$. The unit on $Z_0$ is $ab$. The transformations on $X_i,Y_i,Z_i$ must be $a g_i,b g_i,ab g_i$ for a common invertible $g_i$, by the two scalar-copy blocks. The action on $Y_{b(u)}$ is $b$, by its product with $X_0$. The second block involving $Y_{b(u)}$ forces $g_u=g_{r(u)}$. Evaluation forces $g_{i^-}=g_{i^+}^{-T}$. After the common factor $ab$ is cancelled, the data blocks impose exactly the original tensor-system transport equations. Conversely any system isomorphism extends to a summand-preserving isomorphism of the two maps by taking $a=b=1$.
+
+## 2. Recover the summands from an unmarked multiplication table
+
+Make a triangular $R$-algebra $A=A(M)$ with diagonal copy of $R$ at each vertex. Use three main vertices $0,1,2$, with $e_0 A e_1=X$, $e_1 A e_2=Y$ and $e_0 A e_2=Z$. The multiplication of the first two corners is $M$.
+
+For each specified summand $X_i$, add a private sink $s_i$, with corners $e_1 A e_{s_i}=R$ and $e_0 A e_{s_i}=X/X_i$. The product of $X$ with the corresponding scalar corner is scalar multiplication followed by the projection. Its left annihilator in $X$ is exactly $X_i$. For each summand $Y_j$, including the occurrence scalars, add a private source $t_j$, with corners $e_{t_j} A e_1=R$ and $e_{t_j} A e_2=Y/Y_j$. The analogous projection product recovers $Y_j$ as a right annihilator. All these quotients are free by the specified splittings. The products from $t_j$ via $1$ to $s_i$ are zero.
+
+For every vertex $v$ introduced so far, add two private sources $z_{v,1},z_{v,2}$. Give the corners $e_{z_{v,h}} A e_v$ pairwise distinct free ranks $d_{v,h}$, all strictly larger than the largest rank of any other off-diagonal corner. Every product between off-diagonal elements involving such a marking corner is zero, including products where the other operand already lies in a product corner. All unspecified off-diagonal corners and products vanish. Diagonal scalars act on the respective ends of every corner. This defines an associative algebra. Nonzero products of two off-diagonal factors are in corners from the first layer to the last. These products multiply to zero with any further off-diagonal factor on either side. Thus each three-off-diagonal associativity identity has two zero sides, and identities involving diagonals follow from bilinearity and agreement of the endpoints.
+
+Let $J$ be the sum of the off-diagonal corners. It is the commutator ideal, indeed the $R$-span of commutators. The quotient $A/J=R^k$ is commutative, and for each $x\in e_iAe_j$ with $i\ne j$ one has $x=[e_i,x]$. Also $J^3=0$. The induced $R^k$-bimodule $J/J^2$ has the full free marking corners. Every other corner is a quotient of a free module of rank less than every $d_{v,h}$. Hence after tensoring with any residue field its dimension is less than every tag rank. An $R$-algebra isomorphism $A\to A'$ induces a permutation of the diagonal idempotents over each residue field. The unique corner of dimension $d_{v,h}$ fixes its ordered endpoints in that permutation. This fixes all vertices. An $R$-linear map between the quotients $R^k$ that is an algebra map sends the standard idempotents to tuples of idempotents. An idempotent vanishing in every residue field is zero, and one reducing to $1$ in all residue fields equals $1$. Thus the quotient map fixes the actual standard idempotents over $R$.
+
+For completeness, let $f_i$ denote the images of the diagonal idempotents. Then $u=\sum_i f_i e_i$ is congruent to $1$ modulo $J$ and thus a unit, and $f_i u=u e_i$. Conjugation by $u^{-1}$ makes the algebra isomorphism respect every corner. It now preserves the indicated annihilators $X_i,Y_j$, so Section 1 extracts the required system isomorphism. Conversely a summand-preserving isomorphism of $M$ lifts using the induced quotient maps on the projection corners, identities on their scalar arrows, and the fixed identifications on the marking corners.
+
+For a fixed type the number of copies, quotient corners, vertices and tags is fixed. Choosing all tag ranks to be the maximum non-tag rank plus distinct positive constants gives $\operatorname{rank}_R A=O(N+1)$. The construction need only write an explicit dense multiplication table. Active positive ranks are bounded by the explicitly occupied input sizes. A sort with no component having positive product rank can be dropped after comparing its rank on both sides, so a binary-encoded dimension of an unused module causes no size problem.
+
+## 3. Recover an associative algebra from its ordinary multiplication tensor
+
+If $A,B$ are unital associative $R$-algebras and $h(xy)=f(x)g(y)$ for invertible $R$-linear $f,g,h:A\to B$, put $a=f(1)$ and $b=g(1)$. Since $h(x)=f(x)b=a g(x)$, right multiplication by $b$ and left multiplication by $a$ are bijective. This makes $a,b$ units. For example, if left multiplication by $a$ is bijective, choose $c$ with $ac=1$. Then $a(ca-1)=0$ implies $ca=1$. The same argument on the opposite ring applies to $b$. Now $h(xy)=h(x)b^{-1}a^{-1}h(y)$, and $x\mapsto (ab)^{-1}h(x)$ is an $R$-algebra isomorphism. Conversely an algebra isomorphism gives an isotopy by using it in all three slots. Finite free duality identifies isotopy of multiplication with ordinary 3-Tensor Isomorphism. This is the associative unital case of the classical isotopy argument, here written over $R$.
+
+Sections 1–3 already give the fixed-type compiler and reductions to plain 3-Tensor Isomorphism and associative unital algebra isomorphism. Matrix-space conjugacy is a target by using the span of the left regular operators $L_a$ of $A$. It is a faithful free copy of $A$, since $L_a(1)=a$. An index change and a conjugacy of the regular-operator tables is precisely a conjugacy of the represented algebras. All five source actions are fixed-type systems, with a repeated sort and the specified dual convention as required by the action.
+
+## 4. Linear targets with symmetry or alternation
+
+The final constructions specialize the earlier MathProof triangular-algebra argument to the linear-rank algebra of Section 2.
+
+### Matrix-space isometry
+
+For $\varepsilon=1$ or $-1$, on $W=A\oplus A^*$ let $J_a$ be the form with block matrix
+$$
+J_a=\begin{pmatrix}0&L_a^T\\ \varepsilon L_a&0\end{pmatrix}.
+$$
+The family is linear in $a$, faithful, and gives symmetric slices when $\varepsilon=1$ and alternating slices when $\varepsilon=-1$. An algebra isomorphism gives a congruence by applying the isomorphism and its dual inverse. Conversely a family congruence preserves invertibility of the unit slice, so its image is $J_b$ with $L_b$ invertible and $b$ a unit. Ratios of slices with the selected invertible slice conjugate under a congruence. The ratios relative to $1$ are $\operatorname{diag}(L_a,L_a^T)$. The ratios relative to a unit $b$ are $\operatorname{diag}(L_d,L_{bdb^{-1}}^T)$, where $d=b^{-1}a$ ranges over the whole algebra. Consequently the family congruence gives an isomorphism of the two algebras generated by the diagonal pairs $(a,a^{\mathrm{op}})$ in $A\times A^{\mathrm{op}}$, with the analogous construction in the other input algebra. The extra inner automorphism on the second factor for the unit $b$ does not change that abstract algebra.
+
+This generated algebra is
+$$
+D(A)=A\times_{A/J}A^{\mathrm{op}}.
+$$
+In fact the product of two diagonal pairs minus the pair for their first-coordinate product gives $(0,(ba-ab)^{\mathrm{op}})$. The commutators span $J$, hence this gives $0\times J^{\mathrm{op}}$ and then $J\times0$. The pairs with matching image in $A/J$ are exactly the sums of these elements and the diagonal pairs.
+
+The commutator ideal of $D(A)$ is $J\times J^{\mathrm{op}}$. Its quotient by its square has the original nonzero marking corners and their reverses. Over every residue field each tag rank now identifies its unordered pair of endpoints. The two private tags of a vertex intersect exactly in that vertex. This again fixes all vertices. After simultaneous conjugation by the same idempotent argument, retrieve $A$ by keeping the diagonal and all corners in the original forward direction according to the fixed vertex ordering. There was no backward corner in $A$, so each kept off-diagonal corner is precisely its first-factor corner. This proves that a family congruence implies $A\cong B$. Taking $\varepsilon=1$ also allows formal quadratic slices $q_a(x,\phi)=\phi(ax)$ with the matching polar forms, including in characteristic two.
+
+### Symmetric and alternating trilinear tensors
+
+Use $J_a$ with $\varepsilon=1$, and put $C=R\oplus W\oplus A^*$. Give $C$ its usual scalar multiplication, define $w w'=\beta(w,w')$ by $\beta(w,w')(a)=J_a(w,w')$, and let $A^*$ annihilate $W\oplus A^*$. This is a commutative unital associative algebra. For $K=W\oplus A^*$ one has $K^2=A^*$, since $\beta((1,0),(0,\phi))=\phi$, and $K^3=0$.
+
+A family congruence gives an algebra isomorphism of the resulting $C$'s. Conversely let $\psi:C\to C'$ be an $R$-algebra isomorphism. Modulo every maximal ideal, $K$ reduces to the nilradical and $\psi$ induces an isomorphism on $K/K^2$. Therefore the $W'$-component map $H:W\to W'$ obtained by restricting $\psi$ is invertible over $R$. Write $r:W\to R$ for its scalar component. For two different basis vectors $x,y$ in the same half $A$ or $A^*$ of $W$, the product $xy$ is zero. The $W'$-component gives $r(x)H(y)+r(y)H(x)=0$. Applying $H^{-1}$ gives $r(x)=r(y)=0$. Each half has rank at least two in the construction. Thus $r(W)=0$, and multiplicativity and $K^2=\beta(W,W)$'s linear span give vanishing of the scalar part on $K^2$. Applying the same argument to $\psi^{-1}$ gives $\psi(K)=K'$. On $K/K^2$ and $K^2$, this recovers exactly the family congruence.
+
+On a direct sum of three named copies $C,C,C^*$, consider the typed trilinear pairing $\phi(xy)$. Extend it by symmetry or signed alternation to all six orders of the summands, with value zero on any triple repeating a summand. An algebra isomorphism induces an equivalence of the resulting trilinear tensors. Conversely their centroid recovers $C$. The centroid consists of endomorphisms $P$ for which inserting $P$ in any of the three arguments gives the same trilinear value. Each off-diagonal block from a summand $i$ into a summand $j\ne i$ vanishes. To see this, insert vectors from $i,i,k$, where $k$ is the remaining summand, and compare applying $P$ at the first input and at the $k$ input. The latter gives zero, and the former pairs the indicated block against the two other arguments. The unit and free dual separate these evaluations. For an ordered typed triple the remaining equations are
+$$
+\phi((P_1x)y)=\phi(x(P_2y))=(P_3\phi)(xy).
+$$
+Taking $x$ or $y$ to be the unit proves that $P_1,P_2$ are multiplication by the same element and $P_3$ is its dual multiplication. This describes the whole centroid, whose composition algebra is $C$. Any equivalence of the trilinear tensors induces an isomorphism of their centroids, hence of the two $C$'s and then the original $A$'s. The formal cubic version uses $f(x,y,\phi)=\phi(xy)$, since its full mixed polarization gives the symmetric trilinear tensor without factorial division.
+
+Every target has side lengths bounded by a constant times $\operatorname{rank}_R A$. Their coefficients copy input values and use $0,\pm1$. The format and density bounds therefore yield uniform polynomial binary output time for $\mathbb Z$, and for $\mathbb Z/p^e\mathbb Z$ given in the ordinary binary representation. Over an abstract $R$ the construction can be read as coordinate copying with signs in the ring model.
+
+## 5. Search and counting with linear-side decision queries over finite rings
+
+Write $Q=|R|$ and $N=n_1+n_2+n_3$ for ordinary free 3-Tensor Isomorphism over a finite commutative ring. Use an explicit coefficient model that enumerates ring elements with polynomial delay, as for a fixed finite ring or binary coordinates modulo $p^e$. There are deterministic search-to-decision and exact counting-to-decision reductions with at most $NQ^{\max_i n_i}+1$ decision queries, each with $O(N+1)$ side length. Outside the oracle the time is $NQ^{\max_i n_i}$ times a polynomial in $N$ and the coordinate encoding and ring-operation costs.
+
+The needed decision query specifies a tensor isomorphism and requires each of its three maps to send a given ordered list of vectors to another specified ordered list. Represent each list of length $k$ by the column map $E=R^k\to R^{n_i}$. On $E$ give the same nilpotent shift $J e_j=e_{j+1}$, ending in zero, and the same marked $e_1$, on both sides. A linear map commuting with the shift and fixing $e_1$ fixes every $J^{j-1}e_1=e_j$, hence is the identity. For $k=0$ omit the shift and mark. These maps and the marked vector are order-at-most-three data, so Sections 1–3 compile the query. Lists of all lengths use a fixed number of components, with at most $N$ additional coordinates for list domains. Their column sets can include arbitrary vectors.
+
+Given a positive decision answer, enumerate all vectors of the appropriate rank as the proposed image of the next standard basis vector in a mode, retaining the first extension accepted by a marked query. An actual isomorphism continues to exist after every chosen extension. Fixing every basis image specifies the isomorphism. In counting, first check whether the two tensors lie in the same orbit. If they do, their transporter has size equal to the order of the first tensor's automorphism group. Successively fix standard basis vectors in all modes, using the same tensor on both sides of each marked query. Count the distinct possible images at each stage. By orbit–stabilizer this counts the index between successive pointwise stabilizers, so the product is the order of the full automorphism group. The final stabilizer is trivial. Over $\mathbb Z/p^e\mathbb Z$ the query bound and construction are uniform in $e$. The result concerns free-module tensors. Over fields, related linear-length search and counting reductions were established by Grochow–Qiao. [Grochow–Qiao, Part IV, §§7.3–7.4](https://arxiv.org/html/2306.16317#S7.SS3)
+
+## Source and status
+
+This proof uses the commutator ideal, projection corners, duality and centroid-recovery argument of the earlier MathProof arbitrary-ring compiler. The new dimension argument replaces its growing symmetric-power corners with three copies of each sort and scalar multiplications. It extends the linear-length result over fields in Grochow–Qiao Part IV and strengthens the free-module dimension bounds of Part V. A literature check found the polynomial free-module bounds in Part V and no matching general linear-length free-module theorem. This is an AI-assisted informal proof. Publication priority remains unverified. [Grochow–Qiao, Part IV](https://arxiv.org/html/2306.16317) [Grochow–Qiao–Stange–Sun, Part V](https://arxiv.org/html/2611.00735v1)

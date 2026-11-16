@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-cohomology-crossovers:start -->
+- [Tensor, group and algebra isomorphism crossovers](IsomorphismCohomologyCrossovers/RESULTS.md) — Informal proofs of tensor-isomorphism hardness of derived equivalence at global dimension two, linear-length reductions among the five free-module tensor actions over commutative rings, constant-degree comparisons for two graph-to-tensor routes and characteristic-two matrix-congruence degree bounds (Galesi–Grochow–Pitassi–She Open Questions 7.5 and 7.3), and polynomial exact epimorphism counting for homocyclic Sylow complements (restricted Grochow–Srivastava–Thakkar Open Questions 2 and 3(4)).
+<!-- isomorphism-cohomology-crossovers:end -->
+
 <!-- group-tensor-crossovers:start -->
 [Four crossovers in group and tensor isomorphism](GroupTensorCrossovers/RESULTS.md) — AI-assisted informal proofs of FOLL chief and composition series for arbitrary Cayley-table groups, an NC solution to Levet’s Question 8.2 under the stated index promise, tensor-isomorphism hardness of derived equivalence in global dimension at most three, and Las Vegas polynomial-time characteristic-two matrix tuple isometry for square-zero adjoint radical.
 <!-- group-tensor-crossovers:end -->
