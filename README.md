@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- group-tensor-crossovers:start -->
+[Four crossovers in group and tensor isomorphism](GroupTensorCrossovers/RESULTS.md) — AI-assisted informal proofs of FOLL chief and composition series for arbitrary Cayley-table groups, an NC solution to Levet’s Question 8.2 under the stated index promise, tensor-isomorphism hardness of derived equivalence in global dimension at most three, and Las Vegas polynomial-time characteristic-two matrix tuple isometry for square-zero adjoint radical.
+<!-- group-tensor-crossovers:end -->
+
 <!-- logspace-minimum-generation-recurrent-cayley:start -->
 [Logspace greedy generator replay on Cayley tables in Lean](LogspaceMinimumGenerationRecurrentCayley/README.md) — Verified components for Collins–Grochow–Levet–Weiß Question 8.1. A finite machine finds the first greedy generator from a raw Cayley table in logarithmic workspace, and a finite replay machine recovers any requested greedy entry from a stored ordinal and initialized workspace. The two use the same native connectivity machine and workspace constant. The unrestricted minimum-generator search theorem remains informal.
 <!-- logspace-minimum-generation-recurrent-cayley:end -->
