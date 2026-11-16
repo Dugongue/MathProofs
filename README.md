@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-ti-almost-all:start -->
+- **[Almost-All Ordinary Four-Tensor Isomorphism](FourTIAlmostAll/RESULTS.md)** — Strengthens Li–Li–Qiao–Tao–Wang Problem 1.7 to $1-o(1)$ coverage over every fixed finite field. A deterministic polynomial-bit-time algorithm recognizes a uniformly random first tensor with high probability, decides against every second tensor, and recovers transporters. The proof uses inverse flattenings, crossed contractions and a fixed-field Fourier estimate. Includes inverse-polynomial failure bounds of any fixed order and lifting to Galois rings. Informal proof.
+<!-- four-ti-almost-all:end -->
+
 <!-- effective-local-quiver-comparisons:start -->
 - [Four effective local-quiver comparisons](LocalQuiverIsomorphism/RESULTS.md) — Informal proofs of GI-complete raw tensor deformation classes, exact all-orders normalization for fixed-arrow quiver lifts and deterministic transporter counts, linear-size TI equivalence for genuinely obstructed algebra lifts, and polynomial moving-slice transporter search and determinant counts over truncated local rings under a geometric frame promise.
 <!-- effective-local-quiver-comparisons:end -->
