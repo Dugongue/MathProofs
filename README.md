@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- logspace-minimum-generation-physical-callbacks:start -->
+[Physical Cayley and Berkowitz callbacks in Lean](LogspaceMinimumGenerationPhysicalCallbacks/README.md) — Verified components for Collins–Grochow–Levet–Weiß Question 8.1, including a finite-machine compiler, raw Cayley trial setup, a weighted Gram controller, and streamed arithmetic with exact suspension bounds. The unrestricted search theorem remains informal.
+<!-- logspace-minimum-generation-physical-callbacks:end -->
+
 <!-- logspace-minimum-generation-lean-steps-1-to-4:start -->
 [Cayley-table input and quotient access in Lean](LogspaceMinimumGenerationLeanSteps1To4/README.md) — Verified components for Question 8.1 covering raw table decoding, connectivity-to-word search, subgroup and chief queries, and the residual replay interface. The unrestricted search theorem remains informal.
 <!-- logspace-minimum-generation-lean-steps-1-to-4:end -->

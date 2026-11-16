@@ -1,0 +1,626 @@
+{
+  "lean": "leanprover/lean4:v4.33.0",
+  "roots": [
+    "Complexity.Computability.USTCON.Reader.Correct",
+    "Complexity.Computability.USTCON.Reader.Invariant"
+  ],
+  "baseDependencies": {
+    "Mathlib": {
+      "url": "https://github.com/leanprover-community/mathlib4",
+      "rev": "db584cd6d46c92f209a44c0f1c829460d327499d"
+    },
+    "CSLib": {
+      "url": "https://github.com/leanprover/cslib",
+      "rev": "3951377e5a3f5772737f11cd62bc5bb6a72f95d1"
+    }
+  },
+  "upstream": {
+    "url": "https://github.com/cslib-community/cslib-frontier",
+    "sourceSnapshot": "2026-10-29",
+    "license": {
+      "path": "LICENSE",
+      "spdx": "Apache-2.0",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "rev": "51c60ccb7f1e0143470b487cc059c0cb307db3c2",
+    "notice": {
+      "path": "NOTICE",
+      "sha256": "5bb95c00590b93ad624ca3300dea647a6f6048c6c43cc5ca268835e7b11f3a26"
+    },
+    "sourceMatch": "All 40 selected modules and LICENSE matched the cited upstream commit after normalizing CRLF."
+  },
+  "compileOrder": [
+    {
+      "module": "Complexity.Init",
+      "source": "Complexity/Init.lean",
+      "sha256": "36773ce9a830d3198a14a81c1f5e81cfa6e07765c4ab526a799ee8a6ec1119d8",
+      "upstreamSourceSha256": "36773ce9a830d3198a14a81c1f5e81cfa6e07765c4ab526a799ee8a6ec1119d8",
+      "changed": false,
+      "imports": [
+        "Cslib.Init"
+      ],
+      "checkedSourceSha256": "36773ce9a830d3198a14a81c1f5e81cfa6e07765c4ab526a799ee8a6ec1119d8",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Basic",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Basic.lean",
+      "sha256": "c428f2efb07c738eb3c46c06dc9145e674f9229e86880431cab37073e4b27719",
+      "upstreamSourceSha256": "4c8613cb748cd8a8178c57ccc5a65d557c49bcbc7b131f8b1c8e66159e16774e",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Expect",
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ],
+      "checkedSourceSha256": "c428f2efb07c738eb3c46c06dc9145e674f9229e86880431cab37073e4b27719",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Data.Finset.Expect",
+      "source": "Complexity/Foundations/Data/Finset/Expect.lean",
+      "sha256": "18d49131bb7f76ce6e7b2aff15d8624c34ae8c836627f1f7d0cce89da4d92632",
+      "upstreamSourceSha256": "c8c19c3990e87b6c18b87d122e288754de582dd5048f41d72f99f940824761b0",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Expect",
+        "Mathlib.Algebra.Order.Field.Basic",
+        "Mathlib.Algebra.Order.Module.Defs",
+        "Mathlib.Analysis.Real.Sqrt",
+        "Mathlib.Data.Finset.Density",
+        "Mathlib.Data.Fintype.Powerset",
+        "Mathlib.Algebra.BigOperators.Balance",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Data.Fintype.Fin"
+      ],
+      "checkedSourceSha256": "18d49131bb7f76ce6e7b2aff15d8624c34ae8c836627f1f7d0cce89da4d92632",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.AffinePlane",
+      "source": "Complexity/Foundations/Combinatorics/Expander/AffinePlane.lean",
+      "sha256": "c342c55e97f401ef95333762c50c55323b0ba6f706c166b4155e0db1a45a02f3",
+      "upstreamSourceSha256": "43f07cb978633162191e443c70977203be36b5f9ece7647b6f80c3f70ee73b84",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Mathlib.Analysis.Real.Sqrt",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.GroupWithZero.Units.Equiv"
+      ],
+      "checkedSourceSha256": "c342c55e97f401ef95333762c50c55323b0ba6f706c166b4155e0db1a45a02f3",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Loops",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Loops.lean",
+      "sha256": "bcc4d6a335112aaba8de7973155eb8ab1f6c96a630014e3c47d626567c3cf4ac",
+      "upstreamSourceSha256": "f8ad3ae00eaccecf0692bc6e6cb9c5eccb9e9206552badefa905a7a586a90ae2",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ],
+      "checkedSourceSha256": "bcc4d6a335112aaba8de7973155eb8ab1f6c96a630014e3c47d626567c3cf4ac",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Tensor",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Tensor.lean",
+      "sha256": "ce926f89f551c9c037f5b4540b64d419d142a101956261c986c9d8587e703a67",
+      "upstreamSourceSha256": "114b2728bb038ffdfaeb9eb7640fdd471288c748c012981d0fc4e1aff22afa50",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ],
+      "checkedSourceSha256": "ce926f89f551c9c037f5b4540b64d419d142a101956261c986c9d8587e703a67",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Zigzag",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Zigzag.lean",
+      "sha256": "07aefe699ae41ccdd48428081f8a1e0816de4b227a108bcddc40c8a56c3f1805",
+      "upstreamSourceSha256": "1c5802bd6708d4a16b72d976ebe5f6df93a276dafd7b855cd130b203b868e5f4",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Complexity.Foundations.Combinatorics.Expander.Tensor",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Analysis.Real.Sqrt"
+      ],
+      "checkedSourceSha256": "07aefe699ae41ccdd48428081f8a1e0816de4b227a108bcddc40c8a56c3f1805",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Power",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Power.lean",
+      "sha256": "e19e64a4148b5db7ab76be96bb46e3e5ca62a9d416c139e572493a285342e877",
+      "upstreamSourceSha256": "c6db41d26d37c77a99f7fb20d01f67cc1102d1fdca28e93fdc42bc36d27d40b3",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ],
+      "checkedSourceSha256": "e19e64a4148b5db7ab76be96bb46e3e5ca62a9d416c139e572493a285342e877",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.IteratedProd",
+      "source": "Complexity/Foundations/Combinatorics/Expander/IteratedProd.lean",
+      "sha256": "b4403fd12203c66921a14e391310aac67fef4c60a0eb5c5113d58f54d3515242",
+      "upstreamSourceSha256": "219e154be9b2f3bf9548ccb259fb8f938f0c949e597b697601d03d921788f033",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Logic.Equiv.Fin.Basic"
+      ],
+      "checkedSourceSha256": "b4403fd12203c66921a14e391310aac67fef4c60a0eb5c5113d58f54d3515242",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Tower",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Tower.lean",
+      "sha256": "7c95504d0096b229a93c3ce804a7121bab0a506eb82296c1db0aaab79b213066",
+      "upstreamSourceSha256": "95efeea7d4b06c014c84d8ba2f46ef9965930d6644bd4ac2fd62d79e9850f7e0",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Zigzag",
+        "Complexity.Foundations.Combinatorics.Expander.Power",
+        "Complexity.Foundations.Combinatorics.Expander.IteratedProd"
+      ],
+      "checkedSourceSha256": "7c95504d0096b229a93c3ce804a7121bab0a506eb82296c1db0aaab79b213066",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Reindex",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Reindex.lean",
+      "sha256": "b217c464feffddc0b124b8ece09c0cfdc1fb0ad5a15c0332457f558da491b967",
+      "upstreamSourceSha256": "f3ba1eb4aef7afaa0f0cc314e3414158e47d8bf163bee139c5eaa1ee50329529",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic"
+      ],
+      "checkedSourceSha256": "b217c464feffddc0b124b8ece09c0cfdc1fb0ad5a15c0332457f558da491b967",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.AffineTower",
+      "source": "Complexity/Foundations/Combinatorics/Expander/AffineTower.lean",
+      "sha256": "a0a6e958f769552e34249610278e2dcd10f316a0bf6c40e6ad4f3b59a2c4cdf8",
+      "upstreamSourceSha256": "4eb2b3cfca65fb6cb68f914561dcde1a64e23af6e202ed93042991343ed3d3f9",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.AffinePlane",
+        "Complexity.Foundations.Combinatorics.Expander.Tower",
+        "Complexity.Foundations.Combinatorics.Expander.Reindex",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Tactic.NormNum.Prime"
+      ],
+      "checkedSourceSha256": "a0a6e958f769552e34249610278e2dcd10f316a0bf6c40e6ad4f3b59a2c4cdf8",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Mixing",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Mixing.lean",
+      "sha256": "1553012c4df2d0aa2603cb1490e91e6891de0b7a2dd29b9c8162fad26ed1f464",
+      "upstreamSourceSha256": "a4f85f6b8543ea0d2d8cd4054d18c0b039cd7d8baa430fef5bd3cdaddf07ffda",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Mathlib.Analysis.Real.Sqrt",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.BigOperators.Balance",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "checkedSourceSha256": "1553012c4df2d0aa2603cb1490e91e6891de0b7a2dd29b9c8162fad26ed1f464",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Data.Finset.Quantile",
+      "source": "Complexity/Foundations/Data/Finset/Quantile.lean",
+      "sha256": "c3a0d412fba7d0dd2cdd496d121c7a94444057823b8dd2e47f25a194a533f972",
+      "upstreamSourceSha256": "01033f3d7bbf49ef7e2f40e8e18f570b49e8d3dcc8d63adc7615e3d10217ccad",
+      "changed": true,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Data.Fintype.Basic",
+        "Mathlib.Data.Finset.Max",
+        "Mathlib.Tactic.Linarith"
+      ],
+      "checkedSourceSha256": "ae3cb00ec7cd9b640d0cb529d264783679c767b724f4e2a66cbe381e17e73e00",
+      "publicationNoticePrefixBytes": 97
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Cheeger",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Cheeger.lean",
+      "sha256": "41406cf807c9124ff400e2afaa1a6af792e20b1b088a0a20ee94d959a798e6e4",
+      "upstreamSourceSha256": "3bbf7596b44ce3335f45ad949ec7ce807cde0589952c932f8550bba855e0314b",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Mixing",
+        "Complexity.Foundations.Data.Finset.Quantile",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Algebra.QuadraticDiscriminant"
+      ],
+      "checkedSourceSha256": "41406cf807c9124ff400e2afaa1a6af792e20b1b088a0a20ee94d959a798e6e4",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.SimpleGraph",
+      "source": "Complexity/Foundations/Combinatorics/Expander/SimpleGraph.lean",
+      "sha256": "85ca375478c372a2409b21b9f946f4ac3da79cdfb9ca2737a620fafddfa37d20",
+      "upstreamSourceSha256": "da7cc6098ee86d4b0cf0afe73ddcb7e83dd99dff213a4ead41afb4dd74b247a0",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Mathlib.Combinatorics.SimpleGraph.AdjMatrix",
+        "Mathlib.Combinatorics.SimpleGraph.Density",
+        "Mathlib.Combinatorics.SimpleGraph.Finite"
+      ],
+      "checkedSourceSha256": "85ca375478c372a2409b21b9f946f4ac3da79cdfb9ca2737a620fafddfa37d20",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Hom",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Hom.lean",
+      "sha256": "5bfa9c910b9b56ea3c9feefe43663dd5afb204c869eef081abb6bd0f8f5b2354",
+      "upstreamSourceSha256": "9df5e585b7a197957d8d706cc176c20e0be7a8483482d13c0d9d1661c47ccb1f",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Complexity.Foundations.Combinatorics.Expander.Power",
+        "Complexity.Foundations.Combinatorics.Expander.Zigzag",
+        "Complexity.Foundations.Combinatorics.Expander.SimpleGraph",
+        "Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected"
+      ],
+      "checkedSourceSha256": "5bfa9c910b9b56ea3c9feefe43663dd5afb204c869eef081abb6bd0f8f5b2354",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Connected",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Connected.lean",
+      "sha256": "b44c312af836b7b38041ef643e9db65544bf14acb58bacc47775c71f6ecd85c9",
+      "upstreamSourceSha256": "1a0b9ca16b7f5f376f0ce61b61af21d143b6f113ddc036bbea351adfceb4d749",
+      "changed": true,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Cheeger",
+        "Complexity.Foundations.Combinatorics.Expander.Hom",
+        "Complexity.Foundations.Combinatorics.Expander.Mixing"
+      ],
+      "checkedSourceSha256": "582a5b3138be6bd9a97b81b68bf52827caa0c28f8729e08876bdd581725fbc8c",
+      "publicationNoticePrefixBytes": 112
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Reingold",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Reingold.lean",
+      "sha256": "aee99e7139e5b68c2247b51dfcfc57d0e9ccefe3d9c0dc23474252761c5706e3",
+      "upstreamSourceSha256": "4a064f22cb25ecb5a2e20ba4d5762e571cfeca9bda483f5c56a0c717ce395ffd",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Connected",
+        "Complexity.Foundations.Combinatorics.Expander.IteratedProd"
+      ],
+      "checkedSourceSha256": "aee99e7139e5b68c2247b51dfcfc57d0e9ccefe3d9c0dc23474252761c5706e3",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Perm",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Perm.lean",
+      "sha256": "7f73f6a75112483ea418aef45d6392e5727babd8d8b2a5412d3092c162b71426",
+      "upstreamSourceSha256": "bc182e8ddde8d7c738dec50583bfe3f20eaa2f4f384e0d5002277c17d8d68e6f",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Cheeger"
+      ],
+      "checkedSourceSha256": "7f73f6a75112483ea418aef45d6392e5727babd8d8b2a5412d3092c162b71426",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.SlotGraph",
+      "source": "Complexity/Foundations/Combinatorics/Expander/SlotGraph.lean",
+      "sha256": "0d5aeca16c3b5d54bc4b6c260c968410307b720058264a745911ba24d7ad64fc",
+      "upstreamSourceSha256": "38b7a6d63ef23895b00b7a8e66b359345f0076a118a094a09f057cf534337d9e",
+      "changed": true,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Hom",
+        "Complexity.Foundations.Combinatorics.Expander.Perm",
+        "Mathlib.Data.Fintype.Inv",
+        "Mathlib.GroupTheory.Perm.Cycle.Basic"
+      ],
+      "checkedSourceSha256": "6e1b94f608da852022769fb32fb7a283417db9054a75167c7deeb17227e3e09d",
+      "publicationNoticePrefixBytes": 113
+    },
+    {
+      "module": "Complexity.Foundations.GroupTheory.Perm.Fin",
+      "source": "Complexity/Foundations/GroupTheory/Perm/Fin.lean",
+      "sha256": "d311ad1bb314065a1444147e9a188334ce247a8d5e98846fc76dafe0f3245744",
+      "upstreamSourceSha256": "bb01b7bd05016116401181c44aa804f65b718c1c8def0d51eb2e32cbbf4c64c7",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.GroupTheory.Perm.Fin"
+      ],
+      "checkedSourceSha256": "d311ad1bb314065a1444147e9a188334ce247a8d5e98846fc76dafe0f3245744",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Algorithms.Reachability.Reingold",
+      "source": "Complexity/Algorithms/Reachability/Reingold.lean",
+      "sha256": "b810e4a78bd722b9a0456cb5fc7ddb70e1b14a44cb1883eaea727b28b135d7e9",
+      "upstreamSourceSha256": "b4a7f628df16f602888af2631ed0bc820f43574b8baeac25031e51a98484083c",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.AffineTower",
+        "Complexity.Foundations.Combinatorics.Expander.Reingold",
+        "Complexity.Foundations.Combinatorics.Expander.SlotGraph",
+        "Complexity.Foundations.GroupTheory.Perm.Fin",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Data.Nat.Log",
+        "Mathlib.Tactic.NormNum.Prime"
+      ],
+      "checkedSourceSha256": "b810e4a78bd722b9a0456cb5fc7ddb70e1b14a44cb1883eaea727b28b135d7e9",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Algorithms.Reachability.ReingoldEval",
+      "source": "Complexity/Algorithms/Reachability/ReingoldEval.lean",
+      "sha256": "d8b68f9c9fde403b0ecd4fd027e2aaa3b02b86876fee58328638ef29d6aa88af",
+      "upstreamSourceSha256": "b658d00936193ee2a36dec0c8e120a889691a2e5b97a44e5710937c6ee6244c3",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Reingold"
+      ],
+      "checkedSourceSha256": "d8b68f9c9fde403b0ecd4fd027e2aaa3b02b86876fee58328638ef29d6aa88af",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Data.List.Append",
+      "source": "Complexity/Foundations/Data/List/Append.lean",
+      "sha256": "7cc469223a6aa483b6c0b1a9e7714c9c766970091fa1984dc20cc4957647d2df",
+      "upstreamSourceSha256": "7cc469223a6aa483b6c0b1a9e7714c9c766970091fa1984dc20cc4957647d2df",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Data.List.Basic",
+        "Mathlib.Data.List.DropRight"
+      ],
+      "checkedSourceSha256": "7cc469223a6aa483b6c0b1a9e7714c9c766970091fa1984dc20cc4957647d2df",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Data.List.Lookup",
+      "source": "Complexity/Foundations/Data/List/Lookup.lean",
+      "sha256": "6d8e81fed196fc8a3ade23403b3704e5e2a0c86095b6eeea95b20bc9eacdbc77",
+      "upstreamSourceSha256": "8458713005afdb0369c9bf0450d51d6136b13d8a53e98dfd146f28bfdfe0ed06",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Data.List.Basic",
+        "Mathlib.Order.Lattice.Nat",
+        "Mathlib.Data.List.Forall2",
+        "Mathlib.Data.List.GetD",
+        "Mathlib.Data.List.OfFn"
+      ],
+      "checkedSourceSha256": "6d8e81fed196fc8a3ade23403b3704e5e2a0c86095b6eeea95b20bc9eacdbc77",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Data.Nat.Div",
+      "source": "Complexity/Foundations/Data/Nat/Div.lean",
+      "sha256": "4a9a492aa1f61c7d8cd251d8547fcff5de9fea068b7379ecc056f5eb4299d08b",
+      "upstreamSourceSha256": "0ba45f27363ca848db1609510826ad82e7267ceb3ee4d4fd2790f71ae7d09d0f",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Data.Nat.ModEq",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise"
+      ],
+      "checkedSourceSha256": "4a9a492aa1f61c7d8cd251d8547fcff5de9fea068b7379ecc056f5eb4299d08b",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Computability.Complexity.Problems.STCON",
+      "source": "Complexity/Computability/Complexity/Problems/STCON.lean",
+      "sha256": "9e23d7e1e611e854006c039556107ba114c141a159d6df4d15834249451f74fd",
+      "upstreamSourceSha256": "5f1f8aca86bc05fd15c03c173f9663dade7ecb169f14a5fa5855cc2aaa4eba15",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Logic.Relation",
+        "Mathlib.Data.List.OfFn",
+        "Mathlib.Data.List.GetD",
+        "Mathlib.Data.Nat.Size",
+        "Mathlib.Data.List.Range",
+        "Complexity.Foundations.Data.List.Append",
+        "Complexity.Foundations.Data.List.Lookup",
+        "Complexity.Foundations.Data.Nat.Div"
+      ],
+      "checkedSourceSha256": "9e23d7e1e611e854006c039556107ba114c141a159d6df4d15834249451f74fd",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Computability.Complexity.Problems.USTCON",
+      "source": "Complexity/Computability/Complexity/Problems/USTCON.lean",
+      "sha256": "e8123112cf74685d874dd823d7cad5312412fa981052ded08c7a9a1263dab887",
+      "upstreamSourceSha256": "35fafe9807f073d6e65fe478832fd8f97a80381dfc891b1b1a569707990a6f7d",
+      "changed": false,
+      "imports": [
+        "Complexity.Computability.Complexity.Problems.STCON",
+        "Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected"
+      ],
+      "checkedSourceSha256": "e8123112cf74685d874dd823d7cad5312412fa981052ded08c7a9a1263dab887",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Computability.Machines.ReadMachine.Basic",
+      "source": "Complexity/Computability/Machines/ReadMachine/Basic.lean",
+      "sha256": "2f013090d99ed54f31a643e36d808085f19cf215e72089734c2afbda60c9180a",
+      "upstreamSourceSha256": "76b0d128a41d05bb05f50a4ffac3845566c229a3218cfba952d23d42aca37ac6",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Logic.Function.Iterate"
+      ],
+      "checkedSourceSha256": "2f013090d99ed54f31a643e36d808085f19cf215e72089734c2afbda60c9180a",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Family",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Family.lean",
+      "sha256": "577b56821e796b2936037e1fc92be72cce35761cdbc365e9262e9870d00e508a",
+      "upstreamSourceSha256": "e669302338112d02c7a64bef3fe30387e43a51c1c2f05fa7114b3363a5e92221",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Reindex"
+      ],
+      "checkedSourceSha256": "577b56821e796b2936037e1fc92be72cce35761cdbc365e9262e9870d00e508a",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Lazy",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Lazy.lean",
+      "sha256": "e8e4465e0dfc29773f6901776196fa24d363fd2a7b6824494acfb5425e051db0",
+      "upstreamSourceSha256": "f7c314c395b4cf1769e3092720d4e791337dbb54e15651a8e98106406a335c45",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Cheeger",
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ],
+      "checkedSourceSha256": "e8e4465e0dfc29773f6901776196fa24d363fd2a7b6824494acfb5425e051db0",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.Contraction",
+      "source": "Complexity/Foundations/Combinatorics/Expander/Contraction.lean",
+      "sha256": "54d480e9205116c83d13384c09ef6398138bc5a08af15ec4af3c7966bf9591ed",
+      "upstreamSourceSha256": "6233f2b0f3d905e61a7a485c3a8c2c80e58d0858a8eecca0d68ca95b8bc7415f",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Lazy"
+      ],
+      "checkedSourceSha256": "54d480e9205116c83d13384c09ef6398138bc5a08af15ec4af3c7966bf9591ed",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Data.Nat.Log",
+      "source": "Complexity/Foundations/Data/Nat/Log.lean",
+      "sha256": "ebf6a3bb28f345025883e2f681c1aba8849ce3424dab33f2ec0fc646add02235",
+      "upstreamSourceSha256": "a17882ec4bf07690a5a85f8e60e1d4e277f59577bc09162cc557f4e3bfd48c40",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Data.Nat.Log"
+      ],
+      "checkedSourceSha256": "ebf6a3bb28f345025883e2f681c1aba8849ce3424dab33f2ec0fc646add02235",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.TowerFamily",
+      "source": "Complexity/Foundations/Combinatorics/Expander/TowerFamily.lean",
+      "sha256": "22044996e3f174ab5c80ca8b979ad3b28bca6daa0edf3c8d8ac48595a7e51459",
+      "upstreamSourceSha256": "a6e9a92688065703d7f51270aeb552ac8a7c72c63afb53cb64d9c1192e5b1f30",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Contraction",
+        "Complexity.Foundations.Combinatorics.Expander.Reindex",
+        "Complexity.Foundations.Combinatorics.Expander.Tower",
+        "Mathlib.Data.Nat.Log",
+        "Complexity.Foundations.Data.Nat.Log"
+      ],
+      "checkedSourceSha256": "22044996e3f174ab5c80ca8b979ad3b28bca6daa0edf3c8d8ac48595a7e51459",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Combinatorics.Expander.AffineFamily",
+      "source": "Complexity/Foundations/Combinatorics/Expander/AffineFamily.lean",
+      "sha256": "c0d5dca45eeae5870a79136fb20d9c5b39517be7a4eeb2d7b8e1f3da1d81e1a0",
+      "upstreamSourceSha256": "6d3fdcb52761b8994e1b26e668a5b2fbebf3ab45f86ad832a32872985b61da2c",
+      "changed": false,
+      "imports": [
+        "Complexity.Foundations.Combinatorics.Expander.AffineTower",
+        "Complexity.Foundations.Combinatorics.Expander.Family",
+        "Complexity.Foundations.Combinatorics.Expander.TowerFamily",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Tactic.NormNum.Prime"
+      ],
+      "checkedSourceSha256": "c0d5dca45eeae5870a79136fb20d9c5b39517be7a4eeb2d7b8e1f3da1d81e1a0",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Computability.USTCON.Reader.Defs",
+      "source": "Complexity/Computability/USTCON/Reader/Defs.lean",
+      "sha256": "b98819bfd692c538988b8ab895e744e6f3eff85d1b377d55710e768d3eaa39bd",
+      "upstreamSourceSha256": "f0a77b7a7166b4dbfde71b2c18a2150dbda52eb6a9d999d941f416350ccc84d4",
+      "changed": false,
+      "imports": [
+        "Complexity.Algorithms.Reachability.Reingold",
+        "Complexity.Algorithms.Reachability.ReingoldEval",
+        "Complexity.Computability.Complexity.Problems.USTCON",
+        "Complexity.Computability.Machines.ReadMachine.Basic",
+        "Complexity.Foundations.Combinatorics.Expander.AffineFamily"
+      ],
+      "checkedSourceSha256": "b98819bfd692c538988b8ab895e744e6f3eff85d1b377d55710e768d3eaa39bd",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Foundations.Data.Nat.Bits",
+      "source": "Complexity/Foundations/Data/Nat/Bits.lean",
+      "sha256": "f7684593491ed2144ca88f5d2dbf84f829a232c608d465f58f0055f30826ef4d",
+      "upstreamSourceSha256": "f7684593491ed2144ca88f5d2dbf84f829a232c608d465f58f0055f30826ef4d",
+      "changed": false,
+      "imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Data.Nat.Bits",
+        "Mathlib.Data.Nat.Size",
+        "Mathlib.Data.List.OfFn"
+      ],
+      "checkedSourceSha256": "f7684593491ed2144ca88f5d2dbf84f829a232c608d465f58f0055f30826ef4d",
+      "publicationNoticePrefixBytes": 0
+    },
+    {
+      "module": "Complexity.Computability.USTCON.Reader.Correct",
+      "source": "Complexity/Computability/USTCON/Reader/Correct.lean",
+      "sha256": "32b1b219965cad1f457f96b26426774cbd086e838aa0b3e18f75c5f759334d1d",
+      "upstreamSourceSha256": "706c3ad81afddd4d7170ecf7d340832c3123c7c2d20c70bf85c44826a8a095dd",
+      "changed": true,
+      "imports": [
+        "Complexity.Computability.USTCON.Reader.Defs",
+        "Complexity.Foundations.Data.Nat.Bits"
+      ],
+      "checkedSourceSha256": "7dacc402ba77e11f3ada9669beba82108704dd5b121c9bf395a5ef76f6549bbe",
+      "publicationNoticePrefixBytes": 112
+    },
+    {
+      "module": "Complexity.Computability.USTCON.Reader.Invariant",
+      "source": "Complexity/Computability/USTCON/Reader/Invariant.lean",
+      "sha256": "9b0f2c979c5e87e002da7061a88a9be18bd1cca2ce3677a1980ea11e3f5c72f3",
+      "upstreamSourceSha256": "2e0dfb31f29a5507d26d747445b9d68dc219798ab5e49c8ab4c7d59a4f51a3dd",
+      "changed": true,
+      "imports": [
+        "Complexity.Computability.USTCON.Reader.Correct",
+        "Complexity.Foundations.Data.Nat.Bits"
+      ],
+      "checkedSourceSha256": "cabe06ab89a7ff7bca3199653647b1719d8304fca1832a54590361269262b2ae",
+      "publicationNoticePrefixBytes": 155
+    }
+  ]
+}
