@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- november-group-iso-transfers:start -->
+- **[Four Transfers from Polynomial-Time Group Isomorphism](NovemberGroupIsoTransfers/RESULTS.md)** — Uses the Qiao–Zhang manuscript and its finite-rings follow-up to obtain complete three-tensor isomorphism cosets with a residue-field exponential bound independent of nilpotent length, singly exponential sum-rank code equivalence, polynomial table-time nonassociative ring isomorphism, and marked group epimorphism search and counting with bounded-rank radical layers. The epimorphism result addresses parts of Grochow–Srivastava–Thakkar Open Question 3. Informal proofs, with dependencies stated.
+<!-- november-group-iso-transfers:end -->
+
 <!-- four-ti-almost-all:start -->
 - **[Almost-All Ordinary Four-Tensor Isomorphism](FourTIAlmostAll/RESULTS.md)** — Strengthens Li–Li–Qiao–Tao–Wang Problem 1.7 to $1-o(1)$ coverage over every fixed finite field. A deterministic polynomial-bit-time algorithm recognizes a uniformly random first tensor with high probability, decides against every second tensor, and recovers transporters. The proof uses inverse flattenings, crossed contractions and a fixed-field Fourier estimate. Includes inverse-polynomial failure bounds of any fixed order and lifting to Galois rings. Informal proof.
 <!-- four-ti-almost-all:end -->
