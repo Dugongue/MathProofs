@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- effective-local-quiver-comparisons:start -->
+- [Four effective local-quiver comparisons](LocalQuiverIsomorphism/RESULTS.md) — Informal proofs of GI-complete raw tensor deformation classes, exact all-orders normalization for fixed-arrow quiver lifts and deterministic transporter counts, linear-size TI equivalence for genuinely obstructed algebra lifts, and polynomial moving-slice transporter search and determinant counts over truncated local rings under a geometric frame promise.
+<!-- effective-local-quiver-comparisons:end -->
+
 <!-- intrinsic-isomorphism-crossovers:start -->
 - [Intrinsic structures in tensor and algebra isomorphism](IntrinsicIsomorphismCrossovers/RESULTS.md) — Informal proofs of a linear-dimension tensor reduction to global-dimension-two derived equivalence, graph-isomorphism hardness with identical Hochschild cup algebras, deterministic recovery from the Hochschild Lie bracket and a recognizable graph-isomorphism-complete tensor family, linear-length fixed-residue tensor reductions, and degree-preserving proof translations among the five tensor actions.
 <!-- intrinsic-isomorphism-crossovers:end -->
