@@ -1,0 +1,2787 @@
+{
+  "root": "Complexity.Computability.USTCON.SpaceKernel",
+  "lean": "leanprover/lean4:v4.33.0",
+  "mathlib": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "license": "Apache-2.0",
+    "source_files_copied": false
+  },
+  "complexitylib": {
+    "repository": "https://github.com/cslib-community/cslib-frontier",
+    "revision": "51c60ccb7f1e0143470b487cc059c0cb307db3c2",
+    "snapshot_date": "2026-10-29",
+    "license": "Apache-2.0",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "notice_sha256": "5bb95c00590b93ad624ca3300dea647a6f6048c6c43cc5ca268835e7b11f3a26"
+  },
+  "cslib": {
+    "repository": "https://github.com/leanprover/cslib",
+    "base_revision": "ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+    "base_archive_sha256": "e237903340b8bd4e8fe29a8e227986d41ad18261b1a0898f7bf01b22954261db",
+    "donor_revision": "f4a472560f78c59bbedd795fe041ec507f7d0582",
+    "donor_archive_sha256": "dc8f998c17f4db56e792d649bbb2d695d194ef6ebdaa5bd42fb116ed6127ff21",
+    "license": "Apache-2.0",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  "build_order": {
+    "Cslib.Foundations.Lint.Basic": {
+      "source": "Cslib/Foundations/Lint/Basic.lean",
+      "sha256": "a06db6b48f21730cb6c68bef4f7e0df03db87ca4002818590511b99506b660b7",
+      "olean_sha256": "abdf5be3d45cd17b4df7c3a3909f8854fe10f91b80c11c16c9203e044caadf98",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Batteries.Tactic.Lint.Basic",
+        "Lean.Message"
+      ]
+    },
+    "Cslib.Tactic.GrindAttrs": {
+      "source": "Cslib/Tactic/GrindAttrs.lean",
+      "sha256": "2dac711b3f7fa345786a959f36f9f0b3429b53e59fc4e23d3795c1763b6f9e80",
+      "olean_sha256": "9300a0203deb5477ee5f99dd57402a775439cdb86a7e20c6f8ca79e8f1a60eef",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Lean.Meta.Tactic.Grind.RegisterCommand"
+      ]
+    },
+    "Cslib.Init": {
+      "source": "Cslib/Init.lean",
+      "sha256": "543239115d4f0b798c9779954bb86dcd0fbd10a073cc149b39f83d55e670501e",
+      "olean_sha256": "8ecbd6b7720eafe5208ea8176b13ab4ee5ffbb1e2dcf2eb49e50072bf3b00742",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Foundations.Lint.Basic",
+        "Mathlib.Init",
+        "Mathlib.Tactic.Common",
+        "Cslib.Tactic.GrindAttrs"
+      ]
+    },
+    "Complexity.Init": {
+      "source": "Complexity/Init.lean",
+      "sha256": "36773ce9a830d3198a14a81c1f5e81cfa6e07765c4ab526a799ee8a6ec1119d8",
+      "olean_sha256": "ce53e8f914103d5fca30f8d85268191d677d5d92907c8751744121ab3a2349af",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Init"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Basic": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Basic.lean",
+      "sha256": "c428f2efb07c738eb3c46c06dc9145e674f9229e86880431cab37073e4b27719",
+      "olean_sha256": "a653b74a44640e6db68a519826c7d58ba723efded48c86faa27b3057428a61b7",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Expect",
+        "Mathlib.Analysis.InnerProductSpace.PiL2",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ]
+    },
+    "Complexity.Foundations.Data.Finset.Expect": {
+      "source": "Complexity/Foundations/Data/Finset/Expect.lean",
+      "sha256": "18d49131bb7f76ce6e7b2aff15d8624c34ae8c836627f1f7d0cce89da4d92632",
+      "olean_sha256": "c36505339b66847059b5601f4a3161440389335a85c63fa1e9b78a7c10123626",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Expect",
+        "Mathlib.Algebra.Order.Field.Basic",
+        "Mathlib.Algebra.Order.Module.Defs",
+        "Mathlib.Analysis.Real.Sqrt",
+        "Mathlib.Data.Finset.Density",
+        "Mathlib.Data.Fintype.Powerset",
+        "Mathlib.Algebra.BigOperators.Balance",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Data.Fintype.Fin"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.AffinePlane": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/AffinePlane.lean",
+      "sha256": "c342c55e97f401ef95333762c50c55323b0ba6f706c166b4155e0db1a45a02f3",
+      "olean_sha256": "e84e1064ec022f3a59079661191d31990fb7ca05971ea11742310cffcad36669",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Mathlib.Analysis.Real.Sqrt",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.GroupWithZero.Units.Equiv"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Loops": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Loops.lean",
+      "sha256": "bcc4d6a335112aaba8de7973155eb8ab1f6c96a630014e3c47d626567c3cf4ac",
+      "olean_sha256": "f1bc0ebdc81a3b8ca59c3edbc6aa33fc9a9315d25e1aced872b3b5a5b80850e4",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Tensor": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Tensor.lean",
+      "sha256": "ce926f89f551c9c037f5b4540b64d419d142a101956261c986c9d8587e703a67",
+      "olean_sha256": "8317207d20cb48dcb5101e7e08053bd992ae6c59844597bf81a20b6ab06e9200",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Zigzag": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Zigzag.lean",
+      "sha256": "07aefe699ae41ccdd48428081f8a1e0816de4b227a108bcddc40c8a56c3f1805",
+      "olean_sha256": "e6c4a8a5b29f9ae06e5f1520a02de3554fcd7b3c0fe86150b824fe799e026ce0",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Complexity.Foundations.Combinatorics.Expander.Tensor",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Analysis.Real.Sqrt"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Power": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Power.lean",
+      "sha256": "e19e64a4148b5db7ab76be96bb46e3e5ca62a9d416c139e572493a285342e877",
+      "olean_sha256": "a0718f151b2e58bb2f577a24b2d077244dd3534df20e573c74bc22e5a817845a",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.IteratedProd": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/IteratedProd.lean",
+      "sha256": "b4403fd12203c66921a14e391310aac67fef4c60a0eb5c5113d58f54d3515242",
+      "olean_sha256": "b325915de6c58206bb243de0a9ddf7e9b6b0b89eb82cee7f14073854943e369f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Logic.Equiv.Fin.Basic"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Tower": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Tower.lean",
+      "sha256": "7c95504d0096b229a93c3ce804a7121bab0a506eb82296c1db0aaab79b213066",
+      "olean_sha256": "ad0ae8178c0a66b0f71f4a1d36550461f55c4c3452f91e6dcc1b28bc5661f28c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Zigzag",
+        "Complexity.Foundations.Combinatorics.Expander.Power",
+        "Complexity.Foundations.Combinatorics.Expander.IteratedProd"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Reindex": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Reindex.lean",
+      "sha256": "b217c464feffddc0b124b8ece09c0cfdc1fb0ad5a15c0332457f558da491b967",
+      "olean_sha256": "8b9c623477a87c5f086e7b982fe46b9e34cb942500d49a4d364362dd1896af23",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.AffineTower": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/AffineTower.lean",
+      "sha256": "a0a6e958f769552e34249610278e2dcd10f316a0bf6c40e6ad4f3b59a2c4cdf8",
+      "olean_sha256": "e6028f7a75c6699c35b3a8da568f7a4692da5efe7938f3f2d9ebd85e329e1b0c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.AffinePlane",
+        "Complexity.Foundations.Combinatorics.Expander.Tower",
+        "Complexity.Foundations.Combinatorics.Expander.Reindex",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Tactic.NormNum.Prime"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Mixing": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Mixing.lean",
+      "sha256": "1553012c4df2d0aa2603cb1490e91e6891de0b7a2dd29b9c8162fad26ed1f464",
+      "olean_sha256": "ef50e83c6a2bc1bd2ea1ddd67a48cfe39086607af6b4a11e6f43af180f3f9559",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Mathlib.Analysis.Real.Sqrt",
+        "Complexity.Foundations.Data.Finset.Expect",
+        "Mathlib.Algebra.BigOperators.Balance",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Foundations.Data.Finset.Quantile": {
+      "source": "Complexity/Foundations/Data/Finset/Quantile.lean",
+      "sha256": "ae3cb00ec7cd9b640d0cb529d264783679c767b724f4e2a66cbe381e17e73e00",
+      "olean_sha256": "45f9af5c73cfbce1458aab7be7699462c15fd2d7b0abc66a6bd3a6762d0f8688",
+      "source_license": "Apache-2.0",
+      "origin": "v4.33 Reingold reader port based on Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Data.Fintype.Basic",
+        "Mathlib.Data.Finset.Max",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Cheeger": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Cheeger.lean",
+      "sha256": "41406cf807c9124ff400e2afaa1a6af792e20b1b088a0a20ee94d959a798e6e4",
+      "olean_sha256": "a73787e1eddb43c85ec20b991db828e1f19193adf30abc95240768968e74a5d0",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Mixing",
+        "Complexity.Foundations.Data.Finset.Quantile",
+        "Mathlib.Algebra.Order.BigOperators.Expect",
+        "Mathlib.Algebra.QuadraticDiscriminant"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.SimpleGraph": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/SimpleGraph.lean",
+      "sha256": "85ca375478c372a2409b21b9f946f4ac3da79cdfb9ca2737a620fafddfa37d20",
+      "olean_sha256": "b2720c7ffea3c8ba188fb9153c52f35f3dfec1fee6a559bee4a5223db1c7aec3",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Basic",
+        "Mathlib.Combinatorics.SimpleGraph.AdjMatrix",
+        "Mathlib.Combinatorics.SimpleGraph.Density",
+        "Mathlib.Combinatorics.SimpleGraph.Finite"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Hom": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Hom.lean",
+      "sha256": "5bfa9c910b9b56ea3c9feefe43663dd5afb204c869eef081abb6bd0f8f5b2354",
+      "olean_sha256": "1ac121974728fffdb3a0a06763138cfc5b2158f83f86f328c61bd14259bf5406",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Complexity.Foundations.Combinatorics.Expander.Power",
+        "Complexity.Foundations.Combinatorics.Expander.Zigzag",
+        "Complexity.Foundations.Combinatorics.Expander.SimpleGraph",
+        "Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Connected": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Connected.lean",
+      "sha256": "582a5b3138be6bd9a97b81b68bf52827caa0c28f8729e08876bdd581725fbc8c",
+      "olean_sha256": "e5576d3818c9294c7c5598e6e707471a2ca8145ab30f82f01c08c51d2548a3a5",
+      "source_license": "Apache-2.0",
+      "origin": "v4.33 Reingold reader port based on Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Cheeger",
+        "Complexity.Foundations.Combinatorics.Expander.Hom",
+        "Complexity.Foundations.Combinatorics.Expander.Mixing"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Reingold": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Reingold.lean",
+      "sha256": "aee99e7139e5b68c2247b51dfcfc57d0e9ccefe3d9c0dc23474252761c5706e3",
+      "olean_sha256": "6a4ca0edb6dd04adae6b8ca16e5f43422256dbb61ddfa731398516f26dbc4bb1",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Connected",
+        "Complexity.Foundations.Combinatorics.Expander.IteratedProd"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Perm": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Perm.lean",
+      "sha256": "7f73f6a75112483ea418aef45d6392e5727babd8d8b2a5412d3092c162b71426",
+      "olean_sha256": "faff79ba0785c55e712255c07b184788d0c8e1227b6ace9e72fa049e2c841b8d",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Cheeger"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.SlotGraph": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/SlotGraph.lean",
+      "sha256": "6e1b94f608da852022769fb32fb7a283417db9054a75167c7deeb17227e3e09d",
+      "olean_sha256": "2eeefd88d9113bd60a5c78aa182acd385b1d7c570f65958e259650be0855ae2f",
+      "source_license": "Apache-2.0",
+      "origin": "v4.33 Reingold reader port based on Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Hom",
+        "Complexity.Foundations.Combinatorics.Expander.Perm",
+        "Mathlib.Data.Fintype.Inv",
+        "Mathlib.GroupTheory.Perm.Cycle.Basic"
+      ]
+    },
+    "Complexity.Foundations.GroupTheory.Perm.Fin": {
+      "source": "Complexity/Foundations/GroupTheory/Perm/Fin.lean",
+      "sha256": "d311ad1bb314065a1444147e9a188334ce247a8d5e98846fc76dafe0f3245744",
+      "olean_sha256": "bf6c041554b94741232b66c6fc227b969accb01b74a63dd1f301c5af24da9380",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.GroupTheory.Perm.Fin"
+      ]
+    },
+    "Complexity.Algorithms.Reachability.Reingold": {
+      "source": "Complexity/Algorithms/Reachability/Reingold.lean",
+      "sha256": "b810e4a78bd722b9a0456cb5fc7ddb70e1b14a44cb1883eaea727b28b135d7e9",
+      "olean_sha256": "0dc2ed7406089dcc00dfbd7f41a62afbaa354a68de1ad49168b53df8842fc7a0",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.AffineTower",
+        "Complexity.Foundations.Combinatorics.Expander.Reingold",
+        "Complexity.Foundations.Combinatorics.Expander.SlotGraph",
+        "Complexity.Foundations.GroupTheory.Perm.Fin",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Data.Nat.Log",
+        "Mathlib.Tactic.NormNum.Prime"
+      ]
+    },
+    "Complexity.Algorithms.Reachability.ReingoldEval": {
+      "source": "Complexity/Algorithms/Reachability/ReingoldEval.lean",
+      "sha256": "d8b68f9c9fde403b0ecd4fd027e2aaa3b02b86876fee58328638ef29d6aa88af",
+      "olean_sha256": "1168ea8388797fe1a1c1e708b8d3c9cdf73b800406a1b52475e56898be21b80c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Reingold"
+      ]
+    },
+    "Complexity.Foundations.Data.List.Append": {
+      "source": "Complexity/Foundations/Data/List/Append.lean",
+      "sha256": "7cc469223a6aa483b6c0b1a9e7714c9c766970091fa1984dc20cc4957647d2df",
+      "olean_sha256": "bdbe2e76c956acf48f514d701c887356415412aa807ad1553b11e6068afa3c8d",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Data.List.Basic",
+        "Mathlib.Data.List.DropRight"
+      ]
+    },
+    "Complexity.Foundations.Data.List.Lookup": {
+      "source": "Complexity/Foundations/Data/List/Lookup.lean",
+      "sha256": "6d8e81fed196fc8a3ade23403b3704e5e2a0c86095b6eeea95b20bc9eacdbc77",
+      "olean_sha256": "d4df247b02ba1d21fc6a3ad7fee0bdeac1d85c70061501a417198d41d5a325be",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Data.List.Basic",
+        "Mathlib.Order.Lattice.Nat",
+        "Mathlib.Data.List.Forall2",
+        "Mathlib.Data.List.GetD",
+        "Mathlib.Data.List.OfFn"
+      ]
+    },
+    "Complexity.Foundations.Data.Nat.Div": {
+      "source": "Complexity/Foundations/Data/Nat/Div.lean",
+      "sha256": "4a9a492aa1f61c7d8cd251d8547fcff5de9fea068b7379ecc056f5eb4299d08b",
+      "olean_sha256": "8402733854dbc3a6f230547d4a92b581d002a13562afb712e1e9526b1e46666c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Data.Nat.ModEq",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise"
+      ]
+    },
+    "Complexity.Computability.Complexity.Problems.STCON": {
+      "source": "Complexity/Computability/Complexity/Problems/STCON.lean",
+      "sha256": "9e23d7e1e611e854006c039556107ba114c141a159d6df4d15834249451f74fd",
+      "olean_sha256": "09827d6e444377a1a3dd6fb5ca8fe61c158dc097c78d87640c1ef66b67b02c85",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Logic.Relation",
+        "Mathlib.Data.List.OfFn",
+        "Mathlib.Data.List.GetD",
+        "Mathlib.Data.Nat.Size",
+        "Mathlib.Data.List.Range",
+        "Complexity.Foundations.Data.List.Append",
+        "Complexity.Foundations.Data.List.Lookup",
+        "Complexity.Foundations.Data.Nat.Div"
+      ]
+    },
+    "Complexity.Computability.Complexity.Problems.USTCON": {
+      "source": "Complexity/Computability/Complexity/Problems/USTCON.lean",
+      "sha256": "e8123112cf74685d874dd823d7cad5312412fa981052ded08c7a9a1263dab887",
+      "olean_sha256": "f7dac77aae1d2cce56fc1db0e82d971c03164f0422aa3d6e8c4628a0141ad656",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Complexity.Problems.STCON",
+        "Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected"
+      ]
+    },
+    "Complexity.Computability.Machines.ReadMachine.Basic": {
+      "source": "Complexity/Computability/Machines/ReadMachine/Basic.lean",
+      "sha256": "2f013090d99ed54f31a643e36d808085f19cf215e72089734c2afbda60c9180a",
+      "olean_sha256": "d68bb126514a5bcc3dc2723846547f8d571676bf8b4a023061ff03f0e8fd41f1",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Logic.Function.Iterate"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Family": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Family.lean",
+      "sha256": "577b56821e796b2936037e1fc92be72cce35761cdbc365e9262e9870d00e508a",
+      "olean_sha256": "ab98b8b2d10bf72700ba8f301198194a6b2f59cd0f9ccea42c61e9736e45e63f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Reindex"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Lazy": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Lazy.lean",
+      "sha256": "e8e4465e0dfc29773f6901776196fa24d363fd2a7b6824494acfb5425e051db0",
+      "olean_sha256": "1eed7c83b22670f86a439da7de9fc1d482ccc40fa192346db52013301ccbd634",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Cheeger",
+        "Complexity.Foundations.Combinatorics.Expander.Loops",
+        "Mathlib.Algebra.Order.BigOperators.Expect"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.Contraction": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/Contraction.lean",
+      "sha256": "54d480e9205116c83d13384c09ef6398138bc5a08af15ec4af3c7966bf9591ed",
+      "olean_sha256": "2c20766081ac86ce383c8f58b9efb938ca75f832a3a08e1ac27127c8083527ae",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Lazy"
+      ]
+    },
+    "Complexity.Foundations.Data.Nat.Log": {
+      "source": "Complexity/Foundations/Data/Nat/Log.lean",
+      "sha256": "ebf6a3bb28f345025883e2f681c1aba8849ce3424dab33f2ec0fc646add02235",
+      "olean_sha256": "398c03936eb8dea92f74d345742e07f2e147252d0c97a3c2c5dd24d7d9796ac7",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Data.Nat.Log"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.TowerFamily": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/TowerFamily.lean",
+      "sha256": "22044996e3f174ab5c80ca8b979ad3b28bca6daa0edf3c8d8ac48595a7e51459",
+      "olean_sha256": "dc156c14817edea810ab46630e8965e4cbac35fef51f6f7dcec5694e9e47e20f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.Contraction",
+        "Complexity.Foundations.Combinatorics.Expander.Reindex",
+        "Complexity.Foundations.Combinatorics.Expander.Tower",
+        "Mathlib.Data.Nat.Log",
+        "Complexity.Foundations.Data.Nat.Log"
+      ]
+    },
+    "Complexity.Foundations.Combinatorics.Expander.AffineFamily": {
+      "source": "Complexity/Foundations/Combinatorics/Expander/AffineFamily.lean",
+      "sha256": "c0d5dca45eeae5870a79136fb20d9c5b39517be7a4eeb2d7b8e1f3da1d81e1a0",
+      "olean_sha256": "8ffc1e291796e8003ca55df2a4f29cf102017b18481650e6cf3ed61f6991e3a9",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Combinatorics.Expander.AffineTower",
+        "Complexity.Foundations.Combinatorics.Expander.Family",
+        "Complexity.Foundations.Combinatorics.Expander.TowerFamily",
+        "Mathlib.Algebra.Field.ZMod",
+        "Mathlib.Tactic.NormNum.Prime"
+      ]
+    },
+    "Complexity.Computability.USTCON.Reader.Defs": {
+      "source": "Complexity/Computability/USTCON/Reader/Defs.lean",
+      "sha256": "b98819bfd692c538988b8ab895e744e6f3eff85d1b377d55710e768d3eaa39bd",
+      "olean_sha256": "246270ebc36e60be2573dead7de5e59f73e4c15cccb455c3377a9b492eb660c8",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Algorithms.Reachability.Reingold",
+        "Complexity.Algorithms.Reachability.ReingoldEval",
+        "Complexity.Computability.Complexity.Problems.USTCON",
+        "Complexity.Computability.Machines.ReadMachine.Basic",
+        "Complexity.Foundations.Combinatorics.Expander.AffineFamily"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Configuration": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean",
+      "sha256": "bf094970a6ff2c0df0c07eadd242a1411f18fc3bdc964a7ae88401e3f6517224",
+      "olean_sha256": "ee8f58a3db9ba8e74babb7467789433c6e4c25fc3a45c8921be96ff6d361e0e8",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Mathlib.Algebra.Order.Group.Abs",
+        "Mathlib.Algebra.Order.Group.Int",
+        "Mathlib.Algebra.Order.Group.Nat",
+        "Mathlib.Algebra.Ring.Int.Defs",
+        "Mathlib.Algebra.Ring.Nat",
+        "Mathlib.Data.Sign.Defs",
+        "Mathlib.Data.Fin.Basic",
+        "Cslib.Init"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Nondeterministic.lean",
+      "sha256": "a75aa006f0ed420be690be528330851803065e1e8534b3ac6bffe315ba97a52e",
+      "olean_sha256": "281a7a146194842352fd625d24498e304f6959bf06eef7464c8960fa89696a72",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Mathlib.Order.RelSeries",
+        "Cslib.Computability.Machines.Turing.MultiTape.Configuration"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Space": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Space.lean",
+      "sha256": "e5d852b9bf9728b824e96ed1dff6ddec8653cfc759408870071b50deb03a7527",
+      "olean_sha256": "f5b8249e33f6c2e031a6516cbeced6e052ec35d72956e3532b61a5c2a2eecc4f",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+        "Mathlib.Data.Int.Interval",
+        "Mathlib.Order.Lattice.Nat",
+        "Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Deterministic": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean",
+      "sha256": "ac6f7ca6799853c05cc7dcb066fd9114742eee7bf66a6ba475cea646677c0ddd",
+      "olean_sha256": "8ea3aab2bc7d555d431ae9205b556348b6c5342575283e99ccc2f31cf6b24e8b",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Mathlib.Algebra.Order.Group.Abs",
+        "Mathlib.Algebra.Order.Group.Int",
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+        "Mathlib.Data.Sign.Defs",
+        "Cslib.Computability.Machines.Turing.MultiTape.Space"
+      ]
+    },
+    "Cslib.Foundations.Data.Nat.PolynomialBound": {
+      "source": "Cslib/Foundations/Data/Nat/PolynomialBound.lean",
+      "sha256": "abd8372d183d920dca125fc863cbb226fc5ca3264cdfc2cb9ba3b7c63fdb1359",
+      "olean_sha256": "b0a186e0def50f33e6d1748395a232a5ce2fc286a92789b22a81d6f4ee32db97",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Init",
+        "Mathlib.Analysis.Asymptotics.Lemmas",
+        "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+        "Mathlib.Data.Fintype.Order"
+      ]
+    },
+    "Complexity.Foundations.Data.Nat.PolynomialBound.Closure": {
+      "source": "Complexity/Foundations/Data/Nat/PolynomialBound/Closure.lean",
+      "sha256": "aa22d3f6d03876d63ef44b3774f212e39df6208561ea28614e641a2e6d95234a",
+      "olean_sha256": "c7ba3d81aa061ebb92b39642db52950e76e5e862ebedae105ebcc1dfc6a64c2d",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Foundations.Data.Nat.PolynomialBound",
+        "Mathlib.Data.Nat.Log",
+        "Mathlib.Algebra.Polynomial.Eval.Defs",
+        "Mathlib.Tactic.FunProp"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds.Polynomial": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/ResourceBounds/Polynomial.lean",
+      "sha256": "2e70fd1025adfd754041734c3f9ff0af9100244b125cbed83438dedb85766712",
+      "olean_sha256": "0237a3298fe2a2e1e0bb45591297ad109f65a6a5828c2eda78ed54273e63fc01",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Data.Nat.PolynomialBound.Closure"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds.Degree": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/ResourceBounds/Degree.lean",
+      "sha256": "ae65f7d98dc1f341cec84358defc11d8948ed7824d4aa01bb84acfe8defa7a40",
+      "olean_sha256": "9113b2a9d88a9901f843f038a2dc2b499e46846a127f2d430d9a45be36bd6eb0",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds.Polynomial",
+        "Complexity.Foundations.Data.Nat.PolynomialBound.Closure",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/ResourceBounds.lean",
+      "sha256": "51503b91ff9e3751ff478330ac2a483134998c626bdcee8914518a3599bc5903",
+      "olean_sha256": "e718f18c93024d1c8929251807191ddbf5a93fbcf149d9a40c4994cbb0ed9e93",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Cslib.Foundations.Data.Nat.PolynomialBound",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds.Degree"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Bool": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Bool.lean",
+      "sha256": "ce2f74dff8793da3fc2f85ed2ac42bf572c7767c23d74e1e6b8ffd9d0994a9d1",
+      "olean_sha256": "cead21ddf48834f386da25766cb9418352756e783451385cdcd0fcee914381c2",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Data.List.Basic",
+        "Mathlib.Logic.Embedding.Basic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Capabilities": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Capabilities.lean",
+      "sha256": "585f3559fb85e57d20be4b847ba425062de39232bb74ea02d1ff9a9aef539ae2",
+      "olean_sha256": "482e1f5db2886e17390bec279491cfb68be3e9bca0d0cd1c2dcc2dcacc704904",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Bool",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Frame.Basic": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Frame/Basic.lean",
+      "sha256": "25d1899130f68af6d78c7159abc70f8319c48730e8b16728dff90913f0a11e1e",
+      "olean_sha256": "103fed446688d5aae69a033950ce47ac68999a565f79be8e821ec0490d48f104",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Init",
+        "Mathlib.Data.List.Basic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Space": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Space.lean",
+      "sha256": "ee61836222f9aeb89ccd95197f27d848e7398e69aa4f86cff1ddd1b1cd710782",
+      "olean_sha256": "b76265abd9683989c959afa626b321ca40a635165b41990c3dc40070f2d273a2",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+        "Cslib.Computability.Machines.Turing.MultiTape.Space"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Deterministic": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Deterministic.lean",
+      "sha256": "0e70d9571b0a6cd75a72f887993ba4396f79b589fe5e7c7155b3748e2caedf6a",
+      "olean_sha256": "8a109418c093dec8f942a0ed4395f344735ed775778bacc0fff094d415f0241c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Space"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Id": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Id.lean",
+      "sha256": "c607dc9efad1ea5db0b8e47dd67de6515c6cd89b4622cbfcd1439ade8cddf88a",
+      "olean_sha256": "717d3fb9c6f78566f72958aa787a40cf197b2f776b0871ce03dcbb95e7a00738",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Deterministic"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/WordsCfg.lean",
+      "sha256": "ce5256d78d91d57cd90f562ddbfd0b461d43b49222596f1820462b0f07d07370",
+      "olean_sha256": "1b1a6d47400b027a53962567f2060eaefafc4c5fabaa6f4ce445d304817b9355",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Configuration"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/TapeLemmas.lean",
+      "sha256": "88be4d057d64d14c74dbadb2ca5e8fc1680f8aad2237c758e4cee1d5fdd43e78",
+      "olean_sha256": "24b007e3dc0b7c201810ff1ca07173a6c218b605732bca558677eca63500c203",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Mathlib.Data.Int.Interval",
+        "Mathlib.Order.Lattice.Nat"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean",
+      "sha256": "de528677e384607ac8263ad2998695ee59b0ca734b4e1ca5c1ec6ea889ad6e7d",
+      "olean_sha256": "bd2c927f5ccde1785333751b3b9b9be4964442e949e99561a67cc52f69677408",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
+        "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean",
+      "sha256": "90d664dfa5a6fec4be3c36365a683cc683bf7c5922e3b07adfff56343629ed69",
+      "olean_sha256": "e0a315b5115208314eb76f3d4415a68a57ecc530de648eb297aa7857a9c2e6ab",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Mathlib.Data.Fintype.Inv",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean",
+      "sha256": "5123d23e00fcfab6f4443c9012ddee6a3d1710ca4288c36e5becf7b2c51a1e12",
+      "olean_sha256": "7249349730234c5f934b1934e07ded74d104f0b5e25a1e76e4703c18bcee6744",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean",
+      "sha256": "c0cf1574c916c7d4f67a637b44c0e26ba68792c6022c46d195844b1dc600c71f",
+      "olean_sha256": "21c60ae19026e8aee9f40674db5adc626214c5691d1066d4815e0d23a50d4f7e",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Nondeterministic": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Nondeterministic.lean",
+      "sha256": "7b0e48584d4663cc47fc74dc2d900ac5cfb6241085e71dccfef8bcbbfde69860",
+      "olean_sha256": "b14a59e7204711741610e864fa2102b75fd9efd377c7b21505cf6dce78f5da89",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Nondeterministic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/TapeLemmas.lean",
+      "sha256": "cb3c3fb7861445fe1c5529c1d681696a3b635fb110e8ed78f4783294fa343c3d",
+      "olean_sha256": "ed4cdc58a9b7fb876d6847cb924c47f0abca3a4f8a831590a47e0f61a5193e0c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas",
+        "Complexity.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Nondeterministic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/Sequential.lean",
+      "sha256": "7431a17457662f7f195243c67789a1d294390c1f28419769171912d51b4e5cb0",
+      "olean_sha256": "33614d8b8bfe5ab7923a83afdb4fbe39f0f6e468e3960be1901c3c0439b7ec81",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean",
+      "sha256": "35fafcbb213feb3cf1b0258f2021c4e500609de41eaad393b707036fb3fb98d9",
+      "olean_sha256": "ed116ee7c0dff13dbf816e4ae55a2c4c1c2e850ae966b6af2ae5d9a8233ce295",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelZeroSpace": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelZeroSpace.lean",
+      "sha256": "9ade390d785f3bc612fd98902562798f127079443b41fcf0f4ac787ae4d844f8",
+      "olean_sha256": "8c25043b391a262cfc1f8db018b943eb6c88b580e5ee0cd5ca0959cf3cc787c5",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Mathlib.Data.Finite.Sum",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Id",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelTransducer": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelTransducer.lean",
+      "sha256": "60c088c49ab19839ef577b84fee5cbeea3d71f512c8405544213e0f9012f849b",
+      "olean_sha256": "fa3c63875ea383a0a9f7557be694ba3b5a0401ccbfa12b0df879760fce6efc85",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Finite.Prod",
+        "Mathlib.Data.Fintype.Option",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelZeroSpace",
+        "Mathlib.Data.Finite.Sum"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.FrameMachines": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/FrameMachines.lean",
+      "sha256": "9def5f0ce8ea357d0eabfcaa43047c6888512ae493a18b99cf03a464aec8b2e2",
+      "olean_sha256": "1f687f4204a9e6050d10720ace7f35ef2e02800ec4041ff65131bb59332bed8e",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Frame.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelTransducer"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.ResourceFacts": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/ResourceFacts.lean",
+      "sha256": "11531a68142a2ba3373221f8606363a3bfcf0ded0a32c63ce3d7f2abb31bc063",
+      "olean_sha256": "86ba6db7ed68bfeed3d21aefd46536af869519e2cffc054247a9494ee8769540",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas",
+        "Complexity.Computability.Machines.Turing.MultiTape.Deterministic"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Combinators/AlmostConstant.lean",
+      "sha256": "c86a25d2000e3653fd83b3660b2d3337649ced24143ee66c3fe910932ce2cfa1",
+      "olean_sha256": "62888ad6ba86548cb91460e5999afe309bfbdc34732e74849913805ce1247e67",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Mathlib.Data.List.Infix",
+        "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Mathlib.Data.Finite.Sum"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Combinators/Id.lean",
+      "sha256": "8eef6025d577fd0fbd945749c9359b608e2325510554407aa07f1b50ff379d44",
+      "olean_sha256": "f1f4ad91ed343e54d73f3f3d113caa1f2466c3cca1a436218f28ed55bf9331bb",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Deterministic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.PolyTime": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/PolyTime.lean",
+      "sha256": "e371588bacd95e4b5e803cdece8bec36c04c63f73c76daa32eeb7351bb4930ca",
+      "olean_sha256": "db23269642fe64062c326d3345ad5bfdc73f8c1cbfb245122ed495de1e9e10f7",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Cslib.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Cslib.Foundations.Data.Nat.PolynomialBound",
+        "Mathlib.Tactic.FunProp",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Run": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Run.lean",
+      "sha256": "5e0a8177a57956c0e9e707365234460ba4794cd4c8c75c4e6fdce404043118c0",
+      "olean_sha256": "07594d85c2c27ef9f986ec97d1d4723b66464dff6341ff2ce6bf8a3c9bd63e8c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Shadow": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/Shadow.lean",
+      "sha256": "b7cdcae5ade0bb659120810ba0b967433ea2518dcf17260256560984281498a6",
+      "olean_sha256": "f5f105cb23f193e0c8d72590d7d743bca2bcb6e5e1e0d3b0ea757b3a8e3e248a",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Run",
+        "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas",
+        "Mathlib.Data.Fin.Tuple.Basic",
+        "Mathlib.Algebra.BigOperators.Fin"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ClearShadowed": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/ClearShadowed.lean",
+      "sha256": "f900840288a227ecc10fd834e787bda2b0c094003d3de258da57f0e95d01034b",
+      "olean_sha256": "aa7c1176d89cecc15a668a3a5d45f834af597bfc6f6e2ad674a1ebcca31107f4",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Shadow",
+        "Mathlib.Data.Fin.VecNotation",
+        "Mathlib.Tactic.FinCases"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/TransformsTapes.lean",
+      "sha256": "f891e76f9d31bdfe744b8f1d894df5abcf0dbe576ceb22d0fc3d5b09e256d005",
+      "olean_sha256": "0d7aeb844a033d71ea4470947542462ddb6f5fd5f4defbd66b5100d7bc6107d8",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Defs.lean",
+      "sha256": "83cb0644ae4bd263d7ea29f0f4c067e06925ccfce39535dcb3c98be1333f2cfa",
+      "olean_sha256": "a46be73dc58fcb0df76c6f56e46590b9fd0554c5a88ad6cd842a4ebda40b2dab",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes"
+      ]
+    },
+    "Cslib.Foundations.Data.Fin.Tuple": {
+      "source": "Cslib/Foundations/Data/Fin/Tuple.lean",
+      "sha256": "4878d33c2c5a5f8cae0f5820cd5f92ddaa088fc84b8508a395e8f0c9d27bfe35",
+      "olean_sha256": "e54a109bb79ec611e87dd3d55078e05e40e6213d6401f99569d8fcb79af6ec87",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Init",
+        "Mathlib.Data.Fin.Tuple.Basic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean",
+      "sha256": "ad227e8c4b86a79342aed04e3f7abba164b4fe311076eb0956201d9fc92fa40f",
+      "olean_sha256": "f3fa014c357e8c39e44d50f62aba66aacb992696461bb7c9f396f96d1edb547f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapesView": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapesView.lean",
+      "sha256": "679e57e98fe63e6a16a5f37dc0fe5b2d6889a2e5da8bc70d9309b4efdfb1daee",
+      "olean_sha256": "28ca1ffa9e90f32817e289580f1c87d2e98f1a9fe85325fe9da21a062cd66121",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Foundations.Data.Fin.Tuple"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelNormalForm": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelNormalForm.lean",
+      "sha256": "9fab1227b06c609d650797317a6969204c9852862bc3bf3aa40a63eacdf189ea",
+      "olean_sha256": "3ef3d028ebe922e79ac496fe0f01b31e84659e3d104826fcfa3ea608d5573c25",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ClearShadowed",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+        "Cslib.Foundations.Data.Fin.Tuple",
+        "Mathlib.Data.Finite.Sum",
+        "Mathlib.Data.Fin.Tuple.Embedding",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapesView",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Data.Fintype.Option",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.NormalForm": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/NormalForm.lean",
+      "sha256": "abeae839e527b025d34b27739ed8c367762d633f865bb22f9f733c2131f85756",
+      "olean_sha256": "da3ab9d23dc7400046c27766ce0a262631dd632466ac08cb6facf8d777ec4011",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ResourceFacts",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.PolyTime",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelNormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas",
+        "Complexity.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Complexity.Foundations.Data.Nat.PolynomialBound.Closure",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ForwardWork": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean",
+      "sha256": "dcc4c4c9b87f6b7d8c5fc3d2f82e4ea64b916a4db3164237738101330cb19122",
+      "olean_sha256": "8fa2cff8dd7b08560522bbccae1d0f88da3de19ae041e4c113ce7ccc60ad5bcf",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
+        "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean",
+      "sha256": "76b3a505beaaf443190b146b71d809507e888216c5504171ff0d8fff16d8b379",
+      "olean_sha256": "27456c6646f822576ca5f7b5b363bbf6ae593835ffff84b316594c3e9a5780f2",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
+        "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ClearWork.lean",
+      "sha256": "dab29e9adba731ff31b1e9012041809b8be75372a70ae4b69f3660855395240b",
+      "olean_sha256": "343faa0b4ceb69d247e914e9cba1a59fd445cb51d3781fc4173b6f1188b8a415",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ForwardWork",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Sequential"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean",
+      "sha256": "284e5f2b8a651462eaee8b0d2cda40364716e220e70f47dbbcdc1425bd0cd6e0",
+      "olean_sha256": "d12274836dbf07dcf8327b4cdf0dd0810975d10c2626d0092da3fe8338e78a32",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
+        "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.MarkWork": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/MarkWork.lean",
+      "sha256": "dc40a089f8a702f20292dc283048f8f5bb7ca1c3d1ce05a89cb7e7f16fbdfda3",
+      "olean_sha256": "0ede93209c9244d634862e1de719324a17857b7421ddbe7fa130b5bec99bda1d",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Deterministic"
+      ]
+    },
+    "Complexity.Foundations.Data.Fin.Tuple": {
+      "source": "Complexity/Foundations/Data/Fin/Tuple.lean",
+      "sha256": "66637ee20ac1121ad2a3584709f55aaa705883df3df0f0e2faeb599a845cad81",
+      "olean_sha256": "b6b7cab661419e267c0332dc39a53b4cf587ad0e5c5a6db60a43109ae84c8b5e",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Foundations.Data.Fin.Tuple"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean",
+      "sha256": "dae606a5dcddf6cb524d11436cfba9f5758a4f5101acb0de92f404b06aaf540f",
+      "olean_sha256": "f2d9bdfd6997835219bbb8e80f240e46ce7c8e9afad5dd09c94da3d8a3578016",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.MarkWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+        "Complexity.Foundations.Data.Fin.Tuple"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean",
+      "sha256": "ee8994b90dd341cf4950d7f443e0b46a4309448e1c01bcabefdf5c93d1183420",
+      "olean_sha256": "492c1ac4ef4255ebefaa99a7301216ebfd975456560c0ea7e17e4f165185f7b8",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib ee99dd30bd1a9f466c25a51b39a5cb0bfe4d2342",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.WordsCfg",
+        "Cslib.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean",
+      "sha256": "d07153aab4c28e43ebffcbfbfdc6228fa8b65b00e8209b6018620b597b73247c",
+      "olean_sha256": "b3ca85306be9cb70fa10adf6d057d69c77b98f5d6fd3a4b263664346a730b62f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelFacts": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelFacts.lean",
+      "sha256": "ece92f9d815f771c1ae8e598705c51623646371ab9fbf7f0d7eb6994aed9b5d2",
+      "olean_sha256": "967b6008893b16e06799d18d5625395183054f67a44a29222a364ccb872ebbba",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelComp": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelComp.lean",
+      "sha256": "80146251191a35e1201c171234491662a6f66c192e7a4e26b66ef7168cfa3562",
+      "olean_sha256": "dd41c75df64b9ba58daf7e2815a792a3db9682a2d87c61a2fe0cc87c89791b04",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Finite.Sum",
+        "Cslib.Foundations.Data.Fin.Tuple",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelFacts"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/LinearPrimitives.lean",
+      "sha256": "c4723d30bd3665533ef5e9b8f1830a1c3bd8fb7d7a3d557b64d7e79f7c4234ab",
+      "olean_sha256": "ee9ddaf73caf07347e89b3c0ab70052f665aa1f5ce88aece0db6bd1f8bddef30",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FrameMachines",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelTransducer",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.NormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelComp",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.CodecWordMachines": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/CodecWordMachines.lean",
+      "sha256": "a41f9c59eecc51694d147af7479b41615e9637d201b7989863e0d65316f74332",
+      "olean_sha256": "e4b2e7d3c7d0eed8a2800efc7eae1bcf483c26e843cd715ad3c688ae942ebe96",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FrameMachines"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelAppend": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelAppend.lean",
+      "sha256": "fe159db5be691499181d287040e1a7007018857f0ce38cfa3b300e939d38db16",
+      "olean_sha256": "5119f724633456d6ceede108dc9fb6c13b90bd2129fc956c973986c4ac5684df",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Finite.Sum",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelFacts"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Branch": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/Branch.lean",
+      "sha256": "f20b08af831d3fcdf1720dc0d3061219149ab8bfb76c726cf11094de8e1db371",
+      "olean_sha256": "aaf84e475b423655dd9401c3938bec030c7e747f2970044b1180744a19a53045",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIte": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelIte.lean",
+      "sha256": "f771d11ce018904c9a4b9b94c9ad030958e523d42fbceedd75dda3524b3bc17b",
+      "olean_sha256": "de040b27c2d14f2d37ac404e1d7c82c3643c5280b1ac89388203cb60e7b774df",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Finite.Sum",
+        "Mathlib.Data.Fintype.Option",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelComp",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelTransducer",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Branch"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearCodecPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/LinearCodecPrimitives.lean",
+      "sha256": "f19220ce615d464fe8399cda0050ffc1041b983c858ca6fca878933cc8e8d4ee",
+      "olean_sha256": "a8aa4c2ac6ce2afaed79596eea446d55e31e01ea09169307f208425527268307",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.CodecWordMachines",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelAppend",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIte",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Capabilities"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Words": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Words.lean",
+      "sha256": "239611d7d7e88e7dfb1c1c556bc8648177ceaaec9a21c84e308cb5fe028f7c0e",
+      "olean_sha256": "5bbb0406693eeceb8487cea29e99d627f6fe1f3d0839fc28e0fd8f70b08a7348",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Fintype.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Capabilities",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearCodecPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Frame.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FrameMachines"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Unary": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Unary.lean",
+      "sha256": "46c7b1f36242265ecc891e5849c20422cc178079f87d3395b575d14f9cefb6e4",
+      "olean_sha256": "789ee9ee34ce30da6fb480c60f9ff53c333ad134c7575bfea85ce320b6fe266b",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Words"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.TidyZeroSpace": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/TidyZeroSpace.lean",
+      "sha256": "f80dcf933c635f3285e69d81ef01a72ed625fca3b062becdf9e49c39afe00699",
+      "olean_sha256": "d75b3e9d34c1561f6b417fb646d1b3ff2b0085a315fbf41ae20a838a8ea805c4",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelZeroSpace",
+        "Mathlib.Data.Finite.Sum",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Id",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Transducer": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Transducer.lean",
+      "sha256": "26b46685effbb3fb43491923e11130e459ee92cc962462692477117fd0382b36",
+      "olean_sha256": "b8f41e20de8107b8c02b5515fb3c80d93e0c192b180d5b3e1d4430703824b4d4",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelTransducer",
+        "Mathlib.Data.Finite.Prod",
+        "Mathlib.Data.Fintype.Option",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.TidyZeroSpace",
+        "Mathlib.Data.Finite.Sum"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.UnaryMachines": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/UnaryMachines.lean",
+      "sha256": "d1b83c122697957ac7439cea17ab795089591caafacab1bf9104e0ee2d68f375",
+      "olean_sha256": "49ce6be1a459c9c2ab75240381f1d9d11c066682f809d28487fb911977b69c13",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Transducer"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.WordPredicates": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/WordPredicates.lean",
+      "sha256": "513b149c23bd2142dc4ed995e9dd831fd9a6962509f648dc9458927c4a60b673",
+      "olean_sha256": "8174186c8348a300c90ab3017aa9a575bef182a10e08ad1c4fd7ad5863ca0c7e",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Transducer"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Basic": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/Tidy/Basic.lean",
+      "sha256": "aaaa6933131f3131e8885667d92f93b59d0c0b7c4e9b44686de86970b0b8f51c",
+      "olean_sha256": "82a934220b1882514459e1ceaaf4fe859e586e3afdbe28701150d198e453c50a",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelFacts",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Comp": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Comp.lean",
+      "sha256": "e06d87d715a9b7348f62ec115e77afe77a96413dee4a5876c02fa532bac97563",
+      "olean_sha256": "7c10400c22855b28583d0d278ff42d3d7bf13db3e494667287606a73e3901de5",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelComp",
+        "Mathlib.Data.Finite.Sum",
+        "Cslib.Foundations.Data.Fin.Tuple",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Basic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeComposition": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/DegreeComposition.lean",
+      "sha256": "44cd070b6a6dd00facffb3f26d18893b6ed31679f4a6bf8083b1974217ab0a57",
+      "olean_sha256": "c4d65de45c457ba101e5a2fc0c047391db7b44381c5d2fc01afe1182ebdba38c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.NormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Comp"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Primitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/Degree/Primitives.lean",
+      "sha256": "cb8ef564a4a4d6f6e2eab56f5f6e7fa4a90b264174bd2cbbab163baa4db14b6d",
+      "olean_sha256": "05bdf34f05fd09d36b26a24d9983aa058ee3a6c54a3da6e5607316b42b428f91",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.Id",
+        "Mathlib.Data.Fintype.Lattice"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeUnaryPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/DegreeUnaryPrimitives.lean",
+      "sha256": "5ff36d7bf464bea748072537555458aefb6a6fb9cf6ff4134d821af84d51fec5",
+      "olean_sha256": "b46f982a475a63488e2e70c3b2d41a3aa0041b50d4a63ca30ce3d27afb36dc05",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Unary",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.UnaryMachines",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.WordPredicates",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeComposition",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Primitives"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.WordEquality": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/WordEquality.lean",
+      "sha256": "64b6759a591499b85709a8284818992992e931e262512281d5fe26e56d1cb96b",
+      "olean_sha256": "2b0c9ce80a823097a74424d049997e61284e467bcd798a43f83b29fa3dbaca7d",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Init",
+        "Mathlib.Data.List.Basic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/List.lean",
+      "sha256": "fa7ae6f98d43410e999da15741097911d97b968576068c5a402bc0f578afafe8",
+      "olean_sha256": "fef6884f5d196f6f414d1df7044eb2afe386f8a99c1a517cb27dd7fe95408598",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Words"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List.Size": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/List/Size.lean",
+      "sha256": "895954056e04a3fd5b9b2b269f6a12154dd2685c5826457e936fc5062d793753",
+      "olean_sha256": "008377822e8210cb3f997f097c8180de5cdab19b635c980bd96bb19d65c4719f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Option": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Option.lean",
+      "sha256": "0982024353737ed483d53bbbb50d9e566fc4b6b267ea4fc6198ebc4481c04516",
+      "olean_sha256": "9dcf961d893c250843ee300abe3f63c46817472dbaf12b1165ae369bdc93b858",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Words"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeOptionPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/DegreeOptionPrimitives.lean",
+      "sha256": "e730f1119de0856004568bb71ee4efdb5e241f6d8b263f3570833dee39a79c19",
+      "olean_sha256": "61f8a07dd7fdd123dc346ea9a7b22f215db6d99b73f88e1b04e56bb3068a1132",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Primitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Option",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.WordPredicates"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigOLe": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/BigOLe.lean",
+      "sha256": "4c8557452c5d4f29cb025b3964ae9b486ca3e6cb2301640013e76d263677b2f7",
+      "olean_sha256": "8303d7d30443d7cd8eece1fff06451d141d7ba4998160d13110cec25e31adffe",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Init",
+        "Mathlib.Algebra.Order.Ring.Nat",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO.Bounds": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/BigO/Bounds.lean",
+      "sha256": "bbb28ab43e993856789f821440402f54a3a263b5f1afd2fce04624391f7f797f",
+      "olean_sha256": "05538dc41eee1f5e4983ed44d4ad29f6c02bf000438e3fbfa6c8bebd5242ace6",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigOLe",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.PolyTime",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds.Polynomial",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Bounds": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/Degree/Bounds.lean",
+      "sha256": "e84c89902122a7931a1d022c82b59efef144c5856f65cbd3c1fd6a467e2377ac",
+      "olean_sha256": "3d1d141c3d92d17659b01afc612aae921000fda3e8b4d00d2948ebdf9bdc3825",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.PolyTime",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ResourceFacts"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.ConditionalMachine": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/ConditionalMachine.lean",
+      "sha256": "34c7e70dec9a0ef4f90d68d3e920115ecdacaa1314cb2257d86b3de6226f92cd",
+      "olean_sha256": "8ec1afced702871874f99a8fde5390034b8ced331b43df7f18794bfafb1d994b",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIte",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Pair.lean",
+      "sha256": "b1f4f914e7f80eea878635cbb22ba6b9be09d25f8e2261e78a9b528677ab4717",
+      "olean_sha256": "8fad14e5038d3d03711a9f2bab43bce2123e0c273a0aa77b3cc413cf76470c7a",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearCodecPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Words",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeClosure": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/DegreeClosure.lean",
+      "sha256": "1eaea73aeb6ec91351ea57cc40707d67954b539016f64080f04a9d5c89ffbacf",
+      "olean_sha256": "5bb5e1151fc13ad96554cad6ec9e6f16af97270396263d859477bb871f2f3332",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.NormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelAppend",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ConditionalMachine",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreePrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/DegreePrimitives.lean",
+      "sha256": "621dc5bfa73ed08707e7af6c655b796f91e84af14c8045e202ebde020b66d41d",
+      "olean_sha256": "34a558db471b09bf5da4fcde6c7de3c69441b7feb0e60be30ae53ef2aebc2439",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Primitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelOnWords": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelOnWords.lean",
+      "sha256": "2056c23710fbdb262b2e1fa64bf88384c88fc8fafda97c6bf9c4a58257334066",
+      "olean_sha256": "666bf7d37c85bb8dc452aab45866aedb2c96ce1144d9b56ed653afaacca42f1c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Finite.Sum",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.OutputToTape",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.InputFromTape",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+        "Cslib.Foundations.Data.Fin.Tuple"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.CopyWord": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/CopyWord.lean",
+      "sha256": "18beb1bbb02c56cc3fa5f477fa8f30b394c7362f1106e5990138dcc28c615566",
+      "olean_sha256": "6ade92027a3fda7500a98c0000ee4b2e079374614a33130c857e618c1380f802",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelZeroSpace",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelOnWords",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+        "Mathlib.Tactic.FinCases"
+      ]
+    },
+    "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank": {
+      "source": "Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean",
+      "sha256": "bf96cadb04446c73aebaf83797be0e75b46ed491f2cfe9718283b332e5845ba6",
+      "olean_sha256": "28468379f26748a766e529aff1db4bf47e006ee782ef5473ccac8bac38b8136d",
+      "source_license": "Apache-2.0",
+      "origin": "CSLib f4a472560f78c59bbedd795fe041ec507f7d0582",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Mathlib.Data.Fintype.Option",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean",
+      "sha256": "8d7440d80df59cdca75fde78b5743001325c11cc380467b72da02527ee339fb8",
+      "olean_sha256": "ccd1df3e624655099ed0d541abe0de5fe65768424c38355b7a6d62db36610088",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIterateWhile": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/KernelIterateWhile.lean",
+      "sha256": "e527b81c33007eb0287d2ec4a29cf6a47597a921405361cda134af7d2f9026b4",
+      "olean_sha256": "115ff66a82b8ed01c25ed1a096421852966e136ccb0edbbccdf9b6f45cbad355",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Finite.Sum",
+        "Mathlib.Order.Interval.Finset.Nat",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.CopyWord",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.FoldCompiler": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/FoldCompiler.lean",
+      "sha256": "df3ab15b7b46a7eae162e3c4c988f4c212e56ef03f91b6b31716506d8595af03",
+      "olean_sha256": "daa15a473f7a1f2232e5d89c27ec392d045bb60a7cab043e021bdc34828e8f2c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIterateWhile",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearCodecPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ConditionalMachine",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Append": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Append.lean",
+      "sha256": "4235134e2265d90235668f9f878197f42e7b58b59f901a8977bc7904ceb6c6c1",
+      "olean_sha256": "b36b9efd5329d72d16d13954f6d528165f20f92bc3bfd4ccb27b76dc88030036",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelAppend",
+        "Mathlib.Data.Finite.Sum",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Basic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Ite": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Ite.lean",
+      "sha256": "a779e6c9c3d7a45c2fc9bac08feb4d61e8a37e313caee25343a09869365a248f",
+      "olean_sha256": "d161e2b74b7f588c9b4ea28249c8387ead4447c44a6f19f6ead00d046aec824d",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIte",
+        "Mathlib.Data.Finite.Sum",
+        "Mathlib.Data.Fintype.Option",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Comp",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Transducer",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Branch"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Encoding": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Encoding.lean",
+      "sha256": "cbd1c032dccb14a4ccd9b24ba396ea6b073003fb475133cfa35993fcfc0c5941",
+      "olean_sha256": "2842c6c1214502536a437160c6c0a138e0a028f5393ca57954ac021a2929e8a3",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Words",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Append",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Ite",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.IterateWhile": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/IterateWhile.lean",
+      "sha256": "65b7412e50e6fb8956cb29a7eb62e79ca6a5be46ce183271e28830e01a3fa860",
+      "olean_sha256": "0d57c9e2a3edfda7d3480dfb5ae6c5b8aba6f98b69d6f06d8dfdf8888c5bed1e",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIterateWhile",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Foldl": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Foldl.lean",
+      "sha256": "f76eff5ec9bbb1abd2db6e7a462d10ba24baa8e826510af37f8ce98c6c062876",
+      "olean_sha256": "c4b5716e1d1408141c75a0efedd9c38a0ae97f8cd360233cbb57d844a116e343",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FoldCompiler",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Comp",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Encoding",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.IterateWhile"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Basic": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Basic.lean",
+      "sha256": "d81296edc4b4725525cd1e0e288a42002a043264ed6d19333b96d5a344d56af3",
+      "olean_sha256": "9944f4d9ebbcb7dff46db8f17cae0c2e726f31c56fe71677e71dd20b56ec028f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Fintype.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Words",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Encoding",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearCodecPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Frame.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FrameMachines"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Bits": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Nat/Bits.lean",
+      "sha256": "73ce72dca433dc82cf29da4a3392922452505f9db6ee19e8ab4dfed2260ac092",
+      "olean_sha256": "ab969a774486139c06dfe43e686b59c27c45af2c5e3a5821c8745c6180bb4c21",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Data.Nat.Bits",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List",
+        "Mathlib.Data.Nat.Bitwise",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Nat.lean",
+      "sha256": "c5d64efffdaa45dbaaed49a9698820a00dd850dce9b1fe476544013d9d517245",
+      "olean_sha256": "d49965bbff3f12719e1500a7d17a343cbf8ef69071180464587e8bedc104f4cc",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Bits",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Foldl",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Option",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair",
+        "Mathlib.Data.Nat.Bitwise",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/PolyTime.lean",
+      "sha256": "152c1f9e4ca5fb50b335f333a931152763fd24a2558855f793770531a6cb9e5f",
+      "olean_sha256": "48230da0b8ac4ee1772396b904f88ea25f7f4e2e25b81c34c38c630b3f4e71cc",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Foundations.Data.Nat.PolynomialBound.Closure",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds.Polynomial",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Foldl",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime.Bounds": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/PolyTime/Bounds.lean",
+      "sha256": "0a9f6bc830543abb20f995713ef1b2354008fcf854a7c8069de4e27a03cd85c2",
+      "olean_sha256": "7607af9a2f894a70c60c153d97a9db392f051ad663b261bd8684f27d2c86e416",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.PolyTime",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ResourceFacts"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.PolyTimePrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/PolyTimePrimitives.lean",
+      "sha256": "f0ae74039d196c3b3eed7728cf8592dc5ba9b2c7255a5cd64c834820c7380857",
+      "olean_sha256": "3b810679d718822b26cc453ea0bd6e191a73ec3c6a05ca252889821d16af14dd",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.NormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FoldCompiler",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds.Polynomial"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.TidyNormalForm": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/TidyNormalForm.lean",
+      "sha256": "4f82ae864fe283ac93c8011f65a5c1590f4dadeb58ba5596f64e4302c9ca1c55",
+      "olean_sha256": "75a654e2ef92983c6a0ce42a9efdc44df983ebcbbc2295c469c76d75165c7741",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelNormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ClearShadowed",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs",
+        "Cslib.Foundations.Data.Fin.Tuple",
+        "Mathlib.Data.Finite.Sum",
+        "Mathlib.Data.Fin.Tuple.Embedding",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapesView",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Data.Fintype.Option",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime.Plain": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/PolyTime/Plain.lean",
+      "sha256": "580f43aecb75b718a2c10156bc23e79c943319937bdc5b2c3f53a16947f2e8ea",
+      "olean_sha256": "8923300373a57d0cb051999c16dd7401879d97d8b9477068cd6b71519dfb004c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ResourceFacts",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.PolyTimePrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime",
+        "Complexity.Computability.Machines.Turing.MultiTape.PolyTime",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.TidyNormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/Degree.lean",
+      "sha256": "6734c9edf013670d4f20c801073eba2995abbf0bee3fabc19be4b4ba53c5876b",
+      "olean_sha256": "ee093889d532c06ecfc9fae52b4d6a828c1f1905e666659eb99439a5185b3896",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeOptionPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeComposition",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeClosure",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreePrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.PolyTime",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime.Plain",
+        "Mathlib.Data.Fintype.Lattice",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Fold": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/Fold.lean",
+      "sha256": "8ea2e345899b80277a88612b48df1d0321215786f3668b25095495d910363b9b",
+      "olean_sha256": "38a3b8ae46392899992ea1bc6951244c967dbacbfa6efde554e58fa33f54cb48",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List.Size",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Primitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/Primitives.lean",
+      "sha256": "5bb5d6014d00faa64f6e3022808c5c4021099cc12b4f4a09ffba8ec7d277c4ec",
+      "olean_sha256": "68c0c646d9a906392f37e806fb7cb7c15a82293a0962943148ef59f0f518b2f0",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeUnaryPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.WordEquality",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Unary",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Fold",
+        "Mathlib.Tactic.FinCases"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Finite": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Finite.lean",
+      "sha256": "9affbbbd35b5396c09d3e9827d3fb2b973be263e593c23d3797b120e9c6214fe",
+      "olean_sha256": "5d22f1f06f7bc42493b90aed353a67da02ce4f221792bffa67411d12940d9f18",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Primitives",
+        "Mathlib.Data.FinEnum",
+        "Mathlib.Data.FinEnum.Option",
+        "Mathlib.Data.Fintype.EquivFin",
+        "Mathlib.SetTheory.Cardinal.Finite"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Lists": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/Lists.lean",
+      "sha256": "0c568dfed58d6a05da743188ffb7560da3254ba9679bb8d0274360858561384e",
+      "olean_sha256": "7ce08432c551a35613f640747cb4f0b14ec1e8175a610e1df0cf36857cf42765",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Primitives",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Length": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Length.lean",
+      "sha256": "5fbc2ac6e234bac747d2d69aaa1832834d87edf1dd6dcb783d6e9c0c2be0f999",
+      "olean_sha256": "c62bc1392c14d92e7e9021d3ef07dede70d461cdc8fd393110ed037615275621",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Lists"
+      ]
+    },
+    "Complexity.Computability.USTCON.Reader.Encode": {
+      "source": "Complexity/Computability/USTCON/Reader/Encode.lean",
+      "sha256": "0fa4b7586c4e3fdb49fd96e7f6368c20625061c49e534cddece2af4216201f2e",
+      "olean_sha256": "570b66c430b465592e234e91d55c3e486efbff0f474ec32597f918f9f6afd6f3",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.USTCON.Reader.Defs",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Finite",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Length",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.TransformsWords": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/TransformsWords.lean",
+      "sha256": "7f9cb899643a149b51c1ab9bd4fc3c5693ff411373825293d480634d4765732d",
+      "olean_sha256": "785c391180562b593f029b1e3803ac86069150e292bc6afc5bb4a98fc5ef64e2",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Cursor": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/Cursor.lean",
+      "sha256": "7fbc4b2d287818ecaeb184b7801fe892ae0ececbb72328c825d32e1e1e14f2a9",
+      "olean_sha256": "7db1ea050331a3b90528ab6c5981bb6949b2f12a698116499d5d2483742df4ef",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ExtendTapes",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindInput",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Sequential",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.TransformsTapes",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.TransformsWords"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.WhileInput": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/WhileInput.lean",
+      "sha256": "470a1117e6ea87af5eebe177ba203b3510cbb6ed97dbba39dc23c50441798b72",
+      "olean_sha256": "2763c2f248fd1227732b2be107049a3a9ac327e3965d7ee2adb275bd8910d06f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Cursor",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.RepeatUntilBlank"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.StepMachine.Basic": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/StepMachine/Basic.lean",
+      "sha256": "bf43b25ff64aab41a471f53248aaa694114d338885f4a666ad0b181440b82f23",
+      "olean_sha256": "86cbb2e7b62e70f56b1b412b8e17df0e0ea8f28de47e3f19aff782ed41b58332",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.WhileInput",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Data.Fintype.Option",
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Data.Nat.Log",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.ReadMachine.StepMachine": {
+      "source": "Complexity/Computability/Machines/ReadMachine/StepMachine.lean",
+      "sha256": "864d10728b9289068b97af0970a1c05f86316fce40a8c42e34d769b63ee13667",
+      "olean_sha256": "6e6d193f4f4946ce3c7764795585607650fe264c9bf1c8f7a6e3daad5364509e",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.ReadMachine.Basic",
+        "Complexity.Computability.Machines.Turing.MultiTape.StepMachine.Basic"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.OPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/OPrimitives.lean",
+      "sha256": "a0cde26c7d9f2635ad52c1f31bb10d27cc813ae2fb8bf9b25a9940344e97289e",
+      "olean_sha256": "2203a32bdd873c855fcaf9d92d91ca03f0ca46c699d0891e71155aaf74880e84",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.NormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelComp",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ConditionalMachine",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearPairPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/LinearPairPrimitives.lean",
+      "sha256": "4a9f42cfa976fb4055a6cb983de05379a165b9600736bb2d0dd45af1157a3078",
+      "olean_sha256": "07287c5cbd92c7be1fe3c27ec8c0f5b4d239627c2bbe3e1a06946dd58489a79f",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Pair"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCombinators": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/OCombinators.lean",
+      "sha256": "b2dfa450c3ebf15d9e8abb9f1d927b0ea2e8108d0f2c456288ba03dbc00d9d88",
+      "olean_sha256": "7a0877986ac16e227e2801fd068527bfd65b9a58fc8aec821de0a3c144e8f545",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.LinearPairPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelAppend",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.OLoops": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/OLoops.lean",
+      "sha256": "099d9c0521708dc4f149c4fdaab9960ed4566e5cd1db85223e63f6999544ea27",
+      "olean_sha256": "5b48c6159b2c8141a4250fdb4df18e3ffeff96d7a86ceefc53bf3402c2203ad1",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCombinators",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FoldCompiler",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List.Size",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Option",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/BinaryPrimitives.lean",
+      "sha256": "e2536dc509412978a3fd0d4f347701bab0f18802f6a528f3b5ebfd6e9dceaacd",
+      "olean_sha256": "7d8ecda0ea52179fd04962f8c04e1ec368a042e1dc20f1943811380ab643105c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OLoops",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Bits",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Foundations.Data.Nat.Bits": {
+      "source": "Complexity/Foundations/Data/Nat/Bits.lean",
+      "sha256": "f7684593491ed2144ca88f5d2dbf84f829a232c608d465f58f0055f30826ef4d",
+      "olean_sha256": "da651ac86a3dcb198e111aaf7e3649740a251f7dffa14dd0e32dc4554689252a",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Data.Nat.Bits",
+        "Mathlib.Data.Nat.Size",
+        "Mathlib.Data.List.OfFn"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Words": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Nat/Words.lean",
+      "sha256": "ef1afe11aa55f00b0ee8912b6a0177687c5ad7d4ffa8cc8ca53a76a4717c3baa",
+      "olean_sha256": "c2bd4af612e3650bfce43b1a808e10aca937f2b33661197f8f9df390b3246689",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Bits",
+        "Mathlib.Data.List.DropRight",
+        "Complexity.Foundations.Data.List.Append",
+        "Complexity.Foundations.Data.Nat.Bits",
+        "Mathlib.Data.Nat.Size"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.DecoderWordMachines": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/DecoderWordMachines.lean",
+      "sha256": "897f13bba9179ec292cd2bf8e8a447bbf24c10ae5c759f95a6c268117c03f519",
+      "olean_sha256": "dabcfdc48a26b984881643c9b9910b666196f4f723d5c804f651b42d15c25ed3",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Transducer"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Reverse": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/Reverse.lean",
+      "sha256": "94794d0838a283ccdf57268734d78727d4b67b894ee9c91be946bae1046cbddd",
+      "olean_sha256": "804f35d6dea04b646e68949a0906fb7e79eae820c2f680569fca94a31eed4afa",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Complexity.Computability.Machines.Turing.MultiTape.Deterministic",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.Tidy.Defs"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryNormalization": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/BinaryNormalization.lean",
+      "sha256": "60d242a30814bb97ce99c18dba4c5cec6e5143f1d3478ab37b05a2b663ddec75",
+      "olean_sha256": "d498c3b1a0aa42b8ca1a75456781cbd1c66bde182a9667dff17ea2d6c602bff7",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Words",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCombinators",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DecoderWordMachines",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.Reverse"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.DecoderPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/DecoderPrimitives.lean",
+      "sha256": "5a456eedb4721cc39dc1783276963f3a9a9a80df467cc443fdd373486afb7c8d",
+      "olean_sha256": "715cbd37a82553daf5cbe9c25fdd8e21e2b8f7a64aa12934e641bdedcbf197c1",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DecoderWordMachines",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Primitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Unary",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.FrameMachines",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.ResourceFacts"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Subtraction": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Nat/Subtraction.lean",
+      "sha256": "4229cc74ef71ce88d48027c4e1d9a11a9a292ef45cef2068e8256081cc7ed79e",
+      "olean_sha256": "8516455774c15453e25547dfabfe3501af5012030dda529c75b66ac5f799ff39",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Init",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Bits",
+        "Complexity.Foundations.Data.Nat.Bits",
+        "Mathlib.Data.Nat.Bitwise",
+        "Mathlib.Data.List.GetD",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryComparison": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/BinaryComparison.lean",
+      "sha256": "2531ec4a573cef6536a639ebe01e7dd9073767119e00375d66c1b35bb78c2756",
+      "olean_sha256": "d5dc8e8f30b5c465f42f1f93d1a65d5f2e08fb407707394ef5b7fd1de8f8e94d",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryNormalization",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DecoderPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeClosure",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreePrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeComposition",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Subtraction",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.EqualityPrimitives": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/EqualityPrimitives.lean",
+      "sha256": "04078472ab65ec9723dacf53bed4ebf5dc65c579140609df6fced58968b593ae",
+      "olean_sha256": "03103330234543acc1c904103bb7d241fe2345a932fc9929d23274e91f2c9d1c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DecoderPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeComposition",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeClosure",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreePrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OLoops",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.WordEquality",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.PolyTimePrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO.Bounds",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/BigO.lean",
+      "sha256": "54ab983152ede701bbef5a8c3a8aec8f28811a46a2f6ab6feed9eae302e12c9a",
+      "olean_sha256": "6ff97b921e3a6dacbf872dcc777862ec28e8fea271382440a2ce182bc38e2b52",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.NormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigOLe",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Lists",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OLoops",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Arithmetic": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/Nat/Arithmetic.lean",
+      "sha256": "9f657674c8ecd4e218069bac6f25646442b8a7284e5a6998a1404d408be14546",
+      "olean_sha256": "9d7580edac7c67854fb633a538cf39e53c9cbeb7fdb39f35cb787563a9e982ca",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Bits",
+        "Mathlib.Data.Nat.Size",
+        "Mathlib.Data.Nat.Bitwise",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryAddition": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/BinaryAddition.lean",
+      "sha256": "07620c832fe9d194a369c7c2f10f64ed7b36ca50280c7902325eaf18b00b5468",
+      "olean_sha256": "ae713182c54385b537e3053791bc352efd809645a9c4b23a3ca3fd3241f75221",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Arithmetic",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DecoderPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeClosure",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeComposition",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreePrimitives",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.LinearSpaceArith": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/LinearSpaceArith.lean",
+      "sha256": "84967cf7d2ca28debd4cf895487c0284f7b3ca9e0e2125722c3c1cbedb91ceb9",
+      "olean_sha256": "db04573b0c447797bc2bf90584064469ce5b85779ce73f01c56884720ffa17a8",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryAddition",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryComparison",
+        "Mathlib.Data.Nat.Size"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryCounter": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/BinaryCounter.lean",
+      "sha256": "e1d88f1b9a70f84e5bff30d39744774195952609c24802bc207b67ea1cad504d",
+      "olean_sha256": "cd74ea63be3a40791608095b75aa3d0dd00842895a19f034b340cda6bea4bfdd",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Cslib.Init",
+        "Mathlib.Data.Nat.Basic",
+        "Mathlib.Logic.Function.Iterate",
+        "Mathlib.Data.Nat.SuccPred",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinarySizeFacts": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/BinarySizeFacts.lean",
+      "sha256": "61e99fba6d26e53b8e96b0a6098446ff2568f2175856ab2168510526075d753b",
+      "olean_sha256": "05e8d2681db80b96a2a0a3e7b9f652cb7a6167d65da65a0920f928a00addb466",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Nat.Bits",
+        "Mathlib.Data.Nat.Size",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCountedIteration": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/OCountedIteration.lean",
+      "sha256": "7cf2e2354370634ada3ee796e7f8a41e66acb4961cd1430ae500e0a9a9087e95",
+      "olean_sha256": "ba1163f002624db61ff3fb509f607a3508cc5f5ab5a75f374b4995d13f049ab6",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryCounter",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinarySizeFacts",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeOptionPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelIterateWhile",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelComp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.InSpace": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/InSpace.lean",
+      "sha256": "cf2502ac536ae083b96a18e4eca364e86108e874ca13977dad729babd5f3f4ee",
+      "olean_sha256": "4c647eac20d6d8dd9606ffc87493de9a0f26265cacf51905a1adbf13731f0764",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.LinearSpaceArith",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCountedIteration"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO.Plain": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/BigO/Plain.lean",
+      "sha256": "d1c4a1a3cfee07101031f243a0c9457308a1b55416b655cabef3d65486b8dad9",
+      "olean_sha256": "9650f3233d5d23eab489de50df1c102e586ddb6f51dc5f895c61f3e0ca7fd1ad",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCombinators",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.TidyNormalForm",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.PolyTime.Plain"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.InSpace.Plain": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/InSpace/Plain.lean",
+      "sha256": "f89dc54b9b95e2e0644a3ef0bab5300a32fe730ab2f905dbe92e84e15d6ea60f",
+      "olean_sha256": "b8a1988896a63895ecb380564b39921b602cdb6b9e14c84425f87b82b2069c5c",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.InSpace",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.BigO.Plain",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Bounds",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Degree.Primitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OLoops",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCountedIteration"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Complexity.InSpaceLib": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Complexity/InSpaceLib.lean",
+      "sha256": "802a5319f3f06dbefe0327b4c2642121703f5c174b95813dafd864e5249f45cb",
+      "olean_sha256": "9013bde51899e9a068ba127800df685c213f18b907c8775e77c8ae7f9913b080",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.InSpace.Plain",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.Lists",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Length",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeOptionPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.EqualityPrimitives"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean",
+      "sha256": "c6ddefa3356ee4b3fab13d810dac691d27fdb8d3bd3e534d672e00c63e4fbc29",
+      "olean_sha256": "0c40f462f3040669c1a7efc48f738831565e7ff38fd23a335f0b0fb06b590742",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.TapeLemmas"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ReadInput": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/ReadInput.lean",
+      "sha256": "073f63be0e4468c5729dfaa52dfccf3723e27df821d2d0d11fa7d78790cc6c0c",
+      "olean_sha256": "bbaa5a1be31499df479afe2d70cae06b954ef4f4db678a2714d56a26153aefa6",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.Cursor",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ForwardWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.RewindWork"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.StreamFold": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/StreamFold.lean",
+      "sha256": "003b255c5e98398e5dc3039d797d266601deb76aa43e1ba060423640c51f097c",
+      "olean_sha256": "3209b28a53f077ee044f4e79935890185ff5958224498fb05154a50dc8e62394",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.CopyWord",
+        "Cslib.Computability.Machines.Turing.MultiTape.Plumbing.ClearWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.ReadInput",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.WhileInput",
+        "Complexity.Foundations.Data.Fin.Tuple",
+        "Mathlib.Tactic.FinCases"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.InputHead": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/InputHead.lean",
+      "sha256": "5590090556b0f6717f0cbe92a77a05a865422375e3e968c10b18d7306f094175",
+      "olean_sha256": "f49a4979cfb106287a5607a8825287921968e02acf3d6394fa4743a32e4c09fb",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.WhileInput",
+        "Mathlib.Algebra.BigOperators.Fin"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.WhileCond": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Plumbing/WhileCond.lean",
+      "sha256": "c35fdf8b08255c6938414430e0abcb6c120f3a07bb93037668c89d7f5b3a38d7",
+      "olean_sha256": "5cb59f8f6456c311290045c5e225ad012180b793b6e4e224f7dcfb58ba3a6337",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.WhileInput"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Combinators.StepMachine": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Combinators/StepMachine.lean",
+      "sha256": "42addc633f7cd1b3f8692a72fdbacd8ff2b63b4e2fa5e1f8e7fcbf0fdde2d6da",
+      "olean_sha256": "94d0cdc1c4ce745c87d92bedf198babf9c543af09130c4ad7c895dc2a75b42ea",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.StreamFold",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.InputHead",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.MarkWork",
+        "Complexity.Computability.Machines.Turing.MultiTape.Plumbing.WhileCond"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.OnWords": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/OnWords.lean",
+      "sha256": "9b6c4f604586bdd51675862c17a4d1fb5a5619693a4a422c7752a82bc7f2613d",
+      "olean_sha256": "eee0dc48f063c7a54eac92e41855837e5622496034c93dced69694f9c4a9e0af",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.KernelOnWords"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Internal.StepMachineCompiler": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Internal/StepMachineCompiler.lean",
+      "sha256": "4ad18b7051358924f704f9d731974546dc00330a67f49740b4bccc1588bf27b1",
+      "olean_sha256": "96443936b82f6448b134fcd16d0e41cf160052b67a1f4bf6d503053730989ea3",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Combinators.StepMachine",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OCombinators",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.List",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.Option",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.OnWords",
+        "Complexity.Computability.Machines.Turing.MultiTape.StepMachine.Basic",
+        "Cslib.Computability.Machines.Turing.MultiTape.Combinators.AlmostConstant",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    "Complexity.Computability.Machines.Turing.MultiTape.Encodings.StepMachine": {
+      "source": "Complexity/Computability/Machines/Turing/MultiTape/Encodings/StepMachine.lean",
+      "sha256": "4021edcd7bde973411f379b2ffd71a1fa76ded72f15ac8ce948df607b0ed2804",
+      "olean_sha256": "75358aeef83b64bde786a020b7ad34ba87592092465667a0927a5159d7e1aaca",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.StepMachineCompiler"
+      ]
+    },
+    "Complexity.Computability.Machines.ReadMachine.Tidy": {
+      "source": "Complexity/Computability/Machines/ReadMachine/Tidy.lean",
+      "sha256": "156979b139203889f7a9068826392ddf253a6605a2034fbdfc492c049a9618ff",
+      "olean_sha256": "93e8e72efe84c48797c72258f552b2358dcc4f090ab0c92de55288118560627b",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.Machines.ReadMachine.StepMachine",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.BinaryComparison",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.EqualityPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Internal.DegreeOptionPrimitives",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.InSpaceLib",
+        "Complexity.Computability.Machines.Turing.MultiTape.Encodings.StepMachine"
+      ]
+    },
+    "Complexity.Computability.USTCON.Reader.Cert": {
+      "source": "Complexity/Computability/USTCON/Reader/Cert.lean",
+      "sha256": "9290750bd2477b724d1b72a4053b5a4dd7170be20db81d0ec3a62596001e51ee",
+      "olean_sha256": "4112bd260c8810d773693ae0421f5d8074f717560a33d86b39415154bba79449",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.USTCON.Reader.Encode",
+        "Complexity.Computability.Machines.ReadMachine.Tidy",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.InSpaceLib"
+      ]
+    },
+    "Complexity.Computability.USTCON.Reader.Correct": {
+      "source": "Complexity/Computability/USTCON/Reader/Correct.lean",
+      "sha256": "7dacc402ba77e11f3ada9669beba82108704dd5b121c9bf395a5ef76f6549bbe",
+      "olean_sha256": "fe7a23b8a13cf1e9f7afa305e37b2890eda2b141d23a4191563f10db4a673339",
+      "source_license": "Apache-2.0",
+      "origin": "v4.33 Reingold reader port based on Complexitylib",
+      "treatment": "adapted",
+      "direct_imports": [
+        "Complexity.Computability.USTCON.Reader.Defs",
+        "Complexity.Foundations.Data.Nat.Bits"
+      ]
+    },
+    "Complexity.Computability.USTCON.Reader.Invariant": {
+      "source": "Complexity/Computability/USTCON/Reader/Invariant.lean",
+      "sha256": "1644fdca8617db02467c754b5ddd0ca7ceeee66581534873d42b13cd79ab28c3",
+      "olean_sha256": "1713a939b765be975d2979b665f3b88d6d1bf4bea660f23a2929598a5e1e1546",
+      "source_license": "Apache-2.0",
+      "origin": "Complexitylib",
+      "treatment": "copy",
+      "direct_imports": [
+        "Complexity.Computability.USTCON.Reader.Correct",
+        "Complexity.Computability.USTCON.Reader.Encode",
+        "Complexity.Foundations.Data.Nat.Bits",
+        "Complexity.Computability.Machines.Turing.MultiTape.Complexity.LinearSpaceArith"
+      ]
+    },
+    "Complexity.Computability.USTCON.SpaceKernel": {
+      "source": "Complexity/Computability/USTCON/SpaceKernel.lean",
+      "sha256": "da61d6897bfd035ef89e6196de9d707e9cc369ab0a22f689c67151a90e2a5f11",
+      "olean_sha256": "9c4e9d90719de7ed82b284c00d6c7d2e8dbec0d8769d1e8d0e04e211fddd669b",
+      "source_license": "Apache-2.0",
+      "origin": "subset of Complexity.Computability.USTCON.Space",
+      "treatment": "modified",
+      "direct_imports": [
+        "Complexity.Computability.USTCON.Reader.Cert",
+        "Complexity.Computability.USTCON.Reader.Invariant",
+        "Complexity.Computability.Machines.ReadMachine.StepMachine",
+        "Complexity.Computability.Machines.Turing.MultiTape.ResourceBounds"
+      ]
+    }
+  },
+  "external_imports": [
+    "Batteries.Tactic.Lint.Basic",
+    "Lean.Message",
+    "Lean.Meta.Tactic.Grind.RegisterCommand",
+    "Mathlib.Algebra.BigOperators.Balance",
+    "Mathlib.Algebra.BigOperators.Expect",
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Field.ZMod",
+    "Mathlib.Algebra.GroupWithZero.Units.Equiv",
+    "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+    "Mathlib.Algebra.Order.BigOperators.Expect",
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+    "Mathlib.Algebra.Order.Field.Basic",
+    "Mathlib.Algebra.Order.Group.Abs",
+    "Mathlib.Algebra.Order.Group.Int",
+    "Mathlib.Algebra.Order.Group.Nat",
+    "Mathlib.Algebra.Order.Module.Defs",
+    "Mathlib.Algebra.Order.Ring.Nat",
+    "Mathlib.Algebra.Polynomial.Eval.Defs",
+    "Mathlib.Algebra.QuadraticDiscriminant",
+    "Mathlib.Algebra.Ring.Int.Defs",
+    "Mathlib.Algebra.Ring.Nat",
+    "Mathlib.Analysis.Asymptotics.Lemmas",
+    "Mathlib.Analysis.InnerProductSpace.PiL2",
+    "Mathlib.Analysis.Real.Sqrt",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+    "Mathlib.Combinatorics.SimpleGraph.AdjMatrix",
+    "Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected",
+    "Mathlib.Combinatorics.SimpleGraph.Density",
+    "Mathlib.Combinatorics.SimpleGraph.Finite",
+    "Mathlib.Data.Fin.Basic",
+    "Mathlib.Data.Fin.Tuple.Basic",
+    "Mathlib.Data.Fin.Tuple.Embedding",
+    "Mathlib.Data.Fin.VecNotation",
+    "Mathlib.Data.FinEnum",
+    "Mathlib.Data.FinEnum.Option",
+    "Mathlib.Data.Finite.Prod",
+    "Mathlib.Data.Finite.Sum",
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Finset.Density",
+    "Mathlib.Data.Finset.Max",
+    "Mathlib.Data.Fintype.Basic",
+    "Mathlib.Data.Fintype.BigOperators",
+    "Mathlib.Data.Fintype.EquivFin",
+    "Mathlib.Data.Fintype.Fin",
+    "Mathlib.Data.Fintype.Inv",
+    "Mathlib.Data.Fintype.Lattice",
+    "Mathlib.Data.Fintype.Option",
+    "Mathlib.Data.Fintype.Order",
+    "Mathlib.Data.Fintype.Pi",
+    "Mathlib.Data.Fintype.Powerset",
+    "Mathlib.Data.Fintype.Prod",
+    "Mathlib.Data.Int.Interval",
+    "Mathlib.Data.List.Basic",
+    "Mathlib.Data.List.DropRight",
+    "Mathlib.Data.List.Forall2",
+    "Mathlib.Data.List.GetD",
+    "Mathlib.Data.List.Infix",
+    "Mathlib.Data.List.OfFn",
+    "Mathlib.Data.List.Range",
+    "Mathlib.Data.Nat.Basic",
+    "Mathlib.Data.Nat.Bits",
+    "Mathlib.Data.Nat.Bitwise",
+    "Mathlib.Data.Nat.Log",
+    "Mathlib.Data.Nat.ModEq",
+    "Mathlib.Data.Nat.Size",
+    "Mathlib.Data.Nat.SuccPred",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Data.Sign.Defs",
+    "Mathlib.GroupTheory.Perm.Cycle.Basic",
+    "Mathlib.GroupTheory.Perm.Fin",
+    "Mathlib.Init",
+    "Mathlib.Logic.Embedding.Basic",
+    "Mathlib.Logic.Equiv.Fin.Basic",
+    "Mathlib.Logic.Function.Iterate",
+    "Mathlib.Logic.Relation",
+    "Mathlib.Order.Interval.Finset.Nat",
+    "Mathlib.Order.Lattice.Nat",
+    "Mathlib.Order.RelSeries",
+    "Mathlib.SetTheory.Cardinal.Finite",
+    "Mathlib.Tactic.Common",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.FunProp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum.Prime",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring"
+  ]
+}

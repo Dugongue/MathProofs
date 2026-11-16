@@ -1,0 +1,116 @@
+import Mathproof.MinimumGenerationPhysicalGreedyTape
+import Mathproof.MinimumGenerationRawGreedyMembership
+
+namespace Mathproof.MinimumGeneration.PhysicalGreedyRaw
+
+open SearchTransducer GreedyTapeScan
+open InputPosition (work)
+
+variable {W S : Nat}
+
+def allowAll (widthStates : 7 ≤ S) : BitCall S W where
+  entry := ⟨0, by omega⟩
+  transition := fun _ _ _ => none
+  answer := fun _ => true
+
+theorem allowAll_execute (label order : Fin W) (widthStates : 7 ≤ S)
+    (member : BitCall S W) {n B : Nat} {word : List Bool} (keep : Set (Fin W)) :
+    Leaf label order widthStates (allowAll widthStates) member (n := n) (B := B)
+      word 1 (fun _ => true) (allowAll (W := W) widthStates).answer keep := by
+  intro x c _ prepared
+  refine ⟨0,c,⟨rfl,?_⟩,rfl,rfl,prepared,rfl,fun _ _ => rfl⟩
+  intro t ht d hd
+  have ht0 : t = 0 := by omega
+  subst t
+  change some c = some d at hd
+  cases hd
+  exact ⟨prepared.inputLo,prepared.inputHi,by simp [prepared.heads]⟩
+
+private abbrev rawQuery {n : Nat} (G : Group (Fin n)) :=
+  RawGreedyMembership.query (@encodeCayley n G.toMul) G.toOne.one
+
+/-- For unrestricted eligibility, the physical ordinal routine needs only the
+live prefix-membership leaf. Its exact specification is the increasing greedy
+list of raw labels, with the native Reingold reader as the mathematical decision
+procedure and without constructing that list on tape. -/
+theorem execute {n B : Nat} (G : Group (Fin n))
+    (label order ordinal zero : Fin W) (widthStates : 7 ≤ S) (member : BitCall S W)
+    (keep : Set (Fin W)) (hl : label ∉ keep ∧ label ≠ ordinal ∧ label ≠ zero)
+    (ho : ordinal ∉ keep) (hlo : label ≠ order)
+    (hoo : ordinal ≠ order) (hoz : ordinal ≠ zero)
+    (bound : TableIO.width n + 1 ≤ B)
+    (membership : Leaf label order widthStates (allowAll widthStates) member (B := B)
+      (@encodeCayley n G.toMul) 2
+      (fun x => rawQuery G (GreedyGenerator.before (fun _ => true) x.val) x)
+      member.answer (PhysicalGreedyTape.kept keep ordinal zero))
+    (k i : Nat) (hi : i < 2^(TableIO.width n)) :
+    let word := @encodeCayley n G.toMul
+    let T := PhysicalGreedyTape.stages label order ordinal zero widthStates (allowAll widthStates) member
+    let accepted := GreedyGenerator.accept (rawQuery G) (fun _ => true)
+    let expected := (GreedyOrdinal.collect accepted 0 n)[i]?
+    ∀ (c : (T.component 4).Config) (entry : c.state = T.entry 4)
+      (_ : PhysicalGreedyTape.Live word n k i label order ordinal zero c),
+      ∃ (ticks : Nat) (d : T.machine.Config),
+        T.machine.BoundedSegment word B (T.tag 4 c) d ticks ∧ T.machine.step word d = none ∧
+        PhysicalGreedyTape.found (label := label) (order := order) (ordinal := ordinal)
+          (zero := zero) (widthStates := widthStates) (allowed := allowAll widthStates)
+          (member := member) d = expected.isSome ∧
+        d.workCell label = work (encodeLabel (TableIO.width n) (expected.elim n Fin.val)) ∧
+        d.workHead = (fun _ => 0) ∧ d.outputReversed = c.outputReversed ∧
+        ∀ j ∈ keep, d.workCell j = c.workCell j := by
+  dsimp only
+  intro c entry live
+  have physical := PhysicalGreedyTape.execute (label := label) (order := order)
+    (ordinal := ordinal) (zero := zero) (widthStates := widthStates)
+    (allowed := allowAll widthStates) (member := member)
+    (rawQuery G) (fun _ => true) keep hl ho hlo hoo hoz bound
+    (allowAll_execute label order widthStates member _) membership k i hi c entry live
+  simpa only [GreedyOrdinal.ordinal_exact] using physical
+
+/-- Raw replay with immutable prefix-membership templates on the required banks. -/
+theorem executeFramed {n B : Nat} (G : Group (Fin n))
+    (label order ordinal zero : Fin W) (widthStates : 7 ≤ S) (member : BitCall S W)
+    (keep need : Set (Fin W)) (saved : Fin W → Int → Option Bool) (hNeed : need ⊆ keep)
+    (hl : label ∉ keep ∧ label ≠ ordinal ∧ label ≠ zero)
+    (ho : ordinal ∉ keep) (hlo : label ≠ order)
+    (hoo : ordinal ≠ order) (hoz : ordinal ≠ zero)
+    (bound : TableIO.width n + 1 ≤ B)
+    (membership : FramedLeaf label order widthStates (allowAll widthStates) member (B := B)
+      (@encodeCayley n G.toMul) 2
+      (fun x => rawQuery G (GreedyGenerator.before (fun _ => true) x.val) x)
+      member.answer (PhysicalGreedyTape.kept keep ordinal zero) need saved)
+    (k i : Nat) (hi : i < 2^(TableIO.width n)) :
+    let word := @encodeCayley n G.toMul
+    let T := PhysicalGreedyTape.stages label order ordinal zero widthStates (allowAll widthStates) member
+    let accepted := GreedyGenerator.accept (rawQuery G) (fun _ => true)
+    let expected := (GreedyOrdinal.collect accepted 0 n)[i]?
+    ∀ (c : (T.component 4).Config) (entry : c.state = T.entry 4)
+      (_ : PhysicalGreedyTape.Live word n k i label order ordinal zero c)
+      (_ : ∀ j ∈ need, c.workCell j = saved j),
+      ∃ (ticks : Nat) (d : T.machine.Config),
+        T.machine.BoundedSegment word B (T.tag 4 c) d ticks ∧ T.machine.step word d = none ∧
+        PhysicalGreedyTape.found (label := label) (order := order) (ordinal := ordinal)
+          (zero := zero) (widthStates := widthStates) (allowed := allowAll widthStates)
+          (member := member) d = expected.isSome ∧
+        d.workCell label = work (encodeLabel (TableIO.width n) (expected.elim n Fin.val)) ∧
+        d.workHead = (fun _ => 0) ∧ d.outputReversed = c.outputReversed ∧
+        ∀ j ∈ keep, d.workCell j = c.workCell j := by
+  dsimp only
+  intro c entry live hSaved
+  have physical := PhysicalGreedyTape.executeFramed (label := label) (order := order)
+    (ordinal := ordinal) (zero := zero) (widthStates := widthStates)
+    (allowed := allowAll widthStates) (member := member)
+    (rawQuery G) (fun _ => true) keep need saved hNeed hl ho hlo hoo hoz bound
+    (fun x c atEntry prep _ => allowAll_execute label order widthStates member _ x c atEntry prep)
+    membership k i hi c entry live hSaved
+  simpa only [GreedyOrdinal.ordinal_exact] using physical
+
+/-- The unfiltered prefix query tests precisely the subgroup generated by
+labels strictly less than the live candidate. -/
+theorem prefix_correct {n : Nat} (G : Group (Fin n)) (x : Fin n) :
+    rawQuery G (GreedyGenerator.before (fun _ => true) x.val) x = true ↔
+      x ∈ @Subgroup.closure (Fin n) G {z | z.val < x.val} := by
+  rw [RawGreedyMembership.query_correct G]
+  simp [GreedyGenerator.before]
+
+end Mathproof.MinimumGeneration.PhysicalGreedyRaw

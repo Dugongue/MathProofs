@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- logspace-minimum-generation-recurrent-cayley:start -->
+[Logspace greedy generator replay on Cayley tables in Lean](LogspaceMinimumGenerationRecurrentCayley/README.md) — Verified components for Collins–Grochow–Levet–Weiß Question 8.1. A finite machine finds the first greedy generator from a raw Cayley table in logarithmic workspace, and a finite replay machine recovers any requested greedy entry from a stored ordinal and initialized workspace. The two use the same native connectivity machine and workspace constant. The unrestricted minimum-generator search theorem remains informal.
+<!-- logspace-minimum-generation-recurrent-cayley:end -->
+
 <!-- logspace-minimum-generation-cayley-replay:start -->
 [Physical Cayley query and generator replay in Lean](LogspaceMinimumGenerationCayleyReplay/README.md) — Verified components for Collins–Grochow–Levet–Weiß Question 8.1, including physical endpoint decoding, ordinal generator replay, and a silent verdict adapter for nested queries. The complete connectivity and unrestricted search machines remain to be formalized.
 <!-- logspace-minimum-generation-cayley-replay:end -->
