@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- invariant-transfers-to-isomorphism:start -->
+- **[Smooth Cubics, Parallel Group Cores, and Exact Phase Transport](InvariantTransfersToIsomorphism/RESULTS.md)** — Four informal results on GI-hardness of smooth cubic hypersurface isomorphism, deterministic uniform NC for subgroup cores of permutation-group quotients, determinant-one monomial tensor transport over varying finite fields, and exact Butson and cyclic gain equivalence.
+<!-- invariant-transfers-to-isomorphism:end -->
+
 <!-- early-invariant-isomorphism:start -->
 - **[Exact Isomorphism Reductions from Early Invariants](EarlyInvariantIsomorphism/RESULTS.md)** — Informal proofs of GI-completeness for collinearity isomorphism on a fixed smooth cubic, and a factorization-free reduction from cyclic phase equivalence with binary moduli to graph isomorphism. The phase construction also applies to full-support tensors under monomial actions in every mode.
 <!-- early-invariant-isomorphism:end -->
