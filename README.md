@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-isomorphism-collapses:start -->
+- [Which TI Interval Problems Collapse?](TensorIsomorphismCollapses/RESULTS.md) — Informal many-one equivalences grouping 21 of the 22 TI interval entries into four ordered groups over F3, with the quadratic norm class between the endpoints. Includes an exact cubic norm transfer and the common Turing closure of twenty entries.
+<!-- tensor-isomorphism-collapses:end -->
+
 <!-- tensor-isomorphism-interval:start -->
 - [Twenty Candidate Classes Between TI and SL-TI](TensorIsomorphismInterval/RESULTS.md) — Informal deterministic many-one interval proofs over \(\mathbb F_3\) for six determinant-subgroup problems, eight concise structural restrictions and six extension-field norm problems. Includes all sign-subgroup reductions and a three-character route to the endpoint comparison. Strictness is open.
 <!-- tensor-isomorphism-interval:end -->
