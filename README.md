@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- graph-group-determinant-ti:start -->
+- **Graph and group counterparts of the determinant TI chain.** Ordinary three-tensor isomorphism over F₃ is many-one equivalent to abstract isomorphism of class-two groups of exponent dividing nine given by permutation generators. The hardness construction uses orbits of size at most 81 and retains all three determinant signs on characteristic group sections. Further reductions compare marked graph, ternary-code, and Cayley-table isomorphism with the chain. Informal proofs. [Results](GraphGroupDeterminantTI/RESULTS.md)
+<!-- graph-group-determinant-ti:end -->
+
 <!-- marked-permutation-reverse:start -->
 - **Marked permutation isomorphism equivalences.** Over F₃, marked monomial-label tensor isomorphism and marked subspace-arrangement isomorphism have the same many-one degree. Marked graphic-matroid isomorphism is many-one equivalent to marked graph isomorphism, including arbitrary graph 1- and 2-separations. The unsigned corollary answers the many-one question posed by Rao and Sarma. Informal proofs. [Results](MarkedPermutationReductions/RESULTS.md)
 <!-- marked-permutation-reverse:end -->
