@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-isomorphism-results:start -->
+- **Four results on group, tensor, and matrix isomorphism** — [Informal proofs](FourIsomorphismResults/RESULTS.md). A succinct class-two group and prime-power tensor equivalence, NP-hardness of least extension degree for rational TI, a characteristic-two matrix-tuple isometry algorithm for specified residue factors, and a witness-preserving tensor kernel that removes repeated slice modules.
+<!-- four-isomorphism-results:end -->
+
 <!-- filtered-frobenius-orientation:start -->
 - **Determinant cancellation in filtered Frobenius algebras** — [Informal proof](FilteredFrobeniusOrientation/FrobeniusOrientation.md). Gives deterministic polynomial-time reductions from first-mode determinant-one multiplication-tensor isomorphism to one ordinary TI instance for odd-dimensional algebras, symmetric Hilbert functions of odd socle degree, and compressed even-socle algebras satisfying an explicit parity condition. Works from raw tensor coordinates without a supplied grading or transporter. Includes exact finite controls and a [search/scope audit](FilteredFrobeniusOrientation/SearchAudit.md). **Does not close unrestricted TI versus SL-TI or claim publication priority; not Lean-formalized.**
 <!-- filtered-frobenius-orientation:end -->
