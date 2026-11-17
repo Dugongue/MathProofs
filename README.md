@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-isomorphism-interval:start -->
+- [Twenty Candidate Classes Between TI and SL-TI](TensorIsomorphismInterval/RESULTS.md) — Informal deterministic many-one interval proofs over \(\mathbb F_3\) for six determinant-subgroup problems, eight concise structural restrictions and six extension-field norm problems. Includes all sign-subgroup reductions and a three-character route to the endpoint comparison. Strictness is open.
+<!-- tensor-isomorphism-interval:end -->
+
 <!-- optimal-max-rank-and-descent:start -->
 - [Optimal Max-Rank Hardness and Extension Spectra for Tensor Isomorphism](OptimalMaxRankAndDescent/RESULTS.md) — Informal proofs of TI-completeness for recognizable, balanced, absolutely indecomposable tensors at optimal all-mode maximum matrix rank, and of a complete classification of extension-degree spectra with a nilpotent descent theorem.
 <!-- optimal-max-rank-and-descent:end -->
