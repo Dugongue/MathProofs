@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- group-tensor-frontier:start -->
+- **[Minimum permutation degree and tensor-isomorphism reductions](GroupTensorFrontier/RESULTS.md)** — Informal proof that Kantor–Luks §13, Problem 1 (Size of Representation Domain) is NP-complete, already for class-two odd-\(p\) groups given by bounded-orbit permutation generators with trivial quotient kernel. The group bridge proves TI-completeness on minimum-degree exponent-prime permutation presentations. Companion results give a linear-side determinant-profile kernel over fixed finite fields, exponential extension degrees for finite-field TI, and a deterministic signed local-algebra algorithm with unbounded residue degree.
+<!-- group-tensor-frontier:end -->
+
 <!-- cube-zero-determinant-absorption:start -->
 - **[Absorbing odd automorphisms into one-sign tensor isomorphism](CubeZeroDeterminantAbsorption/RESULTS.md)** — Informal polynomial-time many-one reductions over F₃. An unrestricted one-sign comparison with an independent odd-automorphism test reduces to the asymmetric correction comparison. One-sign absorption holds when either conjunct belongs to the stated cube-zero multiplication families. The unrestricted reverse reduction remains open.
 <!-- cube-zero-determinant-absorption:end -->
