@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- early-invariant-isomorphism:start -->
+- **[Exact Isomorphism Reductions from Early Invariants](EarlyInvariantIsomorphism/RESULTS.md)** — Informal proofs of GI-completeness for collinearity isomorphism on a fixed smooth cubic, and a factorization-free reduction from cyclic phase equivalence with binary moduli to graph isomorphism. The phase construction also applies to full-support tensors under monomial actions in every mode.
+<!-- early-invariant-isomorphism:end -->
+
 <!-- isomorphism-frontiers:start -->
 - [**Parallel Lower Central Series and Average-Case Matrix-Code Conjugacy**](IsomorphismFrontiers/RESULTS.md) — Informal proofs answering Babai–Luks–Seress §10 Problem 3 and Li–Li–Qiao–Tao–Wang Problem 1.6 (version 2). Includes succinct tensor encodings of field-extension power equations and a finite-unitary orbit classification.
 <!-- isomorphism-frontiers:end -->
