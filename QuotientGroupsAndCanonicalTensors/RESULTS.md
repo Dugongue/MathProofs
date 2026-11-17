@@ -1,0 +1,12 @@
+# Quotient groups, code equivalence, and canonical tensor trains
+
+These are independently audited, AI-assisted informal proofs. Publication priority for the new arguments remains unverified.
+
+| Proof | Exact conclusion |
+| --- | --- |
+| [Parallel centralizers and socles of quotient permutation groups](AbelianSocle.md) | Deterministic uniform NC computes normal centralizers and the entire socle of arbitrary $G/K$, given generating permutations for $G,K$ and the relevant normal subgroup. Answers Levet–Srivastava–Thakkar Problem 12.2 and the unrestricted quotient question following Problem 12.4. The key subroutine computes the kernel of a linear representation of a permutation group. The same methods also compute all largest normal prime-power subgroups and the Fitting subgroup. [Published questions](https://arxiv.org/html/2501.16039v4#S12) |
+| [Sloped genus-two quotient isomorphism](SlopedQuotients.md) | A deterministic polynomial-bit-time algorithm answers Schrock's §4.5 question about central quotients of centrally indecomposable sloped groups of odd exponent $p$. It also permits arbitrary normal quotients of these covers and combinations with the earlier flat-block algorithm. [Schrock, §4.5](https://math.colorado.edu/~tysc3584/Tyler_Schrock-PhD_Thesis.pdf#page=120) |
+| [Matrix-code equivalence with hidden field structure](CodeEquivalence.md) | Deterministic polynomial bit-time search over finite and number fields for hidden extension-linear codes. A counterexample over $\mathbb F_2$ exposes a missing center automorphism in Couvreur–Debris-Alazard–Gaborit's Proposition 32. Iteration over center maps repairs the test. The arbitrary-field analysis gives a root-oracle algorithm and a bounded field-operations obstruction even over $\mathbb Q$. [Paper, §§5.3 and 6](https://arxiv.org/html/2011.04611v2#S6) |
+| [Fast canonical LDPU](FastLDPU.md) | Answers both questions in Vilmart's tensor-train paper. The canonical factorization costs $O(mn\max(1,r)^{\beta-2})$ field operations for an attainable matrix multiplication exponent $\beta>2$. The direct binary panel algorithm gives $O(N^3/\log(N+1))$ worst-case time in the stated random-access model. [Vilmart, following Theorem 19](https://arxiv.org/html/2607.06271) |
+
+The sloped proof concerns a single centrally indecomposable cover, and the two-sided matrix-code algorithm uses hidden extension-linearity. The Four Russians bound is an algorithmic bound in the stated model.

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quotient-groups-and-canonical-tensors:start -->
+- **[Quotient Groups, Code Equivalence, and Canonical Tensor Trains](QuotientGroupsAndCanonicalTensors/RESULTS.md)** — Informal proofs answering Levet–Srivastava–Thakkar's normal-centralizer and unrestricted quotient-socle questions, Schrock's sloped genus-two quotient question, and both of Vilmart's canonical LDPU complexity questions. Also gives deterministic hidden extension-linear matrix-code equivalence over finite and number fields and a counterexample and repair for Couvreur–Debris-Alazard–Gaborit Proposition 32. Publication priority remains unverified.
+<!-- quotient-groups-and-canonical-tensors:end -->
+
 <!-- parallel-group-algorithms-and-isomorphism:start -->
 - **[Parallel Group Algorithms and Isomorphism Proofs](ParallelGroupAlgorithmsAndIsomorphism/RESULTS.md)** — Informal proofs answering Levet–Srivastava–Thakkar Problems 12.1, 12.4 and 12.5 and Levet's Shonan permutation-socle question, together with Schrock's flat-pencil conjectures and Horlemann et al.'s linear monomial-model question. Also records Qiao's fixed-format tensor-isomorphism bound as a consequence of Kayal's theorem, and a sampler for Narayanan's finite-field definition of nondegeneracy. Publication priority remains unverified.
 <!-- parallel-group-algorithms-and-isomorphism:end -->
