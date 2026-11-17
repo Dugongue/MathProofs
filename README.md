@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-determinant-families:start -->
+- **Determinant restrictions for cyclic tensors and matrix multiplication factors.** Over F₃ the three signed problems on cyclically presented three-tensors have exactly the degree of unrestricted one-sign TI. Two even matrix multiplication factors give ordinary TI degree. SL-TI on symmetric or alternating matrix pencils has unrestricted two-sign degree under independent matrix maps. Additional reductions cover two algebraic families. Informal proofs. [Results and proofs](TensorDeterminantFamilies/RESULTS.md)
+<!-- tensor-determinant-families:end -->
+
 <!-- four-isomorphism-results:start -->
 - **Four results on group, tensor, and matrix isomorphism** — [Informal proofs](FourIsomorphismResults/RESULTS.md). A succinct class-two group and prime-power tensor equivalence, NP-hardness of least extension degree for rational TI, a characteristic-two matrix-tuple isometry algorithm for specified residue factors, and a witness-preserving tensor kernel that removes repeated slice modules.
 <!-- four-isomorphism-results:end -->
