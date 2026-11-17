@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-reduction-audit:start -->
+- **[Two-sign to one-sign reduction audit](TensorSignReductionAudit/RESULTS.md)** — Informal research audit of pair-dependent multiplication networks, determinant representations, and finite orientation constructions over F_3. Documents unsuccessful routes and prior constructions recovered from the DAG; the unrestricted polynomial-time many-one reduction remains open. No new open-problem closure is claimed.
+<!-- tensor-sign-reduction-audit:end -->
+
 <!-- tensor-sign-conjunctions:start -->
 - [Single-Instance Conjunctions for Determinant Signs](TensorSignConjunctions/RESULTS.md) — Informal one-instance reductions with logarithmic tested dimension or certified sign flexibility, an exact compiler for one signed and arbitrarily many ordinary TI conjuncts, and a common-encoding criterion for collapse to ordinary TI. The unrestricted two-sign to one-sign reduction remains open.
 <!-- tensor-sign-conjunctions:end -->
