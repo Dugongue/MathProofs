@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- parallel-group-algorithms-and-isomorphism:start -->
+- **[Parallel Group Algorithms and Isomorphism Proofs](ParallelGroupAlgorithmsAndIsomorphism/RESULTS.md)** — Informal proofs answering Levet–Srivastava–Thakkar Problems 12.1, 12.4 and 12.5 and Levet's Shonan permutation-socle question, together with Schrock's flat-pencil conjectures and Horlemann et al.'s linear monomial-model question. Also records Qiao's fixed-format tensor-isomorphism bound as a consequence of Kayal's theorem, and a sampler for Narayanan's finite-field definition of nondegeneracy. Publication priority remains unverified.
+<!-- parallel-group-algorithms-and-isomorphism:end -->
+
 <!-- four-code-and-group-iso-results:start -->
 - **[Four Results on Code and Group Isomorphism](FourCodeAndGroupIsoResults/RESULTS.md)** — Informal answers to the nonprime-field code-to-lattice reduction and monomial companion questions in Horlemann et al., the sharp random-code rigidity transition left by Li–Wang–Zhou, and Schrock's flat genus-two conjectures 4.4.4.1 and 4.4.4.3. The lattice reduction is polynomial in block length and field order. Publication priority is pending.
 <!-- four-code-and-group-iso-results:end -->
