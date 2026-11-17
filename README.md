@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-invariant-zoo:start -->
+- [Isomorphism Invariant Zoo](IsomorphismInvariantZoo/RESULTS.md) — Twenty informal constructions for tensor, group, code, gain-graph and cubic-form equivalence, extending the early Rune, Ley, Sigil, Ward and Trellis ideas. Includes exact determinant corrections within congruence classes, canonical tensor flags, a code-to-GI reduction parameterized by the number of bases, and NP-completeness of epimorphism for a compact metabelian permutation-group family.
+<!-- isomorphism-invariant-zoo:end -->
+
 <!-- further-invariant-transfers:start -->
 - [Four Invariant Transfers in Isomorphism](FurtherInvariantTransfers/RESULTS.md) — Informal proofs giving a negative answer to Agrawal–Saxena’s real-and-congruence cubic equivalence question, uniform NC algorithms for subgroup descent in arbitrary permutation-group quotients, an exact shared-phase switching algorithm for bounded-degree gain graphs, and a determinant-constrained monomial tensor reduction over finite chain rings.
 <!-- further-invariant-transfers:end -->
