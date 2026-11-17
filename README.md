@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- marked-permutation-reverse:start -->
+- **Marked permutation isomorphism equivalences.** Over F₃, marked monomial-label tensor isomorphism and marked subspace-arrangement isomorphism have the same many-one degree. Marked graphic-matroid isomorphism is many-one equivalent to marked graph isomorphism, including arbitrary graph 1- and 2-separations. The unsigned corollary answers the many-one question posed by Rao and Sarma. Informal proofs. [Results](MarkedPermutationReductions/RESULTS.md)
+<!-- marked-permutation-reverse:end -->
+
 <!-- tensor-determinant-intervals:start -->
 - **Intermediate determinant comparisons for tensor isomorphism.** Over F₃, explicit many-one reductions refine the ordinary, one-sign, two-sign and special-linear chain. Includes 44 source-automorphism correction predicates and a seven-node upper chain whose reverse steps fail in the affine compiler model. Informal proofs. [Catalogue and reductions](TensorDeterminantIntervals/RESULTS.md)
 <!-- tensor-determinant-intervals:end -->

@@ -1,0 +1,7 @@
+# Two reverse reductions for marked permutation problems
+
+**The first equivalence merges two adjacent problems** in the previously displayed determinant TI chain. For three-tensors over the field of three elements, monomial-label tensor isomorphism with even permutation on the marked labels and subspace-arrangement isomorphism with even permutation on the marked subspaces have the same polynomial-time many-one degree. The new reverse direction compiles each matrix slice into its two signed graphs and a tag line. The construction preserves each possible marked permutation and works for arbitrary ranks, repeated or zero slices, and arbitrary varying side lengths.
+
+**A second equivalence merges the graphic-matroid side branch with marked graph isomorphism.** A canonical decomposition encodes the real and virtual edges along with the 3-connected skeletons. The graph encodes exactly the permissible actions on the original marked edges. Forgetting marks gives the many-one reduction from graph-input graphic matroid isomorphism to graph isomorphism asked for by Rao and Sarma. The proof uses the general decomposition theorem and extends the closely related SPQR encoding of Bläsius, Krug, Rutter and Wagner for planar graphs. [Rao and Sarma](https://www.cse.iitm.ac.in/~bvrr/jour/RS1.pdf) · [Bläsius et al.](https://hpi.de/friedrich/docs/publications/2014/CGA.pdf)
+
+Both are deterministic single-instance reductions with informal proofs. The [subspace controls](verify_subspaces.py) check 14,408 small transporter cases. [Full proofs](ReverseReductions.md)
