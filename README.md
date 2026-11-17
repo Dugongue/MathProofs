@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-algebraic-isomorphism-transfers:start -->
+- **[Four Transfers in Finite-Dimensional Algebra and Isomorphism](FourAlgebraicIsomorphismTransfers/RESULTS.md)** — Informal proofs of polynomial-time characteristic-two tuple isometry with commutative adjoint residue, a group epimorphism and subcode-equivalence bridge with improved Cayley-table bounds for Question 3(5), TI-completeness of a stable-equivalence family, and an exact positive-characteristic closed-orbit encoding of finite-field TI.
+<!-- four-algebraic-isomorphism-transfers:end -->
+
 <!-- ternary-determinant-parity:start -->
 - **[Determinant-Sign Tests for Ternary Tensor Transporters](TernaryDeterminantParity/RESULTS.md)** — Informal progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9. Gives one ordinary ternary TI instance for specified nonsplit determinant frames and their split local-ring lifts, and one ordinary binary TI instance for ternary tensors with logarithmic-dimensional permutable blocks. The unrestricted same-field question remains open.
 <!-- ternary-determinant-parity:end -->
