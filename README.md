@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- special-linear-tensor-frontier:start -->
+- [Four Further Approaches to Special-Linear Tensor Isomorphism](SpecialLinearTensorFrontier/RESULTS.md) — Informal progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9, covering raw scalar-stabilizer pairs with split determinant pencils, coupled four-layer words in matrix algebras, exact projective products by point counting, and determinant pins on singular Frobenius-form pencils.
+<!-- special-linear-tensor-frontier:end -->
+
 <!-- determinant-tensor-routes:start -->
 - [Four Routes to Determinant-Constrained Tensor Isomorphism](DeterminantTensorRoutes/RESULTS.md) — Informal progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9, including overlapping contraction flags, full determinant cosets at logarithmic smallest-mode rank, Pfaffian pins in fixed characteristic, and determinant tests for associative action tensors.
 <!-- determinant-tensor-routes:end -->
