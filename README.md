@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-code-and-group-iso-results:start -->
+- **[Four Results on Code and Group Isomorphism](FourCodeAndGroupIsoResults/RESULTS.md)** — Informal answers to the nonprime-field code-to-lattice reduction and monomial companion questions in Horlemann et al., the sharp random-code rigidity transition left by Li–Wang–Zhou, and Schrock's flat genus-two conjectures 4.4.4.1 and 4.4.4.3. The lattice reduction is polynomial in block length and field order. Publication priority is pending.
+<!-- four-code-and-group-iso-results:end -->
+
 <!-- four-algebraic-isomorphism-transfers:start -->
 - **[Four Transfers in Finite-Dimensional Algebra and Isomorphism](FourAlgebraicIsomorphismTransfers/RESULTS.md)** — Informal proofs of polynomial-time characteristic-two tuple isometry with commutative adjoint residue, a group epimorphism and subcode-equivalence bridge with improved Cayley-table bounds for Question 3(5), TI-completeness of a stable-equivalence family, and an exact positive-characteristic closed-orbit encoding of finite-field TI.
 <!-- four-algebraic-isomorphism-transfers:end -->
