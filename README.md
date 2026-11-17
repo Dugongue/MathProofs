@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ternary-determinant-parity:start -->
+- **[Determinant-Sign Tests for Ternary Tensor Transporters](TernaryDeterminantParity/RESULTS.md)** — Informal progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9. Gives one ordinary ternary TI instance for specified nonsplit determinant frames and their split local-ring lifts, and one ordinary binary TI instance for ternary tensors with logarithmic-dimensional permutable blocks. The unrestricted same-field question remains open.
+<!-- ternary-determinant-parity:end -->
+
 <!-- local-determinant-transfers:start -->
 - **[Determinant Constraints in Local-Ring Tensor Isomorphism](LocalDeterminantTransfers/RESULTS.md)** — Gives a polynomial-time reduction from special-linear tensor isomorphism over split binary square-zero algebras and a multigraded binary family to ordinary binary TI. Over other coefficient fields the derivation construction enforces a principal-unit determinant constraint. Also audits the Qiao–Zhang interfaces and gives a direct determinant-constrained local lifting proof with conditional residue-field exponential time. The unrestricted finite-field question remains open. Informal proofs.
 <!-- local-determinant-transfers:end -->
