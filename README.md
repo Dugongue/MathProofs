@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-frontiers:start -->
+- [**Parallel Lower Central Series and Average-Case Matrix-Code Conjugacy**](IsomorphismFrontiers/RESULTS.md) — Informal proofs answering Babai–Luks–Seress §10 Problem 3 and Li–Li–Qiao–Tao–Wang Problem 1.6 (version 2). Includes succinct tensor encodings of field-extension power equations and a finite-unitary orbit classification.
+<!-- isomorphism-frontiers:end -->
+
 <!-- quotient-groups-and-canonical-tensors:start -->
 - **[Quotient Groups, Code Equivalence, and Canonical Tensor Trains](QuotientGroupsAndCanonicalTensors/RESULTS.md)** — Informal proofs answering Levet–Srivastava–Thakkar's normal-centralizer and unrestricted quotient-socle questions, Schrock's sloped genus-two quotient question, and both of Vilmart's canonical LDPU complexity questions. Also gives deterministic hidden extension-linear matrix-code equivalence over finite and number fields and a counterexample and repair for Couvreur–Debris-Alazard–Gaborit Proposition 32. Publication priority remains unverified.
 <!-- quotient-groups-and-canonical-tensors:end -->

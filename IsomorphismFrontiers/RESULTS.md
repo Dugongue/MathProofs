@@ -1,0 +1,14 @@
+# Parallel central series and finite-field isomorphism
+
+These are informal proofs. Two give full answers to the published questions listed below. The other two prove structural results about finite-field tensor isomorphism.
+
+| Result | Scope |
+| --- | --- |
+| [Parallel lower central series](ParallelGroups.md) | Deterministic uniform $\mathsf{NC}$ computes generators for every lower central term of any quotient of a permutation group. This answers [Babai–Luks–Seress, §10, Problem 3](https://ix.cs.uoregon.edu/~luks/NC.pdf#page=11). |
+| [Average-case matrix-code conjugacy](MatrixCodes.md) | A deterministic polynomial-bit-time test covers an absolute constant fraction of first inputs for every dimension $m$ and field $\mathbb F_q$. Its coverage is at least $1-O(1/q)$ as $q$ grows, uniformly in the dimensions. This answers [Li–Li–Qiao–Tao–Wang, version 2 Problem 1.6](https://arxiv.org/html/2604.00591v2#S1.SS5), numbered 1.5 in version 1. |
+| [Succinct power equations](PowerEquationTensors.md) | An explicit ordinary three-tensor pair with sides $O(1+\log M)$ tests $u^M=c$ over every extension of the coefficient field. In particular, format $O(r)$ can require extension degree $2^r$ over $\mathbb F_5$, or $3^r$ over $\mathbb F_2$. This concerns the forms discussed alongside [Grochow–Qiao Open Question 7.6](https://arxiv.org/html/1907.00309#S10.SS2), numbered 10.6 in the preprint. |
+| [Finite-unitary conjugate-dual pairs](ClassicalTI.md) | An exact formula counts the unitary orbits inside an ordinary paired orbit. Odd order of the rational component group suffices for a linear-side-length, same-field reduction uniform in the characteristic. The formula gives an explicit $\mathbb F_4$ example of orbit splitting. This sharpens one direction in [Chen–Grochow–Qiao–Tang–Zhang Open Question 1.10](https://arxiv.org/html/2306.03135v2#S1.SS5). |
+
+The matrix-code test uses two intrinsic projections under the trace pairing. A joint incidence count gives coverage in every code dimension, including even and odd dimensions in characteristic two. The group algorithm solves the full commutator recurrence simultaneously on abelian sections. Shared free-group word witnesses allow it to lift the entire sequence through a polylogarithmic tower. It also gives upper-central membership in solvable quotients and computes all upper central terms for metabelian quotients, using the [earlier quotient centralizer proof](QuotientCenterDependency.md). The general upper central generator question remains open here.
+
+The proofs use the cited permutation-group algorithms, Lang–Steinberg descent, and the Grochow–Qiao tensor compiler. Publication priority remains unverified. Unrestricted cross-characteristic comparison and unrestricted same-field unitary containment with one uniform polynomial in arbitrary characteristic remain open in this work.
