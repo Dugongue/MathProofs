@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-determinant-lower-bounds:start -->
+- [Lower Bounds for Removing Determinant Constraints in Tensor Isomorphism](TensorDeterminantLowerBounds/RESULTS.md) — Informal finite-field lower bounds for fixed tensor markers and low-degree equivariant encoders, plus optimal affine sign-query counts over F3. All three unrestricted many-one separations remain open.
+<!-- tensor-determinant-lower-bounds:end -->
+
 <!-- tensor-sign-projections:start -->
 - [Determinant Sign Projections and Conjunctions in Tensor Isomorphism](TensorSignProjections/RESULTS.md) — Informal polynomial-time sign projections over F3, a single SL-TI instance for independent two-sign and one-sign comparisons, and three restricted reverse reductions. The unrestricted reverse reductions remain open.
 <!-- tensor-sign-projections:end -->
