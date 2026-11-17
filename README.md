@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-determinant-conjunction:start -->
+- [Ordinary Conjunctions in Determinant Tensor Isomorphism](TensorDeterminantConjunction/RESULTS.md) (informal proofs) — Over $\mathbb F_3$, all 30 catalogue comparisons retain their polynomial-time many-one degree after adjoining a list of ordinary tensor-isomorphism tests. Also gives a one-instance ordinary TI reduction for complete-intersection Frobenius inputs and a two-test upper bound for the cross-mode sign-correction problem.
+<!-- tensor-determinant-conjunction:end -->
+
 <!-- tensor-determinant-interval-collapses:start -->
 - [Further Collapses in the Determinant Tensor Isomorphism Intervals](TensorDeterminantIntervalCollapses/RESULTS.md) — Informal many-one equivalences for the commutative multiplication and Frobenius candidates, with additional signed conjunction and upper interval reductions over F3. The unrestricted endpoint collapse remains open.
 <!-- tensor-determinant-interval-collapses:end -->
