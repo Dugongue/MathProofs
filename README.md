@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-determinant-interval-collapses:start -->
+- [Further Collapses in the Determinant Tensor Isomorphism Intervals](TensorDeterminantIntervalCollapses/RESULTS.md) — Informal many-one equivalences for the commutative multiplication and Frobenius candidates, with additional signed conjunction and upper interval reductions over F3. The unrestricted endpoint collapse remains open.
+<!-- tensor-determinant-interval-collapses:end -->
+
 <!-- tensor-determinant-interval-thirty:start -->
 - [Thirty Candidate Degrees in the Determinant Tensor Isomorphism Intervals](TensorDeterminantIntervalThirty/RESULTS.md) — Informal deterministic many-one bounds for thirty new definitions over F3, ten in each closed interval. Includes determinant-plane balance and exact affine-probe counts. No strict Karp separation is claimed.
 <!-- tensor-determinant-interval-thirty:end -->
