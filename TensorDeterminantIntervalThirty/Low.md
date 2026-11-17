@@ -1,0 +1,88 @@
+# Ten candidates between ordinary and one-sign tensor isomorphism
+
+Fix $F=\mathbb F_3$. Let $O$ be ordinary dense three-tensor isomorphism and let $A$ require determinant one on the first mode of the same transporter. Every candidate denotes the deterministic polynomial-time many-one downward closure of its stated decision problem.
+
+Each candidate uses the following rule on raw tensors. If both tensors meet its indicated algebra condition up to ordinary tensor isomorphism, ask for determinant one in the first mode. Otherwise ask for ordinary TI. The rule does not require supplied coordinate charts or algebra generators. On different formats answer no. Zero-dimensional formats, if allowed, go to ordinary TI. The algebra occurring in an active branch is recovered by the procedure below and is unique up to algebra isomorphism.
+
+| # | Structural condition activating the sign | Degree shown here |
+|---|---|---|
+| L1 | Multiplication of a unital associative algebra | One-sign TI |
+| L2 | Multiplication of a scalar-residue local algebra with $J^3=0$ | One-sign TI |
+| L3 | Multiplication of a commutative unital algebra | Between ordinary and one-sign TI |
+| L4 | Multiplication of a commutative scalar-residue local algebra | Between ordinary and one-sign TI |
+| L5 | L4 with one-dimensional socle $\{a:aJ=0\}$ | Between ordinary and one-sign TI |
+| L6 | L5 with $J^4=0$ and $J^3\ne0$ | Ordinary TI |
+| L7 | L5 with tangent dimension $e=\dim(J/J^2)\ge2$ and radical nilpotence index exactly $3e+1$ | Between ordinary and one-sign TI |
+| L8 | Multiplication of a scalar-residue local algebra with $J^2=0$ | Ordinary TI |
+| L9 | Multiplication of a scalar-residue local algebra with $\dim(J/J^2)\le1$ | Ordinary TI |
+| L10 | Multiplication of a split central simple algebra over $F$ | Ordinary TI |
+
+Here $J$ is the Jacobson radical of the recovered algebra. Scalar-residue local means its quotient by $J$ is $F$, with a single simple factor. A condition with one-dimensional socle is the local commutative Frobenius condition. These are ten definitions, with six endpoint identifications already accounted for. No strictness or mutual inequivalence is proved for L3, L4, L5 and L7. A row marked “between” may have independent known reductions beyond this proof.
+
+## Recover the active structure from raw coordinates
+
+Represent a square three-tensor as a bilinear map $\mu:U\times V\to W$ on equal positive dimensions $n$, using dual coordinates where necessary. Require injectivity of the slice map $M:U\to\operatorname{Hom}(V,W)$, $M(u)v=\mu(u,v)$. Define a unital associative algebra by linear equations,
+$$
+E=\{(P,Q)\in\operatorname{End}(V)\times\operatorname{End}(W):QM(u)=M(u)P\text{ for every }u\}.
+$$
+Every $M(u)$ is an $E$-module map between the two natural left modules. Compute $E$, its multiplication matrices on itself by left regular action, and its two given actions. Check that $\dim E=n$ and that each of $V,W$ is isomorphic as an $E$-module to the left regular module. Deterministic module isomorphism over a fixed field supplies the check and explicit frames $\alpha:E\to V$, $\beta:E\to W$. To apply it, use a basis of $E$ as the list of operators on both modules. [Brooksbank and Luks, Testing isomorphism of modules](https://ix.cs.uoregon.edu/~luks/ModIso.pdf)
+
+In these frames $\beta^{-1}M(u)\alpha$ is an endomorphism of the left regular module, hence right multiplication by its value $a(u)$ on $1$. Injectivity and dimension show $a:U\to E$ is invertible. Consequently
+$$
+\beta^{-1}\mu(u,\alpha(v))=v\,a(u),
+$$
+which identifies the tensor with multiplication of $E^{\mathrm{op}}$, without transposing the original first input slot. Conversely, for a multiplication tensor of $R$ in arbitrary bases, the identity slice identifies the two fixed-label adjoints as equal right multiplications. The resulting algebra is $R^{\mathrm{op}}$, and both modules are regular. Thus the procedure recognizes precisely multiplication tensors up to ordinary TI and extracts the algebra in that case.
+
+The other conditions are polynomial-time tests on the recovered table. Commutativity and annihilation are linear algebra. At fixed field, algorithmic radical and semisimple factor decomposition decides local scalar residue and split central simplicity. Radical powers, their dimensions and nilpotence index are computed by multiplying spanning bases until zero. This takes at most $n$ nontrivial steps. The same algorithms supply an explicit matrix-algebra identification in the split central simple case. [Ivanyos and Qiao, Theorem 18](https://arxiv.org/html/1708.03495#Thmtheorem18)
+
+To justify uniqueness, consider an ordinary isotopy $p(x)q(y)=r(xy)$ between unital algebra multiplication tensors. Set $u=p(1)$ and $v=q(1)$. Since $r(x)=p(x)v=u q(x)$ and the three linear maps are invertible, $u,v$ are units. Then $\phi(x)=u^{-1}p(x)=q(x)v^{-1}$ is a unital algebra isomorphism by cancelling $u,v$ in the isotopy equation. Conversely any such isomorphism and units give an isotopy
+$$
+p=L_u\phi,\qquad q=R_v\phi,\qquad r=L_uR_v\phi.
+$$
+Every condition in the table therefore depends only on the ordinary orbit. Passing to dual coordinates does not change any determinant sign over $F$.
+
+## Both inclusions and certified comparisons
+
+For any of the ten tests, the reduction from ordinary TI appends unused first-mode directions to make that dimension strictly larger than either other dimension. The matrix multiplication condition is now off. Ordinary TI is preserved and reflected: restrict the padded transporter to intrinsic supports and extend compatible maps across complements. If original formats differ use a fixed negative instance.
+
+For the reduction to $A$, compute the condition on both objects. If active, keep the same signed query. Otherwise make one unused first-mode direction, so any ordinary witness can adjust its first determinant by reflecting that complement. Thus every row is in the claimed interval by single-instance reductions. For two filters $P\subseteq Q$, their conditioned languages satisfy $C_P\le_m^p C_Q$: compute $P$ first, send its active branch unchanged into $Q$, and on its ordinary branch use the nonsquare padding. In particular, L6 and L7 each reduce to L5, which reduces to L4, then L3, then L1. L2 also reduces to L1.
+
+For the equalities of L1–L2 with $A$, even first-mode dimension and full first-mode support are the only nontrivial branch of $A$. If the support dimensions of the input differ, reject; if that first dimension is odd or deficient on both endpoints, a scalar gauge or complement reflection corrects its sign and the query is ordinary. For the hard branch pad each other mode to odd dimension with at least one unused direction. Calibrated castling in the first mode turns the query into the total determinant sign of an all-odd concise triple. To see conciseness of the new tensor, its annihilator contains an entire strip over each unused coordinate of the two padded modes, giving full support there. In the replaced mode it is presented injectively. Its determinant is the old first determinant times the determinants on the two padded modes, and multiplying by the two unchanged inverse-dual signs cancels those factors. Basis calibration uses a determinant-one completion of the first flattening image. Thus all original transporters reflect and extend with the correct total character. This is the earlier determinant-calibrated castling calculation. [Castling and orbit correspondence](https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/maximum-likelihood-estimation-for-tensor-normal-models-via-castling-transforms/FF03C608CF421F399C16127F8476538F)
+
+Write the new concise tensors as bilinear maps $\mu:U\times V\to W$ and encode each as the algebra
+$$
+R_\mu=F1\oplus U\oplus V\oplus W,\qquad uv=\mu(u,v),
+$$
+with the indicated order $u\in U,v\in V$ and every other product in the radical zero. The algebra is scalar-residue local, $J^2=W$, $J^3=0$, and its dimension is even. Its algebra isomorphisms induce exactly the original tensor transporters. Indeed left and right annihilators in the quotient $J/J^2$ recover the two slots by conciseness, and the induced multiplication recovers the map into $J^2$. Conversely every original transporter extends by the identity on the unit. The determinant of an algebra isomorphism is the product of the three old determinants, since the remaining block changes are filtration shears. Left and right unit multiplications have determinant one, since they act on radical grades by the unit's scalar residue and the total algebra dimension is even. Hence, on the new multiplication tensor, the allowed first-mode determinants are exactly the previous total sign choices. Both L1 and L2 activate on these outputs. This proves $A\le_m^p\mathrm{L2}\le_m^p\mathrm{L1}$. The easy original ordinary branches use the already proved ordinary reductions into the same languages.
+
+## Additional ordinary endpoint cases
+
+In L8, on the active branch $R=F1\oplus J$ with square-zero $J$. If $J\ne0$ every $g\in\operatorname{GL}(J)$ extends to an algebra automorphism, so a reflection gives the missing determinant sign on the first mode. If $J=0$ a scalar unit multiplication gives that reflection. The active branch is therefore ordinary, as is the default branch.
+
+In L9, the radical condition makes $R$ isomorphic to $F[t]/(t^n)$. If $J=0$ this is $n=1$. Otherwise choose $t\in J\setminus J^2$. Since $J/J^2$ is its line, the quotient $J^i/J^{i+1}$ is spanned by the power $t^i$ by multiplication, and nilpotence shows that the powers form a basis through the last nonzero grade. They give a polynomial-time canonical-form frame in both raw tensors. All algebras of a given dimension then have the same standard multiplication. In that frame unit multiplications have determinant $(\epsilon(u))^n$, where $\epsilon$ is the scalar residue. An algebra automorphism replacing $t$ by $\lambda t$ plus higher powers has determinant $\lambda^{n(n-1)/2}$. Both formulas follow from the basis ordered by degree. If $n$ is odd a unit gives either first sign. If $n\equiv2\bmod 4$ an algebra automorphism gives either first sign. If $n\equiv0\bmod 4$ all first determinants are one in the standard frame. Thus after calibrating the determinants of the recovered source and target first-mode frames one can decide the active branch in polynomial time. The default branch reduces to $O$ as before.
+
+In L10, the constructive semisimple algorithm puts both algebras in the form $\operatorname{Mat}_r(F)$. The left and right multiplication determinants of an invertible matrix unit factor are the $r$-th powers of the determinant of that matrix. Every algebra automorphism acts by conjugation, whose determinant is one. If $r$ is odd either first-mode sign is available by a unit. If $r$ is even only the positive sign is available in the common standard frame. Calibration using the two recovered first-mode frames again gives a polynomial-time decision in the active branch. Thus L8, L9 and L10 all have degree $O$, even though the signed verdict in L9 and L10 can be genuinely different from ordinary equivalence on individual inputs.
+
+## L6 reduces to ordinary TI by a socle pairing calculation
+
+Let $R$ be commutative scalar-residue local with $J^4=0$, $J^3\ne0$ and one-dimensional socle. Then $S=J^3$ is the socle. Put $X=J/J^2$ and $Y=J^2/S$. The product pairing $X\times Y\to S$ has zero right kernel. A representative in $J^2$ lying in the right kernel annihilates $J$ and hence lies in the socle. Write $K$ for the left kernel and choose a complement $U$ in $X$. The pairing of $U$ and $Y$ is perfect.
+
+Suppose first that $K\ne0$. A lift $k$ of an element of $K$ satisfies $kJ^2=0$. For every $x,y\in J$, $(kx)y=k(xy)=0$, so $kx$ lies in $S$. In particular multiplication on $K$ gives a well-defined symmetric form with values in $S$. It is nondegenerate. In fact, if $k$ kills $K$, use the perfect pairing of $U$ and $Y$ to choose a lift $z\in J^2$ that cancels the pairing of $k$ with all chosen lifts of $U$. Then $k+z$ annihilates $J$ and is in $S$, which forces the original tangent vector in $K$ to vanish. The same adjustment of each lift of $K$ by $J^2$, performed linearly, makes these lifts annihilate the chosen lifts of $U$. It leaves the form on $K$ unchanged, since $K$ annihilates $J^2$ and $(J^2)^2=0$.
+
+A reflection on $K$ for this form then extends by identity on the unit, the lifts of $U$, and $J^2$ to an algebra automorphism of determinant minus one. A nonisotropic vector needed for the reflection exists by polarization in characteristic three. It gives a first-mode determinant correction on every multiplication tensor in this branch.
+
+If $K=0$, write $e=\dim X=\dim Y$. Choose a nonzero socle vector $\omega$, lifts of a basis of $X$, and lifts of the basis of $Y$ dual to it in the product pairing into $F\omega$. In the ordered frames $(1,X,Y,\omega)$, the determinant of any algebra isomorphism is $\lambda^{e+1}$, where $\lambda$ is its scale on the socle between the two chosen frames. Indeed, if it acts by $g$ on $X$ then its action on $Y$ is $\lambda g^{-\mathsf T}$, and the filtration makes determinants multiply by grade. The algebra dimension is $2e+2$, so its left and right unit multipliers have positive determinant. If $e$ is odd, all transported first signs therefore agree with the easily computed ratio of the two raw first-mode frame determinants. In this case one ordinary TI comparison with a separately checked sign condition suffices.
+
+If $e$ is even, one can produce a negative determinant automorphism. First grade the algebra using the chosen complements. Products of two chosen lifts of $X$ have a component $\gamma(x,x')\omega$ in $S$ in addition to their components in the chosen lifts of $Y$. Adjust the lift of each $x\in X$ by the unique vector $z(x)$ of the chosen $Y$ complement satisfying $\beta(x',z(x))=-\gamma(x,x')\omega/2$ for all $x'\in X$, where $\beta$ is the perfect product pairing. The two cross corrections kill the entire socle component in every product of two degree-one lifts. Products of degrees one and two lie in degree three, and higher positive products vanish. These are now actual graded spaces of degrees one, two and three. Multiply the odd degrees by minus one and fix the even degrees and the unit. This is an algebra automorphism of determinant $(-1)^{e+1}=-1$.
+
+All decompositions, pairings, and frame calibrations in this argument use linear algebra in the recognized algebra. A source or target with a different value of $\dim K$ or $e$ cannot be ordinarily equivalent. In either flexible case return the original ordinary TI pair. In the rigid case with the correct frame sign do the same, and with the opposite sign return a fixed ordinary no instance. Combined with the ordinary default branch, this gives $\mathrm{L6}\equiv_m^p O$.
+
+## Nontrivial sign constraints in the remaining families
+
+For L3–L6, multiplication of $F[t]/(t^4)$ lies in the active family and has positive first determinant on every ordinary stabilizer, by the unit and algebra automorphism calculation above. Rebasing only its first factor by a reflection produces an ordinarily equivalent pair with a negative verdict in these four languages.
+
+For L7, use $R_e=F[x_1,\ldots,x_e]/(x_1^4,\ldots,x_e^4)$ for $e\ge2$. Its socle is spanned by the unique top monomial $x_1^3\cdots x_e^3$. Indeed if an element is killed by $x_i$, every coefficient of a monomial with $i$-th exponent less than three must be zero. Its tangent dimension is $e$ and its radical nilpotence index is $3e+1$. In characteristic three, on the associated graded algebra the fourth power of a linear combination with two nonzero coordinates contains a nonzero $x_i^3x_j$ term. Thus a tangent map of an algebra automorphism is monomial, since the fourth power of each generator is zero. The grading is generated by the tangent space, so its determinant is determined on the monomial basis by this monomial action. Multiplying a generator by $-1$ has sign $(-1)^{6\cdot4^{e-1}}=+1$. Transposing two generators swaps $(4^e-4^{e-1})/2$ pairs of basis monomials, an even number for $e\ge2$. These generators of the monomial group all have positive determinant. The unit multipliers also have positive determinant by the scalar radical filtration and even total dimension. First-mode reflection therefore gives an ordinarily equivalent negative pair throughout this growing family.
+
+The distinction between L4 and L5 can also be seen directly on a rigid non-Frobenius example. Take $F[x,y]/(x^4,y^8,x^2 y^6)$. It is local of dimension 28 and has two independent socle monomials $x^3 y^5,x y^7$. Its graded tangent automorphisms are diagonal. The fourth-power relation for the image of $x$ rules out any $y$ coordinate via the $y^4$ coefficient. For the image of $y$ the eighth-power relation rules out any $x$ coordinate via the surviving $xy^7$ coefficient, since the $y$ coordinate is nonzero and $8\ne0$ in $F$. The sums of $x$ and $y$ exponents over surviving monomials are respectively $38$ and $86$. Both are even, so all algebra automorphisms act with determinant one. Unit multipliers are also neutral. Rebasing the first mode by a reflection distinguishes the two raw languages while saying nothing about their degrees.
+
+These are informal proofs. The ordinary fallback is part of each defined language. Removing it and imposing raw membership as a promise would require a separate lower reduction where none is given above. The recognized commutative and local cases provide concrete subproblems for studying the first gap. The four undecided degree positions may all coincide with endpoints.

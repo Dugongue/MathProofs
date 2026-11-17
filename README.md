@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-determinant-interval-thirty:start -->
+- [Thirty Candidate Degrees in the Determinant Tensor Isomorphism Intervals](TensorDeterminantIntervalThirty/RESULTS.md) — Informal deterministic many-one bounds for thirty new definitions over F3, ten in each closed interval. Includes determinant-plane balance and exact affine-probe counts. No strict Karp separation is claimed.
+<!-- tensor-determinant-interval-thirty:end -->
+
 <!-- tensor-determinant-lower-bounds:start -->
 - [Lower Bounds for Removing Determinant Constraints in Tensor Isomorphism](TensorDeterminantLowerBounds/RESULTS.md) — Informal finite-field lower bounds for fixed tensor markers and low-degree equivariant encoders, plus optimal affine sign-query counts over F3. All three unrestricted many-one separations remain open.
 <!-- tensor-determinant-lower-bounds:end -->
