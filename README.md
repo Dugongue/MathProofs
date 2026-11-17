@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- determinant-tensor-routes:start -->
+- [Four Routes to Determinant-Constrained Tensor Isomorphism](DeterminantTensorRoutes/RESULTS.md) — Informal progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9, including overlapping contraction flags, full determinant cosets at logarithmic smallest-mode rank, Pfaffian pins in fixed characteristic, and determinant tests for associative action tensors.
+<!-- determinant-tensor-routes:end -->
+
 <!-- isomorphism-invariant-zoo:start -->
 - [Isomorphism Invariant Zoo](IsomorphismInvariantZoo/RESULTS.md) — Twenty informal constructions for tensor, group, code, gain-graph and cubic-form equivalence, extending the early Rune, Ley, Sigil, Ward and Trellis ideas. Includes exact determinant corrections within congruence classes, canonical tensor flags, a code-to-GI reduction parameterized by the number of bases, and NP-completeness of epimorphism for a compact metabelian permutation-group family.
 <!-- isomorphism-invariant-zoo:end -->
