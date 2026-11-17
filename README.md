@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- filtered-frobenius-orientation:start -->
+- **Determinant cancellation in filtered Frobenius algebras** — [Informal proof](FilteredFrobeniusOrientation/FrobeniusOrientation.md). Gives deterministic polynomial-time reductions from first-mode determinant-one multiplication-tensor isomorphism to one ordinary TI instance for odd-dimensional algebras, symmetric Hilbert functions of odd socle degree, and compressed even-socle algebras satisfying an explicit parity condition. Works from raw tensor coordinates without a supplied grading or transporter. Includes exact finite controls and a [search/scope audit](FilteredFrobeniusOrientation/SearchAudit.md). **Does not close unrestricted TI versus SL-TI or claim publication priority; not Lean-formalized.**
+<!-- filtered-frobenius-orientation:end -->
+
 <!-- tensor-sign-packing:start -->
 - [Packing Independent Determinant Tests in Tensor Isomorphism](TensorSignPacking/RESULTS.md) (informal proofs) — A single ordinary TI instance enforces binary linear equations whose variables are enabled by ordinary TI comparisons. This assembles determinants across arbitrary numbers of centroid blocks with local sign tests and gives one-instance packing of two independent signed comparisons on several identifiable families over $\mathbb F_3$. Unrestricted signed conjunction remains open.
 <!-- tensor-sign-packing:end -->
