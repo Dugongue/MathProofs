@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-conjunctions:start -->
+- [Single-Instance Conjunctions for Determinant Signs](TensorSignConjunctions/RESULTS.md) — Informal one-instance reductions with logarithmic tested dimension or certified sign flexibility, an exact compiler for one signed and arbitrarily many ordinary TI conjuncts, and a common-encoding criterion for collapse to ordinary TI. The unrestricted two-sign to one-sign reduction remains open.
+<!-- tensor-sign-conjunctions:end -->
+
 <!-- tensor-isomorphism-collapses:start -->
 - [Which TI Interval Problems Collapse?](TensorIsomorphismCollapses/RESULTS.md) — Informal many-one equivalences grouping 21 of the 22 TI interval entries into four ordered groups over F3, with the quadratic norm class between the endpoints. Includes an exact cubic norm transfer and the common Turing closure of twenty entries.
 <!-- tensor-isomorphism-collapses:end -->
