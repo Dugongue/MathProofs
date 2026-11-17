@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-determinant-intervals:start -->
+- **Intermediate determinant comparisons for tensor isomorphism.** Over F₃, explicit many-one reductions refine the ordinary, one-sign, two-sign and special-linear chain. Includes 44 source-automorphism correction predicates and a seven-node upper chain whose reverse steps fail in the affine compiler model. Informal proofs. [Catalogue and reductions](TensorDeterminantIntervals/RESULTS.md)
+<!-- tensor-determinant-intervals:end -->
+
 <!-- tensor-determinant-families:start -->
 - **Determinant restrictions for cyclic tensors and matrix multiplication factors.** Over F₃ the three signed problems on cyclically presented three-tensors have exactly the degree of unrestricted one-sign TI. Two even matrix multiplication factors give ordinary TI degree. SL-TI on symmetric or alternating matrix pencils has unrestricted two-sign degree under independent matrix maps. Additional reductions cover two algebraic families. Informal proofs. [Results and proofs](TensorDeterminantFamilies/RESULTS.md)
 <!-- tensor-determinant-families:end -->
