@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- further-invariant-transfers:start -->
+- [Four Invariant Transfers in Isomorphism](FurtherInvariantTransfers/RESULTS.md) — Informal proofs giving a negative answer to Agrawal–Saxena’s real-and-congruence cubic equivalence question, uniform NC algorithms for subgroup descent in arbitrary permutation-group quotients, an exact shared-phase switching algorithm for bounded-degree gain graphs, and a determinant-constrained monomial tensor reduction over finite chain rings.
+<!-- further-invariant-transfers:end -->
+
 <!-- invariant-transfers-to-isomorphism:start -->
 - **[Smooth Cubics, Parallel Group Cores, and Exact Phase Transport](InvariantTransfersToIsomorphism/RESULTS.md)** — Four informal results on GI-hardness of smooth cubic hypersurface isomorphism, deterministic uniform NC for subgroup cores of permutation-group quotients, determinant-one monomial tensor transport over varying finite fields, and exact Butson and cyclic gain equivalence.
 <!-- invariant-transfers-to-isomorphism:end -->
