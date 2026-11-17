@@ -1,0 +1,49 @@
+# Determinant constraints from a logarithmic derivative
+
+Let $k$ be a field and $R$ a finite-dimensional commutative $k$-algebra given by structure constants. Let $D:R\to\Omega$ be a supplied $k$-linear derivation into a finite-dimensional $R$-module, given by its action matrices. There is a deterministic polynomial-size many-one reduction to ordinary three-tensor isomorphism over $k$ for the following problem. Given two free three-tensors over $R$ and units $s_1,s_2,s_3$, decide whether there is an $R$-linear transporter $g=(g_i)_i$ with
+$$
+                 \det_R(g_i)/s_i\ \in\ (\ker D)^\times
+                 \qquad (i=1,2,3).
+$$
+For fixed $R,D$ this is polynomial in the dense tensor input. With structure constants included, all intermediate vector-space dimensions and tensor sizes are polynomial in the input. Over $k=\mathbb F_2$, if $\ker D=k$, taking all $s_i=1$ gives a reduction for unrestricted special-linear tensor isomorphism over $R$, with no promise on the tensor. The result uses the published tensor-system compiler and is independent of the November running-time claims.
+
+## The marked quotient
+
+For a positive mode rank $n$, put $W=R^n$, $Y=\Omega\otimes_R W$, and $E=\operatorname{Hom}_R(W,Y)$. A choice of free coordinates identifies $E$ with matrices over $\Omega$, with a canonical trace $\operatorname{tr}:E\to\Omega$. Let $E_0=\ker \operatorname{tr}$. The map $D_W:W\to Y$ differentiates the entries in the displayed free basis. In the $k$-linear Hom space $H=\operatorname{Hom}_k(W,Y)$ take $C=E+k D_W$.
+
+A basis change $g\in\operatorname{GL}_n(R)$ acts on $H$ by $A\mapsto (1\otimes g)A g^{-1}$. This preserves $E,E_0$ by cyclicity of the trace. The product rule gives
+$$
+                 g D_W g^{-1}=D_W-D(g)g^{-1}.
+$$
+In particular $C$ is invariant. Jacobi's identity in this setting is $\operatorname{tr}(D(g)g^{-1})=D(\det g)/\det g$. It holds over a commutative ring by differentiating the permutation formula and collecting cofactors, and only uses division by the unit $\det g$. Thus the class of $D_W$ in $C/E_0$ translates by a copy of $-D(\det g)/\det g$ in $E/E_0$.
+
+In the target system mark the class of $D_W+M_i$, where $M_i\in E$ has trace $-D(s_i)/s_i$. Such a matrix can be chosen with only its first diagonal entry nonzero. The source mark is carried to the target mark exactly when $D(\det(g_i)/s_i)=0$. A unit in the derivation kernel has its inverse there by the product rule. Rank-zero modes can be dealt with separately by their determinant convention $1$. The tensor is then zero and the remaining positive-rank modes can realize any prescribed unit determinants independently.
+
+## The explicit tensor system
+
+Name the spaces $R,\Omega,W_i,Y_i,H_i,C_i,E_{0,i},C_i/E_{0,i}$, and the output module $W_1\otimes_R W_2\otimes_R W_3$. Pin the bases of $R,\Omega$ and the scalar line. One can pin an arbitrary-dimensional space by a cyclic shift and its first cyclic vector. Use these as linear maps and marked vectors in the system. Include scalar multiplication $R\times W_i\to W_i$ to enforce $R$-linearity. Include the canonical balanced evaluation $\Omega\times W_i\to Y_i$ and the evaluation $H_i\times W_i\to Y_i$. Their images span and evaluation on all $W_i$ distinguishes elements of $H_i$; hence a system witness acts on $Y_i,H_i$ by the specified induced maps. Include the inclusions $E_{0,i}\hookrightarrow C_i\hookrightarrow H_i$, and the quotient $C_i\to C_i/E_{0,i}$. Pin the indicated class as a linear arrow from the fixed scalar line.
+
+Include the canonical trilinear map $W_1\times W_2\times W_3\to W_1\otimes_R W_2\otimes_R W_3$, whose image spans, and the input tensor as a mark in its codomain. Split this trilinear map into two bilinear maps using a named intermediate tensor product, with the actual quotient by balancing relations. All equations thus have order at most three as tensors of linear maps. Conversely each $R$-linear transporter meeting the determinant conditions extends by its induced maps on all named spaces. This proves exact reflection and preservation, including zero and nonconcise tensors. All auxiliary spaces and relations have polynomial size by linear algebra. The [Futorny–Grochow–Sergeichuk tensor-system compiler](https://arxiv.org/abs/1810.09219) gives a single ordinary 3TI instance over $k$.
+
+For a split local $R=k\oplus\mathfrak m$ with $\ker D=k$, taking all $s_i=1$ enforces $\det_R(g_i)=\det_k(\overline g_i)$ in the displayed coefficient field. This is precisely the absence of a principal-unit determinant factor. A general $s_i$ prescribes that principal factor. If $k=\mathbb F_2$, the remaining residue determinant is automatically one.
+
+## Families with a separating derivation
+
+- **Every split square-zero algebra.** For $R=k\oplus I$, $I^2=0$, give $\Omega=I$ its residue module action. The rule $D(c+x)=x$ is a derivation because multiplication on $I$ vanishes. Its kernel is $k$. This gives full special-linear TI to ordinary binary TI for every square-zero algebra with residue $\mathbb F_2$, for all input tensors.
+- **Multigraded examples with long nilpotent filtrations.** Let $k$ have characteristic $p$, and let $R=k[t_1,\ldots,t_m]/J$, where $J$ is a proper monomial ideal containing all $t_i^p$. Use the product of the Euler derivations $t_i\partial/\partial t_i$ into $R^m$. They descend because a monomial ideal is preserved. Every surviving monomial has exponents in $[0,p-1]$, so any nonconstant monomial has a nonzero weight for some derivation. Their common kernel is $k$. The binary case includes $k[t_1,\ldots,t_m]/(t_1^2,\ldots,t_m^2)$, whose maximal ideal has nilpotency index $m+1$. The bound is polynomial in the explicit algebra presentation by structure constants and tensor input.
+- **Products.** Taking the componentwise derivation on a finite product of these binary rings gives kernel a product of copies of $\mathbb F_2$, whose only unit is its identity. It gives the full special-linear reduction on such products as well.
+- **A single principal-unit quotient for any truncation length.** For $R=k[t]/(t^e)$ in perfect characteristic $p$, the Euler derivation preserves the truncation and has kernel $k[t^p]$ inside $R$. Its kernel on units is exactly $(R^\times)^p$, by the Frobenius formula and perfection of $k$. The same compiler therefore enforces any prescribed determinant coset modulo $p$-th powers for arbitrary $e$.
+
+All complexity claims use polynomially many field operations, which are polynomial bit time over fixed finite fields. The input size for a varying explicit algebra charges its full coordinates. The derivation method detects precisely the indicated quotient of the unit group. On a finite coefficient field a derivation into any module vanishes on the entire field because its elements are separable over the prime field. Thus even when every principal constraint is removed by this theorem, the finite-field determinant condition of [Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9](https://arxiv.org/html/2306.03135v2) still has to be enforced.
+
+## The residue determinant and exterior-degree budget
+
+Here is a precise consequence of Qiao–Zhang's torus argument in Lemma C.1. Let $q>2$ and let $M$ be a $\operatorname{GL}_n(\mathbb F_q)$-invariant subquotient of a direct sum of tensor products of at most $r$ natural, dual or Frobenius-twisted factors. The same holds for prime-field versions with scalar extension. If $n>2r$, every $\operatorname{SL}_n(\mathbb F_q)$-stable subspace of $M$ is already $\operatorname{GL}_n(\mathbb F_q)$-stable.
+
+Indeed, the full diagonal torus is split with characters indexed by exponent vectors modulo $q-1$. Every weight has support of size at most $r$. This property persists on subquotients, by semisimplicity of the diagonal torus action. Distinct weights can restrict equally to the determinant-one torus only if their difference is a nonzero constant vector, with support all $n$. This cannot happen when $2r<n$. On the occurring weight spaces the projectors for the full torus are therefore obtained by averaging characters of the determinant-one torus. An $\operatorname{SL}$-stable subspace is stable under those projectors and hence under the full torus, which together with $\operatorname{SL}$ generates $\operatorname{GL}$.
+
+The threshold is sharp for subspace markers. With $a=\lfloor n/2\rfloor$ and $b=n-a$, any fixed volume form identifies $\bigwedge^a V$ with $(\bigwedge^b V)^*$ using wedge pairing. Take the graph of this identification in the direct sum of these two spaces. It is preserved precisely when the determinant is one, since the induced conjugation scales the identification by the inverse determinant. Both summands occur as subquotients in tensor degree at most $\lceil n/2\rceil$. This gives an explicit determinant marker with an exponential-sized middle exterior space.
+
+There is a dimension cost at any comparable degree. If an $\operatorname{SL}$-stable subspace of $M$ fails to be $\operatorname{GL}$-stable, a pair of weights with equal restriction and unequal full character must occur. Each such weight has support at least $n-r$ and at most $r$. Permutation matrices permute the weight supports, so a weight of support $s$ forces $\dim M\ge\binom ns$. For $r\le (1-\delta)n$ and fixed $\delta>0$ this is exponential in $n$. The statement concerns these ambient module subquotients. It leaves input-dependent constructions outside this form available.
+
+As a finite check, direct enumeration verified the logarithmic trace identity on all $96$, $1536$, and $24576$ invertible two-by-two matrices over $\mathbb F_2[t]/(t^2)$, $\mathbb F_2[t]/(t^3)$, and $\mathbb F_2[x,y]/(x^2,y^2)$, respectively. The derivative tests accepted $48$, $768$, and $3072$ matrices, as dictated by their stated unit kernels. These counts check the local identities and do not test the tensor-system compiler.

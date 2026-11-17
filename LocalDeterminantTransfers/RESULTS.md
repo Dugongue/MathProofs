@@ -1,0 +1,9 @@
+# Determinant constraints in local-ring tensor isomorphism
+
+The main unconditional result is a polynomial-time many-one reduction for special-linear tensor isomorphism over explicit split square-zero algebras with residue $\mathbb F_2$ to ordinary binary tensor isomorphism. It applies to arbitrary free three-tensors. A logarithmic-derivative construction also gives the full reduction for a multigraded binary family with arbitrarily long nilpotent filtrations. Over other coefficient fields it enforces the principal part whenever the derivation kernel is the coefficient field. [Proof](Compiler.md)
+
+The conditional residue-field exponential bound over finite local rings supports a direct determinant-constrained lifting process. Its tangent quotient uses the joint tensor displacement and determinant trace, and its field-width exponent remains $q^{O(n_1+n_2+n_3)}$. The corresponding trace-zero single-layer test in the split case compiles to ordinary TI without computing a residue stabilizer. [Local lifting equation](DetLift.md)
+
+The [upstream audit](QZAudit.md) verifies the definitions, the parameter transfer, and selected steps in Theorems 8.1 and 8.10 of the [Qiao–Zhang manuscript](https://github.com/sigact-stoc/stoc2027/releases/download/papers-2/1723.pdf). The exponential runtime for arbitrary local inputs remains conditional on those theorems. The ordinary-TI compiler uses the published tensor-system reduction and has no such dependency.
+
+The residue condition in [Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9](https://arxiv.org/html/2306.03135v2) remains open for general finite fields. The derivation proof separates it from the principal-unit obstruction. The same note proves the sharp exterior-degree threshold for fixed invariant subspace markers in the pointed natural-module model and gives the corresponding middle exterior-power construction. All proofs are informal and publication priority is unestablished.

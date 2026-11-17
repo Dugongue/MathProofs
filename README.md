@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- local-determinant-transfers:start -->
+- **[Determinant Constraints in Local-Ring Tensor Isomorphism](LocalDeterminantTransfers/RESULTS.md)** — Gives a polynomial-time reduction from special-linear tensor isomorphism over split binary square-zero algebras and a multigraded binary family to ordinary binary TI. Over other coefficient fields the derivation construction enforces a principal-unit determinant constraint. Also audits the Qiao–Zhang interfaces and gives a direct determinant-constrained local lifting proof with conditional residue-field exponential time. The unrestricted finite-field question remains open. Informal proofs.
+<!-- local-determinant-transfers:end -->
+
 <!-- november-group-iso-transfers:start -->
 - **[Four Transfers from Polynomial-Time Group Isomorphism](NovemberGroupIsoTransfers/RESULTS.md)** — Uses the Qiao–Zhang manuscript and its finite-rings follow-up to obtain complete three-tensor isomorphism cosets with a residue-field exponential bound independent of nilpotent length, singly exponential sum-rank code equivalence, polynomial table-time nonassociative ring isomorphism, and marked group epimorphism search and counting with bounded-rank radical layers. The epimorphism result addresses parts of Grochow–Srivastava–Thakkar Open Question 3. Informal proofs, with dependencies stated.
 <!-- november-group-iso-transfers:end -->
