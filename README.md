@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-projections:start -->
+- [Determinant Sign Projections and Conjunctions in Tensor Isomorphism](TensorSignProjections/RESULTS.md) — Informal polynomial-time sign projections over F3, a single SL-TI instance for independent two-sign and one-sign comparisons, and three restricted reverse reductions. The unrestricted reverse reductions remain open.
+<!-- tensor-sign-projections:end -->
+
 <!-- tensor-sign-reduction-audit:start -->
 - **[Two-sign to one-sign reduction audit](TensorSignReductionAudit/RESULTS.md)** — Informal research audit of pair-dependent multiplication networks, determinant representations, and finite orientation constructions over F_3. Documents unsuccessful routes and prior constructions recovered from the DAG; the unrestricted polynomial-time many-one reduction remains open. No new open-problem closure is claimed.
 <!-- tensor-sign-reduction-audit:end -->
