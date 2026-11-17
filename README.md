@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- optimal-max-rank-and-descent:start -->
+- [Optimal Max-Rank Hardness and Extension Spectra for Tensor Isomorphism](OptimalMaxRankAndDescent/RESULTS.md) — Informal proofs of TI-completeness for recognizable, balanced, absolutely indecomposable tensors at optimal all-mode maximum matrix rank, and of a complete classification of extension-degree spectra with a nilpotent descent theorem.
+<!-- optimal-max-rank-and-descent:end -->
+
 <!-- isomorphism-extension-and-rank:start -->
 - [Four Results on Tensor, Graph, and Algebra Isomorphism](IsomorphismExtensionAndRank/RESULTS.md) — Informal proofs of minimum-extension-degree NP-completeness on a raw recognizable tensor family, TI-completeness for low-slice-rank scalar-adjoint tensors, local-generator canonization, and graph reconstruction from absolutely irreducible determinant forms.
 <!-- isomorphism-extension-and-rank:end -->
