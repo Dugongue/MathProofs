@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-packing:start -->
+- [Packing Independent Determinant Tests in Tensor Isomorphism](TensorSignPacking/RESULTS.md) (informal proofs) — A single ordinary TI instance enforces binary linear equations whose variables are enabled by ordinary TI comparisons. This assembles determinants across arbitrary numbers of centroid blocks with local sign tests and gives one-instance packing of two independent signed comparisons on several identifiable families over $\mathbb F_3$. Unrestricted signed conjunction remains open.
+<!-- tensor-sign-packing:end -->
+
 <!-- tensor-determinant-conjunction:start -->
 - [Ordinary Conjunctions in Determinant Tensor Isomorphism](TensorDeterminantConjunction/RESULTS.md) (informal proofs) — Over $\mathbb F_3$, all 30 catalogue comparisons retain their polynomial-time many-one degree after adjoining a list of ordinary tensor-isomorphism tests. Also gives a one-instance ordinary TI reduction for complete-intersection Frobenius inputs and a two-test upper bound for the cross-mode sign-correction problem.
 <!-- tensor-determinant-conjunction:end -->
