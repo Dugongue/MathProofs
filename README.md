@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-extension-and-rank:start -->
+- [Four Results on Tensor, Graph, and Algebra Isomorphism](IsomorphismExtensionAndRank/RESULTS.md) — Informal proofs of minimum-extension-degree NP-completeness on a raw recognizable tensor family, TI-completeness for low-slice-rank scalar-adjoint tensors, local-generator canonization, and graph reconstruction from absolutely irreducible determinant forms.
+<!-- isomorphism-extension-and-rank:end -->
+
 <!-- special-linear-tensor-frontier:start -->
 - [Four Further Approaches to Special-Linear Tensor Isomorphism](SpecialLinearTensorFrontier/RESULTS.md) — Informal progress on Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9, covering raw scalar-stabilizer pairs with split determinant pencils, coupled four-layer words in matrix algebras, exact projective products by point counting, and determinant pins on singular Frobenius-form pencils.
 <!-- special-linear-tensor-frontier:end -->
