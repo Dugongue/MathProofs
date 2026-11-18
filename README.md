@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- portfolio-isomorphism-crossovers:start -->
+- **[Four theorems on isomorphism, specialization, and proof complexity](PortfolioIsomorphismCrossovers/RESULTS.md)** — Informal proofs of a Hilbert's-tenth equivalence for smooth rational Fano specialization on canonical inputs, a per-instance Polynomial Calculus degree classification for geometric matrix nonisomorphism, sharp-exponent symmetric quartic compression when the input order is divisible by four, and exact polynomial-time epimorphism counting for elementary abelian Sylow towers with a further first-layer extension.
+<!-- portfolio-isomorphism-crossovers:end -->
+
 <!-- open-problem-archive-additions:start -->
 - **[Proofs recovered from the Open Problem Archive](OpenProblemArchiveAdditions/RESULTS.md)** — Informal solution of TheoremDB P2750 with reproducible full orbit enumeration, symplectic tensor isomorphism for five actions and fixed arity, special-linear isomorphism of fixed-width finite-field pencils in deterministic polynomial time, tensor isomorphism hardness in concise critical formats, and exact classical and entanglement-assisted zero-error capacity for finite-ring rank-threshold channels.
 <!-- open-problem-archive-additions:end -->
