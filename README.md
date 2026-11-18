@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- november-isomorphism-and-hitting-sets:start -->
+- **[November results on isomorphism and algebraic hitting sets](NovemberIsomorphismAndHittingSets/Research.md)** — Informal proofs on indistinguishable colored groups, symmetry-characterized graphs, simultaneous monomial code equivalence, and a clause-local obstruction to 3CNF hitting sets. Includes the scope and dependence of consequences for published open questions.
+<!-- november-isomorphism-and-hitting-sets:end -->
+
 <!-- grochow-82-hypothesis-ledger:start -->
 - **[Grochow question hypothesis ledger](GrochowHypoworlds/README.md)** — Replays signed implications and contradictions across the 82-row research catalog. Includes informal all-block-size proofs for Song–Grochow's sixteen-rule census, a unary fixed-block noncompleteness result, and exact high-power oracle obstructions for the constant-depth determinantal-ideal and degree-unrestricted black-box factoring formulations.
 <!-- grochow-82-hypothesis-ledger:end -->
