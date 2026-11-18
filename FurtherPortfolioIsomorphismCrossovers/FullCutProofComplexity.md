@@ -1,0 +1,44 @@
+# Exponential refutation size for four-tensor isomorphism with invertible flattenings
+
+For each sufficiently large integer $N$, there are two four-tensors of side $N'=11(10N+1)$ over $\mathbb Q$ and over every fixed finite field of characteristic 5 whose three $2|2$ flattenings are invertible. Their corresponding flattening determinants agree, their centroids are scalar, and the tensors are nonisomorphic even over the algebraic closure. Refuting ordinary tensor isomorphism between them by Polynomial Calculus requires degree $\Omega(N')$ and sparse size $2^{\Omega(N')}$. The same bounds hold when finite-field equations are included over a fixed field of characteristic 5. Over $\mathbb R$ the same pairs require Sum of Squares degree $\Omega(N')$. Sparse size counts nonzero monomial occurrences across proof lines.
+
+In fact the two tensors specialize to the same point under separate one-parameter subgroups of the product of four special linear groups. The common point lies in the open set on which all three pair flattenings are invertible.
+
+## 1. Proof systems and a lift that preserves sparsity
+
+For a pair of $d$-tensors $X,Y$, use matrix variables $g_i,h_i$ in each mode, the coefficient equations of $(\bigotimes_i g_i)X=Y$, and $g_ih_i=h_ig_i=I$. In the finite-field version add $v^q-v=0$ for each variable. This is the usual tensor-isomorphism encoding, with the action equation quartic when $d=4$.
+
+Use the substitution of [the sparse Polynomial Calculus lower bound for three-tensor isomorphism](../TensorSparsePCBounds/CharacteristicZero.md). For inconsistent three-variable parity instances on $k=\Theta(N)$ Boolean variables it produces two $N$-side three-tensors $X,Y$, with Boolean entries, that are geometrically nonisomorphic. In each mode it substitutes the same matrix $P_0=\operatorname{diag}(P,I)$ for $g_i$ and $P_0^{\mathsf T}$ for $h_i$. Each entry of $P$ is zero, one or a single monomial of degree at most 3 in complementary Boolean literal variables. The source proof derives $P_0P_0^{\mathsf T}=P_0^{\mathsf T}P_0=I$, idempotence of each entry, and the three-mode action equation by constant-degree, polynomial sparse-size algebraic derivations from the Boolean and parity axioms. The same source supplies the linear-degree and exponential sparse-size lower bounds for refuting the Boolean systems in characteristic different from 2.
+
+Append a fourth side of dimension $N$ with a fixed nonzero basis vector $e$, giving $\widehat X=X\otimes e$ and $\widehat Y=Y\otimes e$. These are geometrically nonisomorphic. A putative four-mode isomorphism must take the fourth support line to itself, and its nonzero scalar on that line can be absorbed into the first mode. Take the identity for $g_4,h_4$ in the substitution. The action and inverse equations of these lifted inputs have the same derivation bounds.
+
+Apply [the full-cut rank carrier](../FullCutTensorIsomorphism/PROOF.md) to $\widehat X,\widehat Y$. Recall its data. The enclosing $W$ comprises four hyperbolic pairs $U_i\oplus U_i^*$, one spectator hyperbolic pair, and a norm-one line. Its inverse pairing $B$ has matrix equal to its inverse. The output is $\Phi(Z)=M\otimes C+E(Z)$, where $M$ is the fixed size-11 marker, $C=B_{13}B_{24}+2B_{14}B_{23}$, and $E$ embeds the four modes $U_i$ into the marker block $\tau$. The carrier theorem gives geometric reflection of isomorphism and scalar centroid over characteristic 5 and in characteristic zero. Its geometric reflection uses the four fixed marker eigenspaces and the intrinsic support spaces of the embedded data. Its invertibility proof is valid over exactly these characteristics.
+
+For arbitrary source variables $g_i,h_i$, the action block in every output mode is the identity on the marker tensored with the block-diagonal matrix $A$ on $W$ whose restriction to $U_i\oplus U_i^*$ is $g_i\oplus h_i^{\mathsf T}$. The inverse is defined by interchanging $g_i,h_i$ in this recipe. It is a substitution by constants and individual variables, with no additions. Here are the syntactic identities, which only require the source equations.
+
+1. The two output inverse equations follow blockwise from the two source inverse equations. On each hyperbolic pair, the two off-diagonal blocks of $ABA^{\mathsf T}$ are $g_i h_i$ and its transpose, so $ABA^{\mathsf T}=B$ is a collection of source quadratic equations and exact zero identities.
+2. For either pairing pattern in $C$, write each coefficient of the transported product minus the original product as $(b'_1-b_1)b'_2 + b_1(b'_2-b_2)$. Here each $b'_j$ is a quadratic coefficient of $ABA^{\mathsf T}$ and $b_j$ is a constant coefficient of $B$. Thus the carrier contribution to each action equation follows from quadratic equations with multipliers of degree at most 2.
+3. The action on the data block, with its values restricted to $U_1\otimes U_2\otimes U_3\otimes U_4$, is the original source action. Every coefficient outside that support is zero by the block form. Marker coordinates are fixed.
+4. Finite-field axioms on output variables pull back either to source field axioms or to exact zero identities.
+
+In particular this substitution takes each output axiom to an explicit polynomial combination of source axioms of total degree at most 4 and polynomial sparse size, with a finite-field input axiom allowed its stated degree $q$. It also takes each polynomial in the output variables to one with at most as many monomials.
+
+## 2. Refutation lower bounds
+
+Compose the monomial lift with the degree-at-most-3 literal substitution. A Polynomial Calculus proof of sparse size $S$ and degree $D$ gives a proof in the complementary Boolean literal variables of sparse size at most $3S+\operatorname{poly}(N)$ and degree at most $\max(3D,O(1))$. A single variable multiplication expands into at most three literal multiplications, all of which preserve the bound on the number of monomials. A constant multiplier or zero takes only linear combination or a zero line. The polynomial additive overhead pays for all projected input axioms. Over a fixed finite field, idempotence derives the asserted $q$-power identities in constant degree. Apply the source lower bounds to $N'=\Theta(k)$.
+
+For Sum of Squares over $\mathbb R$, use the Boolean three-variable parity degree lower bound of Schoenebeck as used in [Galesi, Grochow, Pitassi and She, Section 6](https://arxiv.org/html/2305.19320), or its equivalent signed-variable formulation. Replacing a literal $\ell_{i,a}$ by $(1+(-1)^a y_i)/2$ supplies its Boolean/complement equations directly from $y_i^2=1$. The product for any forbidden clause assignment is a constant-degree polynomial multiple of the signed clause equation modulo these Boolean equations: multiplication by the product of the three signed variables acts on the product by the forbidden sign, which differs from the prescribed sign. The explicit projected axiom derivations above and in the source use bounded-degree polynomial multiples. Under substitution the squares stay squares and the output axiom terms can be replaced with these derivations. The resulting refutation of the signed parity instance has degree $O(D+1)$. This proves the linear lower bound.
+
+## 3. Equal determinants and a common degeneration inside the full-cut locus
+
+For each pair cut of $\Phi(Z)$, let $F_0$ be the flattening of $M\otimes C$ and $E$ its data perturbation. The carrier theorem shows that $F_0^{-1}E$ lies in one off-diagonal marker block. It squares to zero. Consequently
+$$
+\det(F_0+E)=\det(F_0)\det(I+F_0^{-1}E)=\det(F_0).
+$$
+The point $M\otimes C$ has all three pair cuts invertible.
+
+Scale each $U_i$ by $t$ and each $U_i^*$ by $t^{-1}$, fixing the other summands. Use the resulting matrix on $W$ identically in each marker block and each output mode. Each determinant equals 1 and the carrier is fixed. The data term is multiplied by $t^4$. The resulting morphism in $t$ extends at 0 with value $M\otimes C$, staying in the full-cut locus even at 0. Thus the orbit closures intersect in the full-cut locus, even for the action of four special linear groups. Every regular special-linear invariant on the full-cut locus therefore has equal values on the pair, by composing with these morphisms and evaluating at zero. In characteristic 5, the orbit and invariant statements use algebraic groups and Zariski closure over the algebraic closure.
+
+## Scope
+
+The new conclusion combines the monomial sparse lower-bound projection with the full-cut carrier. The decision reduction alone would give no proof-complexity lower bound. The theorem concerns the ordinary action-and-inverse equations and the specified field-axiom variant. It gives a structured full-rank strengthening of known unrestricted lower bounds. It leaves the stronger proof system PC+Inv and the dimension question of Grochow and Qiao open. This is an informal proof. The finite marker computation belongs to the earlier carrier construction.

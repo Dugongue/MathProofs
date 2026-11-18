@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- further-portfolio-isomorphism-crossovers:start -->
+- **Four isomorphism crossovers** ([informal proofs](FurtherPortfolioIsomorphismCrossovers/RESULTS.md)). Deterministic quasipolynomial-time minimum semigroup generation on arbitrary Cayley tables, and polynomial time with bounded nonabelian chief factors in the maximal subgroups (progress on Collins–Grochow–Levet–Weiß Question 8.3). Also proves an exact local-unitary overlap formula and a fidelity-threshold hardness result for repeated code states, arithmetic universality in one rank-two alternating congruence orbit, and exponential sparse Polynomial Calculus lower bounds for four-tensors with every pair flattening invertible.
+<!-- further-portfolio-isomorphism-crossovers:end -->
+
 <!-- portfolio-isomorphism-crossovers:start -->
 - **[Four theorems on isomorphism, specialization, and proof complexity](PortfolioIsomorphismCrossovers/RESULTS.md)** — Informal proofs of a Hilbert's-tenth equivalence for smooth rational Fano specialization on canonical inputs, a per-instance Polynomial Calculus degree classification for geometric matrix nonisomorphism, sharp-exponent symmetric quartic compression when the input order is divisible by four, and exact polynomial-time epimorphism counting for elementary abelian Sylow towers with a further first-layer extension.
 <!-- portfolio-isomorphism-crossovers:end -->

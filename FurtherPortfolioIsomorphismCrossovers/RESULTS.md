@@ -1,0 +1,12 @@
+# Four crossovers in isomorphism and its complexity
+
+Each result has an informal proof. Publication priority is unestablished.
+
+| Result | What the proof establishes |
+| --- | --- |
+| [Minimum generating sets for semigroups](Groups.md) | Construct an exact minimum generating set in deterministic quasipolynomial time on every Cayley table, and polynomial time when nonabelian chief factors of the maximal subgroups have bounded order. This includes all solvable maximal subgroups. The unrestricted decision problem is Turing equivalent to group generation by independently conjugated subgroups and at least one free generator slot. The inverse-generation version has an analogous equivalence with zero free slots allowed. |
+| [Optimal local overlap of repeated code states](Quantum.md) | For arbitrary nonnegative amplitudes and at least two repetitions, optimizing over all physical permutations and one-site unitaries gives exactly the classical coordinate-and-symbol matching score. This gives a constant gap for binary code equivalence, an NP-complete variable fidelity threshold, and polynomial decoding on the corresponding stabilizer-tableau family. |
+| [Arithmetic inside a rank-two alternating orbit](Arithmetic.md) | Rational polynomial solvability is equivalent to a fixed congruence orbit meeting a binary mask of maximum degree five. The construction preserves affine scheme geometry up to a smooth principal-open factor. Over every fixed finite field, the orbit-intersection problem is NP-complete on bipartite masks of maximum degree three. |
+| [Proof complexity with invertible four-tensor flattenings](FullCutProofComplexity.md) | The standard nonisomorphism equations need exponential sparse Polynomial Calculus size and linear degree on some pairs with all three pair cuts invertible. The pairs have common determinant data, scalar centroid, and intersecting special-linear orbit closures. The degree lower bound also holds for real Sum of Squares. |
+
+The semigroup theorem gives an unrestricted upper bound for [Collins–Grochow–Levet–Weiß Question 8.3](https://arxiv.org/html/2402.00133#S8) and a polynomial-time algorithm on the stated class. The unrestricted NP-completeness question remains open. The tensor theorem strengthens the lower bounds of [Galesi–Grochow–Pitassi–She](https://arxiv.org/html/2305.19320) under a rank promise. The arithmetic equivalence is unconditional and transfers the decidability status of Hilbert's tenth problem over $\mathbb Q$.
