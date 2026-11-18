@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- canonization-consequences:start -->
+- [Complete invariants and canonical representatives](CanonizationConsequences/Results.md) — Informal proofs of two Fortnow–Grochow logspace implications, a characterization of Grochow’s thesis Question 3.14, an average-case bounded-depth separation on equal-length pairs, and a circuit equivalence between canonization and preimage search. [Length and ambiguity refinements](CanonizationConsequences/Refinements.md).
+<!-- canonization-consequences:end -->
+
 <!-- tensor-stabilizer-descent:start -->
 - **[Nonsplit graph tensors and principal determinants over local algebras](TensorStabilizerDescent/Results.md)** — Informal proofs reducing special-linear isomorphism of geometric graph tensors and their arbitrary-order truncated-series deformations to GI, and unrestricted special-linear isomorphism over each fixed commutative binary local algebra with residue field of order two to ordinary binary TI. Includes a priority audit of the integral graph stabilizer theorem.
 <!-- tensor-stabilizer-descent:end -->
