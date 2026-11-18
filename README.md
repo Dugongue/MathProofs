@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-questions-after-vertex-cover:start -->
+- [Monotone permanent-oracle lower bounds and three isomorphism results](GrochowQuestionsAfterVertexCover/Results.md) — Informal affirmative answer to Grochow’s Open Question 5.6 on formal polynomials, including arbitrary-depth monotone c-reductions. The packet includes two derivations, an application to vertex-cover degree spectra, and scoped results on tensors, groups and graphs.
+<!-- grochow-questions-after-vertex-cover:end -->
+
 <!-- vertex-cover-and-extension-spectra:start -->
 - **[Vertex Cover and extension-field isomorphism](VertexCoverAndExtensionSpectra/Results.md)** — Informal proofs connecting finite étale tensor extension degrees to covering constraints, signed versus ordinary encoding size, counting, approximation, polynomial families, and reconfiguration. Includes transfers to cubic forms, alternating spaces, two-step Lie algebras, and indexed families of graphs and groups.
 <!-- vertex-cover-and-extension-spectra:end -->
