@@ -5,6 +5,13 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-fourth-batch:start -->
+- **[Same-field polynomial identity testing from Boolean IPS](SameFieldBooleanIPS/PROOF.md)** — Informal affirmative answer to the finite-field part of Grochow’s Open Question 7.4. Over each finite field, polynomial simulation of Boolean IPS by a Cook–Reckhow system is equivalent to formal PIT over the same field being in NP. The proof also compares Boolean IPS over finite-degree extensions in Question 7.5. The rational same-field implication remains open.
+- **[Tensor-isomorphism reductions on all homomorphisms](FunctorialTensorReductions/PROOF.md)** — Informal answers to several branches of Grochow–Qiao Open Question 7.5. Gives polynomial-time functorial replacements for fixed-order tensor reduction to associative algebra isomorphism and several three-tensor reductions, including the group target over every odd finite field in generating-matrix representation. The functors act on singular and rectangular maps and reflect isomorphism.
+- **[Central-radical group epimorphism via factor-center branchwidth](FactorCenterEpimorphisms/PROOF.md)** — Informal progress on Grochow–Srivastava–Thakkar Open Question 3(5). Gives deterministic polynomial time when either factor-center arrangement has bounded branchwidth and a mildly quasipolynomial bound on the full promised class. A fixed A₅-quotient family is equivalent to binary subcode equivalence.
+- **[Two-pebble identification for coprime Abelian extensions](HellaCoprimeExtensions/PROOF.md)** — Informal progress on Grochow–Levet Question 5.3. Gives identification in one round with two pebbles in the marked version of Hella’s second bijective game for split scalar actions and for all elementary Abelian 3-complements, with arbitrary coprime Abelian kernels in the latter case.
+<!-- grochow-fourth-batch:end -->
+
 <!-- grochow-new-four:start -->
 - **[Sparse determinant equivalence and black-box PIT completeness](SparseDeterminantEquivalence/PROOF.md)** — Informal answer to both clauses of Grochow’s arXiv Open Question 6.3. A sparse input gives a deterministic polynomial-time decision algorithm over ℂ. In the polynomial-degree black-box model, determinant equivalence is PIT-hard and reduces back to PIT without a root-finding oracle. The CCC version also asks about root-finding hardness.
 - **[Exponential Laurent degree for stable degenerations of sparse forms](KempfDegenerationDegree/PROOF.md)** — Informal affirmative answer to Grochow–Mulmuley–Qiao Question 4.5 (ICALP Question 19). Every Laurent coordinate path to the closed orbit of the displayed family has exponentially large degree, including the canonical Kempf one-parameter subgroup.
