@@ -5,6 +5,13 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-next-four:start -->
+- **[VNP-completeness of canonical Ideal Proof System certificates](CanonicalIPSCertificates/PROOF.md)** — Informal answer to the VNP-completeness clause of Grochow–Pitassi Open Question 7.8. Explicit canonical certificates are VNP-p-complete over fields with more than two elements. Over F₂, canonical certificates cannot be VNP-hard under p-projections. The proof also refutes realization of every p-degree.
+- **[Least, minimal and descending circuit degrees of ideals](IdealCircuitDegrees/PROOF.md)** — Informal negative answer to Grochow Open Question 6.4 over ℝ and ℂ. Two-generated prime ideals need not have a least circuit degree. A fixed principal ideal admits an infinite strictly descending chain, answering the corresponding clause of Question 6.6. The note also gives incomparable minimal degrees under the stated p-bounded, eventually nonzero convention.
+- **[Boolean monotone projections and perfect matching with repeated labels](BooleanMatchingProjections/PROOF.md)** — Informal progress on Grochow Open Question 5.1. Gives an exponential dimension lower bound when each target perfect matching can be witnessed by a source matching with a bounded number of distinct repeated labels.
+- **[Exact group epimorphism counting by central lifts and commutator maps](GroupEpimorphismCounting/PROOF.md)** — Informal progress on Open Question 2 of the group-isomorphism counting paper. Gives deterministic polynomial-time exact counting with a prescribed central quotient map, for a target with bounded central quotient, and for odd prime-exponent class-two targets of bounded derived rank.
+<!-- grochow-next-four:end -->
+
 <!-- grochow-followup-four:start -->
 - **[Counting Weisfeiler–Leman lower bounds for colored abelian groups](ColoredAbelianWL/PROOF.md)** — Informal negative answer to Grochow–Levet Question 8.3. For two-colored elementary abelian 2-groups, counting WL can require dimension at least log log of the group order minus a constant, even with the full colored generated subgroup as the initial tuple invariant.
 - **[Saturated circuit degrees in ideal cosets](IdealCosetSaturation/PROOF.md)** — Informal negative answer to Grochow’s Open Question 6.10 for fixed ambient rings. A proper nonzero principal-ideal coset has no saturated degree, even with arbitrary-degree representatives. The proof also gives an exact width criterion for p-bounded families in the family-oracle model, and a linearly growing counterexample in the single-index convention.
