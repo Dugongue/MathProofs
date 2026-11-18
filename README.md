@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-82-hypothesis-ledger:start -->
+- **[Grochow question hypothesis ledger](GrochowHypoworlds/README.md)** — Replays signed implications and contradictions across the 82-row research catalog. Includes informal all-block-size proofs for Song–Grochow's sixteen-rule census, a unary fixed-block noncompleteness result, and exact high-power oracle obstructions for the constant-depth determinantal-ideal and degree-unrestricted black-box factoring formulations.
+<!-- grochow-82-hypothesis-ledger:end -->
+
 <!-- eight-further-structural-theorems:start -->
 - **[Associative algebra degenerations in classical matrix conjugacy](ClassicalAlgebraDegenerations/PROOF.md)** — Shows that hyperbolic doubling preserves and reflects orbit-closure inclusion for unital algebra structures, under general linear, symplectic and determinant-one split quadratic conjugacy.
 - **[Linearizing operations on presented nonabelian groups](PolynomialGroupStructureCompiler/PROOF.md)** — Combines group-ring augmentation truncation with an ordered finite-difference expansion to encode operations and every compatible group homomorphism over fixed bounded class and exponent.
