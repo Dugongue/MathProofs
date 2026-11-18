@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-functor-lifting:start -->
+[Functorial tensor reductions and structured group epimorphisms](GrochowFunctorLifting/Results.md) — AI-assisted informal proofs with separate mathematical audits. Answers specified directions of Grochow–Qiao Open Question 7.5 and proves sufficient polynomial-time cases for characteristic-two Matrix Tuple Isometry and Grochow–Srivastava–Thakkar Questions 3(3)–(4), including equal-order-complement two-prime towers and Frobenius-source genus-two groups. The unrestricted questions remain open; no Lean certification or novelty claim.
+<!-- grochow-functor-lifting:end -->
+
 <!-- constrained-epimorphism-campaign:start -->
 - [Constrained epimorphisms, characteristic-two lifting, and counting optima](ConstrainedEpimorphismCampaign/Results.md) — Informal proofs of polynomial-time counting for marked ordinary persistence maps versus NP-complete existence on alternating zigzags, compact finite-ring surjection algorithms, broader symplectic norm lifting, and counting classifications for integer homology and geometric lattices. Exact scopes, dependencies, and unresolved published questions are stated.
 <!-- constrained-epimorphism-campaign:end -->
