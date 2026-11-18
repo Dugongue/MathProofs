@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-transport-recovery:start -->
+[Recovering coordinates and counting isomorphisms in tensor networks with transport](TensorTransportRecovery/FourTheorems.md) — Informal proofs of a GI equivalence on a recognizable class, singular cycle and root reconstruction, and exact equivariant isomorphism counts with unknown vertex and group correspondences. Includes explicit hypotheses and finite checks.
+<!-- tensor-transport-recovery:end -->
+
 <!-- seven-isomorphism-types:start -->
 [Seven object types for tensor, group and graph isomorphism](SevenIsomorphismTypes/SevenTypes.md) — Proposed terminology and informal definitions with fully faithful native embeddings and a root transport theorem for invertible edge maps over a specified combinatorial isomorphism.
 <!-- seven-isomorphism-types:end -->
