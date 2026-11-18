@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- word-and-fiber-canonization:start -->
+- [Canonical words, perfect matchings and local invariants](WordAndFiberCanonization/Results.md) — Informal proofs. A fixed finitely generated subgroup of SL₄(ℤ) has logspace word normal forms exactly when L = NP, and polynomial-time word normal forms exactly when P = NP. Further results cover intrinsic word-length approximation, rank-one matrices measured one or two entries at a time, bounded-degree three-dimensional matching with a supplied solution, average-case selection from two-element classes, and the Boolean locality threshold.
+<!-- word-and-fiber-canonization:end -->
+
 <!-- canonization-consequences:start -->
 - [Complete invariants and canonical representatives](CanonizationConsequences/Results.md) — Informal proofs of two Fortnow–Grochow logspace implications, a characterization of Grochow’s thesis Question 3.14, an average-case bounded-depth separation on equal-length pairs, and a circuit equivalence between canonization and preimage search. [Length and ambiguity refinements](CanonizationConsequences/Refinements.md).
 <!-- canonization-consequences:end -->
