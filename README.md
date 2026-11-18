@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- constrained-epimorphism-campaign:start -->
+- [Constrained epimorphisms, characteristic-two lifting, and counting optima](ConstrainedEpimorphismCampaign/Results.md) — Informal proofs of polynomial-time counting for marked ordinary persistence maps versus NP-complete existence on alternating zigzags, compact finite-ring surjection algorithms, broader symplectic norm lifting, and counting classifications for integer homology and geometric lattices. Exact scopes, dependencies, and unresolved published questions are stated.
+<!-- constrained-epimorphism-campaign:end -->
+
 <!-- quotient-fiber-counting:start -->
 - [Quotient–fiber lifting for surface cycles, posets, Sylow towers, and matrix tuples](QuotientFiberCounting/Results.md) — Informal proofs of hardness for counting additional shortest surface cycles from a supplied optimum, an antichain-counting threshold at order dimension three, and polynomial-time algorithms for specified group and matrix classes. Earlier resolutions of the published surface and poset questions are credited.
 <!-- quotient-fiber-counting:end -->
