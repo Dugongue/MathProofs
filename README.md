@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- permutation-roots-sparse-graph-probes:start -->
+- **Permutation roots, sparse graph probes, and quasigroup algorithms** ([informal proofs](IsomorphismBridgeFrontier/RESULTS.md)). Proves NP-completeness of permutation-group homomorphism extension, answering Kantor–Luks §13 Problem 2 and Wuu Open Problems 1.6 and 1.8, and gives the sharp orbit-size threshold for every fixed root exponent. Proves coRE-completeness for planar bipartite subcubic homomorphism probes of any fixed girth. Gives exact central-quasigroup isomorphism counts in logspace and polynomial-time joint and constrained Latin-operation decompositions.
+<!-- permutation-roots-sparse-graph-probes:end -->
+
 <!-- topology-and-invariant-crossovers:start -->
 - **Topology, invariant degree, and group-generation crossovers** ([informal proofs](TopologyAndInvariantCrossovers/RESULTS.md)). Proves rational TI-completeness of rational homotopy equivalence from invariant tables even with fixed integral cup products and trivial ordinary Massey products. Gives exact exponential separation degrees for local unitary and orthogonal tensor invariants, linear refutation-degree bounds for spectrally simple real orthogonal tensors, and polynomial-time minimum semigroup generation under additional primitive wreath chief-layer hypotheses.
 <!-- topology-and-invariant-crossovers:end -->
