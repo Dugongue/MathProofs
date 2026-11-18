@@ -5,6 +5,13 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-algebraic-transfer-theorems:start -->
+- **[Hyperbolic matrix conjugacy for associative algebras](HyperbolicAlgebraConjugacy/PROOF.md)** — Encodes every finite free unital algebra over a commutative ring as an adjoint-stable matrix algebra. Ordinary, split symplectic and split determinant-one quadratic conjugacy give the same decision on the constructed pairs, with identical transporters for the two forms. Includes a tensor-isomorphism transfer.
+- **[Counting epimorphisms through nonabelian Fitting subgroups](FittingSubgroupEpimorphisms/PROOF.md)** — Gives exact polynomial-time Cayley-table counting and polynomial-delay enumeration for unrestricted sources and bounded-generator targets satisfying explicit Fitting-subgroup conditions, including nonsemisimple families of unbounded commutator rank. Extends cases of Grochow–Srivastava–Thakkar Questions 2 and 3(2).
+- **[Descent of arithmetic witnesses and oracle reductions](CircuitWitnessDescent/PROOF.md)** — Preserves the truth and residual supports of systems of rational substitution-linear tests under deterministic coefficient descent. Shows that bounded-degree rational polynomial-oracle reductions descend to the rationals and are closed under bounded-degree rational factors in the nonuniform model.
+- **[Counting homomorphisms to inverse semigroup targets](InverseSemigroupCoarseGraining/PROOF.md)** — Counts exact surjective coarse-grainings when the finite target has an inverse semigroup multiplication term. Also proves a general decomposition by unary term values with semilattice or quasigroup laws on its classes.
+<!-- four-algebraic-transfer-theorems:end -->
+
 <!-- four-algebraic-algorithms:start -->
 - **[Four algebraic algorithms and reductions](FourAlgebraicAlgorithms/PROOF.md)** — Exact Cayley-table epimorphism counting into bounded-generator metabelian groups, tensor-isomorphism hardness for split symplectic and special orthogonal Lie subalgebra conjugacy with fixed Levi factor, deterministic circuit-IPS descent from finitely generated characteristic-zero fields, and exact block coarse-graining for finite targets with a quasigroup term. Informal proofs with their field, representation and input hypotheses.
 <!-- four-algebraic-algorithms:end -->
