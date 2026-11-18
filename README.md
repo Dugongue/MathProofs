@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-isomorphism-and-algebraic-crossovers:start -->
+- **Four crossovers in tensor isomorphism and algebraic algorithms** ([informal proofs](TensorIsomorphismAndAlgebraicCrossovers/RESULTS.md)). Realizes affine group scheme torsors over every field as ordinary three-tensor transporters up to smooth split factors. Narrows Collins–Grochow–Levet–Weiß Question 8.3 to one-free-element generation and extends the polynomial-time cases. Proves binary tensor-isomorphism completeness of ANF cubic bent equivalence and gives a deterministic width-capped exact-root algorithm for same-order ROABPs.
+<!-- tensor-isomorphism-and-algebraic-crossovers:end -->
+
 <!-- further-portfolio-isomorphism-crossovers:start -->
 - **Four isomorphism crossovers** ([informal proofs](FurtherPortfolioIsomorphismCrossovers/RESULTS.md)). Deterministic quasipolynomial-time minimum semigroup generation on arbitrary Cayley tables, and polynomial time with bounded nonabelian chief factors in the maximal subgroups (progress on Collins–Grochow–Levet–Weiß Question 8.3). Also proves an exact local-unitary overlap formula and a fidelity-threshold hardness result for repeated code states, arithmetic universality in one rank-two alternating congruence orbit, and exponential sparse Polynomial Calculus lower bounds for four-tensors with every pair flattening invertible.
 <!-- further-portfolio-isomorphism-crossovers:end -->
