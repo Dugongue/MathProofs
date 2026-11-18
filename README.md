@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quotient-fiber-counting:start -->
+- [Quotient–fiber lifting for surface cycles, posets, Sylow towers, and matrix tuples](QuotientFiberCounting/Results.md) — Informal proofs of hardness for counting additional shortest surface cycles from a supplied optimum, an antichain-counting threshold at order dimension three, and polynomial-time algorithms for specified group and matrix classes. Earlier resolutions of the published surface and poset questions are credited.
+<!-- quotient-fiber-counting:end -->
+
 <!-- quotient-fiber-lifting-four:start -->
 - [Four applications of quotient–fiber lifting](QuotientFiberLiftingFour/Results.md) — Informal proofs for characteristic-two matrix-tuple isometry, finite-group epimorphisms, central quotients, and cross-length complete invariants. Each addresses a restricted case or a structural consequence of a published question.
 <!-- quotient-fiber-lifting-four:end -->
