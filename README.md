@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-symmetry-recovery:start -->
+[Four results on coordinates and symmetries of tensor networks and graph actions](TensorSymmetryRecovery/Results.md) — Informal GI reductions using unordered vectors and covectors or closed walks, exact counting for residual shear symmetries, and sharp observation arities for reconstructing costed groupoid actions. Includes proofs, input hypotheses and finite checks.
+<!-- tensor-symmetry-recovery:end -->
+
 <!-- tensor-transport-recovery:start -->
 [Recovering coordinates and counting isomorphisms in tensor networks with transport](TensorTransportRecovery/FourTheorems.md) — Informal proofs of a GI equivalence on a recognizable class, singular cycle and root reconstruction, and exact equivariant isomorphism counts with unknown vertex and group correspondences. Includes explicit hypotheses and finite checks.
 <!-- tensor-transport-recovery:end -->
