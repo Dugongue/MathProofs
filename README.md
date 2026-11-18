@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-stabilizer-descent:start -->
+- **[Nonsplit graph tensors and principal determinants over local algebras](TensorStabilizerDescent/Results.md)** — Informal proofs reducing special-linear isomorphism of geometric graph tensors and their arbitrary-order truncated-series deformations to GI, and unrestricted special-linear isomorphism over each fixed commutative binary local algebra with residue field of order two to ordinary binary TI. Includes a priority audit of the integral graph stabilizer theorem.
+<!-- tensor-stabilizer-descent:end -->
+
 <!-- exact-tensor-transporters:start -->
 - **[Exact transporters for codes, graphs, tensor summands and graphical groups](ExactTensorTransporters/Results.md)** — Informal proofs of witness-preserving special-linear three-tensor encodings for permutation and monomial code equivalence over each fixed finite field and an integral graph encoding realizing every finite group as the full special-linear stabilizer scheme of one concise tensor. Includes prescribed graph parity, prime-power graphical group recognition and counting, and ordinary TI reductions for logarithmic-width tensor summands.
 <!-- exact-tensor-transporters:end -->

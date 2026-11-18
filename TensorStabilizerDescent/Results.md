@@ -1,0 +1,19 @@
+# Integral tensor stabilizers, nonsplit descent and nilpotent determinants
+
+**Status.** Informal proofs. Unrestricted SL-TI ≤ TI over the field with three elements, and the general classical-groups question, remain open. No priority claim is made. Here TI uses three independent general-linear changes of coordinates and SL-TI requires each determinant to equal one.
+
+| Result | Scope | Argument |
+|---|---|---|
+| Prior-art comparison for the integral stabilizer | Strong antecedents include exact finite group schemes for evolution algebras with one shared basis change. The independent three-mode graph transporter over the integers is the potentially distinctive assertion. | [Comparison, version history and descent](Priority.md) · [Earlier field construction](Signed.md) · [Earlier integral proof](Integral.md) |
+| Arbitrary raw tensors in scalar-correctable formats | The remaining determinant character transfers exactly to two computed spaces. One ordinary TI query suffices if their dimensions are logarithmic in the input length. In balanced large formats the test need not be small. | [Tangent determinant identity](Tangent.md) |
+| One graph comparison for nonsplit inputs | Every finite-field tensor geometrically GL-equivalent to a six-layer graph tensor can be recognized from its entries. Its SL class is recovered as a graph, its Frobenius permutation and one field scalar. The common splitting degree can be superpolynomial. | [Polynomial decoder](Descent.md) |
+| Arbitrary-order perturbations | Over a fixed finite field and arbitrary truncated-series precision, all higher coefficients may vary freely whenever the residue tensor belongs to that geometric family. One GI comparison characterizes all SL witnesses. | [Normalization](Jets.md) · [Combined descent and normalization](Joint.md) |
+| All tensors over each fixed binary local algebra in equal characteristic | Every finite-dimensional commutative local algebra R over the two-element field with residue that same field admits an unrestricted reduction of SL-TI on free modules to binary TI. For a varying explicitly presented algebra with radical J, the upper bound is polynomial when a uniform constant e satisfies J^e=0. Over larger coefficient fields the same compiler enforces every principal determinant but leaves residue determinants. | [Polynomial coefficient construction](Principal.md) |
+
+For the last row, ordinary binary TI also reduces back to SL-TI over each such fixed R: extend the tensor coefficients and any binary witness by the coefficient inclusion; its three determinants remain one. Conversely any R-witness reduces to a binary witness. Thus the equivalence is two-way on this ring class. In particular it includes the unrestricted free-tensor problem over the eight-element ring of characteristic two with t³=0. This is distinct from tensors over the field with eight elements or the ring of integers modulo eight.
+
+The direct relevance to the field problem is the arithmetic decision theorem and its limits. Descent and normalization solve the orientation comparison for an entire geometric family. The étale slice in the proof reaches a nonempty open set locally but does not identify different global representatives of arbitrary orbits. For the binary ring theorem the key additional observation is that the principal part of a determinant has a polynomial marker of degree at most e−1, even when ordinary logarithmic derivatives miss it. Over an odd field the residue determinant survives when the nilpotents are removed. [Chen, Grochow, Qiao, Tang and Zhang, Question 1.9](https://arxiv.org/html/2306.03135#S1.SS5)
+
+[Reproducible finite tests](check_descent.py) compare the orbit determinant computation with direct determinants over a quadratic splitting field. They test an ingredient, independently of the general proofs.
+
+The [tangent determinant controls](check_tangent.py) verify the calibrated formula on 72 raw examples over three prime fields.
