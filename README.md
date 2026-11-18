@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- seven-isomorphism-types:start -->
+[Seven object types for tensor, group and graph isomorphism](SevenIsomorphismTypes/SevenTypes.md) — Proposed terminology and informal definitions with fully faithful native embeddings and a root transport theorem for invertible edge maps over a specified combinatorial isomorphism.
+<!-- seven-isomorphism-types:end -->
+
 <!-- grochow-functor-lifting:start -->
 [Functorial tensor reductions and structured group epimorphisms](GrochowFunctorLifting/Results.md) — AI-assisted informal proofs with separate mathematical audits. Answers specified directions of Grochow–Qiao Open Question 7.5 and proves sufficient polynomial-time cases for characteristic-two Matrix Tuple Isometry and Grochow–Srivastava–Thakkar Questions 3(3)–(4), including equal-order-complement two-prime towers and Frobenius-source genus-two groups. The unrestricted questions remain open; no Lean certification or novelty claim.
 <!-- grochow-functor-lifting:end -->
