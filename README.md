@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- graph-tensor-witness-transfer:start -->
+[Witnesses, counts and canonical forms between graphs and three-tensors](GraphTensorWitnessTransfer/Results.md) — Informal proofs of an exact binary graph-to-tensor witness correspondence, a hidden-coordinate decoder, graph algorithms for structured tensors, parity tests, and an exponential size lower bound for graphs whose automorphisms surject onto all tensor symmetries. Includes proofs, scope and two finite checks.
+<!-- graph-tensor-witness-transfer:end -->
+
 <!-- transportensor-foundations:start -->
 [Transportensors, Transportensor Isomorphism and Automorphism](TransportensorFoundations/Transportensors.md) — Formal definitions and informal proofs of TI-completeness over fixed finite fields for an expressive fixed signature, an automorphism exact sequence, and witness-preserving comparisons of classical-group variants. Includes the input model, limits and checked finite examples.
 <!-- transportensor-foundations:end -->

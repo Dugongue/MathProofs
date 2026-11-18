@@ -1,0 +1,24 @@
+# What transfers between bare graphs, bare tensors and Transportensors?
+
+A Transportensor has local tensors at the vertices of a graph and linear maps along edges, with one set of local basis changes required to match both. Empty linear data embed ordinary graphs, and one isolated vertex embeds an ordinary tensor. For fixed finite fields and an expressive fixed signature the previous decision comparison is GI ≤ ordinary 3TI ≡ Transportensor Isomorphism, with the first arrow pointing from the problem being solved to the solver being used. This note asks what additional outputs and structural properties survive.
+
+| Original question | Transfer obtained here | Hypothesis |
+|---|---|---|
+| Decide, find, count or generate graph isomorphisms and automorphisms using an ordinary tensor solver | A graph becomes one concise ordered-mode three-tensor. Over F2 witnesses correspond bijectively and preserve composition. Over Fq each graph witness has exactly (q−1)² lifts. Actual canonical representatives can be transferred in both directions on the image. | All finite simple undirected graphs. Explicit polynomial conversion for fixed finite fields. |
+| Use graph algorithms on a tensor in arbitrary bases | Extract direct-sum blocks from the centroid; assemble small blocks into one GI instance. A separate multiplier test recovers a hidden graphical matrix space. | The centroid step applies universally. The polynomial GI conclusion requires small blocks as specified or a successful graphical-space test. |
+| Derive graph parity information from linear algebra | A canonical alternating form supplies a pre-search parity test in the nonsingular case. Its ordered radical bases give one GI instance for prescribed sign in the small-corank case. | The rank condition must hold on the actual requested mark, possibly after canonical bordering. |
+| Use a graph to represent all automorphisms of an arbitrary tensor | Full vector tables suffice with exponential size. An exponential worst-case number of graph vertices is necessary even when a subgroup of graph automorphisms may map many-to-one onto the tensor group. | Requires surjective, composition-preserving witness decoding. No lower bound for GI decision reductions is inferred. |
+
+[Centered graph construction, proof and hidden-coordinate decoder](FromGraphs.md) · [Tensor-to-graph algorithms](ToGraphs.md) · [Sign tests and enrichment](GraphOrientation.md) · [Universal graph realization and its lower bound](WitnessSize.md).
+
+### Interpreting an enrichment claim
+
+A structural statement about every Transportensor specializes to both embeddings, though the specialization can be vacuous. An algorithm on a promised class solves the original decision problem only with a fast transformation whose image meets the promise and whose yes/no answers reflect original isomorphism. For search one also needs efficient decoding of a witness. For group generators the decoded maps should generate every original symmetry and respect composition. For counting one needs the multiplicities; the constant (q−1)² in the centered construction is an example. To canonize one needs an effective way to obtain the target's canonical bytes and turn them into a representative in the original convention. Runtime includes encoding, solving on the larger instance, and decoding. Merely adding unique labels or rigid bases can destroy original witnesses.
+
+All-homomorphism claims have a different contract. For example a graph G has a vertex function algebra k^V and an edge mask E_G as a 0/1 element of k^V⊗k^V. A function f:G→H induces a unital pullback φ:k^V(H)→k^V(G) (all finite-set functions arise this way under the usual function-algebra convention). It is a graph homomorphism exactly when E_G multiplied coordinatewise by (φ⊗φ)(E_H) equals E_G. Bijections reflecting edges give equality of the masks themselves. This is a contravariant algebra description. The centered ordinary-tensor construction above is proved for invertible isomorphisms; neither statement supplies an all-covariant tensor functor on arbitrary graph homomorphisms.
+
+### Significance and evidence
+
+The ordinary GI decision reduction to TI predates this work. The main additional conclusions of this packet are the explicit control of witnesses and the resulting transfer of algorithms beyond decision, and the different exponential behavior required for a universal transfer of all tensor automorphisms in the other direction. These are informal derivations with references in the individual notes. Priority, formal verification, and a general improvement to the best GI or TI decision runtime are unestablished.
+
+[Centered incidence test](check_centered.py) verifies the quadratic decoder on a hidden-basis four-vertex complete graph over F2, F3 and F5. [Orientation tests](check_orientation.py) check the volume identities and corona examples. Finite tests do not certify the asymptotic results.
