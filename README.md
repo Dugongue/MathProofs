@@ -5,6 +5,13 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- boolean-counting-permanent:start -->
+- **[Monotone permanent projection lower bounds for Boolean counting](BooleanCountingPermanent/PROOF.md)** — Informal proof answering both clauses of Grochow’s Open Question 5.2. Any monotone affine projection of the permanent agreeing on Boolean inputs with general perfect-matching counts or directed Hamiltonian-cycle counts requires exponential dimension.
+- **[Four graph-to-tensor routes in ordinary Polynomial Calculus](FourRoutePolynomialCalculus/FOUR-ROUTES.md)** — Informal results on Galesi–Grochow–Pitassi–She Open Question 7.5. Gives all six pairwise comparisons in characteristic zero for the incidence-code, semisimple Lie, alternating-space, and Grigoriev graph-algebra constructions, including the reverse comparison through the FGS markers.
+- **[Epimorphisms of abelian Sylow towers with bounded action ranks](SylowTowerActionRanks/PROOF.md)** — Informal progress on Grochow–Srivastava–Thakkar Open Question 3(4). Gives a polynomial-time algorithm under bounded joint action ranks and relates a two-prime family exactly to binary permutation subcode containment.
+- **[Logspace membership through nuclear quotients](NuclearTowerMembership/PROOF.md)** — Informal progress on Collins–Grochow–Levet–Weiß Question 8.2. Gives deterministic logspace membership for a bounded tower of normal nuclear quotients over the covered loop classes and proves a companion finite Lie ring membership theorem.
+<!-- boolean-counting-permanent:end -->
+
 <!-- permutation-roots-sparse-graph-probes:start -->
 - **Permutation roots, sparse graph probes, and quasigroup algorithms** ([informal proofs](IsomorphismBridgeFrontier/RESULTS.md)). Proves NP-completeness of permutation-group homomorphism extension, answering Kantor–Luks §13 Problem 2 and Wuu Open Problems 1.6 and 1.8, and gives the sharp orbit-size threshold for every fixed root exponent. Proves coRE-completeness for planar bipartite subcubic homomorphism probes of any fixed girth. Gives exact central-quasigroup isomorphism counts in logspace and polynomial-time joint and constrained Latin-operation decompositions.
 <!-- permutation-roots-sparse-graph-probes:end -->
