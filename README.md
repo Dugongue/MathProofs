@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- recovered-research-proofs:start -->
+- **[Recovered proofs from the research archive](RecoveredResearchProofs/RESULTS.md)** — Informal proofs resolving Kaspers–Pott’s design-isomorphism conjecture and refuting four of Fang’s collapse-pattern conjectures. Includes new equal-intersection design examples, the prime-square perfect-sequence classification, an exact six-job scheduling lower bound, and a base-two approximation for Euclidean TSP with unit-ball neighborhoods.
+<!-- recovered-research-proofs:end -->
+
 <!-- grochow-group-frontier:start -->
 - **[Fitting-free epimorphisms, fixed nilpotent targets, and code-to-lattice equivalence](GrochowGroupFrontier/RESULTS.md)** — Informal proofs answering Grochow–Srivastava–Thakkar Open Question 3(1) for Cayley tables, extending Elder–Shen–Weiß Open Question 4.1 to a dichotomy for all fixed finite nilpotent targets in the finite-presentation and permutation-generator models, and reducing monomial code equivalence over every fixed extension field to lattice isomorphism. Also constructs minimum faithful actions for all class-two Cayley-table groups in polynomial time.
 <!-- grochow-group-frontier:end -->
