@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- minimum-degree-crossovers:start -->
+- **[Small permutation orbits, faithful degree, and dihedral quotients](MinimumDegreeCrossovers/RESULTS.md)** — Informal proof of NP-completeness for epimorphism from finite presentations onto D₈, answering Elder–Shen–Weiß Open Question 4.1. Companion results give the sharp factor-p approximation threshold at orbit cap p³, exponential inapproximability for central Heisenberg-power quotients, and NP-completeness of minimum faithful degree with just one p³-point orbit.
+<!-- minimum-degree-crossovers:end -->
+
 <!-- group-tensor-frontier:start -->
 - **[Minimum permutation degree and tensor-isomorphism reductions](GroupTensorFrontier/RESULTS.md)** — Informal proof that Kantor–Luks §13, Problem 1 (Size of Representation Domain) is NP-complete, already for class-two odd-\(p\) groups given by bounded-orbit permutation generators with trivial quotient kernel. The group bridge proves TI-completeness on minimum-degree exponent-prime permutation presentations. Companion results give a linear-side determinant-profile kernel over fixed finite fields, exponential extension degrees for finite-field TI, and a deterministic signed local-algebra algorithm with unbounded residue degree.
 <!-- group-tensor-frontier:end -->
