@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-group-frontier:start -->
+- **[Fitting-free epimorphisms, fixed nilpotent targets, and code-to-lattice equivalence](GrochowGroupFrontier/RESULTS.md)** — Informal proofs answering Grochow–Srivastava–Thakkar Open Question 3(1) for Cayley tables, extending Elder–Shen–Weiß Open Question 4.1 to a dichotomy for all fixed finite nilpotent targets in the finite-presentation and permutation-generator models, and reducing monomial code equivalence over every fixed extension field to lattice isomorphism. Also constructs minimum faithful actions for all class-two Cayley-table groups in polynomial time.
+<!-- grochow-group-frontier:end -->
+
 <!-- minimum-degree-crossovers:start -->
 - **[Small permutation orbits, faithful degree, and dihedral quotients](MinimumDegreeCrossovers/RESULTS.md)** — Informal proof of NP-completeness for epimorphism from finite presentations onto D₈, answering Elder–Shen–Weiß Open Question 4.1. Companion results give the sharp factor-p approximation threshold at orbit cap p³, exponential inapproximability for central Heisenberg-power quotients, and NP-completeness of minimum faithful degree with just one p³-point orbit.
 <!-- minimum-degree-crossovers:end -->
