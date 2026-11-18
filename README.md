@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- topology-and-invariant-crossovers:start -->
+- **Topology, invariant degree, and group-generation crossovers** ([informal proofs](TopologyAndInvariantCrossovers/RESULTS.md)). Proves rational TI-completeness of rational homotopy equivalence from invariant tables even with fixed integral cup products and trivial ordinary Massey products. Gives exact exponential separation degrees for local unitary and orthogonal tensor invariants, linear refutation-degree bounds for spectrally simple real orthogonal tensors, and polynomial-time minimum semigroup generation under additional primitive wreath chief-layer hypotheses.
+<!-- topology-and-invariant-crossovers:end -->
+
 <!-- tensor-isomorphism-and-algebraic-crossovers:start -->
 - **Four crossovers in tensor isomorphism and algebraic algorithms** ([informal proofs](TensorIsomorphismAndAlgebraicCrossovers/RESULTS.md)). Realizes affine group scheme torsors over every field as ordinary three-tensor transporters up to smooth split factors. Narrows Collins–Grochow–Levet–Weiß Question 8.3 to one-free-element generation and extends the polynomial-time cases. Proves binary tensor-isomorphism completeness of ANF cubic bent equivalence and gives a deterministic width-capped exact-root algorithm for same-order ROABPs.
 <!-- tensor-isomorphism-and-algebraic-crossovers:end -->
