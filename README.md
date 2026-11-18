@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-transport-programs:start -->
+- **[Four directions in tensor isomorphism](FourTransportPrograms/Results.md)** — Informal theorems on selecting the minimum extension degree for tensor isomorphism, random Koszul flattenings for determinant tests, recovery and matching of tensor blocks with a shared core, and measurement masks for monomial tensor alignment. Includes proofs, precise input promises, and conjectures.
+<!-- four-transport-programs:end -->
+
 <!-- transporting-structure-proposals:start -->
 - **[Twenty research proposals on transporting structure](TransportingStructure/Proposals.md)** — Provisional definitions and informal results on witness-preserving reductions, partially observed tensors, calibration, and the cost of exact isomorphism witnesses. Includes a sharp rank-error decoding threshold for protected tensor copies and a factorial field-degree example for ordinary 3-tensor transporters over the reals.
 <!-- transporting-structure-proposals:end -->
