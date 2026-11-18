@@ -5,6 +5,11 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- coarse-graining-function-field-ips:start -->
+- **[Complexity of elementary cellular-automaton coarse-graining](ElementaryCoarseGrainingComplexity/PROOF.md)** — Answers Song–Grochow's fixed-block question for elementary rules. The decision and witness algorithm takes deterministic single-exponential time in numeric block size, and a separate decision algorithm uses quadratic space. Includes exact counting, an exhaustive verification harness for small blocks, and attribution to the earlier Boolean-structure CSP theorem that already implies the time-class inclusion.
+- **[Ideal Proof Systems and PIT over function fields](FunctionFieldIdealProofSystems/PROOF.md)** — Answers the positive-characteristic function-field case of Grochow's §7.2 question, with a same-field equivalence for Boolean UNSAT. The Variety Emptiness equivalence holds in both characteristics. The characteristic-zero Boolean case reduces to the rational case.
+<!-- coarse-graining-function-field-ips:end -->
+
 <!-- genus-two-epimorphisms:start -->
 - **[Genus-two group epimorphism and the limits of the genus promise](GenusTwoGroupEpimorphism/PROOF.md)** — Informal results on Grochow–Srivastava–Thakkar Open Question 3(3). There is a deterministic polynomial-time Cayley-table algorithm for bounded coefficient-field genus and arbitrary class-two targets of the same odd prime exponent. Under the literal centroid-module definition, exact genus two is polynomial-time equivalent to unrestricted class-two epimorphism at odd prime exponent. The broader algorithmic question remains open. Companion notes handle field Heisenberg quotients including characteristic two and power-map extensions, and local-ring quotient algorithms for bounded generator and socle ranks.
 <!-- genus-two-epimorphisms:end -->
