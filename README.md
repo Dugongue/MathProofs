@@ -5,6 +5,13 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-followup-four:start -->
+- **[Counting Weisfeiler–Leman lower bounds for colored abelian groups](ColoredAbelianWL/PROOF.md)** — Informal negative answer to Grochow–Levet Question 8.3. For two-colored elementary abelian 2-groups, counting WL can require dimension at least log log of the group order minus a constant, even with the full colored generated subgroup as the initial tuple invariant.
+- **[Saturated circuit degrees in ideal cosets](IdealCosetSaturation/PROOF.md)** — Informal negative answer to Grochow’s Open Question 6.10 for fixed ambient rings. A proper nonzero principal-ideal coset has no saturated degree, even with arbitrary-degree representatives. The proof also gives an exact width criterion for p-bounded families in the family-oracle model, and a linearly growing counterexample in the single-index convention.
+- **[Graph isomorphism for three-orbit symmetry-characterized graphs](ThreeOrbitGraphIsomorphism/PROOF.md)** — Informal progress on Grochow–Urisman Open Question 1.9. Gives polynomial recognition and isomorphism to arbitrary raw adjacency inputs for the three-unordered-pair-orbit branch. Also gives raw-coordinate recovery for affine ovoid graphs and polynomial isomorphism with both inputs promised affine rank-three.
+- **[Whole cut-polytope projections and traveling salesman](WholeCutTravelingSalesman/PROOF.md)** — Informal progress on Grochow Open Question 5.4. Gives a general whole-polytope construction, an extension bound for bounded-treewidth quadratic maps, and a linear degree lower bound for polynomial maps fixing all tour incidence vectors. The unrestricted polynomial-size whole-cut question remains open.
+<!-- grochow-followup-four:end -->
+
 <!-- boolean-counting-permanent:start -->
 - **[Monotone permanent projection lower bounds for Boolean counting](BooleanCountingPermanent/PROOF.md)** — Informal proof answering both clauses of Grochow’s Open Question 5.2. Any monotone affine projection of the permanent agreeing on Boolean inputs with general perfect-matching counts or directed Hamiltonian-cycle counts requires exponential dimension.
 - **[Four graph-to-tensor routes in ordinary Polynomial Calculus](FourRoutePolynomialCalculus/FOUR-ROUTES.md)** — Informal results on Galesi–Grochow–Pitassi–She Open Question 7.5. Gives all six pairwise comparisons in characteristic zero for the incidence-code, semisimple Lie, alternating-space, and Grigoriev graph-algebra constructions, including the reverse comparison through the FGS markers.
