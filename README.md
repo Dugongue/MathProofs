@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- transporting-structure-proposals:start -->
+- **[Twenty research proposals on transporting structure](TransportingStructure/Proposals.md)** — Provisional definitions and informal results on witness-preserving reductions, partially observed tensors, calibration, and the cost of exact isomorphism witnesses. Includes a sharp rank-error decoding threshold for protected tensor copies and a factorial field-degree example for ordinary 3-tensor transporters over the reals.
+<!-- transporting-structure-proposals:end -->
+
 <!-- grochow-hypothesis-ledger-expansion:start -->
 - **[Grochow Hypoworlds expansion](GrochowHypoworldsExpansion/README.md)** — Expanded implication ledger with exact pair and triple replay, characteristic-two matrix-tuple isometry and involutive-algebra norm equivalences, new finite-alphabet coarse-graining hardness, a colored group pebble-game separation, and rational-oracle and IPS degree results. Informal proofs.
 <!-- grochow-hypothesis-ledger-expansion:end -->
