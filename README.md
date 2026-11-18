@@ -5,6 +5,13 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-new-four:start -->
+- **[Sparse determinant equivalence and black-box PIT completeness](SparseDeterminantEquivalence/PROOF.md)** — Informal answer to both clauses of Grochow’s arXiv Open Question 6.3. A sparse input gives a deterministic polynomial-time decision algorithm over ℂ. In the polynomial-degree black-box model, determinant equivalence is PIT-hard and reduces back to PIT without a root-finding oracle. The CCC version also asks about root-finding hardness.
+- **[Exponential Laurent degree for stable degenerations of sparse forms](KempfDegenerationDegree/PROOF.md)** — Informal affirmative answer to Grochow–Mulmuley–Qiao Question 4.5 (ICALP Question 19). Every Laurent coordinate path to the closed orbit of the displayed family has exponentially large degree, including the canonical Kempf one-parameter subgroup.
+- **[Exact linear-size reduction to surface homology localization](SurfaceHomologyLocalization/PROOF.md)** — Informal exact reduction over every finite abelian coefficient group. A triangulated surface with linearly many simplices has optimum exactly three times the minimum number of violated translation constraints. The hardness questions of Grochow–Tucker-Foltz were already answered by Borradaile, Maxwell, and Nayyeri in 2020.
+- **[Canonical forms and complete invariants for length-preserving equivalences](LengthPreservingEquivalenceOracle/PROOF.md)** — Informal progress on Fortnow–Grochow Question 5.11. For length-preserving relations, a single oracle gives CF ⊊ Ker = PEq, with a two-element-class witness that also resists randomized canonization. The unrestricted oracle question remains open.
+<!-- grochow-new-four:end -->
+
 <!-- grochow-next-four:start -->
 - **[VNP-completeness of canonical Ideal Proof System certificates](CanonicalIPSCertificates/PROOF.md)** — Informal answer to the VNP-completeness clause of Grochow–Pitassi Open Question 7.8. Explicit canonical certificates are VNP-p-complete over fields with more than two elements. Over F₂, canonical certificates cannot be VNP-hard under p-projections. The proof also refutes realization of every p-degree.
 - **[Least, minimal and descending circuit degrees of ideals](IdealCircuitDegrees/PROOF.md)** — Informal negative answer to Grochow Open Question 6.4 over ℝ and ℂ. Two-generated prime ideals need not have a least circuit degree. A fixed principal ideal admits an infinite strictly descending chain, answering the corresponding clause of Question 6.6. The note also gives incomparable minimal degrees under the stated p-bounded, eventually nonzero convention.
