@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- transportensor-foundations:start -->
+[Transportensors, Transportensor Isomorphism and Automorphism](TransportensorFoundations/Transportensors.md) — Formal definitions and informal proofs of TI-completeness over fixed finite fields for an expressive fixed signature, an automorphism exact sequence, and witness-preserving comparisons of classical-group variants. Includes the input model, limits and checked finite examples.
+<!-- transportensor-foundations:end -->
+
 <!-- tensor-symmetry-recovery:start -->
 [Four results on coordinates and symmetries of tensor networks and graph actions](TensorSymmetryRecovery/Results.md) — Informal GI reductions using unordered vectors and covectors or closed walks, exact counting for residual shear symmetries, and sharp observation arities for reconstructing costed groupoid actions. Includes proofs, input hypotheses and finite checks.
 <!-- tensor-symmetry-recovery:end -->
