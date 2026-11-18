@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quotient-fiber-lifting-four:start -->
+- [Four applications of quotient–fiber lifting](QuotientFiberLiftingFour/Results.md) — Informal proofs for characteristic-two matrix-tuple isometry, finite-group epimorphisms, central quotients, and cross-length complete invariants. Each addresses a restricted case or a structural consequence of a published question.
+<!-- quotient-fiber-lifting-four:end -->
+
 <!-- grochow-questions-after-vertex-cover:start -->
 - [Monotone permanent-oracle lower bounds and three isomorphism results](GrochowQuestionsAfterVertexCover/Results.md) — Informal affirmative answer to Grochow’s Open Question 5.6 on formal polynomials, including arbitrary-depth monotone c-reductions. The packet includes two derivations, an application to vertex-cover degree spectra, and scoped results on tensors, groups and graphs.
 <!-- grochow-questions-after-vertex-cover:end -->
