@@ -5,6 +5,17 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- eight-algebraic-transfer-theorems:start -->
+- **[Exact classical transporters for associative algebras](ExactClassicalTransporters/PROOF.md)** — Determines the full split symplectic and determinant-one split quadratic transporter functor of the hyperbolic matrix encoding over every commutative scalar extension.
+- **[Linearizing bounded finite-difference degree](FiniteDifferenceIsomorphism/PROOF.md)** — Encodes bounded-degree nonlinear operations on finite abelian groups of fixed exponent, with full recovery of additive morphisms. Gives a prime-field tensor-isomorphism reduction in prime-power characteristic.
+- **[Exact counting of epimorphic lifts through abelian kernels](AbelianHeadLifts/PROOF.md)** — Handles nonsemisimple kernels whose head endomorphisms lift, with prescribed point values and nonsplit extensions.
+- **[Epimorphism counting with unbounded Fitting inner action](FittingInnerAction/PROOF.md)** — Gives exact polynomial-time counting for bounded-generator targets under module socle conditions, covering wreath products of unbounded nilpotence class, commutator rank and inner-action rank.
+- **[Low-degree factors from bounded-order local data](CircuitTransferI/PROOF.md)** — Recovers small rational factors nonuniformly from Taylor data whose order depends on the factor degree and multiplicity.
+- **[Rational matrix realization of nonlinear tests](CircuitTransferII/PROOF.md)** — A deterministic specialization preserves nonlinear tests, adjoints and generic ranks of designated regular-representation matrices over rational function fields.
+- **[Exact surjection counting onto full matrix monoids](FiniteAlgebraTransferI/PROOF.md)** — Gives a uniform polynomial-time algorithm for arbitrary matrix dimension and finite field size, and for products of a bounded number of factors.
+- **[Counting homomorphisms by affine lifts over a quotient](FiniteAlgebraTransferII/PROOF.md)** — Gives exact affine lift counting and onto search, with two criteria for exact onto counting. Applies to block algebras of bipermutive cellular automata with the stated targets.
+<!-- eight-algebraic-transfer-theorems:end -->
+
 <!-- four-algebraic-transfer-theorems:start -->
 - **[Hyperbolic matrix conjugacy for associative algebras](HyperbolicAlgebraConjugacy/PROOF.md)** — Encodes every finite free unital algebra over a commutative ring as an adjoint-stable matrix algebra. Ordinary, split symplectic and split determinant-one quadratic conjugacy give the same decision on the constructed pairs, with identical transporters for the two forms. Includes a tensor-isomorphism transfer.
 - **[Counting epimorphisms through nonabelian Fitting subgroups](FittingSubgroupEpimorphisms/PROOF.md)** — Gives exact polynomial-time Cayley-table counting and polynomial-delay enumeration for unrestricted sources and bounded-generator targets satisfying explicit Fitting-subgroup conditions, including nonsemisimple families of unbounded commutator rank. Extends cases of Grochow–Srivastava–Thakkar Questions 2 and 3(2).
