@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- exact-tensor-transporters:start -->
+- **[Exact transporters for codes, graphs, tensor summands and graphical groups](ExactTensorTransporters/Results.md)** — Informal proofs of witness-preserving special-linear three-tensor encodings for permutation and monomial code equivalence over each fixed finite field and an integral graph encoding realizing every finite group as the full special-linear stabilizer scheme of one concise tensor. Includes prescribed graph parity, prime-power graphical group recognition and counting, and ordinary TI reductions for logarithmic-width tensor summands.
+<!-- exact-tensor-transporters:end -->
+
 <!-- graph-tensor-witness-transfer:start -->
 [Witnesses, counts and canonical forms between graphs and three-tensors](GraphTensorWitnessTransfer/Results.md) — Informal proofs of an exact binary graph-to-tensor witness correspondence, a hidden-coordinate decoder, graph algorithms for structured tensors, parity tests, and an exponential size lower bound for graphs whose automorphisms surject onto all tensor symmetries. Includes proofs, scope and two finite checks.
 <!-- graph-tensor-witness-transfer:end -->
