@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- open-problem-archive-additions:start -->
+- **[Proofs recovered from the Open Problem Archive](OpenProblemArchiveAdditions/RESULTS.md)** — Informal solution of TheoremDB P2750 with reproducible full orbit enumeration, symplectic tensor isomorphism for five actions and fixed arity, special-linear isomorphism of fixed-width finite-field pencils in deterministic polynomial time, tensor isomorphism hardness in concise critical formats, and exact classical and entanglement-assisted zero-error capacity for finite-ring rank-threshold channels.
+<!-- open-problem-archive-additions:end -->
+
 <!-- recovered-research-proofs:start -->
 - **[Recovered proofs from the research archive](RecoveredResearchProofs/RESULTS.md)** — Informal proofs resolving Kaspers–Pott’s design-isomorphism conjecture and refuting four of Fang’s collapse-pattern conjectures. Includes new equal-intersection design examples, the prime-square perfect-sequence classification, an exact six-job scheduling lower bound, and a base-two approximation for Euclidean TSP with unit-ball neighborhoods.
 <!-- recovered-research-proofs:end -->
