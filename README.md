@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- vertex-cover-and-extension-spectra:start -->
+- **[Vertex Cover and extension-field isomorphism](VertexCoverAndExtensionSpectra/Results.md)** — Informal proofs connecting finite étale tensor extension degrees to covering constraints, signed versus ordinary encoding size, counting, approximation, polynomial families, and reconfiguration. Includes transfers to cubic forms, alternating spaces, two-step Lie algebras, and indexed families of graphs and groups.
+<!-- vertex-cover-and-extension-spectra:end -->
+
 <!-- four-transport-programs:start -->
 - **[Four directions in tensor isomorphism](FourTransportPrograms/Results.md)** — Informal theorems on selecting the minimum extension degree for tensor isomorphism, random Koszul flattenings for determinant tests, recovery and matching of tensor blocks with a shared core, and measurement masks for monomial tensor alignment. Includes proofs, precise input promises, and conjectures.
 <!-- four-transport-programs:end -->
