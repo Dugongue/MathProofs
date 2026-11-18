@@ -5,6 +5,17 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- eight-further-structural-theorems:start -->
+- **[Associative algebra degenerations in classical matrix conjugacy](ClassicalAlgebraDegenerations/PROOF.md)** — Shows that hyperbolic doubling preserves and reflects orbit-closure inclusion for unital algebra structures, under general linear, symplectic and determinant-one split quadratic conjugacy.
+- **[Linearizing operations on presented nonabelian groups](PolynomialGroupStructureCompiler/PROOF.md)** — Combines group-ring augmentation truncation with an ordered finite-difference expansion to encode operations and every compatible group homomorphism over fixed bounded class and exponent.
+- **[Exact epimorphism counting along the Fitting derived series](HallFittingEpimorphisms/PROOF.md)** — Counts through intermediate coinduced bounds and a final unrestricted abelian layer. Covers bounded-generator targets with metabelian Hall Fitting subgroup.
+- **[Epimorphic lifts with ordered simple heads](GroupTransferII/PROOF.md)** — Counts marked lifts through nested affine rows, including coprime actions and elementary modular components for cyclic quotients.
+- **[Border factor recovery at arbitrary multiplicity](BorderFactorRecovery/PROOF.md)** — Uses modified Newton iteration and local jets for nonuniform rational factor approximation with size independent of input degree and factor multiplicity.
+- **[Rational specialization preserving two quantifier blocks](TwoBlockRationalSpecialization/PROOF.md)** — Uses effective Nullstellensatz and rank witnesses to deterministically specialize parameters while preserving algebraic-closure truth of one- and two-block formulas.
+- **[Exact epimorphisms for square-zero radical algebras](SquareZeroRadicalEpimorphisms/PROOF.md)** — Counts onto maps in polynomial full-table time when the target semisimple factors interact through a radical graph of bounded treewidth.
+- **[Exact surjections onto linear inverse monoids](LinearInverseMonoidSurjections/PROOF.md)** — A uniform polynomial-time algorithm for raw explicit tables via a single cyclic scalar corner, with arbitrary dimension and field size.
+<!-- eight-further-structural-theorems:end -->
+
 <!-- grochow-eight-orbit-transfer:start -->
 - **[A degeneration-preserving compiler for tensors](TensorDegenerationCompiler/PROOF.md)** — Transfers full orbit-closure inclusion for tensors to associative algebra degeneration and split classical conjugacy. For three-tensors the algebra has linear dimension and cube-zero radical.
 - **[Exact isotopy transporters and degenerations of unital algebras](AssociativeIsotopyDegeneration/PROOF.md)** — Identifies all three-factor transporters of multiplication tensors and recovers associative-algebra degeneration from tensor degeneration.
