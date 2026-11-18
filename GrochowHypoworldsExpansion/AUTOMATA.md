@@ -1,0 +1,37 @@
+# Two extensions of the elementary coarse-graining results
+
+## Exact NP-completeness at block size two with a fixed eight-symbol target
+
+There is one fixed eight-symbol radius-one target for which deciding whether a supplied radius-one source has a nonconstant exact block coarse-graining at \(N=2\) is NP-complete. The source alphabet is variable and its local rule is an explicit table. All nonconstant witnesses produced by the reduction can be taken onto, and the same reduction proves hardness when onto is required. This gives a complexity distinction between fixed elementary rules and variable source alphabets. [Elementary model and fixed-block question](https://arxiv.org/html/2012.12153#S5)
+
+First use a seven-element magma \(B\) with tags 0 and 1, three colors, and two dark values \(d_0,d_1\). Define multiplication with default 0 and the following overrides.
+
+- The pairs \(00,11,01,10\) return \(1,0,d_0,d_1\), respectively.
+- A pair \((1,c)\) with \(c\) a color returns 1. A pair of colors returns \(d_0\) for equality and \(d_1\) otherwise.
+- A pair \((d,0)\) or \((c,d)\) with \(d\) dark and \(c\) a color returns \(d_0\). A pair of dark values returns 0.
+
+The two dark values are indistinguishable as inputs. If \(t(x)=x*(x*x)\), then \(t\) always returns a dark value, and \(t(x)*t(x)=0\) is a constant term. In particular all homomorphisms from the following source fix the four named tags. Build the source magma \(S\) from a graph, adding a disjoint triangle. Each graph vertex is a color-type variable. Each ordered pair of distinct nonadjacent vertices has a separate slack variable of dark input type. Copy every generic operation rule by input type, except that vertex pairs return \(d_0\) when equal, \(d_1\) when adjacent, and their slack variable otherwise. The same constant term returns 0. Then \(00,01,10\) force the other three tags. The color selector forces every graph vertex to map to a color. Adjacent vertices must map to distinct colors. Conversely any coloring extends by sending each slack to the appropriate comparator result. The triangle makes the extended map onto \(B\).
+
+Adjoin an identity \(e\) to both magmas, writing \(S^+,B^+\). The identity is the unique idempotent, since none of the old elements multiplies with itself to give itself. The constant term above is 0 on the old part and \(e\) at \(e\). A nonconstant homomorphism must fix \(e\) and send some old element into the old part, forcing 0 to map to 0 by the term. Then every old element maps to the old part. Hence a nonconstant homomorphism \(S^+\to B^+\) exists exactly when the graph is three-colorable.
+
+Use fine alphabet \((S^+)^2\) and local rule
+\[
+A(l,c,r)=(l_2,l_1*r_1).
+\]
+At time two, each register at site \(i\) becomes the product of that register at sites \(i-2\) and \(i\). Thus the block update at block length two has domain block alphabet \((S^+)^4\), whose operation between the left and center blocks is coordinatewise multiplication. Use the fixed target \(B^+\) updating by the product of its left and center sites. The block-factor condition is exactly the magma homomorphism equation \((S^+)^4\to B^+\).
+
+The identity tuple must map to \(e\). If every restriction along a coordinate axis were constant, it would equal \(e\). Every tuple is a parenthesized product of axis elements, so the whole map would be constant. A nonconstant factor therefore restricts along some axis to a nonconstant homomorphism \(S^+\to B^+\). Conversely any such homomorphism composed with a coordinate projection gives a block factor, and the factor is onto when it arises from a coloring. The output source alphabet and its explicit local table have polynomial size in the graph. At fixed block size two a proposed map is polynomially checkable by scanning the three input blocks. This proves the claimed NP-completeness. It also shows that polynomial-time surjection testing for explicit ternary operation tables with arbitrary fixed finite targets would imply \(P=NP\), already by making a ternary operation ignore its last input.
+
+The reduction also counts maps exactly. Every nonconstant axis restriction is onto \(B^+\). Two distinct axes commute elementwise in the source, so two onto restrictions would force \(B^+\) to be commutative, contrary to \(0*1=d_0\ne d_1=1*0\). Since the axis values determine the whole map, each nonconstant block factor is one axis projection followed by an onto map \(S^+\to B^+\). The auxiliary triangle contributes six choices and all slack values are forced. Therefore the number of nonconstant block factors at \(N=2\) is 24 times the number of proper three-colorings of the original graph. General homomorphism hardness for explicit single-operation algebras was already known. [Berg, Homomorphism Factorization](https://arxiv.org/abs/1901.01817)
+
+## An all-size obstruction with a finite abelian target alphabet
+
+Let a fine radius-one source over a finite alphabet be left permutive. Assume there is an open center state in which the right-input action is a permutation for every left input, and a closed center state in which it is constant in the right input for every left input. There is no onto exact block factor at any \(N\ge2\) to a nontrivial finite abelian alphabet \(K\) with local law
+\[
+B(l,c,r)=\lambda_c(l)+\rho_c(r)+b_c,
+\]
+where the two end maps are group homomorphisms and may depend arbitrarily on the center state. This uses the prior all-size light-cone argument, with \(K\)-valued changes in place of Boolean derivatives.
+
+Let \(j\) be the highest essential coordinate of a block map \(h\), and let \(F_i\) be output site \(i\) of the evolved center block. Along the rightmost path from input \(x_{j+N}\) to \(F_j\), set each controlling center state to the open state. This is possible by choosing its distinct far-left pivot in sequence, from later spatial position to earlier. Left permutivity makes each choice possible and previous gates depend only on positions to the right of the new pivot. This choice of controlling centers does not involve \(x_{j+N}\). In the resulting context \(F_j\) runs through the fine alphabet as \(x_{j+N}\) varies, while each earlier \(F_i\) stays fixed. The pivots \(x_{i-N}\) for \(i<j\) can then vary the prefix arbitrarily without changing the controlling states or \(F_j\).
+
+Compare two variants of \(x_{j+N}\). The change in the right side of the block-factor equation is independent of the whole left block, because the \(\lambda\) summand cancels. Varying the prefix on the fine side shows that \(h(\text{prefix},a)-h(\text{prefix},b)\) is independent of the prefix for every pair \(a,b\). Thus \(h=\chi(\text{prefix})+\phi(x_j)\) with \(\phi\) nonconstant. Choose the two extreme-input variants so that their \(F_j\) values give distinct \(\phi\) values in the all-open context. The change in output is nonzero. Now change the first controlling center at \(x_{j+N-1}\) to the closed state. The rightmost path can no longer transmit any change, and the earlier sites are still independent of \(x_{j+N}\), so the fine-side change becomes zero. If \(j\ge1\), the altered center coordinate is in the prefix of the right block and cancels in the difference of its two \(h\)-values. If \(j=0\), it is the last coordinate of the center block, which \(h\) ignores since \(N\ge2\). In both cases the target-side change \(\rho_{h(C)}\big(\phi(a)-\phi(b)\big)\) is unchanged. This contradicts the previously nonzero value. These proofs are informal.

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-hypothesis-ledger-expansion:start -->
+- **[Grochow Hypoworlds expansion](GrochowHypoworldsExpansion/README.md)** — Expanded implication ledger with exact pair and triple replay, characteristic-two matrix-tuple isometry and involutive-algebra norm equivalences, new finite-alphabet coarse-graining hardness, a colored group pebble-game separation, and rational-oracle and IPS degree results. Informal proofs.
+<!-- grochow-hypothesis-ledger-expansion:end -->
+
 <!-- november-isomorphism-and-hitting-sets:start -->
 - **[November results on isomorphism and algebraic hitting sets](NovemberIsomorphismAndHittingSets/Research.md)** — Informal proofs on indistinguishable colored groups, symmetry-characterized graphs, simultaneous monomial code equivalence, and a clause-local obstruction to 3CNF hitting sets. Includes the scope and dependence of consequences for published open questions.
 <!-- november-isomorphism-and-hitting-sets:end -->
