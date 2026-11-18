@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-algebraic-algorithms:start -->
+- **[Four algebraic algorithms and reductions](FourAlgebraicAlgorithms/PROOF.md)** — Exact Cayley-table epimorphism counting into bounded-generator metabelian groups, tensor-isomorphism hardness for split symplectic and special orthogonal Lie subalgebra conjugacy with fixed Levi factor, deterministic circuit-IPS descent from finitely generated characteristic-zero fields, and exact block coarse-graining for finite targets with a quasigroup term. Informal proofs with their field, representation and input hypotheses.
+<!-- four-algebraic-algorithms:end -->
+
 <!-- coarse-graining-function-field-ips:start -->
 - **[Complexity of elementary cellular-automaton coarse-graining](ElementaryCoarseGrainingComplexity/PROOF.md)** — Answers Song–Grochow's fixed-block question for elementary rules. The decision and witness algorithm takes deterministic single-exponential time in numeric block size, and a separate decision algorithm uses quadratic space. Includes exact counting, an exhaustive verification harness for small blocks, and attribution to the earlier Boolean-structure CSP theorem that already implies the time-class inclusion.
 - **[Ideal Proof Systems and PIT over function fields](FunctionFieldIdealProofSystems/PROOF.md)** — Answers the positive-characteristic function-field case of Grochow's §7.2 question, with a same-field equivalence for Boolean UNSAT. The Variety Emptiness equivalence holds in both characteristics. The characteristic-zero Boolean case reduces to the rational case.
