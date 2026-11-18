@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- genus-two-epimorphisms:start -->
+- **[Genus-two group epimorphism and the limits of the genus promise](GenusTwoGroupEpimorphism/PROOF.md)** — Informal results on Grochow–Srivastava–Thakkar Open Question 3(3). There is a deterministic polynomial-time Cayley-table algorithm for bounded coefficient-field genus and arbitrary class-two targets of the same odd prime exponent. Under the literal centroid-module definition, exact genus two is polynomial-time equivalent to unrestricted class-two epimorphism at odd prime exponent. The broader algorithmic question remains open. Companion notes handle field Heisenberg quotients including characteristic two and power-map extensions, and local-ring quotient algorithms for bounded generator and socle ranks.
+<!-- genus-two-epimorphisms:end -->
+
 <!-- grochow-easy-four:start -->
 - **[Polynomial-time canonization and P versus NP](CanonicalFormsAndPNP/PROOF.md)** — Informal answer to all clauses of Fortnow–Grochow Open Question 5.10. Relative to every oracle, unrestricted polynomial-time complete invariants admit polynomial-time canonical forms exactly when P = NP. The proof encodes NP witnesses and adjustable padding in a single equivalence relation.
 - **[Coarse-graining the sixteen unresolved elementary automata](ElementaryAutomataCoarseGraining/PROOF.md)** — Informal resolution of Song–Grochow’s elementary-to-elementary census. None of the sixteen rules admits a nonconstant binary block factor at any block size greater than one. For the four-rule orbit of 154 the proof also excludes every proper nonconstant factor to a larger finite alphabet.
