@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- exterior-tensor-determinants:start -->
+- [Determinant tests for raw exterior multiplication and large intrinsic modules](ExteriorTensorDeterminants/Results.md) — Informal algorithms compute exact determinant profiles on raw exterior multiplication tensors and give ordinary TI reductions for large intrinsic blocks with small determinant-relevant module factors.
+<!-- exterior-tensor-determinants:end -->
+
 <!-- intrinsic-tensor-subspaces:start -->
 - [Intrinsic subspaces and the limits of projective lists](IntrinsicTensorSubspaces/Results.md) — Informal results on large projective orbits, exact determinant profiles from two subspace lists, raw extraction by derivations, and a Las Vegas algorithm for semisimple multiplication tensors.
 <!-- intrinsic-tensor-subspaces:end -->
