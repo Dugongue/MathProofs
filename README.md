@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-orientation-jets:start -->
+- [Pfaffian compression and the limits of universal orientation gadgets](TensorOrientationJets/Results.md) — Informal one-sign reductions via Pfaffian jets, alternating matches and square factors, plus an exponential dimension lower bound for universal bounded-order determinant gadgets with arbitrary lift kernels.
+<!-- tensor-orientation-jets:end -->
+
 <!-- one-sign-tensor-comparison:start -->
 - [Single-instance sign tests for intrinsic forms and operators](OneSignTensorComparison/Results.md) — Informal one-sign reductions to one ordinary TI pair via Pfaffian colors, alternating flags, operator multiplicities, and small symbolic pencils. Includes an explicit algebra construction for OR packing.
 <!-- one-sign-tensor-comparison:end -->
