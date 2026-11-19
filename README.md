@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-structural-transfers:start -->
+- [Sharp witnesses and information bounds in algebraic isomorphism and complexity](GrochowStructuralTransfers/Results.md) — Four informal proofs on minimum group probes for parity, optimal graph Hom-count precision, exact versus border polynomial oracles, and adaptive probes for simultaneous similarity.
+<!-- grochow-structural-transfers:end -->
+
 <!-- hypothesis-world-extensions:start -->
 - [Modular Hom profiles for graphs and finite-field modules](HypothesisWorldExtensions/Results.md) — Informal proofs and executable hypothesis ledger. Two moduli have identical attainable agreement patterns when the module field is allowed to vary. Three suffice to distinguish graphs from modules, and minimally impossible module patterns occur at every arity from three onward. Includes results on exact oracle extraction, rational projector feasibility and low-bit evaluation for binary codes.
 <!-- hypothesis-world-extensions:end -->
