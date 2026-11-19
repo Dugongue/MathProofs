@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-and-multiplication-crossovers:start -->
+- [Tensor isomorphism inside the flip representation class and three related results](IsomorphismAndMultiplicationCrossovers/Results.md) — Informal proofs of local Yang–Baxter equivalence hardness, an all-field matrix product packing theorem and its orbit-equation consequences, cancellation of algebra-action catalysts for saturated products, and a witness-density bound for mixed group generation.
+<!-- isomorphism-and-multiplication-crossovers:end -->
+
 <!-- matrix-multiplication-frontier:start -->
 - [Four results on matrix multiplication tensors](MatrixMultiplicationFrontier/Results.md) — Informal proofs on full-size determinant extraction from orbit equations, TI-complete pencils of split matrix algebras, exact and border restrictions of saturated batches, and a complete common-divisor test for two-slice border membership.
 <!-- matrix-multiplication-frontier:end -->
