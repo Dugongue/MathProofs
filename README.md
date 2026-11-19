@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- rational-descent-and-calibration:start -->
+- [Rational descent, invariant subspaces, braid equations and exact calibration](RationalDescentAndCalibration/Results.md) — Four informal reductions, with halting-completeness conditional on the proposed Diophantine definition of the integers in the rationals. Includes an unconditional affine-scheme encoding into the braid equation and a one-use decision algorithm for rational calibration.
+<!-- rational-descent-and-calibration:end -->
+
 <!-- yang-baxter-classification:start -->
 - [Four classification theorems for Yang–Baxter operators](YangBaxterClassification/Results.md) — Informal proofs on directed degeneration within the flip representation class, finite-unitary TI-completeness, exact hidden-basis channel query thresholds, and a recognizable GI-complete family.
 <!-- yang-baxter-classification:end -->
