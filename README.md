@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-transport-and-halting:start -->
+- [Four halting problems for tensor transport and algebra symmetries](TensorTransportAndHalting/Results.md) — Four unconditional informal integral results on restricted transport of matrix multiplication, triangularization over a fixed algebra, partial images of a marked matrix, and cyclic conjugacy classes in nilpotent-group fibers. Includes conditional rational extensions.
+<!-- tensor-transport-and-halting:end -->
+
 <!-- tensor-halting-thresholds:start -->
 - [Four halting thresholds for tensors](TensorHaltingThresholds/Results.md) — Informal proofs on rational best rank-one approximation, exact subspace expansion, and tensor-rank catalyst cancellation under a Diophantine premise, plus unconditional halting-completeness for entanglement across a commuting matrix-product family.
 <!-- tensor-halting-thresholds:end -->
