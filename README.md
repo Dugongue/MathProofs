@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- matrix-multiplication-frontier:start -->
+- [Four results on matrix multiplication tensors](MatrixMultiplicationFrontier/Results.md) — Informal proofs on full-size determinant extraction from orbit equations, TI-complete pencils of split matrix algebras, exact and border restrictions of saturated batches, and a complete common-divisor test for two-slice border membership.
+<!-- matrix-multiplication-frontier:end -->
+
 <!-- determinant-extension-and-probe-bounds:start -->
 - [Determinant extraction, field extensions, and sharp isomorphism probe bounds](StructuralCrossover/Results.md) — Four informal proofs on equations for the matrix multiplication orbit closure, determinant-one quiver isomorphism over extension fields, directional group Hom-count precision, and the degree threshold for modular graph probes.
 <!-- determinant-extension-and-probe-bounds:end -->
