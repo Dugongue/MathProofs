@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-halting-thresholds:start -->
+- [Four halting thresholds for tensors](TensorHaltingThresholds/Results.md) — Informal proofs on rational best rank-one approximation, exact subspace expansion, and tensor-rank catalyst cancellation under a Diophantine premise, plus unconditional halting-completeness for entanglement across a commuting matrix-product family.
+<!-- tensor-halting-thresholds:end -->
+
 <!-- rational-descent-and-calibration:start -->
 - [Rational descent, invariant subspaces, braid equations and exact calibration](RationalDescentAndCalibration/Results.md) — Four informal reductions, with halting-completeness conditional on the proposed Diophantine definition of the integers in the rationals. Includes an unconditional affine-scheme encoding into the braid equation and a one-use decision algorithm for rational calibration.
 <!-- rational-descent-and-calibration:end -->
