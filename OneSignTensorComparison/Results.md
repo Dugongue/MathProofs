@@ -1,0 +1,15 @@
+# Single-instance sign tests for intrinsic forms and operators
+
+We study one-sign tensor isomorphism over the field of three elements. The input is a pair of raw tensors and the required determinant is +1 in one tested mode. A tensor is flexible for that sign if some ordinary automorphism has determinant −1 in that mode. Otherwise it is rigid. Both possibilities occur in the same raw families covered by the constructions below.
+
+| Result | What one ordinary TI instance decides |
+|---|---|
+| Intrinsic alternating flags | Mark a short tuple of alternating forms and restrict successively to radicals. Pfaffians determine the signs on nonsingular quotients. Only the final radical requires a determinant gadget, and logarithmic dimension suffices. [Proof](AlternatingForms.md) |
+| Intrinsic operator lists | Mark an endomorphism and use rational Jordan primary pieces. A chain length contributes that power of the sign of its multiplicity map. Even chain lengths therefore disappear, regardless of their size. Only multiplicities at odd lengths require a small determinant computation. [Proof](AlternatingForms.md) |
+| Unordered Pfaffian colors | Mark an intrinsic small family of alternating forms by an unordered coordinate algebra. A positive transporter preserves the exact Pfaffian colors. This is an objectwise reduction on the stated class. It also works in a linked representation whose determinant equals the tested sign. [Proof](CovariantRepresentations.md) |
+| Symbolically nonsingular pencils | A constant-dimensional covariant alternating pencil can be compiled even if every base-field form has a large radical. Evaluate the whole pencil over one small auxiliary field, mark exact Pfaffian colors, and enforce base rationality of the original maps by Frobenius. The raw quotient construction gives an explicit family with both sign regimes. [Proof](SymbolicPencils.md) |
+| Polynomially many candidate marks | Package the logical OR of ordinary TI instances as one ordinary TI pair. An explicit linear-size algebra gate realizes the prior OR identity, and balancing gives polynomial size for any polynomial-size monotone formula over ordinary TI predicates. This lets a comparison search all polynomially many marked branches without querying TI during construction. [Proof](Disjunction.md) |
+
+The profinite halting examples concerned subgroups of integral basis changes. Here the relevant quotient has order two and the difficulty is realizing the sign through an ordinary tensor comparison. These constructions use Pfaffians, multiplicity exponents and actual covariant data to realize it on the listed classes. They handle the flexible and rigid cases of those classes by the same comparison. For arbitrary inputs no extraction of adequate covariant data, or replacement unrestricted compiler, is established.
+
+All proofs are informal. Ordinary TI conjunction, the uniform mixed-tensor packing and the tensor-system compiler are reused. The OR identity is credited to the earlier work. Priority for the exact new conditional reductions and raw families has not been established. [Open Question 1.9](https://arxiv.org/html/2306.03135v2#S1)

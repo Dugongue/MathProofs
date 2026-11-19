@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- one-sign-tensor-comparison:start -->
+- [Single-instance sign tests for intrinsic forms and operators](OneSignTensorComparison/Results.md) — Informal one-sign reductions to one ordinary TI pair via Pfaffian colors, alternating flags, operator multiplicities, and small symbolic pencils. Includes an explicit algebra construction for OR packing.
+<!-- one-sign-tensor-comparison:end -->
+
 <!-- exterior-tensor-determinants:start -->
 - [Determinant tests for raw exterior multiplication and large intrinsic modules](ExteriorTensorDeterminants/Results.md) — Informal algorithms compute exact determinant profiles on raw exterior multiplication tensors and give ordinary TI reductions for large intrinsic blocks with small determinant-relevant module factors.
 <!-- exterior-tensor-determinants:end -->
