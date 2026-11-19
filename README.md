@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-orientation-certificates:start -->
+- **Two determinant certificates for signed tensor isomorphism over F₃** — Informal proofs of a logarithmic-corank Koszul determinant test and a low module-rank extension-field orientation lock that includes the Frobenius sign. These are sufficient conditions related to Open Question 1.9. [Proof packet](TensorOrientationCertificates/Results.md)
+<!-- tensor-orientation-certificates:end -->
+
 <!-- tensor-sign-chain:start -->
 - [What collapses in the four determinant tiers](TensorSignChain/Results.md) — Informal proofs of a three-sign tensor-system compiler, the middle kernel-collapse implication, sharp affine-probe bounds, and exponential dimension bounds for exact lifting across adjacent tiers.
 <!-- tensor-sign-chain:end -->
