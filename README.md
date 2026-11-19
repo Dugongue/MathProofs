@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- four-logspace-results:start -->
+- [Four logspace results on groups, signed isomorphism, tensors and grids](FourLogspaceResults/Results.md) — Informal proofs. Includes canonical constructive membership for fixed finitely presented subgroups of residually free groups, the five/six threshold for deciding and counting signed transporters, parity-logspace completeness in supplied rank-one tensor completions over the three-element field, and a treewidth classification for normalizing supplied constraint solutions.
+<!-- four-logspace-results:end -->
+
 <!-- word-and-fiber-canonization:start -->
 - [Canonical words, perfect matchings and local invariants](WordAndFiberCanonization/Results.md) — Informal proofs. A fixed finitely generated subgroup of SL₄(ℤ) has logspace word normal forms exactly when L = NP, and polynomial-time word normal forms exactly when P = NP. Further results cover intrinsic word-length approximation, rank-one matrices measured one or two entries at a time, bounded-degree three-dimensional matching with a supplied solution, average-case selection from two-element classes, and the Boolean locality threshold.
 <!-- word-and-fiber-canonization:end -->
