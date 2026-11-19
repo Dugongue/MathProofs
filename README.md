@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-question-equivalences:start -->
+- [Grochow questions on oracle extraction, subgraph circuits and canonization](GrochowQuestionEquivalences/Results.md) — Informal proofs. Linear-degree, absolutely irreducible counterexamples to exact and border determinant and Pfaffian oracle extraction in fixed positive characteristic; an equivalence between ordinary subgraph circuits and VFPT = VW[1], already for paths; two oracle-level canonization equivalences; and complete invariants for binary modular-matrix subgroup equality.
+<!-- grochow-question-equivalences:end -->
+
 <!-- four-logspace-results:start -->
 - [Four logspace results on groups, signed isomorphism, tensors and grids](FourLogspaceResults/Results.md) — Informal proofs. Includes canonical constructive membership for fixed finitely presented subgroups of residually free groups, the five/six threshold for deciding and counting signed transporters, parity-logspace completeness in supplied rank-one tensor completions over the three-element field, and a treewidth classification for normalizing supplied constraint solutions.
 <!-- four-logspace-results:end -->

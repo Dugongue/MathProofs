@@ -1,0 +1,14 @@
+# Grochow questions on circuit extraction, subgraphs and canonization
+
+| Published target | What the informal arguments establish |
+|---|---|
+| Dey–Guo §4 item 2, extending determinant and Pfaffian oracle extraction to small positive characteristic | **Negative** for exact and border evaluation-oracle circuits of fixed depth and polynomial size. For each fixed prime there are homogeneous, absolutely irreducible oracles of linear degree in the respective ideals. The counterexamples work over the algebraic closure as well. [Main proof](SmallCharacteristic.md) |
+| Grochow–Urisman Q1.11, ordinary symbolic arithmetic circuits over the complex numbers | **Equivalent to VFPT = VW[1].** Connected paths alone give the same equivalence. A negative answer would separate classical VP from VNP. The symmetric-circuit reading has an earlier negative answer. [Proof](Subgraphs.md) |
+| Fortnow–Grochow §6.2, canonization at level i | **Two adjacent equalities are each equivalent to PH collapsing to its deterministic level Δ at level i+1.** So is equality of all four classes together. The complete-invariant versus decision comparison alone remains open. This specializes a relativizing argument already present in MathProofs. [Proof and a separate pair-density refinement](CanonicalForms.md) |
+| Modular-group subgroup equality, a candidate raised in Grochow's thesis | **A polynomial-time complete invariant exists**, even with variable lists of binary matrix generators. This resolves the concrete candidate. The broader existential question asks for a class exhibiting different behavior. [Proof](SubgroupInvariants.md) |
+
+The small-characteristic result is the strongest claim in this packet. The source authors already isolate the difficulty of extracting a root. The argument shows why root-free evaluation cannot evade it even for certain irreducible oracles, and why allowing a border limit does not fix it. This addresses universal oracle reductions. The characteristic-zero and sufficiently-large-characteristic theorems of the source authors retain their original force. [Published question and hypotheses](https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html#S4)
+
+The [second determinant proof](Determinants.md) records the exact fixed-field class equivalence, an elementary check over the two-element field, and the distinction between Grochow's literal unrestricted-depth conjecture and the later bounded-depth question. The original unrestricted-depth formulation was already recognized as immediate in prior work. The additional historical answers in the subgroup note are also credited there.
+
+These arguments are informal. They have not been Lean-verified or independently peer reviewed. Citations identify substantial prior results, and publication priority for the new formulations and deductions is unverified.
