@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- yang-baxter-classification:start -->
+- [Four classification theorems for Yang–Baxter operators](YangBaxterClassification/Results.md) — Informal proofs on directed degeneration within the flip representation class, finite-unitary TI-completeness, exact hidden-basis channel query thresholds, and a recognizable GI-complete family.
+<!-- yang-baxter-classification:end -->
+
 <!-- isomorphism-and-multiplication-crossovers:start -->
 - [Tensor isomorphism inside the flip representation class and three related results](IsomorphismAndMultiplicationCrossovers/Results.md) — Informal proofs of local Yang–Baxter equivalence hardness, an all-field matrix product packing theorem and its orbit-equation consequences, cancellation of algebra-action catalysts for saturated products, and a witness-density bound for mixed group generation.
 <!-- isomorphism-and-multiplication-crossovers:end -->
