@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- matrix-transport-relaxations:start -->
+- [Relaxing the allowed basis changes for matrix multiplication tensors](MatrixTransportRelaxations/Results.md) — Unconditional informal proofs give arbitrarily long chains of strict enlargements retaining halting-completeness, an exact quotient classification of paired overgroups, and decidable arithmetic and maximal effective endpoints.
+<!-- matrix-transport-relaxations:end -->
+
 <!-- tensor-transport-and-halting:start -->
 - [Four halting problems for tensor transport and algebra symmetries](TensorTransportAndHalting/Results.md) — Four unconditional informal integral results on restricted transport of matrix multiplication, triangularization over a fixed algebra, partial images of a marked matrix, and cyclic conjugacy classes in nilpotent-group fibers. Includes conditional rational extensions.
 <!-- tensor-transport-and-halting:end -->
