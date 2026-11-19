@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-intermediate-problems:start -->
+- **Intermediate problems for signed tensor isomorphism over F₃** — Proves many-one bounds for determinant-width, guarded-correction, and three-direction correction problems between ordinary, one-sign, two-sign and special-linear TI, with reverse exclusions in specified compiler models. Also reduces even matching of independent tensor lists to ordinary TI and gives bounds for graph-coupled matching. Informal proofs related to Open Question 1.9. [Proof packet](TensorSignIntermediateProblems/Results.md)
+<!-- tensor-sign-intermediate-problems:end -->
+
 <!-- tensor-orientation-jets:start -->
 - [Pfaffian compression and the limits of universal orientation gadgets](TensorOrientationJets/Results.md) — Informal one-sign reductions via Pfaffian jets, alternating matches and square factors, plus an exponential dimension lower bound for universal bounded-order determinant gadgets with arbitrary lift kernels.
 <!-- tensor-orientation-jets:end -->
