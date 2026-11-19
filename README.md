@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-search-space:start -->
+- [Four reductions for the determinant search in tensor isomorphism](TensorSignSearchSpace/Results.md) — Informal proofs give an ordinary TI oracle algorithm for two invariant projective lists, sharp semisimple witnesses for stabilizer signs, and two exact finite-field extension descent theorems.
+<!-- tensor-sign-search-space:end -->
+
 <!-- matrix-transport-relaxations:start -->
 - [Relaxing the allowed basis changes for matrix multiplication tensors](MatrixTransportRelaxations/Results.md) — Unconditional informal proofs give arbitrarily long chains of strict enlargements retaining halting-completeness, an exact quotient classification of paired overgroups, and decidable arithmetic and maximal effective endpoints.
 <!-- matrix-transport-relaxations:end -->
