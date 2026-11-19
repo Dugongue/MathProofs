@@ -1,0 +1,68 @@
+# Small invariant subspaces suffice for exact tensor determinant profiles
+
+Fix a finite field F and allow computations over an explicitly represented finite extension E/F of polynomial degree. A three-tensor over E is written as a bilinear map T:U×V→W, with W equal to the span of its values. In this convention, a transporter (f,g,h) satisfies hT(u,v)=S(fu,gv). Converting back to the convention with three primal tensor factors inverts the two covector-mode determinant coordinates. In particular, it preserves tests for determinant one.
+
+**Theorem.** Suppose each input has two supplied finite lists of subspaces, one spanning U* and one spanning V*. Every ordinary transporter of the input pair must take the two lists to their counterparts under its dual maps. Each input stabilizer must preserve its own lists as sets. Write M for their maximum cardinality and b_U,b_V for their maximum subspace dimensions. The exact profile of all three determinant norms to F can be computed by ordinary TI queries in time polynomial in the explicit input length L, M, and 2^w, where w is a computable width defined below and
+
+    w ≤ max(b_U,b_V,b_U b_V).
+
+In particular polynomially many subspaces of dimensions bounded by O(√log L) in each of the two modes suffice. The width can still be logarithmic with larger subspaces or larger product dimensions when the relevant induced maps have small rank or corank. No list on W is used. No ordering of either input list is required. If these two lists can be produced from the raw tensors over a safe extension, the safe extension theorem recovers the exact profile over the original field. Over a fixed field one may take E=F.
+
+The proof uses ordinary TI decision as an oracle. A raw tensor family is covered when a uniform polynomial-time procedure produces lists with the stated intrinsic property and width. The result is informal.
+
+## Mark subspaces with linear maps
+
+To require a transporter to match one covector subspace P⊂U* to its specified counterpart P'⊂U'^*, include restriction of evaluation U→P* and its counterpart in the tensor system alongside the tensor. The auxiliary maps on P* are free. A matching transporter induces the dual of its map on P, giving exactly the required commuting square. Conversely the square forces f to carry the kernel P^⊥ onto P'^⊥ and hence to map P to P' projectively under its induced dual. The same construction works in V*. There is one map for each paired mark. This encodes the actual subspace, with no prescribed basis map inside it.
+
+These linear maps and the input bilinear tensor are bounded-order mixed tensors. The fixed-signature version follows from the earlier uniform packing. For clarity, pad each component to order three using a marked trivial line, create a separate occurrence copy of each variable for every slot, and link all occurrences to their underlying variables by one blockwise linear map. Use the coordinate algebra E^m to label the original and occurrence summands, and its module with distinct dimensions 1,…,m on the successive coordinates. This forces every label idempotent to be fixed. Pack the data components into eight tensors, one per primal or dual variance pattern. Each component occupies private summands, so no mixing is possible. Together with the six label, link and marked-vector tensors this gives fourteen components, independent of the number of marks. The published compiler then reduces this fixed system to ordinary TI. Restriction of scalars, with multiplication by an extension generator marked on each originally E-linear space, gives the corresponding ordinary TI oracle over F. Equivalently do the restriction first, and pack the resulting F-linear system by the same recipe. [Uniform mixed-system packing](https://github.com/Dugongue/MathProofs/blob/main/SLAdjointMultiplicities/PRIOR-UNIFORM-PACKING.md) · [Chen, Grochow, Qiao, Tang and Zhang, Theorem 4.1](https://arxiv.org/html/2306.03135v2#S4)
+
+## Extract an output filtration from the two marked families
+
+Choose an ordered sublist of each source list whose sum spans its mode. Keep only the subspaces that enlarge the current sum. These sublists have length at most the mode dimensions. Once their target images have all been chosen, their cumulative sums and the corresponding target sums are paired under every matching dual transporter. Taking annihilators and reversing order gives matched increasing flags
+
+    0=U₀⊂U₁⊂…⊂U_a=U,       0=V₀⊂V₁⊂…⊂V_c=V
+
+and respective target flags. Here and below the end of a flag means its full ambient space. All dimensions and coordinate bases are computed by Gaussian elimination. Denote successive quotients by A_i=U_i/U_(i−1) and B_j=V_j/V_(j−1). Their dimensions are at most b_U,b_V.
+
+Use the lexicographically ordered output filtration with steps
+
+    S_ij = span T(U_(i−1),V) + span T(U_i,V_j),
+    S_i0 = span T(U_(i−1),V).
+
+In particular S_ic=S_(i+1,0), and the last step is W. Let C_ij=S_ij/S_i(j−1). There is a natural surjective map
+
+    m_ij : A_i⊗_E B_j → C_ij.
+
+It sends [u]⊗[v] to [T(u,v)]. Changing u by a vector of U_(i−1) changes the image by a vector of span T(U_(i−1),V). Changing v by a vector of V_(j−1) changes the image by a vector of span T(U_i,V_(j−1)). Both vanish in C_ij. The generators defining S_ij show surjectivity. The construction commutes with every marked transporter. Thus the target maps and the kernels K_ij=ker m_ij are matched automatically.
+
+Define w as the largest of all the dimensions dim A_i, dim B_j, and min(dim C_ij,dim K_ij). These dimensions are independent of which feasible full matching of marks was chosen, since they can be computed in the source alone. When applying the stabilizer queries, use the source flags as well. A proposed matching with differing target dimensions can be rejected directly. In particular every output increment has dimension at most b_U b_V and image or kernel suffices for reading its determinant.
+
+## Read the determinant tuple after completing the marks
+
+The determinant of each mode map equals the product of its quotient determinants in adapted frames, times the determinant of the target frame divided by that of the source frame. The frame constants are explicit. Let f_i,g_j,h_ij,k_ij be the induced maps on A_i,B_j,C_ij,K_ij in their chosen source and target bases. The short exact sequence defining C_ij gives
+
+    det h_ij = c_ij (det f_i)^(dim B_j) (det g_j)^(dim A_i) (det k_ij)^(-1),
+
+where c_ij is a known frame ratio. Indeed the left-to-right action on A_i⊗B_j is f_i⊗g_j, with determinant (det f_i)^(dim B_j)(det g_j)^(dim A_i) in tensor-product frames. Adapt these frames to K_ij and lift a basis of C_ij to obtain c_ij by the change-of-basis determinant. In the case dim C_ij≤dim K_ij use h_ij directly. Otherwise use the displayed identity. Zero-dimensional factors have determinant one. This is the local image-or-kernel form of the determinant calculation used in castling. [Determinant cosets by castling](https://github.com/Dugongue/MathProofs/blob/main/DeterminantCosetsByCastling/PROOF.md)
+
+All these induced maps can be tied to the same transporter by adding actual filtration inclusions, quotient maps, the map m_ij, and the kernel inclusion in A_i⊗B_j. Include the canonical bilinear map to A_i⊗B_j when it is needed. These equations force the induced maps, and every matching transporter extends to them because the subspaces and maps were obtained equivariantly. In each dimension at most w attach the full exterior algebra of the relevant A_i, B_j, C_ij or K_ij. Its algebra multiplication and degree-one inclusion force the action on all wedge products of generators. Include its top-line inclusion, using the ordered wedge of the chosen basis as a frame on that line. The resulting multiplier on the line is exactly the desired determinant. [Earlier adjoint determinant-line construction](https://github.com/Dugongue/MathProofs/blob/main/SLAdjointMultiplicities/PROOF.md)
+
+To assemble products, multiply the corresponding one-dimensional E-lines by maps with structure constants one in their chosen frames. Their intertwining relation forces the output line scale to be the product of the input scales. The E-bilinear dual evaluation forces an inverse scale. Integer powers used in the product formula have polynomial magnitude or can be made by repeated squaring. For a norm line, link the original line to its copies by the F-linear Frobenius maps x↦x^(q^j), 0≤j<[E:F], where q=|F|. Compatibility forces the line multipliers on those copies to be the respective conjugates of the original multiplier. Their product is its norm. The same description works for a line reused with multiple exponents by reusing or copying it via identity maps. The only unforced requirement imposed by these equations is the specified norm tuple, enforced by appropriately scaled source and target marks on the three final lines, using the known frame ratios. A matching transporter with that tuple extends to every gadget.
+
+We can choose all coordinate bases separately at both endpoints. A flag step or an exact sequence supplies known determinants of the basis changes, so no equality of raw coordinate frames is assumed. There are polynomially many subquotients and norm factors. Each included exterior algebra has E-dimension at most 2^w. Every individual tensor component is of order at most three. Apply the uniform packing described above to this entire diagram, with the original marked tensor still present. The output size and construction time are polynomial in L+M+2^w and in the extension degree. Because the base field is fixed, the norm profile for a complete marking is obtained by testing a constant number of tuples. No actual transporter has to be constructed.
+
+## Recover the unmarked norm profile
+
+An initial ordinary TI query rejects an empty orbit. On a positive pair choose one feasible full matching of the source sublists greedily, using the ordinary marked query at each step. Feasibility never fails along a selected branch because every genuine transporter sends each source marked subspace to a member of the corresponding target list. The norm test above gives one feasible reference tuple for this matching.
+
+For the source stabilizer let G_i fix the first i marks in a common ordering of the two sublists. For each possible image of the next marked subspace, use the ordinary query with that image and the earlier marks fixed. Complete each feasible partial match greedily to a full feasible marking and retain any of its feasible norm tuples. These tuples come from one representative in every coset of G_(i+1) in G_i, since cosets are indexed by the next-mark images. Complete the calculation by obtaining the entire norm image of the pointwise subspace stabilizer through the full-marking test with identical input and output. The product of the recorded tuples generates the determinant norm image of G_0 together with that pointwise image. Translating by the reference tuple gives precisely the unmarked transporter profile. There are polynomially many ordinary queries, since for each greedy step or stabilizer level the list of candidate subspaces has length at most M. This uses only the subspace action, without requiring it to be faithful. All transformations of the kernel are accounted for by the filtered determinant compilation.
+
+If the bilinear output is not spanned by the tensor values, restrict it to their span before applying the argument. In that case the unused complement gives every output determinant independently by varying one complement coordinate. This restores the original ordinary profile exactly.
+
+## A family where the subspaces are small and the projective point lists are large
+
+Over E take the direct sum of m copies of the canonical map E²×E²→E²⊗E², with all products across distinct summands zero. Its dimensions are (2m,2m,4m). In one summand a centroid triple has a⊗I=I⊗b on E²⊗E², so a and b are a common scalar and the output action is that scalar. In the sum all off-diagonal centroid blocks vanish, by applying the centroid identities to vectors from matching and nonmatching summands. Thus the centroid is E^m, and its primitive idempotents give exactly the displayed 2-dimensional input blocks and their duals. These subspace lists are intrinsic and computable in this family by the direct-sum centroid procedure over the base field, followed by extension. [Direct-sum determinant assembly](https://github.com/Dugongue/MathProofs/blob/main/SLDeterminantAssembly/PROOF.md)
+
+For each block, GL₂(E) acts independently on either input block while its tensor product action supplies the output map. If an invariant spanning list of projective covector lines exists in that mode, some line projects nontrivially onto that block. Its orbit projects onto every line of the 2-dimensional block, so the list has at least |E|+1 members. With extension degree polynomial in m and large enough that |E| grows exponentially in m, the point lists are superpolynomial in the explicit input size. The subspace lists have length m and width two, and the induced output maps for block products are injective or zero. This proves a separation between the width criterion and finite point enumeration. The example already has a direct-sum algorithm, while the filtration theorem permits overlapping subspace lists and requires no tensor direct-sum decomposition.
+
+The theorem supplies a sufficient reduction with strictly broader allowed data over large extensions. Universal polynomial-time extraction of lists with the stated width is a separate question.

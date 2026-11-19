@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- intrinsic-tensor-subspaces:start -->
+- [Intrinsic subspaces and the limits of projective lists](IntrinsicTensorSubspaces/Results.md) — Informal results on large projective orbits, exact determinant profiles from two subspace lists, raw extraction by derivations, and a Las Vegas algorithm for semisimple multiplication tensors.
+<!-- intrinsic-tensor-subspaces:end -->
+
 <!-- tensor-sign-search-space:start -->
 - [Four reductions for the determinant search in tensor isomorphism](TensorSignSearchSpace/Results.md) — Informal proofs give an ordinary TI oracle algorithm for two invariant projective lists, sharp semisimple witnesses for stabilizer signs, and two exact finite-field extension descent theorems.
 <!-- tensor-sign-search-space:end -->
