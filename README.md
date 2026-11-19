@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- determinant-extension-and-probe-bounds:start -->
+- [Determinant extraction, field extensions, and sharp isomorphism probe bounds](StructuralCrossover/Results.md) — Four informal proofs on equations for the matrix multiplication orbit closure, determinant-one quiver isomorphism over extension fields, directional group Hom-count precision, and the degree threshold for modular graph probes.
+<!-- determinant-extension-and-probe-bounds:end -->
+
 <!-- grochow-structural-transfers:start -->
 - [Sharp witnesses and information bounds in algebraic isomorphism and complexity](GrochowStructuralTransfers/Results.md) — Four informal proofs on minimum group probes for parity, optimal graph Hom-count precision, exact versus border polynomial oracles, and adaptive probes for simultaneous similarity.
 <!-- grochow-structural-transfers:end -->
