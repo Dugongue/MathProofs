@@ -1,0 +1,477 @@
+# id | evidence profile | rule | justification | source
+R01|local|T1_named|Map each same-labeled path edge by its tensor-mode homomorphism and preserve the tagged relation. The unmarked result concerns reflection of isomorphism, while functoriality includes singular maps.|https://github.com/Dugongue/MathProofs/tree/main/FunctorialTensorReductions
+R02|published|T1_all -> T1_named|The named associative-algebra branch is included in the declared all-branches claim.|https://arxiv.org/abs/1907.00309
+R03|published|T2_tensor|Strassen's tensor restriction semiring has its asymptotic spectrum. Additional proposed categories and spectral maps have separate conditions.|https://arxiv.org/abs/1808.02452
+R04|published|T3_all -> T3_2_3|Take the two stated primes in the all-fields claim.|https://arxiv.org/abs/1907.00309
+R05|published|T3_all -> T3_3_2|Take the two stated primes in the reverse direction.|https://arxiv.org/abs/1907.00309
+R06|published|T4_all -> T3_all|Compose both directions through the rational problem using the same encodings.|https://arxiv.org/abs/1907.00309
+R07|published|T4_all -> T4_2_Q|Specialize the all-prime statement.|https://arxiv.org/abs/1907.00309
+R08|published|T4_all -> T4_Q_2|Specialize the all-prime statement.|https://arxiv.org/abs/1907.00309
+R09|published|T4_all -> T4_3_Q|Specialize the all-prime statement.|https://arxiv.org/abs/1907.00309
+R10|published|T4_all -> T4_Q_3|Specialize the all-prime statement.|https://arxiv.org/abs/1907.00309
+R11|published|T4_2_Q & T4_Q_3 -> T3_2_3|Composition of the two many-one reductions gives the cross-characteristic reduction.|https://arxiv.org/abs/1907.00309
+R12|published|T4_3_Q & T4_Q_2 -> T3_3_2|Composition of the two many-one reductions gives the cross-characteristic reduction.|https://arxiv.org/abs/1907.00309
+R13|published|T3_2_3 & T4_3_Q -> T4_2_Q|Compose via F3.|https://arxiv.org/abs/1907.00309
+R14|published|T3_3_2 & T4_2_Q -> T4_3_Q|Compose via F2.|https://arxiv.org/abs/1907.00309
+R15|published|T4_Q_2 & T3_2_3 -> T4_Q_3|Compose via F2.|https://arxiv.org/abs/1907.00309
+R16|published|T4_Q_3 & T3_3_2 -> T4_Q_2|Compose via F3.|https://arxiv.org/abs/1907.00309
+R17|published|T8_F2|Every invertible matrix over F2 has determinant 1.|https://arxiv.org/html/2306.03135v2#S1.SS5
+R18|published|T8_all_finite -> T8_F3|Specialize the field.|https://arxiv.org/html/2306.03135v2#S1.SS5
+R19|published|T10_all_finite -> T10_F2|Specialize the characteristic-two field.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R20|local|T9_mixed|Use the mixed-form variable-signature reductions in the local theorem. No fixed positive-definite signature claim follows.|https://github.com/Dugongue/MathProofs/blob/main/FormTI.lean
+R21|published|L1_TI_complete|Matrix-space conjugacy reduces to TI; the square-zero abelian matrix Lie algebra subclass is TI-hard by Grochow and Qiao, and permits the zero Levi factor.|https://arxiv.org/abs/1907.00309
+R22|local|L4_sparse|Recover the determinant Lie stabilizer by sparse linear equations and verify the structure in characteristic zero over C; the listed exact algorithm has polynomial bit time on rational or Gaussian-rational input.|https://github.com/Dugongue/MathProofs/tree/main/SparseDeterminantEquivalence
+R23|published|G03_FP -> G01|An epimorphism exists exactly when its exact count is nonzero.|https://arxiv.org/html/2609.07429v1#S7
+R24|published|G01 -> G02|P is closed under complement and contained in AM.|https://arxiv.org/html/2609.07429v1#S7
+R25|published|G01 -> G04|Restrict the target.|https://arxiv.org/html/2609.07429v1#S7
+R26|published|G01 -> G05|Restrict both inputs to the stated genus.|https://arxiv.org/html/2609.07429v1#S7
+R27|published|G01 -> G06_raw|Restrict the target.|https://arxiv.org/html/2609.07429v1#S7
+R28|published|G01 -> G07_raw|Restrict the target.|https://arxiv.org/html/2609.07429v1#S7
+R29|published|G01 -> G08_raw|Restrict the target.|https://arxiv.org/html/2609.07429v1#S7
+R30|published|G01 -> GroupIso_P|For equal-order tables an epimorphism is an isomorphism.|https://arxiv.org/html/2609.07429v1#S7
+R31|published|G09 -> !Depth3_poly|The definition is the negation of a polynomial-size family, in the stated nonuniform model.|https://arxiv.org/html/2608.26257v2#S7
+R32|published|!Depth3_poly -> G09|Use the same size, depth and input convention.|https://arxiv.org/html/2608.26257v2#S7
+R33|published|G10 -> G11|The verifier can ignore its nondeterministic bits.|https://arxiv.org/html/2402.00133#S8
+R34|published|G10 -> GroupIso_P|Uniform AC0 algorithms can be evaluated within deterministic polynomial time.|https://arxiv.org/html/2112.11487v7#S8
+R35|published|G13_NPC & G13_P -> P_NP|Compose NP-hardness reductions with the polynomial-time algorithm.|https://arxiv.org/html/2402.00133#S8
+R36|published|G13_NPC & G13_QP -> NP_QP|Polynomial reductions preserve quasipolynomial time.|https://arxiv.org/html/2402.00133#S8
+R37|published|G14_abelian -> G19_abelian|The second game can simulate the one-point moves with constant pebble overhead.|https://arxiv.org/html/2209.13725v7#S5
+R38|published|G14_transfer -> G14_abelian|Use the constant ordinary dimension for abelian complements.|https://arxiv.org/html/2112.11487v7#S8
+R39|published|G15_all -> G15_nonpermuting|The nonpermuting class is a subclass of the no-abelian-normal-subgroup class.|https://arxiv.org/html/2112.11487v7#S8
+R40|published|G19_transfer -> G19_abelian|Use the constant second-game dimension for abelian complements.|https://arxiv.org/html/2209.13725v7#S5
+R41|published|G21_2 -> G21_1|Pairs that defeat the stronger game defeat the weaker game.|https://arxiv.org/html/2209.13725v7#S5
+R42|published|GI_P -> GI_subqp|A polynomial exponent is o(log n).|https://arxiv.org/html/2209.13725v7#S5
+R43|published|GI_subqp -> G18|The refinement encoding uses polynomially many colored directed graph-isomorphism calls and polynomial-size instances for each fixed dimension.|https://arxiv.org/html/2209.13725v7#S5
+R44|local|!G16|Nonisomorphic two-colored elementary abelian groups survive every fixed counting dimension by the polynomial shear construction, including marked-subgroup initial colors.|https://github.com/Dugongue/MathProofs/tree/main/ColoredAbelianWL
+R45|published|G06_raw -> G06|Restrict the arbitrary source.|https://arxiv.org/html/2609.07429v1#S7
+R46|published|G07_raw -> G07|Restrict the arbitrary source.|https://arxiv.org/html/2609.07429v1#S7
+R47|published|G08_raw -> G08|Restrict the arbitrary source.|https://arxiv.org/html/2609.07429v1#S7
+R48|local|G06 -> G06_raw|Construct a universal source quotient for the given bottom-to-top prime tower, preserving the exact epimorphism set. See the accompanying proof.|https://arxiv.org/html/2609.07429v1#S7
+R49|local|G07 -> G07_raw|Enumerate radical-preimage kernels and apply the elementary prime-tower quotient inside each one. See the accompanying proof.|https://arxiv.org/abs/1507.01917
+R50|local|G08 -> G08_raw|At each possible radical preimage, centralize it and force its required exponent, preserving all epimorphisms. See the accompanying proof.|https://arxiv.org/html/2609.07429v1#S7
+R51|published|GR02 -> GR01|The both-promised input pairs satisfy the one-promised input condition.|https://arxiv.org/html/2606.26244v2#S1.SS3
+R52|published|GR03 & GR01 -> GR02|Check whether the second graph lies in the isomorphism-closed promised class. If it does not, reject; otherwise use the both-promised algorithm.|https://arxiv.org/html/2606.26244v2#S1.SS3
+R53|published|GI_P -> GR02|An unrestricted polynomial-time algorithm also handles the promise problem.|https://arxiv.org/html/2606.26244v2#S1.SS3
+R54|local|GI_P -> GR03|The existing recognition procedure uses a polynomial-time GI oracle.|https://arxiv.org/html/2606.26244v2#S1.SS3
+R55|published|MC01 & MCSP_to_MKTP -> GI_ZPP_MKTP|Compose the two zero-error oracle reductions with the usual clock-and-retry bound.|https://arxiv.org/abs/1710.09806
+R56|published|SZK_ZPP_MCSP -> MC01|Graph isomorphism has a statistical zero-knowledge protocol.|https://arxiv.org/abs/1710.09806
+R57|published|MC02 & MKTP_to_MCSP -> SZK_ZPP_MCSP|Compose the subroutines; the hypotheses include preservation of zero error.|https://arxiv.org/abs/1710.09806
+R58|published|TO01|The minimum homologous chain reduction gives unconditional approximation hardness on surfaces over Z2.|https://arxiv.org/abs/2003.02801
+R59|published|TO02|The surface hardness construction under Unique Games uses the allowed coefficient group depending on the desired gap. The implication is the fact, not the truth of UGC.|https://arxiv.org/abs/2003.02801
+R60|published|TO01 & SurfaceZ2_decP -> P_NP|Exact polynomial-time threshold decision would solve the NP-hard gap problem.|https://arxiv.org/abs/2003.02801
+R61|published|CA01_all -> CA01_any|The historical list is nonempty.|https://arxiv.org/abs/2012.12153
+R62|published|CA02_exp|Expand the block operation table in single-exponential time and use deterministic polynomial-time Boolean algebra homomorphism search with two pinned values, with direct linear equations for the affine case.|https://arxiv.org/abs/2010.04958
+R63|published|CA02_hard & CA02_exp -> EXP_NEXP|Closure of deterministic exponential time under polynomial many-one reductions and EXP contained in NEXP.|https://arxiv.org/abs/2012.12153
+R64|local|CA03_affine|Classify affine sources by their Laurent polynomial and iterate it exactly, with necessity from permutation on source slots. See the accompanying proof.|https://arxiv.org/abs/2012.12153
+R65|published|AP01_rankpoly -> AP04_borderpoly|For three modes, border rank b bounds each flattening rank, and two mode flattenings give ordinary rank at most b squared.|https://arxiv.org/html/2305.19320#S7.SS4
+R66|published|AP04_borderpoly -> AP01_rankpoly|Border rank is at most ordinary rank on the identical geometric proof problem.|https://arxiv.org/html/2305.19320#S7.SS4
+R67|local|AP01_rankpoly -> AP02_subexp|For balanced side length n, polynomial degree gives at most exp(O(n squared log n)) monomials in O(n squared) variables. Retain independent proof lines and reconstruct linear combinations before multiplication.|https://arxiv.org/html/2305.19320#S7.SS2
+R68|published|PCpoly_dense -> AP02_subexp|A polynomial monomial count is subexponential in the dense input length.|https://arxiv.org/html/2305.19320#S7.SS2
+R69|local|AP08|The canonical certificate projects to the Hamiltonian-cycle polynomial via a CNF predicate and field constants with product lambda times one minus lambda nonzero.|https://github.com/Dugongue/MathProofs/tree/main/CanonicalIPSCertificates
+R70|local|!AP08_F2|The F2 canonical certificate family fails VNP-hardness under the paper's p-projection convention by the direct obstruction.|https://github.com/Dugongue/MathProofs/tree/main/CanonicalIPSCertificates
+R71|local|!AP08_all_p_degrees|The canonical construction omits certain p-projection degrees even when it realizes a complete degree.|https://github.com/Dugongue/MathProofs/tree/main/CanonicalIPSCertificates
+R72|local|AP10_Fp|Use suitable finite extensions for identity detection, then descend the Boolean IPS certificate by its unit coordinate.|https://github.com/Dugongue/MathProofs/tree/main/SameFieldBooleanIPS
+R73|published|AP15_oracle -> AP15_circuit|Inline one circuit for the oracle into each polynomially many oracle gates, using shared subcircuits and counting arity.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R74|local|AP19_border_VP -> AP15_circuit|The arbitrary-multiplicity local-jet construction puts each polynomial-degree factor family of small rational circuits in border VP. Under debordering it yields exact small circuits in the same model.|https://github.com/Dugongue/MathProofs/tree/main/BorderFactorRecovery
+R75|local|!AP17_every_minimum|The two-generated prime ideal counterexample has no minimum in the specified c-reduction order.|https://github.com/Dugongue/MathProofs/tree/main/IdealCircuitDegrees
+R76|local|AP17_infinite|A generic coefficient construction gives infinitely many incomparable minimal degrees in the eventually-nonzero p-bounded model.|https://github.com/Dugongue/MathProofs/tree/main/IdealCircuitDegrees
+R77|published|AP17_infinite -> AP17_several|Infinitely many includes several in the same order and convention.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R78|local|AP17_descending|The fixed principal ideal construction gives an infinite strict chain.|https://github.com/Dugongue/MathProofs/tree/main/IdealCircuitDegrees
+R79|published|AP17_no_minimal -> !AP17_every_minimum|A minimum is always a minimal element.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R80|published|AP17_several -> !AP17_every_minimum|An ideal family with different incomparable minimal elements has no minimum.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R81|local|!AP18_all_saturated|The proper nonzero principal coset in the fixed-ring model supplies a counterexample to saturation.|https://github.com/Dugongue/MathProofs/tree/main/IdealCosetSaturation
+R82|local|!AP18_above_saturated|The same fixed-ring coset has no saturation above the proposed degree.|https://github.com/Dugongue/MathProofs/tree/main/IdealCosetSaturation
+R83|published|AP18_all_saturated -> AP18_above_saturated|A saturated degree is at or above itself in the stated reflexive degree comparison.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R84|published|AP19_border_VP -> AP19_stable|Use the standard inclusion of stable degenerations in border VP and VP in Stable-VP.|https://arxiv.org/html/1605.02815#S4
+R85|published|AP19_border_VP -> AP19_newton|Use the standard inclusion of Newton degenerations in border VP.|https://arxiv.org/html/1605.02815#S4
+R86|published|AP19_border_VP -> AP19_definable|Polynomially definable degenerations are border degenerations.|https://arxiv.org/html/1605.02815#S4
+R87|published|AP19_border_VP -> AP19_border_def|Every resulting VP family then has the trivial degeneration from itself.|https://arxiv.org/html/1605.02815#S4
+R88|published|AP19_definable & AP19_border_def -> AP19_border_VP|Apply the two containments to each border family.|https://arxiv.org/html/1605.02815#S4
+R89|local|AP20|A Fibonacci chain in the stabilizer weight kernel gives an explicit stable degeneration with a long canonical one-parameter subgroup.|https://github.com/Dugongue/MathProofs/tree/main/KempfDegenerationDegree
+R90|published|AP21 -> Omega2|This is the stated implication of the proposed construction in its two-parameter regime.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol325-itcs2025/html/LIPIcs.ITCS.2025.18/LIPIcs.ITCS.2025.18.html
+R91|published|AP23_no -> AP24_match_no|A positive exact matching count becomes the matching decision under Booleanization. This has no implication for the Hamiltonian-cycle count.|https://theoryofcomputing.org/articles/v013a018/
+R92|local|AP24_match_no|Support-polytope reconstruction followed by the exponential perfect matching extension-complexity lower bound.|https://github.com/Dugongue/MathProofs/tree/main/BooleanCountingPermanent
+R93|local|AP24_HC_no|The same support-polytope reconstruction yields a forbidden small traveling salesperson extended formulation.|https://github.com/Dugongue/MathProofs/tree/main/BooleanCountingPermanent
+R94|published|AP25 -> Cut_face_TSP|The entire cut polytope is a face of itself. The converse is not encoded.|https://theoryofcomputing.org/articles/v013a018/
+R95|published|AP26_HC -> AP26_any|Hamiltonian cycle is a particular candidate from the positive coefficient class.|https://theoryofcomputing.org/articles/v013a018/
+R96|local|AP26_HC -> coCEqP_NPpoly|Square a GapP count to obtain a nonnegative coefficient VNP polynomial. A monotone HC projection would let nondeterminism certify each nonzero coefficient by one cycle and advice encoding the projection.|https://theoryofcomputing.org/articles/v013a018/
+R97|published|P_NP -> NP_QP|Polynomial time is contained in quasipolynomial time.|https://arxiv.org/abs/0907.4775
+R98|published|P_NP -> PH_collapses|P=NP collapses the polynomial hierarchy to P.|https://arxiv.org/abs/0907.4775
+R99|published|P_NP -> EXP_NEXP|Pad an exponential-time nondeterministic computation to polynomial length and apply P=NP.|https://arxiv.org/abs/0907.4775
+R100|published|P_NP -> GI_P|A vertex permutation certifies isomorphism.|https://arxiv.org/html/2606.26244v2#S1.SS3
+R101|published|P_NP -> G01|A proposed table surjection is polynomially checkable.|https://arxiv.org/html/2609.07429v1#S7
+R102|published|P_NP -> G13_P|A generating set of the claimed cardinality is polynomially checkable by closure.|https://arxiv.org/html/2402.00133#S8
+R103|published|P_NP -> FiniteTI2_P|Three invertible field matrices are polynomially verifiable witnesses.|https://arxiv.org/abs/1907.00309
+R104|published|P_NP -> FiniteTI3_P|The same witness verification works over F3.|https://arxiv.org/abs/1907.00309
+R105|published|P_NP -> FiniteSL3_P|Check the determinant constraints on the witness matrices as well.|https://arxiv.org/html/2306.03135v2#S1.SS5
+R106|published|P_NP -> T8_all_finite|For each fixed finite field, the SL problem is in NP. Any P problem reduces to any nontrivial decision problem by its constant yes and no instances.|https://arxiv.org/html/2306.03135v2#S1.SS5
+R107|published|FiniteTI3_P & T8_F3 -> FiniteSL3_P|Compose decision and reduction.|https://arxiv.org/html/2306.03135v2#S1.SS5
+R108|published|FiniteSL3_P -> T8_F3|Use fixed yes and no target instances.|https://arxiv.org/html/2306.03135v2#S1.SS5
+R109|published|FiniteTI3_P & T3_2_3 -> FiniteTI2_P|Compose decision and reduction.|https://arxiv.org/abs/1907.00309
+R110|published|FiniteTI2_P & T3_3_2 -> FiniteTI3_P|Compose decision and reduction.|https://arxiv.org/abs/1907.00309
+R111|published|FiniteTI2_P -> T3_2_3|Use fixed yes and no instances over F3.|https://arxiv.org/abs/1907.00309
+R112|published|FiniteTI3_P -> T3_3_2|Use fixed yes and no instances over F2.|https://arxiv.org/abs/1907.00309
+R113|published|FiniteTI2_P -> T4_2_Q|Use fixed yes and no instances over Q.|https://arxiv.org/abs/1907.00309
+R114|published|FiniteTI3_P -> T4_3_Q|Use fixed yes and no instances over Q.|https://arxiv.org/abs/1907.00309
+R115|published|P_NP -> EQ01_equal|Construct the length-lexicographically least equivalent string by polynomial witness queries for prefixes.|https://arxiv.org/abs/0907.4775
+R116|published|P_NP -> EQ02_equal|The same canonization argment gives a complete invariant for every PEq relation.|https://arxiv.org/abs/0907.4775
+R117|published|EQ01_equal & EQ02_equal -> CF_PEq_equal|Transitivity of the class equalities.|https://arxiv.org/abs/0907.4775
+R118|published|CF_PEq_equal -> EQ01_equal|The intermediate class is sandwiched between equal classes.|https://arxiv.org/abs/0907.4775
+R119|published|CF_PEq_equal -> EQ02_equal|The intermediate class is sandwiched between equal classes.|https://arxiv.org/abs/0907.4775
+R120|published|EQ01_equal & EQ05 -> P_NP|Apply the proposed implication to its antecedent.|https://arxiv.org/abs/0907.4775
+R121|published|EQ02_equal & EQ07 -> PH_collapses|Apply the proposed implication to its antecedent.|https://arxiv.org/abs/0907.4775
+R122|published|P_NP -> P_UP|Use P contained in UP contained in NP.|https://arxiv.org/abs/0907.4775
+R123|published|P_NP -> NP_UP|Use P contained in UP contained in NP.|https://arxiv.org/abs/0907.4775
+R124|published|NP_UP -> !EQ03_nonUP|No NP language can then be outside UP.|https://arxiv.org/abs/0907.4775
+R125|published|EQ03_NPC & !NP_UP -> EQ03_nonUP|UP is closed under deterministic polynomial many-one reductions, so the assumed NP-complete language cannot be in UP.|https://arxiv.org/abs/0907.4775
+R126|published|EQ02_equal & EQ03_NPC -> BQP_NP|The abelian groupy-witness theorem puts the NP-complete language in BQP.|https://arxiv.org/abs/0907.4775
+R127|published|P_NP -> BQP_NP|BQP contains P.|https://arxiv.org/abs/0907.4775
+R128|local|FiniteTIRingPrimeReduction|Split fixed finite rings by their primary idempotents. Retain each prime field by the same-prime compiler, and combine independent tests by the named conjunction construction. See the accompanying proof.|https://github.com/Dugongue/MathProofs/tree/main/PrimePowerTensorIsomorphism
+R129|published|GI_ZPP_MKTP|This is the zero-error GI result over the MKTP oracle.|https://arxiv.org/abs/1710.09806
+R130|published|MC02 -> GI_ZPP_MKTP|Graph isomorphism is contained in SZK.|https://arxiv.org/abs/1710.09806
+R131|published|MCSP_NP_hard -> MC01|Graph isomorphism is in NP, so the assumed deterministic many-one hardness gives the stronger deterministic reduction.|https://arxiv.org/abs/1710.09806
+R132|published|EQ02_equal -> EQ04|Under equality, the universal complete-invariant equivalence relation constructed in Section 4.2.4 is complete for PEq.|https://arxiv.org/html/0907.4775v2#S4.SS2.SSS4
+R133|published|EQ01_equal -> NP_UP|Fortnow and Grochow Corollary 4.2.|https://arxiv.org/html/0907.4775v2
+R134|published|EQ01_equal -> PH_collapses|Corollary 4.2 places PH in a fixed-level randomized-with-NP class.|https://arxiv.org/html/0907.4775v2
+R135|published|EQ02_equal -> UP_BQP|Fortnow and Grochow Theorem 4.3.|https://arxiv.org/html/0907.4775v2
+R136|published|CF_PEq_equal -> NP_RP|Fortnow and Grochow Corollary 4.4.|https://arxiv.org/html/0907.4775v2
+R137|published|CF_PEq_equal -> PH_BPP|Fortnow and Grochow Corollary 4.4.|https://arxiv.org/html/0907.4775v2
+R138|published|!EQ05 -> EQ01_equal|The negation of the stated material implication entails its antecedent.|https://arxiv.org/abs/0907.4775
+R139|published|!EQ05 -> !P_NP|The negation of the stated material implication entails failure of its consequent.|https://arxiv.org/abs/0907.4775
+R140|published|!EQ07 -> EQ02_equal|The negative branch means the equality holds and PH does not collapse.|https://arxiv.org/abs/0907.4775
+R141|published|!EQ07 -> !PH_collapses|The negative branch includes noncollapse.|https://arxiv.org/abs/0907.4775
+R142|local|G13_QP|The Green-class and Rees construction in the full table model uses quasipolynomial group search at maximal subgroups.|https://arxiv.org/html/2402.00133#S8
+R143|published|P_NP -> G13_NPC|The semigroup decision language is nontrivial and in NP. If P=NP every NP language reduces to it via a constant yes/no pair.|https://arxiv.org/html/2402.00133#S8
+R144|local|G06_preserve_counts|The prime-by-prime construction preserves each map by factorization through a universal quotient.|https://arxiv.org/html/2609.07429v1#S7
+R145|local|G12 -> QIso_const_L|Check membership of every pair in the subquasigroup of the product generated by paired generator images. Functionality yields precisely the graphs of the desired maps.|https://arxiv.org/html/2402.00133#S8
+R146|local|G22 -> G23_elem_fixed|Encode the shared coordinate permutation by marked replicated columns using only linear length for each fixed alphabet rank.|https://www.cs.toronto.edu/~jgrochow/pubs-by-topic.html
+R147|published|G23_elem -> G23_elem_fixed|Restrict to a fixed rank.|https://www.cs.toronto.edu/~jgrochow/pubs-by-topic.html
+R148|local|G16 -> G14_abelian|Interpret the coprime abelian complement as a colored quotient, with colors given by primary action characters. The proof note specifies the WL convention and translation.|https://arxiv.org/html/2112.11487v7#S8
+R149|local|!CA01_any|The ordered light-cone derivative gives an all-size contradiction for each nonlinear one-sided permutive source. These are precisely the historical sixteen. See the self-contained proof.|https://arxiv.org/html/2012.12153#S5
+R150|published|CA01_any -> CA01_30, CA01_45, CA01_75, CA01_86, CA01_89, CA01_101, CA01_106, CA01_120, CA01_135, CA01_149, CA01_154, CA01_166, CA01_169, CA01_180, CA01_210, CA01_225|Definition of the existential branch on the historical list.|https://arxiv.org/html/2012.12153#S5
+R151|published|AP19_definable -> AP19_newton|Newton-VP is contained in polynomially definable degenerations of VP in the source class chain.|https://arxiv.org/html/1605.02815#S4
+R152|published|AP19_newton -> AP19_stable|Stable-VP is contained in Newton-VP.|https://arxiv.org/html/1605.02815#S4
+R153|published|VP_VNP -> AP19_definable|The source's class of p-definable degenerations is contained in VNP.|https://arxiv.org/html/1605.02815#S4
+R154|published|AP07_linear -> AP07|Specialize the paper's tradeoff question to the indicated degree threshold.|https://www.cs.toronto.edu/~toni/Papers/jacm-gp.pdf#page=40
+R155|published|AP07_linear -> !VP_VNP|The canonical CNF certificate in VNP has total degree at most the variable count for nonempty clauses. VP=VNP would give short certificates within that threshold.|https://www.cs.toronto.edu/~toni/Papers/jacm-gp.pdf#page=27
+R156|published|AP12_pq & PIT_Fq_NP -> PIT_Fp_NP|NP is closed under polynomial-time many-one reductions.|https://arxiv.org/html/2306.02184#S7.SS2
+R157|published|AP12_qp & PIT_Fp_NP -> PIT_Fq_NP|Use the reverse-direction reduction.|https://arxiv.org/html/2306.02184#S7.SS2
+R158|local|AP11_pq & AP10_Fp & PIT_Fp_NP -> PIT_Fq_NP|A Cook–Reckhow simulation over Fp also simulates the IPS over Fq by the assumed proof-length comparison. Then use the same-field equivalence over Fq.|https://github.com/Dugongue/MathProofs/tree/main/SameFieldBooleanIPS
+R159|local|AP11_qp & AP10_Fp & PIT_Fq_NP -> PIT_Fp_NP|The parallel argument uses the reversed proof simulation.|https://github.com/Dugongue/MathProofs/tree/main/SameFieldBooleanIPS
+R160|published|NP_coNP -> PIT_Fp_NP|Over the fixed finite field, formal PIT lies in coRP and hence in coNP.|https://arxiv.org/html/2306.02184#S7.SS2
+R161|published|NP_coNP -> PIT_Fq_NP|Apply the same witness argument in the other characteristic.|https://arxiv.org/html/2306.02184#S7.SS2
+R162|local|!AP16_depth|High powers of determinant make every bounded-size exact oracle circuit computing a bounded-degree output equivalent to dropping all nonconstant oracle gates. The ordinary constant-depth lower bound then applies. See the Wronskian proof.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html
+R163|published|AP16|In the literal unrestricted-depth model, compute the determinant by an ordinary polynomial-size circuit and ignore the oracle.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html
+R164|published|AP16_border|Andrews and Forbes give the border result with polynomially growing extracted determinant size.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html
+R165|published|AP16_depth -> AP16_border|An exact circuit is a constant border family.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html
+R166|published|AP15_oracle -> AP15_principal|Apply the theorem to the given generator and each nonzero multiple. The degree and arity restrictions on the generator and oracle coincide.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R167|published|AP15_principal -> AP15_oracle|Take the principal family generated by the proposed factor family, with the given multiples as the oracle.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R168|local|CA02_hard -> P_NP|The literal unary-language model has at most 256 squared strings at each length with fixed rule encodings. NEXP-hardness implies sparse many-one NP-hardness, which collapses P and NP by the Mahaney pruning argument.|https://arxiv.org/html/2012.12153#S5
+R169|local|G09_CNF|The existing random-relabeling and partial-table completion lower bound is for CNF and DNF only.|https://github.com/Dugongue/MathProofs/blob/main/CayleyCircuitsAndDecompositions/GroupIsomorphismCNF.md
+R170|published|!G21_1 -> GroupIso_P|Failure of unbounded first-game width gives a global constant width, increasing it to handle the finitely many bounded-order exceptions. Stable ordinary bounded-dimensional WL is polynomial time.|https://arxiv.org/html/2209.13725v7#S5
+R171|published|!G21_1 -> G15_all|Use the same uniform bound on this subclass.|https://arxiv.org/html/2209.13725v7#S5
+R172|published|!G21_1 -> G14_transfer|A global ordinary width provides the absolute constant in the maximum bound.|https://arxiv.org/html/2112.11487v7#S8
+R173|published|!G21_2 -> G19_transfer|A global second-game width provides the absolute constant in the maximum bound.|https://arxiv.org/html/2209.13725v7#S5
+R174|published|!G21_2 -> G20|Restrict the global second-game width to the designated bounded-genus class.|https://arxiv.org/html/2209.13725v7#S5
+R175|local|!CA02_hard|A sparse NEXP-hard language would imply both P=NP by Mahaney and EXP contained in P/poly by sparse advice. The latter implies EXP=MA, which collapses to P under P=NP, violating the time hierarchy.|https://eccc.weizmann.ac.il/report/2002/055/revision/1/download/
+R176|local|!AP15_oracle|Apply the high-power oracle elimination lemma to a high-complexity rational factor family and unrestricted-degree powers of it. See the proof including the multiple-polynomial-index convention.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R177|published|NP_UP -> EQ03_NPC|A nontrivial NP-complete language is then in UP, and Fortnow and Grochow's Lemma 4.10 supplies abelian groupy witnesses.|https://arxiv.org/html/0907.4775v2
+R178|published|P_NP -> MC02|The statistical zero-knowledge AM and coAM upper bounds lie inside the polynomial hierarchy, which collapses when P=NP.|https://arxiv.org/abs/1710.09806
+R179|published|CA01_30 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R180|published|CA01_45 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R181|published|CA01_75 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R182|published|CA01_86 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R183|published|CA01_89 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R184|published|CA01_101 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R185|published|CA01_106 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R186|published|CA01_120 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R187|published|CA01_135 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R188|published|CA01_149 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R189|published|CA01_154 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R190|published|CA01_166 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R191|published|CA01_169 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R192|published|CA01_180 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R193|published|CA01_210 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R194|published|CA01_225 -> CA01_any|A witness for this source is a witness for the existential branch.|https://arxiv.org/html/2012.12153#S5
+R195|published|CA01_30 & CA01_45 & CA01_75 & CA01_86 & CA01_89 & CA01_101 & CA01_106 & CA01_120 & CA01_135 & CA01_149 & CA01_154 & CA01_166 & CA01_169 & CA01_180 & CA01_210 & CA01_225 -> CA01_all|The all-positive world is the conjunction over the sixteen rule atoms.|https://arxiv.org/html/2012.12153#S5
+R196|published|CA01_all -> CA01_30|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R197|published|CA01_all -> CA01_45|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R198|published|CA01_all -> CA01_75|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R199|published|CA01_all -> CA01_86|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R200|published|CA01_all -> CA01_89|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R201|published|CA01_all -> CA01_101|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R202|published|CA01_all -> CA01_106|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R203|published|CA01_all -> CA01_120|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R204|published|CA01_all -> CA01_135|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R205|published|CA01_all -> CA01_149|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R206|published|CA01_all -> CA01_154|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R207|published|CA01_all -> CA01_166|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R208|published|CA01_all -> CA01_169|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R209|published|CA01_all -> CA01_180|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R210|published|CA01_all -> CA01_210|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R211|published|CA01_all -> CA01_225|The all-positive world includes this source rule.|https://arxiv.org/html/2012.12153#S5
+R212|local|T10_prime_transfer|Four ordered pairing markers recover the field action and the trace pairing recovers each original bilinear equation. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R213|local|T10_prime_transfer & T10_F2 -> T10_all_finite|Apply the prime-field tuple compiler then the hypothetical binary algorithm.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R214|published|T10_F2 -> T10_alt_F2|Restrict the input to alternating tuples.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R215|local|T10_prime_transfer & T10_alt_F2 -> T10_alt_finite|The prime-field output stays alternating.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R216|published|T10_alt_finite -> T10_alt_F2|Specialize to the prime field itself.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R217|local|T10_prime_transfer & T10_alt_F2 -> T10_Herm_finite|Quadratic Hermitian values on the diagonal have zero prime-field trace in characteristic two. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R218|local|T10_comm_norm_P|Solve the reduced norm over a product of finite fields, then lift through radical powers. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R219|local|T10_radical_congruence_P|Stabilizers modulo powers lift via additive quotient maps and polynomial-size generating sets in the central filtration. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R220|local|G16_second_unbounded|The triangle-derived shear gives one bijection compatible with any simultaneously selected pair. See GAMES.md.|https://arxiv.org/html/2209.13725v7#S5
+R221|published|G16_third_bounded|Select the offending multiplication triple or a color mismatch after the announced bijection.|https://arxiv.org/html/2209.13725v7
+R222|published|G16_second_unbounded -> !G16|A bounded one-point game dimension would also give bounded second-game width.|https://arxiv.org/html/2209.13725v7
+R223|local|CA_var_N2_NPC|A fixed eight-element magma encodes three-colorability and two delay registers realize the reduction as genuine N=2 block factors. See AUTOMATA.md.|https://arxiv.org/html/2012.12153#S5
+R224|local|CA_var_N2_NPC & CA_var_table_P -> P_NP|The N=2 construction produces a polynomial-size explicit block table, so a polynomial algorithm there would solve three-colorability.|https://arxiv.org/html/2012.12153#S5
+R225|published|P_NP -> CA_var_table_P|On explicit block-operation tables the guessed factor map is polynomially checkable.|https://arxiv.org/html/2012.12153#S5
+R226|local|CA_gated_abelian_no|The previously Boolean derivative becomes a group-valued difference independent of the left block. Closing the first gate forces a contradiction. See AUTOMATA.md.|https://arxiv.org/html/2012.12153#S5
+R227|local|!AP16_exact_rational_depth|Projective Wronskians strip high-power rational queries even with divisions. Constant-depth division removal yields the determinant lower bound. See ARITHMETIC.md.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html
+R228|local|!AP16_exact_pfaffian_depth|Apply rational elimination to a high power of the full Pfaffian, which lies in the generating ideal. The desired Pfaffian output specializes to determinant.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html
+R229|published|AP16_depth -> AP16_exact_rational_depth|A division-free computation is allowed in the rational model.|https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.49/LIPIcs.ITCS.2026.49.html
+R230|local|!AP15_oracle_rational_multi|Inline the low-index oracles. The high exponents are all multiples of a sufficiently large power of two, so rational elimination applies. See ARITHMETIC.md.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R231|published|AP15_adjacent_power_recover|Divide the larger power by the smaller one as rational functions.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R232|local|AP17_principal_poset|High-power-plus-marker families realize the entire almost-inclusion order. See ARITHMETIC.md.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R233|local|AP17_continuum_min|Switch between two generic graph equations. Relative transcendence and polynomial-degree root recovery establish minimality. See ARITHMETIC.md.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R234|published|AP17_continuum_min -> AP17_infinite|The countably infinite demand is implied in the same p-bounded order.|https://eatcs.org/beatcs/index.php/beatcs/article/download/620/633
+R235|local|AP07_general_weak|The equation chain forces every degree-bounded certificate to use all link placeholders, while the high-degree power certificate uses repeated squaring. See ARITHMETIC.md.|https://www.cs.toronto.edu/~toni/Papers/jacm-gp.pdf#page=40
+R236|local|Geom_modular_transfer|Preserve one maximal-rank witness per Macaulay matrix by a random prime and parameter point. See FIELDS.md.|https://arxiv.org/abs/math/9805091
+R237|local|Geom_modular_transfer & GeomTI_variable_prime_P -> GeomTI_char0_BPP|The invertible-transporter equations are existential. Compose the randomized reduction with the hypothetical uniform geometric TI algorithm.|https://arxiv.org/abs/1907.00309
+
+R238|local|T10_alt_F2 -> StarNorm_F2_P|The four-copy alternating tuple realizes the given involutive algebra exactly, and the congruence to the twisted tuple asks for its norm. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R239|local|StarNorm_F2_P -> T10_alt_F2|A left-right matrix tuple equivalence supplies the norm target in the adjoint algebra. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R240|local|T10_alt_F2 -> T10_F2|Encode all matrices, including nonsymmetric ones, by alternating blocks between copies 1 and 3. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R241|local|!StarNorm_quotient_units_lift|A four-dimensional binary involutive algebra has primitive fourth-field quotient units with no unitary lift. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R242|local|T10_alt_F2 & T10_prime_transfer -> T10_quad_finite|Independent correction blocks encode the alternating discrepancies of quadratic representatives. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R243|local|T10_quad_finite -> T10_F2|Binary bilinear tuples embed into quadratic tuples using split pairing markers and off-diagonal blocks. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+R244|local|T10_F2 & T10_prime_transfer -> G03_exp4_bounded_phi|Squares give the quadratic maps and marked tuple decisions compute orbit sizes. See FIELDS.md.|https://arxiv.org/html/2611.00735v1#S1.SS4
+
+# Extension
+X001|published|BorderGeom|Restrict the published border extraction theorem.|https://arxiv.org/abs/2112.00792
+X002|local|!ExactGeom|Projective interpolation strips the two generic masks at small size.|Algebra.md
+X003|local|AP16_depth -> ExactGeom|Specializing the inputs preserves an exact polynomial-size bound.|Algebra.md
+X004|local|OneGeom|Irreducibility forces a scalar multiple in this principal ideal.|Algebra.md
+X005|local|PermGeom -> ComplexVP|Use the two-copy oracle elimination and permanent completeness.|Algebra.md
+X006|local|ComplexVP -> PermGeom|Use the two-copy oracle elimination and permanent completeness.|Algebra.md
+X007|local|CliqueGeom -> ComplexVFPT|Use the two-copy oracle elimination and parameterized clique completeness.|Algebra.md
+X008|local|ComplexVFPT -> CliqueGeom|Use the two-copy oracle elimination and parameterized clique completeness.|Algebra.md
+X009|local|ExteriorFPT -> ComplexVFPT|Convert subset-indexed circuits with signed products and apply symmetric completeness.|https://github.com/Dugongue/MathProofs/blob/main/ParameterizedCircuitFrontiers/Parameters.md
+X010|local|ComplexVFPT -> ExteriorFPT|Convert subset-indexed circuits with signed products and apply symmetric completeness.|https://github.com/Dugongue/MathProofs/blob/main/ParameterizedCircuitFrontiers/Parameters.md
+X011|local|CodeOdd|Odd weights give divisibility by the size of the affine solution space.|Codes.md
+X012|local|CodeEven|Small length allows enumeration and long instances vanish.|Codes.md
+X013|local|Code2 -> ParityClique|Degree-three affine syndrome consistency and the homogeneous flag reduction.|Codes.md
+X014|local|ParityClique -> Code2|Degree-three affine syndrome consistency and the homogeneous flag reduction.|Codes.md
+X015|local|CodeMixed -> ParityClique|Degree-three affine syndrome consistency and the homogeneous flag reduction.|Codes.md
+X016|local|ParityClique -> CodeMixed|Degree-three affine syndrome consistency and the homogeneous flag reduction.|Codes.md
+X017|local|CodeAffine -> ParityClique|Degree-three affine syndrome consistency and the homogeneous flag reduction.|Codes.md
+X018|local|ParityClique -> CodeAffine|Degree-three affine syndrome consistency and the homogeneous flag reduction.|Codes.md
+X019|local|PerBits -> ParityClique|Marked inversions or crossings, and modular matching hardness.|https://github.com/Dugongue/MathProofs/tree/main/ParameterizedCircuitFrontiers
+X020|local|ParityClique -> PerBits|Marked inversions or crossings, and modular matching hardness.|https://github.com/Dugongue/MathProofs/tree/main/ParameterizedCircuitFrontiers
+X021|local|MatchingBits -> ParityClique|Marked inversions or crossings, and modular matching hardness.|https://github.com/Dugongue/MathProofs/tree/main/ParameterizedCircuitFrontiers
+X022|local|ParityClique -> MatchingBits|Marked inversions or crossings, and modular matching hardness.|https://github.com/Dugongue/MathProofs/tree/main/ParameterizedCircuitFrontiers
+X023|local|CodeUnaryP -> FPSharp|Parsimonious weight spacing recovers all bits; the exact count belongs to #P.|Codes.md
+X024|local|FPSharp -> CodeUnaryP|Parsimonious weight spacing recovers all bits; the exact count belongs to #P.|Codes.md
+X025|local|CodeUnaryP -> Code2|Polynomial time in unary precision implies fixed-parameter time.|Codes.md
+X026|local|FPSharp -> P_NP|Count accepting witnesses and test positivity.|Codes.md
+X027|local|FPSharp -> GI_P|Count vertex isomorphisms.|Codes.md
+X028|local|FPSharp -> G03_FP|A table epimorphism can be guessed once and checked in polynomial time.|Codes.md
+X029|local|ProjDec -> QDec|The reductions preserve feasibility; dovetail witnesses or compute a height bound.|Arithmetic.md
+X030|local|QDec -> ProjDec|The reductions preserve feasibility; dovetail witnesses or compute a height bound.|Arithmetic.md
+X031|local|ProjHeight -> QDec|The reductions preserve feasibility; dovetail witnesses or compute a height bound.|Arithmetic.md
+X032|local|QDec -> ProjHeight|The reductions preserve feasibility; dovetail witnesses or compute a height bound.|Arithmetic.md
+X033|local|ProjNegative -> QDec|The reductions preserve feasibility; dovetail witnesses or compute a height bound.|Arithmetic.md
+X034|local|QDec -> ProjNegative|The reductions preserve feasibility; dovetail witnesses or compute a height bound.|Arithmetic.md
+X035|published|ZDioph -> !QDec|Substitute the existential integer definition into the undecidable integer problem.|https://github.com/elliotglazer/diophantine-z-q
+X036|local|QPtime -> QDec|Polynomial-time decision is a decision algorithm.|Arithmetic.md
+X037|local|QPtime -> ProjGI|Decide via the reduction to rational equations and emit a fixed YES or NO instance of GI.|Arithmetic.md
+X038|local|ProjGI -> ProjDec|Finite graph isomorphism is decidable by permutation enumeration.|Arithmetic.md
+X039|local|ProjGI & GI_P -> QPtime|Compose the polynomial-time reductions in the reverse direction through the certified patterns.|Arithmetic.md
+X040|local|!ProjLocal|Guard the unsatisfiable equation one equals zero.|Arithmetic.md
+X041|local|ProjTwo|Choose rational lines in general position.|Arithmetic.md
+X042|local|ZDioph -> !ProjSlice|A fixed integer interpreter and a one-register input chain encode a halting set in one bounded-pathwidth slice.|Arithmetic.md
+X043|local|ProjDec -> ProjSlice|The full decider works on promised width slices.|Arithmetic.md
+X044|local|ProjDepth|Duplicate subtrees prune to finitely many colored types per fixed depth.|Arithmetic.md
+X045|local|MPrecision|Choose a prime-power modulus whose multiplicative order exceeds the dimension bound.|Isomorphism.md
+X046|local|!MSubprecision|Diagonal pairs realize a collision for each proposed small modulus.|Isomorphism.md
+X047|local|AnyFieldHom5 & !AnyFieldHom2 -> AnyFieldHom3|An odd module divisor is two to a power minus one; divisibility by five forces divisibility by three.|ThreeModuli.md
+X048|local|PairwiseTransfer|Construct module witnesses by the finite-list classification.|ThreeModuli.md
+X049|local|!TripleTransfer|The graph divisor five has an impossible module profile.|ThreeModuli.md
+X050|local|UnboundedConflict|Use distinct prime divisors of the common exponent and supply a witness for every deletion.|ThreeModuli.md
+X051|local|Hom4 -> Hom2|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X052|local|Hom6 -> Hom2|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X053|local|Hom8 -> Hom2|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X054|local|Hom5 -> Hom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X055|local|!AnyFieldHom2 & AnyFieldHom5 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X056|local|Hom6 -> Hom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X057|local|Hom9 -> Hom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X058|local|!AnyFieldHom2 & AnyFieldHom9 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X059|local|Hom15 -> Hom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X060|local|!AnyFieldHom2 & AnyFieldHom15 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X061|local|Hom21 -> Hom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X062|local|!AnyFieldHom2 & AnyFieldHom21 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X063|local|Hom63 -> Hom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X064|local|!AnyFieldHom2 & AnyFieldHom63 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X065|local|Hom8 -> Hom4|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X066|local|Hom15 -> Hom5|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X067|local|!AnyFieldHom2 & AnyFieldHom15 -> AnyFieldHom5|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X068|local|Hom2 & Hom3 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X069|local|Hom2 & Hom5 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X070|local|Hom2 & Hom9 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X071|local|Hom2 & Hom15 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X072|local|Hom2 & Hom21 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X073|local|Hom2 & Hom63 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X074|local|Hom3 & Hom4 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X075|local|Hom3 & Hom8 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X076|local|Hom4 & Hom5 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X077|local|Hom4 & Hom9 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X078|local|Hom4 & Hom15 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X079|local|Hom4 & Hom21 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X080|local|Hom4 & Hom63 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X081|local|Hom5 & Hom8 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X082|local|Hom8 & Hom9 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X083|local|Hom8 & Hom15 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X084|local|Hom8 & Hom21 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X085|local|Hom8 & Hom63 -> Hom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X086|local|Hom9 -> Hom7|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X087|local|!AnyFieldHom2 & AnyFieldHom9 -> AnyFieldHom7|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X088|local|Hom21 -> Hom7|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X089|local|!AnyFieldHom2 & AnyFieldHom21 -> AnyFieldHom7|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X090|local|Hom63 -> Hom7|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X091|local|!AnyFieldHom2 & AnyFieldHom63 -> AnyFieldHom7|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X092|local|Hom73 -> Hom7|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X093|local|!AnyFieldHom2 & AnyFieldHom73 -> AnyFieldHom7|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X094|local|Hom21 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X095|local|!AnyFieldHom2 & AnyFieldHom21 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X096|local|Hom63 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X097|local|!AnyFieldHom2 & AnyFieldHom63 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X098|local|Hom3 & Hom7 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X099|local|!AnyFieldHom2 & AnyFieldHom3 & AnyFieldHom7 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X100|local|Hom3 & Hom73 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X101|local|!AnyFieldHom2 & AnyFieldHom3 & AnyFieldHom73 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X102|local|Hom5 & Hom7 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X103|local|!AnyFieldHom2 & AnyFieldHom5 & AnyFieldHom7 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X104|local|Hom5 & Hom73 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X105|local|!AnyFieldHom2 & AnyFieldHom5 & AnyFieldHom73 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X106|local|Hom6 & Hom7 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X107|local|Hom6 & Hom73 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X108|local|Hom7 & Hom15 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X109|local|!AnyFieldHom2 & AnyFieldHom7 & AnyFieldHom15 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X110|local|Hom15 & Hom73 -> Hom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X111|local|!AnyFieldHom2 & AnyFieldHom15 & AnyFieldHom73 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X112|local|Hom5 -> Hom15|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X113|local|!AnyFieldHom2 & AnyFieldHom5 -> AnyFieldHom15|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X114|local|Hom9 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X115|local|!AnyFieldHom2 & AnyFieldHom9 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X116|local|Hom63 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X117|local|!AnyFieldHom2 & AnyFieldHom63 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X118|local|Hom3 & Hom7 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X119|local|!AnyFieldHom2 & AnyFieldHom3 & AnyFieldHom7 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X120|local|Hom3 & Hom73 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X121|local|!AnyFieldHom2 & AnyFieldHom3 & AnyFieldHom73 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X122|local|Hom5 & Hom7 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X123|local|!AnyFieldHom2 & AnyFieldHom5 & AnyFieldHom7 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X124|local|Hom5 & Hom73 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X125|local|!AnyFieldHom2 & AnyFieldHom5 & AnyFieldHom73 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X126|local|Hom6 & Hom7 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X127|local|Hom6 & Hom73 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X128|local|Hom7 & Hom15 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X129|local|!AnyFieldHom2 & AnyFieldHom7 & AnyFieldHom15 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X130|local|Hom15 & Hom73 -> Hom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X131|local|!AnyFieldHom2 & AnyFieldHom15 & AnyFieldHom73 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X132|local|Hom9 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X133|local|!AnyFieldHom2 & AnyFieldHom9 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X134|local|Hom21 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X135|local|!AnyFieldHom2 & AnyFieldHom21 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X136|local|Hom3 & Hom7 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X137|local|!AnyFieldHom2 & AnyFieldHom3 & AnyFieldHom7 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X138|local|Hom3 & Hom73 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X139|local|!AnyFieldHom2 & AnyFieldHom3 & AnyFieldHom73 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X140|local|Hom5 & Hom7 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X141|local|!AnyFieldHom2 & AnyFieldHom5 & AnyFieldHom7 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X142|local|Hom5 & Hom73 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X143|local|!AnyFieldHom2 & AnyFieldHom5 & AnyFieldHom73 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X144|local|Hom6 & Hom7 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X145|local|Hom6 & Hom73 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X146|local|Hom7 & Hom15 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X147|local|!AnyFieldHom2 & AnyFieldHom7 & AnyFieldHom15 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X148|local|Hom15 & Hom73 -> Hom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X149|local|!AnyFieldHom2 & AnyFieldHom15 & AnyFieldHom73 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X150|local|GraphHom4 -> GraphHom2|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X151|local|AnyFieldHom4 -> AnyFieldHom2|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X152|local|GraphHom6 -> GraphHom2|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X153|local|AnyFieldHom6 -> AnyFieldHom2|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X154|local|GraphHom8 -> GraphHom2|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X155|local|AnyFieldHom8 -> AnyFieldHom2|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X156|local|GraphHom6 -> GraphHom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X157|local|AnyFieldHom6 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X158|local|GraphHom9 -> GraphHom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X159|local|AnyFieldHom9 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X160|local|GraphHom15 -> GraphHom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X161|local|AnyFieldHom15 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X162|local|GraphHom21 -> GraphHom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X163|local|AnyFieldHom21 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X164|local|GraphHom63 -> GraphHom3|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X165|local|AnyFieldHom63 -> AnyFieldHom3|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X166|local|GraphHom8 -> GraphHom4|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X167|local|AnyFieldHom8 -> AnyFieldHom4|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X168|local|GraphHom15 -> GraphHom5|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X169|local|AnyFieldHom15 -> AnyFieldHom5|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X170|local|GraphHom2 & GraphHom3 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X171|local|AnyFieldHom2 & AnyFieldHom3 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X172|local|GraphHom2 & GraphHom9 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X173|local|AnyFieldHom2 & AnyFieldHom9 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X174|local|GraphHom2 & GraphHom15 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X175|local|AnyFieldHom2 & AnyFieldHom15 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X176|local|GraphHom2 & GraphHom21 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X177|local|AnyFieldHom2 & AnyFieldHom21 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X178|local|GraphHom2 & GraphHom63 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X179|local|AnyFieldHom2 & AnyFieldHom63 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X180|local|GraphHom3 & GraphHom4 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X181|local|AnyFieldHom3 & AnyFieldHom4 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X182|local|GraphHom3 & GraphHom8 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X183|local|AnyFieldHom3 & AnyFieldHom8 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X184|local|GraphHom4 & GraphHom9 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X185|local|AnyFieldHom4 & AnyFieldHom9 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X186|local|GraphHom4 & GraphHom15 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X187|local|AnyFieldHom4 & AnyFieldHom15 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X188|local|GraphHom4 & GraphHom21 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X189|local|AnyFieldHom4 & AnyFieldHom21 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X190|local|GraphHom4 & GraphHom63 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X191|local|AnyFieldHom4 & AnyFieldHom63 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X192|local|GraphHom8 & GraphHom9 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X193|local|AnyFieldHom8 & AnyFieldHom9 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X194|local|GraphHom8 & GraphHom15 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X195|local|AnyFieldHom8 & AnyFieldHom15 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X196|local|GraphHom8 & GraphHom21 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X197|local|AnyFieldHom8 & AnyFieldHom21 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X198|local|GraphHom8 & GraphHom63 -> GraphHom6|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X199|local|AnyFieldHom8 & AnyFieldHom63 -> AnyFieldHom6|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X200|local|GraphHom21 -> GraphHom7|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X201|local|AnyFieldHom21 -> AnyFieldHom7|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X202|local|GraphHom63 -> GraphHom7|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X203|local|AnyFieldHom63 -> AnyFieldHom7|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X204|local|GraphHom63 -> GraphHom9|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X205|local|AnyFieldHom63 -> AnyFieldHom9|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X206|local|GraphHom3 & GraphHom5 -> GraphHom15|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X207|local|AnyFieldHom3 & AnyFieldHom5 -> AnyFieldHom15|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X208|local|GraphHom5 & GraphHom6 -> GraphHom15|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X209|local|AnyFieldHom5 & AnyFieldHom6 -> AnyFieldHom15|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X210|local|GraphHom5 & GraphHom9 -> GraphHom15|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X211|local|AnyFieldHom5 & AnyFieldHom9 -> AnyFieldHom15|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X212|local|GraphHom5 & GraphHom21 -> GraphHom15|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X213|local|AnyFieldHom5 & AnyFieldHom21 -> AnyFieldHom15|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X214|local|GraphHom5 & GraphHom63 -> GraphHom15|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X215|local|AnyFieldHom5 & AnyFieldHom63 -> AnyFieldHom15|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X216|local|GraphHom63 -> GraphHom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X217|local|AnyFieldHom63 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X218|local|GraphHom3 & GraphHom7 -> GraphHom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X219|local|AnyFieldHom3 & AnyFieldHom7 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X220|local|GraphHom6 & GraphHom7 -> GraphHom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X221|local|AnyFieldHom6 & AnyFieldHom7 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X222|local|GraphHom7 & GraphHom9 -> GraphHom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X223|local|AnyFieldHom7 & AnyFieldHom9 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X224|local|GraphHom7 & GraphHom15 -> GraphHom21|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X225|local|AnyFieldHom7 & AnyFieldHom15 -> AnyFieldHom21|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X226|local|GraphHom7 & GraphHom9 -> GraphHom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X227|local|AnyFieldHom7 & AnyFieldHom9 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md
+X228|local|GraphHom9 & GraphHom21 -> GraphHom63|Minimal consequence from the complete divisor classification for one target pair of the indicated type.|Isomorphism.md
+X229|local|AnyFieldHom9 & AnyFieldHom21 -> AnyFieldHom63|Use divisibility for every pair, and binary multiplicative orders whenever agreement at two fails.|ThreeModuli.md

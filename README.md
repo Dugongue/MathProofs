@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- hypothesis-world-extensions:start -->
+- [Modular Hom profiles for graphs and finite-field modules](HypothesisWorldExtensions/Results.md) — Informal proofs and executable hypothesis ledger. Two moduli have identical attainable agreement patterns when the module field is allowed to vary. Three suffice to distinguish graphs from modules, and minimally impossible module patterns occur at every arity from three onward. Includes results on exact oracle extraction, rational projector feasibility and low-bit evaluation for binary codes.
+<!-- hypothesis-world-extensions:end -->
+
 <!-- grochow-question-equivalences:start -->
 - [Grochow questions on oracle extraction, subgraph circuits and canonization](GrochowQuestionEquivalences/Results.md) — Informal proofs. Linear-degree, absolutely irreducible counterexamples to exact and border determinant and Pfaffian oracle extraction in fixed positive characteristic; an equivalence between ordinary subgraph circuits and VFPT = VW[1], already for paths; two oracle-level canonization equivalences; and complete invariants for binary modular-matrix subgroup equality.
 <!-- grochow-question-equivalences:end -->

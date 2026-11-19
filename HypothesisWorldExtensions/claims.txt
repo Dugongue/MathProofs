@@ -1,0 +1,288 @@
+# State atoms as propositions. Exclamation mark in rules denotes negation.
+T1_named|T1|The tagged ordinary-tensor reduction to unital associative algebras extends to all covariant tensor homomorphisms.
+T1_all|T1|All named Part I reductions in Question 7.5 admit homomorphism-functorial versions in their specified categories.
+T2_tensor|T2|The ordinary tensor restriction semiring has an asymptotic spectrum.
+T2_transfers|T2|The requested TI reductions induce maps of spectra via their proposed addition and multiplication operations.
+T3_2_3|T3|Fixed-field TI over F2 reduces to fixed-field TI over F3 by a deterministic polynomial-time many-one reduction.
+T3_3_2|T3|Fixed-field TI over F3 reduces to fixed-field TI over F2 by a deterministic polynomial-time many-one reduction.
+T3_all|T3|All fixed finite-field TI problems are polynomial-time many-one equivalent across characteristics.
+T4_2_Q|T4|Fixed-field TI over F2 reduces to TI over Q by a deterministic polynomial-time many-one reduction.
+T4_Q_2|T4|TI over Q reduces to fixed-field TI over F2 by a deterministic polynomial-time many-one reduction.
+T4_3_Q|T4|Fixed-field TI over F3 reduces to TI over Q by a deterministic polynomial-time many-one reduction.
+T4_Q_3|T4|TI over Q reduces to fixed-field TI over F3 by a deterministic polynomial-time many-one reduction.
+T4_all|T4|Every fixed prime-field TI problem and rational TI are polynomial-time many-one equivalent.
+T6|T6|Unrestricted ordinary real TI reduces to positive-definite real orthogonal TI in the same exact arithmetic model.
+T7|T7|Unrestricted ordinary complex TI reduces to complex unitary TI in the same exact arithmetic model.
+T8_F3|T8|Three-mode SL-TI over F3 reduces to ordinary TI over F3 by deterministic polynomial-time many-one reduction.
+T8_F2|T8|Three-mode SL-TI over F2 reduces to ordinary TI over F2 by deterministic polynomial-time many-one reduction.
+T8_all_finite|T8|Three-mode SL-TI reduces to ordinary TI over every fixed finite field by deterministic polynomial-time many-one reduction.
+T9_mixed|T9|Real form-preserving TI with supplied variable-signature symmetric forms is polynomial-time equivalent to real TI in exact arithmetic.
+T9_general_hard|T9|TI with arbitrary explicitly given nonsymmetric nonalternating nondegenerate forms, over a fixed stated field, is TI-hard in unrestricted format.
+T10_F2|T10|Ordered Matrix Tuple Isometry over F2 is in polynomial time.
+T10_all_finite|T10|Ordered Matrix Tuple Isometry is in polynomial time over each fixed finite field of characteristic two.
+L1_TI_complete|L1|Ambient matrix conjugacy of abelian-by-semisimple matrix Lie algebras in Grochow's broad class, allowing zero Levi factor, is TI-complete.
+L2_finite_P|L2|Ambient conjugacy of explicit semisimple matrix Lie algebras over fixed finite fields is decidable in polynomial time.
+L2_number_P|L2|The exact ambient matrix conjugacy problem in the number-field extension of Question 6.2 is in polynomial bit time.
+L3_blackbox|L3|There is a deterministic polynomial-time black-box determinant equivalence test in the source model.
+L3_hard|L3|Determinant equivalence is at least as hard as the PIT and root-finding tasks in the alternative posed by Grochow.
+L4_sparse|L4|Determinant equivalence on explicit sparse monomial input has a polynomial-time algorithm in the sparse description.
+L5_P|L5|Ambient conjugacy of the finite polynomial-symmetry groups in Question VII.3 is in polynomial time in the specified presentation.
+G01|G01|Unrestricted Cayley-table Group Epimorphism is in P.
+G02|G02|Unrestricted Cayley-table Group Epimorphism is in coAM.
+G03_FP|G03|Exactly counting epimorphisms of unrestricted Cayley-table groups is in FP.
+G04|G04|Group Epimorphism for bounded-generator targets is in P for arbitrary source tables.
+G05|G05|Group Epimorphism for the paper's genus-two groups is in P.
+G06|G06|Group Epimorphism for groups admitting abelian Sylow towers is in P.
+G07|G07|Group Epimorphism for groups admitting tame towers is in P.
+G08|G08|Group Epimorphism for the paper's central elementary abelian radical and simple-product quotient class is in P.
+G09|G09|Unrestricted depth-three Boolean circuits for Cayley-table Group Isomorphism require superpolynomial size.
+G10|G10|Cayley-table Group Isomorphism has a uniform AC0 algorithm.
+G11|G11|Cayley-table Group Isomorphism is in existential log-squared-bit AC0 in the source uniformity convention.
+G12|G12|Subquasigroup Membership for arbitrary finite quasigroup tables is in deterministic logspace.
+G13_P|G13|Minimum Generating Set for finite semigroup tables is in P on the decision convention.
+G13_NPC|G13|Minimum Generating Set for finite semigroup tables is NP-complete under polynomial many-one reductions.
+G14_abelian|G14|Ordinary bounded-dimensional group WL identifies every coprime semidirect product of two abelian groups.
+G14_transfer|G14|For abelian normal kernel and arbitrary coprime complement, ordinary group WL dimension satisfies the stated maximum bound.
+G15_all|G15|A constant-dimensional ordinary group WL identifies all groups with no nontrivial abelian normal subgroup.
+G15_nonpermuting|G15|A constant-dimensional ordinary group WL identifies the nonpermuting subclass in G15.
+G16|G16|Some fixed-dimensional ordinary group WL identifies every arbitrarily colored finite abelian group.
+G17|G17|For some fixed k at least two, k-WL-identified groups can require asymptotically more than logarithmically many rounds.
+G18|G18|For each fixed dimension exact 2-ary WL can be implemented in time n to the o(log n).
+G19_abelian|G19|Hella's second bijective game identifies coprime semidirect products of two abelian groups with a constant number of pebbles.
+G19_transfer|G19|The paper's second-game maximum dimension transfer holds for arbitrary coprime complement and abelian kernel.
+G20|G20|The second game identifies the paper's odd-prime bounded-genus groups with a constant number of pebbles.
+G21_1|G21|There are same-order nonisomorphic group pairs of unbounded orders that require arbitrarily many pebbles in the first game.
+G21_2|G21|There are same-order nonisomorphic group pairs of unbounded orders that require arbitrarily many pebbles in the second game.
+G22|G22|Permutation equivalence of arbitrary linear codes of length n in the paper's field-operation model has exp(tilde O(sqrt n)) complexity.
+G23_cyclic|G23|Cyclic-alphabet group-code equivalence meets the paper's (2+o(1))^n time target.
+G23_elem|G23|Elementary-abelian-alphabet additive group-code equivalence meets the paper's (2+o(1))^n time target.
+GR01|GR01|Graph isomorphism is polynomial time when both inputs are symmetry-characterized in Grochow and Urisman's sense.
+GR02|GR02|Graph isomorphism is polynomial time with one symmetry-characterized input and the other arbitrary.
+GR03|GR03|Recognition of all symmetry-characterized graphs is in P.
+GR04|GR04|The symbolic H-subgraph polynomial admits ordinary arithmetic circuits of size f(H)n^{O(tw(H))} in the source convention.
+EQ01_equal|EQ01|CF equals Ker in the unrelativized setting.
+EQ02_equal|EQ02|Ker equals PEq in the unrelativized setting.
+EQ03_NPC|EQ03|Some NP-complete language has abelian groupy witnesses in the source sense.
+EQ03_nonUP|EQ03|Some NP language with abelian groupy witnesses is outside UP.
+EQ04|EQ04|PEq has a complete relation under polynomial-time kernel reductions.
+EQ05|EQ05|The unrelativized implication CF=Ker implies P=NP holds.
+EQ06|EQ06|A finitely generated linear group has word equality with no deterministic logspace canonical form.
+EQ07|EQ07|The equality Ker=PEq implies collapse of PH in the unrelativized setting.
+EQ08|EQ08|There is an oracle relative to which CF differs from Ker and Ker equals PEq.
+MC01|MC01|Graph isomorphism has a zero-error polynomial-time Turing reduction to full-truth-table MCSP.
+MC02|MC02|SZK is contained in ZPP with an MKTP oracle.
+TO01|TO01|Some constant factor above one for 1-Homology Localization on surface triangulations over F2 is NP-hard unconditionally.
+TO02|TO02|UGC implies arbitrarily large constant inapproximability on surface triangulations with the coefficient modulus allowed to depend on the factor.
+CA01_any|CA01|At least one of the 16 historically unresolved source rules admits nonconstant elementary coarse-graining to an elementary target at a block size at least two.
+CA01_all|CA01|All 16 historically unresolved source rules admit such coarse-graining.
+CA01_30|CA01|Elementary rule 30 has such a coarse-graining at some block size at least two.
+CA01_45|CA01|Elementary rule 45 has such a coarse-graining at some block size at least two.
+CA01_75|CA01|Elementary rule 75 has such a coarse-graining at some block size at least two.
+CA01_86|CA01|Elementary rule 86 has such a coarse-graining at some block size at least two.
+CA01_89|CA01|Elementary rule 89 has such a coarse-graining at some block size at least two.
+CA01_101|CA01|Elementary rule 101 has such a coarse-graining at some block size at least two.
+CA01_106|CA01|Elementary rule 106 has such a coarse-graining at some block size at least two.
+CA01_120|CA01|Elementary rule 120 has such a coarse-graining at some block size at least two.
+CA01_135|CA01|Elementary rule 135 has such a coarse-graining at some block size at least two.
+CA01_149|CA01|Elementary rule 149 has such a coarse-graining at some block size at least two.
+CA01_154|CA01|Elementary rule 154 has such a coarse-graining at some block size at least two.
+CA01_166|CA01|Elementary rule 166 has such a coarse-graining at some block size at least two.
+CA01_169|CA01|Elementary rule 169 has such a coarse-graining at some block size at least two.
+CA01_180|CA01|Elementary rule 180 has such a coarse-graining at some block size at least two.
+CA01_210|CA01|Elementary rule 210 has such a coarse-graining at some block size at least two.
+CA01_225|CA01|Elementary rule 225 has such a coarse-graining at some block size at least two.
+CA02_exp|CA02|Fixed-block elementary coarse-graining with unary block size belongs to EXP.
+CA02_hard|CA02|That same unary-input problem is NEXP-complete under deterministic polynomial-time many-one reductions.
+CA03_decide|CA03|An explicit mathematical criterion certifies all negative elementary rule pairs at every block size in the source convention.
+CA03_affine|CA03|There is an explicit necessary and sufficient condition on block size for coarse-graining from every affine elementary source to every elementary target.
+AP01_rankpoly|AP01|Geometric no-instance PC refutation degree of the raw TI equations is polynomial in maximum ordinary tensor rank in the matched field convention.
+AP02_subexp|AP02|On balanced dense geometric TI no-instances the original PC equations have subexponential monomial count in the dense input length.
+AP03_sparseP|AP03|Matrix-conjugacy and congruence PC refutations of the specified raw geometric equations have polynomial sparse size in fixed positive characteristic.
+AP04_borderpoly|AP04|Geometric no-instance PC refutation degree is polynomial in maximum border rank, with exactly the same field, equations and degree measure as AP01_rankpoly.
+AP05|AP05|All specified GI-to-TI routes in the source preserve the relevant bounded-degree PC proof complexity under pairwise comparison.
+AP06|AP06|A correct family of depth-d PIT circuits for fixed d at least four has polynomial-size AC0[p]-Frege proofs of the specified axioms.
+AP07|AP07|A general-circuit IPS family exhibits the paper's strict certificate-degree versus size tradeoff in the Boolean regime.
+AP08|AP08|Some tautology family has VNP-complete prescribed canonical CNF certificates under p-projections over each fixed field with more than two elements.
+AP08_F2|AP08|Some tautology family has VNP-complete prescribed canonical CNF certificates under p-projections over F2.
+AP08_all_p_degrees|AP08|Every VNP p-projection degree occurs for the specified canonical CNF certificates over the chosen field.
+AP08_c_degrees|AP08|Every VNP c-reduction degree occurs for the specified canonical CNF certificates over the chosen field.
+AP09|AP09|Geometric IPS polynomially simulates general IPS in circuit size for Boolean equation systems.
+AP10_Q|AP10|The rational same-field Boolean-IPS simulation and rational PIT-in-NP equivalence holds.
+AP10_Fp|AP10|The same-field Boolean-IPS simulation and PIT-in-NP equivalence holds over every fixed finite field on the compatible bit models.
+AP11_pq|AP11|Boolean IPS over a specified prime field Fp polynomially simulates Boolean IPS over a specified distinct prime field Fq, with the same proof-size convention.
+AP11_qp|AP11|The reverse Boolean IPS simulation in AP11_pq holds.
+AP12_pq|AP12|Formal PIT over a specified Fp reduces to formal PIT over distinct Fq under polynomial-time many-one reductions.
+AP12_qp|AP12|The reverse formal PIT reduction in AP12_pq holds.
+AP13_VP|AP13|VP over characteristic zero has VP-succinct hitting sets against itself in the stated model.
+AP13_WS|AP13|Weakly skew circuits have succinct hitting sets within their class against themselves.
+AP14|AP14|A full-IPS version of the specified algebraic-natural-proofs connection holds with explicit analogous hypotheses.
+AP15_circuit|AP15|Every low-degree rational factor has exact circuit size polynomial in the input circuit size and factor degree, without input degree or multiplicity bound.
+AP15_oracle|AP15|The degree-independent oracle-circuit factor conjecture holds, including polynomial input arity costs.
+AP16|AP16|Every nonzero polynomial in the half-minors ideal yields polynomial-size oracle extraction of determinant independent of oracle degree.
+AP16_depth|AP16|Every nonzero polynomial in the half-minors ideal yields a division-free exact constant-depth oracle circuit of size polynomial in n for a determinant of polynomially growing size, independently of oracle degree, over characteristic zero.
+AP16_border|AP16|The degree-independent constant-depth determinant extraction holds in the border oracle model over characteristic zero.
+AP17_every_minimum|AP17|Every ideal family in the source order has a minimum nonzero polynomial-family degree.
+AP17_several|AP17|An ideal family in that order can have several incomparable minimal degrees.
+AP17_infinite|AP17|An ideal family in that order can have infinitely many incomparable minimal degrees.
+AP17_no_minimal|AP17|An ideal family in that order can have no minimal degree.
+AP17_descending|AP17|An ideal family in that order can contain an infinite strict descending chain.
+AP18_all_saturated|AP18|Every degree in a nontrivial ideal coset is saturated in the original c-degree order.
+AP18_above_saturated|AP18|Every degree in a nontrivial ideal coset lies below a saturated degree in that coset.
+AP19_stable|AP19|Stable-VP equals VP in the source model.
+AP19_newton|AP19|Newton-VP equals VP in the source model.
+AP19_definable|AP19|Polynomially definable degenerations of VP are all in VP.
+AP19_border_def|AP19|Every border-VP family has a polynomially definable degeneration of VP.
+AP20|AP20|The canonical Kempf one-parameter subgroup can require superpolynomial degree for a stable degeneration of a VP family.
+AP21|AP21|The two-parameter triple-product construction in the cited GL_n question attains its specified sizes and separating degrees.
+AP22_no|AP22|The stated jointly growing SL(2,q) product method cannot attain matrix multiplication exponent two in the source model.
+AP23_no|AP23|No polynomial-size monotone Boolean projection of bipartite perfect matching computes general perfect matching.
+AP24_match_no|AP24|No polynomial-size monotone permanent projection agrees on the Boolean cube with the general perfect matching count.
+AP24_HC_no|AP24|No polynomial-size monotone permanent projection agrees on the Boolean cube with the Hamiltonian cycle count.
+AP25|AP25|TSP polytopes are affine images of cut polytopes on polynomially many vertices.
+AP26_HC|AP26|Hamiltonian cycle is complete for nonnegative-coefficient VNP under monotone p-projections.
+AP26_any|AP26|Some family in nonnegative-coefficient VNP is complete for that class under monotone p-projections.
+P_NP|background|P equals NP.
+NP_QP|background|NP is contained in quasipolynomial deterministic time.
+EXP_NEXP|background|EXP equals NEXP.
+PH_collapses|background|The polynomial hierarchy collapses.
+GI_P|background|Unrestricted graph isomorphism is in P.
+GI_subqp|background|Unrestricted graph isomorphism is decidable in time n to the o(log n).
+GroupIso_P|background|Unrestricted Cayley-table Group Isomorphism is in P.
+Omega2|background|The matrix multiplication exponent is two.
+Depth3_poly|background|Unrestricted Cayley-table Group Isomorphism has nonuniform polynomial-size depth-three Boolean circuits.
+G09_CNF|background|Cayley-table Group Isomorphism in the standard bit encoding requires superpolynomial-size CNFs.
+CF_PEq_equal|background|CF equals PEq.
+SZK_ZPP_MCSP|background|SZK is contained in ZPP with an MCSP oracle.
+MCSP_to_MKTP|background|Ordinary full-truth-table MCSP has a zero-error polynomial-time Turing reduction to MKTP.
+SurfaceZ2_decP|background|Exact surface homology localization over Z2 is in P in the setting of TO01.
+FiniteTI2_P|background|Ordinary fixed-field 3-TI over F2 is in P.
+FiniteTI3_P|background|Ordinary fixed-field 3-TI over F3 is in P.
+FiniteSL3_P|background|Three-mode determinant-one TI over F3 is in P.
+PCpoly_dense|background|The geometric raw TI PC equations on balanced dense inputs have polynomial-size refutations in the dense input length.
+AP19_border_VP|background|Border-VP equals VP in the source model.
+G13_QP|background|Minimum Generating Set for finite semigroup tables is in deterministic quasipolynomial time.
+G06_raw|G06|The G06 decision algorithm can allow arbitrary source tables when the target admits an abelian Sylow tower.
+G07_raw|G07|The G07 decision algorithm can allow arbitrary source tables when the target has a tame tower.
+G08_raw|G08|The G08 decision algorithm can allow arbitrary source tables when the target has the specified radical and simple-product quotient.
+Cut_face_TSP|background|A face of a cut polytope on polynomially many vertices projects affinely onto the TSP polytope.
+coCEqP_NPpoly|background|coC-equals-P is contained in NP/poly.
+P_UP|background|P equals UP.
+NP_UP|background|NP equals UP.
+BQP_NP|background|NP is contained in BQP.
+FiniteTIRingPrimeReduction|background|Fixed-ring TI reduces to another fixed-ring TI exactly when each prime-field problem for a source prime reduces to that same target.
+MKTP_to_MCSP|background|MKTP has a zero-error polynomial-time Turing reduction to ordinary full-truth-table MCSP.
+GI_ZPP_MKTP|background|Graph Isomorphism is in ZPP with an MKTP oracle.
+MCSP_NP_hard|background|Ordinary full-truth-table MCSP is NP-hard under deterministic polynomial many-one reductions.
+UP_BQP|background|UP is contained in BQP.
+NP_RP|background|NP equals RP.
+PH_BPP|background|PH equals BPP.
+AP07_linear|AP07|Boolean general IPS has a superpolynomial size cost at total degree at most the number of formula variables, versus polynomial unrestricted certificate size.
+VP_VNP|background|VP equals VNP over the same fixed field and with the arithmetic constants convention of the cited certificate results.
+PIT_Fp_NP|background|Formal PIT over the fixed Fp used in AP11 and AP12 is in NP.
+PIT_Fq_NP|background|Formal PIT over the distinct fixed Fq in AP11 and AP12 is in NP.
+NP_coNP|background|NP equals coNP.
+G23_elem_fixed|G23|For every fixed rank elementary abelian alphabet its additive group-code equivalence meets the stated (2+o(1))^n bound.
+QIso_const_L|background|Counting and search for quasigroup isomorphisms with a fixed bound on source generator count take deterministic logspace from raw tables.
+G06_preserve_counts|background|Every arbitrary-source instance with a target admitting an abelian Sylow tower has a restricted-source equivalent with a bijection of epimorphisms.
+AP15_principal|AP15|Every admissible principal ideal family has its given generator as the minimum oracle-circuit degree, allowing nonzero multiples of unrestricted degree and polynomially bounded oracle arities.
+T10_alt_F2|T10|Ordered alternating-tuple isometry over F2 is in P.
+T10_alt_finite|T10|Ordered alternating-tuple isometry is in P over every fixed finite field of characteristic two.
+T10_Herm_finite|T10|Ordered Hermitian-tuple isometry is in P over every fixed finite field of characteristic two with a quadratic involution.
+T10_prime_transfer|T10|Ordered tuple isometry over an explicitly presented finite extension reduces to ordered tuple isometry over its prime field preserving the alternating promise.
+T10_comm_norm_P|T10|Ordered symmetric tuple isometry over fixed characteristic-two fields is in P when the comparison adjoint algebra is commutative after quotienting common radicals.
+T10_radical_congruence_P|T10|Given an explicit characteristic-two finite-dimensional algebra with involution and its radical J, congruence transport by 1+J is in P.
+G16_second_unbounded|G16|Colored elementary abelian groups have unbounded pebble width in Hella's second bijective game even with marked generated-subgroup initial colors.
+G16_third_bounded|G16|Three pebbles in one round of Hella's third game distinguish every pair of nonisomorphic finite colored groups.
+CA_var_N2_NPC|CA02|Exact block-factor existence at fixed N=2 is NP-complete for an explicit variable source alphabet and a suitable fixed eight-symbol target.
+CA_var_table_P|CA02|Exact coarse-graining for explicit block operation tables from variable-alphabet CA with that fixed eight-symbol target can be solved in time polynomial in the table.
+CA_gated_abelian_no|CA03|The all-size obstruction holds for gated left-permutive sources and all finite abelian target alphabets with additive end slots as specified.
+AP16_exact_rational_depth|AP16|Degree-independent polynomial-size constant-depth determinant extraction is possible with legal divisions and nested rational queries.
+AP16_exact_pfaffian_depth|AP16|Degree-independent polynomial-size constant-depth Pfaffian extraction on the corresponding Pfaffian ideals is possible with legal divisions and nested rational queries.
+AP15_oracle_rational_multi|AP15|The exact degree-unrestricted black-box Factor Conjecture holds with legal divisions and any polynomially bounded oracle indices.
+AP15_adjacent_power_recover|AP15|A rational circuit recovers a polynomial from oracles for two consecutive powers by one legal division when the polynomial is nonzero.
+AP17_principal_poset|AP17|One principal ideal realizes inclusion modulo finite difference on the powerset of the integers for exact degree-unrestricted matching-index oracle reductions.
+AP17_continuum_min|AP17|A two-generated prime ideal family has continuum many minimal degrees in the polynomially bounded eventually-nonzero order over the reals or complexes.
+AP07_general_weak|AP07|There is a polynomial-input nontrivial general-IPS size gap between a linear degree cutoff and a larger cutoff on unsatisfiable polynomial systems.
+Geom_modular_transfer|background|One-block geometric polynomial truth over rational function fields reduces in randomized polynomial time to geometric truth in a sampled prime characteristic.
+GeomTI_char0_BPP|background|Geometric tensor isomorphism on rational-coordinate inputs, with solutions over the algebraic closure, is in BPP.
+GeomTI_variable_prime_P|background|Geometric tensor isomorphism with finite prime-field coefficients and algebraic-closure solutions is in P uniformly with the prime as input.
+
+StarNorm_F2_P|T10|Arbitrary explicitly presented finite-dimensional involutive binary algebra norm membership for invertible self-adjoint targets is in deterministic polynomial time.
+StarNorm_quotient_units_lift|T10|All quotient unitary elements lift to unitary elements in every explicitly presented binary involutive algebra.
+T10_quad_finite|T10|Ordered quadratic-tuple isometry is in P over every fixed finite field of characteristic two.
+G03_exp4_bounded_phi|G03|Exact Cayley-table epimorphism counting into class-at-most-two exponent-at-most-four targets of bounded Frattini rank is in P.
+
+# Extension
+BorderGeom|background|Every homogeneous absolutely irreducible rational hypersurface oracle in the complex half-minor ideal allows polynomial-size depth-three border determinant extraction at the published cube-root target.
+ExactGeom|background|The same geometric class allows exact fixed-depth extraction of a polynomially growing determinant with size polynomial in n times degree to an o(1) exponent.
+OneGeom|background|Exact extraction from each irreducible oracle in a principal ideal of a single irreducible minor takes one query and scalar rescaling for target sizes up to the minor order.
+PermGeom|background|The universal exact same-index unbounded-depth two-permanent extraction statement of Algebra.md holds with polynomial size.
+CliqueGeom|background|The corresponding two-clique extraction statement of Algebra.md holds with fixed-parameter circuit size.
+ComplexVP|background|VP equals VNP over the complex numbers with arbitrary constants.
+ComplexVFPT|background|VFPT equals VW[1] over the complex numbers in the cited clique-completeness convention.
+ExteriorFPT|background|The exterior hypercomputant over C, on n at least d, has fixed-parameter size circuits with parameter d.
+CodeOdd|background|All fixed odd activity pairs admit deterministic precision-FPT evaluation on all explicit affine binary codes.
+CodeEven|background|All fixed even activity pairs admit deterministic precision-FPT evaluation on all explicit affine binary codes.
+Code2|background|Evaluation at (1,2) on binary linear codes with column degree at most three is deterministic FPT in the binary precision t (number of requested low bits).
+CodeMixed|background|Every fixed nonzero opposite-parity activity pair on such linear codes is deterministic FPT in t.
+CodeAffine|background|Evaluation at (1,2) on affine binary codes of column degree at most three is deterministic FPT in t.
+ParityClique|background|The parity of the number of size-k cliques is deterministic FPT with parameter k.
+MatchingBits|background|Weighted perfect matching counts on general integer-weighted graphs modulo 2^t are deterministic FPT in t.
+PerBits|background|The integer permanent modulo 2^t is deterministic FPT in t.
+CodeUnaryP|background|Low-bit (1,2) evaluation on binary linear codes of column degree three or less is polynomial time in input length including unary precision.
+FPSharp|background|Every #P function is polynomial-time computable.
+QDec|background|Hilbert's tenth problem over Q is decidable.
+QPtime|background|Hilbert's tenth problem over Q is in deterministic polynomial bit time on binary circuit or sparse-polynomial input.
+ZDioph|background|The integers admit an existential Diophantine definition in the rationals.
+ProjDec|background|Rational dimension-three zero/nonzero projector pattern feasibility with the three supplied quadratic certificates and maximum marked degree five is decidable.
+ProjHeight|background|There is a computable bound in input length on the least realization bit length of every rationally feasible valid input of that certified class.
+ProjNegative|background|Negative instances of that certified class admit a recursively enumerable complete and sound negative proof system.
+ProjGI|background|There is a deterministic polynomial-time many-one reduction from that certified rational projector problem to graph isomorphism.
+ProjLocal|background|Every rational dimension-three pattern in that certified degree-five class admitting solutions over every completion has a rational realization.
+ProjTwo|background|All consistent dimension-three bipartite patterns with at most two zero marks per first-list vertex have a rational realization.
+ProjSlice|background|Every fixed pathwidth slice of the certified degree-five problem, given a decomposition, is decidable, with algorithms allowed to depend on the slice.
+ProjDepth|background|Every fixed tree-depth slice of rational projector feasibility is decidable in polynomial time nonuniformly in the depth bound.
+MPrecision|background|For each fixed finite field q one modulus of size O_q(n) and polynomial dimensional probes suffices to distinguish every pair of nonisomorphic representation targets of dimensions at most n.
+MSubprecision|background|For fixed q some sequence of single moduli of size o(n) distinguishes all such pairs given all finite-dimensional probes.
+AnyFieldHom2|background|All probe Hom counts agree modulo 2 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom3|background|All probe Hom counts agree modulo 3 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom4|background|All probe Hom counts agree modulo 4 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom5|background|All probe Hom counts agree modulo 5 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom6|background|All probe Hom counts agree modulo 6 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom7|background|All probe Hom counts agree modulo 7 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom8|background|All probe Hom counts agree modulo 8 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom9|background|All probe Hom counts agree modulo 9 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom15|background|All probe Hom counts agree modulo 15 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom21|background|All probe Hom counts agree modulo 21 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom31|background|All probe Hom counts agree modulo 31 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom63|background|All probe Hom counts agree modulo 63 for one common arbitrary target pair over one common, freely chosen finite field.
+AnyFieldHom73|background|All probe Hom counts agree modulo 73 for one common arbitrary target pair over one common, freely chosen finite field.
+PairwiseTransfer|background|For every list of at most two moduli, all graph Hom agreement profiles arise over a suitably chosen common finite field.
+TripleTransfer|background|For the moduli two, three, five, every graph Hom agreement profile arises over a suitably chosen common finite field.
+UnboundedConflict|background|For every h at least three, some h modular answers are graph-realizable and impossible over all finite fields for modules, while every proper subassignment is module-realizable.
+Hom2|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 2.
+Hom3|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 3.
+Hom4|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 4.
+Hom5|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 5.
+Hom6|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 6.
+Hom7|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 7.
+Hom8|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 8.
+Hom9|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 9.
+Hom15|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 15.
+Hom21|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 21.
+Hom31|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 31.
+Hom63|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 63.
+Hom73|background|For a common arbitrary pair of binary linear representation targets all corresponding Hom counts agree modulo 73.
+GraphHom2|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 2.
+GraphHom3|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 3.
+GraphHom4|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 4.
+GraphHom5|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 5.
+GraphHom6|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 6.
+GraphHom7|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 7.
+GraphHom8|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 8.
+GraphHom9|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 9.
+GraphHom15|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 15.
+GraphHom21|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 21.
+GraphHom31|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 31.
+GraphHom63|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 63.
+GraphHom73|background|For a common arbitrary pair of finite simple graph targets all corresponding Hom counts agree modulo 73.
