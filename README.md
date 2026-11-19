@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-chain:start -->
+- [What collapses in the four determinant tiers](TensorSignChain/Results.md) — Informal proofs of a three-sign tensor-system compiler, the middle kernel-collapse implication, sharp affine-probe bounds, and exponential dimension bounds for exact lifting across adjacent tiers.
+<!-- tensor-sign-chain:end -->
+
 <!-- objectwise-tensor-orientation:start -->
 - [Objectwise two-sign reductions from intrinsic fields, operators and slices](ObjectwiseTensorOrientation/Results.md) — Informal proofs of an objectwise retained-sign compiler and raw orientation locks using field norms, products of coefficient fields, primary chains and small slice determinant lines.
 <!-- objectwise-tensor-orientation:end -->
