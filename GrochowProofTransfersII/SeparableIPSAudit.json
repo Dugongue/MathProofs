@@ -1,0 +1,29 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "source": "SeparableIPS.lean",
+  "sha256": "791839266bd0a8344cb6081f3d355dec9fd9f590804ebd392bc054e685c227f5",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "theorems": [
+    {
+      "theorem": "SeparableIPS.sweep_eq_marked_product",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SeparableIPS.sweep_from_empty_mark",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SeparableIPS.split_layer",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "exact_frozen_target_checked": true,
+  "independent_check": "Fresh source elaboration and kernel check with transitive axiom audit."
+}

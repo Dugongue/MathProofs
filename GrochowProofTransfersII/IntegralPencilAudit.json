@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "source": "IntegralPencil.lean",
+  "sha256": "5613d3e85d3926369340c467d5c284a3584617444ba26c58b9caf303ae4711ef",
+  "theorems": [
+    {
+      "theorem": "IntegralPencil.scaled_fractional_det_nonunit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "frozen_scaled_fractional_det_nonunit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

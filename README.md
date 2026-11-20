@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-proof-transfers-ii:start -->
+- [Four advances on tensor isomorphism, proof complexity and matrix multiplication](GrochowProofTransfersII/README.md) — log-free odd-ring isomorphism, integral pencils from principal ideals, separable IPS width, and sharp simultaneous multiplication capacity. Written theorems with scoped Lean audits.
+<!-- grochow-proof-transfers-ii:end -->
+
 <!-- grochow-proof-transfers-iii:start -->
 - [Four proof transfers III](GrochowProofTransfersIII/README.md) — tensor isomorphism universality, a faster class-two group isomorphism bound, exact modular symmetric IPS degree, and border separators. Written proofs with Lean-checked supporting declarations.
 <!-- grochow-proof-transfers-iii:end -->

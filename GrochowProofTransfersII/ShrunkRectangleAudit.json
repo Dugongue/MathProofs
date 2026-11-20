@@ -1,0 +1,11 @@
+{
+  "status": "VERIFIED",
+  "source": "ShrunkRectangle.lean",
+  "sha256": "e427e2de3e8146654893e3ad845628fbaefa9a71bf92a685fb213ff75c300a48",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "axioms": [
+    "'ShrunkRectangle.deficiency_supermodular' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ShrunkRectangle.exists_largest_maximizer' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}
