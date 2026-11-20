@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-descent-and-observations:start -->
+- **[Extension spectra, determinant observations, and comparison capacity](IsomorphismDescentAndObservations/Results.md)** — Informal proofs realizing all finite divisibility spectra on multiplication tensors for ordinary and exact special-linear isomorphism, characterizing when prime-wise witnesses combine, determining optimal mark counts for determinant characters, and giving sharp fault thresholds for clustered comparisons.
+<!-- isomorphism-descent-and-observations:end -->
+
 <!-- tensor-universality-applications:start -->
 - [Four applications of tensor isomorphism universality](TensorUniversalityApplications/README.md) — near-optimal ordinary tensor dimensions, same-characteristic finite fields, linear-order isometry search and counting, and free tensor encodings of presented modules. Written proofs with Lean-checked supporting declarations.
 <!-- tensor-universality-applications:end -->
