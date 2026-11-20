@@ -1330,3 +1330,10 @@ Pending formalizations:
 
 - [Finite-field group parity reductions](F3GroupParity/RESULTS.md) gives one ordinary isomorphism comparison for qualifying centroid products and radical probes, deterministic polynomial time for products of local relative genus at most two, and adaptive reductions from logarithmic centers or intrinsic flags. The compact input consists of ordered commutator coefficients over the field of three elements.
 <!-- f3-compact-group-parity:end -->
+
+
+<!-- tisl-hypoworld:start -->
+## The special-linear tensor-isomorphism hypoworld
+
+- [Ten equivalent assertions and eighteen conditional consequences](TISLHypoworld/RESULTS.md) links the fixed-field collapse to one-mode orientation, norm constraints over finite extensions, unbounded tensor order, local rings, compact quandles, and determinantal hypersurfaces. It also records conditional transfers for counting, full-coset search, sampling, and representative canonization.
+<!-- tisl-hypoworld:end -->
