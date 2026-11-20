@@ -1,0 +1,55 @@
+{
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Written reduction proofs, with supporting Lean identities",
+  "kernel_checks": [
+    {
+      "file": "InversionParity.lean",
+      "sha256": "1da59e5fd42afe8712f298a6021d89d086c14f489cbaa3124e49324249bb62c0",
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "AlternatingSignQueries.inversionRails_exact"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "AlternatingSignQueries.inversionRails_for_witnesses"
+        }
+      ]
+    },
+    {
+      "file": "SquareZeroShear.lean",
+      "sha256": "8fd6a5918c1d41d7d91e08d0ddfecae53fc8a9740437ed7897b76f31268a9d45",
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "AlternatingSignQueries.squareZeroShear_cancels"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "AlternatingSignQueries.squareZeroShear_fixes"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "square_zero": "64 actual lifted witness checks, including all 48 GL_2 pairs for opposite raw basis orientation",
+    "local_pencils": "100 truncation/Pfaffian controls and 90 even-extension middle-form controls",
+    "Casimir_exterior_grade": "All 5760 GL_2(F9) maps checked against the exterior-grade formula"
+  },
+  "prior_reuse": [
+    "Mathproof.CasimirCovariants20261002.casimir_baseChange",
+    "Mathproof.CasimirCovariants20261002.casimir_conjFam",
+    "Mathproof.Meta.TISLCharacterAssembly20260911.tisl_class_eq_ti_of_characters"
+  ]
+}

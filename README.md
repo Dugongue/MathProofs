@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ternary-one-sign-square-zero:start -->
+- [Ternary one-sign congruence and the square-zero normal form](TernaryOneSignCongruence/RESULTS.md) — exact all-input preprocessing to a matchable symplectic square-zero pencil, plus ordinary TI reductions on stated families and supporting Lean identities.
+<!-- ternary-one-sign-square-zero:end -->
+
 <!-- grochow-open-problem-solutions:start -->
 - [Six answers from the Grochow open-problem catalog](GrochowOpenProblemSolutions/README.md) — shallow group simplicity and Fitting-free epimorphisms, the sharp degree bound for prime-cyclic rational invariants, complete-uniform tensor-network rate equality, and two determinant-extraction results. Written proofs, finite replays, and three Lean-checked supporting lemmas.
 <!-- grochow-open-problem-solutions:end -->
