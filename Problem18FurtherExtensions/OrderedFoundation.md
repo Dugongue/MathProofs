@@ -1,0 +1,76 @@
+# Almost-all higher-order tensor isomorphism and exact determinant counts
+
+This informal result combines the two generating-algebra tests of the Lean-verified finite-field Problem 1.8 solution with grouped tensor factors and exact determinant-coset calculations. It gives a field-uniform algorithm for physical-mode isomorphism, construction and exact counting, even when a regrouped flattening is singular. The conclusions hold for every balanced order, and for the more general formats below. [Problem 1.8 verification](https://github.com/Dugongue/MathProofs/tree/main/Problem18) · [Balanced tensor grouping and order reduction](https://github.com/Dugongue/MathProofs/blob/main/BalancedOrdinaryReduction.lean) · [Exact determinant-coset calculations](https://github.com/Dugongue/MathProofs/blob/main/DeterminantCosetsByCastling/PROOF.md)
+
+## Theorem
+
+Let K be an explicitly presented finite field. In the orthogonal case let the involution be the identity, and in the unitary case let K have q² elements and let the involution be the q-power map. The physical mode groups are the isometries of the standard bilinear or Hermitian forms, respectively. In characteristic two the orthogonal case refers to the standard bilinear form. Take ordered tensors A and B of shape \(n_1\times\cdots\times n_d\), with a supplied partition into three nonempty sets of modes \(I,J,L\). The respective grouped dimensions, after ordering the groups once, are \(a\le b\le c\), and \(a\ge2\). Let \(Q=|K|\) and put \(h=\min_{i\in L}c/n_i\).
+
+There is an invariant, deterministic polynomial-time recognized set of first inputs with the following properties. On every recognized source A and **every** target B, deterministic polynomial bit time suffices for exact orbit decision and exact counting, either without determinant restrictions or with an arbitrary prescribed determinant in each physical mode. The algorithm also computes one representative for the projective transporter in each physical mode if any transporter exists. A verified witness with the requested determinants can be constructed in expected polynomial bit time with zero error. Randomness for constructing witnesses is used only to find scalar roots. Exponents in the bit-time bounds are absolute, including for variable order and field.
+
+For a uniform source and b above the absolute cutoff in the Problem 1.8 large-format bound, the rejection probability is at most
+
+\[
+C(1+\log b)/\sqrt b+\min\{1,4Q^{-h(ab-c+h)}\}
+\]
+
+when \(ab-c+h>0\), with an absolute C. The first term refers to the two algebra tests. In particular if \(c\le ab\), the second term is at most \(4Q^{-h^2}\).
+
+For balanced format \(n\times\cdots\times n\), \(d\ge3\), use groups of sizes differing by at most one. This has \(c\le ab\) and gives \(1-O((1+\log n)/\sqrt n)\) coverage as n grows, uniformly in d and the field. When d = 4 the largest grouped flattening has size \(n^2\times n^2\) and need not be invertible. On the recognized set, the unrestricted transporter, when nonempty, has exactly \(2^{d-1}\) elements in odd orthogonal characteristic, one in characteristic two, and \((q+1)^{d-1}\) in the unitary case. In all three cases its automorphisms are exactly the central scalars in the physical modes whose product is one.
+
+## 1. The checked three-group recovery step
+
+Regrouping the coordinates preserves their independent uniform law. A product of physical isometries acts on a grouped mode by its Kronecker product, an isometry for that grouped standard form. Use the large-format source test of Problem 1.8 on the regrouped tensor. For clarity, write \(A_{ijk}\) with group indices of lengths a, c, b in that order. Put \(F_{j,(i,k)}=A_{ijk}\), write \(M_k=(A_{ijk})_{i,j}\), and let
+
+\[
+R_t(A)=\operatorname{Tr}_{a} \bigl((F^*(FF^*)^tF)^T\bigr)\quad(0\le t<c),
+\qquad Z_{k\ell}(A)=M_kM_\ell^* .
+\]
+
+Here \(\operatorname{Tr}_a\) is the ordinary partial trace over the group of size a, transpose T acts without conjugation, and * is transpose with the chosen scalar involution. The test requires the \(R_t(A)\) to generate \(\operatorname{Mat}_b(K)\) and the \(Z_{k\ell}(A)\) to generate \(\operatorname{Mat}_a(K)\). The products of generators are enumerated by retaining a linear basis of words. This uses at most the square of the matrix dimension many retained words. The two-algebra density bound is `Problem18LargeRootDensity20261001.large_density_package`. The literal executable matrices are `rawFirst` and `rawSecond` in `Problem18LargeRootPredicate20261001`; both declarations are in the [published source manifest](https://github.com/Dugongue/MathProofs/blob/main/Problem18/SOURCE-MANIFEST.txt).
+
+Solve the ordered linear intertwiner system for the \(R_t\) of A and B. If the system has no nonzero solution, reject. Every nonzero solution X is invertible since its kernel is invariant under the full matrix algebra, and all such solutions differ by scalar since that algebra has scalar commutant. Taking adjoints shows \(X^*X=d_b I\) for a nonzero scalar \(d_b\): the \(R_t\) are self-adjoint and \(X^*X\) commutes with them. Apply \(X^{-1}\) on group J of the target and call its slices \(Y_k\). Next solve the ordered intertwiner system from \(Z_{k\ell}(A)\) to \(d_bY_kY_\ell^*\). If there is no nonzero solution, reject. Otherwise any chosen solution P is invertible, with a unique projective class, and \(P^*P=d_a I\) for a nonzero scalar \(d_a\), because the two families have matching adjoint mates.
+
+If a genuine grouped isometric transporter has matrices \((P_*,X_*,S_*)\) in groups I,J,L, then \(X=uX_*\) for some nonzero u. Indeed the moments transform by conjugation by \(X_*\). After undoing X, the target slices are \(u^{-1}P_* M_k S_*^T\), and their cross-Grams have the extra factor \((u\bar u)^{-1}\). Since \(d_b=u\bar u\), the correction in the second system cancels that factor and makes \(P_*\) an exact solution. Thus \(P=vP_*\) for a nonzero v. This is the two-line part of `Problem18LargeRecoveryCriterion20261001.returned_pair_lines` in the same [source manifest](https://github.com/Dugongue/MathProofs/blob/main/Problem18/SOURCE-MANIFEST.txt).
+
+The rest of this proof uses information that grouped decision alone does not return. Flatten the result of applying P and X to the first two groups of A, and call the matrix H. Let D be the corresponding flattening of B in group L. If \(\ker H\ne\ker D\), reject. Otherwise there is an explicit bijection \(\phi:\operatorname{im}H\to\operatorname{im}D\) with \(\phi(Hx)=Dx\). For a genuine transporter its restriction necessarily equals \((uv)^{-1}S_*\). Since the first two grouped matrices are invertible, \(W=\operatorname{im}H=\operatorname{im}F\).
+
+## 2. Factoring a transporter given on a large subspace
+
+Let \(V=\bigotimes_{i\in L} V_i\), and suppose a linear isomorphism \(\phi:W\to W'\) is given between subspaces of V with \(\operatorname{codim} W<h\). For each \(i\in L\) and each nonzero test vector x in \(V_i\), the intersection
+
+\[
+W\cap (Kx\otimes\textstyle\bigotimes_{j\in L\setminus\{i\}}V_j)
+\]
+
+has positive dimension, since the second space has dimension \(c/n_i\ge h\). Compute a nonzero vector in it by linear algebra. If \(\phi\) is the restriction of a scalar times a Kronecker product \(\bigotimes G_i\) of invertible maps, the image of that vector has rank one in the bipartition i versus its complement. Its mode-i image line is exactly \(KG_i x\). Hence a rank other than one rules out the desired product, and rank one determines the necessary image line. Tests with \(e_1,\ldots,e_{n_i}\) and \(e_1+e_j\) for \(2\le j\le n_i\) determine \(G_i\) up to a nonzero scalar. To compute it, choose nonzero vectors on the image lines of the basis and check independence. Each image line of \(e_1+e_j\) must have two nonzero coefficients in the corresponding two-vector basis. Fix the scale on the first image and use those coefficients to set the scale of every other image. In dimension one the image line already has the required meaning.
+
+This reconstructs every necessary physical projective matrix without searching tensors or solving nonlinear equations. Applying it to all grouped maps gives projective matrices for all physical modes: use \(\phi\) in group L and use P and X, with the full grouped space as their domain, in groups I and J. If any required test fails, reject. Completeness follows because the genuine physical product induces all these lines. The procedure can produce candidate lines even when no desired product exists, so perform the exact global test in Section 3. In particular no inference from local rank-one tests alone is used for acceptance.
+
+## 3. Exact arithmetic for all determinant profiles
+
+Let \(G_i\) denote the nonsingular candidate physical matrices. Check that \(G_i^*G_i=d_i I\) with \(d_i\ne0\). Compute \(C=(\bigotimes_iG_i)A\) and test that \(\rho C=B\) for a nonzero field scalar \(\rho\), by comparing all entries after taking the ratio at a nonzero entry. The source is nonzero because both groups tested in Section 1 have dimension at least two and generate full matrix algebras. A genuine transporter must use the physical matrices \(s_iG_i\) for scalars \(s_i\ne0\). Conversely such a tuple transports A to B when \(\prod_i s_i=\rho\), and the physical matrices preserve the forms exactly when \(s_i^\nu=d_i^{-1}\), where \(\nu=2\) in the orthogonal case and \(\nu=q+1\) in the unitary case. A requested determinant \(\delta_i\) adds the equation \(s_i^{n_i}=\delta_i/\det G_i\). Reject a zero requested determinant immediately. This checks the original physical action directly.
+
+For each i write its one or two scalar equations as \(s_i^{e_{ij}}=b_{ij}\) in the cyclic group \(K^\times\) of order \(m=Q-1\). Define \(g_i=\gcd(m,e_{i1},e_{i2})\), omitting an exponent if absent. Find a Bézout combination of m and the listed exponents yielding \(g_i\), and let \(u_i\) be the product of the corresponding powers of the \(b_{ij}\), with the m-term contributing one. The original equations are equivalent to \(s_i^{g_i}=u_i\) when \(u_i^{m/g_i}=1\) and \(u_i^{e_{ij}/g_i}=b_{ij}\) for all j. Otherwise they are inconsistent. The first condition ensures existence of a \(g_i\)-th root in the cyclic group and the others ensure that each root satisfies the original equations. Necessity of all the tests is direct from the Bézout identity.
+
+Put \(g=\operatorname{lcm}_i g_i\). All possible products of the scalar solutions lie in one coset of the subgroup of order g: each root set is a coset of a subgroup of order \(g_i\), and the product of the subgroups has order g. This coset contains \(\rho\) exactly when
+
+\[
+\prod_i u_i^{g/g_i}=\rho^g.
+\]
+
+When it contains \(\rho\), the number of physical tuples is exactly \((\prod_i g_i)/g\), by the kernel size of the product map on the subgroups. Both the count and the tests use integer gcd and modular powering. In the unrestricted case all \(g_i=\gcd(m,\nu)\), giving the stated counts. Each tuple gives a distinct physical transporter. In particular, applying the calculation to \(B=A\) and using the identity as one valid tuple shows that the actual stabilizer equals the stated central subgroup.
+
+To output a transporter, first find one root in each nonempty scalar equation. When a determinant is specified in mode i, \(g_i\le n_i\), so randomized polynomial factoring finds this root with expected polynomial bit time. Without determinants, square roots use factoring or inverse Frobenius. To find a unitary norm root without factoring a degree-q polynomial, choose a basis \(1,\zeta\) of K over its fixed field, and sample x uniformly from the fixed field, e.g. as the trace of a uniformly sampled element of K. Solve the quadratic norm equation in y for \(N(x+y\zeta)\) equal to the desired nonzero norm and retain roots y in the fixed field. There are \(q+1\) possible pairs in total and at most two for each x, because the coefficient of \(y^2\) is \(N(\zeta)\ne0\). Hence a trial has success probability at least one half. The elementary randomized finite-field polynomial factoring used here is classical. [Cantor–Zassenhaus](https://doi.org/10.1090/S0025-5718-1981-0606517-5)
+
+If the provisional product of roots differs from \(\rho\), their quotient \(\alpha\) needed for correction belongs to the subgroup of order g. Use integers \(w_i\) with \(\sum_iw_i(g/g_i)=1\), since the integers \(g/g_i\) have gcd one. Multiply root i by \(\alpha^{w_i g/g_i}\). Its \(g_i\)-th power is unchanged, and the overall product becomes \(\rho\). All constructed witnesses can be checked directly. This proves expected polynomial bit-time search with zero error.
+
+## 4. Coverage and cost
+
+The additional source condition is \(\operatorname{codim}(\operatorname{im}F)<h\). The two-algebra condition is invariant under all grouped isometries. The rank condition is invariant under changes of coordinates in the groups. For uniform F, the chance of rank at most \(c-h\) is bounded by choosing an h-dimensional annihilator of its image. For any one choice the probability that all \(ab\) columns lie in its annihilator is \(Q^{-hab}\). There are at most \(4Q^{h(c-h)}\) choices, by the usual normalized Gaussian coefficient product. A union bound gives the second term of the theorem. No independence between this event and the two algebra tests is needed.
+
+All matrix dimensions and ambient regrouped dimensions are at most the number of written tensor entries. The moment sequence uses at most c powers. The number of chosen test vectors is at most twice the sum of the physical dimensions. Intersection finding and rank tests are Gaussian elimination, and applying all physical mode maps costs a polynomial in the explicit input length. Repeated powering for field involution and exponent tests has polynomial bit cost. Big integers in the count have \(O(d\log Q)\) bits because all \(g_i\le Q-1\). These bounds use absolute polynomial exponents and require no pre-enumeration of a field or of any isometry group.
+
+## Relation to prior work
+
+The checked Problem 1.8 proof decides three-factor orbit equality using two projective anchor matrices and a final isometric extension. Repeatedly calling a three-factor decision oracle after regrouping would compare with an entire larger group in each grouped mode. The subspace restriction argument instead recovers the physical projective matrices and certifies their exact action, and the determinant calculation counts the resulting finite set. This covers a different question from the existing [almost-all ordinary 4-TI proof](https://github.com/Dugongue/MathProofs/tree/main/FourTIAlmostAll), whose action is general linear, and from [Four Directions from Problem 1.8](https://github.com/Dugongue/MathProofs/blob/main/Problem18FourLevers/README.md), which addresses graph reductions, alternating forms, deliberately coarse marginals and block assembly. The related [classical-group reductions](https://arxiv.org/abs/2306.03135) transfer higher-order isomorphism to three-factor decision in the worst case. The stated result gives a quantitative guarantee for raw uniform higher-order first inputs and retains all physical determinants. The new statements are informal and publication priority remains unverified.
