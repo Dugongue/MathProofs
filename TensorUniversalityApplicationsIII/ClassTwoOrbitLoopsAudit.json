@@ -1,0 +1,14 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "ClassTwoOrbitLoops.lean",
+  "sha256": "96ff664a64b0d08a0fc7a2a64cdc71c755365f09c35ed7eace34b131c8e66c92",
+  "scope": "Four algebraic supporting identities. A fresh independent import checked the frozen Schreier loop witness and transitive axioms. The full algorithm is proved in writing.",
+  "theorems": [
+    {"theorem": "ClassTwoOrbitLoops.schreier_loop", "axioms": ["propext"]},
+    {"theorem": "ClassTwoOrbitLoops.telescope_edge_labels", "axioms": ["propext"]},
+    {"theorem": "ClassTwoOrbitLoops.central_shift_mul", "axioms": ["propext"]},
+    {"theorem": "ClassTwoOrbitLoops.central_shift_cancel", "axioms": ["propext"]}
+  ]
+}

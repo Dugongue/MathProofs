@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "ModularGroupMarkers.lean",
+  "sha256": "44cdfdd10edcd53a617d0375a9c5d219214607955d2be0ee5ec28d4970e1d585",
+  "scope": "The parity and central divisibility identities and the unit-marked image intersection. A fresh import checked the frozen intersection bridge and transitive axioms.",
+  "theorems": [
+    {"theorem": "ModularGroupMarkers.double_choose_two", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "ModularGroupMarkers.odd_choose_two_dvd", "axioms": ["propext"]},
+    {"theorem": "ModularGroupMarkers.unit_marked_core", "axioms": ["propext"]}
+  ]
+}

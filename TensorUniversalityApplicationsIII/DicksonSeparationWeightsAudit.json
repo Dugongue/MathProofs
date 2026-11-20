@@ -1,0 +1,14 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "DicksonSeparationWeights.lean",
+  "sha256": "f7e457d8b62cc522c94a25aed90259135d1bfd7eefa6b750fe9c446f632110d4",
+  "scope": "Cyclic weight telescoping, the lower bound on total degree and its exact value with inverse markers only. The frozen telescoping statement was independently rechecked with all transitive axioms.",
+  "theorems": [
+    {"theorem": "DicksonSeparationWeights.cyclic_weight_power", "axioms": ["propext", "Quot.sound"]},
+    {"theorem": "DicksonSeparationWeights.cyclic_weight_total", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "DicksonSeparationWeights.total_degree_bound", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "DicksonSeparationWeights.reverse_degree_exact", "axioms": ["propext", "Quot.sound"]}
+  ]
+}

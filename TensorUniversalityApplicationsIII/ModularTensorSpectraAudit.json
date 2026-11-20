@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "ModularTensorSpectra.lean",
+  "sha256": "068f8acfc57630df13ddd81dab69805a2756e75f66b16692dfe84a7834542853",
+  "scope": "Finite-fiber cancellation, mixed binomial coefficients, and the telescoping rank-one defect identity. Independent import checked a frozen cancellation bridge and all transitive axioms.",
+  "theorems": [
+    {"theorem": "ModularTensorSpectra.collapse_fiber_sum", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "ModularTensorSpectra.mixed_binomial_cast_zero", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "ModularTensorSpectra.cumulative_defect", "axioms": ["propext", "Classical.choice", "Quot.sound"]}
+  ]
+}

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-universality-applications-iii:start -->
+- [Tensor universality applications, third round](TensorUniversalityApplicationsIII/README.md) — class-two witnesses and counts, modular tensor-to-group equivalence, modular spectra, and exact separating degrees. Written proofs with Lean-checked supporting declarations.
+<!-- tensor-universality-applications-iii:end -->
+
 <!-- tensor-counting-and-descent:start -->
 - **[Counting, scalar extension, and constructive tensor isomorphism](TensorCountingAndDescent/Results.md)** — Informal proofs packing a batch of tensor decisions into one exact stabilizer order over finite commutative rings, realizing exponential first extension degree even with supplied ordinary and two-sign witnesses, and giving a polynomial-time formed TI algorithm for multiplicity-free elementary divisors. Includes exact counting and a finite-field root-extraction equivalence for commutative-action tensor search. The formed result extends the partial answer to Open Question 1.11 of Chen–Grochow–Qiao–Tang–Zhang.
 <!-- tensor-counting-and-descent:end -->
