@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-centroid-sign-cases:start -->
+- **[Centroid cases for three-to-two determinant signs](TensorCentroidSignCases/Results.md)** — Informal reductions over F₃ for relative odd dimensions, block packing, Koszul defects, and local modules. Relative width-two blocks give a polynomial-time algorithm. Exact encodings show that any whole centroid case would suffice for the unrestricted three-to-two reduction.
+<!-- tensor-centroid-sign-cases:end -->
+
 <!-- sl-tensor-projection-packing:start -->
 - **[Safe projections and packing for SL tensor isomorphism](SLTensorProjectionPacking/Results.md)** — Informal single-instance reductions over F₃ on specified input families. They use Frobenius-stable factor dependencies without a common splitting field, exact determinant counts, Lie-stabilizer graph supports, and centroid packing with unrestricted block multiplicities. The unrestricted three-to-two reduction remains open.
 <!-- sl-tensor-projection-packing:end -->
