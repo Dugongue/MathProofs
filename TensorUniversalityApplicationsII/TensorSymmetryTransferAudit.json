@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "TensorSymmetryTransfer.lean",
+  "sha256": "2d5b307cd3a3e1db725572bc6a0905bfd80bdb74d2f0d4fece5a3d3e25c033b5",
+  "theorems": [
+    {"theorem": "TensorSymmetryTransfer.transfer_iterate", "axioms": ["propext"]},
+    {"theorem": "TensorSymmetryTransfer.transfers_commute_at_state", "axioms": []},
+    {"theorem": "TensorSymmetryTransfer.normalized_label_sum", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "TensorSymmetryTransfer.square_zero_prime_multiple_power", "axioms": ["propext", "Classical.choice", "Quot.sound"]}
+  ],
+  "independent_statement_bridge": true,
+  "scope": "Four support identities and independent recheck of the fixed transfer-power statement. The full tensor, spectral and finite-field theorems have written proofs."
+}

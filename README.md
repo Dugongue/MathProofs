@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-universality-applications-ii:start -->
+- [Four further applications of tensor isomorphism universality](TensorUniversalityApplicationsII/README.md) — free tensors for class-two groups, Frattini witnesses and counts, closed geometric orbits, and symmetry transfer. Written proofs with Lean-checked supporting declarations.
+<!-- tensor-universality-applications-ii:end -->
+
 <!-- tensor-isomorphism-composition:start -->
 - **[Composition, supplied transporters, and tractable form actions in tensor isomorphism](TensorIsomorphismComposition/Results.md)** — Informal proofs of a single-instance compiler for monotone span programs of TI tests, TI-hardness of SL-TI with an explicit ordinary transporter, realization of all exact SL extension spectra under that promise, and a deterministic polynomial-time algorithm for cyclic-asymmetry form-preserving TI. The last result gives a tractable case of Chen–Grochow–Qiao–Tang–Zhang Open Question 1.11.
 <!-- tensor-isomorphism-composition:end -->

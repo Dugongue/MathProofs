@@ -1,0 +1,12 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "ClassTwoPowerRecords.lean",
+  "sha256": "8fa21eafd929c167196040f8f90a1610d942c300766a5ff22cfad4ed74fc0524",
+  "scope": "The central-defect power formula and the recovered coordinates of the marked square. Independent imports checked frozen wrappers for both statements and transitive axioms.",
+  "theorems": [
+    {"theorem": "ClassTwoPowerRecords.central_commutator_power", "axioms": ["propext"]},
+    {"theorem": "ClassTwoPowerRecords.marked_square_recovery", "axioms": ["propext"]}
+  ]
+}

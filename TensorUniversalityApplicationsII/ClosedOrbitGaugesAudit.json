@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "ClosedOrbitGauges.lean",
+  "sha256": "faa1c3a4671d0483f714b3e214004af42a1f3436cadf0b2bb55a6eaedb977697",
+  "scope": "Supporting normalization and Lang fiber identities. A separate import checked the frozen Lang fiber bridge and all transitive axioms.",
+  "theorems": [
+    {"theorem": "ClosedOrbitGauges.det_gauge", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "ClosedOrbitGauges.normalize_comp", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "ClosedOrbitGauges.lang_fiber", "axioms": ["propext"]}
+  ]
+}
