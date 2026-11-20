@@ -20,7 +20,7 @@ This packet supports the [almost-all ordinary even-order theorem](../OrdinaryFou
 - [EvenScalarCertification.lean](EvenScalarCertification.lean) proves the scalar stabilizer test once the self-comparison branches are known to cover the stabilizer and their homogeneous subgroups are supplied by generators.
 - [EvenFilteredTransport.lean](EvenFilteredTransport.lean) combines those checks to give exact counting after a complete transporter search and a scalar stabilizer certificate. On a yes-instance of order d the unrestricted count is (q − 1)^(d − 1).
 
-The sources were checked using Lean 4.33.0 and Mathlib revision db584cd6d46c92f209a44c0f1c829460d327499d. The audited theorem dependencies use only standard Lean axioms. The end-to-end recognition, coverage, and binary runtime theorems remain to be formalized. The scalar transporter equivalence assumes a certified scalar stabilizer and a verified transporter.
+The sources were checked using Lean 4.33.0 and Mathlib revision db584cd6d46c92f209a44c0f1c829460d327499d. The audited theorem dependencies use only standard Lean axioms. The coverage theorem is recorded below. End-to-end recognition and binary runtime remain to be formalized. The scalar transporter equivalence assumes a certified scalar stabilizer and a verified transporter.
 
 The mathematical dependencies are the [four-tensor coverage proof](../FourTIAlmostAll/FullCoverage.md), its [transporter construction](../FourTIAlmostAll/SearchAndLifting.md), and the [even-order extension](../OrdinaryFourTIFusions/EvenOrder.md). The Lean files use the relevant Mathlib finite product, matrix, and tensor-product APIs.
 
@@ -44,7 +44,7 @@ The driver still requires executable branch production, the physical Smith and w
 - [EvenNextSmithPhysical.lean](EvenNextSmithPhysical.lean) checks the actual Smith matrix-packing command on installed prefix banks. The proof gives counted execution, exact written coefficients, and preservation of the other state. [EvenNextSmithReference.lean](EvenNextSmithReference.lean) proves equivalence of the reference verdict with the original arbitrary-arity equations.
 - [EvenNextScalarDensity.lean](EvenNextScalarDensity.lean) bounds the fraction with a nonscalar stabilizer by q^(−n²) for n ≥ 5 and all orders at least four. This bounds that failure event alone.
 
-These modules reuse Problem 1.7's field-cell packing, trace pairing, and polar rank lemmas, Problem 1.8's machine definitions and Fourier bounds, and Mathlib's finite algebra and matrix results. The audited declarations depend only on standard Lean axioms. The higher-order reciprocal probability bound is now checked below. The order-four coverage, full raw trial and witness execution, and end-to-end binary time theorem remain open in this formalization.
+These modules reuse Problem 1.7's field-cell packing, trace pairing, and polar rank lemmas, Problem 1.8's machine definitions and Fourier bounds, and Mathlib's finite algebra and matrix results. The audited declarations depend only on standard Lean axioms. The coverage estimates are stated below. Full raw trial and witness execution and the end-to-end binary time theorem remain in progress.
 
 ## Reciprocal coverage at even order at least six
 
@@ -56,4 +56,71 @@ This pass reuses the previous exact shear and polar-rank proof, the Problem 1.8 
 
 [EvenP1Coverage.lean](EvenP1Coverage.lean) proves the assembled marginal bound. In every finite field of size q, for n ≥ 200 and balanced even order at least six, the actual reciprocal anchor has L1 error at most 9q^(−n²) on the dense source conditioned on an invertible cut. The statement covers each retained physical mode in either cut half. The reference law is uniform on the full matrix space in odd characteristic and on the prescribed trace slice in characteristic two. [EvenP1ProbSurjectivity.lean](EvenP1ProbSurjectivity.lean) gives the q^(−n²) failure fraction before conditioning. [EvenP1BadMass.lean](EvenP1BadMass.lean) transfers that bound to the actual reciprocal basis law with a factor of at most four.
 
-This closes the higher-order reciprocal coverage component. Singular coverage, the order-four case, and the end-to-end executable theorem are separate components.
+This closes the higher-order reciprocal coverage component. The singular and order-four coverage results are given below.
+
+## Singular coverage at even order at least six
+
+- [EvenP2FormsCoverage.lean](EvenP2FormsCoverage.lean) bounds the fraction with a nonzero kernel form that fails any retained-mode rank test by q^(−n) on each side. [EvenP2FormsFiber.lean](EvenP2FormsFiber.lean) identifies these events on exact kernel fibers and supplies one suitable form pair for each nonexceptional singular fiber.
+- [EvenP2Corank.lean](EvenP2Corank.lean) proves the high-corank exception bound 2/n by counting vectors killed by a uniform square cut.
+- [EvenP2CropAnchors.lean](EvenP2CropAnchors.lean) identifies the decoded crop anchors with the literal projected squared partial traces. The crop and polar lemmas each charge event error at most q^(−n²) under the small-corank gate and n ≥ 64.
+- [EvenP2SpectralFiber.lean](EvenP2SpectralFiber.lean) transfers the checked uniform primary means to the actual dense fiber. The budget of that fixed pair sums the anchors in both halves, with each physical mode used once.
+
+The proof reuses the order-four trace and polar methods, the finite Fourier and dependent-column estimates, and the checked primary expectation. It sums the mode expectations before applying Markov's inequality, so the failure estimate does not grow with tensor order.
+
+[EvenP2Coverage.lean](EvenP2Coverage.lean) combines the exact-fiber results on the raw dense tensor. For every finite field of size q, balanced even order at least six, and n ≥ 64, the fraction of sources whose cut is singular and whose shape test rejects is at most 2/n + 2q^(−n) + C_q/log n, where C_q is the checked field-dependent primary-budget constant plus the transfer allowance, multiplied by log q. The proof uses only standard Lean axioms.
+
+## Order-four coverage
+
+- [EvenP3SelectedForms.lean](EvenP3SelectedForms.lean) and [EvenP3DefectTail.lean](EvenP3DefectTail.lean) bound the second moment of the radical dimension of a nonzero form chosen from an exact cut kernel. The mean is at most four over the raw uniform source, with missing choices charged zero.
+- [EvenP3SingularCropLaw.lean](EvenP3SingularCropLaw.lean) and [EvenP3SingularLiveCrop.lean](EvenP3SingularLiveCrop.lean) give the factor-four conditioning bound for any event after the live crop of a uniform exact two-kernel fiber. [EvenP3SingularFiberMean.lean](EvenP3SingularFiberMean.lean) then bounds each live repeated-primary expectation for unequal widths under the numerical hypotheses in the statement.
+- [EvenP3SingularEnlarged.lean](EvenP3SingularEnlarged.lean) verifies the characteristic polynomial of a squared partial trace on the supported enlarged blocks. [EvenP3Padding.lean](EvenP3Padding.lean) bounds the additional primary budget in terms of the corresponding squared form defect.
+- [EvenP3SingularPack.lean](EvenP3SingularPack.lean) connects those estimates to the two actual enlarged characteristic polynomials computed from arbitrary selected forms of sufficient live width on the raw exact fiber. For a form of radical dimension k the padded mean is at most 8(C + 1) + 2 + 8k², with C the field-dependent primary-budget constant.
+- [EvenP3RecipLowSparse.lean](EvenP3RecipLowSparse.lean) and [EvenP3RecipLowMass.lean](EvenP3RecipLowMass.lean) verify the low-label rank bound from selected quotient rows and the conditional law of those rows. [EvenP3RecipHighPhysical.lean](EvenP3RecipHighPhysical.lean), [EvenP3RecipHighBatch.lean](EvenP3RecipHighBatch.lean) and [EvenP3RecipHighRepeat.lean](EvenP3RecipHighRepeat.lean) verify the cross-grid rank bridge, the bound for a single batch and the independent-batch estimate.
+
+[EvenP3SingularCoverage.lean](EvenP3SingularCoverage.lean) verifies the assembled raw order-four singular coverage estimate. For n ≥ 1024 and any finite field of size q, the fraction of all dense source tensors with a singular cut and no eligible enlarged trial passing the exact gate q^D ≤ n is at most 2/n + 8/⌊n/2⌋² + 2(8(C + 1) + 34) log(q)/log(n), where D is the sum of the two enlarged repeated-primary budgets.
+
+[EvenP3RecipCoverage.lean](EvenP3RecipCoverage.lean) verifies the reciprocal anchor marginals on the actual dense source conditioned on an invertible cut, for n ≥ 10¹⁹. It covers both orientations and each retained physical mode, with the uniform comparison law on all matrices in odd characteristic and on the prescribed trace slice in characteristic two. [EvenP3RecipLowCommon.lean](EvenP3RecipLowCommon.lean) and [EvenP3RecipHighClose.lean](EvenP3RecipHighClose.lean) prove that the simultaneous exceptional probabilities are at most 8/qⁿ and 16/q^⌊n/16000000⌋. The Fourier estimate sums by rank on the low-label region before adding the high-label contributions.
+
+[EvenP3RecipPrimary.lean](EvenP3RecipPrimary.lean) verifies the original comparison gate q^D ≤ n, where D is the sum of the four reciprocal primary budgets. [EvenP3Coverage.lean](EvenP3Coverage.lean) combines the singular and invertible estimates on the same uniformly sampled raw source. The explicit bound holds for n ≥ 10¹⁹ and is O(1/log n) for each fixed field.
+
+The proof reuses the checked exact-fiber and reciprocal-basis laws, Mathlib linear algebra, and the trace and Fourier machinery from Problems 1.7 and 1.8. Audited declarations use only the standard Lean axioms. Witness recovery and the final binary runtime theorem remain in progress.
+
+## Uniform coverage over all even orders
+
+- [EvenP4HigherRecip.lean](EvenP4HigherRecip.lean) proves the full higher-order reciprocal spectral gate on the actual anchors. The estimate holds conditional on an invertible cut and transfers to the raw source. The joint gate uses the same threshold q^D ≤ n^d as the higher-order singular branch.
+- [EvenP4OrderFourLimit.lean](EvenP4OrderFourLimit.lean) verifies that the complete order-four rejection bound tends to zero, including the factor n² from the primary-budget transfer.
+- [EvenP4ScalarDensity.lean](EvenP4ScalarDensity.lean) bounds the combined nonscalar-stabilizer and zero-tensor exception by q^(−n²). [EvenP4ScalarOrbit.lean](EvenP4ScalarOrbit.lean) proves invariance of this gate and verifies its equivalence with the completed stabilizer scan under the stated scan hypotheses.
+- [EvenP4Coverage.lean](EvenP4Coverage.lean) gives one side-length cutoff for each positive error tolerance, for every balanced even order at least four. For n ≥ 200 and even order at least six the rejection bound is C/log n with C = 5 + (2B + 11) log q, where B is the checked primary-budget constant of the fixed field.
+- [EvenP4Contract.lean](EvenP4Contract.lean) supplies the two exact coverage premises of the solver assembly and identifies the same probability on the decoded word interface.
+
+The audited coverage theorems use the standard Lean axioms. The predicate is the mathematical specification of the spectral and scalar tests. Primary and cell decomposition, witness recovery, and binary-time compilation remain in progress.
+
+## Raw trial preparation
+
+- [EvenP5EncodedTrials.lean](EvenP5EncodedTrials.lean) decodes the two dense inputs and constructs their trial lists at the balanced cut. [EvenP5TrialList.lean](EvenP5TrialList.lean) implements the dispatch and bounds each list by max(1, n²).
+- [EvenP5InvCut.lean](EvenP5InvCut.lean) computes the inverse by solving the augmented column systems. [EvenP5InvAnchor.lean](EvenP5InvAnchor.lean) computes the anchors in each reciprocal orientation. [EvenP5InvTransport.lean](EvenP5InvTransport.lean) verifies conjugacy by the same physical mode maps as the tensor isomorphism.
+- [EvenP5KernelBasis.lean](EvenP5KernelBasis.lean) computes both cut kernels and serializes their bases for the checked form scan. [EvenP5KernelScan.lean](EvenP5KernelScan.lean) verifies the nonzero, corank, and retained-rank tests and proves that transported forms appear in the target list.
+- [EvenP5PhysicalExecution.lean](EvenP5PhysicalExecution.lean) computes the higher-order singular anchors from coordinate contractions, squares, and partial traces. For order four, [EvenP5NormalFrame.lean](EvenP5NormalFrame.lean) produces the actual normal frames by transvections and [EvenP5EnlargedExecution.lean](EvenP5EnlargedExecution.lean) constructs the exact enlarged anchors. [EvenP5TransportRawEnlarged.lean](EvenP5TransportRawEnlarged.lean) proves that the executable anchors recover the characteristic polynomials used by the coverage theorem and conjugate across isomorphic inputs after reindexing.
+- [EvenP5Contract.lean](EvenP5Contract.lean) ties the branches together. Whenever the source passes the previously verified spectral gate, every genuine transporter has an eligible source and target trial in the lists produced from the actual comparison encoding.
+
+[EvenP5InvRref.lean](EvenP5InvRref.lean) separately verifies a stored-row version of the same RREF and kernel computation.
+
+The trial construction and its completeness proof are checked in Lean. The following section documents the checked field-cell components. The physical comparison, witness recovery and full binary running time remain in progress.
+
+The portable kernel code reuses the MathProofs P15 RREF and free-column kernel proofs. The three narrow donor modules retain their original source names under Mathproof/Meta. The executable pivot recursion adapts the matrix transvection argument in Mathlib by Sébastien Gouëzel (copyright 2021), distributed under the [Apache 2.0 license](LICENSE-Mathlib-Apache-2.0). The basis-bank proofs reuse the already checked ordinary even-order tensor solvers' kernels and bounded form enumeration.
+
+## Executable field-cell components
+
+- [EvenP6PrimaryBlocks.lean](EvenP6PrimaryBlocks.lean) verifies primary-block extraction from the anchor and supplied factor data. [EvenP6AlignFamily.lean](EvenP6AlignFamily.lean) establishes the exact field-degree and multiplicity bound on the repeated-block search. [EvenP6AlignRestriction.lean](EvenP6AlignRestriction.lean) and [EvenP6AlignWordTable.lean](EvenP6AlignWordTable.lean) execute the cyclic-block alignment and verify the stored power coordinates.
+- [EvenP6CellsProduct.lean](EvenP6CellsProduct.lean) splits a reduced coefficient algebra into computed finite fields with compact coordinates and proves that projection and reconstruction are inverse. [EvenP6CellsTensorMode.lean](EvenP6CellsTensorMode.lean) verifies execution of the mode maps. [EvenP6CellsBounds.lean](EvenP6CellsBounds.lean) bounds the number of cells in every refinement prefix by the ambient dimension.
+- [EvenP6Reframe.lean](EvenP6Reframe.lean) verifies the original tensor equation in the prepared coordinates. [EvenP6EnlargedWords.lean](EvenP6EnlargedWords.lean) verifies the four enlarged mode actions. [EvenP6CellNetwork.lean](EvenP6CellNetwork.lean) verifies the support and field-ratio equations. [EvenP6SignedPrefix.lean](EvenP6SignedPrefix.lean) preserves shared variables and signed inverses while translating field equations to the numbered prefix, and [EvenP6Install.lean](EvenP6Install.lean) bounds the installed bank sizes.
+
+The checked components use the standard Lean axioms. The caller that produces all aligned models and prefix banks directly from the raw trial records remains open. The package reuses the MathProofs Problem 1.7 coordinate and characteristic-polynomial code and the P15 finite-field and polynomial machinery. The existing Mathlib Apache 2.0 notice covers the reused matrix and polynomial library material.
+
+## Signed field-cell preparation and reference banks
+
+[EvenP6LiveCells.lean](EvenP6LiveCells.lean) constructs the joint coefficient table from the actual mode tables and computes the mode embeddings. [EvenP6LiveCellsRows.lean](EvenP6LiveCellsRows.lean) produces the compact ratios and rejects exactly when the zero patterns differ. [EvenP6LiveCellsSigned.lean](EvenP6LiveCellsSigned.lean) ties those equations to the signed multiplication matrices acting on dense coefficients. [EvenP6SharedModes.lean](EvenP6SharedModes.lean) uses the same field variable at each occurrence, with inverse values on dual sites and identity values at coordinates whose repeated-block maps were already fixed.
+
+[EvenP6FourTransport.lean](EvenP6FourTransport.lean) keeps the two enlarged anchor conjugations and the enlarged comparison under the same pair of units. [EvenP6TrialWords.lean](EvenP6TrialWords.lean) materializes the matching dense coefficient arrays in the numbered raw trial shapes. [EvenP6PreparedPrefix.lean](EvenP6PreparedPrefix.lean) computes the numerical address and order arrays and LCM quotients and verifies the reference predicates using the checked Problem 1.7 interface. [EvenP6CompileRows.lean](EvenP6CompileRows.lean) connects the emitted ratios and banks to exact signed feasibility. [EvenP6GaugeBanks.lean](EvenP6GaugeBanks.lean) computes the gauge between two supplied embeddings by degree-many Frobenius tests, using repeated small powers for the field computations.
+
+These components have matching Lean source receipts and their audited theorems use only the standard Lean axioms. The standalone packet contains the portable field-cell and reference modules. The local worktree also has the wider primary factorization, raw trial alignment and frame dependencies. The complete guarantee that the raw dispatcher retains a feasible branch for every genuine transporter, and the end-to-end binary runtime, remain in progress.

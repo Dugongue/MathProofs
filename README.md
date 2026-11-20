@@ -76,7 +76,7 @@ INFORMAL PROOFS (not formalized yet)
 <!-- grochow-research-synthesis:end -->
 
 <!-- ordinary-even-ti-lean-components:start -->
-- **[Lean components for almost-all ordinary even-order tensor isomorphism](OrdinaryEvenTILean/README.md)** — Checked reciprocal anchor coverage in even order at least six, bounded kernel-form search, and actual Smith matrix packing. The end-to-end binary-time theorem remains in progress.
+- **[Lean components for almost-all ordinary even-order tensor isomorphism](OrdinaryEvenTILean/README.md)** — Checked uniform coverage, raw trial preparation, and exact signed field-cell and reference-bank compilation. The raw-dispatch completeness and end-to-end binary runtime theorems remain in progress.
 <!-- ordinary-even-ti-lean-components:end -->
 
 <!-- p-group-search-fusions:start -->
