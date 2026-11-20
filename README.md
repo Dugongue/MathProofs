@@ -5,6 +5,11 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-open-problem-solutions-2:start -->
+- [Further answers from the Grochow open-problem catalog](GrochowOpenProblemSolutions2/README.md) — six written answers including exact determinant partition rank, finite Lie exponent for real special linear groups in order at least three, and a promised-input DNF lower bound for abelian group isomorphism. Includes finite replays, a Lean-checked supporting identity, and catalog literature corrections.
+<!-- grochow-open-problem-solutions-2:end -->
+
+
 <!-- ternary-one-sign-square-zero:start -->
 - [Ternary one-sign congruence and the square-zero normal form](TernaryOneSignCongruence/RESULTS.md) — exact all-input preprocessing to a matchable symplectic square-zero pencil, plus ordinary TI reductions on stated families and supporting Lean identities.
 <!-- ternary-one-sign-square-zero:end -->
