@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- bounded-relative-tensor-signs:start -->
+- **[Exact determinant profiles with one bounded relative mode](BoundedRelativeTensorSigns/Results.md)** — Informal deterministic polynomial-time algorithm for every fixed relative mode dimension over finite fields of fixed odd characteristic, with polynomial dependence on the field bit length. Also gives sufficient conditions for wide modes using pair-adjoint multiplicities and determinant factors.
+<!-- bounded-relative-tensor-signs:end -->
+
 <!-- tensor-centroid-sign-cases:start -->
 - **[Centroid cases for three-to-two determinant signs](TensorCentroidSignCases/Results.md)** — Informal reductions over F₃ for relative odd dimensions, block packing, Koszul defects, and local modules. Relative width-two blocks give a polynomial-time algorithm. Exact encodings show that any whole centroid case would suffice for the unrestricted three-to-two reduction.
 <!-- tensor-centroid-sign-cases:end -->
