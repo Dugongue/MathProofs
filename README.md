@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- determinant-and-evolution-open-questions:start -->
+- **[Determinant equivalence and evolution-algebra questions](DeterminantAndEvolutionOpenQuestions/Results.md)** — Informal proofs of the PIT-hardness alternative in Grochow’s arXiv Open Question 6.3 and answers to Kaygorodov–Martín González–Viruel Questions 38, 44, and 45. Includes a negative answer to the abstract-group realization clause of Question 31. The stronger proceedings root-finding clause is outside the determinant reduction.
+<!-- determinant-and-evolution-open-questions:end -->
+
 <!-- tensor-universality-applications-iii:start -->
 - [Tensor universality applications, third round](TensorUniversalityApplicationsIII/README.md) — class-two witnesses and counts, modular tensor-to-group equivalence, modular spectra, and exact separating degrees. Written proofs with Lean-checked supporting declarations.
 <!-- tensor-universality-applications-iii:end -->
