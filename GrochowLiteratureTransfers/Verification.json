@@ -1,0 +1,39 @@
+{
+  "scope": "The Lean file checks four supporting statements. The full algorithms and complexity analyses are written proofs.",
+  "lean": "4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lean_source_sha256": "97d2a8959683c30b3f8b95b384a7ef584c9529d67e3d32f270728f66e1ce5c9e",
+  "theorems": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "theorem": "GrochowIsomorphism20261120.character_transporter_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "GrochowIsomorphism20261120.congruence_iff_adjoint_norm"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "GrochowIsomorphism20261120.gram_preserves_linear_relations"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "GrochowIsomorphism20261120.unique_cocycle_correction"
+    }
+  ],
+  "exact_controls": "Four Python control tests passed"
+}

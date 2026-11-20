@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-literature-transfers:start -->
+- **[Four algorithmic results for tensor and group isomorphism](GrochowLiteratureTransfers/README.md)** — Written proofs for prescribed determinants over prime-power rings, dyadic tuple isometry with commutative commutant, compact tensor isomorphism with spectral hypotheses, and central epimorphism counts with bounded target radical generator number or bounded derived intersection in the elementary abelian case. Four supporting lemmas checked in Lean.
+<!-- grochow-literature-transfers:end -->
+
 <!-- grh-valiant-transfers:start -->
 - [Four Riemann-to-Valiant transfers](GRHValiantTransfers/README.md) — finite-prime circuit transfer and sharper univariate lower bounds, a VNP-complete quadratic reciprocal, cohomology criteria for border determinantal complexity, and exact symmetric IPS denominators. Written proofs with Lean-checked supporting identities.
 <!-- grh-valiant-transfers:end -->
