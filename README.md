@@ -1312,3 +1312,10 @@ Pending formalizations:
 
 - [Determinant gadget obstructions](SLDeterminantObstructions/RESULTS.md) gives a size lower bound for natural determinant-line diagrams, a scalar-absorption obstruction for homogeneous block maps, exact amplification and radical-grade counterexamples, and a tight opaque-query lower bound on matrix pencils. The four obstructions have separate, explicit hypotheses.
 <!-- sl-determinant-obstructions:end -->
+
+
+<!-- sl-classical-equivalences:start -->
+## Special-linear tensor isomorphism and classical conjugacy
+
+- [Classical reformulations and implications](SLClassicalEquivalences/RESULTS.md) identifies the fixed-field tensor degree equality over the field of three elements with reduction of alternating-group conjugacy to symmetric-group conjugacy for succinct regular representations of special exponent-three groups. It also gives an oriented group theorem at every fixed odd prime and a determinant-pencil construction over arbitrary finite fields.
+<!-- sl-classical-equivalences:end -->

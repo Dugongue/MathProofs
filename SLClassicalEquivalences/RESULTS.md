@@ -1,0 +1,11 @@
+# Special-linear tensor isomorphism and classical isomorphism problems
+
+**Exact equivalence over $\mathbb F_3$.** Ordinary and special-linear three-tensor isomorphism have the same deterministic polynomial-time many-one degree if and only if $A_N$-conjugacy reduces to $S_N$-conjugacy for the regular actions of compactly presented special class-two exponent-three groups. Here $N$ is the group order and the input is the ordered commutator coefficients. The distinction between the two conjugacy groups is evenness of the original group isomorphism. [Proof and the $27$-point example](RegularGroupConjugacy.md).
+
+| Result | Precise scope |
+| --- | --- |
+| [Oriented group isomorphism](OrientedGroups.md) | For each fixed odd prime $p$, the tensor degree equality is equivalent to eliminating the additive determinant-one constraint from isomorphism of these compact special $p$-groups. The exact construction preserves a prescribed determinant character. |
+| [Classical complexity implications](ClassicalComplexity.md) | Finite-field ordinary and special-linear TI lie in $\mathrm{NP}\cap\mathrm{SZK}$. $\mathrm P=\mathrm{NP}$ implies equality. The reverse implication fails in the stated external-oracle model. The chapter gives separate sufficient conditions involving circuit minimization and derandomization. |
+| [Equivalence of circuit forms](DeterminantCircuitForms.md) | Special-linear TI is many-one equivalent to projective equivalence of determinant polynomials of a specified family of explicit linear pencils. The forward reduction is uniform over explicitly represented finite fields. A reduction for arbitrary pencils would suffice and would also cover symbolic determinant identity testing. The converse here uses the promise of the constructed family. |
+
+These results give an exact group-theoretic reformulation and one-way links to independently established classical questions. No equivalence to $\mathrm P=\mathrm{NP}$, general Group Isomorphism in polynomial time, or unrestricted circuit equivalence was established. The compact input and the fixed field in the group theorem are essential to its stated proof. The results use neither Riemann hypothesis. [Verification](Verification.json).

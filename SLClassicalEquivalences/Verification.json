@@ -1,0 +1,44 @@
+{
+  "lean": {
+    "version": "4.33.0",
+    "source": "ParityBridges.lean",
+    "sha256": "ab27af6fd2bba37004ce42c4d4aee9c2f420bf3e8d1671011e5c2e4d80b311ed",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrientationBridge.permutation_sign_of_odd_power"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "OrientationBridge.oriented_transporter_iff_stabilizer_correction"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "The two supporting sign and transporter lemmas are independently kernel- and axiom-checked."
+  },
+  "written_proofs": "The reduction to oriented group isomorphism, the regular permutation conjugacy equivalence, the determinant-pencil construction, and the classical complexity consequences are written proofs.",
+  "finite_controls": {
+    "heisenberg_group_transporters": 864,
+    "heisenberg_multiplication_identities": 629856,
+    "scalar_group_gadget_lifts": 480,
+    "bracket_equalities_for_group_gadget": 29340,
+    "marker_rank_checks": 486,
+    "triangular_residue_moduli": 49,
+    "determinant_anchor_triple_block_choices": {
+      "F2": 216,
+      "F3": 110592,
+      "F5": 110592000
+    }
+  },
+  "scope": "The group equivalence uses fixed odd prime fields and succinct ordered commutator coordinates. The alternating conjugacy form uses the field with three elements. Priority is unverified."
+}
