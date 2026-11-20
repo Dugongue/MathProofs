@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- moving-block-tensor-signs:start -->
+- [The third determinant in tensor isomorphism over F₃](MovingBlockTensorSigns/Results.md) — Informal progress on the finite-field case of Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9. Gives exact same-transporter complement and succinct polynomial formulations, and identifies why the tested fixed-diagram couplings fail. The unrestricted reduction to one two-sign TI instance remains open.
+<!-- moving-block-tensor-signs:end -->
+
 <!-- tensor-orientation-certificates:start -->
 - **Two determinant certificates for signed tensor isomorphism over F₃** — Informal proofs of a logarithmic-corank Koszul determinant test and a low module-rank extension-field orientation lock that includes the Frobenius sign. These are sufficient conditions related to Open Question 1.9. [Proof packet](TensorOrientationCertificates/Results.md)
 <!-- tensor-orientation-certificates:end -->
