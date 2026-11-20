@@ -1,0 +1,9 @@
+{
+  "status": "VERIFIED",
+  "source": "SystematicAlphabetEquivalence.lean",
+  "sha256": "0497a2bf654ae735d86a5e21d3fd3c1c6b81bb0ba5b2f8f635705d830e27b217",
+  "lean": "4.33.0",
+  "axioms": [
+    "'SystematicAlphabetEquivalence.recovers_centered_additive_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ]
+}

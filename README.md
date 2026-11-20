@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-proof-transfers:start -->
+- [Four proof transfers for Grochow-style isomorphism problems](GrochowProofTransfers/README.md) — cubic graph tensor isomorphism, additive code equivalence beyond MDS, cyclic packing groups, and split matrix pencils. Written family theorems with scoped Lean audits.
+<!-- grochow-proof-transfers:end -->
+
 <!-- wide-tensor-determinant-cancellation:start -->
 - **[Determinant cancellation for wide three-tensors](WideTensorDeterminantCancellation/Results.md)** — Informal reductions from special-linear to two-sign tensor isomorphism over F₃ using transpose-paired odd multiplicities and projective module evaluation with a small kernel. Also gives exact polynomial-time determinant profiles for classes with many coupled local blocks. The unrestricted reduction remains open.
 <!-- wide-tensor-determinant-cancellation:end -->

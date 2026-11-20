@@ -1,0 +1,56 @@
+# Recovering additive code equivalences from arbitrary symbol bijections
+
+**Result.** Let G and H be abelian groups. A systematic code A is the set of pairs (x, A x), with x in G^I and each parity coordinate (A x)_j a sum of input-wise additive maps A_ji(x_i), where I is finite. Define B analogously over H. Suppose that in each A parity coordinate, any prescribed two letters can be realized by inputs with disjoint supports. Suppose also that for each input index i, the tuple of maps B_ji over all parity indices j is injective. Then every fixed-coordinate alphabet equivalence is a translation of an additive equivalence. Its additive maps are uniquely determined by subtracting each alphabet bijection's image of zero. This is the theorem `SystematicAlphabetEquivalence.recovers_centered_additive_equivalence`.
+
+## Proof
+
+Let f_i be the input alphabet bijections and g_j the parity alphabet bijections. The code condition is
+
+    g_j(Σ_i A_ji(x_i)) = Σ_i B_ji(f_i(x_i)).
+
+Subtract this identity at x = 0 from the identity at x. The same compatibility holds for all centered maps, which fix zero and remain bijections. From here on write f_i and g_j for the centered maps.
+
+For parity position j and letters u and v, realize u and v using inputs x and y of disjoint support. Since the f_i fix zero, f_i(x_i + y_i) = f_i(x_i) + f_i(y_i) on these inputs. Apply the code condition to x, y and x + y. Additivity of the block maps gives g_j(u + v) = g_j(u) + g_j(v). Hence each parity bijection is additive.
+
+Applying the code condition to a word supported only at i gives g_j A_ji = B_ji f_i. Additivity of g_j and A_ji makes B_ji f_i additive for every j. Joint injectivity of the B_ji forces f_i to be additive. Thus the centered alphabet maps are additive bijections that still carry A onto B. The original image of zero is a B codeword, whose translation recovers the original equivalence.
+
+## Beyond the MDS case
+
+Over G = H = F_p², let P and Q be the projections onto the first and second axes. Take four input positions and two parity positions, with block rows (P,Q,P,Q) and (Q,P,Q,P). Each row realizes every letter on either the first or the last pair of inputs. Each input column uses both projections, which jointly separate letters. Every one of the eight blocks is singular. A word supported at input 1 on the first axis has Hamming weight exactly 2, below the MDS bound 3. Thus the hypotheses apply to a non-MDS family for every prime p.
+
+There is also an arbitrary-coordinate-permutation corollary. Suppose the columns of A jointly separate letters and A has the disjoint parity realizations above. If an equivalence includes a coordinate permutation, reorder the target so this permutation is the identity. The designated systematic projection of B is bijective because the equivalence is coordinatewise, so its inverse is additive and B has the required systematic representation. Separation transfers from A to B under the equivalence. Indeed, the centered impulse identities g_j A_ji = B_ji f_i identify equality of the target parity contributions at two letters with equality of the source parity contributions at their f_i-preimages. The main theorem then yields an additive equivalence with the original coordinate permutation. This paragraph is an informal corollary of the checked root.
+
+## Invertible blocks and rectangle holonomy
+
+For a pair of all-invertible block arrays A and B, now write A_ij for the map from input i to output j, with multiplication denoting composition. Choose an input i₀ and an output j₀. The anchored cycle gain is
+
+    L_A(i,j) = A_i₀j⁻¹ A_ij A_ij₀⁻¹ A_i₀j₀.
+
+**Result.** Evaluation at i₀ bijects all coordinate-map witnesses U_j A_ij = B_ij V_i with the simultaneous intertwiners t L_A(i,j) = L_B(i,j) t. Reconstruction is explicit.
+
+    U_j = B_i₀j t A_i₀j⁻¹
+    V_i = B_ij₀⁻¹ B_i₀j₀ t A_i₀j₀⁻¹ A_ij₀
+
+On the edges incident with i₀ or j₀ the intertwining equations force exactly these two formulas. Substituting the formulas on any other edge and cancelling invertible factors gives the displayed rectangle equation. This proves both directions and both inverse laws, as checked in `BlockCodeHolonomy.gaugeEquivRoot`.
+
+For matrices over a finite field and a given alignment, this reduces fixed-coordinate equivalence to simultaneous matrix similarity on one alphabet-sized space. In the singular-block setting, there is a larger elementary simultaneous-similarity representation. On the direct sum of all input and parity spaces, fix each coordinate projection and encode A as the operator that sends the input block to A x in the parity block and is zero on parity inputs. A simultaneous isomorphism of the coordinate projections and the encoding operator is exactly a block-diagonal witness for code equivalence. It commutes with each coordinate projection precisely when it preserves each coordinate block, and the remaining intertwining equation decomposes into U_j A_ij = B_ij V_i. This latter representation is an informal corollary.
+
+## Relation to the literature
+
+Ball–Dixon proved the alphabet-to-additive equivalence implication for additive MDS codes and asked whether it holds for all additive codes. Their use of systematic form and the map at zero is prior work. The disjoint realizations and column separation above give a sufficient condition for a beyond-MDS class, including singular blocks. The general additive-code question remains open in the scope of this note. [Ball–Dixon, Theorem 4 and §4](https://arxiv.org/abs/2107.07912)
+
+Adriaensen–Ball normalize the first input and first output edges to identity for additive MDS codes, and compare with scalar blocks using one common map. The rectangle theorem gives an explicit all-witness equivalence for arbitrary pairs of invertible block arrays over a group. [Adriaensen–Ball, Definition 5.1 and Lemma 5.2](https://arxiv.org/abs/2209.09767)
+
+The construction follows the tree-potential normalization in Cinna Davis and GPT-6.2 Astra's voltage-cover proof. The tree is the union of the star at i₀ and the star at j₀ in the bipartite block diagram, and its residual chord labels are rectangular cycle gains. Grochow–Qiao's study of code equivalence, graph isomorphism and tensor isomorphism motivates the witness recovery question. The results here address alphabet and block equivalences in the stated systematic code families. [Voltage-cover proof and artifacts](https://github.com/1337isnot1337/solved-conjectures/tree/892c04046aadc8731dd510bb9c9b3ca1a086bae1/results/erdos-gyarfas-abelian-covers) · [Grochow–Qiao](https://doi.org/10.1137/21M1441110)
+
+## A sufficient condition with no systematic information block
+
+Let C and C' be additive codes with alphabet a finite-dimensional F_p-vector space V. For each coordinate i, its kernel K_i in C consists of the words whose i-th letter is zero. Assume the subspace lattice generated by the K_i under sums and intersections contains three subspaces U, W and D that are pairwise complementary in C. Then every arbitrary symbol equivalence C → C', possibly including a coordinate permutation, induces an additive codeword equivalence after subtracting the image of 0. The induced maps on the used alphabet symbols extend to additive bijections of the full alphabet. This is a sufficient condition for the Ball–Dixon question that requires no systematic form.
+
+**Proof.** Align the coordinates using the witness's permutation and translate the target by the image of 0. The resulting codeword bijection b fixes 0. The fiber relation of coordinate i is exactly x ∼_i y iff x − y belongs to K_i. Because each alphabet map is bijective, b transports this entire relation to the corresponding one on C'. It also transports arbitrary intersections of relations. For subspaces P,Q, the join of their coset relations is exactly the coset relation for P + Q. In fact even the single relational composite equals the join. If x − z = p + q, choose y = x − p, so x − y lies in P and y − z lies in Q. Conversely the existence of such a y shows x − z lies in P + Q. Every coset relation for a subspace is identified by the equivalence class of 0, so different subspaces have different relations. A bijection has an inverse and transports the relation of equality and the universal relation to themselves. Therefore it induces an order isomorphism between the generated sublattices (with the zero and whole subspaces adjoined if needed), preserving sums, intersections, zero and the whole space. In particular the images of U,W,D are again pairwise complementary in C'.
+
+Write C = U ⊕ W. Since D is transverse to each summand, it is the graph of an additive isomorphism t from U to W. Use the additive chart u + w ↦ (−t(u),w) from C to W × W, and the analogous chart on C'. The coset relations for the three complementary subspaces are the fibers of the two projections and of the componentwise sum, respectively. In these coordinates the centered bijection has the form (u,v) ↦ (f(u),g(v)), since it preserves both projection fiber relations. Both maps fix 0. Applying preservation of the sum fiber relation to (u,v) and (u + v,0) gives f(u) + g(v) = f(u + v). Set u = 0 to obtain g(v) = f(v) and substitute, proving additivity. Transform back through the two additive charts. In characteristic p, an additive map between these vector spaces is F_p-linear. Its induced map on every used coordinate image is a linear bijection, because the corresponding alphabet permutation restricts to that map. The complementary unused subspaces have equal dimension on either side. Choose any linear isomorphism between them to extend the induced maps to full-alphabet linear bijections. The resulting equivalence agrees on every codeword with the centered one. Restore the original coordinate permutation.
+
+**Example with every coordinate genuinely onto.** Take E = F_p³ and X = E × E. Let U = E × 0, W = 0 × E and D = {(u,−u) : u in E}. In each of these three subspaces choose the two planes corresponding to span(e₁,e₂) and span(e₂,e₃) under its natural chart from E. For each of the six planes L, use the quotient map X → X/L followed by a fixed linear identification of X/L with F_p⁴ as one code coordinate. The resulting encoding into (F_p⁴)^6 is injective because a plane in U meets a plane in W only at 0. Each coordinate is onto and its kernel is the specified plane. The sum of the two planes in a given three-dimensional subspace recovers U, W or D. The code therefore satisfies the theorem for every prime p. It has size p⁶. No projection to whole alphabet coordinates is a bijection onto an alphabet power, since 6 is not a multiple of 4.
+
+The three-fiber argument itself is the classical rigidity of the group multiplication table under normalized isotopisms. The use here is to recover those fibers from the kernel lattice of an arbitrary additive code, even when each original coordinate has a substantially larger alphabet and there is no whole-coordinate information set. [Bailey, Cameron, Praeger and Schneider, Geometry of Diagonal Groups, §2](https://doi.org/10.1090/TRAN/8507)

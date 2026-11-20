@@ -1,0 +1,296 @@
+Maximum isotropic spaces from cyclic four-point packings
+
+Let H be a finite abelian group and B a nonempty subset of H. Form the graph
+on H in which distinct x,y are adjacent exactly when (x+B) ∩ (y+B) ≠ ∅.
+Over a field F, the associated alternating map β has one coordinate for
+each edge, equal to u_x v_y − u_y v_x after choosing an orientation.
+A subspace U ≤ F^H is isotropic if β vanishes on U×U.
+
+Theorem 1. Suppose B tiles H by translations. Let k=|H|/|B| and let K be
+the subgroup of translations preserving B. The maximum isotropic dimension
+is k. All the maximum-dimensional isotropic spaces are given bijectively
+by the following data.
+
+  • A tiling complement to the image of B in H/K.
+  • One arbitrary line in F^{π^{-1}(c)} for each selected quotient center c.
+
+The subspace is the direct sum of the chosen lines in their distinct
+coordinate fibers. If F has q elements, the number of maximum-dimensional
+isotropic spaces is the number of quotient tiling complements multiplied
+by ((q^{|K|}−1)/(q−1))^k. If K={0}, this counts the ordinary tiling
+complements themselves and every maximum-dimensional isotropic subspace
+is a coordinate space.
+
+Theorem 2. Let H=Z/N, let gcd(N,a,b)=1, and suppose B={0,a,b,a+b} has
+four distinct elements in H. Then B tiles H if and only if 4 divides N,
+the steps have opposite parity, and 2h divides N, where h=gcd(N,e)
+for the even step e. In that case all tiling complements are obtained
+by choosing a parity and, for each residue s of that parity modulo h,
+choosing exactly one of s or s+h modulo 2h. The selected classes are
+taken in full. There are 2^{1+h/2} complements.
+
+When these conditions hold, the maximum isotropic dimension is N/4.
+The number of maximum-dimensional isotropic spaces over F_q is
+
+  • 2^{1+h/2} if N>4 and e≠N/2 in H.
+  • 2(q+1)^{N/4} if N>4 and e=N/2 in H.
+  • 1+q+q²+q³ if N=4.
+
+Theorem 3. Let 0<a<b be odd coprime integers and put P=ab+b−a. If P
+divides N and N>2(a+b), the maximum isotropic dimension for the same
+four-point set in Z/N is N(P−1)/(4P). There are exactly P maximum-
+dimensional isotropic spaces over every field. They are coordinate
+spaces on the P translates of the periodic packing constructed by
+Davis and Astra. Its distinct hole classes modulo P distinguish the
+P subspaces.
+
+For each statement over a finite field of odd order, the same count
+gives the number of maximum-order abelian subgroups of the graph's
+class-two group. Their index is q^{|H|−k} for maximum dimension k.
+
+Theorem 4. Under the hypotheses of Theorem 3, every pseudo-isometry
+of β acts monomially on the input coordinates, with the sole exception
+(N,a,b)=(10,1,3). Thus its group of pseudo-isometries is
+(F×)^N ⋊ Aut(G), where G is the conflict graph. In the exception it is
+GL₂(F)^5 ⋊ S₅. These statements hold over any field.
+
+A pseudo-isometry means a pair of invertible linear maps (S,T) on the
+input and output spaces such that β(Su,Sv)=Tβ(u,v) for all u,v.
+The output map is unique for every allowable S because the edge
+coordinates of β span the output.
+Proof of the shared coordinate argument
+
+For any U, let φ_x be restriction to U of the x-th coordinate functional.
+These restrictions span U*, since their common kernel is zero. Choose
+a basis (φ_c) indexed by I⊆H. If (x+B)∩(y+B) is nonempty, isotropy says
+φ_x∧φ_y=0, so adjoining nonzero restrictions are proportional. To see
+this directly, choose u with φ_y(u) ≠ 0 and solve the vanishing two-by-two
+determinant for φ_x(v) for every v∈U. In particular distinct basis indices
+have disjoint translates. This proves that dim U is at most the maximum
+packing size. The coordinate span of any packing's centers is isotropic,
+giving equality.
+
+Now let U have maximum dimension and use such an I. The coordinate-basis
+dual in U gives vectors w_c, with w_c(d)=1 for c=d and 0 for c≠d, for
+c,d∈I. If φ_x≠0 and x+B meets both c+B and d+B, then φ_x is a nonzero
+multiple of both φ_c and φ_d. This forces c=d. Thus any active coordinate
+can meet at most one tile of the packing chosen by the basis.
+
+Proof of Theorem 1
+
+A tile has a packing of size k, and a disjoint family has size at most k
+by counting sites. Every maximum packing is therefore a tiling. Each
+active x must meet at least one tile, and the argument above shows its
+translate is contained in that one tile. Equal sizes give x+B=c+B,
+equivalently x−c∈K. It follows that w_c is supported in the fiber c+K.
+Its span is the corresponding summand of U. Conversely, a choice of
+one line per fiber over a quotient tiling gives an isotropic space.
+Translates from distinct selected fibers are disjoint, and coordinate
+functionals in each selected fiber all factor through its single line.
+
+Each translate of B is the full inverse image of a translate of its image
+in H/K. A tiling in H projects to a quotient tiling and may choose any
+one representative from each selected fiber. The chosen quotient
+centers in the subspace construction are intrinsic to U, since they
+are precisely the fibers where its projection is nonzero. Each line is
+also recovered as that projection. The number of lines in a fiber over
+F_q is (q^{|K|}−1)/(q−1), as desired.
+
+A finite Fourier observation
+
+Write S_d f(x)=f(x−d) on Z/N. For real functions, the kernel of
+(1+S_a)(1+S_b) is the sum of the kernels of the two factors.
+Indeed the characters simultaneously diagonalize the shifts, and the
+product eigenvalue vanishes exactly when either factor vanishes.
+The Fourier modes in each kernel are preserved by conjugation, so a
+real vector has a decomposition with real summands. If d has odd order
+in Z/N, then ker(1+S_d)=0, since the sign change along its odd cycle
+forces every value to be zero. Otherwise, if g=gcd(N,d), a function in
+that kernel changes sign under addition of g. To see this, d/g is
+invertible modulo the even order N/g, and its inverse is odd.
+Consequently an odd multiple of d equals g in Z/N. The converse follows
+from d/g being odd.
+
+Proof of Theorem 2
+
+A tiling complement has indicator f satisfying
+(1+S_a)(1+S_b) f=1, and counting shows 4 divides N.
+By the Fourier observation, f=1/4+u+v with u and v in the respective
+sign-change kernels. If both steps are odd, set g=gcd(N,a), h=gcd(N,b).
+The odd step gh changes the sign of both u and v, so f(x)+f(x+gh)=1/2.
+This is impossible for an indicator. Both steps even contradict
+gcd(N,a,b)=1.
+
+Relabel the odd step a and even step b. The odd step has even order.
+If the even step has odd order, its kernel vanishes and
+f(x)+f(x+a)=1/2, again impossible. Thus h=gcd(N,b) is even and 2h
+divides N. As g=gcd(N,a) is odd and coprime to h, g and 2h are coprime
+and 2gh divides N. Write u(x)=(-1)^x U(x mod g), and write v(x) in
+terms of V(s)=v(s) for 0≤s<h, with v(s+h)=−V(s). For every r mod g
+and s mod h, CRT gives both combinations of r with s and with s+h
+modulo 2h. The two corresponding values of f are
+
+    1/4 + (-1)^s U(r) + V(s)
+    1/4 + (-1)^s U(r) − V(s).
+
+Their sum is an integer in {0,1,2}. Comparing its value for even and odd
+s, the two sums add to 1. Hence U(r)=±1/4 and exactly one parity has
+pair sum 1. If two residues r gave opposite signs for U(r), the same
+s would have pair sum 0 on one residue and 1 on the other. The first
+would force V(s)=0, while the second forces V(s)=±1/2. Thus U(r) is
+constant. This proves that f has the claimed form.
+
+Conversely, an indicator of that form has f+S_b f equal to the indicator
+of the chosen parity. In fact b/h is odd, so shifting by b exchanges s
+with s+h mod 2h. The shift by a exchanges the two parities. The cover
+equation follows, producing every listed tiling. There are h/2 choices of
+residue-pair bits independently for each of the two possible parities.
+
+A nontrivial period subgroup has order dividing 4 and therefore contains
+N/2. Since 0 lies in B and N/2 is even, the only possible such element
+of B is the even step, so a period occurs exactly when e=N/2. If the
+subgroup has order 4, it equals B and contains both steps. The primitive
+hypothesis then gives N=4. In the remaining period case |K|=2. Each
+quotient tiling complement has exactly 2^{N/4} lifts, and the preceding
+tiling formula with h=N/2 gives two quotient complements. The three
+isotropic counts follow from Theorem 1.
+
+Proof of Theorem 3
+
+Use the sharp local packing bound of Davis and Astra. For the odd
+coprime steps in question every P consecutive sites of an integer
+packing have a hole. They also construct a P-periodic packing with
+one hole per period. The cyclic packing problem lifts to a periodic
+integer packing because disjointness modulo N rules out overlap of
+distinct lifts, and N>a+b rules out overlap of a tile with its own
+nontrivial N-shift. Conversely their P-periodic construction descends
+because P divides N. The local bound and the construction give the
+maximum packing size N(P−1)/(4P).
+
+In any optimal cyclic packing, the N/P holes have forward gaps at
+most P and those gaps sum to N, so all the gaps equal P. Fix the
+hole alignment. Let f₀ be the indicator of the corresponding translate
+of the cited P-periodic construction, and f another optimal packing
+indicator. Their occupation functions agree because the hole classes
+agree. Thus f−f₀ lies in the kernel of (1+S_a)(1+S_b). If N is odd,
+the Fourier observation gives a zero kernel. If N is even, let
+g=gcd(N,a), h=gcd(N,b) and d=Pgh. All three factors of d are odd.
+The shift d fixes f₀ and changes the sign of each kernel summand of
+f−f₀, since d/g and d/h are odd. Therefore
+
+    f(x)+f(x+d)=2f₀(x).
+
+Since f and f₀ are indicators, both terms on the left have to equal
+f₀(x). This proves uniqueness for each of the P hole alignments.
+
+For any maximum-dimensional isotropic U, choose a coordinate basis I
+as above. Each translate of B meets at most one hole since its offsets
+range over a+b<P, and holes are evenly spaced by P. A pair of distinct
+translates of B overlap in at most two sites. Indeed N>2(a+b) keeps
+distinct integer differences distinct modulo N. In the positive
+difference multiset of B, the differences are a and b of multiplicity
+two and b−a and a+b of multiplicity one. There is no collision among
+these values since the only possible one under 0<a<b is b=2a, excluded
+by parity. The same bound holds for negative differences. For x∉I,
+at least three sites of x+B are occupied, so it meets at least two
+distinct center tiles. The shared coordinate argument proves φ_x=0.
+Consequently U is exactly the coordinate space on I. There are
+exactly P such spaces.
+
+Proof of Theorem 4
+
+Write V_r for the coordinate fiber on the vertices x congruent to r
+modulo P. The family of all maximum isotropic spaces intrinsically
+determines the unordered decomposition into V_r as follows. Their
+coordinate supports are all shifts of a set C modulo P. Each residue
+belongs to exactly |C| shifted supports, and distinct residues have
+distinct membership profiles. Indeed identical profiles would make
+their difference a period of C. Such a translation would preserve the
+unique uncovered site modulo P, so that difference would be zero.
+Consequently the intersection of all maximum spaces whose supports
+include r is exactly V_r. Equivalently these fibers are the minimal
+nonzero intersections of maximum isotropic spaces. Every
+pseudo-isometry must permute them.
+
+The allowed edge displacements are ±a, ±b, ±(b−a), and ±(a+b).
+Between any two fibers with at least one displacement there is a
+perfect matching, obtained by adding that displacement. For u∈V_r
+and a neighboring fiber V_s, the rank of β(u,−) restricted to V_s
+equals the number of neighbors in V_s of the support of u. In fact
+the images of distinct coordinate vectors e_y for y∈V_s have
+disjoint supports in the edge output, and such an image is nonzero
+exactly when a coordinate in the support of u is adjacent to y.
+The rank is always at least the support size of u because of the
+perfect matching.
+
+If a≥3, then P−2(a+b)=a(b−3)−b>0, so no two allowed displacements
+are congruent modulo P. If a=1 and b≥5, the allowed displacement
++1 alone represents its residue modulo P=2b−1. Thus for every
+fiber there is a neighboring fiber whose entire edge relation is
+one matching. Minimize the restricted rank over all neighboring
+fibers. It equals the support size, by the matching lower bound and
+the existence of a neighbor attaining it. Since this minimum is
+defined by the intrinsic collection of fibers and the map β, the
+set of coordinate lines in each fiber is preserved by S.
+
+If a=1 and b=3, P=5 and between every two distinct fibers the edge
+relation is two matchings. Their displacements differ by P, hence
+the two neighbors of a vertex are consecutive in the natural cyclic
+order on the other fiber. If N/P≥3, distinct vertices have distinct
+two-element neighborhoods there. A single support vertex gives
+rank 2 and any larger support gives rank at least 3, for every
+neighboring fiber. The coordinate lines are again preserved by S.
+The only other admissible N is 10. In that case the graph joins all
+vertices from distinct fibers and no vertices within a fiber. The
+intrinsic decomposition is into five planes. Every map permuting
+the planes and acting by arbitrary invertible linear maps on them
+supports a pseudo-isometry, since the edge output is the direct sum
+of V_r⊗V_s over unordered pairs of distinct fibers. Thus precisely
+the displayed wreath product occurs.
+
+In all the monomial cases, the input permutation must preserve the
+edge relation, as read from whether β(e_x,e_y) vanishes. Conversely,
+any such permutation and arbitrary nonzero coordinate scalings give
+a pseudo-isometry by applying the induced permutation, signs and
+scalings to the edge output. This proves the group formula.
+Group consequence
+
+For odd q put V=F_q^H and W=F_q^E, where E is the edge set. Define the
+group by (u,z)(v,w)=(u+v,z+w+β(u,v)/2). Its commutator is (0,β(u,v)).
+A maximum-order abelian subgroup contains the central W, since
+adjoining it preserves commutativity. The image in V is additive and
+β vanishes on pairs in that image. Its F_q-span is also isotropic, so by
+maximal order the image equals this span, even when q is a proper prime
+power. Its full inverse image has order q^{|E|+k} for maximum isotropic
+dimension k. This establishes the stated bijection and indices.
+
+Scope and provenance
+
+The prior graphical independence-dimension correspondence and Qiao's
+isotropic polynomials supply the setting. The local odd-window bound
+and its explicit witness are the pinned Davis–Astra inputs. The results
+above specialize to an explicit normal form and exact subgroup count.
+The claims concern the displayed graphical class-two groups. Priority
+for the specialization remains provisional.
+
+  • Grochow and Qiao, search and counting for class-two group isomorphism.
+    https://doi.org/10.4230/LIPIcs.CCC.2021.16
+  • Bei, Chen, Guan, Qiao and Sun, independent sets and isotropic spaces.
+    https://doi.org/10.1137/19M1299128
+  • Qiao, a q-analogue of graph independence polynomials, especially Section 2.
+    https://arxiv.org/abs/2408.09963
+  • Davis and GPT-6.2 Astra, symmetric four-point translates.
+    https://github.com/1337isnot1337/solved-conjectures/blob/892c04046aadc8731dd510bb9c9b3ca1a086bae1/results/symmetric-four-point-density/PROOF.md
+  • Dani and Mainkar, automorphisms of graph-based two-step nilpotent Lie algebras.
+    https://people.se.cmich.edu/maink1m/trans.pdf
+  • He and Qiao, preservation of isomorphism types by the graph group construction.
+    https://arxiv.org/abs/2003.07200
+  • Liu and Zhu, Fractional chromatic number and circular chromatic number for
+    distance graphs with large clique size.
+    https://doi.org/10.1002/jgt.20020
+
+Theorems 1–4 are given here by mathematical proof. The standalone Lean
+file isolates the normalized coordinate-recovery lemmas. The accompanying
+Python program is an independently executable finite falsification check.
+
+

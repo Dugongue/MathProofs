@@ -1,0 +1,32 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "source": "CubicTensorMinors.lean",
+  "sha256": "9f8d84d7266a4c0b55fdba52a157d96d48955bc0c1f98fa14c77376e79960ab0",
+  "theorems": [
+    {
+      "theorem": "two_stripe_rank_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "isolated_matching_minor_rank",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "frozen_matching_minor_rank",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

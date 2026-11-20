@@ -1,0 +1,42 @@
+{
+  "lean_version": "4.33.0",
+  "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source_compile_exit_code": 0,
+  "warnings_as_errors": true,
+  "independent_kernel_exit_code": 0,
+  "axioms_by_theorem": {
+    "TranslatePacking.inactive_of_two_tile_overlaps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TranslatePacking.active_coordinate_recovers_tile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "TranslatePacking.aperiodic_isotropic_coordinate_space": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sha256": "7f8c976f70ee8c1e710783a0ca573f07afe54082739abecb5590efd746c131b5",
+  "finite_checks_output": [
+    "Checked 8166 primitive cyclic tiles with sizes through 40.",
+    "998 tile. Exact complement sets match in every case.",
+    "Checked 16 field/graph instances by exhaustive RREF at the tiling size.",
+    "Checked 58 odd-step cases through modulus 90 by exact cover and fiber rank.",
+    "Checked 10 unrestricted maximum-packing counts through modulus 30.",
+    "Checked the odd case N=10, a=1, b=3 by exhaustive rank-2 RREF over F_2."
+  ],
+  "main_theorems": "Theorems 1–4 have mathematical proofs. Lean verifies the three normalized coordinate-recovery lemmas listed here.",
+  "artifact_sha256": {
+    "MaximumIsotropicSpaces.txt": "b0e7e5f47c796bfbb58555f3246d96ddf58e8abbd7d67e5405193759c79098df",
+    "TranslatePacking.lean": "7f8c976f70ee8c1e710783a0ca573f07afe54082739abecb5590efd746c131b5",
+    "check_cyclic_packings.py": "65fd54d90fd18f0a96857234db0157a0cf159da37e4446487d25062f84ffe3e2"
+  },
+  "source": "TranslatePacking.lean",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,235 @@
+Recovering a split linear matrix family from its hyperplane ranks
+
+Theorem
+Let K be any field, let V be a finite-dimensional K-vector space, and let
+A: V → Mat_n(K) be linear, with n ≥ 1. Suppose there is e ∈ V with A(e)
+invertible. Let ℓ_1,…,ℓ_r be distinct linear forms normalized by ℓ_i(e)=1.
+Let m_1,…,m_r be positive integers summing to n. Assume the polynomial identity
+
+    det A(x) = det A(e) · ∏_i ℓ_i(x)^{m_i}.
+
+Write H_i = ker ℓ_i. On a linear subspace U, "generic nullity" is the
+nullity of A restricted to U over the fraction field of its coordinate
+ring. This meaning also applies to the zero subspace, with fraction field
+K. The following conditions are equivalent.
+
+1. There are constant invertible K-matrices P,Q with
+   P A(x) Q = ⊕_i ℓ_i(x) I_{m_i}.
+2. At the generic point of each H_i and each H_i ∩ H_j (i ≠ j), the
+   nullity is ∑_{k: U ⊆ H_k} m_k.
+
+The right-hand sum includes all hyperplanes containing the tested
+intersection. Pairwise intersection spaces need only be checked once.
+
+Proof
+Set B(x) = A(e)^{-1} A(x), so that B(e)=I. Then
+
+    det(TI − B(x)) = ∏_i (T − ℓ_i(x))^{m_i},
+
+by applying the determinant hypothesis to x−Te. The map
+x ↦ x − ℓ_i(x)e is a surjection from V to H_i. It sends the generic
+point of V to a generic point of H_i in the sense of extension of its
+rational function field. Therefore over K(V) the eigenspace of B
+for ℓ_i has dimension m_i. The eigenspaces sum directly since their
+eigenvalues are distinct. Their dimensions sum to n.
+
+Let R = K[V], a polynomial ring. The projector onto the i-th generic
+eigenspace is
+
+    E_i = ∏_{j≠i} (B − ℓ_j I)/(ℓ_i − ℓ_j)  ∈ Mat_n(Frac R).
+
+All factors here commute. The potential poles lie on collision
+hyperplanes D defined by a linear form h = ℓ_i−ℓ_j. We now show that
+each E_i has entries in R_(h) for every such h.
+
+Fix h and write O = R_(h), a discrete valuation ring with uniformizer
+h and residue field K(D). Partition the indices into classes S by
+equality of ℓ_i modulo h. The monic polynomials
+f_S(T) = ∏_{i∈S}(T−ℓ_i) have pairwise unit resultants in O, because
+each difference between distinct classes is a unit. Their product
+annihilates B over Frac R and hence over O. By Bézout and the Chinese
+remainder theorem the lattice O^n decomposes into B-stable direct
+summands L_S, one for each f_S. Explicitly the identity in the S-th
+factor of O[T]/(∏_S f_S) and zero in the other factors evaluates at B
+to the corresponding projection. The summands are free. Their ranks
+are M_S = ∑_{i∈S} m_i by passing to Frac R.
+
+If S is a singleton, that summand is already the integral image of
+the corresponding E_i. Otherwise select i,j∈S with i≠j. The linear
+map D → H_i∩H_j given by x ↦ x−ℓ_i(x)e is onto. Indeed its image
+lies in the intersection, and it is the identity there. A form
+ℓ_k vanishes on the whole intersection precisely when ℓ_k−ℓ_i
+vanishes on D, so precisely when k∈S. The rank hypothesis at the
+generic point of the intersection yields
+
+    dim_{K(D)} ker( B mod h − (ℓ_i mod h) I ) = M_S.
+
+On all other L_{S'} modulo h, this operator is invertible, since
+there it differs by a nonzero scalar from a nilpotent operator.
+On L_S modulo h the dimension of the kernel equals the full
+dimension M_S. Thus (B−ℓ_i I)|_{L_S} is divisible by h as an
+endomorphism of the free O-module L_S.
+
+The integral endomorphism (B−ℓ_i I)|_{L_S}/h has, over Frac R,
+eigenvalues (ℓ_k−ℓ_i)/h for k∈S. These are constants in K and
+are pairwise distinct. Lagrange interpolation now gives all
+its individual eigenprojectors over O and these, extended by zero
+on the other summands, equal the E_k. This removes the pole at h.
+
+The denominators of E_i are products of the linear collision forms.
+Unique factorization of R makes each entry a polynomial, since its
+valuation at every one of those prime factors is nonnegative. Its
+numerator and denominator are homogeneous of the same degree, so
+the resulting polynomial is constant. The constant projections
+are orthogonal, sum to I, and B(x)=∑_i ℓ_i(x) E_i. Their images
+have dimensions m_i. A basis adapted to that direct sum gives
+the stated diagonal form after undoing A(e)^{-1}. The converse
+follows by evaluating the diagonal form on the same strata.
+
+Consequences for 3-tensor isomorphism and tensor rank
+View A as a 3-tensor with each slice in Mat_n. For pencils satisfying
+the theorem, 3-tensor isomorphism is exactly projective equivalence
+of the hyperplanes with their multiplicities. Indeed a left-right
+transformation changes the determinant by a nonzero scalar and a
+change of slice coordinates pulls back its factors. Conversely, a
+linear isomorphism matching the weighted arrangement matches the
+diagonal forms after rescaling individual diagonal coordinates and
+permuting them. Combining the two diagonalizations gives actual
+left, right and slice witnesses, once the hyperplane matching is
+given. The tensor rank is exactly n because the diagonal form gives
+n rank-one summands and the invertible slice requires at least n.
+
+Finite exact acceptance and witness recovery
+The following criterion accepts exactly the stated normal form with
+the supplied ℓ_i,m_i and does not require a promised determinant
+factorization. Work in an extension L of K containing a vector v
+with all ℓ_i(v) distinct. For finite K one may choose L of size
+strictly larger than max(r, binom(r,2)). There are at most binom(r,2)
+proper linear hyperplanes to avoid, each with |L|^{dim V−1} points.
+This size also supplies enough distinct points on the testing line.
+For infinite K one can choose v over K itself.
+
+For each vector w in a K-basis of V, form the projective test line
+[s:t] ↦ sv+tw. Include its point [1:0] and every collision point,
+meaning a point where ℓ_i(sv+tw) = ℓ_j(sv+tw) for i≠j. Add other
+points until there are at least r+1 distinct projective points.
+The total is at most max(r+1, binom(r,2)+1) per basis vector.
+At each tested point x=sv+tw, and for every distinct label α among
+the ℓ_i(x), check
+
+    nullity(B(x) − α I) = ∑_{i: ℓ_i(x)=α} m_i.
+
+These are ordinary rank computations over L. Since ℓ_i(v) are
+distinct, every pair collides at one finite point in the chart
+w+tv and never at v. A test line contained geometrically in a
+determinant hyperplane is allowed, since a zero label is treated
+in the same way as each other eigenvalue. A basis vector
+proportional to v also causes no issue. The interpolation below is
+on parameter pairs [s:t], even if their images are dependent.
+
+To prove soundness, note that the required eigenspaces on every
+sample are direct and their dimensions sum to n. Thus at each
+sample the product ∏_i (B(sv+tw)−ℓ_i(sv+tw)I) vanishes, including
+at a collision. Each entry of this product is homogeneous of
+degree r in s,t, so r+1 distinct projective zeros force the
+product to vanish identically. Over the rational function field
+of the line the labels are distinct, giving the usual generic
+spectral projectors. Near [1:0] they have unit denominators in a
+local chart and specialize to the spectral projectors of B(v).
+Their generic ranks are therefore m_i. This rank statement
+follows because the image and kernel of each integral idempotent
+are complementary free modules over that local discrete
+valuation ring.
+
+At a finite collision, exactly the preceding local lattice
+argument works, now with the linear factor t−t_0 as uniformizer
+and the tested equality providing the full nullity for each
+colliding class. Every finite pole disappears. Directly on
+w+tv, each projector has numerator of degree at most r−1 and
+denominator of degree exactly r−1 since the slopes are distinct.
+It is therefore constant on the line and equals the corresponding
+projector at v. These conclusions apply to every basis vector w,
+so all B(x) over L have the same direct-sum eigenspaces. Conversely
+a pencil in the stated diagonal form passes every check.
+
+For descent, form, for each label ℓ_i, the intersection over all
+K-basis vectors w of ker(B(w)−ℓ_i(w)I) over K. This is a single
+homogeneous K-linear system for each i. Extending to L preserves
+its rank, and its extended solution space is the common
+eigenspace for that label with dimension m_i. The natural direct
+sum map of the K-solution spaces into K^n becomes an isomorphism
+after extending scalars, so it is an isomorphism over K. Bases
+obtained by Gaussian elimination over K supply the normal form
+and the left-right witnesses over the original field. The accepted
+form in turn gives the determinant identity for the supplied labels
+and multiplicities. This certificate addresses verification of a
+supplied arrangement. Finding a matching between arrangements
+is a separate orbit problem.
+
+Checks and scope
+The exact 2×2 replay compares the finite test with direct projector
+recovery for every normalized pencil with determinant xy over F_3.
+It is an implementation check of a bounded case. The general proof
+above is an informal proof. The accompanying Lean source formalizes
+the two-factor algebraic core with a scalar collision hyperplane
+and a square-free annihilator at a separating vector. Its theorem
+is GrochowTransfer.twoFactors_projector. Specializing the target
+algebra to endomorphisms makes the image and kernel of the
+constant idempotent the common summands. The general rank
+recognition and tensor-isomorphism corollaries have no Lean audit.
+
+Sharpness of the list of intersection tests
+Fix any nonzero intersection J=H_i∩H_j in the input arrangement.
+Start from the diagonal form and choose one diagonal coordinate in
+the i-block and one in the j-block. Add the single off-diagonal
+entry g(x) from the j-coordinate to the i-coordinate, where g(e)=0
+and g is nonzero on J. Such a g exists because e does not belong to
+J. The modification preserves the determinant and the value at e.
+
+The affected 2×2 block has diagonal entries ℓ_i,ℓ_j and off-diagonal
+entry g. If either diagonal entry is nonzero, its rank equals the
+number of its nonzero diagonal entries. If both are zero, its rank
+is one exactly when g is nonzero. Thus no individual hyperplane
+test changes. Among the pairwise intersection spaces, only J sees
+both diagonal entries vanish identically, because the distinct
+spaces all have codimension two and containment in J implies
+equality. The generic nullity on J drops by exactly one, whereas
+every other tested generic nullity stays as on the diagonal form.
+Every nonzero pairwise intersection space is therefore essential
+to this list of tests over the unrestricted class of pencils with
+that determinant. The zero intersection, when present, has automatic
+nullity n. A minimal example is A(x,y,z) = [[x,z],[0,y]], whose
+determinant is xy and whose generic nullity drops on x=y=0.
+
+Related work and transfer
+The method borrows the fixed-hyperplane viewpoint of Davis and
+GPT-6.2 Astra's Lonely Runner work. Fix each possible relation
+hyperplane, retain the exact conditional behavior there, then
+combine the local information into a global statement. Here the
+relation is equality of spectral labels and the exact conditional
+invariant is generic rank. The source theorem itself is about
+loneliness and is not a premise of the argument.
+
+The isomorphism problem is the left-right plus slice-change
+action in Grochow and Qiao's 3-tensor framework. Friedland's
+property-L results already treat pointwise diagonalizable
+complex two-variable pencils. Kerner and Vinnikov study
+maximal generation and local-to-global decomposition of
+determinantal representations. The contribution here is this
+explicit arbitrary-field hyperplane/intersection test, its
+finite rank certificate and base-field witness recovery.
+Priority for this exact formulation has not been established.
+
+Sources
+
+• Joshua A. Grochow and Youming Qiao, Isomorphism problems for
+  tensors, groups, and cubic forms: completeness and reductions.
+  https://arxiv.org/abs/1907.00309
+• Shmuel Friedland, Similarity of Families of Matrices, §3
+  (Property L). https://www2.math.uic.edu/~friedlan/artsim15.11.05.pdf
+• Dmitry Kerner and Victor Vinnikov, Determinantal representations
+  of singular hypersurfaces in P^n, §§2.4.4–2.4.5.
+  https://arxiv.org/abs/0906.3012
+• Cinna Davis and GPT-6.2 Astra, Random lonely runners on a fixed
+  hyperplane, Solved Conjectures at 892c0404.
+  https://github.com/1337isnot1337/solved-conjectures/tree/892c04046aadc8731dd510bb9c9b3ca1a086bae1/results/loneliness-on-a-hyperplane

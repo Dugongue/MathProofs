@@ -1,0 +1,18 @@
+{
+  "status": "VERIFIED",
+  "source": "TwoFactorProjector.lean",
+  "sha256": "3a81a1bfa29560e337da7317df6955c84ee5f1b0ef845a5ff6d625e390098999",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Strict source compilation and independent imported-module axiom audit.",
+  "theorems": [
+    {
+      "theorem": "GrochowTransfer.twoFactors_projector",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

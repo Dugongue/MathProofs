@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED",
+  "source": "BlockCodeHolonomy.lean",
+  "sha256": "a05e015567621f330fac8774599fe2466b5bebf5b3842874bd1843152cfc465b",
+  "lean": "4.33.0",
+  "axioms": [
+    "'BlockCodeHolonomy.gaugeEquivRoot' depends on axioms: [propext, Quot.sound]",
+    "'BlockCodeHolonomy.gauge_iff_cycle_intertwiner' depends on axioms: [propext, Quot.sound]"
+  ]
+}
