@@ -1,0 +1,17 @@
+{
+  "sha256": "37efb89c249acb256d09d21433b0c4d65370094ebcbaa472591b2b8f2d8df3a0",
+  "lean": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declarations": [
+    "GrochowIdealTransfers.rank_transpose_sum",
+    "GrochowIdealTransfers.transpose_sum_section",
+    "GrochowIdealTransfers.frobenius_difference_mem_power"
+  ],
+  "verification": "Fresh Lean standalone replay and separate fixed-statement Frobenius bridge replay passed.",
+  "scope": "Supporting matrix and ideal lemmas for GP177 and GP178."
+}

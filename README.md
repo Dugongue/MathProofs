@@ -5,6 +5,11 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-open-problem-solutions:start -->
+- [Six answers from the Grochow open-problem catalog](GrochowOpenProblemSolutions/README.md) — shallow group simplicity and Fitting-free epimorphisms, the sharp degree bound for prime-cyclic rational invariants, complete-uniform tensor-network rate equality, and two determinant-extraction results. Written proofs, finite replays, and three Lean-checked supporting lemmas.
+<!-- grochow-open-problem-solutions:end -->
+
+
 <!-- alpoge-trace-gram-tisl:start -->
 - [Trace Gram methods for TI and special-linear TI](AlpogeTISL/RESULTS.md) — finite-field reductions for split Pfaffian pencils, semisimple multiplication isotopes, centroid field blocks and orthogonal residuals, with supporting Lean audits.
 <!-- alpoge-trace-gram-tisl:end -->
