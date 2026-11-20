@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- evolution-embedding-and-functoriality:start -->
+- **[Evolution algebra embeddings, nilpotence, and functorial tensor reductions](EvolutionEmbeddingAndFunctoriality/Results.md)** — Informal answers to Kaygorodov–Martín González–Viruel Questions 10 and 15 and Costoya–Fernández Ouaridi–Viruel Questions 2.3 and 4.7. Gives the complexity of detecting complex idempotents, a graph criterion for principal nilness, a countable-dimensional ideal-embedding theorem, and the sharp field-size threshold for higher-arity embeddings. Also rules out polynomial-dimension reductions from graphs and commutative unital algebras to ordinary TI that preserve all standard homomorphisms, addressing two directions of Grochow–Qiao Open Question 7.5.
+<!-- evolution-embedding-and-functoriality:end -->
+
 <!-- determinant-and-evolution-open-questions:start -->
 - **[Determinant equivalence and evolution-algebra questions](DeterminantAndEvolutionOpenQuestions/Results.md)** — Informal proofs of the PIT-hardness alternative in Grochow’s arXiv Open Question 6.3 and answers to Kaygorodov–Martín González–Viruel Questions 38, 44, and 45. Includes a negative answer to the abstract-group realization clause of Question 31. The stronger proceedings root-finding clause is outside the determinant reduction.
 <!-- determinant-and-evolution-open-questions:end -->
