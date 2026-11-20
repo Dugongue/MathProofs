@@ -1,0 +1,46 @@
+{
+  "lean": {
+    "version": "4.33.0",
+    "source": "OpaqueBridges.lean",
+    "sha256": "4e23c6da8874eebbca2f0b803cbb47b5d2e914c46d4514877e5d448f25b900d8",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "TwoWorlds.inversion_by_order_three_forces_fix"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "TwoWorlds.common_transcript_gap"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Independent kernel and axiom checks for the order-three inversion identity and the common-transcript probability inequality."
+  },
+  "written_proofs": "The algebra compilers, arithmetic descent constructions, opaque-query separation and complexity implications are written proofs.",
+  "finite_controls": {
+    "base_projective_shift_images": 1512,
+    "shifted_cross_ratios": 54,
+    "trace_cycle_rank_tests": 81,
+    "norm_regular_determinant_tests": 4,
+    "frobenius_matrix_intertwiners": 5760,
+    "colored_graph_automorphism_cases": 246,
+    "frobenius_commutation_cases": 22518,
+    "weighted_coordinate_subsets": 8190,
+    "orbit_entropy_laws": 665,
+    "oracle_completion_profiles": 706,
+    "disjunction_matchings": 81
+  },
+  "scope": "Fixed-field deterministic many-one degrees, plus the explicitly named randomized, nonuniform, oracle and extension-compatible models. No unrestricted equality or inequality is established here.",
+  "priority": "Publication priority is unverified."
+}

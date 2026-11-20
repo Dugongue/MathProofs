@@ -1337,3 +1337,10 @@ Pending formalizations:
 
 - [Ten equivalent assertions and eighteen conditional consequences](TISLHypoworld/RESULTS.md) links the fixed-field collapse to one-mode orientation, norm constraints over finite extensions, unbounded tensor order, local rings, compact quandles, and determinantal hypersurfaces. It also records conditional transfers for counting, full-coset search, sampling, and representative canonization.
 <!-- tisl-hypoworld:end -->
+
+
+<!-- tisl-two-worlds:start -->
+## Comparing the two special-linear tensor-isomorphism worlds
+
+- [Equality, inequality, and limits of specific reductions](TISLTwoWorlds/RESULTS.md) gives finite extension reflection, an exact cube-zero local-ring equivalence, and conditional complexity consequences. It proves a fixed-field opaque query separation with an explicit-input algorithm on the same instances, and a component-count obstruction for extension-compatible constructions.
+<!-- tisl-two-worlds:end -->
