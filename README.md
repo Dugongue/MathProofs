@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-group-methods:start -->
+- **[Underused methods for tensors and group isomorphism problems](TensorGroupMethods/README.md)** — Written proofs of NP-complete degeneration at exact minimum rank, sharp generic Brauer obstructions, exact p-adic local transport, and group epimorphism counting by extension-class orbits.
+<!-- tensor-group-methods:end -->
+
 <!-- tensor-degeneration-fallout:start -->
 - **[Consequences of mixed tensor degeneration universality](TensorDegenerationFallout/README.md)** — Written, internally reviewed proofs of a balanced-width degeneration compiler, strict arithmetic reductions with prescribed local geometry, explicit exponentially branching orbit closures, and universality near minimum rank.
 <!-- tensor-degeneration-fallout:end -->
