@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grh-valiant-transfers:start -->
+- [Four Riemann-to-Valiant transfers](GRHValiantTransfers/README.md) — finite-prime circuit transfer and sharper univariate lower bounds, a VNP-complete quadratic reciprocal, cohomology criteria for border determinantal complexity, and exact symmetric IPS denominators. Written proofs with Lean-checked supporting identities.
+<!-- grh-valiant-transfers:end -->
+
 <!-- fixed-type-tensor-isomorphism-methods:start -->
 - **[Fixed-type tensor rates and isomorphism methods](DickeAndIsomorphismMethods/README.md)** — Written proofs of 34 exact Dicke entropy cases, the first local–global failures for geometrically diagonal tensors, the leading random tensor stabilizer correction, and two deterministic logspace results for Fitting-free Cayley-table groups.
 <!-- fixed-type-tensor-isomorphism-methods:end -->

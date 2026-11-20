@@ -1,0 +1,52 @@
+{
+  "status": "VERIFIED",
+  "scope": "Supporting identities only. The four general results are written proofs.",
+  "source": "CertificateIdentities.lean",
+  "sha256": "64d8d0501b808028229ae3680814138c5e8d5c614cc0e0396abb854d55e89536",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "declarations": [
+    {
+      "name": "ArithmeticComplexityTransfers.divides_orbit_combination",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ArithmeticComplexityTransfers.twoPigeonMultiplier_zero",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "ArithmeticComplexityTransfers.twoPigeonMultiplier_symmetric",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ArithmeticComplexityTransfers.twoPigeonMultiplier_substitute",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ArithmeticComplexityTransfers.twoPigeon_local_even",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ArithmeticComplexityTransfers.multiply_linear_interpolation",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
