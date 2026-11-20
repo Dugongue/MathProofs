@@ -6,7 +6,7 @@ Each Lean file imports only Mathlib.
 INFORMAL PROOFS (not formalized yet)
 
 <!-- ordinary-even-ti-lean-components:start -->
-- **[Lean components for almost-all ordinary even-order tensor isomorphism](OrdinaryEvenTILean/README.md)** — Checked components for the dense fixed-field theorem with variable even order. See the packet for exact statements and remaining obligations. The end-to-end algorithm and coverage theorem remain informal.
+- **[Lean components for almost-all ordinary even-order tensor isomorphism](OrdinaryEvenTILean/README.md)** — Checked dense word decoding, comparison and counting interfaces, ternary cell-row layout, and conditional sampling and coverage lemmas. The full source coverage and binary-time algorithm remain to be assembled.
 <!-- ordinary-even-ti-lean-components:end -->
 
 <!-- p-group-search-fusions:start -->
