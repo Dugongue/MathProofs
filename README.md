@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- fixed-type-tensor-isomorphism-methods:start -->
+- **[Fixed-type tensor rates and isomorphism methods](DickeAndIsomorphismMethods/README.md)** — Written proofs of 34 exact Dicke entropy cases, the first local–global failures for geometrically diagonal tensors, the leading random tensor stabilizer correction, and two deterministic logspace results for Fitting-free Cayley-table groups.
+<!-- fixed-type-tensor-isomorphism-methods:end -->
+
 <!-- masullo-tensor-isomorphism:start -->
 - [Four tensor-isomorphism results inspired by Masullo's trace-formula draft](MasulloInspiredTensorIsomorphism/RESULTS.md) — short determinantal certificates, sharp étale tensor dimensions, balanced real tensor isomorphism, and exact special-linear pencil counts. The general proofs are informal, with two finite pencil examples checked in Lean.
 <!-- masullo-tensor-isomorphism:end -->
