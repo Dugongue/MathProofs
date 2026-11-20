@@ -1355,3 +1355,10 @@ Pending formalizations:
 
 - [Inequality atlas and proofs](TISLNegativeAtlas/RESULTS.md) records 78 linked consequences and comparisons for fixed-field determinant-one tensor isomorphism over F3. It includes an unconditional compiler for arbitrary-rank linear constraints on ordinary tensor-isomorphism answers, sharper exact-counting consequences, matrix-space and compact-group equivalences, and finite-field descent theorems. The unrestricted degree question remains open. Two supporting affine identities were checked in Lean.
 <!-- tisl-negative-atlas:end -->
+
+
+<!-- tisl-atlas-expanded:start -->
+## Expanded special-linear tensor-isomorphism atlas
+
+- [234-entry inequality atlas](TISLAtlas200/ATLAS.md) adds 156 entries on compact groups, conditional linear and counting compilers, randomized search, and arithmetic descent. It includes a signed tensor Hasse failure in format 4 and a reduction to exponent-nine group orientation. Written proofs and two independently checked supporting Lean lemmas accompany the catalog. The unrestricted fixed-field equality remains open.
+<!-- tisl-atlas-expanded:end -->

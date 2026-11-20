@@ -1,0 +1,26 @@
+# An exact reformulation using alternating-group conjugacy
+
+Over $\mathbb F_3$, the following two statements are equivalent under deterministic polynomial-time many-one reductions.
+
+1. Ordinary and special-linear three-tensor isomorphism have the same many-one degree over $\mathbb F_3$.
+2. Conjugacy under $A_N$ of the left-regular permutation representations of finite special groups of nilpotence class two and exponent three reduces to conjugacy under $S_N$ for the same family. The input is the compact alternating commutator map in ordered bases, and $N$ is the group order.
+
+The compact presentation is part of the statement. If the additive coordinate dimension is $d$, then $N=3^d$. Left translations are affine maps of $\mathbb F_3^d$, so the permutation generators have a succinct description. Listing all group elements or their Cayley tables would change the reduction's input size.
+
+## The sign of an isomorphism
+
+Use the ordering of the coefficient tuples to identify the underlying sets with $\{1,\ldots,N\}$. An isomorphism of the groups defined by alternating commutator maps induces a linear bijection on the additive coordinates. This also follows directly because group multiplication with the half-commutator removed gives vector addition. Any transvection of an $\mathbb F_p$ vector space, for $p$ odd, has order dividing $p$ and is even as a permutation of all vectors. Scaling one coordinate by $a\in\mathbb F_p^\times$ produces $p^{d-1}$ disjoint copies of multiplication by $a$ on the field, and the number of copies is odd. Multiplication by a generator of $\mathbb F_p^\times$ fixes zero and is a $(p-1)$-cycle on the other elements. Its sign is negative, so the sign for $a$ is its quadratic character. The transvections and the coordinate scalings generate all invertible maps by elementary row reduction. The sign on vector tuples is therefore the quadratic character of the determinant. Over $\mathbb F_3$ this character detects determinant one exactly. [Brunyate and Clark, Zolotarev–Frobenius sign formula](https://plclark.github.io/PeteLClark/Research/Brunyate-Clark_final.pdf)
+
+## From group isomorphism to regular permutation conjugacy
+
+Write $\lambda_G(g)(x)=gx$ for the left-regular action. Every isomorphism $\phi:G\to H$ conjugates $\lambda_G(G)$ onto $\lambda_H(H)$, with its own sign as a bijection of the ordered sets. Conversely, let a bijection $\sigma$ conjugate the two regular subgroups. Put $h_0=\sigma(1_G)$ and replace $\sigma$ by $\tau=\lambda_H(h_0^{-1})\sigma$. This is still a conjugator and takes $1_G$ to $1_H$. Every left translation of $H$ is even, because its order divides three. So $\sigma$ and $\tau$ have the same sign. For $g\in G$, evaluating $\tau\lambda_G(g)\tau^{-1}$ at $1_H$ shows that this permutation equals $\lambda_H(\tau(g))$. Applying the equality to $\tau(x)$ gives $\tau(gx)=\tau(g)\tau(x)$, so $\tau$ is a group isomorphism of the required sign. Thus conjugacy under $A_N$ asks for an even isomorphism and conjugacy under $S_N$ asks for an arbitrary isomorphism.
+
+## The two reductions
+
+The [oriented group theorem](OrientedGroups.md) establishes ordinary tensor isomorphism completeness of the compact unmarked group problem for every fixed odd prime. In one direction, a group bracket is sent to the multiplication tensor of the associated radical-cube-zero associative algebra. An even group isomorphism over $\mathbb F_3$ corresponds there to a determinant-one algebra isomorphism, so it gives one special-linear tensor comparison. If the two tensor degrees are equal, compose with their many-one reduction and then the ordinary group encoding. This establishes statement 2.
+
+For the other direction, the group construction preserves an arbitrary determinant character of a tensor transporter. For any matching tensor pair the possible determinant triples are an empty set or a coset in $(\mathbb F_3^\times)^3$. Such a coset contains the identity exactly when each of the eight characters can attain $1$, with the trivial character detecting emptiness. Thus at most eight even group comparisons suffice. Assuming statement 2, replace each by an ordinary group comparison, then by ordinary tensor comparison. The typed tensor-system compiler packs the fixed conjunction into one ordinary tensor comparison. Adding unused mode lines gives the forward ordinary-to-special-linear reduction, yielding statement 1.
+
+The two subgroup-conjugacy relations already differ on $27$ points. Use $X=\mathbb F_3^2$ and $Z=\mathbb F_3$, and compare the brackets $\beta(x,y)=\det(x,y)$ and $-\beta(x,y)$. A transporter with quotient matrix $g$ has center multiplier $-\det g$, so its total additive determinant is $-(\det g)^2=-1$. A change of central coordinate gives an ordinary isomorphism. The regular subgroups are therefore conjugate in $S_{27}$ and in distinct conjugacy classes in $A_{27}$.
+
+This is an equivalence to a specified orientation variant of a classical group problem. It does not require polynomial-time algorithms for the ordinary group or tensor problem. Establishing an equivalence to a separately established harder problem such as $\mathrm P=\mathrm{NP}$, unrestricted Group Isomorphism in polynomial time, or general circuit identity testing would require additional implications. [Open Question 1.9](https://arxiv.org/html/2306.03135v2#S1.SS5)

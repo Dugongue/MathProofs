@@ -1,0 +1,27 @@
+# Additional transfers in the hypothesized degree equality
+
+Fix $F=\mathbb F_3$ and suppose $H$ holds as in [Uniform norms](UniformNorms.md). The following assertions are consequences. They are useful when a single ordinary comparison is required even though the input has several orientation-sensitive questions.
+
+## Positive tests on feasibility tables
+
+A determinant feasibility table for three modes has eight Boolean entries, each testing a prescribed sign triple. Given a set of allowed triples, an ordinary TI comparison suffices under $H$ by a constant-size OR of the corresponding entries. To test whether *at least* $k$ distinct sign patterns occur, take an OR over the subsets of size $k$ and an AND of their required patterns. This is again constant size since $k\le8$. The same construction tests the presence of all model-supplied required patterns. It does not give a positive test for absence of a particular pattern.
+
+More generally, for a polynomial list of independent orientation-sensitive comparisons, any polynomial-size bounded-fan-in positive Boolean circuit of logarithmic depth on their outcomes gives one ordinary TI comparison under $H$. Unroll the circuit to a formula, whose size is polynomial by the depth bound, and use the explicit positive compilers in [Uniform norms](UniformNorms.md#combining-character-and-sign-choices). For example, with a fixed $k$, the condition that *at most $k$ comparisons fail* is the conjunction, over $(k+1)$-subsets of the comparisons, of disjunctions asserting at least one success in each subset. Dually, at least $k$ successes is a disjunction over $k$-subsets. The tests can mix different compact group, local ring, and tensor instances by their respective reductions to ordinary TI under $H$.
+
+## Unbounded-rank conditions on rigid independent sign profiles
+
+Suppose every ordinarily isomorphic pair in an input list of bimaps over explicit extensions of $F$ has exactly one attainable norm sign triple. This is a promise on the inputs. Give a binary affine system of *arbitrary rank* on the combined sign variables, including equations coupling distant pairs. There is a single ordinary TI comparison under $H$.
+
+First conjoin ordinary isomorphism of every pair, which acts as a guard. For each norm bit use two ordinary comparisons under $H$, testing whether that bit can be even, or odd, with the other bits unrestricted. Under the guard and the promise these two tests are complementary. Compute every parity equation by a balanced parity tree on pairs of tests. This tree uses only positive combinations, as in [Uniform norms](UniformNorms.md#combining-character-and-sign-choices). Take the requested branch of each tree and conjoin over all equations, with the ordinary-isomorphism guard. Arbitrarily many rows are allowed, since each uses a separate logarithmic-depth tree and the final conjunction is also balanced. A more general bounded-fan-in Boolean circuit of logarithmic depth may use negations, since one can propagate two complementary tests for every gate. The unrestricted logarithmic-rank result does not require the rigidity promise.
+
+## Counts for rings, compact groups, and compact quandles
+
+Let $N$ be the ordinary isomorphism count in one of these compact models and $N_+$ the even count, with the signs measured in the given coordinate orders. A nonempty isomorphism coset either has a single sign or is evenly split. The sign-filtered decision tests reduce to an ordinary decision comparison under $H$. Consequently one ordinary count and two ordinary decision queries suffice to compute $N_+$. Use the even decision to detect zero, and the odd decision to choose between $N$ and $N/2$. Conversely $N$ is the sum of the even counts from the original pair and a reflected target. A reflection of one coordinate gives a new structure in the same class, with all relative isomorphism signs flipped. Thus ordinary and even counting have equivalent constant-query Turing degrees in each of these models under $H$. The ratio does not require evaluating a tensor reduction's internal witness multiplicities. The same logic gives an exact sampler for the even fiber, given an exact ordinary uniform sampler, with expected at most two trials on nonempty even fibers. See [Local rings and quandles](LocalRingsAndQuandles.md) and [Oriented compact groups](OrientedGroups.md).
+
+There is also an unconditional functional comparison between the group and quandle counts. For a fixed sign, let $B_\epsilon$ be the number of bracket transporters of that sign for $\beta:X\times X\to Z$. Each lifts to exactly $3^{(\dim X)(\dim Z)}$ group isomorphisms, since the free central shear is an arbitrary linear map $X\to Z$. For the unpointed quandle, each bracket transporter lifts to a unique zero-preserving isomorphism, and there are exactly $3^{\dim X+\dim Z}$ displacements by which to move its image of zero. All these displacements are even. Hence the respective group and quandle counts of that sign are
+$$
+3^{(\dim X)(\dim Z)}B_\epsilon,\qquad 3^{\dim X+\dim Z}B_\epsilon.
+$$
+The two factors have polynomial bit length in the compact dimensions. This counts isomorphisms of the groups or quandles, rather than distinct formal descriptions of a map.
+
+These transfers use the stated decision or functional oracles. They supply neither an ordinary counting algorithm from a decision reduction alone nor a witness-lifting rule for an arbitrary reduction witnessing $H$.
