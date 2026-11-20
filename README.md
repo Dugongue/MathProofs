@@ -1284,3 +1284,10 @@ Pending formalizations:
 <!-- higher-order-measurements-and-algebra:start -->
 [Higher-Order Measurements and Algebra](HigherOrderMeasurementsAndAlgebra/PROOF.md) — Four informal answers. Resolves Designolle–Farkas's algebraic versus spectral $k$-fold unbiasedness question and their maximal-eigenspace parent criterion at arbitrary order and rank. Answers Hu–van Melkebeek's Section 5 multilinear sparsity-lifting question with exact width in every ROABP order. Proves Kaygorodov–Martín González–Viruel Conjecture 8 on polynomial-on-residue-classes counts of perfect evolution algebras. A separate note corrects the characteristic-two distribution in the finite-field consequence of their Conjecture 2.
 <!-- higher-order-measurements-and-algebra:end -->
+
+
+<!-- riemann-grochow-transfers:start -->
+## Riemann hypotheses and tensor isomorphism
+
+- [Four proof chapters](RiemannGrochowTransfers/RESULTS.md) give squarefree extension-degree variance, joint prime orbit tests, #P-hard exact prime-reduction density, and factorization-free determinant decision for finite-field étale isotopes. The chapters state the separate RH and Dirichlet GRH dependencies. Two Moore determinant identities are audited in Lean.
+<!-- riemann-grochow-transfers:end -->

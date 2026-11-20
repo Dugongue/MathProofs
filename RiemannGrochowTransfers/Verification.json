@@ -1,0 +1,51 @@
+{
+  "scope": "Two Lean matrix identities and four written mathematical arguments.",
+  "lean_version": "4.33.0",
+  "lean_source": "EtaleOrientation.lean",
+  "source_sha256": "58a7de3d01889c2f0b0f9955b145915186d61e6d9f8febc35af72eaaa28d7cf1",
+  "status": "VERIFIED",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "EtaleOrientation.mooreVolume_change"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "EtaleOrientation.mooreVolume_fixed"
+    }
+  ],
+  "fixed_target_check": "Fresh declarations with the frozen definitions and full theorem types were independently kernel-checked.",
+  "fixed_target_theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "Frozen_coordinate_change.EtaleOrientation.mooreVolume_change"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "Frozen_fixed_volume.EtaleOrientation.mooreVolume_fixed"
+    }
+  ],
+  "written_proofs": "Independent mathematical review across the four chapters. Classical RH and Dirichlet GRH remain explicit hypotheses where used.",
+  "finite_controls": {
+    "orientation": "240 invertible basis changes across six finite fields with degree 3 in characteristic 3 included",
+    "prime_specialization": "1,638 formula-prime evaluations, all 16 three-variable sign patterns, and exact residue and formula checks on bounded inputs",
+    "extension_spectra": "298,000 sieve identities, 8,460 doubling identities and 25,100 cubic-dilation identities",
+    "joint_prime_counts": "Rank 1 through 3 trace families and independent Gram checks for ranks 1 and 2"
+  }
+}
