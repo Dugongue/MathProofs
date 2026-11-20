@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- mixed-tensor-degenerations:start -->
+- **[Mixed tensor degeneration and related transfers](MixedTensorDegenerations/README.md)** — Written, internally reviewed reduction of fixed mixed directional degeneration to ordinary three-tensor degeneration, with smooth equivalence at encoded points. Includes exact counting transfers, intrinsic support compression, promised spectral canonization, and higher-order Polynomial Calculus simulations.
+<!-- mixed-tensor-degenerations:end -->
+
 <!-- alpoge-grochow-four-engines:start -->
 - [Four transfers from Alpöge's Riemann release to tensor isomorphism](AlpogeGrochowFourEngines/RESULTS.md) — abelian prime signatures under Dirichlet GRH, finite-ring unitary TI, quadratic norm descent, and exact high-depth tensor transport.
 <!-- alpoge-grochow-four-engines:end -->
