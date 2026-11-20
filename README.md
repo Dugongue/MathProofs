@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-sign-meta-theorems:start -->
+- **[Meta-theorems for determinant constraints in tensor isomorphism](TensorSignMetaTheorems/Results.md)** — Informal results on five-object consistency, the connected and finite Frobenius contributions to signs, odd-extension descent, and linear elimination of determinant roles in exact diagrams. The unrestricted reverse reductions remain open.
+<!-- tensor-sign-meta-theorems:end -->
+
 <!-- grochow-proof-transfers-ii:start -->
 - [Four advances on tensor isomorphism, proof complexity and matrix multiplication](GrochowProofTransfersII/README.md) — log-free odd-ring isomorphism, integral pencils from principal ideals, separable IPS width, and sharp simultaneous multiplication capacity. Written theorems with scoped Lean audits.
 <!-- grochow-proof-transfers-ii:end -->
