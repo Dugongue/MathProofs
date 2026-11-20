@@ -1,0 +1,38 @@
+{
+  "lean": {
+    "version": "4.33.0",
+    "source": "F3Parity.lean",
+    "sha256": "74beab5f8e423593341a4d04a30dc4c2fcbf18953834d6fe090c4e282bf15ec7",
+    "declarations": [
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "F3Parity.parity_tree_exact"
+      },
+      {
+        "axioms": [],
+        "theorem": "F3Parity.centroid_maps_commute_on_brackets"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Independent kernel and axiom checks for the parity tree and commutation on bracket values."
+  },
+  "written_proofs": "The group isomorphism reductions, radical probes, signed-tuple algorithms, centroid factor and relative genus algorithms are written proofs.",
+  "finite_controls": {
+    "factor_sign_compiler": 7200,
+    "coefficient_field_lift": 7500,
+    "exterior_square_determinants": 350,
+    "radical_sum_frame_calibrations": 370,
+    "four_line_rank_cases": 32,
+    "singular_pencil_lifts": 240,
+    "nilpotent_regular_pencil_lifts": 84,
+    "extension_field_tag_matrices": 5760,
+    "incidence_graph_support_subsets": 16383
+  },
+  "scope": "Same-field reductions for the stated classes of compact special exponent-three groups. Unrestricted equality remains open here. Publication priority is unverified."
+}

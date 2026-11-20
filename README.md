@@ -1319,3 +1319,10 @@ Pending formalizations:
 
 - [Classical reformulations and implications](SLClassicalEquivalences/RESULTS.md) identifies the fixed-field tensor degree equality over the field of three elements with reduction of alternating-group conjugacy to symmetric-group conjugacy for succinct regular representations of special exponent-three groups. It also gives an oriented group theorem at every fixed odd prime and a determinant-pencil construction over arbitrary finite fields.
 <!-- sl-classical-equivalences:end -->
+
+
+<!-- f3-compact-group-parity:start -->
+## Even isomorphism of compact exponent-three groups
+
+- [Finite-field group parity reductions](F3GroupParity/RESULTS.md) gives one ordinary isomorphism comparison for qualifying centroid products and radical probes, deterministic polynomial time for products of local relative genus at most two, and adaptive reductions from logarithmic centers or intrinsic flags. The compact input consists of ordered commutator coefficients over the field of three elements.
+<!-- f3-compact-group-parity:end -->
