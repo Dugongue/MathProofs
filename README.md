@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- masullo-tensor-isomorphism:start -->
+- [Four tensor-isomorphism results inspired by Masullo's trace-formula draft](MasulloInspiredTensorIsomorphism/RESULTS.md) — short determinantal certificates, sharp étale tensor dimensions, balanced real tensor isomorphism, and exact special-linear pencil counts. The general proofs are informal, with two finite pencil examples checked in Lean.
+<!-- masullo-tensor-isomorphism:end -->
+
 <!-- tensor-group-methods:start -->
 - **[Underused methods for tensors and group isomorphism problems](TensorGroupMethods/README.md)** — Written proofs of NP-complete degeneration at exact minimum rank, sharp generic Brauer obstructions, exact p-adic local transport, and group epimorphism counting by extension-class orbits.
 <!-- tensor-group-methods:end -->
