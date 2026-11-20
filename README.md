@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- alpoge-grochow-reductions:start -->
+- [Four tensor orbit results using the Alpöge release](AlpogeGrochow/RESULTS.md) — TOCI for a single diagonal orthogonal 3-tensor, cyclic étale ranks, quaternion SL panels, and companion pencils. Includes three Dirichlet-GRH deductions and one audited Lean sublemma.
+<!-- alpoge-grochow-reductions:end -->
+
 <!-- class-two-oracle-applications:start -->
 - [Four applications of the class-two decision oracle](ClassTwoOracleApplications/README.md) — unbounded-class metabelian groups, actual subgroup transport, central-shift normalizers, and exact finite-ring and bimap counts. Written proofs with Lean-checked supporting declarations.
 <!-- class-two-oracle-applications:end -->
