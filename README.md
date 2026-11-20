@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ordinary-even-ti-lean-components:start -->
+- **[Lean components for almost-all ordinary even-order tensor isomorphism](OrdinaryEvenTILean/README.md)** — Checked components for the dense fixed-field theorem with variable even order. See the packet for exact statements and remaining obligations. The end-to-end algorithm and coverage theorem remain informal.
+<!-- ordinary-even-ti-lean-components:end -->
+
 <!-- p-group-search-fusions:start -->
 - **[Four extensions of finite p-group search and counting](PGroupSearchFusions/SylowTowers.md)** — Informal proofs in the Cayley-table model. Search, exact counting, and automorphism generation reduce to decision within the class of groups with normal Sylow towers. [Class-preserving markers](PGroupSearchFusions/ClassPreserving.md) keep the prime, nilpotency class, lower exponent-p class, and exponent, and transfer the recent class-two decision bound to exact counting. [Parallel lifting](PGroupSearchFusions/ParallelLifting.md) gives uniform NC lifting for a prescribed Frattini map and one nonadaptive batch of decision queries for exact counting. [Frattini-flag canonization](PGroupSearchFusions/FrattiniFlagCanonization.md) gives constructive canonical forms in polynomial time for bounded-width flags and raw groups with the stated intrinsic flags.
 <!-- p-group-search-fusions:end -->
