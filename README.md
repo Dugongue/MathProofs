@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- constrained-isomorphism-theorems:start -->
+- **[General theorems for constrained isomorphism](ConstrainedIsomorphismTheorems/Results.md)** — Informal proofs on ambiguous batch encodings, finite-field extension spectra and uniform descent, exact composition of quotient witnesses, and optimal retained characters for determinant certificates. These apply to tensor sign comparisons without settling their unrestricted many-one collapse.
+<!-- constrained-isomorphism-theorems:end -->
+
 <!-- tensor-sign-meta-theorems:start -->
 - **[Meta-theorems for determinant constraints in tensor isomorphism](TensorSignMetaTheorems/Results.md)** — Informal results on five-object consistency, the connected and finite Frobenius contributions to signs, odd-extension descent, and linear elimination of determinant roles in exact diagrams. The unrestricted reverse reductions remain open.
 <!-- tensor-sign-meta-theorems:end -->
