@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-degeneration-fallout:start -->
+- **[Consequences of mixed tensor degeneration universality](TensorDegenerationFallout/README.md)** — Written, internally reviewed proofs of a balanced-width degeneration compiler, strict arithmetic reductions with prescribed local geometry, explicit exponentially branching orbit closures, and universality near minimum rank.
+<!-- tensor-degeneration-fallout:end -->
+
 <!-- alpoge-grochow-further-transfers:start -->
 - [Four further transfers from Alpöge's Riemann release to tensor isomorphism](AlpogeGrochowFurtherTransfers/RESULTS.md) — nonabelian Frobenius, quadratic norm-one obstructions, all-depth marked canonization, and square-zero multiplication isotopes.
 <!-- alpoge-grochow-further-transfers:end -->
