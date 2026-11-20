@@ -1,0 +1,33 @@
+{
+  "status": "VERIFIED",
+  "source": "LinearSideAMSI.lean",
+  "sha256": "ce4ee08dff7bee19889fb3abaa50ff48bf3d4634fbe84c2b31ffba91d88cd03c",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "theorems": [
+    {
+      "theorem": "LinearSideAMSI.contraction_support",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "LinearSideAMSI.frame_common_scale",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "LinearSideAMSI.rank_window_support",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Three supporting declarations, with independent import and a frozen rank-window statement bridge."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "StablePresentationLift.lean",
+  "sha256": "e72c15e791fb80c387efc238c245f7e41101300a6ce34b322d67c69e2b06188b",
+  "theorems": [
+    {
+      "theorem": "StablePresentationLift.surjections_equivalent_after_padding",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "StablePresentationLift.triangular_transport_iff",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "independent_statement_bridge": true,
+  "scope": "Stabilized lifting of projective covers and the submodule constraint on a triangular change of basis."
+}

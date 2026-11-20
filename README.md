@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-universality-applications:start -->
+- [Four applications of tensor isomorphism universality](TensorUniversalityApplications/README.md) — near-optimal ordinary tensor dimensions, same-characteristic finite fields, linear-order isometry search and counting, and free tensor encodings of presented modules. Written proofs with Lean-checked supporting declarations.
+<!-- tensor-universality-applications:end -->
+
 <!-- constrained-isomorphism-theorems:start -->
 - **[General theorems for constrained isomorphism](ConstrainedIsomorphismTheorems/Results.md)** — Informal proofs on ambiguous batch encodings, finite-field extension spectra and uniform descent, exact composition of quotient witnesses, and optimal retained characters for determinant certificates. These apply to tensor sign comparisons without settling their unrestricted many-one collapse.
 <!-- constrained-isomorphism-theorems:end -->

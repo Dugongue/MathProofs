@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "FrobeniusDescent.lean",
+  "sha256": "7b93a40beba6e66cc004356dcdc8d3e29652b1fe3eb41160e46fa154e6d49454",
+  "scope": "Supporting algebraic lemmas. An independent import rechecked the exact finite-field fixed-coordinate statement and all transitive axioms.",
+  "theorems": [
+    {"theorem": "FrobeniusDescent.linearForm_pow", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"theorem": "FrobeniusDescent.chain_pow", "axioms": ["propext"]},
+    {"theorem": "FrobeniusDescent.finiteField_fixed", "axioms": ["propext", "Classical.choice", "Quot.sound"]}
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "BalancedTensorRankBands.lean",
+  "sha256": "3c2941c43292faf0020b4fcf31927b5c35fe7d5ac10fd9022f083f4814d79a07",
+  "scope": "The arithmetic rank threshold and singleton-band equivalences, with independent expanded-statement bridges.",
+  "theorems": [
+    {
+      "theorem": "BalancedTensorRankBands.core_iff_empty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "BalancedTensorRankBands.band_iff_singleton",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "independent_statement_bridges": [
+    {
+      "theorem": "checked_core_iff_empty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "checked_band_iff_singleton",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
