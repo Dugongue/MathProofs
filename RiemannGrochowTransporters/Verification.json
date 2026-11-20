@@ -1,0 +1,24 @@
+{
+  "lean_version": "4.33.0",
+  "source": "ParityOrbitMask.lean",
+  "sha256": "a8c130be8ce96ec153c1e3bb737ec1f4261d6523c94805a0562f68b1813fdd3b",
+  "status": "KERNEL_AND_TRANSITIVE_AXIOMS_VERIFIED",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "theorem": "ParityOrbitMask.parity_views_match"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "ParityOrbitMask.parity_views_disjoint"
+    }
+  ],
+  "scope": "Orbit masking and disjoint supports for parity-conditioned samples."
+}

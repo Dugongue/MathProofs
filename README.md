@@ -1291,3 +1291,10 @@ Pending formalizations:
 
 - [Four proof chapters](RiemannGrochowTransfers/RESULTS.md) give squarefree extension-degree variance, joint prime orbit tests, #P-hard exact prime-reduction density, and factorization-free determinant decision for finite-field étale isotopes. The chapters state the separate RH and Dirichlet GRH dependencies. Two Moore determinant identities are audited in Lean.
 <!-- riemann-grochow-transfers:end -->
+
+
+<!-- riemann-grochow-transporters:start -->
+### Riemann hypotheses and tensor transporters
+
+[Proofs and verification](RiemannGrochowTransporters/RESULTS.md) for statistical zero knowledge on two complex tensor-isomorphism promises, a finite-prime test with a sharp density bound for square-zero algebras, and a finite-field factoring equivalence for determinant-one transporter search. The individual statements specify their analytic hypotheses. Lean verifies two orbit-masking lemmas.
+<!-- riemann-grochow-transporters:end -->
