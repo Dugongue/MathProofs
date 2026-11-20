@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- alpoge-grochow-four-engines:start -->
+- [Four transfers from Alpöge's Riemann release to tensor isomorphism](AlpogeGrochowFourEngines/RESULTS.md) — abelian prime signatures under Dirichlet GRH, finite-ring unitary TI, quadratic norm descent, and exact high-depth tensor transport.
+<!-- alpoge-grochow-four-engines:end -->
+
 <!-- grochow-open-problem-solutions-2:start -->
 - [Further answers from the Grochow open-problem catalog](GrochowOpenProblemSolutions2/README.md) — six written answers including exact determinant partition rank, finite Lie exponent for real special linear groups in order at least three, and a promised-input DNF lower bound for abelian group isomorphism. Includes finite replays, a Lean-checked supporting identity, and catalog literature corrections.
 <!-- grochow-open-problem-solutions-2:end -->

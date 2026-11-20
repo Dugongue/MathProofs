@@ -1,0 +1,50 @@
+{
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Four written proofs. The abelian prime cutoff assumes Dirichlet GRH.",
+  "kernel_check": {
+    "file": "NormGluing.lean",
+    "sha256": "64ed70a496acb2fa7df78492ea819fd44a2d531e43a75e05421a7849b41f4def",
+    "theorems": [
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "TensorNormGluing.triple_norm_fiber"
+      }
+    ]
+  },
+  "source_archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "source_members": {
+    "lean/src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/TraceGramDetNeZero.lean": {
+      "sha256": "5da8355bcf4a434b8db6a3035e2a70249c52c71ce6acc831be1cd80504e3a112",
+      "bytes": 10163,
+      "declaration_marker": "traceGram_det_ne_zero"
+    },
+    "lean/src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/HasseNormTheoremQuadraticExtension.lean": {
+      "sha256": "8827a27b05bb7d6cf8537685d426f48868814764c7aabfc74b5d2b63e4b32895",
+      "bytes": 1627,
+      "declaration_marker": "hasseNormSt"
+    },
+    "lean/src/Development/WeilBound/ThetaLifts/SphericalLattices/BelowIffRows.lean": {
+      "sha256": "25fad4884ed0de0611cb6bb4158dacac8dfb53068114ccc0e19917d3bef244a2",
+      "bytes": 11026,
+      "declaration_marker": "below_iff_rows"
+    },
+    "lean/src/Main.lean": {
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "bytes": 433,
+      "declaration_marker": "LFunction_eq_zero_re_of_isPrimitive"
+    },
+    "lean/src/Statements.lean": {
+      "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+      "bytes": 783,
+      "declaration_marker": "PrimitiveDirichletLZerosOnLine"
+    }
+  },
+  "finite_controls": {
+    "prime": "4489 directed containment and density comparisons, with a six-prime panel for nine quartic fields.",
+    "norm_gluing": "8192 configurations in a C8 to C2 norm model with overlapping cubic records and a redundant row.",
+    "lattice": "Exact enumeration at p=2 in two nonlinear congruence classes: 512 targets with 512 det-one witnesses, and 64 targets with 64 det-one witnesses."
+  }
+}
