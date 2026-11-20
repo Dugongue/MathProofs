@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tensor-spectra-determinants-group-lifts:start -->
+- **[Determinant recognition, tensor descent, and group epimorphisms](TensorSpectraDeterminantsGroupLifts/DeterminantRecognition.md)** — Four informal results. Uniform deterministic sparse determinant recognition over finite fields, with witness construction over each fixed field. A [Galois quotient theorem](TensorSpectraDeterminantsGroupLifts/GaloisSpectrumDescent.md) for the full Strassen spectrum, determining the algebraic scalar-extension maps. A small [quiver realization](TensorSpectraDeterminantsGroupLifts/TensorExtensionDegrees.md) of prescribed extension-degree spectra for ordinary and special-linear tensor isomorphism. Polynomial-time [exact counting and search](TensorSpectraDeterminantsGroupLifts/GroupEpimorphisms.md) for Cayley-table epimorphisms to several solvable target classes, including central extensions with unrestricted kernel of a bounded-generator solvable group with abelian Sylows.
+<!-- tensor-spectra-determinants-group-lifts:end -->
+
 <!-- evolution-embedding-and-functoriality:start -->
 - **[Evolution algebra embeddings, nilpotence, and functorial tensor reductions](EvolutionEmbeddingAndFunctoriality/Results.md)** — Informal answers to Kaygorodov–Martín González–Viruel Questions 10 and 15 and Costoya–Fernández Ouaridi–Viruel Questions 2.3 and 4.7. Gives the complexity of detecting complex idempotents, a graph criterion for principal nilness, a countable-dimensional ideal-embedding theorem, and the sharp field-size threshold for higher-arity embeddings. Also rules out polynomial-dimension reductions from graphs and commutative unital algebras to ordinary TI that preserve all standard homomorphisms, addressing two directions of Grochow–Qiao Open Question 7.5.
 <!-- evolution-embedding-and-functoriality:end -->
