@@ -1362,3 +1362,10 @@ Pending formalizations:
 
 - [234-entry inequality atlas](TISLAtlas200/ATLAS.md) adds 156 entries on compact groups, conditional linear and counting compilers, randomized search, and arithmetic descent. It includes a signed tensor Hasse failure in format 4 and a reduction to exponent-nine group orientation. Written proofs and two independently checked supporting Lean lemmas accompany the catalog. The unrestricted fixed-field equality remains open.
 <!-- tisl-atlas-expanded:end -->
+
+
+<!-- tisl-square-zero-closure:start -->
+## The square-zero form of the special-linear tensor-isomorphism question
+
+- [Exact missing lemma and consequences](TISLAtlasClosure/RESULTS.md) gives an equivalent one-sign comparison on explicitly presented square-zero matrix spaces, or their compact elementary abelian matrix groups. It proves a sharp tuple threshold and gives structured sufficient classes and counterexamples to proposed shortcuts. The general fixed-field degree question remains open. Three supporting polynomial identities were checked in Lean.
+<!-- tisl-square-zero-closure:end -->
