@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-research-synthesis:start -->
+- [Group isomorphism, closed tensor orbits, and field descent](GrochowResearchSynthesis/README.md) — black-box search and counting for class-two and Lazard-range groups, exact exponential GL separating degrees, and tied tensor restriction over field extensions. Written proofs with Lean-checked supporting declarations.
+<!-- grochow-research-synthesis:end -->
+
 <!-- ordinary-even-ti-lean-components:start -->
 - **[Lean components for almost-all ordinary even-order tensor isomorphism](OrdinaryEvenTILean/README.md)** — Checked dense input and output, bounded kernel-form search, actual Smith matrix packing, and conditional anchor-law and coverage components. The end-to-end binary-time theorem remains in progress.
 <!-- ordinary-even-ti-lean-components:end -->

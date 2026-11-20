@@ -1,0 +1,39 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "LazardClassReduction.lean",
+  "sha256": "3a25f50f3d11b54996b087c4d6c9977a5c87ee294e415663103139ba88ee921f",
+  "scope": "Exact supporting Lean declarations and their transitive axioms.",
+  "theorems": [
+    {
+      "theorem": "LazardClassReduction.adjoint_blocks",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "LazardClassReduction.matrix_commutator_annihilator_left",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "LazardClassReduction.matrix_commutator_annihilator_right",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "LazardClassReduction.normalize_operation",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

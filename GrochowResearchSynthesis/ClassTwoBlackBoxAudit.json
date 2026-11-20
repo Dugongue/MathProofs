@@ -1,0 +1,37 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "ClassTwoBlackBox.lean",
+  "sha256": "7e67bcaf297945900d5bfbc107f48d42c3fe4fc3fa5806ce75ca180ceec4386c",
+  "scope": "Exact supporting Lean declarations and their transitive axioms.",
+  "theorems": [
+    {
+      "theorem": "ClassTwoBlackBox.paired_range_iff",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ClassTwoBlackBox.unit_power_anchor",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "ClassTwoBlackBox.singleton_bands_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ClassTwoBlackBox.two_markers_above_singletons",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

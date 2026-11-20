@@ -1,0 +1,33 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "ExactGLSeparatorDegrees.lean",
+  "sha256": "3dbc39583ef7ded3e614091890854f55bb21cab09b0eb8fcb65f1fb915eab2b5",
+  "scope": "Exact supporting Lean declarations and their transitive axioms.",
+  "theorems": [
+    {
+      "theorem": "ExactGLSeparatorDegrees.cycle_boundary",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ExactGLSeparatorDegrees.cancel_base_from_cycle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ExactGLSeparatorDegrees.balanced_total_degree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
