@@ -1348,3 +1348,10 @@ Pending formalizations:
 
 - [Equality, inequality, and limits of specific reductions](TISLTwoWorlds/RESULTS.md) gives finite extension reflection, an exact cube-zero local-ring equivalence, and conditional complexity consequences. It proves a fixed-field opaque query separation with an explicit-input algorithm on the same instances, and a component-count obstruction for extension-compatible constructions.
 <!-- tisl-two-worlds:end -->
+
+
+<!-- tisl-negative-atlas:start -->
+## Atlas of the strict special-linear tensor-isomorphism world
+
+- [Inequality atlas and proofs](TISLNegativeAtlas/RESULTS.md) records 78 linked consequences and comparisons for fixed-field determinant-one tensor isomorphism over F3. It includes an unconditional compiler for arbitrary-rank linear constraints on ordinary tensor-isomorphism answers, sharper exact-counting consequences, matrix-space and compact-group equivalences, and finite-field descent theorems. The unrestricted degree question remains open. Two supporting affine identities were checked in Lean.
+<!-- tisl-negative-atlas:end -->
