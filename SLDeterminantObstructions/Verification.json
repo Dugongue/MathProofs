@@ -1,0 +1,35 @@
+{
+  "lean": {
+    "version": "4.33.0",
+    "source": "DeterminantNoGo.lean",
+    "sha256": "849bdfb59f5d3e55bb429f58c861d9baeadc50a54e7779f48dbb311d55221a73",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "DeterminantNoGo.nonzeroWinding_requires_weight"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Only the central weight threshold is independently kernel-checked. The representation, gadget and query lower bounds are written mathematical proofs."
+  },
+  "finite_controls": {
+    "dense_bound_residue_partitions": 28464,
+    "full_support_scalar_pair_label_transporter_checks": 5736,
+    "block_scalar_congruence_checks": 6144,
+    "local_algebra_associativity_triples": 1458,
+    "nine_dimensional_algebra_tangent_and_axis_checks": 129216,
+    "three_branch_algebra_tangent_assignments": 422496,
+    "cyclic_amplification_schedules": 7840,
+    "opaque_pencil_pin_images": 235984,
+    "small_ordered_pin_systems": 1069443
+  },
+  "status": "Unconditional written obstructions in explicitly scoped models. Bibliographic priority is unverified."
+}

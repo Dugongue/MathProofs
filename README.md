@@ -1305,3 +1305,10 @@ Pending formalizations:
 
 - [Radical matrix corners and matrix pencils](SLRadicalAndPencils/RESULTS.md) proves a same-field many-one reduction from special-linear to ordinary tensor isomorphism on a class of associative multiplication isotopes, with a TI-complete subclass of cube-zero radical. It also gives a deterministic polynomial-bit-time algorithm for all two-slice tensors and reductions using finite projective rank loci. The Lean companion independently checks three determinant lemmas.
 <!-- sl-radical-and-pencils:end -->
+
+
+<!-- sl-determinant-obstructions:start -->
+## Obstructions to special-linear tensor-isomorphism reductions
+
+- [Determinant gadget obstructions](SLDeterminantObstructions/RESULTS.md) gives a size lower bound for natural determinant-line diagrams, a scalar-absorption obstruction for homogeneous block maps, exact amplification and radical-grade counterexamples, and a tight opaque-query lower bound on matrix pencils. The four obstructions have separate, explicit hypotheses.
+<!-- sl-determinant-obstructions:end -->
