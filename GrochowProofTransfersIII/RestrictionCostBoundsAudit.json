@@ -1,0 +1,14 @@
+{
+  "status": "VERIFIED",
+  "scope": "Three natural-number inequalities for the group restriction parameters",
+  "theorem": "ClassTwoIsomorphism.restrictionCostBounds",
+  "source": "RestrictionCostBounds.lean",
+  "sha256": "17a9c204a0d265bcf1dc3bd8ec86212e158fbd8f408fb4769a8d93fb906747e7",
+  "proof_note_sha256": "4692812b14bad36cee37dd9dee31a93761b8491cca84cc47aa41d771b2c7e993",
+  "lean": "v4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "transitive_axioms": [
+    "propext"
+  ],
+  "independent_statement_bridge": true
+}

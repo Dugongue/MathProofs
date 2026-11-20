@@ -1,0 +1,29 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "source": "LinearSignature.lean",
+  "sha256": "3b5064e4dfb5d570595b1bbbad3a77e1ae7716bcc1cc1452e40fb4340e7e1f0f",
+  "theorems": [
+    {
+      "theorem": "LinearSignature.preserve_product_forces_map",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "LinearSignature.preserve_pairing_forces_dual",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "fixed_preserve_product_forces_map",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

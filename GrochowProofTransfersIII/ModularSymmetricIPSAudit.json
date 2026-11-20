@@ -1,0 +1,44 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "source": "ModularSymmetricIPS.lean",
+  "sha256": "b4fcf2b625f72eaeff121b5e99a4a6d9fddb86fe6d8acb45c90eceae1d1cf6ac",
+  "theorems": [
+    {
+      "theorem": "ModularSymmetricIPS.orbit_prime_to_p_iff_contains_sylow_fixed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ModularSymmetricIPS.orbit_sum_normalization",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ModularSymmetricIPS.phpTwoCertificate_zero",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "ModularSymmetricIPS.phpTwoCertificate_substitute",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ModularSymmetricIPS.phpTwoCertificate_swap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-proof-transfers-iii:start -->
+- [Four proof transfers III](GrochowProofTransfersIII/README.md) — tensor isomorphism universality, a faster class-two group isomorphism bound, exact modular symmetric IPS degree, and border separators. Written proofs with Lean-checked supporting declarations.
+<!-- grochow-proof-transfers-iii:end -->
+
 <!-- wide-tensor-third-sign:start -->
 - **[Third-sign reductions for wide three-tensors](WideTensorThirdSign/Results.md)** — Informal reductions over F₃ using exact determinant counts and correlations, normalized local determinant forms, and coherent local frames. These cover additional families with unbounded mode dimensions. The unrestricted reduction remains open.
 <!-- wide-tensor-third-sign:end -->
