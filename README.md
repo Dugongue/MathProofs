@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- isomorphism-counting-questions:start -->
+- [Four questions on homomorphism counts, code equivalence, and finite groups](IsomorphismCountingQuestions/Results.md) — Informal proofs of biclique homomorphism indistinguishability completeness, a game for dense Weisfeiler–Leman logic, the removal of cyclic evaluation sets from Santonastaso–Zullo Theorem 5.20, and Lazorec’s normalizer divisibility. Includes faster stable refinement and a rank-metric extension classification.
+<!-- isomorphism-counting-questions:end -->
+
 <!-- moving-block-tensor-signs:start -->
 - [The third determinant in tensor isomorphism over F₃](MovingBlockTensorSigns/Results.md) — Informal progress on the finite-field case of Chen–Grochow–Qiao–Tang–Zhang Open Question 1.9. Gives exact same-transporter complement and succinct polynomial formulations, and identifies why the tested fixed-diagram couplings fail. The unrestricted reduction to one two-sign TI instance remains open.
 <!-- moving-block-tensor-signs:end -->
