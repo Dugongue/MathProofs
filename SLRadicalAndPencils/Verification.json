@@ -1,0 +1,51 @@
+{
+  "lean": {
+    "version": "4.33.0",
+    "source": "PeirceDeterminants.lean",
+    "source_sha256": "d76c7b5987c93cab5798acef66457d89b6a51898c9a558e650b8ab73b833f535",
+    "status": "Independently kernel-checked with an axiom audit.",
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "PeirceDeterminants.matrixUnits_intertwine"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "PeirceDeterminants.determinant_of_repeated_blocks"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "PeirceDeterminants.determinant_block_disappears"
+      }
+    ],
+    "frozen_statement_replay": "Intertwining and powered block omission were independently replayed at the frozen types."
+  },
+  "written_proofs": "The reductions, determinant-character computations and runtime bounds are written proofs.",
+  "finite_controls": {
+    "weighted_block_permutations": 1800,
+    "matrix_and_radical_profiles": 60122,
+    "exceptional_pencil_full_enumerations": 12,
+    "upper_triangular_pencil_cases": 2076,
+    "singular_symmetric_power_cases": 15300,
+    "smooth_order_subgroup_comparisons": 1750,
+    "padded_rank_frame_projective_points": 40077
+  },
+  "scope": "The unrestricted reverse reduction stays open here. Publication priority is unverified."
+}

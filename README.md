@@ -1298,3 +1298,10 @@ Pending formalizations:
 
 [Proofs and verification](RiemannGrochowTransporters/RESULTS.md) for statistical zero knowledge on two complex tensor-isomorphism promises, a finite-prime test with a sharp density bound for square-zero algebras, and a finite-field factoring equivalence for determinant-one transporter search. The individual statements specify their analytic hypotheses. Lean verifies two orbit-masking lemmas.
 <!-- riemann-grochow-transporters:end -->
+
+
+<!-- sl-radical-and-pencils:start -->
+## Special-linear tensor isomorphism beyond étale multiplication
+
+- [Radical matrix corners and matrix pencils](SLRadicalAndPencils/RESULTS.md) proves a same-field many-one reduction from special-linear to ordinary tensor isomorphism on a class of associative multiplication isotopes, with a TI-complete subclass of cube-zero radical. It also gives a deterministic polynomial-bit-time algorithm for all two-slice tensors and reductions using finite projective rank loci. The Lean companion independently checks three determinant lemmas.
+<!-- sl-radical-and-pencils:end -->
