@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ns-ternary-tisl-four:start -->
+- [Navier–Stokes methods for the ternary TI and SL-TI comparison](NavierStokesTISL4/RESULTS.md) — exact ordinary-TI reductions on explicit four-class families, plus Pfaffian and cut-tree sign reductions, with supporting Lean audits.
+<!-- ns-ternary-tisl-four:end -->
+
 <!-- class-two-subgroup-transport:start -->
 - [Class-two subgroup transport](ClassTwoSubgroupTransport/README.md) — ordinary class-two decision suffices for up to three arbitrary actual subgroup marks in exponent-four groups, and for several precisely stated mixed-exponent and bounded-rank families. Written reductions, two Lean-checked linear lemmas, and finite replays.
 <!-- class-two-subgroup-transport:end -->

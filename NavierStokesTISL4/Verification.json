@@ -1,0 +1,55 @@
+{
+  "navier_stokes_source_revision": "ad53419de079eb8f95f60313473374624a348546",
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "main_reductions": "Written proofs on the stated families",
+  "kernel_checks": [
+    {
+      "source": "FifthCorrelation.lean",
+      "sha256": "0b173006649972265efe5971ac77d7cd288d2e08496950405a1939d1541f1bd7",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "fifthCorrelationTransport"
+        }
+      ]
+    },
+    {
+      "source": "PfaffianHarmonicReadout.lean",
+      "sha256": "30b8f28286a9ca11502775479f9e74b16a45248ec6df41248efd480592b49162",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "PfaffianHarmonicReadout.ternaryFourierWeights"
+        }
+      ]
+    },
+    {
+      "source": "SignEnvelope.lean",
+      "sha256": "36c6a30a6064989c464fd79eef9401f79aee114fd42ba195b3bb710f44d87242",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "HeldActionSignProfiles.exact_sign_of_projection"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "check_fifth_moment.py": "Zero mean. Fifth correlation -240 by direct and projected computations.\n[(28, 28, 8), (36, 36, 10), (44, 44, 12)]",
+    "check_pfaffian_harmonics.py": "240 primal/dual controls, 32 large-circuit means, 1536 odd color flips, 360 raw block Pfaffians\n72 complete projective frequency actions with endpoint calibration",
+    "check_cut_tree.py": "180 matrix-front controls with 2520 perturbation evaluations. 160 label-glue controls with 3548 lifted and 369918 rejected boundary assignments. 212 two-by-two matrix spaces and the four-by-four signs 324, 2916.",
+    "check_held_action_signs.py": "120 matrix determinant controls passed. Checked all 64 frame pairs and 4 retained-sign classes."
+  }
+}
