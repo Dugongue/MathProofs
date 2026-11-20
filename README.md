@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- alpoge-trace-gram-tisl:start -->
+- [Trace Gram methods for TI and special-linear TI](AlpogeTISL/RESULTS.md) — finite-field reductions for split Pfaffian pencils, semisimple multiplication isotopes, centroid field blocks and orthogonal residuals, with supporting Lean audits.
+<!-- alpoge-trace-gram-tisl:end -->
+
 <!-- ns-ternary-tisl-four:start -->
 - [Navier–Stokes methods for the ternary TI and SL-TI comparison](NavierStokesTISL4/RESULTS.md) — exact ordinary-TI reductions on explicit four-class families, plus Pfaffian and cut-tree sign reductions, with supporting Lean audits.
 <!-- ns-ternary-tisl-four:end -->

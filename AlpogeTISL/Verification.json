@@ -1,0 +1,45 @@
+{
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "reduction_proofs": "Written mathematical proofs on the stated families",
+  "analytic_GRH_or_RH_used": false,
+  "kernel_checked_companion": {
+    "file": "SemilinearDeterminantLines.lean",
+    "sha256": "253add8b1dcdb51398d66d8ab56928be8f49362c2cfd6f4d5eb42fd3478aec8c",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "SemilinearDeterminantLines.conjugate_product_transport"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "SemilinearDeterminantLines.quadratic_frobenius_on_trace_zero"
+      }
+    ]
+  },
+  "isolated_upstream_proof_replay": {
+    "archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+    "member": "lean/src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/TraceGramDetNeZero.lean",
+    "member_sha256": "5da8355bcf4a434b8db6a3035e2a70249c52c71ce6acc831be1cd80504e3a112",
+    "scope": "Exact definition and theorem excerpts, isolated on local Mathlib imports",
+    "sha256": "2ef47acea641c16b28d94ff294c6f92d61f32e19c9978712acbf4c52ac1ceca8",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "GlobalTheory.CompanionTheory.SW.CoordMat.traceGram_det_ne_zero"
+      }
+    ]
+  }
+}
