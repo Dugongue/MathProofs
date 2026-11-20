@@ -1,0 +1,34 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "RingIsomorphismFibers.lean",
+  "sha256": "5f4107ea039686654a548a71497a677374a83390633815b2ff271ad98d378832",
+  "scope": "Exact supporting Lean declarations and their transitive axioms.",
+  "theorems": [
+    {
+      "theorem": "RingIsomorphismFibers.normalized_isotopy",
+      "axioms": []
+    },
+    {
+      "theorem": "RingIsomorphismFibers.hub_normalization",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "RingIsomorphismFibers.hub_weights_compose",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "RingIsomorphismFibers.central_change_mul",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

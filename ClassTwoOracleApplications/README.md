@@ -1,0 +1,12 @@
+# Four applications of the class-two decision oracle
+
+These are written proofs. They apply the [class-two search, count, and generator reduction](https://github.com/Dugongue/MathProofs/blob/main/GrochowResearchSynthesis/CLASS-TWO-BLACK-BOX.md) to decorated group and algebra problems. The oracle takes ordinary unmarked Cayley tables of groups of class at most two.
+
+- [Metabelian groups of unbounded class](METABELIAN-ACTION-CLASS-REDUCTION.md). For odd metabelian \(p\)-groups, put \(b=d(G/C_G(G'))\). The reduction gives decision, search, exact counting, and automorphism generators with \(N^{O(1+b)}\) query order and query count. For fixed \(b\), the odd-order class-two decision bound gives \(N^{O((\log N)^{8/9})}\) for all four outputs. At \(p=2\) the same reduction applies when the characteristic kernel in the theorem is abelian. [Grochow–Qiao–Stange–Sun, Part V](https://arxiv.org/abs/2611.00735)
+- [Actual embedded subgroups](EMBEDDED-SUBGROUP-TRANSPORT.md). Under the condition that every three-generated subgroup has class less than \(p\), the oracle transports ordered lists of actual subgroups, gives their simultaneous restriction image, and counts extensions of any allowed set of partial isomorphisms. The group table order grows polynomially in \(N\prod_i |H_i|\). Explicit examples have global class \(p\).
+- [Central-shift normalizers and centralizers](CENTRAL-SHIFT-NORMALIZERS.md). The oracle transports explicitly listed subgroups of central-shift automorphisms, with or without a prescribed conjugation map. It also counts transporters and supplies normalizer and centralizer generators in the automorphisms preserving the specified central kernel. The construction includes mixed-exponent \(2\)-groups.
+- [Finite rings and bilinear maps](FINITE-RING-ISOMORPHISM-FIBERS.md). The unmarked Heisenberg encoding yields a surjection onto the ring automorphism or bimap autotopism group and an explicit integer factor for the exact counts. This works with arbitrary distributive products and all additive exponents.
+
+Qiao and Zhang's November 2026 manuscript claims polynomial-time isomorphism and coset computation for general Cayley-table groups. The four reductions here use only class-two decision and are independent of that manuscript's algorithm. [Qiao–Zhang project](https://github.com/group-iso/group-iso.github.io)
+
+The companion Lean files and axiom receipts cover twelve exact supporting declarations. The Python scripts replay finite controls. Publication priority for the new claims remains unverified.

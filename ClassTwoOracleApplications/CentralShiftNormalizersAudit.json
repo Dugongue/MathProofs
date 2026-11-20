@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "CentralShiftNormalizers.lean",
+  "sha256": "74112ddae8727622547433fe742018367781e22b871cee7f859148cc5aa5d75c",
+  "scope": "Exact supporting Lean declarations and their transitive axioms.",
+  "theorems": [
+    {
+      "theorem": "CentralShiftNormalizers.shifts_intertwine_iff",
+      "axioms": [
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "CentralShiftNormalizers.evaluation_action_unique",
+      "axioms": [
+        "Quot.sound"
+      ]
+    }
+  ]
+}

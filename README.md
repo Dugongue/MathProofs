@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- class-two-oracle-applications:start -->
+- [Four applications of the class-two decision oracle](ClassTwoOracleApplications/README.md) — unbounded-class metabelian groups, actual subgroup transport, central-shift normalizers, and exact finite-ring and bimap counts. Written proofs with Lean-checked supporting declarations.
+<!-- class-two-oracle-applications:end -->
+
 <!-- grochow-research-synthesis:start -->
 - [Group isomorphism, closed tensor orbits, and field descent](GrochowResearchSynthesis/README.md) — black-box search and counting for class-two and Lazard-range groups, exact exponential GL separating degrees, and tied tensor restriction over field extensions. Written proofs with Lean-checked supporting declarations.
 <!-- grochow-research-synthesis:end -->

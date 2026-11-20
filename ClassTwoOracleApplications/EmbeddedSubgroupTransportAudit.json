@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "EmbeddedSubgroupTransport.lean",
+  "sha256": "7bbeed8c25897a253784c1f5daed2e553cf7b93dfc906372f126408b84d79cf5",
+  "scope": "Exact supporting Lean declarations and their transitive axioms.",
+  "theorems": [
+    {
+      "theorem": "EmbeddedSubgroupTransport.alignment_ratio",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "EmbeddedSubgroupTransport.normalize_alignment",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "EmbeddedSubgroupTransport.normalization_composition",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ]
+}
