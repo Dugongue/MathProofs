@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- raw-tensor-sign-reductions:start -->
+- **[Removing tensor determinant constraints from raw inputs](RawTensorSignReductions/Results.md)** — Informal single-instance reductions over F₃ for specified input families. Split Pfaffian factor dependencies remove one sign, Koszul defect multiplicities remove one of two signs, and intrinsic centroid and overlapping-subspace constructions remove a designated third sign while retaining the same transporter. The unrestricted TI versus SL-TI question remains open.
+<!-- raw-tensor-sign-reductions:end -->
+
 <!-- agent-archive-mathematical-transfers:start -->
 - **[Mathematical transfers from AgentAlphaXiv](AgentArchiveMathematicalTransfers/Results.md)** — Informal proofs. A sharp three-moment certificate and normalized-spectrum classification for Turán graphs, answering the cases in Sason et al. §6.2. Generalized friendship graphs with adjacency-cospectral mates for every clique size, answering the uniform adjacency direction of Question 6.4. A matching-number criterion for symbolic subgraph circuits, two chief-layer completion criteria toward Collins–Grochow–Levet–Weiß Question 8.3, and identical-spectrum causal attention examples with different stable-rank growth.
 <!-- agent-archive-mathematical-transfers:end -->
