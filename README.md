@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- sl-tensor-projection-packing:start -->
+- **[Safe projections and packing for SL tensor isomorphism](SLTensorProjectionPacking/Results.md)** — Informal single-instance reductions over F₃ on specified input families. They use Frobenius-stable factor dependencies without a common splitting field, exact determinant counts, Lie-stabilizer graph supports, and centroid packing with unrestricted block multiplicities. The unrestricted three-to-two reduction remains open.
+<!-- sl-tensor-projection-packing:end -->
+
 <!-- raw-tensor-sign-reductions:start -->
 - **[Removing tensor determinant constraints from raw inputs](RawTensorSignReductions/Results.md)** — Informal single-instance reductions over F₃ for specified input families. Split Pfaffian factor dependencies remove one sign, Koszul defect multiplicities remove one of two signs, and intrinsic centroid and overlapping-subspace constructions remove a designated third sign while retaining the same transporter. The unrestricted TI versus SL-TI question remains open.
 <!-- raw-tensor-sign-reductions:end -->
