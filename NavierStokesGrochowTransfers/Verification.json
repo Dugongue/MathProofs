@@ -1,0 +1,175 @@
+{
+  "lean": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "navier_stokes_source_revision": "ad53419de079eb8f95f60313473374624a348546",
+  "four_main_results": "Complete written arguments within their stated scopes",
+  "kernel_scope": "Only the exact companion theorems below",
+  "kernel_and_axiom_audits": [
+    {
+      "source": "DegreeEightWeightGap.lean",
+      "sha256": "146892376c84d051d36471ce889a8162238cdd50bc33466657946855eadb651f",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "degreeEightWeightGap"
+        }
+      ]
+    },
+    {
+      "source": "PivotGraphLift.lean",
+      "sha256": "8e2e208ae64d9cee2524759cfb25f320cb957c3c0d4da87a2796adcd45cbb4f0",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "BoundedModeTensorPC.denominatorClearedGraphLift"
+        }
+      ]
+    },
+    {
+      "source": "ExactTreeTelescoping.lean",
+      "sha256": "faff89d3343d968f639ca2913b6f0393b844f6ef4a6b75230a6f90845e9ecb6f",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "PairedGroupEpimorphism.exactTreeTelescoping"
+        }
+      ]
+    },
+    {
+      "source": "AlternatingTupleLifting.lean",
+      "sha256": "c69ec6bc798228b38e00ae99344e53bc5557ce5c1640e1039313fd5accc7f006",
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "AlternatingTupleLifting.normDefect_affine"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "AlternatingTupleLifting.normDefect_preservesTrace"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "AlternatingTupleLifting.squareZeroNormCorrection"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "AlternatingTupleLifting.squareZeroNormCorrectable"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "kempf_weight_families": 32,
+    "paired_fronts": {
+      "cases": 1025,
+      "positive": 617,
+      "zero": 408,
+      "dimension_drop_pruning": true
+    },
+    "norm_lifts": {
+      "dual_numbers": {
+        "units": 96,
+        "unitary_order": 8,
+        "yes_target_norm_count": 8,
+        "no_target_norm_count": 0
+      },
+      "two_power_rings": [
+        {
+          "modulus": 4,
+          "units": 96,
+          "residue_unitary_order": 2,
+          "unitary_order": 8,
+          "obstruction_orbit": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "modulus": 8,
+          "units": 1536,
+          "residue_unitary_order": 8,
+          "unitary_order": 32,
+          "obstruction_orbit": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "modulus": 16,
+          "units": 24576,
+          "residue_unitary_order": 32,
+          "unitary_order": 64,
+          "obstruction_orbit": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "unitary_generation": {
+      "SU3_q2": {
+        "field_order": 4,
+        "unitary_order": 648,
+        "special_unitary_order": 216,
+        "norm_one_vectors": 36,
+        "special_unitary_orbit_of_first_basis_vector": 36
+      },
+      "SU2_q4": {
+        "field_order": 16,
+        "unitary_order": 300,
+        "special_unitary_order": 60,
+        "norm_one_vectors": 60,
+        "special_unitary_orbit_of_first_basis_vector": 60,
+        "nonzero_isotropic_vectors_rescaled_by_special_unitary": 75,
+        "nonzero_norm_classes_individually_transitive": 3
+      }
+    }
+  }
+}

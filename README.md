@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- navier-stokes-grochow-transfers:start -->
+- [Four Navier–Stokes technique transfers to Grochow problems](NavierStokesGrochowTransfers/RESULTS.md) — degree-eight exponential Kempf weights and scoped theorems for Polynomial Calculus, alternating matrix tuple isometry, and group epimorphism. Written proofs with separately audited Lean lemmas.
+<!-- navier-stokes-grochow-transfers:end -->
+
 <!-- alpoge-grochow-reductions:start -->
 - [Four tensor orbit results using the Alpöge release](AlpogeGrochow/RESULTS.md) — TOCI for a single diagonal orthogonal 3-tensor, cyclic étale ranks, quaternion SL panels, and companion pencils. Includes three Dirichlet-GRH deductions and one audited Lean sublemma.
 <!-- alpoge-grochow-reductions:end -->
