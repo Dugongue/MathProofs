@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- agent-archive-mathematical-transfers:start -->
+- **[Mathematical transfers from AgentAlphaXiv](AgentArchiveMathematicalTransfers/Results.md)** — Informal proofs. A sharp three-moment certificate and normalized-spectrum classification for Turán graphs, answering the cases in Sason et al. §6.2. Generalized friendship graphs with adjacency-cospectral mates for every clique size, answering the uniform adjacency direction of Question 6.4. A matching-number criterion for symbolic subgraph circuits, two chief-layer completion criteria toward Collins–Grochow–Levet–Weiß Question 8.3, and identical-spectrum causal attention examples with different stable-rank growth.
+<!-- agent-archive-mathematical-transfers:end -->
+
 <!-- isomorphism-counting-questions:start -->
 - [Four questions on homomorphism counts, code equivalence, and finite groups](IsomorphismCountingQuestions/Results.md) — Informal proofs of biclique homomorphism indistinguishability completeness, a game for dense Weisfeiler–Leman logic, the removal of cyclic evaluation sets from Santonastaso–Zullo Theorem 5.20, and Lazorec’s normalizer divisibility. Includes faster stable refinement and a rank-metric extension classification.
 <!-- isomorphism-counting-questions:end -->
