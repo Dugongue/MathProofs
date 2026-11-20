@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- wide-tensor-determinant-cancellation:start -->
+- **[Determinant cancellation for wide three-tensors](WideTensorDeterminantCancellation/Results.md)** — Informal reductions from special-linear to two-sign tensor isomorphism over F₃ using transpose-paired odd multiplicities and projective module evaluation with a small kernel. Also gives exact polynomial-time determinant profiles for classes with many coupled local blocks. The unrestricted reduction remains open.
+<!-- wide-tensor-determinant-cancellation:end -->
+
 <!-- bounded-relative-tensor-signs:start -->
 - **[Exact determinant profiles with one bounded relative mode](BoundedRelativeTensorSigns/Results.md)** — Informal deterministic polynomial-time algorithm for every fixed relative mode dimension over finite fields of fixed odd characteristic, with polynomial dependence on the field bit length. Also gives sufficient conditions for wide modes using pair-adjoint multiplicities and determinant factors.
 <!-- bounded-relative-tensor-signs:end -->
