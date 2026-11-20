@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- class-two-subgroup-transport:start -->
+- [Class-two subgroup transport](ClassTwoSubgroupTransport/README.md) — ordinary class-two decision suffices for up to three arbitrary actual subgroup marks in exponent-four groups, and for several precisely stated mixed-exponent and bounded-rank families. Written reductions, two Lean-checked linear lemmas, and finite replays.
+<!-- class-two-subgroup-transport:end -->
+
 <!-- navier-stokes-grochow-transfers:start -->
 - [Four Navier–Stokes technique transfers to Grochow problems](NavierStokesGrochowTransfers/RESULTS.md) — degree-eight exponential Kempf weights and scoped theorems for Polynomial Calculus, alternating matrix tuple isometry, and group epimorphism. Written proofs with separately audited Lean lemmas.
 <!-- navier-stokes-grochow-transfers:end -->

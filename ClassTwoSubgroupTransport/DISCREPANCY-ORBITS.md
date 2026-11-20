@@ -1,0 +1,26 @@
+# Subgroup transport with a polynomial discrepancy orbit
+
+Let $G$ be a finite class-two $p$-group with a specified central $C$ containing its derived subgroup. Let $A=G/C$, and let $H_i$ be a fixed number of ordered actual subgroup marks. Denote their images and intersections by $U_i\le A$, $K_i\le C$. Use corresponding data for a target group $G'$.
+
+Let $B$ be the group of automorphisms of $G$ preserving $C$ and all $U_i,K_i$. In $G/K_i$ the image of $H_i$ defines a homomorphic section over $U_i$. All sections form a torsor for $\operatorname{Hom}(U_i,C/K_i)$, because the difference of two sections is a central homomorphism. Conversely the preimage of any such section gives a subgroup with the same $U_i,K_i$. Take the product of these torsors and divide by the translations in the image of
+$$
+\rho:\operatorname{Hom}(A,C)\longrightarrow\bigoplus_i\operatorname{Hom}(U_i,C/K_i),\qquad
+\rho(s)_i=s|_{U_i}\bmod K_i.
+$$
+Central shifts form a normal subgroup of $B$, since conjugation by a lift of the base maps $(\alpha,\gamma)$ transports $s$ to $\gamma s\alpha^{-1}$. Thus $B$ acts on the quotient of the section torsors. Write $\mathcal O$ for the orbit of the given section tuple's class.
+
+**Theorem.** If $|\mathcal O|\le N^c$ for fixed $c$, marked transporter decision, search, exact counting and stabilizer generation reduce in deterministic polynomial time to ordinary class-two $p$-group isomorphism decision with groups of order $N^{O(1)}$. Here $N$ bounds the input group orders. The same algorithm without the promise has additional time polynomial in $N$ and the actual source orbit size.
+
+Use the specified central-kernel compiler with the $U_i,K_i$ marks and trivial shift subgroup to compute generators for $B$, its exact order, and an initial shadow transporter $f:G\to G'$, if one exists. A negative shadow test gives an immediate negative answer. After a positive test pull the target subgroup tuple back by $f$. Compute its class and search for it in $\mathcal O$. To store a class, subtract the original tuple of sections, represent the resulting homomorphisms in cyclic coordinates, and reduce modulo $\operatorname{im}\rho$ using Smith normal form. All these calculations use generator coordinates. In particular the homomorphism groups need not be enumerated. Use graph traversal with the generators of $B$, storing a representative automorphism for each visited class. Generator evaluation can be done by applying the stored permutation to each actual subgroup and reconstructing its section. If the class of the pulled-back target occurs, transport to that class by the stored representative, then solve a single simultaneous restriction equation for a central shift to obtain the actual target tuple. If the class is absent after exploration, no marked isomorphism exists.
+
+The stabilizer $J\le B$ of the initial class has order $|B|/|\mathcal O|$ and generators from the labelled orbit graph by Schreier's lemma. For each such generator compute and apply a central shift that returns its image of the original tuple to that tuple. The corrected generators, together with generators of $\ker\rho$, generate the actual tuple stabilizer. Indeed the central shifts in $J$ form all of $\operatorname{Hom}(A,C)$, and the tuple stabilizer surjects onto the quotient of $J$ by that shift subgroup. Its intersection with the shifts is exactly $\ker\rho$. It follows that the exact count for a nonempty transporter is
+$$
+\frac{|B|}{|\mathcal O|\cdot|\operatorname{im}\rho|}.
+$$
+Kernel generators and image order follow from the same integer congruence system.
+
+A directly checkable sufficient condition is $|\operatorname{coker}\rho|\le N^c$, since this cokernel acts freely and transitively on the quotient torsor. For instance $|\operatorname{Hom}(U_i,C/K_i)|\le\min(|U_i|^{d(C/K_i)},|C/K_i|^{d(U_i)})$, where $d$ is the number of nontrivial cyclic factors. The first bound uses finite abelian duality and the second sends each generator to one arbitrary value. A fixed number of marks with one of these ranks bounded per mark therefore qualifies. The exact cokernel may also be computed without enumerating it.
+
+The polynomial orbit condition has content even if the specified kernel is forced to be the center. For $m=2,4$, let $B_m(r)$ have coordinates $x,z\in(\mathbb Z/m)^r,\ t\in\mathbb Z/m$, with product central correction $t x'$. Its center and derived subgroup both equal the $z$-coordinates. Take $G=B_4(r)\times B_2(r)$ and $C=Z(G)=[G,G]$. Inside the first factor's quotient use $U=2(\mathbb Z/4)^r_x$, and take $H$ to be the graph of an isomorphism from this copy of $\mathbb F_2^r$ onto the second factor's center. This is a subgroup with $K=0$. It is noncentral since a nonzero $2x$ brackets nontrivially with $t=1$ in $B_4(r)$. Every central shift has zero second-factor central component on $U\subseteq 2A$. The automorphisms given by the simultaneous $\mathrm{GL}_r(2)$ action on $x,z$ of the second factor therefore give distinct orbit classes of the graph. This yields at least $|\mathrm{GL}_r(2)|=2^{\Theta(r^2)}$ orbit points at $|G|=2^{6r+3}$. The compact record arguments cover families where this direct orbit method has superpolynomial cost.
+
+[Specified central-kernel reduction](https://github.com/Dugongue/MathProofs/blob/main/ClassTwoOracleApplications/CENTRAL-SHIFT-NORMALIZERS.md)

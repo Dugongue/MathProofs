@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source": "SubgroupRecords.lean",
+  "sha256": "7f488c5f1aa82fefacf4e66716f96b1889816119e4d618150d99d7640f32a6b2",
+  "scope": "Two supporting linear equivalences. The Cayley-table reductions are written proofs.",
+  "theorems": [
+    {
+      "theorem": "ClassTwoSubgroupTransport.common_linear_correction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "ClassTwoSubgroupTransport.triangle_correction",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
