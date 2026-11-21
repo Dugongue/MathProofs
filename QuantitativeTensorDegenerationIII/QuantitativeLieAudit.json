@@ -1,0 +1,30 @@
+{
+  "status": "VERIFIED",
+  "source": "QuantitativeLie.lean",
+  "sha256": "c95cd92b91ac33f38b8e5b74dfd9c1432024838eee0cbcd808813f3f89d4891f",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Three supporting identities for weight labels and Vandermonde tagging. The main theorems are written proofs.",
+  "declarations": [
+    {
+      "name": "QuantitativeLie.edge_has_endpoints",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "QuantitativeLie.root_weight_difference",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "QuantitativeLie.tagged_vandermonde_unit",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

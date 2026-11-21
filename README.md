@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quantitative-tensor-degeneration-iii:start -->
+- **[Quantitative tensor degeneration III](QuantitativeTensorDegenerationIII/README.md)** — Exact diagonal-source orders beyond Loewy degree, exact power and catalyst costs, and exponential ramification for sparse Lie laws. Written proofs with three Lean-checked supporting statements.
+<!-- quantitative-tensor-degeneration-iii:end -->
+
 <!-- quantitative-tensor-degeneration-ii:start -->
 - **[Quantitative tensor degeneration II](QuantitativeTensorDegenerationII/README.md)** — Split conductors, filtered debordering, exact catalyst cancellation, and exponential ramification of sparse relative degenerations. Written proofs with four Lean-checked supporting identities.
 <!-- quantitative-tensor-degeneration-ii:end -->
