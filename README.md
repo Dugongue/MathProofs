@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-cubic-four:start -->
+- **[Four extensions of the cubic jet-algebra reduction](GrochowCubicFour/README.md)** — Written proofs of arbitrary-ring determinant profiles, linear-size local algebra encodings and refutation-degree bounds, exact directional tensor degeneration, and two-way proof-degree simulations. Includes finite controls and one Lean-checked auxiliary identity.
+<!-- grochow-cubic-four:end -->
+
 <!-- grochow-far-dag-ii:start -->
 - **[Four further bridges to Grochow's work](GrochowFarDAGII/README.md)** — Form equivalence over arbitrary fields, programmable tensor isomorphism across intermediate fields, exact recoding hardness for positive stochastic sources, and sharp path-law bounds for Markov compression. Includes complete written arguments, finite controls, and one Lean-checked auxiliary identity.
 <!-- grochow-far-dag-ii:end -->
