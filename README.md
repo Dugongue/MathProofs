@@ -1369,3 +1369,10 @@ Pending formalizations:
 
 - [Exact missing lemma and consequences](TISLAtlasClosure/RESULTS.md) gives an equivalent one-sign comparison on explicitly presented square-zero matrix spaces, or their compact elementary abelian matrix groups. It proves a sharp tuple threshold and gives structured sufficient classes and counterexamples to proposed shortcuts. The general fixed-field degree question remains open. Three supporting polynomial identities were checked in Lean.
 <!-- tisl-square-zero-closure:end -->
+
+
+<!-- tisl-square-zero-direct:start -->
+## Direct reductions for the square-zero orientation problem
+
+- [One-query reductions and the remaining scalar-centroid case](TISLSquareZeroDirect/RESULTS.md) proves that arbitrary repeated centroid blocks can be assembled into one ordinary TI query whenever their local signs can be compiled. It gives explicit local sign compilers and proves an equivalent restriction to scalar-centroid algebras with a split nonsingular slice. The unrestricted comparison remains open. Lean checked the supporting weighted incidence identity.
+<!-- tisl-square-zero-direct:end -->
