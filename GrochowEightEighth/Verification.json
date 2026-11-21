@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "scope": "One supporting scalar inequality for the spiked Gaussian range example. Main research results have proofs in prose.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "GaussianSpikedRange.lean",
+      "sha256": "925aaee86ce656a5148aa01a0b45b712f7536bd2e77c58739d0892a95ecb362f",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GaussianSpikedRange.excessLower"
+        }
+      ]
+    }
+  ]
+}

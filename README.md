@@ -1514,3 +1514,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightSeventh/RESULTS.md). This packet proves two positive-characteristic separations for symmetric algebraic circuits, relative Frobenius guarantees under small injection failure, sharp modular dihedral moment cutoffs, real orbit-recovery results, and scoped algorithms for group epimorphisms and coset intersection.
 <!-- grochow-eight-seventh:end -->
+
+
+<!-- grochow-eight-eighth:start -->
+### Eleven results on permanents, group actions, and numerical linear algebra
+
+[Proofs and verification](GrochowEightEighth/RESULTS.md). The packet gives the exact first obstructed degree for symmetric permanent projection, full-support matrices with vanishing maximal permanents, complete even-polygon characteristic-two moment cutoffs, abelian conjugacy witness recovery, and exact minimum faithful permutation actions for odd-order nilpotent groups.
+<!-- grochow-eight-eighth:end -->
