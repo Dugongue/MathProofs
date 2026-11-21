@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- cubic-anchor-four:start -->
+- **[Four extensions of the cubic relation z³ = f](CubicAnchorFour/README.md)** — A priority audit and four written proofs on prime-field descent, filtered deformation geometry, mixed extension fields, and sharp local-ring lift counts. Includes finite controls and a Lean-checked supporting identity.
+<!-- cubic-anchor-four:end -->
+
 <!-- tisl-pencils-orbits:start -->
 - **[Special-linear tensor isomorphism on pencils and structured tensors](TISLPencilsAndOrbits/README.md)** — A deterministic polynomial-time decision proof for every finite-field matrix pencil, generic three-slice orbit splitting, and determinant reductions through quadratic relations and centroid layers. The unrestricted reduction remains open.
 <!-- tisl-pencils-orbits:end -->

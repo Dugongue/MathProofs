@@ -1,0 +1,12 @@
+# Four extensions of the cubic relation z³ = f
+
+The all-fields complexity classification follows from prior tensor-system theorems, and Grochow–Qiao–Stange–Sun explicitly include the symmetric-cube orbit problem in Part V, Theorem 3.7, on rings that include every field. The distinctive starting point here is an unmarked local algebra with one extra generator whose top power is the form. Degree-two multiplication intrinsically recovers the extra line, and the top relation fixes the scalar in the exact transporter. [Priority audit](Priority.md)
+
+| Suggested place | Result | Scope |
+|---|---|---|
+| 7–13 | [Prime-field descent with an intrinsic field tag](Algorithms.md) | An explicit commutative local algebra tag distinguishes linear maps over a finite extension from Frobenius-semilinear maps. The construction uses constant additional dimension over the extension for fixed jet degree. The note also gives a norm-one reduction over ternary fields. |
+| 10–16 | [Filtered deformations and blow-up of inertia](Geometry.md) | The cubic anchor gives a quotient description of augmented filtered laws. The changing subspaces of lift corrections recover the blow-up of the zero cubic. On that blow-up a smooth subgroup splits from the extra additive inertia supported over the exceptional divisor. |
+| 12–18 | [Exact mixed extension fields for cubics](Arithmetic.md) | A trace centroid prescribes an étale isomorphism requirement and pure cubes prescribe independent inseparable requirements over every extension. For an explicit family the least isomorphism field has separable degree $m$ and inseparable degree $3^r$. The same conditions hold for ordinary multiplication tensors via the anchor. |
+| 16–23 | [Sharp lift counts over short local rings](Tensor.md) | Count the extra automorphism lifts of the anchored algebra over finite local coefficient rings with cube-zero maximal ideal, including mixed characteristic. When the last radical layer is one-dimensional and the multiplication pairing is nondegenerate, an exact Macaulay bound is attained at each admissible rank. |
+
+The placements are estimates against the prior Grochow briefing, based on the scope of the theorems and their proximity to published work. The four main proofs are written arguments. Lean independently checked the [characteristic-three shear identity](CubeShear.lean), using only propext. The [arithmetic controls](Arithmetic.py) verify 15 split-centroid ranks, 729 shear evaluations and 3,500 constant-field splitting profiles.
