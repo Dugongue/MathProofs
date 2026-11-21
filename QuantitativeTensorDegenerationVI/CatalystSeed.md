@@ -1,0 +1,90 @@
+# Exact cancellation of nonsemisimple catalysts by recovering the sparse axes
+
+Let \(A_+=(A_m^+)^{\otimes r}\) and \(A_-=(A_m^-)^{\otimes r}\), where \(A_m^\pm\) are the sparse associative unital algebras from the Möbius-telescope construction. For equidimensional algebras over \(k\), a feasible pole cap is a triple of nonnegative integers \((p_1,p_2,p_3)\) for which their multiplication tensors have a Laurent degeneration from the first to the second with forward entries of mode \(i\) in \(t^{-p_i}k[[t]]\). Matrix inverses can have arbitrary poles. Tensor products of multiplication tensors are regrouped into three modes. [Sparse telescope and its tensor powers](PowerSeed.md)
+
+Write \(n_m\) for the number of vertex idempotents of \(A_m^\pm\), so the underlying reachability order is a chain of size \(n_m\). Write \(s_m\) for its number of nonzero strict Peirce corners, common to the two sides.
+
+Let \(B\) be a nonzero finite-dimensional associative unital \(k\)-algebra, \(D=B\otimes_k\overline k\), and \(J_D=\operatorname{Jac}(D)\). Index the matrix factors of \(D/J_D\) by \(b\), and choose complete orthogonal idempotent lifts \(f_b\) of their identities in \(D\). Form the digraph with an arc \(b\to c\) if \(f_b D f_c\ne0\). Contract its strongly connected components (SCCs). The direct support digraph \(S_D\) on the SCCs has an arc \(U\to V\) for distinct SCCs if a corner from \(U\) to \(V\) is nonzero. Let \(Q_D\) be the reachability partial order of \(S_D\). The digraph and the order are independent of the lifts, up to relabeling. A Cartesian factor layer is obtained by varying one prime-factor coordinate of a graph and fixing the others.
+
+**Theorem.** Suppose one connected component of the undirected Hasse graph of \(Q_D\) has the following property. In its Cartesian prime decomposition, every factor isomorphic to the path on \(n_m\) vertices has at least one layer whose vertices induce in \(S_D\) a different number of arcs from \(s_m\). The condition holds when the component has no such path factor. Then
+\[
+\operatorname{Caps}_k(A_+\otimes_k B,\ A_-\otimes_k B)
+  =\operatorname{Caps}_k(A_+,A_-).
+\]
+This holds for every \(r\ge1\) and includes arbitrary mode mixing. The least order of a polynomial-matrix presentation agrees, and is at least \(r2^{m-1}/3\) and at most \(O(r2^m)\).
+
+In particular, every fixed finite-dimensional catalyst cancels exactly for all \(m\) with \(n_m>\dim_k B\), hence for all sufficiently large \(m\). The theorem also covers catalysts of arbitrarily large dimension at fixed \(m\), including split local algebras and all upper triangular matrix algebras.
+
+## 1. The radical and block support specialize exactly
+
+Extend an alleged witness from \(k\) to \(F=\overline k\), keeping the same uniformizer and pole caps. Work over \(R=F[[t]]\) and \(K=F((t))\). Write \(U_\pm=A_\pm\otimes_k F\). Their common vertex set is \(X=[n_m]^r\), with idempotents \(e_x\). They have diagonal corners \(e_xU_\pm e_x=F e_x\), the same support, and quotient \(F^X\) by their strict ideals \(J_\pm\). The normalized witness is a finite free associative unital \(R\)-algebra \(\Lambda\) with special law \(U_-\otimes_F D\) and generic transporter \(H:(U_+\otimes_F D)_K\to\Lambda_K\). For source units \(a,b\) over \(K\), the three normalized maps have the original caps and satisfy
+\[
+ \widetilde A=L_{ab}R_{b^{-1}}H^{-1},\qquad
+ \widetilde B=L_bH^{-1},\qquad
+ \widetilde C=H L_{(ab)^{-1}}. \tag{1}
+\]
+Subscripted \(L,R\) denote left and right multiplication. The first two maps go from the target lattice's generic space to the source's, and the third in the reverse direction. These formulas follow by normalizing the two slices at the special unit. [Unital normalization with all three bounds](PowerSeed.md)
+
+At both endpoints the radical is
+\[
+ J_\pm\otimes_F D+U_\pm\otimes_F J_D. \tag{2}
+\]
+The two summands are commuting nilpotent ideals, and the quotient of their sum is a product of full matrix algebras. This is also the radical after extension to \(K\), since the quotient is split. Thus generic and special radical dimensions agree.
+
+Define \(J_R=\Lambda\cap\operatorname{Jac}(\Lambda_K)\). It is a two-sided ideal and is saturated: if \(t x\) lies in the intersection, then so does \(x\). Hence \(\Lambda/J_R\) is torsion-free and free over the DVR \(R\). In particular \(J_R\) is free and a direct summand. It is nilpotent because its products embed into those of the generic radical. Its special reduction is therefore a nilpotent ideal with dimension equal to the generic radical dimension. Equality of the endpoint dimensions in (2) identifies the special reduction with the whole special radical. The semisimple quotient therefore specializes exactly.
+
+Choose in \(\Lambda\) a complete system of orthogonal idempotents \(u_{x,b}\) lifting \(e_x\otimes f_b\) in the special algebra. To lift an idempotent, start with any lift \(v\). As \(v^2-v\in t\Lambda\), \(2v-1\) is invertible by \((2v-1)^2=1+4(v^2-v)\). Replacing \(v\) by \(v-(2v-1)^{-1}(v^2-v)\) squares the order of the error. The iteration converges in the complete algebra. Lifting successively in complementary corners gives orthogonal lifts summing to \(1\). The same method with a nilpotent ideal terminates and gives the \(f_b\) used above.
+
+The images of the \(u_{x,b}\) in \(\Lambda_K/\operatorname{Jac}(\Lambda_K)\) are its primitive central idempotents. In \(\Lambda/J_R\), every ordered pair of idempotents gives a direct-summand corner, the image of the projection \(z\mapsto u_{x,b}zu_{y,c}\). Its off-diagonal corners reduce to zero and hence vanish. The images in the generic quotient form a complete system of nonzero central idempotents whose number equals the number of simple blocks by (2). Thus each is primitive central. Applying the same corner projection argument in \(\Lambda\) itself shows that every corner \(u_{x,b}\Lambda u_{y,c}\) is free with rank equal to its special dimension.
+
+Two complete systems of orthogonal idempotents \((g_i)\) and \((h_i)\) that agree label by label modulo a nilpotent ideal are simultaneously conjugate. The element \(v=\sum_i h_i g_i\) equals \(1\) modulo that ideal and is a unit, with \(vg_i=h_i v\). This applies to the block lifts in \(D\) and to the generic block lifts in \(\Lambda_K\) after applying \(H\) and relabeling by their quotient identities. Consequently the quotient-block permutation of \(H\) gives an isomorphism of the full endpoint support digraphs.
+
+## 2. The support recovers the sparse-coordinate fibers
+
+For the standard idempotents of each endpoint, the corner from \((x,b)\) to \((y,c)\) is
+\[
+ (e_x U_\pm e_y)\otimes_F(f_b D f_c).
+\]
+The support condition is coordinatewise. Both diagonal corners are nonzero, so one can follow paths changing one factor at a time. The SCCs therefore consist of a fixed \(x\) and an SCC of the catalyst digraph, with reachability order \([n_m]^r\times Q_D\). The undirected Hasse graph is the Cartesian product of the \(r\) paths on \(n_m\) vertices and the Hasse graph of \(Q_D\), since each cover changes one coordinate. A nontrivial path is Cartesian-prime, as a product of two nontrivial connected graphs contains a square.
+
+Use the connected Cartesian prime factorization theorem in the form that isomorphisms send prime edge classes and their layers to those of isomorphic factors. Within any connected Hasse component, count in each layer of a path factor on \(n_m\) vertices the direct support arcs between distinct SCCs. This is invariant under isomorphisms of the SCC support. For each of the \(r\) path factors of \(A_\pm\), every layer has exactly \(s_m\) arcs because the other coordinates stay on their diagonals. For a catalyst path factor, the layer counts are those of the corresponding layers of \(S_D\). [Canonical prime edge classes of Cartesian products](https://www.cs.yale.edu/homes/jf/FHS-DAM85.pdf)
+
+There are exactly \(r\) path factors on \(n_m\) vertices with every layer count equal to \(s_m\) in the selected component, so there are exactly \(r\) in the matched component. In each component the \(r\) displayed \(A_\pm\) factors satisfy this invariant. Thus \(H\) matches these factors. The fibers of the projection to the \(A_\pm\)-coordinates are precisely the components left after deleting these prime edge classes, so \(H\) matches this partition of the SCCs. This also matches the partition of the original blocks into fibers, since each block belongs to one SCC.
+
+## 3. Removing the catalyst radical preserves all three caps
+
+Restrict to the matched components from Section 2. The sum of the \(u_{x,b}\) in the chosen component is central in \(\Lambda\), since all off-component corners have zero special dimension and therefore rank zero. The corresponding idempotent in the constant source is also central. The map \(H\) matches these central idempotents because their quotient identities match and central idempotents are unchanged by simultaneous conjugation of their lifts. Formula (1) restricts to these two direct factors with the same caps. In fact each map in (1) is a composition of \(H\) or \(H^{-1}\) and multiplications by units, which preserve the respective direct factors. The cap condition is a scaled lattice inclusion, which passes to the matched summands.
+
+Write \(D_s,D_t\) for the catalyst direct factors of the chosen source and target components. These are direct factors because the respective support components have no intercomponent corners. In the restricted integral law, sum the \(u_{x,b}\) at a fixed \(x\) to obtain an idempotent \(g_x\). Its reduction is \(e_x\otimes1_{D_t}\). In the generic law the system of \(g_x\)'s is conjugate to the images under \(H\) of the corresponding \(e_y\otimes1_{D_s}\)'s by the fiber matching and simultaneous conjugacy in Section 1. In the restricted integral algebra let \(I_R\) be the two-sided ideal generated by all \(g_x J_R g_x\), using the restriction of \(J_R\). At either endpoint the resulting ideal is exactly
+\[
+ U_\pm\otimes_F\operatorname{Jac}(D_{s/t}). \tag{3}
+\]
+Indeed the diagonal \(A_\pm\)-corner kills \(J_\pm\) and leaves the catalyst radical in (2). The sum of those corners contains \(1\otimes\operatorname{Jac}(D_{s/t})\), which generates (3). Simultaneous conjugation has no effect on the generated ideal because a two-sided ideal is invariant under inner automorphisms.
+
+Express \(I_R\) as the image of the \(R\)-linear map obtained from the multilinear products \(u(g_x j g_x)v\), with \(j\in J_R\). The image has the same generic and special ranks. Indeed the dimensions of \(D_s,D_t\) agree since the matched integral algebra component is free and \(\dim U_+=\dim U_-\). The dimensions of their semisimple quotients agree because the corresponding component of \(\Lambda/J_R\) is free and its fiber dimensions are \(|X|\dim(D_{s/t}/\operatorname{Jac}(D_{s/t}))\). The radical dimensions in (3) therefore agree. Elimination at a full-rank minor modulo \(t\) splits off the image, since that minor is a unit and the remaining block vanishes by the generic rank. Thus \(I_R\) is a free summand with the prescribed fibers.
+
+Each map in (1) descends to the quotients by (3) and \(I_R\). Multiplication by units preserves the ideals and \(H\) matches them. The scaled lattice condition \(t^{p_i}F_i(M_{\mathrm{in}})\subseteq M_{\mathrm{out}}\) passes to the quotient with the identical \(p_i\). The induced maps are invertible over \(K\) and realize the induced normalized law. This gives a same-cap witness with split semisimple catalysts \(D_s/\operatorname{Jac}(D_s)\) and \(D_t/\operatorname{Jac}(D_t)\) on the two sides.
+
+## 4. Exact extraction over the original field
+
+The quotient endpoints are products of matrix amplifications of \(U_\pm\). The center of \(U_\pm\) is \(F\): commuting with each vertex idempotent forces a central element to be diagonal, and the connected support forces its scalars equal. The center of a matrix algebra over \(U_\pm\) is also \(F\). The products on the two sides have the same number of factors. Indeed \(H\) matches the simple blocks of the semisimple quotients of the restricted components. Their numbers are \(|X|\) times the numbers of simple blocks of \(D_s/\operatorname{Jac}(D_s)\) and \(D_t/\operatorname{Jac}(D_t)\), respectively.
+
+The center-kernel and idempotent-lifting argument in the power proof now restricts the quotient witness to a matched pair \(U_+\otimes_F M_d(F)\), \(U_-\otimes_F M_d(F)\). The same \(d\) is forced by equality of the matched dimensions. That argument preserves all three caps. The matrix-catalyst theorem for the sparse powers extracts integer weights with those caps, and the monomial witness built from the weights lies over \(k((t))\) itself. This proves the reverse inclusion of caps over \(k\). The forward inclusion tensors the unamplified witness with the three identity maps on \(B\). [Integer extraction for matrix amplifications and direct factors](PowerSeed.md)
+
+All multiplication tensors involved are concise by unitality. Multiplying each mode by its cap power of \(t\) gives power-series matrices with leading tensor at the sum of the caps. Truncating each matrix above that degree preserves this coefficient, giving a polynomial-matrix witness of the same order. Conversely, each matrix in a polynomial-matrix witness is generically invertible because its leading tensor is concise, and dividing one matrix by the leading order gives a Laurent witness with total cap at most that order. Thus the least total cap equals the least presentation order, and the previous power bounds apply.
+
+## Examples
+
+- For arbitrary \(B\), the number of SCCs is at most the number of matrix factors of \(D/J_D\), which is at most \(\dim_F D=\dim_k B\). If \(n_m>\dim_k B\), no connected Hasse component has enough vertices to contain the excluded path factor. The successive telescope blocks make \(n_m\) grow without bound.
+- For \(B=\operatorname{UT}_d(k)\), the upper triangular matrix algebra, \(Q_D\) is the chain on \(d\) vertices and \(S_D\) contains every forward arc. Its Hasse graph is a prime path when \(d\ge2\). If \(d=n_m\), its only path layer has \(n_m(n_m-1)/2\) arcs, strictly more than \(s_m\). In the sparse algebra, consider the first and third rank-zero vertices in the barycentric subdivision order. They are distinct original vertices, so no inclusion edge joins them. They are also nonsuccessive, so the added ordering edges do not join them. Thus upper triangular matrices of every size cancel. For \(d\ge2\) their centers are \(k\), while their radicals are the nonzero strictly upper triangular matrices.
+- For \(B=k\langle x,y\rangle/(x,y)^3\), the semisimple quotient is \(k\), and the SCC graph is a singleton. The radical is the positive-degree part and its square is the degree-two span. Commuting with \(x,y\) forces the degree-one component of every central element to vanish, and degree-two monomials annihilate the radical on both sides. Thus the center is \(k+J(B)^2\), and central nilpotents generate only \(J(B)^2\), strictly smaller than the radical. This example works in every characteristic. The singleton criterion also covers any catalyst whose support is strongly connected over \(\overline k\).
+
+This is a written proof for the fixed sparse source and target, including their powers. The conclusion preserves the full three-mode pole-cap region for the displayed nonsemisimple class and for every fixed finite-dimensional catalyst along all sufficiently large members of the family.
+
+## Corollary for a prescribed catalyst with logarithmic padding
+
+Fix any \(B\) as above and any \(m\). Append \(\ell\) vertices after the original chain in both sparse algebras. Add a one-dimensional corner at each consecutive step from the old last vertex through the new vertices, and let every strict product involving any of those new corners be zero. The vertex idempotents act on the new corners at their endpoints. The result is associative because all strict products involving a new corner vanish, and the old multiplication stays associative. The added strict corners have degree one and the two padded laws have the same based radical powers. The reachability order is the chain on \(n_m+\ell\) vertices.
+
+At every power \(r\), the full padded cap region equals the original cap region. The integer edge and vertex characterization in the power proof applies to the padded laws: their corners are still thin, the radical gradings coincide, and the product-grid order still permits only coordinate permutations, lifted by permutations of the algebra factors. Restricting the integer data to the old subgrid gives necessity. For sufficiency, retract the padded chain to the old one by sending all new vertices to the old last vertex, and take its \(r\)-fold product on the grid. Pull back the vertex values \(\alpha,\beta\) and the edge weights \(w\), using zero weight on a collapsed diagonal. The cap inequalities remain the original ones, including the diagonal vertex inequalities when an edge collapses. For a nonzero source product, a coordinate with a new strict corner has at most one strict edge and collapses to an identity multiplication. All other coordinates retain their original products. Hence a product in the padded source is retained or deleted exactly as its projected product is, and the weight defect conditions also pull back.
+
+Choose any connected Hasse component of \(Q_D\), with \(q\) vertices. It has at most \(\lfloor\log_2 q\rfloor\) nontrivial Cartesian prime factors, since the product of their vertex counts equals \(q\) and each count is at least two. Among the \(\lfloor\log_2 q\rfloor+1\) consecutive chain sizes starting at \(n_m\), at least one is absent from its path-factor sizes. Choose \(\ell\) giving that size. The cancellation theorem applies verbatim to this padded sparse pair. Consequently for any prescribed \(B\) and any \(m\), at most \(\lfloor\log_2\dim_k B\rfloor\) appended vertices per base algebra suffice for exact cancellation after taking any power. Both the original full cap region and its exponential lower bound are preserved.

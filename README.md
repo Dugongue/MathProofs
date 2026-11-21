@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quantitative-tensor-degeneration-vi:start -->
+- **[Quantitative tensor degeneration VI](QuantitativeTensorDegenerationVI/README.md)** — Sharp catalyst-size tradeoffs, compact witness circuits and hard exact optimization, optimal multiplication pencils, and characteristic-two cubic degeneration. Written proofs with three Lean-checked supporting statements.
+<!-- quantitative-tensor-degeneration-vi:end -->
+
 <!-- quantitative-tensor-degeneration-v:start -->
 - **[Quantitative tensor degeneration V](QuantitativeTensorDegenerationV/README.md)** — Exact diagonal orders across characteristics, optimal algebra catalysts, sharp terminal-cap clearing, and exponential Laurent complexity of sparse cubics. Written proofs with three Lean-checked supporting statements.
 <!-- quantitative-tensor-degeneration-v:end -->
