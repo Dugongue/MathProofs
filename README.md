@@ -1412,3 +1412,10 @@ Pending formalizations:
 
 - [Directional sign reductions](DirectionalSignFusion/RESULTS.md) encode an ordinary TI Boolean difference in one directional pair with a displayed witness, realize arbitrary finite-field sign gaps by a fixed characteristic-zero localization, give sharp affine-profile query counts, and characterize the two rails on local cube-zero carriers. Lean verified three supporting Boolean identities.
 <!-- directional-sign-fusion:end -->
+
+
+<!-- ternary-gap-castling:start -->
+## Directional sign-gap compilation by castling
+
+[Compiler and written correctness proof](TernaryGapCastling/RESULTS.md) for ternary tensor pairs. The polynomial mode covers shrinking flattening kernels and bounded terminal enumerations. An exhaustive option covers arbitrary formats with exponential worst-case time.
+<!-- ternary-gap-castling:end -->
