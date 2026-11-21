@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED",
+  "scope": "Block matrix identity only",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "source_sha256": "260a1c04b9066c0c85f053beb0a1fb0ce9be70f34298f82971b114cfc6740e95",
+  "type_bridge_sha256": "556a5b506253ec3c36841e9526615cf880f717d9a8b261a50383a3cbbe960ecc",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "inversionIdealConsequenceMatrix"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "ResearchRouteFixedTarget.inversionIdealConsequenceMatrix"
+    }
+  ]
+}

@@ -1437,3 +1437,10 @@ Pending formalizations:
 
 - [Four localization theorems](LocalizationSpectraTI/RESULTS.md) give programmable spectra for ordinary tensor pairs that agree at all prime localizations, exact symplectic conjugacy transfers, a fixed dimension-two arithmetic carrier, and exact counts of observed residues of global transporters. Lean verified two supporting unit-selection identities.
 <!-- localization-spectra-ti:end -->
+
+
+<!-- grochow-eight:start -->
+### Eight answers in tensor isomorphism and invariant theory
+
+[Proofs and verification](GrochowEight/RESULTS.md). The published inversion rule gives constant proof-line degree for tensor nonisomorphism and modular counting. Other results give polynomial-time ordered tuple isometry at residue characteristic two, a uniform odd-residue decision algorithm, exponential single-object invariant-degree lower bounds, and exact degree raising for forms over arbitrary fields.
+<!-- grochow-eight:end -->
