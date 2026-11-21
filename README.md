@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-pure-cube:start -->
+- **[Four consequences of the characteristic-three pure-cube fiber](GrochowPureCube/README.md)** — Priority audit and written proofs on cubic orbit closures, a quadratic-side three-tensor reduction over commutative rings, ordered cubic systems, and exact affine transporters. Includes finite controls and a Lean-checked auxiliary identity.
+<!-- grochow-pure-cube:end -->
+
 <!-- grochow-cubic-depth:start -->
 - **[Four extensions of the cubic multiplication-tensor construction](GrochowCubicDepth/README.md)** — Written proofs of exact cubic equivalence algorithms in characteristic three, determinant-preserving integral tensor encodings, local singularity transfer for tensor orbit closures, and affine polynomial equivalence over arbitrary rings. Includes finite controls and a Lean-checked auxiliary identity.
 <!-- grochow-cubic-depth:end -->
