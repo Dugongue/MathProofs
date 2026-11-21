@@ -1481,3 +1481,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightFourth/RESULTS.md). The packet extends the square-symmetric permanent lower bound to every odd characteristic, identifies bounded-generator unique Remak products using fixed-dimensional Weisfeiler–Leman, and gives new results on modular invariant theory, Gaussian matrix-vector query complexity, and volume-sampling variance.
 <!-- grochow-eight-fourth:end -->
+
+
+<!-- grochow-eight-fifth:start -->
+### Ten questions in invariant theory, symmetric circuits, and spectral computation
+
+[Proofs and verification](GrochowEightFifth/RESULTS.md). The packet gives a modular family with separating degree four and unbounded field-generation degree, depth-three matrix-symmetric circuits, odd-characteristic lower bounds for the determinant and for undirected squared matching counts, and matrix-vector algorithms for near-extremal eigenvalues. It also includes a restricted class-two reduction for counting group epimorphisms.
+<!-- grochow-eight-fifth:end -->
