@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-cubic-closures:start -->
+- **[Four extensions of the pure-cube orbit-closure criterion](GrochowCubicClosures/README.md)** — Written proofs of an explicit boundary conductor, ordinary tensor degeneration reductions, Frobenius-thickened incidence fibers and normalization, and orbit closures of cubic systems with variable outputs. Includes finite controls and a Lean-checked auxiliary identity.
+<!-- grochow-cubic-closures:end -->
+
 <!-- grochow-pure-cube:start -->
 - **[Four consequences of the characteristic-three pure-cube fiber](GrochowPureCube/README.md)** — Priority audit and written proofs on cubic orbit closures, a quadratic-side three-tensor reduction over commutative rings, ordered cubic systems, and exact affine transporters. Includes finite controls and a Lean-checked auxiliary identity.
 <!-- grochow-pure-cube:end -->
