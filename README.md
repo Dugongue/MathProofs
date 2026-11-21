@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-lean-intake-crossovers:start -->
+[GrochowLeanIntakeCrossovers research notes](GrochowLeanIntakeCrossovers/AUDIT.md) — AI-assisted informal proofs. Polynomial-time Fitting-free Cayley-table canonization, VNP completeness for canonical IPS with maximum-degree-nine negative 2-CNF prefixes over fields of size greater than two, determinant-resolved isomorphism of weighted cubic graph tensors, and symbolic subgraph circuits with supplied bounded cut-rank factors. Includes two independently kernel-checked algebraic identities.
+<!-- grochow-lean-intake-crossovers:end -->
+
 <!-- grochow-tsp-iso-advances:start -->
 - **[Four candidates for the Grochow top 30](GrochowTspIsoAdvances/README.md)** — Informal proofs of a polynomial-size GI encoding for tensors with semisimple holonomy, an accuracy–aspect-ratio LP lower bound for Hamming TSP, a sharp Weisfeiler–Leman bound for edited TSP terminal profiles, and a randomized rank-parameter algorithm for Rural Postman with prescribed binary holonomy. Includes finite controls and a Lean-checked arithmetic gate identity.
 <!-- grochow-tsp-iso-advances:end -->
