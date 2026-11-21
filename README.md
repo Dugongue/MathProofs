@@ -1607,3 +1607,8 @@ Pending formalizations:
 <!-- subgraph-circuit-advances:start -->
 - [Symbolic subgraph circuit advances](SubgraphCircuitAdvances/RESULTS.md) — all-field paths-to-clique equivalence, sharp symmetric path bounds, the characteristic split for matchings, and characteristic-two circuits for matching-splittable patterns. Written proofs with Lean checks of supporting identities.
 <!-- subgraph-circuit-advances:end -->
+
+
+<!-- faithful-action-advances:start -->
+- [Minimum faithful action advances](FaithfulActionAdvances/RESULTS.md) — a sharp small-orbit threshold for the transitive optimum, a commutator-parameter algorithm, scalar-center coprime extensions, and an exact algorithm for thin central quotients. Written proofs with Lean checks of supporting identities.
+<!-- faithful-action-advances:end -->

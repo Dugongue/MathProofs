@@ -1,0 +1,64 @@
+{
+  "status": "Written proofs with independent Lean kernel and axiom checks of the listed supporting lemmas.",
+  "lean_version": "4.33.0",
+  "files": [
+    {
+      "path": "FaithfulActionAdvances.lean",
+      "sha256": "380c5c1eb180d852c33906740d9aae6fb440f2aed1378ebeea5be23eb877d4b4",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "FaithfulActionAdvances.orbitSplitCost"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "FaithfulActionAdvances.hyperplaneFanoutBound"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "FaithfulActionAdvances.detectorZeroOnSpan"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "FaithfulActionAdvances.normalizedDetector"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "FaithfulActionAdvances.syndromeCoordinateStep"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "FaithfulActionAdvances.offsetRemovedFromThreshold"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "weighted_syndrome_cases": 48,
+    "central_quotient_group_cases": 16,
+    "graph_group_cases": 3,
+    "method": "Exhaustive word or subgroup enumeration compared with the proposed formulas."
+  },
+  "priority": "Publication priority is unverified."
+}
