@@ -1423,3 +1423,10 @@ Pending formalizations:
 
 [Compiler and written correctness proof](TernaryGapCastling/RESULTS.md) for ternary tensor pairs. The polynomial mode covers shrinking flattening kernels and bounded terminal enumerations. An exhaustive option covers arbitrary formats with exponential worst-case time.
 <!-- ternary-gap-castling:end -->
+
+
+<!-- ternary-balanced-gap:start -->
+## Balanced ternary directional-gap compiler
+
+[Balanced-core compiler and written proofs](TernaryBalancedGap/RESULTS.md) covering every 3 by 3 by 3 format, centroid summands, truncated-polynomial multiplication tensors of arbitrary dimension and bounded slice-intertwiner spaces. Lean verifies an auxiliary orbit identity. The general polynomial-time case remains open.
+<!-- ternary-balanced-gap:end -->
