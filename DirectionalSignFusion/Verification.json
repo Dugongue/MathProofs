@@ -1,0 +1,55 @@
+{
+  "scope": "Four written theorems. The full tensor, algebra and localization compilers are written proofs. Three Boolean profile identities were independently checked in Lean.",
+  "worker_source_sha256": {
+    "RESULTS.md": "946116c7b2b25a084152a24b84f50fe1bdce77800c3683ca37046c483cb9feaa",
+    "difference.md": "43b19aca4a6c563835dd8573ff27371558c74511e1cfdf3aa9d071de7c5cf083",
+    "algebra.md": "b7ef647457134a501de85540b193721c229ae30fc48d04b263f7c4850a44e139",
+    "complexity.md": "5057a3eab3e65d5b19d4a965ad5b0f3b3184d599c16363a01b11dc7c0810e64e",
+    "transfer.md": "0c473bea15bdf18b342237f0f6194ee39addf023da38b4849cddcd464731e78e"
+  },
+  "lean": {
+    "version": "4.33.0",
+    "source": "DirectionalDifference.lean",
+    "sha256": "9a0edad78f9c98fa2ba202457b4cec37f1ee88d2c7d81266c37ab1771eb60f3a",
+    "declarations": [
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "DirectionalDifference.edge_hit"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "DirectionalDifference.zero_hit"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "DirectionalDifference.directional_difference"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "exact_controls": {
+    "profiles": 51,
+    "affine_queries": 4096,
+    "distinct_query_truth_tables": 198,
+    "difference_switch_cases": 4,
+    "witnessed_profiles": 16,
+    "pencil_centroid_dimensions": {
+      "1": 1,
+      "2": 2,
+      "4": 4
+    },
+    "localization_unit_screen_cases": 1060
+  },
+  "ranking": "Editorial insertion suggestions, separate from verification.",
+  "priority": "Publication priority has not been established."
+}

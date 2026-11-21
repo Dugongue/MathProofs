@@ -1405,3 +1405,10 @@ Pending formalizations:
 
 - [Directional sign-gap theorem](TISLDirectionalGap/RESULTS.md) proves that either rail of the ordinary-positive directional promise compiles to one ordinary TI query exactly when signed ternary nonisomorphism does. The ordinary nonisomorphism reduction supplies an explicit ordinary witness. It also gives a deterministic algorithm for bounded support rank and an exact witnessed-promise variant. Lean verified four supporting identities.
 <!-- tisl-directional-gap:end -->
+
+
+<!-- directional-sign-fusion:start -->
+## Four consequences of the directional sign-gap theorem
+
+- [Directional sign reductions](DirectionalSignFusion/RESULTS.md) encode an ordinary TI Boolean difference in one directional pair with a displayed witness, realize arbitrary finite-field sign gaps by a fixed characteristic-zero localization, give sharp affine-profile query counts, and characterize the two rails on local cube-zero carriers. Lean verified three supporting Boolean identities.
+<!-- directional-sign-fusion:end -->
