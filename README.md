@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-tsp-bridges:start -->
+- **[Four TSP results from Grochow's combinatorial framework](GrochowTspBridges/README.md)** — Informal proofs of near-exact shared LP lower bounds for metric TSP, an optimal splicing certificate for projective ATSP lifts, a crossing bound for prescribed-holonomy Rural Postman, and an exact shortcut-edit oracle for tree-based TSP and prize-collecting variants. Includes reproducible controls and a Lean-checked path parity lemma.
+<!-- grochow-tsp-bridges:end -->
+
 <!-- combinatorial-grochow-bridges:start -->
 - **[Four combinatorial bridges to Grochow's work](CombinatorialGrochowBridges/README.md)** — Informal proofs of a Newton-polytope compiler for monotone permanent-oracle circuits and a guarded-assignment extension theorem, a tensor-equivalence reduction with gain-graph algorithms, flow-certified Unique Games contraction, and a Weisfeiler–Leman bound for joint graph-edit profiles. Includes reproducible controls and a Lean-checked auxiliary multiset lemma.
 <!-- combinatorial-grochow-bridges:end -->
