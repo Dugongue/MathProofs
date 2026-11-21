@@ -1430,3 +1430,10 @@ Pending formalizations:
 
 [Balanced-core compiler and written proofs](TernaryBalancedGap/RESULTS.md) covering every 3 by 3 by 3 format, centroid summands, truncated-polynomial multiplication tensors of arbitrary dimension and bounded slice-intertwiner spaces. Lean verifies an auxiliary orbit identity. The general polynomial-time case remains open.
 <!-- ternary-balanced-gap:end -->
+
+
+<!-- localization-spectra-ti:start -->
+## Localization and directional tensor isomorphism
+
+- [Four localization theorems](LocalizationSpectraTI/RESULTS.md) give programmable spectra for ordinary tensor pairs that agree at all prime localizations, exact symplectic conjugacy transfers, a fixed dimension-two arithmetic carrier, and exact counts of observed residues of global transporters. Lean verified two supporting unit-selection identities.
+<!-- localization-spectra-ti:end -->

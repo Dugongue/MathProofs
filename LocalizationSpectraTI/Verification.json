@@ -1,0 +1,60 @@
+{
+  "scope": "Four written theorems, including the spectrum and complexity statements, exact symplectic carriers, the dimension-two localization, and exact observed witness counts. The Lean source checks the two supporting isolation identities only.",
+  "worker_source_sha256": {
+    "RESULTS.md": "1f9d9c54bc7266615c59f71f44841aa322fa2d309aaf97a0da1ca661ce0fdc1f",
+    "spectrum.md": "64ded8553eb2131f251a39c4d74636016b08dfbf7655025c8cd430db19c9a9e2",
+    "arithmetic.md": "43e86c9fc84abf21ec1b7fb038b5baa322f8a12be1d8603bb67f25d60fb97692",
+    "structure.md": "38e7202a6a8b60c5db1d8fa6d6e07b51751db1d12acf43ad47fa4daf55e64c45",
+    "complexity.md": "cab1b663158c69402fe10f80c33f5cc8456567a992160abdd5303b41106dcfbd"
+  },
+  "prior_proof_sha256": "0c473bea15bdf18b342237f0f6194ee39addf023da38b4849cddcd464731e78e",
+  "lean": {
+    "version": "4.33.0",
+    "source": "LocalizationSpectrum.lean",
+    "sha256": "78ebc0ddfdc06fd8fabc68378d246003bbb809b8c3a9aac31a2ecb136d3818ee",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "LocalizationSpectrum.selector_product"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "LocalizationSpectrum.selector_attainable"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "exact_controls": {
+    "selection_subsets": 16,
+    "crt_unit_evaluations": 1024,
+    "upward_closed_families_on_four_bits": 168,
+    "family_subset_checks": 2688,
+    "scalar_congruence_images": {
+      "1-1-0": 1,
+      "1-1-1": 12,
+      "1-2-0": 0,
+      "1-2-1": 12,
+      "2-1-0": 1,
+      "2-1-1": 324,
+      "2-2-0": 0,
+      "2-2-1": 324
+    },
+    "rank_one_congruence_images": {
+      "0": 27,
+      "1": 216
+    }
+  },
+  "priority": "Publication priority has not been established."
+}
