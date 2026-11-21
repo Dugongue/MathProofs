@@ -1,0 +1,7 @@
+# Equivariant recovery of actual bilinear forms
+
+**GP-0170, actual-form interpretation over finite fields of size greater than three.** Let K be a field with some λ∈K× satisfying λ²≠1. Let U,V,W be positive-dimensional. There is no assignment of a nonzero bilinear form on U to tensors in any nonempty GL(U)×GL(V)×GL(W)-invariant family in U⊗V⊗W that is equivariant for the usual change of basis action on forms. The assertion holds for every individual orbit and in particular over every finite field of size greater than three. This is a written proof.
+
+For every tensor T the group element (λI_U,λ^{-1}I_V,I_W) fixes T. On a bilinear form B in U*⊗U* the same element acts by multiplication by λ^{-2}. Equivariance would imply B(T)=λ^{-2} B(T), hence B(T)=0. Permuting the factors gives the same conclusion for a form on any one factor. Consequently no positive-density family or algorithm can realize the stated equivariant recovery of an actual nondegenerate bilinear form over these fields.
+
+The statement concerns actual forms equivariant under the full product GL. Projective form classes are fixed by this scalar action. The fields F2 and F3 also have trivial scalar-square action. Recovery of projective forms, or recovery over one of those two fields, calls for a separate argument. Supplying marked forms changes the action, as in the existing average-case orthogonal algorithms. [The form-preserving source-model context](https://arxiv.org/html/2604.00591v2).

@@ -1,0 +1,23 @@
+{
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of the stated finite specialization lemma used in GP-0691. The full catalogue arguments are written proofs.",
+  "receipts": [
+    {
+      "source": "HasseHittingCertificates.lean",
+      "sha256": "5133806c255642b51c5e463449f8e5a03605e40b84f54f26221dec8a615fd612",
+      "used_in": [
+        "GP-0691"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueThird.grid_point_avoiding_poles"
+        }
+      ]
+    }
+  ]
+}

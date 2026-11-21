@@ -1667,3 +1667,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-ii:start -->
 - [Grochow catalogue proofs II](GrochowCatalogueProofsII/README.md) — 30 additional catalogue answers, including an exponential monomial-size lower bound for ordinary tensor isomorphism. The Lean receipts cover specific supporting lemmas.
 <!-- grochow-catalogue-proofs-ii:end -->
+
+
+<!-- grochow-catalogue-proofs-iii:start -->
+- [Grochow catalogue proofs III](GrochowCatalogueProofsIII/README.md) — 25 additional catalogue entries, including explicit hitting sets for bounded Hasse derivative spaces in fixed finite characteristic. The Lean receipt covers the finite specialization lemma.
+<!-- grochow-catalogue-proofs-iii:end -->

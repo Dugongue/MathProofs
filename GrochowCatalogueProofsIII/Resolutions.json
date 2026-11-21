@@ -1,0 +1,346 @@
+{
+  "total": 25,
+  "excluded_previous": 67,
+  "results": [
+    {
+      "id": "GP-0146",
+      "title": "Low-randomness dense-source tensor algorithms",
+      "question": "Construct explicit polylogarithmic-seed source samplers whose output tensors admit P18-type all-target algorithms and have provable resistance to concentration on a few isomorphism classes.",
+      "status": "source_derived",
+      "lane": "tensor",
+      "source": "https://arxiv.org/html/2604.00591v2",
+      "proof": "OrthogonalSeedSampler.md",
+      "result": "Explicit dense polylog-seed sampler with exact orbit dispersion and an all-target orthogonal algorithm over F5.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0237",
+      "title": "Matrix-space equivalence with supplied full-rank anchor",
+      "question": "Give a bit-polynomial algorithm for left-right equivalence of arbitrary matrix spaces supplied with matched invertible anchors, while retaining unknown mixing of all other matrices.",
+      "status": "source_derived",
+      "lane": "tensor",
+      "source": "https://arxiv.org/pdf/1907.00309",
+      "proof": "MatrixSpaceClassifications.md",
+      "result": "TI-complete even with matched invertible anchors, so a polynomial algorithm here would give one for ordinary TI.",
+      "scope": "exact complexity equivalence",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0242",
+      "title": "Singular alternating-space pseudo-isometry",
+      "question": "Give polynomial-time pseudo-isometry for alternating spaces whose Pfaffian is identically zero but whose common radical is zero, without assuming bounded matrix-space dimension.",
+      "status": "source_derived",
+      "lane": "tensor",
+      "source": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2020.26",
+      "proof": "MatrixSpaceClassifications.md",
+      "result": "The singular, common-radical-zero promise is polynomially equivalent to unrestricted alternating-space pseudo-isometry.",
+      "scope": "exact complexity equivalence",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0248",
+      "title": "Matrix spaces with identical generated algebras",
+      "question": "Find efficient equivalence algorithms for matrix spaces that generate the same full matrix algebra but differ only in the embedded generating subspace, beyond ordered-generator conjugacy.",
+      "status": "source_derived",
+      "lane": "tensor",
+      "source": "https://arxiv.org/pdf/1907.00309",
+      "proof": "MatrixSpaceClassifications.md",
+      "result": "TI-complete even for matrix spaces generating the same full algebra, with either conjugation or left-right equivalence.",
+      "scope": "exact complexity equivalence",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0333",
+      "title": "Simultaneous code duality witnesses",
+      "question": "Given a short list of codes of matching lengths and dimensions, find one monomial transformation taking each code to its corresponding dual whenever possible. Determine the complexity with a promise that each code is individually isodual.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2607.12870",
+      "proof": "SimultaneousIsoduality.md",
+      "result": "Monomial code-equivalence complete with one target instance, already for three individually isodual codes.",
+      "scope": "exact complexity equivalence",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0338",
+      "title": "Orbit distance to a self-orthogonal code",
+      "question": "Determine the minimum number of coordinates to puncture from a given code before its monomial orbit meets the Euclidean self-orthogonal locus. Classify approximability or parameterized complexity in the number of punctures.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2607.12870",
+      "proof": "SelfOrthogonalPuncturing.md",
+      "result": "The binary problem is NP-complete, parameterized equivalent to binary k-VectorSum, and has no PTAS unless P = NP.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0358",
+      "title": "Epimorphism under large central sections",
+      "question": "Find a polynomial algorithm or hardness classification for onto homomorphisms with fixed quotient action between central extensions whose central sections are varying-exponent abelian p-groups.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2609.07429v1#S7",
+      "proof": "CentralExtensionLifts.md",
+      "result": "Polynomial-time onto lifting with prescribed quotient action, arbitrary abelian p-power central heights, and explicit compact coordinates.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0360",
+      "title": "Succinct quotient testing for odd class-two groups",
+      "question": "Classify deterministic polynomial-bit-time epimorphism testing on alternating-bimap presentations of exponent-p class-two groups, for fixed odd p and unbounded dimensions.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2609.07429v1#S7",
+      "proof": "AlternatingEpimorphisms.md",
+      "result": "NP-complete to test surjection onto the fixed Heisenberg group of order p³ for every fixed odd prime p.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0361",
+      "title": "Approximation for maximum class-two quotient rank",
+      "question": "For odd prime p, given a class-two exponent-p group by an alternating presentation and a target bimap, approximate the largest quotient of the target also admitting an epimorphism from the source, measured in log_p order.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2609.07429v1#S7",
+      "proof": "AlternatingEpimorphisms.md",
+      "result": "Sharp 3/2 approximation for the fixed Heisenberg target. General targets rule out every ratio below 2 and every fixed additive error unless P = NP.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0380",
+      "title": "Homomorphism extension with bounded generator-image ambiguity",
+      "question": "Given a map on M≤G and for each selected generator outside M a coset in the target permutation group as its image domain, classify extendibility with bounded index and variable cosets.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/1802.08656",
+      "proof": "CosetHomomorphismExtension.md",
+      "result": "Coset-constrained homomorphism extension is NP-complete at index two with one mark, and polynomial at index one.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0471",
+      "title": "Subgroup conjugacy through an intrinsic Lie filtration",
+      "question": "For class-c<p nilpotent groups supplied by consistent compact presentations and compact subgroups H,K, find a bit-polynomial algorithm deciding whether H and K are conjugate using associated Lazard Lie coordinates.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/abs/2306.16317",
+      "proof": "LazardSubgroupConjugacy.md",
+      "result": "Bit-polynomial subgroup conjugacy for compact class-c p-group presentations with c below p.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0473",
+      "title": "Minimal common central-product ambient group",
+      "question": "Given compact class-two groups and specified embeddings of their centers into a common elementary abelian space, find the smallest order of a class-two group simultaneously admitting these central embeddings and both specified subgroups.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/abs/2303.15412",
+      "proof": "MinimalCentralAmalgam.md",
+      "result": "Exact minimum ambient-order formula for the prescribed central gluings, with NP-complete compact threshold decision.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0611",
+      "title": "Sparsity-to-ROABP hardness lifting",
+      "question": "Identify a uniform substitution gadget whose composition with a polynomial of sparsity s forces ROABP size Ω(s) in every order, with overhead controlled by the original parameters.",
+      "status": "explicit_open",
+      "lane": "algebra",
+      "source": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.9/LIPIcs.ITCS.2026.9.html#S6",
+      "proof": "ROABPSparsityLifting.md",
+      "result": "One explicit substitution forces middle ROABP width exactly equal to input sparsity in every order and over any field.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0612",
+      "title": "Newton-polytope summands from arithmetic circuits",
+      "question": "Given a polynomial-size circuit whose Newton polytope is known to be a nontrivial Minkowski sum, find one primitive lattice summand in time polynomial in the circuit size and vertex output length under an explicit promise of a polynomial-size output.",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://arxiv.org/html/2506.19604v2#S8",
+      "proof": "PrimitiveNewtonSummands.md",
+      "result": "Polynomial-time primitive summand search would imply P = NP even for explicit bivariate vertex-monomial circuits with polynomial-size promised output.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0677",
+      "title": "Unsatisfiable CNF families whose equation maps hit restricted circuits",
+      "question": "For explicit classes Λ with known hitting sets, construct an unsatisfiable 3-CNF family whose clause-and-Boolean equation map has image hitting every nonzero polynomial from Λ in the equation variables.",
+      "status": "explicit_open",
+      "lane": "algebra",
+      "source": "https://arxiv.org/html/1701.01717#S4",
+      "proof": "GeometricEquationHitting.md",
+      "result": "Uniform unsatisfiable 3-CNFs hit all quadratic polynomials in the equation coordinates, with a universal degree-12 obstruction for larger classes.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0685",
+      "title": "Formula-order witness reconstruction",
+      "question": "Given a black box for a promised read-once rational formula over arbitrarily grouped affine linear forms on disjoint unknown input sets, reconstruct such a grouping and formula with polynomial bit complexity including coefficient sizes.",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol383-ccc2026/html/LIPIcs.CCC.2026.25/LIPIcs.CCC.2026.25.html",
+      "proof": "GroupedReadOnceRecovery.md",
+      "result": "Deterministic bit-polynomial black-box reconstruction of a grouped read-once rational formula, allowing singleton output groups.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0691",
+      "title": "Derivative-space hitting sets in fixed small characteristic",
+      "question": "Can explicit hitting sets of size poly(n,d,r) hit degree-d polynomials over a prescribed fixed finite field when the span of all Hasse derivatives has dimension r, permitting polynomial-degree extensions for evaluations?",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://eccc.weizmann.ac.il/report/2026/217/",
+      "proof": "HasseDerivativeHitting.md",
+      "result": "Explicit polynomial-size Hasse derivative hitting sets over every fixed finite field, with a logarithmic-degree evaluation extension.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0738",
+      "title": "Characteristic-sensitive degree in degeneration versus isomorphism",
+      "question": "Can explicit concise geometrically nonisomorphic tensors whose orbit closures meet require provably larger PC refutation degree than equally formatted examples whose orbit closures are disjoint over a fixed finite field?",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://arxiv.org/html/2305.19320#S7",
+      "proof": "TensorOrbitProofDegree.md",
+      "result": "Ordinary GL orbit closures always meet. In the SL version, concise tensors separate linear from constant PC degree at identical cubic formats.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0940",
+      "title": "Automorphism-aware approximate counting for rare motifs",
+      "question": "Give a relative-error approximation scheme for counts of an induced motif under a promise on host rank-width and positive count, with fixed-parameter dependence on motif size and rank-width and near-linear host dependence.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/html/2609.38686v1#S5",
+      "proof": "InducedMotifAlgorithms.md",
+      "result": "Exact counts for supplied bounded rank-width with fixed-parameter dependence and almost-linear host dependence.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0941",
+      "title": "Streaming motif frequency with rooted-type compression",
+      "question": "Determine the memory needed to estimate connected induced motif frequencies on graph streams with an explicit bound on the number of pendant rooted tree types.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/html/2609.38686v1#S5",
+      "proof": "InducedMotifAlgorithms.md",
+      "result": "Tight quadratic-bit one-pass adversarial insertion-only space on fixed triangles, even with zero pendant types.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0942",
+      "title": "Dynamic subtree catalogs for graph motifs",
+      "question": "Maintain exact induced motif counts under single-edge edits that preserve a bounded-size core and at most k distinct rooted attachment types, with update time independent of host order up to polylogarithmic factors.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/html/2609.38686v1#S5",
+      "proof": "InducedMotifAlgorithms.md",
+      "result": "Exact dynamic motif counting in logarithmic amortized updates for bounded core size and fixed motif.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0944",
+      "title": "Canonical comparison for weighted rooted motifs",
+      "question": "Give a parameter-uniform algorithm to reuse isomorphic weighted or directed rooted subtrees while computing exact induced motif counts over graph classes with sparse directed cores.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/html/2609.38686v1#S5",
+      "proof": "InducedMotifAlgorithms.md",
+      "result": "Canonical reuse of weighted and directed pendant rooted attachments via relative-boundary pattern tables.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0995",
+      "title": "Surface Unique Games for restricted nonabelian actions",
+      "question": "Characterize which transitive actions of a fixed finite nonabelian group yield NP-hard constant-factor minimization of violated edge constraints on triangulations of closed orientable surfaces.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/html/1803.06800#S6",
+      "proof": "FlatSurfaceConstraints.md",
+      "result": "Fixed transitive actions have a hard constant-factor gap on flat triangulated surfaces exactly when the alphabet has more than one point.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0996",
+      "title": "Bounded-degree triangulations and exact gap transfer",
+      "question": "Can gap instances for minimum violated permutations be compiled into closed orientable surface triangulations of uniformly bounded vertex degree with preservation of a fixed nonabelian label action?",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/html/1803.06800#S6",
+      "proof": "FlatSurfaceConstraints.md",
+      "result": "Exact factor-six optimum transfer into uniformly bounded-degree closed orientable flat triangulations using the original action.",
+      "scope": "proved answer",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-1000",
+      "title": "Persistently robust generators with thin incidence structure",
+      "question": "Find a parameterized algorithm or hardness classification for the minimum deletions needed to kill a prescribed positive-dimensional persistence class when the complex is given by a bounded-width incidence decomposition.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SoCG.2026.87",
+      "proof": "IncidenceHomologicalCuts.md",
+      "result": "An exact fixed-parameter algorithm in incidence width at each fixed finite field for persistence-class deletion.",
+      "scope": "proved in a stated model",
+      "verification": "written proof"
+    }
+  ],
+  "literature": {
+    "GP-0112": {
+      "proof": "NovemberLiteratureResolutions.md",
+      "result": "Dicke entropy law, including repeated species. This packet also gives the coefficient-one all-field transfer."
+    },
+    "GP-0114": {
+      "proof": "NovemberLiteratureResolutions.md",
+      "result": "A four-mode counterexample to irreducibility of all asymptotic-rank sublevels."
+    },
+    "GP-0197": {
+      "proof": "NovemberLiteratureResolutions.md",
+      "result": "An explicit family of secants of three-factor Segre varieties that fail S2 and Cohen–Macaulayness."
+    },
+    "GP-0232": {
+      "proof": "MatrixSpaceClassifications.md",
+      "result": "Already classified as TI-complete by Grochow and Qiao. This packet supplies the square-zero reduction used in the new promise results."
+    }
+  },
+  "supplemental": {
+    "GP-0818": {
+      "proof": "UnaryCAStructuralCertificates.md",
+      "result": "All-length finite test when the source is a shift followed by a unary map."
+    },
+    "GP-0998": {
+      "proof": "VariablePrimeHomology.md",
+      "result": "Variable-prime hardness at constant incidence width and fixed-field bounds."
+    },
+    "GP-0110; GP-0118": {
+      "proof": "GraphCutWeightedEquivalence.md",
+      "result": "Exact equivalence of the two universal MaxCut conjectures."
+    },
+    "GP-0147": {
+      "proof": "ClassicalTransporterFieldDegree.md",
+      "result": "An exact factorial transporter field degree for an explicit family of rational orthogonal tensors."
+    },
+    "GP-0170": {
+      "proof": "EquivariantFormRecovery.md",
+      "result": "A scalar obstruction for literal bilinear-form recovery over fields larger than three."
+    }
+  }
+}

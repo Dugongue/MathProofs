@@ -1,0 +1,15 @@
+# GP-0333 · Simultaneous monomial duality under individual isoduality
+
+**Theorem.** Deciding whether a list of individually monomial-isodual linear codes has one monomial map sending every code to its Euclidean dual is polynomial-time many-one equivalent to ordinary same-field monomial code equivalence (LEP). Hardness already holds for three codes of length $4n$ and dimension $2n$. The promise holds on every instance produced by the hardness reduction. The upper reduction uses one LEP instance and recovers a simultaneous witness from a witness for that instance.
+
+Take two codes $C,D\le F^n$ from ordinary LEP. Use four coordinate blocks indexed by $00,01,10,11$, each of length $n$. For $j=1,2$ let $A_j$ be the coordinate subspace full on blocks whose $j$-th bit is one and zero elsewhere. Its dual is full on the complementary blocks, and $A_j$ is individually isodual by a permutation flipping bit $j$. The third code is
+$$
+Q=C\oplus C^\perp\oplus D\oplus D^\perp
+$$
+in the given block order. Its dimension is $2n$ regardless of the input dimensions. It is individually isodual by the permutation swapping $00$ with $01$ and $10$ with $11$, which exchanges each code with its Euclidean dual.
+
+The underlying coordinate permutation of a monomial witness sending both $A_j$ to $A_j^\perp$ must take a coordinate of label $t$ to label $\overline t$, its bitwise complement. To see this, for each $j$ use that a monomial sends a coordinate subspace to the coordinate subspace on the permuted support. Both one-bit memberships must be complemented. Any independent monomial map on each of the four blocks followed by the forced block permutation meets the anchor constraints.
+
+Under these constraints the requirement $Q\mapsto Q^\perp$ on the source block $00$ takes $C$ to $D$. Conversely if $M$ maps $C$ to $D$, send source blocks $00,01,10,11$ to their complementary blocks using $M,M^{-\mathsf T},M^{-1},M^{\mathsf T}$, respectively, in column-vector conventions. These maps carry $C,C^\perp,D,D^\perp$ to $D,D^\perp,C,C^\perp$, respectively, since the contragredient maps duals to duals. This supplies a simultaneous witness.
+
+For the upper reduction take the indexed pair of lists $(C_i)$ and $(C_i^\perp)$. The simultaneous LEP reduction in GP-0331 applies. It forms the direct sum of generator column spaces, includes a tuple column containing all generator columns at each common position, and adds multiplicity tags to each block to preserve exactly the indexed summands. With an increment of $n+1$, where $n$ is the common length here, a projective point's multiplicity quotient encodes its pure-block tag and the remainder encodes tuple occurrences. A matching of the tuple columns gives one shared permutation and one shared scalar per position. Its explicit recovery works equally for the dual target lists. [GP-0331, simultaneous LEP](https://github.com/Dugongue/MathProofs/blob/d7366c4348bc03f0e93cb8674db191de32ba58bf/GrochowCatalogueProofsII/CodeEquivalenceAndOracle.md) · [Catalogue context](https://arxiv.org/html/2607.12870)

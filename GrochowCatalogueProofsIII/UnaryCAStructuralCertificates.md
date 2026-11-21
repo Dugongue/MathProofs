@@ -1,0 +1,27 @@
+# All-length certificates for single-coordinate cellular automata
+
+## GP-0818 — A structural subclass with a complete finite test
+
+Fix finite alphabets $A,B_0$ and an arbitrary nearest-neighbor target rule on $B_0$. Suppose the source local rule depends on only one coordinate, so it is $\sigma(x_\delta)$ for some function $\sigma:A\to A$ and $\delta\in\{-1,0,1\}$. There is a finite, checkable certificate deciding whether any positive block length admits an exact nonconstant block projection. The test covers noninvertible $\sigma$ and target alphabets of arbitrary fixed size. It also covers the requirement that the projection be onto $B_0$ by using only that image in the test.
+
+This extends the single-shift and single-stay binary cases in the existing portfolio to arbitrary finite unary transition functions. It is a sufficient structural promise for GP-0818. [Song–Grochow, block quotient identity](https://arxiv.org/pdf/2012.12153) · [Portfolio binary cases](https://github.com/Dugongue/MathProofs/blob/main/GrochowHypoworlds/CELLULAR-AUTOMATA.md)
+
+### Reduction to unary transformation systems
+
+For block length $L$, after $L$ time steps the new center block is obtained by applying $\sigma^L$ coordinatewise to the single block in position $\delta$. If the projection $\pi:A^L\to B_0$ has image $B$ with $|B|\ge2$, the exact quotient identity can therefore hold only if the target restricted to $B^3$ equals $\tau(x_\delta)$ for some map $\tau:B\to B$. This follows since values of $\pi$ on the three input blocks can be chosen independently from $B$, and the left side is independent of the other two input blocks. Conversely, under this restriction the quotient identity is exactly the existence of an onto map of unary transformation systems
+$$
+ (A^L,(\sigma^L)^{\times L})\longrightarrow(B,\tau).
+$$
+Enumerate the finitely many allowed images $B$, and test the unary restriction directly on the target table.
+
+### Finite-state compression
+
+Let $h$ be the maximum distance of a state of $\sigma$ from its eventual cycle, and let $M$ be the least common multiple of its cycle lengths. Directly check all $L<\max(h,1)$. For $L\ge\max(h,1)$, the map $\sigma^L$ depends only on $L$ modulo $M$, and all its noncycle vertices feed into a cycle in one step.
+
+Put $b=|B|$. For a transformation of this height-one form, record each component as its cycle together with its ordered numbers of inbound leaves at the periodic vertices, read up to cyclic rotation. Cap each leaf count at $b$ and also cap the number of copies of each resulting component type at $b$. These caps preserve the existence of an onto map to $(B,\tau)$. An onto map has a set of at most $b$ preimage witnesses, one for each target element. Choose the retained components and retained leaves to contain all witnesses, and restrict the map to the resulting forward-invariant subgraph. Conversely the truncated subgraph is a retract of the original system. On a discarded component map its cycle bijectively to a retained cycle of the same clipped type, with an appropriate rotation. Map each omitted leaf to a retained leaf at the corresponding periodic point. A required leaf is available since its clipped count is positive, and a retained component of that type exists. Retained vertices map to themselves. Composing any onto map from the truncated system with this retraction proves the reverse direction.
+
+Cartesian product is well defined on these summaries. Two cycles of lengths $j,k$ split in the product into $\gcd(j,k)$ cycles of length $\operatorname{lcm}(j,k)$, with an explicit listing by simultaneous rotation of position pairs. At a product periodic point with inbound leaf counts $u,v$ in the two factors, the inbound leaf count is $(1+u)(1+v)-1$. This counts all preimage pairs except the unique periodic predecessor. Capping the inputs at $b$ and then capping the result at $b$ gives the same value as capping only the result. Likewise, component multiplicity updates use sums and products of nonnegative counts, which commute with final capping. Individual clipped types may have rotational symmetries, but rotating either cycle merely permutes the product cycles. Thus the summary of a product is computable entirely from the summaries.
+
+For each desired residue $r$ fix the appropriate map $\rho_r=\sigma^e$ for any $e\ge \max(h,1)$ congruent to $r$ modulo $M$. Iterate the summaries of $\rho_r^{\times L}$, multiplying by the fixed summary of $\rho_r$ at each step, and include $L\bmod M$ in the state. Start at $L=\max(h,1)$ by direct computation or repeated summary products. Every product cycle length divides $M$, the clipped leaf vectors have bounded lengths and entries, and each clipped component count is in $\{0,\ldots,b\}$. Consequently the state sequence is eventually periodic in an explicit finite state set. Stop at the first repeated state. At each visited state with residue $r$, construct the listed clipped unary system and determine whether it admits an onto map to the target's unary restriction, for example by exhaustive enumeration of maps. An all-negative table and the repeated-state check certify nonexistence at all positive lengths. A positive entry certifies existence at its recorded length, by the proved lifting from the clipped system.
+
+This is a written proof and an exact finite classification under the single-coordinate source promise. The automaton may have a large size as a function of the alphabets.

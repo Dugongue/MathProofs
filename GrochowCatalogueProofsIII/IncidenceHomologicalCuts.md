@@ -1,0 +1,27 @@
+# Homological cuts on incidence decompositions
+
+## GP-1000 — Exact fixed-parameter algorithm
+
+Fix a finite field $\mathbb F_q$. Given a finite simplicial complex $K$ by its explicit simplices and facet incidences, a simplicial $p$-cycle $z$, $0\le s\le p$, and a tree decomposition of width $w$ of the simplex–facet incidence graph, one can find a minimum-cardinality set $D$ of $s$-simplices such that
+$$
+ [z]\notin\operatorname{im}\bigl(H_p(K-D;\mathbb F_q)\longrightarrow H_p(K;\mathbb F_q)\bigr).
+$$
+Here $K-D$ omits all simplices containing a member of $D$ as a face. The time is $q^{O(w+1)}N^{O(1)}$, where $N$ is the input size, and the algorithm detects correctly when no such set exists. A weight per available deletion can be included by charging the corresponding weight instead of one. The constants are uniform in $p$ and $s$.
+
+For the finite-death bar in a simplex-wise filtration from the catalogue's source, use the complex just before the death simplex $\tau$ and set $z=\partial\tau$. Proposition 4 of Roos Hoefgeest and Slot identifies the minimum number of $s$-simplex deletions that destroys the induced match of that bar with exactly the minimum homological $s$-cut for this $z$. Restrict the supplied incidence decomposition to the predeath simplices. A predeath prefix is a subcomplex, so its facet-incidence graph is an induced subgraph of the original graph. The same algorithm treats any specified class represented by a cycle at a specified level. [Hoefgeest–Slot, Definition 3 and Proposition 4](https://doi.org/10.4230/LIPIcs.SoCG.2026.87)
+
+### Dual certificate
+
+Fix $D$. View $W=Z_p(K-D)$ and $U=B_p(K)$ as subspaces of $C_p(K)$. The class is destroyed exactly when $z\notin W+U$. Equivalently, there exists a $p$-cochain $f$ that annihilates $W+U$ and sends $z$ to $1$. This is the elementary separation of a vector from a subspace by extending a basis. Write $U' = C_p(K-D)$. The restriction of $f$ to $U'$ annihilates $\ker(\partial_p|_{U'})=W$, so it factors through the boundary map on $U'$. Extend the resulting functional on $\partial_p(U')$ to all of $C_{p-1}(K)$, call the extension $\lambda$, and replace $f$ by $f-\delta\lambda$. This leaves its value on $z$ unchanged since $z$ is a cycle, and leaves its value on $U$ unchanged since boundaries are cycles. It vanishes on every $p$-simplex of $K-D$. For $p=0$, the same argument uses the ordinary $\partial_0=0$. Conversely, any $p$-cochain $f$ supported on the deleted $p$-simplices with $\delta f=0$ and $f(z)=1$ annihilates both $W$ and $U$, so it certifies the cut. This proves both directions without any assumption that the induced homology map is injective.
+
+### Incidence dynamic program
+
+Orient simplices arbitrarily, recording signs on incidences. Use a nice decomposition in which every graph edge is introduced once, after its endpoints are introduced and before either endpoint is forgotten. The polynomial-size conversion preserves the width and is obtained by adding a dedicated same-bag introduction node at a bag containing that edge. Numbering edges uniquely ensures joins combine disjoint sets of introduced edges.
+
+At every simplex $\sigma$ maintain a Boolean state $R_\sigma$ guessing whether $\sigma$ is removed. At dimension $s$ also guess $D_\sigma$ to designate a paid deletion, and take $D_\sigma=0$ elsewhere. On a $p$-simplex guess $f_\sigma\in\mathbb F_q$ and impose $R_\sigma=0\Rightarrow f_\sigma=0$. Maintain a partial Boolean OR of removed immediate facets at each bag simplex. At a $(p+1)$-simplex also maintain a partial field sum of signed $f$-values on its introduced facet incidences. Finally keep one global field accumulator for the sum $\sum_\sigma f_\sigma z_\sigma$ over $p$-simplices already forgotten.
+
+At a simplex introduction, initialize local accumulators to zero. At a facet-edge introduction update the OR and, if applicable, the cocycle sum at the larger simplex. At a join match all guessed simplex variables, take OR and field addition for the local accumulators, and add the global sums and costs. When forgetting a simplex, all its immediate facet incidences have been seen. Require its removed flag to equal the OR of its paid deletion bit and all removed facet flags. Also check that its cocycle sum vanishes if it is a $(p+1)$-simplex. Add its deletion cost if selected and add its term $f_\sigma z_\sigma$ to the global sum if it is a $p$-simplex. Keep the least cost for each resulting table state and record minimizing choices for recovery. At the empty root require global sum $1$.
+
+The removal flags are therefore exactly the upward closure of the paid deletions by induction on dimension. The dual certificate shows that feasible states at the root correspond precisely to cuts. Every deletion and evaluation term is counted exactly once at the simplex's unique highest forget node. Tables have at most a constant number of bits and two field coordinates per bag vertex plus one global coordinate, so even checking all state pairs at joins takes $q^{O(w+1)}$ work per bag, up to polynomial factors for arithmetic and the input. This is an exact FPT algorithm in the incidence width for each fixed field, including $\mathbb F_2$, and in $w+q$ when the field varies. No polynomial dependence on $\log q$ at fixed width is claimed.
+
+Verification is by written proof. The relationship between bar robustness and homological cuts is the cited published result. The incidence algorithm follows from the support-restricted cocycle certificate above.
