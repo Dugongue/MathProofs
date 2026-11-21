@@ -1587,3 +1587,8 @@ Pending formalizations:
 <!-- coefficient-ring-advances:start -->
 - [Four advances in determinant-constrained tensor isomorphism over coefficient rings](CoefficientRingAdvances/RESULTS.md) — two unbounded-depth principal determinant compilers, exact ordered transporter profiles over arbitrary local rings with fixed residue characteristic, and polynomial three-mode lifting and counting for residue p-groups.
 <!-- coefficient-ring-advances:end -->
+
+
+<!-- affine-conjugacy-advances:start -->
+- [Four advances in permutation-group conjugator search](AffineConjugacyAdvances/RESULTS.md) — a polynomial-degree quotient marker, search and full normalizers for polynomial-order groups, arbitrary coupling of nonabelian simple affine complements, and exact affine conjugator counting.
+<!-- affine-conjugacy-advances:end -->

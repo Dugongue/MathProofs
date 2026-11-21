@@ -1,0 +1,32 @@
+{
+  "lean_version": "4.33.0",
+  "scope": "Three supporting group-theoretic lemmas for the marked Cayley generators, graph conjugation, and terminal normalization. The four main permutation-group theorems have written proofs.",
+  "files": [
+    {
+      "path": "AffineConjugacyAdvances.lean",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "AffineConjugacyAdvances.innerOfCayleyMarker"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "AffineConjugacyAdvances.graphConjugation"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "AffineConjugacyAdvances.terminalNormalization"
+        }
+      ],
+      "sha256": "9360d8ab0119e39f6ba492213119ba0ced211f1529e61c8e33f879496dea5742"
+    }
+  ]
+}
