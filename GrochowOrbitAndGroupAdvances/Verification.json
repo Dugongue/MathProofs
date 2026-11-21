@@ -1,0 +1,36 @@
+{
+  "lean_version": "4.33.0",
+  "verification_scope": "Finite calculations only. The orbit-recovery and other main theorems have written proofs.",
+  "files": [
+    {
+      "path": "OrbitGramCertificate.lean",
+      "sha256": "9cbe1c0a31fb67856763fcba5c24d2363687e539910d7713102423a421a9f309",
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "OrbitGramCertificate.rank_one_locus_check"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "OrbitGramCertificate.rich_lines_check"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "OrbitGramCertificate.no_frobenius_coordinate_permutation"
+        }
+      ]
+    }
+  ],
+  "independent_computation": {
+    "path": "check_nine_points.py",
+    "projective_points": 85,
+    "span_elements": 512,
+    "admissible_frame_images": 3000
+  }
+}
