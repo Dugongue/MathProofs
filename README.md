@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- oq19-determinant-transfers:start -->
+- [Four determinant reductions for Open Question 1.9](OQ19DeterminantTransfers/README.md) — centroid-local determinant cosets, square-zero grade tests, maximal-subfield descent, and intrinsic orientation trees. Written proofs with Lean-checked supporting lemmas.
+<!-- oq19-determinant-transfers:end -->
+
 <!-- hoza-grochow-isolation:start -->
 - [Four Hoza-to-Grochow isolation transfers](HozaGrochowIsolation/README.md) — smaller class-two group power orbits, simultaneous minor isolation, shared selectors for matrix multiplication, and determinant-constrained tensor transporters. Written proofs with Lean-checked supporting lemmas.
 <!-- hoza-grochow-isolation:end -->

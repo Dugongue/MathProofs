@@ -1,0 +1,40 @@
+{
+  "status": "VERIFIED",
+  "scope": "Supporting identities only. The four general results are written proofs.",
+  "source": "DeterminantTransfers.lean",
+  "sha256": "a3c9c3b9faa5a2462d21ecea0318146900eda7dd84b66fa5bea5bde227e97f8a",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "declarations": [
+    {
+      "name": "OQ19DeterminantTransfers.transporter_character_coset",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "OQ19DeterminantTransfers.equal_character_correction",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "OQ19DeterminantTransfers.neutral_character_power",
+      "transitive_axioms": []
+    },
+    {
+      "name": "OQ19DeterminantTransfers.equal_block_exchange_sign",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "OQ19DeterminantTransfers.support_complement_determinant",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
