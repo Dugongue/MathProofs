@@ -1,0 +1,30 @@
+{
+  "status": "VERIFIED",
+  "scope": "Two supporting scalar identities for the least-squares result. The research results have proofs in prose.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "SketchConfidence.lean",
+      "sha256": "ac675cd7dbe0e10ca542af60301fb86c2dcd2bfbc503390bc892e0cff1262019",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SketchConfidence.quarterBound"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SketchConfidence.sharpExcess"
+        }
+      ]
+    }
+  ]
+}

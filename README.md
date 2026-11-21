@@ -1492,3 +1492,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightFifth/RESULTS.md). The packet gives a modular family with separating degree four and unbounded field-generation degree, depth-three matrix-symmetric circuits, odd-characteristic lower bounds for the determinant and for undirected squared matching counts, and matrix-vector algorithms for near-extremal eigenvalues. It also includes a restricted class-two reduction for counting group epimorphisms.
 <!-- grochow-eight-fifth:end -->
+
+
+<!-- grochow-eight-sixth:start -->
+### Ten answers on invariants, symmetric computation, and numerical linear algebra
+
+[Proofs and verification](GrochowEightSixth/RESULTS.md). The results include a five-point correction to cubic dihedral recovery, generic unitary recovery at degree three, a counterexample to a characteristic-two symmetric determinantal conjecture, an all-characteristic matrix-symmetric circuit separation, and a sharp least-squares confidence law.
+<!-- grochow-eight-sixth:end -->
