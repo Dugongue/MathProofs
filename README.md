@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tisl-synthesis:start -->
+- **[Same-field reductions toward special-linear tensor isomorphism](TISLSynthesis/README.md)** — Four scoped results on exterior constraints and castling, local Frobenius orientation, regular finite-field pencils, and determinant cosets. Includes written proofs and finite controls.
+<!-- tisl-synthesis:end -->
+
 <!-- grochow-cubic-closures:start -->
 - **[Four extensions of the pure-cube orbit-closure criterion](GrochowCubicClosures/README.md)** — Written proofs of an explicit boundary conductor, ordinary tensor degeneration reductions, Frobenius-thickened incidence fibers and normalization, and orbit closures of cubic systems with variable outputs. Includes finite controls and a Lean-checked auxiliary identity.
 <!-- grochow-cubic-closures:end -->

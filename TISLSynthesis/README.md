@@ -1,0 +1,12 @@
+# Same-field reductions toward special-linear tensor isomorphism
+
+The target is a deterministic polynomial-time many-one reduction from literal $\operatorname{SL}\times\operatorname{SL}\times\operatorname{SL}$ tensor isomorphism to ordinary three-tensor isomorphism over the same field. Chen, Grochow, Qiao, Tang and Zhang pose the unrestricted inclusion. The other direction follows by adding one unused coordinate per mode. Each determinant can be corrected on its added line, and an ordinary witness on the intrinsic supports can be recovered from any padded witness. [Actions by classical groups, Open Question 1.9](https://arxiv.org/html/2306.03135#S1.SS4)
+
+| Result | Exact scope |
+|---|---|
+| [Exterior constraints and oriented castling](Gadgets.md) | A same-field many-one reduction with cost $2^{O(k)}\operatorname{poly}(N)$, where $N$ is the dense input length and $k$ is the largest dimension of a mode with full support. Determinant-preserving castling can lower $k$ before the construction. |
+| [Frobenius orientation for multiplication tensors](Frobenius.md) | Same-field many-one reduction for split local commutative Gorenstein multiplication tensors over every characteristic-two field. In other characteristics it also applies when a square-zero radical power leaves a logarithmic-dimensional middle quotient. |
+| [Regular finite-field pencils](Algorithms.md) | Deterministic decision polynomial in $n,\log q$ for regular $2\times n\times n$ pencils with at least three distinct geometric determinant roots. No rational root or nonsingular rational slice is required. Over a fixed field it applies to every regular pencil. |
+| [Determinant cosets with a known projective mode](Geometry.md) | Over represented finite fields, compute and test the full three-determinant coset for a projective third-mode candidate, without discrete logarithms or polynomial factorization. This yields a many-one reduction for classes admitting a polynomial candidate list. |
+
+These four theorems apply under their stated scopes. The unrestricted reverse reduction remains open, and publication priority for the specific constructions is unverified. The exterior and Frobenius constructions use the polynomial partition removal from the recent maximal-minor argument. The local multiplication construction also uses pure powers to link an original witness to its coefficientwise Frobenius twist over imperfect fields. Companion programs check finite cases. Lean independently verified the [determinant identities](IsotopeDeterminants.lean) for unital isotopes.
