@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- fixed-ring-four:start -->
+- **[Four extensions of tensor isomorphism over fixed finite rings](FixedRingFour/README.md)** — Literature audit, complete tensor isomorphism in the final digit, algorithms for arbitrary precision and prescribed residue maps, and exact counts of tame lift classes.
+<!-- fixed-ring-four:end -->
+
 <!-- cubic-anchor-four:start -->
 - **[Four extensions of the cubic relation z³ = f](CubicAnchorFour/README.md)** — A priority audit and four written proofs on prime-field descent, filtered deformation geometry, mixed extension fields, and sharp local-ring lift counts. Includes finite controls and a Lean-checked supporting identity.
 <!-- cubic-anchor-four:end -->
