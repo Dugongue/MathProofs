@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- oq19-square-zero-orientation:start -->
+- [Ternary square-zero orientation](OQ19SquareZeroOrientation/README.md) — one ordinary tensor-isomorphism comparison for the stated classes, with written proofs and four Lean-checked supporting identities.
+<!-- oq19-square-zero-orientation:end -->
+
 <!-- oq19-determinant-transfers:start -->
 - [Four determinant reductions for Open Question 1.9](OQ19DeterminantTransfers/README.md) — centroid-local determinant cosets, square-zero grade tests, maximal-subfield descent, and intrinsic orientation trees. Written proofs with Lean-checked supporting lemmas.
 <!-- oq19-determinant-transfers:end -->

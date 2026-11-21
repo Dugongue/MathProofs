@@ -1,0 +1,31 @@
+{
+  "status": "VERIFIED",
+  "scope": "Four supporting identities. The complexity reductions are written proofs.",
+  "source": "SquareZeroIdentities.lean",
+  "sha256": "5c6b68ddb95fcdbc4a8fe51cb6391b75b5f658c05d59fcf893618657ad460436",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "declarations": [
+    {
+      "name": "OQ19SquareZero.unitary_correction",
+      "transitive_axioms": []
+    },
+    {
+      "name": "OQ19SquareZero.squareZero_midpoint_mul",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "OQ19SquareZero.reverse_signed_swap",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "OQ19SquareZero.even_power_of_involution",
+      "transitive_axioms": []
+    }
+  ]
+}
