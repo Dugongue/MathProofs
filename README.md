@@ -1658,3 +1658,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs:start -->
 - [Grochow catalogue proofs](GrochowCatalogueProofs/README.md) — 37 catalogue answers by written proof, including fixed-target dihedral epimorphism and compact homomorphism extension. The Lean receipts cover specific supporting lemmas.
 <!-- grochow-catalogue-proofs:end -->
+
+
+<!-- grochow-catalogue-proofs-ii:start -->
+- [Grochow catalogue proofs II](GrochowCatalogueProofsII/README.md) — 30 additional catalogue answers, including an exponential monomial-size lower bound for ordinary tensor isomorphism. The Lean receipts cover specific supporting lemmas.
+<!-- grochow-catalogue-proofs-ii:end -->

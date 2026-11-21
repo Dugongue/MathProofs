@@ -1,0 +1,131 @@
+{
+  "lean": "4.33.0",
+  "scope": "Independent kernel and axiom audits of the named lemmas. The complete catalogue answers are written arguments.",
+  "receipts": [
+    {
+      "source": "CatalogueSecondCertificates.lean",
+      "sha256": "c10fb05b58328013fe1edaa32ab0221ce106e0c45af0252d98d311f1637d48d7",
+      "used_in": [
+        "GP-0737",
+        "GP-0740",
+        "GP-0757"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueSecond.support_card_monomial_sum"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueSecond.sparse_substitution"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueSecond.relative_average_constant"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueSecond.geometric_sum_double"
+        }
+      ]
+    },
+    {
+      "source": "GraphRecoveryLemmas.lean",
+      "sha256": "8d7078e9f3fb96b86fe5c32f34aed50b8ea2e921370826b5f1ea71565570e999",
+      "used_in": [
+        "GP-0948",
+        "GP-0949",
+        "GP-0947"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "CatalogueGraphRecovery.cross_reindex"
+        },
+        {
+          "axioms": [],
+          "theorem": "CatalogueGraphRecovery.left_from_right_coset"
+        },
+        {
+          "axioms": [],
+          "theorem": "CatalogueGraphRecovery.right_from_left_coset"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CatalogueGraphRecovery.row_order_below_half_gap"
+        },
+        {
+          "axioms": [],
+          "theorem": "CatalogueGraphRecovery.common_quotient_commutes_of_reversed_pairs"
+        }
+      ]
+    },
+    {
+      "source": "TensorMethodCertificates.lean",
+      "sha256": "111fec25b8ff76ac164345e5172146bb6c88541225fc0672f195a3e2fbb2cb6c",
+      "used_in": [
+        "GP-0154",
+        "GP-0288",
+        "GP-0289"
+      ],
+      "theorems": [
+        {
+          "axioms": [],
+          "theorem": "CatalogueTensorMethods.evalTerm_transport"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "CatalogueTensorMethods.spanning_seed_transport_unique"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CatalogueTensorMethods.orbit_lift_additive_mod"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "group_second_controls.py": {
+      "latin_perturbations": 1584,
+      "orbit_duplication_instances": 72
+    },
+    "check_graph_recovery.py": {
+      "path_span_checks": 250,
+      "symmetric_group_orders": [
+        2,
+        6,
+        24,
+        120
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# GP-0757 · Degree-controlled, division-free resultant circuits
+
+Let $F_i$ for $0\le i\le n$ be dense homogeneous forms of positive degrees $d_i$ in $n+1$ variables, each with its own coefficient block. Write
+$$
+N=\binom{1+\sum_i(d_i-1)+n}{n},\qquad
+D=\sum_{i=0}^n\prod_{j\ne i}d_j .
+$$
+Here $N$ is the classical Macaulay matrix dimension and $D$ is the total resultant degree. There are division-free bounded-fanin circuits over $\mathbb Z$ for the universal resultant of size $\operatorname{poly}(N)$, depth $O(\log^2(N+2)+\log^2(D+2))$, and syntactic degree exactly $D$ at the output. The construction uses only $0,1,-1$ constants and therefore specializes over every commutative ring. For comparison, every fan-in-two division-free circuit for this polynomial over a field has depth at least $\lceil\log_2 D\rceil$. The size bound is in the Macaulay dimension, which may be exponentially larger than the explicit list of coefficients.
+
+Use the Macaulay identity $A=\operatorname{Res}(F)\,B$, with $A$ the Macaulay determinant and $B$ its extraneous principal minor. Normalize signs so that the coefficient vector $a$ of the pure-power system $(X_0^{d_0},\ldots,X_n^{d_n})$ yields $A(a)=B(a)=\operatorname{Res}(a)=1$. Under the standard row and column indexing the Macaulay matrix is the identity there, as is the selected submatrix. In particular the reduced empty minor, when it occurs, is $1$. Since these determinants are homogeneous of degrees $N$ and $N-D$, respectively, $D\le N$. [Macaulay quotient construction](https://arxiv.org/html/2602.17904#S1.SS3.SSS1)
+
+Let $X$ denote the full vector of coefficient variables, and evaluate $A$ and $B$ on $a+tX$ over the ring of truncated series modulo $t^{D+1}$. Put $H=1-B(a+tX)$. It is divisible by $t$, so the reciprocal of $B$ modulo $t^{D+1}$ is $\sum_{j=0}^{D}H^j$ with no divisions. Build this sum by doubling pairs $(H^m,\sum_{j<m}H^j)$, using
+$$
+(H^m,\ S_m)\longmapsto ((H^m)^2,\ S_m(1+H^m)).
+$$
+Take any reached power of two $m>D$ and discard all coefficients above $D$. The identity shows that $A(a+tX)S_m$ agrees with $\operatorname{Res}(a+tX)$ modulo $t^{D+1}$. Its coefficient at $t^D$ is the homogeneous resultant on $X$.
+
+Use a standard division-free parallel determinant circuit of depth $O(\log^2 (N+2))$, such as Berkowitz, over the truncated-series coefficient ring. Its arithmetic operations cannot simply be multiplied by a log-$D$ overhead in depth to obtain the stated bound. Instead use the explicit Berkowitz product of the characteristic-polynomial transition matrices. Each matrix entry is a product of coefficient-affine rows, columns, and matrix powers, computed by balanced matrix multiplication and parallel prefix products. A coefficient-ring matrix multiplication, including truncated convolution, consists of one multiplication layer followed by an addition tree of depth $O(\log N+\log(D+2))$. There are $O(\log(N+2))$ matrix-multiplication rounds to obtain all required powers and combine the transition matrices, with polynomially many such matrices and powers. Since $D\le N$, all determinant rounds cost total depth $O(\log^2(N+2))$. The reciprocal doubling uses $O(\log(D+2))$ truncated-series multiplications of depth $O(\log(D+2))$. Standard coefficient dot products use polynomial size throughout. [Berkowitz, parallel determinant](https://doi.org/10.1016/0020-0190(84)90018-8)
+
+Keep every $t$ coefficient in its own gates. The coefficient of $t^j$ has syntactic degree at most $j$, because each multiplication reads only pairs of indices totalling $j$. The output has true degree $D$ over every field by the normalized multihomogeneous resultant identity, so its syntactic degree equals $D$. Finally a fan-in-two gate of level $h$ has syntactic degree at most $2^h$, which proves the stated lower bound. The reciprocal computation shares the use of monic quotient arithmetic in the earlier Geometric IPS proof, though the resultant circuit first applies it to a denominator with unit constant term. [Earlier geometric elimination](https://github.com/Dugongue/MathProofs/blob/3954e1b27a414b39cd0522cc230f852dd58c39af/GrochowCatalogueProofs/geometric-ips.md)
