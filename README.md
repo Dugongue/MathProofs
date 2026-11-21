@@ -1470,3 +1470,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightThird/RESULTS.md). The results give deterministic NC subgroup transversals and minimum faithful actions for Fitting-free permutation groups, polynomial-size symmetric linear proofs of the CFI equations, an extremal classification for prime-cyclic rational invariant fields, and exact answers on Nyström supermodularity, sign approximation, and Schurian intersection.
 <!-- grochow-eight-third:end -->
+
+
+<!-- grochow-eight-fourth:start -->
+### Ten open questions in symmetric complexity, invariant theory, and numerical linear algebra
+
+[Proofs and verification](GrochowEightFourth/RESULTS.md). The packet extends the square-symmetric permanent lower bound to every odd characteristic, identifies bounded-generator unique Remak products using fixed-dimensional Weisfeiler–Leman, and gives new results on modular invariant theory, Gaussian matrix-vector query complexity, and volume-sampling variance.
+<!-- grochow-eight-fourth:end -->

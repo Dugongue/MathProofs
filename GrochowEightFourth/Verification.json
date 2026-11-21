@@ -1,0 +1,30 @@
+{
+  "status": "VERIFIED",
+  "scope": "Two supporting mathematical statements. Other results are proved in prose.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "NumericalWitnesses.lean",
+      "sha256": "d46004f78d69e5e98675a1b8f17e48799a2bb8a131bfe5dbeeca072ab3d8adac",
+      "theorems": [
+        {
+          "theorem": "NumericalWitnesses.binary64ResidualCycle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "NumericalWitnesses.finiteWeightedCentered",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ]
+}
