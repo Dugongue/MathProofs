@@ -1680,3 +1680,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-iii:start -->
 - [Grochow catalogue proofs III](GrochowCatalogueProofsIII/README.md) — 25 additional catalogue entries, including explicit hitting sets for bounded Hasse derivative spaces in fixed finite characteristic. The Lean receipt covers the finite specialization lemma.
 <!-- grochow-catalogue-proofs-iii:end -->
+
+
+<!-- grochow-catalogue-proofs-iv:start -->
+- [Grochow catalogue proofs IV](GrochowCatalogueProofsIV/README.md) — 26 additional catalogue entries, including bounded-degree quantum graph isomorphism and semantic set-multilinear identity testing. The Lean receipt covers two supporting contraction inequalities.
+<!-- grochow-catalogue-proofs-iv:end -->

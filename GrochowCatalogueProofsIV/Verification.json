@@ -1,0 +1,31 @@
+{
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of the two four-cycle contraction inequalities used in GP-0679. The full catalogue arguments are written proofs.",
+  "receipts": [
+    {
+      "source": "BalancedContractionCertificates.lean",
+      "sha256": "399c52f418789ce568a6679aa53e29a1aeb0a7cfb4f8088bd0e0d36758314d32",
+      "used_in": [
+        "GP-0679"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueFourth.balanced_opposite_pair"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueFourth.near_boundary_all_large"
+        }
+      ]
+    }
+  ]
+}

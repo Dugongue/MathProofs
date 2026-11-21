@@ -1,0 +1,20 @@
+# Real Euclidean border rank belongs to the existential theory of the reals
+
+## GP-0205
+
+The real Euclidean border-rank threshold problem for rational three-tensors is in $\exists\mathbb R$ under deterministic polynomial-time many-one reductions. The input ranks and dimensions may grow. This gives the requested upper complexity classification and leaves the hardness direction open.
+
+Let $T$ have dimensions $a,b,c$, and write $N=abc$. If the threshold $r$ is at least $N$, each tensor has ordinary rank at most $N$ by its coordinate expansion. Threshold zero can be checked directly. For the remaining cases $1\le r<N$, introduce $r$ triples of factor vectors $u_\ell,v_\ell,w_\ell$ and consider the polynomial in these variables
+$$
+F= \sum_{i,j,k}\left(T_{ijk}-\sum_{\ell=1}^r
+       u_{\ell,i}v_{\ell,j}w_{\ell,k}\right)^2 .
+$$
+It has degree at most six and admits a dense polynomial encoding of polynomial bit length after clearing the rational denominators. For this purpose, a product of the entry denominators has bit length at most the sum of the input denominator lengths. The rank-at-most-$r$ set is the image of this factor parametrization. Its Euclidean closure contains $T$ exactly when the infimum of $F$ is zero. The factors need not be bounded and the infimum need not be attained.
+
+Consider the truth function of the formula $\exists (u,v,w)\,[F<\varepsilon]$ for one free variable $\varepsilon$. Applying the one-block real quantifier-elimination bound gives a Boolean combination of sign tests of univariate integer polynomials, each of degree and coefficient bit length at most $2^{P(s)}$ for a fixed polynomial $P$ and input bit length $s$. In particular the bound applies with one quantified block of $r(a+b+c)$ variables, one free variable, constant degree, and polynomial bit size. We use only the output size bound, without carrying out quantifier elimination. [Basu–Pollack–Roy, quantitative block elimination](https://www.math.purdue.edu/~sbasu/raag_survey2011_final-sep4-2014.pdf)
+
+Every nonzero root of a nonzero integer polynomial with coefficients of magnitude at most $H$ has absolute value at least $1/(H+1)$. Strip zero powers from the polynomial and apply the ordinary Cauchy bound to the reciprocal polynomial, whose leading coefficient is a nonzero integer. Hence all the nonzero sign polynomials have constant sign on a common positive interval $(0,2^{-2^{P'(s)}})$ for a fixed polynomial $P'$. An identically zero polynomial also has constant sign. Choose a positive $\eta$ strictly inside this interval by adding variables $z_0,\ldots,z_t$ fixed by $2z_0=1$, $z_{i+1}=z_i^2$, and taking $\eta=z_t$ for an integer $t>P'(s)$ polynomial in $s$. The polynomial bound can be fixed in the reduction. These equations describe the tiny number with polynomial encoding length.
+
+The existential formula with the squaring-chain variables and $F<\eta$ holds if $T$ is in the Euclidean closure, since arbitrarily accurate approximants then exist. Conversely, if it holds, the univariate truth function holds everywhere in the positive sign interval, implying arbitrarily accurate approximants and closure. This is a polynomial-size existential formula with rational coefficients over the reals. The construction uses the same quantitative idea as for general orbit-closure membership, applied directly to the fixed-rank parametrization rather than presuming a variable orbit-hardness reduction continues to the unit-tensor orbit. [Bläser–Ikenmeyer–Lysikov–Pandey–Schreyer, border-rank and orbit-closure context](https://arxiv.org/html/1911.02534) · [Prior explicit polynomial degenerations](https://github.com/Dugongue/MathProofs/tree/d7366c4348bc03f0e93cb8674db191de32ba58bf/PositivePolynomialBorderRank)
+
+The existential-real upper bound for approximate polynomial satisfiability uses the related one-block elimination method for rational systems with complex geometric solutions. The reduction above uses real tensor-factor coordinates throughout, as required for Euclidean real border rank. [Balaji–Shirmohammadi–Tavenas–Worrell, Theorem 16](https://arxiv.org/html/2610.00644#S6)
