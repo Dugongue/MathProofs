@@ -1698,3 +1698,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-v:start -->
 - [Grochow catalogue proofs V](GrochowCatalogueProofsV/README.md) — 26 additional catalogue entries, including the presented-module tensor reduction over finite rings, sharp random vertex-deck recovery, and a nonsmoothable length-43 fixed algebra. Includes two Lean-checked first-jet identities and an exact rank checker.
 <!-- grochow-catalogue-proofs-v:end -->
+
+
+<!-- grochow-catalogue-proofs-vi:start -->
+- [Grochow catalogue proofs VI](GrochowCatalogueProofsVI/README.md) — 26 additional catalogue entries, including the weighted conormal bound for non-squarefree determinant pencils, TOCI-completeness for a single mixed quartic, and two Lean-checked point-constraint identities.
+<!-- grochow-catalogue-proofs-vi:end -->

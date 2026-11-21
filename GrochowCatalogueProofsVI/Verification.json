@@ -1,0 +1,27 @@
+{
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of the coset intersection and online point-constraint identities in GP-0495. The complexity proof is written.",
+  "receipts": [
+    {
+      "source": "DynamicCosetCertificates.lean",
+      "sha256": "07b804eb5b4058b944a89c57f9b617613e0e4b89ae7acb98923e1508880fe6af",
+      "used_in": [
+        "GP-0495"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "GrochowCatalogueSixth.common_coset"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "GrochowCatalogueSixth.point_constraint"
+        }
+      ]
+    }
+  ]
+}
