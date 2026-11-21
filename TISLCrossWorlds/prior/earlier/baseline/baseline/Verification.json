@@ -1,0 +1,55 @@
+{
+  "atlas_entries": 78,
+  "scope": "Dense fixed-field deterministic polynomial-time many-one degrees over F3, with named extensions, alternate reduction models and structured tensor families.",
+  "research_proof_scope": "The full reductions, algorithm analyses and conditional consequences are written proofs. No conclusion decides the unrestricted degree equality or its negation.",
+  "lean": {
+    "version": "4.33.0",
+    "source": "AffineSwitchBridges.lean",
+    "sha256": "dbd74fb17454726535319794e22de3df1e5325900da64a3bb4288fd0d0d01dae",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "TISLNegativeAtlas.coset_sum_of_normalized_integer_weights"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "TISLNegativeAtlas.multiple_weights_act_trivially"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Independent kernel and axiom audit for the supporting additive-group identities only."
+  },
+  "bounded_controls": {
+    "cyclic_switch_and_sum_cases": 837,
+    "affine_weight_cases": 208496,
+    "coupled_systems": 320,
+    "nonzero_character_orbit_sizes": [
+      7,
+      26,
+      124
+    ],
+    "alternating_pin_configurations": 342,
+    "F9_bimap_identity_checks": 288,
+    "scalar_slice_ranks": 27,
+    "cross_checks_norm_cubic": 729,
+    "ternary_spectrum_valuation_cases": 2100,
+    "adversarial_blinding_answer_maps": 20736,
+    "KT_threshold_comparisons": 132651,
+    "adaptive_transcript_cases": 126,
+    "recursive_oracle_profiles": 563,
+    "simultaneous_shift_intertwiner_dimensions": 64,
+    "odd_affine_sum_controls_separate_worker": 1592
+  },
+  "proof_audit": "Previous extension reflection, cube-zero compiler, signed geometric descent distinction, and 110 lines of complexity were independently reviewed. Earlier formal implication lemmas required their listed premises. A placeholder proposition defined as True was not counted as evidence about absence of an AND compiler. The new linear aggregation was checked by two independent polynomial type-system packings. Finite controls test the named mechanisms and do not certify proofs for growing inputs.",
+  "priority": "Publication priority is unverified."
+}

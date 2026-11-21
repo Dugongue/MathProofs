@@ -1,0 +1,49 @@
+{
+  "new_technical_entries": {
+    "coefficient_rings": 11,
+    "algebra": 19,
+    "complexity": 18,
+    "descent": 19,
+    "total": 67
+  },
+  "world_comparisons": 29,
+  "scope": "Written proofs and named external theorems for fixed-field reduction degrees, coefficient rings, structured carriers, proof encodings and explicit oracle worlds. The unrestricted fixed-field collapse and its negation are undecided.",
+  "lean": {
+    "version": "4.33.0",
+    "source": "RingBridges.lean",
+    "sha256": "d1c669177837cf0da14cd25d2bea271b24c0f94b2d4fcbd93aad8b0012d890ad",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "CoefficientWorlds.cancel_formal_scalar"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "CoefficientWorlds.read_unit_coefficient"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Only the two supporting formal coefficient identities."
+  },
+  "bounded_controls": {
+    "formal_univariate_principal_covariance_cases": 384,
+    "rank_gate_vectors": 81,
+    "centroid_multiplier_candidates": 243,
+    "nonsingular_probe_lifts": 162,
+    "shear_product_identities": 7938,
+    "symmetric_alternating_lift_equations": 8624
+  },
+  "priority": "Publication priority is unverified."
+}

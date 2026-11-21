@@ -1,0 +1,53 @@
+{
+  "scope": "The square-zero carrier, its equivalence to the reduction question, the sharp tuple thresholds and the subclass reductions are written proofs. The unrestricted fixed-field equality and its negation are undecided.",
+  "prior_atlas_entries": 234,
+  "independent_mathematical_audit": "A separate worker independently checked the square-zero reflection and lift and the exact tuple threshold.",
+  "lean": {
+    "source": "TruncatedBridges.lean",
+    "sha256": "fcd127f4041236f6a3b49876cb5073b6d491263369a7dfe8d2bfda14aa518a01",
+    "version": "4.33.0",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "TISLAtlasClosure.truncated_exp_add"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "TISLAtlasClosure.truncated_log_exp"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "TISLAtlasClosure.truncated_exp_log"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Only the three listed truncated exponential/logarithm identities."
+  },
+  "bounded_controls": {
+    "square_zero_normalized_rank_two_cases": 48,
+    "square_zero_common_kernel_cases": 96,
+    "exponential_product_pairs": 59049,
+    "one_element_odd_centralizer_cases": 243,
+    "randomized_six_generator_space_tuple_cases": 70,
+    "cube_map_bracket_equations": 724,
+    "cube_map_equations": 76,
+    "cube_map_determinant_products": 8,
+    "injective_cube_map_rank_gate_vectors": 2187,
+    "semilinear_kronecker_determinants": 324,
+    "GL2_matrix_entry_pin_count": 18
+  },
+  "priority": "Publication priority is unverified."
+}

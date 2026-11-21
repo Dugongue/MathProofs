@@ -1376,3 +1376,10 @@ Pending formalizations:
 
 - [One-query reductions and the remaining scalar-centroid case](TISLSquareZeroDirect/RESULTS.md) proves that arbitrary repeated centroid blocks can be assembled into one ordinary TI query whenever their local signs can be compiled. It gives explicit local sign compilers and proves an equivalent restriction to scalar-centroid algebras with a split nonsingular slice. The unrestricted comparison remains open. Lean checked the supporting weighted incidence identity.
 <!-- tisl-square-zero-direct:end -->
+
+
+<!-- tisl-cross-worlds:start -->
+## Cross-world atlas for special-linear tensor isomorphism
+
+- [Cross-world atlas](TISLCrossWorlds/RESULTS.md) adds 67 technical entries and compares 29 worlds or joint assumptions. It gives a principal-determinant compiler over bounded-depth finite coefficient rings, exact local-ring and residue-field collapse equivalences, a signed ternary-to-ordinary integral reduction, and new algebraic and oracle comparisons. The unrestricted ternary equality remains open. Two supporting identities were independently checked in Lean.
+<!-- tisl-cross-worlds:end -->

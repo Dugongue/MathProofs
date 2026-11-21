@@ -1,0 +1,49 @@
+{
+  "scope": "The unconditional single ordinary TI compilers on the stated subclasses and the exact scalar-centroid restriction are written proofs. The unrestricted degree equality remains open.",
+  "lean": {
+    "version": "4.33.0",
+    "source": "IncidenceBridge.lean",
+    "sha256": "95ddaae129d4ecad71b237fa85eb068911384f75423f4786fcb82b704037fccd",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "SquareZeroDirect.incidence_potential"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Only the weighted row-and-column incidence identity."
+  },
+  "bounded_controls": {
+    "block_assembly_profiles": 5000,
+    "toy_centroid_dimensions_before_after": {
+      "5": [
+        6,
+        1
+      ],
+      "6": [
+        7,
+        1
+      ],
+      "7": [
+        8,
+        1
+      ]
+    },
+    "frobenius_scalar_identities": 108,
+    "regular_dual_unit_scalings": 648,
+    "non_frobenius_lift_identities": 1728,
+    "primary_quotient_cases": 68880,
+    "koszul_exponent_cases": 2650,
+    "quadratic_field_norm_cases": 8
+  },
+  "proof_audit": "The block criterion was checked against all permutations on the bounded profiles. The centroid control compares original and modified toy carriers; the full rank-tagged carrier and exact determinant reduction use the written proof.",
+  "priority": "Publication priority is unverified."
+}

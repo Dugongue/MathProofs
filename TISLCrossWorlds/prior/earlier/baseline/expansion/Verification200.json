@@ -1,0 +1,58 @@
+{
+  "original_entries": 78,
+  "added_entries": 156,
+  "total_entries": 234,
+  "chapters": {
+    "Algebra and compact groups": 40,
+    "Complexity, search and sampling": 40,
+    "Descent, arithmetic and geometry": 42,
+    "Linear algebra, counting and coupled comparisons": 34
+  },
+  "lean": {
+    "version": "4.33.0",
+    "sha256": "417f3dd275d13b2aa9b6356db8388c4ed00ed7f70b5f17a0a733c4db4e03f407",
+    "declarations": [
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "TISLAtlas200.complementary_channels"
+      },
+      {
+        "axioms": [
+          "Quot.sound"
+        ],
+        "theorem": "TISLAtlas200.trajectory_unique"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Two supporting identities only. Full reductions are written proofs."
+  },
+  "bounded_controls": {
+    "cyclic_complementary_channel_assignments": 28798,
+    "gap_count_normalizations": 2150,
+    "two_sided_rank_compressions": 31250,
+    "minimal_polynomial_coefficient_tests": 1068,
+    "planar_subgraph_matching_tests": 16,
+    "exponent_nine_associativity_cases": 19683,
+    "exponent_nine_commutator_cases": 729,
+    "exponent_nine_cube_cases": 27,
+    "exponent_nine_compatible_lift_multiplications": 4374,
+    "relational_parity_dimensions": 48,
+    "planted_target_blind_answer_maps": 20736,
+    "coherent_orbit_norm_cases": 10,
+    "birthday_bound_cases": 2210,
+    "primitive_element_bounds": 1500
+  },
+  "audit_notes": [
+    "Checked all entry numbers, linked anchors, source hashes and scope descriptions.",
+    "Browning\u2013Newton Theorem 1.4 gives exactly one half at each height for the specified biquadratic field, using the norm-class involution c \u21a6 \u2212c.",
+    "The explicitly enumerative small-mode running times give a polynomial regime at square-root-logarithmic dimension."
+  ],
+  "priority_scope": "Includes new proofs, prior project results and consequences of cited literature. Publication priority is unverified.",
+  "decision_scope": "The unrestricted fixed-field deterministic many-one equality and its negation remain open."
+}

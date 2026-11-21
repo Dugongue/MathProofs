@@ -1,0 +1,50 @@
+{
+  "lean": {
+    "version": "4.33.0",
+    "source": "NormAnchors.lean",
+    "sha256": "05126ebe8789720eef9a5125df4ceae7d5671661db662d4e7c5f860b9feae14a",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "Hypoworld.truncation_length_shift"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "Hypoworld.four_line_anchor_recovers_scalar"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Independent kernel and axiom checks for the four-line scalar calculation and the length-shift parity."
+  },
+  "written_proofs": "The tensor compilers, problem equivalences and complexity consequences are written mathematical proofs. The complete equivalence remains an open hypothesis.",
+  "catalogue": {
+    "equivalent_assertions": 10,
+    "additional_conditional_consequences": 18,
+    "scope": "Fixed base field with three elements, explicit extension degrees where stated, dense and compact inputs, and deterministic many-one or explicitly listed functional oracle models."
+  },
+  "finite_controls": {
+    "four_line_linear_and_semilinear_tests": 11568,
+    "balanced_weight_length_choices": 1792,
+    "chain_configurations": 5000,
+    "commutative_local_ring_tables": 72,
+    "ring_associativity_triples": 2955536,
+    "weighted_ring_lift_identities": 83152,
+    "heisenberg_quandle_self_distributivity_triples": 19683,
+    "heisenberg_quandle_displacement_permutations": 27,
+    "ordinary_or_equivalence_partitions": 15,
+    "determinant_count_tables": 2432,
+    "modular_count_cases": 48640
+  },
+  "priority": "Publication priority for the constructions is unverified."
+}
