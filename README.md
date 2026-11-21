@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- hessian-four:start -->
+- **[Four extensions of the fixed-Hessian construction](HessianFour/README.md)** — Identical slice similarity, recovery from singular schemes, rank intervals at fixed Hessian, and polynomial-time decoding in hidden bases.
+<!-- hessian-four:end -->
+
 <!-- symmetric-final-four:start -->
 - **[Four extensions of fully symmetric final-digit tensor isomorphism](SymmetricFinalFour/README.md)** — Fixed Hessian fibers, four ambient degeneration tests, stabilizer schemes, and exact determinant profiles and counts.
 <!-- symmetric-final-four:end -->
