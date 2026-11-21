@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tisl-pencils-orbits:start -->
+- **[Special-linear tensor isomorphism on pencils and structured tensors](TISLPencilsAndOrbits/README.md)** — A deterministic polynomial-time decision proof for every finite-field matrix pencil, generic three-slice orbit splitting, and determinant reductions through quadratic relations and centroid layers. The unrestricted reduction remains open.
+<!-- tisl-pencils-orbits:end -->
+
 <!-- tisl-synthesis:start -->
 - **[Same-field reductions toward special-linear tensor isomorphism](TISLSynthesis/README.md)** — Four scoped results on exterior constraints and castling, local Frobenius orientation, regular finite-field pencils, and determinant cosets. Includes written proofs and finite controls.
 <!-- tisl-synthesis:end -->

@@ -1,0 +1,42 @@
+# Moving the orientation to the multiplicity spaces of a nilpotent operator
+
+Let $K=\mathbb F_q$ be given in the usual explicit representation. A trilinear form $T$ on three based spaces is *concise* if its radical in each argument is zero. Its centroid $C_T$ consists of triples of operators whose insertions in the three slots of $T$ give the same trilinear form. Solve these equations by linear algebra. On a concise form the projections of the centroid into each mode are injective. The centroid is a commutative algebra under componentwise composition. Indeed one can move two insertions into different slots and then move them back in either order using the third slot. Conciseness gives commutation and closure under composition. An isomorphism of forms conjugates all three actions and induces an algebra isomorphism of the centroids. These classical constructions apply to the three independently based arguments. [Brooksbank, Maglione and Wilson, *Tensor isomorphism by conjugacy of Lie algebras*](https://arxiv.org/abs/2005.04046)
+
+**Theorem.** Suppose the source is concise and $C_T\simeq K[t]/(t^h)$, with $h\ge2$. In mode $i$ let $m_{ik}$ count the nilpotent Jordan blocks of length $k$ for multiplication by $t$. Set
+$$
+w=\max\bigl(\{m_{ik}:1\le k\le h,\ (q-1)\nmid k\}\cup\{0\}\bigr).
+$$
+There is a deterministic same-field reduction from literal special-linear equivalence with an arbitrary target to one ordinary tensor-isomorphism pair, in $2^{O(w)}\operatorname{poly}(N,\log q)$ time and output size for dense input of length $N$. The centroid, its generator and all multiplicity spaces are recovered from the entries. In particular the reduction is polynomial if the multiplicities at the indicated lengths are $O(\log N)$. All multiplicities at other lengths can be arbitrarily large.
+
+### Recognition and recovery
+
+Check conciseness and compute the centroid with its unit and multiplication table. Its nilradical $J$ over $K$ is the kernel of $c\mapsto c^{q^b}$ with $q^b\ge\dim C$ and $b$ the least such nonnegative integer. This is a $K$-linear map. Nilpotents of a commutative algebra have nilpotence index at most its dimension, and an element with a zero power is nilpotent. Evaluation on a basis needs only repeated squaring. Require $\dim C/J=1$, $\dim J/J^2=1$ and $h=\dim C\ge2$. Choose $t$ in $J$ nonzero modulo $J^2$. Since $J=(t)+J^2$ and $J$ is nilpotent, substitution gives $J=(t)$. The powers of $t$ then span $C$ together with its unit and form the required truncated-power basis. Verify their ranks directly. Run the same checks for the target and compare all block counts. Failure on a target rules out equivalence with the promised source.
+
+Write $D$ for the action of this $t$ on one mode $V$. For each $k$ use the quotient
+$$
+E_k=\ker D^k/(\ker D^{k-1}+D\ker D^{k+1}).
+$$
+On a length-$l$ Jordan chain, $E_k$ sees exactly the top vector when $l=k$. Every other chain contributes zero. Thus $E_k$ has dimension $m_k$. Its two defining subspaces and the line $J/J^2$ are intrinsic: replacing $t$ by $t$ times a unit does not change any of the kernels or their images in this formula. Choose a basis of each $E_k$ and arbitrary lifts in $\ker D^k$. Taking each lift and its iterates under $D$ up to order $k-1$ gives a basis of $V$. Indeed their top vectors form a basis of $V/DV$, by the filtration there induced by $\ker D^k$. They generate over $K[t]$ by nilpotence, and their total chain length is $\dim V$. Order these vectors identically for source and target by index triples. Write $b_i^S,b_i^T$ for the determinants of the resulting chain frames in the original mode-$i$ bases.
+
+### The determinant character
+
+Take an ordinary transporter $H_i:V_i^S\to V_i^T$ of the trilinear data in argument convention. Its centroid isomorphism sends $t_S$ to $a t_T$ modulo $J_T^2$ for some common $a\in K^\times$. Denote its matrices on the multiplicity spaces by $G_{ik}$. Then in the original bases
+$$
+\det H_i=\frac{b_i^T}{b_i^S}\,
+a^{\sum_k m_{ik}\binom{k}{2}}\prod_k(\det G_{ik})^k. \tag{1}
+$$
+To prove the formula fix a mode. The quotient $D^jV/D^{j+1}V$ is the image of $V/DV$ under $D^j$, with kernel the image of $\ker D^j$ there. In the filtration by the images of $\ker D^k$, the quotient therefore retains exactly $E_k$ with $k>j$. Source-to-target transport on its $E_k$ factor has matrix $a^j G_k$, since substituting $a t_T$ plus terms of degree at least two into $t_S^j$ gives $a^j t_T^j$ modulo $t_T^{j+1}$. Multiply the determinants for $0\le j<k$ and include the change from chain frames to the original bases. This proves (1), including all maps which mix or shear chains. An independent Lean check covers the product of the scaled matrix determinants for a fixed length and multiplicity. [Lean source](LayerDeterminants.lean)
+
+### One ordinary instance
+
+Keep the entire original form as a relation in a system of vector spaces and multilinear maps. Include the centroid algebra and its three actions. For a putative transporter these enforce $H_i(c v)=\sigma(c)H_i(v)$ with the same $\sigma$ on all three legs. Conversely the induced $\sigma$ of any original transporter supplies these maps. Include $J^2\subseteq J\subseteq C$ with inclusions and projection onto $J/J^2$. Similarly include the kernels, denominator inclusions and quotient maps defining every $E_k$ whose determinant appears. These maps force precisely the induced transports, while allowing all original off-diagonal coefficients.
+
+If $(q-1)\mid k$, the corresponding determinant in (1) raised to the $k$th power is one for every $K$-point. For each remaining positive $m_{ik}$ adjoin exterior powers of $E_{ik}$ through its top, with their usual multiplication by degree one. They force the induced action on the final line to be $\det G_{ik}$ in the chosen quotient bases. Adjoin one-dimensional spaces with ordinary multiplication maps to multiply or exponentiate these line actions. Finally prescribe the scalar on the product line for mode $i$ to be $b_i^S/b_i^T$. For example, marking vectors $1$ on the source product line and $b_i^S/b_i^T$ on the target pins exactly this scalar. The input tensor, centroid actions, inclusion diagrams and product lines now form one simultaneous isomorphism problem. A witness extends in one direction by its induced actions. In the other direction its restriction to the original spaces transports the original tensor and has the three required determinants by (1). All choices and witnesses stay over $K$. Coefficient and argument conventions invert the relevant determinants when dualized and preserve the condition that each is one.
+
+There are polynomially many spaces and maps, of total dimensions $2^{O(w)}\operatorname{poly}(N)$. A linked system of linear, bilinear and trilinear data of this size encodes as one ordinary tensor with polynomial overhead, as detailed in the [encoding note](Encoding.md). Characteristic two uses the alternating quotient definition of exterior powers. All coefficient operations here have polynomial bit cost over explicitly represented finite fields.
+
+### An unbounded family and what the exponent buys
+
+Take any concise base trilinear form $\tau$ with scalar centroid and let $R=K[t]/(t^h)$. Extend its coefficients to $R$ on free modules and take the coefficient of $t^{h-1}$ of its values to obtain a $K$-form. This form is concise: the pairing on $R$ given by taking the same coefficient of a product is perfect, and conciseness of the three flattenings survives scalar extension. Its centroid contains $R$. Every centroid element therefore commutes with $R$ and is $R$-linear. Testing the insertion identities after multiplying one argument by every power of $t$ recovers the full $R$-valued identities by perfectness. Those identities are the scalar extension of the defining linear equations for the base centroid, so the full centroid is exactly $R$. Every chain now has length $h$. If $q-1$ divides $h$, the theorem gives $w=0$ regardless of the three base dimensions. Over $\mathbb F_3$ even the dual numbers, $h=2$, suffice. The three corrections reduce to $a^{m_{i2}}=b_i^S/b_i^T$; an odd mode rank can still detect orientation. The compiler keeps the tensor relation, so deciding the remaining ordinary equivalence can still be difficult.
+
+The same filtration proof applies to arbitrary tensors with these centroids and module lengths, including tensors without a scalar-extension presentation. A scalar centroid gives no nilpotent chain. The unrestricted reduction would have to handle those inputs too.
