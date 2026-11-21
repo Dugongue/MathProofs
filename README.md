@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- scalar-centroid-orientation:start -->
+- **[Determinant records for scalar-centroid cube-zero algebras](ScalarCentroidOrientation/README.md)** — Exact dual relation orientation and a two-centroid normal form, with one ordinary ternary TI instance on stated syzygy, graph and odd-orbit classes. Written proofs with three Lean-checked supporting lemmas.
+<!-- scalar-centroid-orientation:end -->
+
 <!-- cubic-transporters-and-ti:start -->
 - **[Cubic transporters and special-linear tensor isomorphism](CubicTransportersAndTI/README.md)** — Exact ring-valued cubic transporters preserve the ternary sign in the cube-zero normal form. Frobenius and centroid determinant records and paired-adjoint corrections give single ordinary TI instances on stated classes. Written proofs with four Lean-checked supporting lemmas.
 <!-- cubic-transporters-and-ti:end -->
