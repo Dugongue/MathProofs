@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-far-dag:start -->
+- **[Four distant bridges to Grochow's work](GrochowFarDAG/README.md)** — Written proofs of graph isomorphism within one integral tensor genus, unitary Pauli-basis equivalence through ordinary class-two groups, a sharp one-permanent approximation for hypergraphic matroid unions, and exact rotor-routing compression on ribbon covers. Includes finite controls, one Lean-checked auxiliary lemma, and proposed placements in the research briefing.
+<!-- grochow-far-dag:end -->
+
 <!-- grochow-holonomy-advances:start -->
 - **[Four advances on tensor isomorphism from holonomy](GrochowHolonomyAdvances/README.md)** — Informal proofs of GI reductions for higher-dimensional field-multiple blocks, noncommutative semisimple holonomy, commuting holonomy with nilpotent radicals, and unbounded cycle length under a local cycle-rank bound. Includes exact isomorphism counts in the field-multiple class, cactus GI-completeness, finite controls, and a Lean-checked auxiliary generator-agreement lemma.
 <!-- grochow-holonomy-advances:end -->
