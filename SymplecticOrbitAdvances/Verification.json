@@ -1,0 +1,34 @@
+{
+  "lean_version": "4.33.0",
+  "scope": "Supporting lemmas for spectral separation, the cyclic weight recurrence, and the invariant degree count. The four tensor statements have written proofs.",
+  "files": [
+    {
+      "path": "SymplecticOrbitAdvances.lean",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SymplecticOrbitAdvances.tagSpectrumBounds"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "SymplecticOrbitAdvances.cyclicWeightLabels"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SymplecticOrbitAdvances.separatorDegreeFromCounts"
+        }
+      ],
+      "sha256": "e4d994539308d4138b95ee3269956fb799df24cd9df81d3152e2a5aabc68ce7f"
+    }
+  ]
+}

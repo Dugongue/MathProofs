@@ -1577,3 +1577,8 @@ Pending formalizations:
 <!-- diagonal-tensor-local-global:start -->
 - [Four local–global theorems for geometrically diagonal tensors](DiagonalTensorLocalGlobal/RESULTS.md) — exponential minimum isomorphism field degree, an optimal signed genus bound for abelian Galois fields, a complete side-four signed classification, and exact signed counts at the side-six ordinary failures.
 <!-- diagonal-tensor-local-global:end -->
+
+
+<!-- symplectic-orbit-advances:start -->
+- [Four symplectic orbit-closure advances](SymplecticOrbitAdvances/RESULTS.md) — a dichotomy for fixed tensor tuple formats, TOCI-completeness for one symmetric cubic or alternating three-form, exponential separating degrees, and transfer of normality and rational singularities.
+<!-- symplectic-orbit-advances:end -->
