@@ -1,0 +1,52 @@
+{
+  "status": "VERIFIED",
+  "scope": "One finite combinatorial witness and three supporting algebraic statements. Full proof drafts are written in prose.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "SupportingIdentities.lean",
+      "sha256": "89356848be0459fd920175955bca50c287bd8d06b11131a7bf76d996423d7a7e",
+      "theorems": [
+        {
+          "theorem": "signCubicNormalEquations",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "signCubicCriticalBounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "theorem": "nystromContrastIdentity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "BalancedTriples.lean",
+      "sha256": "547481ed47056678dcc3c2a8fbf82670e894c0f3b5ba67116b648b9cbe5fcced",
+      "theorems": [
+        {
+          "theorem": "BalancedTriples.balancedTriplesCounterexample",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ]
+}

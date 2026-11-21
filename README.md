@@ -1459,3 +1459,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightFollowup/RESULTS.md). The same-prime class reduction extends to the Lazard boundary. The surjective compositional decoder for mixed exponents has an exponential obstruction. The proof-complexity results give sharp linear bounds for positive-characteristic matrix problems and disprove bounded-degree reversal of the original FGS rank markers. Further results address matching polytopes, graph symmetries, weighted homomorphism tests, and tensor networks.
 <!-- grochow-eight-followup:end -->
+
+
+<!-- grochow-eight-third:start -->
+### Nine open questions in group algorithms, invariants, and matrix approximation
+
+[Proofs and verification](GrochowEightThird/RESULTS.md). The results give deterministic NC subgroup transversals and minimum faithful actions for Fitting-free permutation groups, polynomial-size symmetric linear proofs of the CFI equations, an extremal classification for prime-cyclic rational invariant fields, and exact answers on Nyström supermodularity, sign approximation, and Schurian intersection.
+<!-- grochow-eight-third:end -->
