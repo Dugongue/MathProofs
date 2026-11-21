@@ -1394,3 +1394,10 @@ Pending formalizations:
 
 - [The 520-entry atlas](TISLWorlds500/RESULTS.md) adds 219 technical entries and compares both branches of 47 premises against the ternary equality and strictness worlds. It includes an oriented boundary promise, mixed-characteristic determinant profiles, a finite-extension transfer to ordinary free polynomial-ring tensors, and quotient-volume compilers. The unrestricted reduction remains open. Lean verified two supporting scalar identities.
 <!-- tisl-worlds-500:end -->
+
+
+<!-- tisl-directional-gap:start -->
+## The ternary directional sign-gap promise
+
+- [Directional sign-gap theorem](TISLDirectionalGap/RESULTS.md) proves that either rail of the ordinary-positive directional promise compiles to one ordinary TI query exactly when signed ternary nonisomorphism does. The ordinary nonisomorphism reduction supplies an explicit ordinary witness. It also gives a deterministic algorithm for bounded support rank and an exact witnessed-promise variant. Lean verified four supporting identities.
+<!-- tisl-directional-gap:end -->

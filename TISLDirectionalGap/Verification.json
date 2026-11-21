@@ -1,0 +1,56 @@
+{
+  "scope": "Written tensor and algebra constructions prove the conditional equivalences. No unconditional unrestricted compiler is claimed.",
+  "worker_source_sha256": {
+    "RESULTS.md": "cca8c19f42e9e47d9a7a44769fec0e16d0fd46f62059879cce8f2c92258d4921",
+    "algebra.md": "56de20bb91384cb65009c49ccfe387a038f00c7fdea3c5f961d88fb3407dacda",
+    "group.md": "19f3bade928ebbe17236e7db8b6a63c8c6ee752846a63a1cf285593e5ac86cac",
+    "complexity.md": "beb47a76ca5ba6fb8be4c3bc1e4331c2921a0ba9ceec2785e8d861919f58f518"
+  },
+  "lean": {
+    "version": "4.33.0",
+    "source": "DirectionalGap.lean",
+    "sha256": "dd14e0a1826f84228b199cf5be12a323891319ec9eee66d52710673465504eb3",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "DirectionalGap.diagonal_reads_positive"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "DirectionalGap.diagonal_reads_negative"
+      },
+      {
+        "axioms": [],
+        "theorem": "DirectionalGap.padded_reads_absence"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "DirectionalGap.promise_guard"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Two shifted-diagonal identities, the padded absence identity and the positive promise guard."
+  },
+  "exhaustive_sign_controls": {
+    "subspaces": 16,
+    "profiles_including_empty": 52,
+    "character_profile_checks": 364,
+    "witness_coset_checks": 128,
+    "product_unit_sign_cases": 2
+  },
+  "priority": "Publication priority is unverified."
+}
