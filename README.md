@@ -1521,3 +1521,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightEighth/RESULTS.md). The packet gives the exact first obstructed degree for symmetric permanent projection, full-support matrices with vanishing maximal permanents, complete even-polygon characteristic-two moment cutoffs, abelian conjugacy witness recovery, and exact minimum faithful permutation actions for odd-order nilpotent groups.
 <!-- grochow-eight-eighth:end -->
+
+
+<!-- grochow-eight-ninth:start -->
+### Ten results on finite group actions, elementary-symmetric circuits, and random Ritz values
+
+[Proofs and verification](GrochowEightNinth/RESULTS.md). The results include uniform NC construction of minimum faithful nilpotent-group actions, NP-complete cubic symmetric recognition over two fixed fields, exact odd-characteristic modular dihedral cutoffs, affine search-to-decision, and uniform normal Ritz conditioning and distribution formulas.
+<!-- grochow-eight-ninth:end -->
