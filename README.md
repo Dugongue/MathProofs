@@ -1543,3 +1543,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightTenth/RESULTS.md). This packet proves single-orbit recovery for all finite odd-order orthogonal actions, stable Gram decoding, fixed-parameter cubic recognition, a quartic exact-versus-border separation, constructive algorithms for Hall extensions and scalar-affine conjugacy, and quantitative coordinate spectral separation.
 <!-- grochow-eight-tenth:end -->
+
+
+<!-- grochow-eight-eleventh:start -->
+### Eight results on tensor approximation, group actions, and algebraic complexity
+
+[Proofs and verification](GrochowEightEleventh/RESULTS.md). This packet gives a strict tree tensor approximation improvement, refutes Yu's Conjecture A6.2, proves factor closure for VNP over finite-imperfection-degree fields, and proves scoped results on permutation-group algorithms, Gram recovery, dihedral invariants, and sparse product Hamiltonians.
+<!-- grochow-eight-eleventh:end -->

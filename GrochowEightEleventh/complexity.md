@@ -1,0 +1,62 @@
+# A full-spark permanental-rank threshold and factor closure over imperfect fields
+
+These are informal proofs. The first refutes the proposed improvement to a permanental-rank width bound. The second proves factor closure of $\mathsf{VNP}$ over fields of finite imperfection degree.
+
+<a id="permanental-rank"></a>
+
+## 1. Full-spark Cauchy matrices refute Yu's Conjecture A6.2
+
+**Theorem.** For every $n\ge2$, there is a real $n\times(2n-2)$ matrix all of whose maximal minors are nonzero and all of whose maximal subpermanents vanish. The same existence result holds over every algebraically closed field of characteristic different from two. In particular, for $n\ge4$, restriction to any $\lceil3n/2\rceil$ of its columns disproves Conjecture A6.2. The example attains the largest possible width in characteristic zero by the $2n-1$ guarantee in Corollary A6.1. [Yang Yu, *The Permanent Rank of a Matrix (Part Two)*, A6.1–A6.2](https://www.preprints.org/manuscript/202603.0035)
+
+**Construction of the column parameters.** Choose distinct scalars $a_1,\ldots,a_n$, and set
+$$
+P_i(z)=\prod_{\ell\ne i}(z-a_\ell)^2,\qquad G(z)=\sum_i P_i(z).
+$$
+We choose $\lambda$ so that $F(z)=P_1(z)+\lambda G(z)$ has $2n-2$ distinct finite roots $b_j$, none equal to an $a_i$. Over the reals, take small negative $\lambda$. Around each $a_i$, $i\ge2$, fix a small interval with endpoints different from all the $a_j$, with these intervals disjoint and excluding $a_1$. The polynomial $P_1$ is positive at those endpoints, and remains positive there after adding $\lambda G$ for small $|\lambda|$. At $a_i$ it has value $F(a_i)=\lambda P_i(a_i)<0$. The intermediate value theorem gives two distinct roots in each interval, thus the full number of roots by degree. The values at the poles are nonzero if also $\lambda\ne-1$.
+
+Over an algebraically closed field of characteristic different from two, $P_1,G$ are coprime because $G(a_i)=P_i(a_i)\ne0$ at every root $a_i$, $i\ge2$, of $P_1$. The rational function $P_1/G$ has a zero of exact order two there, so its derivative is nonzero in the field of rational functions. Any multiple root of $P_1+\lambda G$ is off the roots of $G$ and must be a zero of this derivative. There are only finitely many such points and hence finitely many values of $\lambda$ to exclude. Also exclude $0,-1$, and a value making the leading coefficient zero if there is one. The resulting polynomial has the required roots.
+
+**Cauchy matrix and its permanents.** Set $M_{ij}=(b_j-a_i)^{-1}$. Any $n$ columns form an invertible matrix: if a row relation exists, the numerator of $\sum_i u_i/(z-a_i)$, of degree at most $n-1$, has $n$ distinct roots at the selected $b_j$. It is zero, and evaluating the numerator at $a_i$ then gives $u_i=0$ for every $i$.
+
+On the other hand, the nonzero row vector $c=(1+\lambda,\lambda,\ldots,\lambda)$ kills the entrywise square of $M$, since
+$$
+\sum_i \frac{c_i}{(b_j-a_i)^2}
+=\frac{F(b_j)}{\prod_i(b_j-a_i)^2}=0 .
+$$
+Borchardt's identity for a square Cauchy matrix $C$ is
+$$
+\det(C^{\circ2})=\det(C)\operatorname{per}(C).
+$$
+Here is a proof valid as an identity of rational functions in any characteristic. Induct on the size, making the last column parameter $z$ variable. The determinant of the original matrix, times $\prod_i(z-a_i)$, is a polynomial of degree at most $n-1$ with distinct roots at the other $n-1$ column parameters. It is nonzero by the row-independence argument above, so these zeros are simple and the determinant has order $z^{-1}$ at infinity. The squared-entry determinant also vanishes when the last column duplicates an earlier one. Therefore its ratio to the original determinant has no poles at those parameters, has at most simple poles at the $a_i$, and tends to zero at infinity. Laplace expansion on the last column shows its coefficient of $(z-a_i)^{-1}$ is the ratio of the two determinants for the corresponding smaller Cauchy matrix, since the signs cancel. This equals the permanent of the smaller matrix by induction. Expansion of the permanent on the last column has exactly the same simple-pole coefficients and also tends to zero at infinity. The two rational functions therefore agree. [Borchardt identity in the primary literature](https://math.iisc.ac.in/~manju/GAF_book.pdf)
+
+Each maximal square submatrix of $M$ has singular entrywise square, so Borchardt's identity gives the required zero permanent. Moreover the entrywise square of $M$ has rank exactly $n-1$: any vector in its left kernel corresponds to a numerator $\sum_i c_iP_i$ of degree at most $2n-2$ vanishing at all the $b_j$, which must be proportional to $F$. The numerator determines the coefficients by evaluation at the $a_i$. Thus some $(n-1)$-minor of the entrywise square is nonzero, and Borchardt's identity gives permanental rank exactly $n-1$. $\square$
+
+
+<a id="vnp-factor-closure"></a>
+
+## 2. Factor closure of $\mathsf{VNP}$ over fields of finite imperfection degree
+
+**Theorem.** Let $K$ be a fixed field of characteristic $p>0$ with $[K:K^p]=p^t<\infty$. Then $\mathsf{VNP}_K$ is closed under taking factors over $K$. This includes $\mathbb F_p(t_1,\ldots,t_s)$ for every fixed $s$, in particular the explicit example in Open Problem 4.6.1. Over any infinite field of characteristic $p$, an irreducible factor $g$ of a $\mathsf{VNP}$ family with multiplicity $m$ has $g^{p^{v_p(m)}}\in\mathsf{VNP}$ over that same field. The proof uses finite imperfection degree only to remove this power. [Bhargav–Dwivedi–Saxena, Open Problem 4.6.1](https://eccc.weizmann.ac.il/report/2025/083/revision/1/download)
+
+We use nonuniform arithmetic circuits. All degrees and numbers of variables are polynomially bounded by a parameter $D$. Finite fields were already covered by Bhargav, Dwivedi and Saxena, so assume $K$ infinite. Linear combinations, polynomially many products, small bounded-degree substitutions, and coefficient extraction in an extra variable of polynomial degree preserve $\mathsf{VNP}$. Coefficient extraction uses interpolation over the infinite field. It permits Hasse differentiation and selection of any residue class of a variable's exponents, dividing the selected exponents after subtracting their residue. We also use the standard closure under composing a polynomial-size, polynomial-degree arithmetic circuit with polynomially many $\mathsf{VNP}$ polynomials. The parse-tree construction homogenizes through the degree bound and absorbs degree-zero gates into scalar edge weights, so each tree has at most polynomially many variable leaves and nodes. Give each leaf separate Boolean witness bits for its substituted polynomial. A polynomial-size Boolean computation checks the tree and its values. For its arithmetic verifier, guess a gate-value trace and multiply the constant-degree indicators of the gate equations, giving a unique valid trace for each accepted encoding with no factor from unused bits. This keeps the degree and circuit size polynomial. [Factor theorem over finite fields](https://doi.org/10.1145/3618206.3649743) · [Closure operations and parse-tree implementation](https://eccc.weizmann.ac.il/report/2025/083/revision/1/download)
+
+**Coprime recovery.** If $F=AB$ with $A,B$ coprime and $F\in\mathsf{VNP}_K$, make $F$ monic in $y$ by a generic linear change and constant rescaling. The top coefficient in that direction is a nonzero constant, so both factors are monic after rescaling. Choose $x=b$ in the other coordinates where $A(b,y)$, $B(b,y)$ are coprime, by the nonzero resultant. Write $F(b+tx,y)=\sum_i t^i F_i$ and similarly $A_i,B_i$ for the factors. Nonuniformly $A_0,B_0$ are known polynomials in $y$ over $K$. At order $i>0$,
+$$
+A_i B_0 + A_0 B_i = F_i-\sum_{j=1}^{i-1} A_j B_{i-j}.
+$$
+The linear map on the left from pairs of $y$-degrees below those of $A,B$ to polynomials of $y$-degree below $\deg_y F$ is injective by coprimality, hence bijective by dimension. Inverting this constant map at each step builds the coefficients of $A_i,B_i$ by a polynomial-size circuit in the coefficients of the $F_j$ for $j>0$. Giving these inputs weight $j$, the outputs at order $i$ have weighted and hence ordinary degree at most $i$. Interpolation in $t,y$ and bounded-degree composition thus put all $A_i$ in $\mathsf{VNP}$. Setting $t=1$ and reversing the affine changes gives $A$.
+
+
+**Isolating the multiplicity power.** Let nonconstant irreducible $g$ occur with exact multiplicity $m$ in $F$. Pick a variable $y$ appearing in $g$, writing $x$ for the others, and let $P_0$ be the largest power of $p$ dividing all its $y$-exponents. Write $g(x,y)=h(x,y^{P_0})$. The polynomial $h(x,Y)$ is irreducible, since a factorization would give one for $g$, and $h_Y\ne0$ by maximality of $P_0$.
+
+Write $F(x,y)=\sum_{j=0}^{P_0-1}y^j F_j(x,y^{P_0})$ by grouping $y$-exponents by residue. Every $F_j(x,Y)$ is divisible by $h^m$, by performing the same grouping on $F/g^m$. Some $F_j$ has exact multiplicity $m$, since otherwise $g^{m+1}$ divides $F$. That $F_j$ is in $\mathsf{VNP}_K$ by interpolation and coefficient selection. Put $P=p^{v_p(m)}$, $s=m-P$, and apply the Hasse derivative of order $s$ in $Y$ to $F_j=h^mU$. The result has exact $h$-adic order $P$. In $[z^s]h(x,Y+z)^m U(x,Y+z)$, each term loses at most $s$ factors of $h$. The only terms losing exactly $s$ take first derivatives on $s$ copies of $h$. Their coefficient after dividing by $h^{m-s}$ modulo $h$ is
+$$
+\binom ms h_Y^sU.
+$$
+The binomial coefficient $\binom ms=\binom mP$ equals $m/P$ in $K$, from $(1+z)^m=(1+z^P)^{m/P}$, and neither $h_Y$ nor $U$ is divisible by $h$.
+
+Define $\widehat h(x,Z)$ by $\widehat h(x,Y^P)=h(x,Y)^P$. It is irreducible. Otherwise a nontrivial factor pulled back under $Z=Y^P$ is a scalar multiple of $h^r$ for $0<r<P$, and has every $Y$-exponent divisible by $P$. Writing $r=p^a u$ with $p\nmid u$, the support of $h^r=(h^u)^{p^a}$ then forces the exponents of $Y$ in $h^u$ to be divisible by $P/p^a>1$. This contradicts $(h^u)_Y=u h^{u-1}h_Y\ne0$. Compress the Hasse derivative by residue classes of $Y$-exponents modulo $P$. All resulting polynomials are divisible by $\widehat h$, and some has multiplicity exactly one, since $h^{2P}$ does not divide the derivative result. Coprime recovery of $\widehat h$ from that polynomial followed by $Z=y^{P_0P}$ puts $g^P$ in $\mathsf{VNP}_K$. The sizes, degrees and exponents in these operations are polynomially bounded. No factor-finding algorithm is needed for these nonuniform choices.
+
+**Removing the power and descending.** If $g^P\in\mathsf{VNP}_K$, then $g\in\mathsf{VNP}_{K^{1/P}}$ by filtering and rescaling parse trees. To spell this out, write the verifier as a sum over ordered parse trees after the positive-degree homogenization described above. Guess the Boolean assignment and the tree. Keep exactly the trees for which every exponent of an ordinary variable is divisible by $P$. Divide those exponents by $P$ and replace each scalar edge weight by its unique $P$-th root in $K^{1/P}$. The Boolean inputs remain $0$ or $1$. The counts, divisions of exponents and selection of edge weights use polynomially many Boolean operations on polynomial-size tree encodings. The gate-trace verifier keeps degrees polynomial. The new monomial weight can be written using the selected scalar factors and selected powers of the ordinary variables, with polynomially bounded exponents. Every surviving parse term is precisely the inverse Frobenius image of its original coefficient, together with its exponent vector divided by $P$. Inverse Frobenius is additive and multiplicative on $K$, so these terms sum to $g$. Terms with nondivisible exponent vectors were irrelevant because $g^P$ has no such monomials.
+
+Frobenius identifies $K^{1/P}/K$ with $K/K^P$, so its degree is $P^t$ by iterating $[K:K^p]=p^t$. Since $P\le m\le D$ and $t$ is fixed, this degree is polynomially bounded. Choose a $K$-basis containing $1$ and use the constant multiplication table to simulate arithmetic of the extension coordinatewise, with polynomial overhead. Apply the $K$-linear projection onto the coordinate of $1$ to the verifier output. The projection commutes with the Boolean sum and returns $g$ because $g\in K[x,y]$. Hence $g\in\mathsf{VNP}_K$. Any other factor is a scalar times a product of polynomially many such irreducibles, counted with multiplicities, and polynomially many products preserve $\mathsf{VNP}$. This proves the claimed closure. $\square$

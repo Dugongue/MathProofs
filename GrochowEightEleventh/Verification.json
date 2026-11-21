@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "scope": "Scalar inequality for the swapped projection branch. All eight research statements have paper proofs.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "TreeSwapApproximation.lean",
+      "sha256": "c50c2c6b646426d6de8ddaced57ff4b51f47e3cb60acb41e842d15fd2871f768",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TreeSwapApproximation.swapBeatsBaseline"
+        }
+      ]
+    }
+  ]
+}
