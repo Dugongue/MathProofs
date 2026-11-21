@@ -1592,3 +1592,8 @@ Pending formalizations:
 <!-- affine-conjugacy-advances:start -->
 - [Four advances in permutation-group conjugator search](AffineConjugacyAdvances/RESULTS.md) — a polynomial-degree quotient marker, search and full normalizers for polynomial-order groups, arbitrary coupling of nonabelian simple affine complements, and exact affine conjugator counting.
 <!-- affine-conjugacy-advances:end -->
+
+
+<!-- matrix-pc-advances:start -->
+- [Matrix Polynomial Calculus advances](MatrixPCAdvances/RESULTS.md) — exact conjugacy, rectangular inverse and weak-rank degrees, plus sharp degree and exponential sparse-size lower bounds for arithmetic noncongruence. Written proofs with Lean checks of supporting lemmas.
+<!-- matrix-pc-advances:end -->

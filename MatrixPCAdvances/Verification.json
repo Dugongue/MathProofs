@@ -1,0 +1,60 @@
+{
+  "status": "Written proofs with independent Lean kernel and axiom checks of the listed supporting lemmas.",
+  "main_results": "The four principal mathematical theorems are proved in the accompanying Markdown files. They are outside the scope of the Lean file.",
+  "lean_version": "4.33.0",
+  "files": [
+    {
+      "path": "MatrixPCAdvances.lean",
+      "sha256": "b7bd6ba7b99eb455bac3e0e177b1cccfba3fce49caa5356655ac3dd8a9b5d34e",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "MatrixPCAdvances.failedPrefixIsOld"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "MatrixPCAdvances.residualBudget"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "MatrixPCAdvances.gainedRowBudget"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "MatrixPCAdvances.lostRowBudget"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "MatrixPCAdvances.plateauWindow"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "MatrixPCAdvances.nonsquarePowerContradiction"
+        }
+      ]
+    }
+  ],
+  "finite_controls": "Exact modular Gaussian elimination verified normalized existence and surjectivity of restriction for (small side, large side, degree, prime) = (1,3,1,2), (1,4,1,3), (3,6,2,3), (3,9,2,3), (3,8,2,5). These are finite controls for the design-extension boundary.",
+  "priority": "Publication priority is unverified."
+}
