@@ -1,0 +1,12 @@
+# Four extensions of final-digit tensor isomorphism
+
+The starting construction stores a field tensor in the socle-valued multiplication of a free algebra. The trace of left multiplication recovers the augmentation ideal, which makes the field data intrinsic. Over $\mathbb Z/p^e\mathbb Z$, all entries below the final digit are fixed. The results here extend the construction to symmetric tensors, orbit geometry, embedded groups, and counting. [Starting theorem](https://github.com/Dugongue/MathProofs/blob/main/FixedRingFour/CongruenceClass.md)
+
+| Result | Scope |
+| --- | --- |
+| [Fully symmetric tensors with a fixed invertible slice](Tensor.md) | Every finite commutative local nonfield. The three modes have the same prescribed invertible slice. Independent ordinary transport recovers the input and a single determinant-one map acting in all three modes suffices in the forward direction. |
+| [Full ambient orbit closures](Geometry.md) | Finite equal-characteristic ring schemes and unramified truncated Witt vectors. The embedding preserves and reflects degenerations with arbitrary support drops. At concise targets, the reduced orbit-closure germ differs from the source only by a smooth factor. |
+| [Conjugacy of regular abelian matrix subgroups](Subgroups.md) | The embedded subgroups have a common abstract group type and common lower-precision matrices. Their general-linear, special-linear and affine conjugacy problems recover the field tensor. The groups can be made maximal abelian in the special-linear group over each fixed coefficient ring. |
+| [Exact orbit algorithms and counts](Algorithms.md) | The asymmetric final-digit family is recognized in arbitrary bases without padding or a restriction on the characteristic dividing the matrix size. The full fixed-reduction tensor space has an explicit linear quotient for final-digit basis changes. Exact orbit and transporter counts follow on the encoded family. |
+
+The four results have written proofs. The notes identify the related results by Grochow–Qiao, Bläser–Lysikov and Caranti–Dalla Volta–Sala and state the added finite-ring hypotheses and conclusions. Publication priority for the exact extensions remains open. The finite scripts test selected cases. [RegularCommutant.lean](RegularCommutant.lean) independently checks the regular centralizer identity used by the subgroup proof, with transitive axioms $\texttt{propext}$ and $\texttt{Quot.sound}$. Prepared for MathProofs with AI assistance.

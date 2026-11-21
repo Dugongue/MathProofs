@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- final-digit-four:start -->
+- **[Four extensions of final-digit tensor isomorphism](FinalDigitFour/README.md)** — Symmetric tensors with fixed invertible slices, ambient orbit closures, conjugacy of abelian matrix subgroups, and exact orbit and transporter counts.
+<!-- final-digit-four:end -->
+
 <!-- fixed-ring-four:start -->
 - **[Four extensions of tensor isomorphism over fixed finite rings](FixedRingFour/README.md)** — Literature audit, complete tensor isomorphism in the final digit, algorithms for arbitrary precision and prescribed residue maps, and exact counts of tame lift classes.
 <!-- fixed-ring-four:end -->
