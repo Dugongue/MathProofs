@@ -1448,3 +1448,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEight/RESULTS.md). The published inversion rule gives constant proof-line degree for tensor nonisomorphism and modular counting. Other results give polynomial-time ordered tuple isometry at residue characteristic two, a uniform odd-residue decision algorithm, exponential single-object invariant-degree lower bounds, and exact degree raising for forms over arbitrary fields.
 <!-- grochow-eight:end -->
+
+
+<!-- grochow-eight-followup:start -->
+### Follow-up answers in group isomorphism, proof complexity, and tensors
+
+[Proofs and verification](GrochowEightFollowup/RESULTS.md). The same-prime class reduction extends to the Lazard boundary. The surjective compositional decoder for mixed exponents has an exponential obstruction. The proof-complexity results give sharp linear bounds for positive-characteristic matrix problems and disprove bounded-degree reversal of the original FGS rank markers. Further results address matching polytopes, graph symmetries, weighted homomorphism tests, and tensor networks.
+<!-- grochow-eight-followup:end -->
