@@ -1,0 +1,62 @@
+{
+  "status": "Written proofs with independent Lean kernel and axiom checks of the listed supporting lemmas.",
+  "lean_version": "4.33.0",
+  "files": [
+    {
+      "path": "SubgraphCircuitAdvances.lean",
+      "sha256": "cfa1b64858b990928c52e448e9c81aee6f02231327aa631acd779b593f6bdc9a",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SubgraphCircuitAdvances.thresholdHitsTriple"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SubgraphCircuitAdvances.thresholdCardBound"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "SubgraphCircuitAdvances.signedPathSwitch"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "SubgraphCircuitAdvances.andPortWeights"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "SubgraphCircuitAdvances.disjointPortSum"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "SubgraphCircuitAdvances.pairCompletionCountOdd"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "weighted_path_with_undirected_coefficient_extraction": 16,
+    "nonzero_path_cases": 10,
+    "weighted_matching_cases_over_rationals": 20,
+    "characteristic_two_completion_cases": 100
+  },
+  "priority": "Publication priority is unverified."
+}

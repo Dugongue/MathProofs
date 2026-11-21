@@ -1602,3 +1602,8 @@ Pending formalizations:
 <!-- symmetric-circuit-advances:start -->
 - [Symmetric permanent and determinant advances](SymmetricCircuitAdvances/RESULTS.md) — exponential lower bounds with only five-label local symmetries, equivariant and border determinant representations, a single-reciprocal symmetric determinant construction, and matching-coefficient orbit bounds. Written proofs with Lean checks of supporting identities.
 <!-- symmetric-circuit-advances:end -->
+
+
+<!-- subgraph-circuit-advances:start -->
+- [Symbolic subgraph circuit advances](SubgraphCircuitAdvances/RESULTS.md) — all-field paths-to-clique equivalence, sharp symmetric path bounds, the characteristic split for matchings, and characteristic-two circuits for matching-splittable patterns. Written proofs with Lean checks of supporting identities.
+<!-- subgraph-circuit-advances:end -->
