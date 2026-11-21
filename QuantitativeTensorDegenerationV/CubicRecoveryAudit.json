@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED",
+  "source": "CubicRecovery.lean",
+  "sha256": "cf4f17ac44a98e0dcb38fc21b34ba496081d0ba33205fc9dd6ff8d6b851ba662",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Three supporting statements for Hessian kernel recovery and symmetric adjoint blocks. The main theorems are written proofs.",
+  "declarations": [
+    {
+      "name": "CubicRecovery.maximal_hessian_kernel",
+      "transitive_axioms": []
+    },
+    {
+      "name": "CubicRecovery.three_matrix_crosses_intersect_trivially",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "CubicRecovery.symmetric_offdiagonal_zero",
+      "transitive_axioms": [
+        "propext"
+      ]
+    }
+  ]
+}

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quantitative-tensor-degeneration-v:start -->
+- **[Quantitative tensor degeneration V](QuantitativeTensorDegenerationV/README.md)** — Exact diagonal orders across characteristics, optimal algebra catalysts, sharp terminal-cap clearing, and exponential Laurent complexity of sparse cubics. Written proofs with three Lean-checked supporting statements.
+<!-- quantitative-tensor-degeneration-v:end -->
+
 <!-- quantitative-tensor-degeneration-iv:start -->
 - **[Quantitative tensor degeneration IV](QuantitativeTensorDegenerationIV/README.md)** — A growing diagonal-source gap, exact sparse power orders, unrestricted algebra catalyst cancellation, and exponential Laurent complexity for two-step nilpotent Lie laws. Written proofs with three Lean-checked supporting identities.
 <!-- quantitative-tensor-degeneration-iv:end -->
