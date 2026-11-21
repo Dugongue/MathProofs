@@ -1,0 +1,38 @@
+{
+  "status": "VERIFIED",
+  "scope": "Three supporting scalar statements. Tensor approximation, algorithms, and runtime bounds are paper proofs.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "TreePairBounds.lean",
+      "sha256": "33d367128135717989ec8820f23eb5b12d4cbecb84f4c47416a4d6d1a866b76b",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TreePairBounds.pairedSaving"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TreePairBounds.orthogonalProjectionLoss"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TreePairBounds.coverBound"
+        }
+      ]
+    }
+  ]
+}

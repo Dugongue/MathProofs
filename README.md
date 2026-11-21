@@ -1565,3 +1565,10 @@ Pending formalizations:
 
 [Proofs and verification](PermanentalCauchyConsequences/RESULTS.md). This packet refutes the proposed row and column partition description of the permanent's singular locus, proves an exact threshold for removing a row from a maximal permanental ideal, separates Cauchy rank behavior by characteristic, and characterizes the prescribed-column construction through Wronski fibers and elliptic curves.
 <!-- permanental-cauchy-consequences:end -->
+
+
+<!-- tree-tensor-approximation-advances:start -->
+### Four results on tree tensor approximation and prescribed bond caps
+
+[Proofs and verification](TreeTensorApproximationAdvances/RESULTS.md). Consecutive two-cut improvements accumulate across a tree, including from compressed input cores. Physical mode compression gives deterministic relative-error approximation at the prescribed caps for fixed parameters, and shared tree cores control the worst channel error with logarithmic bond inflation.
+<!-- tree-tensor-approximation-advances:end -->
