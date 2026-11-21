@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- symmetric-final-four:start -->
+- **[Four extensions of fully symmetric final-digit tensor isomorphism](SymmetricFinalFour/README.md)** — Fixed Hessian fibers, four ambient degeneration tests, stabilizer schemes, and exact determinant profiles and counts.
+<!-- symmetric-final-four:end -->
+
 <!-- final-digit-four:start -->
 - **[Four extensions of final-digit tensor isomorphism](FinalDigitFour/README.md)** — Symmetric tensors with fixed invertible slices, ambient orbit closures, conjugacy of abelian matrix subgroups, and exact orbit and transporter counts.
 <!-- final-digit-four:end -->
