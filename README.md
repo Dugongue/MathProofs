@@ -1572,3 +1572,8 @@ Pending formalizations:
 
 [Proofs and verification](TreeTensorApproximationAdvances/RESULTS.md). Consecutive two-cut improvements accumulate across a tree, including from compressed input cores. Physical mode compression gives deterministic relative-error approximation at the prescribed caps for fixed parameters, and shared tree cores control the worst channel error with logarithmic bond inflation.
 <!-- tree-tensor-approximation-advances:end -->
+
+
+<!-- diagonal-tensor-local-global:start -->
+- [Four local–global theorems for geometrically diagonal tensors](DiagonalTensorLocalGlobal/RESULTS.md) — exponential minimum isomorphism field degree, an optimal signed genus bound for abelian Galois fields, a complete side-four signed classification, and exact signed counts at the side-six ordinary failures.
+<!-- diagonal-tensor-local-global:end -->

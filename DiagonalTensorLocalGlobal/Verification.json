@@ -1,0 +1,36 @@
+{
+  "lean_version": "4.33.0",
+  "scope": "Supporting lemmas for determinant coordinates, fixed-point noncancellation, and norm reciprocity parity. The four tensor theorems have written proofs.",
+  "files": [
+    {
+      "sha256": "1d07776b366f772811fedad46cc06e212309c8d8e86cf4acca7589871a8cbdb2",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DiagonalLocalGlobal.signNormCoordinates"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DiagonalLocalGlobal.fixedPointGap"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DiagonalLocalGlobal.normCharacterParity"
+        }
+      ],
+      "path": "DiagonalLocalGlobal.lean"
+    }
+  ]
+}
