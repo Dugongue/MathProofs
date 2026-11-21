@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "scope": "One supporting real inequality for the expected injection deficit. The mathematical research results have proofs in prose.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "InjectionDeficit.lean",
+      "sha256": "8cec06dabaa249473f5593444a688aebc36c6b675598490b01d842e41fc9fba8",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "InjectionDeficit.linearEnvelope"
+        }
+      ]
+    }
+  ]
+}

@@ -1503,3 +1503,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightSixth/RESULTS.md). The results include a five-point correction to cubic dihedral recovery, generic unitary recovery at degree three, a counterexample to a characteristic-two symmetric determinantal conjecture, an all-characteristic matrix-symmetric circuit separation, and a sharp least-squares confidence law.
 <!-- grochow-eight-sixth:end -->
+
+
+<!-- grochow-eight-seventh:start -->
+### Eleven results on symmetric circuits, sketching, and finite group actions
+
+[Proofs and verification](GrochowEightSeventh/RESULTS.md). This packet proves two positive-characteristic separations for symmetric algebraic circuits, relative Frobenius guarantees under small injection failure, sharp modular dihedral moment cutoffs, real orbit-recovery results, and scoped algorithms for group epimorphisms and coset intersection.
+<!-- grochow-eight-seventh:end -->
