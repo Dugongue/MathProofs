@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-far-dag-ii:start -->
+- **[Four further bridges to Grochow's work](GrochowFarDAGII/README.md)** — Form equivalence over arbitrary fields, programmable tensor isomorphism across intermediate fields, exact recoding hardness for positive stochastic sources, and sharp path-law bounds for Markov compression. Includes complete written arguments, finite controls, and one Lean-checked auxiliary identity.
+<!-- grochow-far-dag-ii:end -->
+
 <!-- raw-ternary-tensor-orientation:start -->
 [Raw ternary tensor orientation](RawTernaryTensorOrientation/MatrixSummand.md) — AI-assisted informal proofs. A polynomial-size matrix summand preserves every transporter determinant triple on arbitrary inputs while removing invariant ternary line frames. A separate [raw cubic graph tensor algorithm](RawTernaryTensorOrientation/Proof.md) recognizes and canonizes hidden graph tensors under SL, including repeated components. The unrestricted containment remains open. Includes a Lean-checked ideal identity and executable controls.
 <!-- raw-ternary-tensor-orientation:end -->
