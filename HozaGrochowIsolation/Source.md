@@ -1,0 +1,7 @@
+# William Hoza, NL = UL
+
+ECCC report TR26-323, dated November 20, 2026. The author discloses using GPT-6.2 Astra to discover the proof and prepare the paper. The archived PDF contains 707,084 bytes and has SHA-256 D33878D06A288AC66C2CD51658E3BF3015E6043A65CB0B08988C7006F15B2473. [Report and download](https://eccc.weizmann.ac.il/report/2026/323/)
+
+Theorem 1.3 assigns a polynomial family of integer vertex weights to width-\(w\), length-\(n\) simple layered digraphs. A single member isolates the minimum path for every reachable endpoint pair. The weight uses seed bits, constant-relative-distance code bits, and powers of six indexed by the 2-adic valuation of the layer. Lemma 2.3 bounds the change in the cheapest path through a fixed middle vertex. Theorem 2.4 uses a leading-bit gap and a union bound. Section 1.2 combines the generator with Reinhardt–Allender unambiguous counting to derive Theorem 1.1, \(\mathsf{NL}=\mathsf{UL}\).
+
+The report listing and the author's collection of related drafts give PDF and TeX sources. No upstream Lean source for the report was located in those releases, a public formalization search, or the federated Lean lookup. This record indexes the mathematical source as a paper. The accompanying Mathlib-only Lean source checks supporting results from the transfers. The whole space-complexity theorem is outside that companion. [Author's related drafts](https://williamhoza.com/research/ai-generated-proofs/)

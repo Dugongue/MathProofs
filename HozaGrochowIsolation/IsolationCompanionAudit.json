@@ -1,0 +1,58 @@
+{
+  "status": "VERIFIED",
+  "scope": "Supporting identities only. The four general results are written proofs.",
+  "source": "IsolationCompanion.lean",
+  "sha256": "d5e873f83bdf230b84baa62d2485a5f31ad37c58c942e9f500ee1de0119c549e",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "declarations": [
+    {
+      "name": "HozaGrochowIsolation.min_increment",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "HozaGrochowIsolation.radix_tail_identity",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "HozaGrochowIsolation.dominant_flip_separates",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "HozaGrochowIsolation.unique_minimum_count",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "HozaGrochowIsolation.forget_zero_coordinates",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "HozaGrochowIsolation.shared_selector_dimension",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

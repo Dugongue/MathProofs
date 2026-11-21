@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- hoza-grochow-isolation:start -->
+- [Four Hoza-to-Grochow isolation transfers](HozaGrochowIsolation/README.md) — smaller class-two group power orbits, simultaneous minor isolation, shared selectors for matrix multiplication, and determinant-constrained tensor transporters. Written proofs with Lean-checked supporting lemmas.
+<!-- hoza-grochow-isolation:end -->
+
 <!-- grochow-literature-transfers:start -->
 - **[Four algorithmic results for tensor and group isomorphism](GrochowLiteratureTransfers/README.md)** — Written proofs for prescribed determinants over prime-power rings, dyadic tuple isometry with commutative commutant, compact tensor isomorphism with spectral hypotheses, and central epimorphism counts with bounded target radical generator number or bounded derived intersection in the elementary abelian case. Four supporting lemmas checked in Lean.
 <!-- grochow-literature-transfers:end -->
