@@ -1,0 +1,45 @@
+# Determinant lines from an intrinsic symplectic factor
+
+Over \(F=\mathbb F_3\) consider a based symmetric bimap \(\beta:X\times X\to Z\) with spanning output and zero common radical. The cube-zero algebra and the exact rectangular cubic have combined sign \(\det g\det h\) on the usual even-input, odd-output carrier. [Exact cubic bridge](ExactCubicOrientationSeed.md) · [Dual relation reduction](DualRelationOrientationSeed.md)
+
+**Theorem.** Suppose the paired adjoint is split simple with symplectic involution. Recover its natural factor \(U\) of dimension \(d\) and multiplicity space \(V\) of odd dimension \(r\) as below, and let \(R\) be the kernel of the resulting alternating map \(\Lambda^2V\to Z\). If \(\dim R=O(\log L)\) for written length \(L\), a polynomial-size record reads the combined determinant of every transporter. Pinning its line gives one ordinary TI instance over \(F\). Both this bimap and its full-support dual relation bimap have scalar centroid. The tests and record use polynomial time and permit unbounded \(d,r,\dim Z\) and original relation dimension. [Open Question 1.9](https://arxiv.org/html/2306.03135v2#S1.SS5)
+
+
+## Recover the tensor factors
+
+Compute paired adjoints \((P,Q)\) from \(\beta(Px,y)=\beta(x,Qy)\). Their multiplication is \((PP',Q'Q)\); both projections are injective by the zero common radical. The involution exchanges the two operators. Any transporter conjugates the adjoint and its involution. Compute the finite-field simple matrix models and test that this is \(M_d(F)\) with symplectic involution. In matrix coordinates the involution is \(P\mapsto W^{-1}P^T W\); solve the linear intertwining equations for the alternating matrix \(W\). The solutions for this fixed involution span a line and its nonzero points are invertible. Use \(U=F^d\) with alternating form \(\omega\) of matrix \(W\). [Finite-field algebra algorithms](https://arxiv.org/pdf/1708.03495)
+
+Set \(V=e_{11}X\) in these matrix units. Identifying the \(i\)-th copy of \(V\) with \(e_{i1} V\) gives \(U\otimes V\simeq X\). For fixed \(v,v'\), each covector of \(\beta(u\otimes v,u'\otimes v')\) is an adjoint-compatible form on \(U\). Its matrix is \(W\) times an operator commuting with all matrix units, hence is proportional to \(W\). Thus \(\beta=\omega\otimes\gamma\), where \(\gamma(v,v')\) is alternating because \(\beta\) is symmetric and \(\omega\) alternating. Spanning output gives \(\gamma:\Lambda^2 V\twoheadrightarrow Z\).
+
+A centroid operator on \(X\) is a paired adjoint, thus has form \(P\otimes1\) on the recovered factors. Fix a pair \(v,v'\) with \(\gamma(v,v')\ne0\); the centroid equation for this pair forces \(\omega(Pu,u')\) to be proportional to \(\omega(u,u')\). Consequently \(P\) is scalar and so is the output action. On the relation side, \(K\) contains \(x^2\) for every decomposable \(x=u\otimes v\) because \(\beta(x,x)=0\). These squares give full support. Every paired adjoint on the dual relation bimap has duals preserving each such line, by testing its equation against the rank-one matrix of \(x^2\). A linear operator preserving every decomposable line is scalar: test the basis tensors, then sums of two basis tensors with one common factor to identify their eigenvalues. Thus even the paired adjoint of the relation bimap is scalar.
+
+
+## The transporter determinant
+
+The adjoint isomorphism is inner, implemented by \(S:U\to U'\). Then \(g=S\otimes T\) by intertwining, and preservation of the involution gives \(\omega'(Su,Su')=\lambda\omega(u,u')\). We have \(h\gamma=\lambda\gamma'\Lambda^2 T\), with \(T_R=(\Lambda^2T)|_R\). Let \(c_X,c_{X'}\) be determinants of the symplectic product frames in the raw input bases, and \(a,a'\) the determinants of the adapted exterior-square frames (kernel basis followed by lifts of the raw output basis). Then \(\det g=(c_{X'}/c_X)(\det S)^r(\det T)^d\) and \(\det h=(a/a')\lambda^{\dim Z}(\det T)^{r-1}/\det T_R\). The Pfaffian polynomial identity gives \(\det S=\lambda^{d/2}\) in symplectic bases. It holds in characteristic three by proving the integral identity over the rationals and specializing. With \(d+r-1\) even,
+\[
+ \det g\det h=\frac{c_{X'}a}{c_X a'}\,\lambda^{dr/2+\dim Z}\det T_R .
+ \tag{1}
+\]
+Replacing \(S,T\) by inverse scalar multiples leaves both residual contributions the same over \(F\).
+
+Retain \(\beta\) and record \(U\times V\to X\), the alternating form with values in a line, the wedge map \(V\times V\to\Lambda^2V\), and \(R\hookrightarrow\Lambda^2V\). These tie \(S,T,\lambda,T_R\) to the same transporter. Read \(\det T_R\) by the full exterior algebra of \(R\), its degree-one inclusion and top line. If the scalar exponent in (1) is even use an anchored unit line; otherwise use the form's line. Multiply the two lines through a bilinear map and calibrate the output basis by the computed frame determinants. Pinning this line enforces the raw sign. Every transporter of that sign extends, and every extended transporter has the desired sign by (1). The diagram has a constant number of tensors of order at most three and polynomial size. The tensor-system compiler produces one ordinary TI instance. [Theorem 4.1](https://arxiv.org/html/2306.03135v2#S4)
+
+
+## Examples and several symplectic factors
+
+Take \(\gamma(v,v')=v\wedge v'\) on an odd-dimensional \(V\), \(r\ge3\), and take any nondegenerate symplectic factor \(U\). The pair adjoint of the wedge product is scalar: testing two basis arguments and inspecting wedge coordinates outside the two indices kills off-diagonal matrix entries, and the equations on distinct indices equate the diagonal scalars. Tensoring with the perfect pairing \(\omega\) gives paired adjoint \(M_d(F)\) with its symplectic involution. For this last calculation use dual-coordinate bases for the two \(U\) arguments; then the adjoint equations split into paired adjoint equations for \(\gamma\), one for each matrix entry. Thus these are literal instances of the recognition tests. When \(r\equiv3\pmod4\) and \(d\equiv2\pmod4\), the output dimension is odd and the exponent in (1) is even. All automorphisms have positive sign. A target basis reflection gives ordinary YES and positive-sign NO. Both factor sizes may grow, and the original quadratic relation space grows with them.
+
+More generally suppose the paired adjoint is a product of split simple symplectic blocks that the involution fixes individually. Let their \((d_i,r_i)\) be pairwise distinct and all \(r_i\) odd. The distinct pairs order the blocks intrinsically. The adjoint projectors show that mixed products vanish. The same reconstruction gives \(X_i=U_i\otimes V_i\) and a joint surjection \(\Gamma:\bigoplus_i\Lambda^2 V_i\to Z\), where the images of the blocks may intersect. Put \(R=\ker\Gamma\). Each transporter gives multipliers \(\lambda_i\), maps \(S_i,T_i\), and the joint domain map \(D=\bigoplus_i\lambda_i\Lambda^2T_i\) with \(h\Gamma=\Gamma'D\). The determinant formula in adapted frames therefore reads, up to the same computed frame calibration,
+\[
+ \det g\det h=
+ \prod_i\lambda_i^{d_i r_i/2+\binom{r_i}{2}}\ \det(D|_R).
+\]
+The \(\det T_i\) exponents are even as before. Record the kernel line if \(\dim R=O(\log L)\) and the indicated scalar product. The number of role records can grow polynomially: label the roles and their map occurrences by a split coordinate algebra, with distinct module multiplicities pinning the labels, and link the occurrence copies by their inclusion in the role sum. Store all maps in fixed direct-sum arrays by order. This is the constant-signature packing used in the earlier centroid compiler. The two scalar centroid tests can simply be imposed on this wider class by linear equations. [Role packing](CentroidDeterminantDescentSeed.md)
+
+
+## Correction without a bound on the residual kernel
+
+In the single symplectic factor case, choose \(S\) that multiplies one vector in each symplectic pair by \(-1\) and leaves the other fixed. Then \((S\otimes I,-I_Z)\) is an actual pseudo-isometry. Its combined sign is \((-1)^{dr/2+\dim Z}\). Whenever this exponent is odd, an ordinary transporter can be corrected to either sign, and the original ordinary comparison suffices without a kernel bound. For odd \(\dim Z\) this includes every even multiplicity \(r\) and every \(d\) divisible by four.
+
+There is another unbounded correction test. If the paired adjoint has a simple split orthogonal block fixed by the involution, the central projector splits off that input block orthogonally to the rest. The same matrix-unit argument writes its restriction as a nondegenerate symmetric form on the natural factor times a symmetric bimap on its multiplicity space. A reflection in an anisotropic vector of the natural factor fixes this restricted product. Extend it by the identity on the other inputs and all outputs. Its sign is negative exactly when the multiplicity is odd. Thus such a block also yields one ordinary comparison with no kernel bound. The simultaneous scalar-centroid hypotheses, when required, are tested by their linear equations.

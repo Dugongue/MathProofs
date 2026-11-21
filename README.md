@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- recursive-determinant-ti:start -->
+- **[Recursive determinant reductions to ordinary TI](RecursiveDeterminantTI/README.md)** — Cube-kernel induction, symplectic and relation descent, principal adjoint filtrations, and signed independent hierarchies over the ternary field. Written proofs with supporting Lean identities.
+<!-- recursive-determinant-ti:end -->
+
 <!-- two-scalar-centroid-ti:start -->
 - **[One-instance TI reductions with two scalar centroids](TwoScalarCentroidTI/README.md)** — Intrinsic symplectic determinant lines, multicolor graph records, cube-kernel syzygies and Cartesian graph orientation over the ternary field. Written proofs with three Lean-checked supporting identities.
 <!-- two-scalar-centroid-ti:end -->
