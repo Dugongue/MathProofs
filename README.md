@@ -1689,3 +1689,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-iv:start -->
 - [Grochow catalogue proofs IV](GrochowCatalogueProofsIV/README.md) — 26 additional catalogue entries, including bounded-degree quantum graph isomorphism and semantic set-multilinear identity testing. The Lean receipt covers two supporting contraction inequalities.
 <!-- grochow-catalogue-proofs-iv:end -->
+
+
+<!-- grochow-catalogue-proofs-v:start -->
+- [Grochow catalogue proofs V](GrochowCatalogueProofsV/README.md) — 26 additional catalogue entries, including the presented-module tensor reduction over finite rings, sharp random vertex-deck recovery, and a nonsmoothable length-43 fixed algebra. Includes two Lean-checked first-jet identities and an exact rank checker.
+<!-- grochow-catalogue-proofs-v:end -->

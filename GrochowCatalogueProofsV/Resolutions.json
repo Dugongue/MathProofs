@@ -1,0 +1,334 @@
+{
+  "total": 26,
+  "excluded_previous": 118,
+  "results": [
+    {
+      "id": "GP-0092",
+      "title": "Degree-sensitive dense tensor isomorphism from Cayley algorithms",
+      "question": "Give a reduction from dense finite-field 3TI to group isomorphism or group transporter search whose output multiplication-table size is subexponential in the sum of tensor mode dimensions at fixed field order.",
+      "status": "source_derived",
+      "lane": "tensor",
+      "source": "https://arxiv.org/html/2611.18084v1",
+      "proof": "CayleyTensorEncoding.md",
+      "result": "A linear-log-order class-two Cayley encoding over every fixed finite field, optimal for balanced objectwise encodings.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0095",
+      "title": "Free-module versus arbitrary-module tensor complexity",
+      "question": "Determine when 3TI_R and 3FTI_R coincide under polynomial reductions for finite commutative rings R, with module presentations rather than expanded element tables.",
+      "status": "source_derived",
+      "lane": "tensor",
+      "source": "https://arxiv.org/html/2611.00735v1",
+      "proof": "PresentedModuleTensorReduction.md",
+      "result": "Presented-module and free three-tensor isomorphism are polynomial-time many-one equivalent over every fixed finite commutative ring.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0176",
+      "title": "Exact local-unitary equivalence of mixed states",
+      "question": "For two rational bipartite density matrices of growing local dimensions, decide local-unitary equivalence in polynomial bit time without a nondegeneracy promise.",
+      "status": "source_derived",
+      "lane": "tensor",
+      "source": "https://arxiv.org/html/2306.03135v2",
+      "proof": "RationalPurificationTI.md",
+      "result": "Gaussian-rational mixed-state local unitary equivalence and three-factor unitary tensor isomorphism reduce to each other in polynomial bit time.",
+      "scope": "exact comparison",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0184",
+      "title": "Smoothability of fixed subalgebras",
+      "question": "Characterize when the invariant algebra A^G of a finite smoothable commutative algebra A with a finite group action G in characteristic zero is smoothable.",
+      "status": "explicit_open",
+      "lane": "tensor",
+      "source": "https://arxiv.org/html/2408.02754",
+      "proof": "VeroneseFixedAlgebra.md",
+      "result": "The complex squarefree third Veronese family first becomes nonsmoothable with seven variables, at length 43.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0253",
+      "title": "Super-logarithmic partition and analytic rank separation",
+      "question": "Over finite fields, let A(d)=sup_T partitionRank(T)/analyticRank(T), allowing the field and format to vary. Is A(d)/log d unbounded and does it tend to infinity?",
+      "status": "explicit_open",
+      "lane": "tensor",
+      "source": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol362-itcs2026/html/LIPIcs.ITCS.2026.90/LIPIcs.ITCS.2026.90.html",
+      "proof": "DeterminantRankSeparations.md",
+      "result": "An explicit rank-one form gives exponential partition-to-raw-analytic rank separation, and the determinant has an exact fixed-field analytic rank formula.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0314",
+      "title": "Monomial-LCD canonicalization without a supplied normalization",
+      "question": "Classify the complexity of choosing equivariantly an LCD representative of a monomial code orbit over fields of size greater than three, with reversible transport data.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2607.12870",
+      "proof": "LcdNormalizationAndCanonization.md",
+      "result": "Over fields of size greater than three, reversibly normalize to an LCD code and recover ordinary monomial canonization from an LCD canonizer.",
+      "scope": "exact comparison",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0332",
+      "title": "Equivalence of codes under mixed blockwise metrics",
+      "question": "Compare two marked code decompositions using Hamming isometries on one block and rank-metric isometries on another. Classify equivalence on raw generator matrices when the blocks share input row transformations.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2607.12870",
+      "proof": "MixedMetricCodeEquivalence.md",
+      "result": "Mixed Hamming and matrix-rank code equivalence with a compatible shared action is polynomial-time equivalent to tensor isomorphism.",
+      "scope": "exact comparison",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0353",
+      "title": "Distinct kernels among marked quotient maps",
+      "question": "Count normal subgroups K of G for which G/K≅H and for which supplied subgroups L_i have pairwise distinct images. Determine the complexity in Cayley-table and explicit subgroup-generator input.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2609.07429v1#S7",
+      "proof": "SemisimpleMarkedQuotients.md",
+      "result": "Count distinct marked quotient kernels in polynomial time for nonabelian semisimple Cayley-table targets.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0356",
+      "title": "Maximal epimorphic subdirect quotient",
+      "question": "Given three Cayley tables G,H1,H2 and epimorphism feasibility to each target, compute the maximum possible order of the image of (φ1,φ2):G→H1×H2 as the two epimorphisms vary.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2609.07429v1#S7",
+      "proof": "SemisimpleMarkedQuotients.md",
+      "result": "Find a maximum simultaneous image in polynomial time for nonabelian semisimple targets with optional square-free-exponent abelian direct factors.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0393",
+      "title": "Counting distinct optimal core-free point stabilizers",
+      "question": "For class-two permutation-generator p-groups admitting an exact polynomial-time transitive degree algorithm, determine a polynomial-bit algorithm or counting hardness for the number of maximum-order core-free subgroups, up to conjugacy.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2501.16039v3",
+      "proof": "OptimalCoreFreeStabilizerCounting.md",
+      "result": "Counting optimal stabilizer conjugacy classes is #P-hard at every fixed odd prime even with an explicit optimum and a maximizing stabilizer.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0527",
+      "title": "Read-once word reachability in finite quasigroups",
+      "question": "Given a table-defined finite quasigroup, a multiset of named inputs, and a target element, classify the complexity of finding a parenthesized product that uses each named occurrence exactly once and evaluates to the target.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2402.00133",
+      "proof": "ReadOnceQuasigroupReachability.md",
+      "result": "Read-once parenthesized product reachability is NP-complete even for explicitly tabulated commutative quasigroups.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0529",
+      "title": "Polynomial-depth circuit witness search from quasigroup membership",
+      "question": "Construct a uniform NC procedure outputting a term circuit of polynomial size witnessing membership in a generated subquasigroup whenever it exists.",
+      "status": "source_derived",
+      "lane": "groups",
+      "source": "https://arxiv.org/html/2402.00133",
+      "proof": "ParallelQuasigroupWitnesses.md",
+      "result": "Uniform NC³ constructs polynomial-size straight-line membership witnesses in explicitly tabulated quasigroups.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0543",
+      "title": "Smoothness of exact ABP realization varieties",
+      "question": "Can one characterize all smooth points of the Zariski closure of bounded-size commutative ABP outputs at growing degree by minimum-width presentations?",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://arxiv.org/abs/2003.04834",
+      "proof": "LayeredABPTangents.md",
+      "result": "An explicit cut-capacity test characterizes smoothness for fixed-order tensor-train varieties, including redundant caps and simultaneous rank drops.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0559",
+      "title": "Small-characteristic shallow reconstruction",
+      "question": "Can black-box constant-top-fan-in depth-three circuits be reconstructed in polynomial bit time uniformly over explicit finite fields?",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol339-ccc2025/html/LIPIcs.CCC.2025.21/LIPIcs.CCC.2025.21.html",
+      "proof": "FiniteFieldProductRecovery.md",
+      "result": "Single products admit randomized polynomial reconstruction with extension-field queries, and distinct formal products can have identical base-field evaluations.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0561",
+      "title": "Robust shallow circuit reconstruction",
+      "question": "Can depth-three circuit decompositions over R be recovered with polynomial bit complexity from bounded-error evaluations under quantitative identifiability promises?",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol339-ccc2025/html/LIPIcs.CCC.2025.21/LIPIcs.CCC.2025.21.html",
+      "proof": "StableThreeBlockReconstruction.md",
+      "result": "Reconstruct real three-block depth-three circuits from bounded coefficient noise under explicit separation and conditioning assumptions.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0563",
+      "title": "Border top fan-in hierarchy with growing bottom degree",
+      "question": "Quantify how far the exponential-in-n border lower bound for the sum of k+1 disjoint degree-n products survives when the bottom fan-in bound grows with n and top fan-in stays k.",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://eccc.weizmann.ac.il/report/2026/297/",
+      "proof": "BorderDepthFourChunking.md",
+      "result": "Give growing-bottom-degree bounds for the elementary symmetric polynomial and match them in the chunk-aligned border model.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0567",
+      "title": "Efficient Waring coordinate multiplicities",
+      "question": "Can representation multiplicities in bounded-Waring-rank coordinate rings be computed with fixed-parameter dependence on rank?",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://arxiv.org/abs/1901.04576",
+      "proof": "BinaryWaringMultiplicities.md",
+      "result": "Compute representation multiplicities of binary Waring secants in time polynomial in the numerical degrees and secant rank.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0598",
+      "title": "Low-degree sparse factors with no spurious candidates",
+      "question": "Recover precisely the irreducible factors of individual degree at most a fixed d from a sparse rational input of unbounded individual degree in polynomial input-plus-output bit time.",
+      "status": "source_derived",
+      "lane": "algebra",
+      "source": "https://arxiv.org/abs/2606.27293",
+      "proof": "LacunaryFactorRecovery.md",
+      "result": "Recover the bounded-individual-degree rational factor set with high probability, with expected output-sensitive time for sparse expansion.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0782",
+      "title": "Intersection-number criteria for bounded bases",
+      "question": "For arbitrary k>=3, find nontrivial explicit conditions on intersection numbers guaranteeing combinatorial base number at most k.",
+      "status": "explicit_open",
+      "lane": "graph",
+      "source": "https://www.pdmi.ras.ru/~inp/cp01.pdf",
+      "proof": "CoherentBaseAndFiberLifting.md",
+      "result": "Give an intersection-number certificate that the fibers of a coherent configuration determine all pair colors.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0812",
+      "title": "Transporter recovery from algebraic configuration isomorphism",
+      "question": "Identify a polynomial-time recognizable class beyond separable schemes where a supplied algebraic isomorphism can be lifted to a vertex permutation despite large bases.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://www.pdmi.ras.ru/~inp/cp01.pdf",
+      "proof": "CoherentBaseAndFiberLifting.md",
+      "result": "Lift prescribed color isomorphisms in polynomial time on coherent configurations of bounded fiber size, including nonseparable homogeneous examples.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0877",
+      "title": "Stable reconstruction from corrupted vertex decks",
+      "question": "For G drawn from G(n,1/2), determine the sharp fraction of adversarially replaced or missing vertex cards permitting polynomial-time unique reconstruction with high probability.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/abs/2604.16567",
+      "proof": "RobustRandomVertexDeck.md",
+      "result": "With high probability a dense random graph has sharp polynomial-time vertex-deck recovery threshold 2e+f≤n−3 for e replacements and f erasures.",
+      "scope": "proved result",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0973",
+      "title": "Polynomial-time graph-state LU with unknown permutation",
+      "question": "Give a polynomial-time procedure deciding graph-state LU equivalence when one global qubit permutation is also allowed, or classify it by reductions to a known equivalence problem.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/abs/2610.00527",
+      "proof": "GraphStatePermutationHardness.md",
+      "result": "Permutation-allowed graph-state local-unitary equivalence is GI-hard and is GI-equivalent on the recognizable two-private-leaves family.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0974",
+      "title": "Exact enumeration of local-unitary graph-state symmetries",
+      "question": "Output a compact representation of all one-qubit local unitaries carrying a given graph state to itself, separating finite components from continuous ones, using time polynomial in graph order.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/abs/2610.00527",
+      "proof": "GraphStateMonomialTransport.md",
+      "result": "Compute compact local and permutation-allowed graph-state stabilizers when two-body marginals isolate local Pauli axes.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0975",
+      "title": "Simultaneous local-unitary equivalence of multiple graph states",
+      "question": "Decide whether one tensor product of local unitaries carries every state in a supplied ordered list of graph states to its matched target, in time polynomial in total graph input size.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/abs/2610.00527",
+      "proof": "GraphStateMonomialTransport.md",
+      "result": "Decide simultaneous graph-state transport when a qualifying anchor forces monomial local unitaries.",
+      "scope": "proved with scope",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0994",
+      "title": "Fixed cyclic alphabet for arbitrarily strong surface hardness",
+      "question": "Determine the sharp polynomial-time approximation threshold for weighted 1-homology localization over one fixed odd prime coefficient field on closed triangulated surfaces of unbounded genus.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://arxiv.org/html/1803.06800#S6",
+      "proof": "FixedFieldSurfaceThreshold.md",
+      "result": "Rational-weight orientable surface localization and fixed-prime weighted difference constraints have the same approximation threshold.",
+      "scope": "exact comparison",
+      "verification": "written proof"
+    },
+    {
+      "id": "GP-0999",
+      "title": "Approximation on surfaces with unbounded boundary components",
+      "question": "Determine whether a uniform PTAS is possible for weighted localization of a relative 1-homology class on orientable surfaces with fixed genus and unbounded distinct boundary components.",
+      "status": "source_derived",
+      "lane": "graph",
+      "source": "https://doi.org/10.1007/s41468-025-00212-0",
+      "proof": "RelativeHomologyFPTAS.md",
+      "result": "A deterministic FPTAS minimizes binary relative homology support on fixed-genus orientable surfaces with arbitrarily many boundary components.",
+      "scope": "proved result",
+      "verification": "written proof"
+    }
+  ],
+  "literature": {
+    "GP-0251": {
+      "proof": "DeterminantRankSeparations.md",
+      "result": "Chen and Zhao prove that the determinant has partition rank d-o(d), uniformly over fields."
+    },
+    "GP-0252": {
+      "proof": "DeterminantRankSeparations.md",
+      "result": "Chen and Zhao obtain a linear-order partition-to-geometric rank separation."
+    }
+  },
+  "supplemental": {
+    "GP-0542": {
+      "proof": "LayeredABPTangents.md",
+      "result": "Lean checks two first-jet identities supporting the previously answered generic ABP tangent bound."
+    }
+  }
+}

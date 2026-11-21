@@ -1,0 +1,27 @@
+# Sharp adversarial corruption threshold for dense random vertex decks
+
+## GP-0877
+
+Let $G$ have the distribution $G(n,1/2)$. Give the decoder the original order $n$ and an unordered multiset of its unlabeled vertex-deleted cards, after at most $e$ adversarial replacements and exactly $f$ erasures. Here $e,f$ are nonnegative integers with $e+f\le n$. With probability $1-o(1)$ over $G$, one deterministic polynomial-time decoder recovers $G$ up to isomorphism against every such corruption whenever
+$$
+2e+f\le n-3.
+$$
+At $2e+f\ge n-2$ even information-theoretic uniqueness fails. The upper guarantee is simultaneous over all admissible $e,f$.
+
+### Polynomial-time recognition of all good overlaps
+
+Put $L=\lceil 8\log_2 n\rceil$. By the random-graph degree separation theorem of Babai, Erdős and Selkow, with high probability the top $L+3$ vertices by degree have successive gaps greater than four. On this event, in every vertex deletion of size at most two, the highest $L$ surviving degrees give precisely the first $L$ survivors in the full degree order. Their relative order is unchanged and all are individually identified in the surviving graph by degree ranks. [Babai–Erdős–Selkow, degree separation](https://doi.org/10.1137/0209047)
+
+For a pair $u,v$ of original vertices, first expose $G-\{u,v\}$, and in this graph take the top $L$ vertices, with any deterministic tie convention for the probability argument. The incidences from $u$ and $v$ to this set are independent fresh fair bits. Their two adjacency strings agree in all but at most two positions with probability at most $2^{-L}\sum_{j=0}^2\binom Lj$. A union bound over at most $n^2$ pairs shows that with high probability every pair has at least three differing positions in its designated set.
+
+Now in any deletion of at most two vertices, let $u,v$ be distinct vertices outside the top $L$ anchors. Neither was among the original top $L$, since rank order survives the deletions. The above designated set for $u,v$ is consequently the original top $L$, and the current anchors contain all but at most two members of it. At least one differing position survives. Thus the nonanchor vertices have pairwise distinct signatures to the ordered anchors. Order the anchors by their degree ranks and all other vertices by the lexicographic order of their signatures. This gives a canonical adjacency matrix and unique canonical labeling on every genuine card and every genuine two-vertex overlap. On arbitrary inputs use the same procedure whenever its checks of degree-rank uniqueness and signature distinctness pass, and report failure otherwise. Whenever it runs to completion it provides exact comparison, since the resulting matrix also specifies the graph.
+
+### Decoding and optimality
+
+For every pair of received cards, delete one candidate vertex from each and run the canonical comparison on the overlaps. If the canonical matrices agree, glue the two original cards along the induced canonical bijection of the overlaps. The two remaining vertices across that overlap are distinct and their mutual edge has not been specified. Try both choices. This produces a polynomial-size list of candidate $n$-vertex graphs. Some pair of received genuine cards survives the allowed corruption budget. Its correct matching two-vertex overlap comparison succeeds, and the unique labeling gives the correct gluing. Thus $G$ is present in the list.
+
+Score each candidate by the multiplicity-aware overlap of its deck and the received multiset, using canonical labels whenever the checks pass. A failed card comparison can be omitted. This never overestimates the actual multiset overlap and matches every unaltered card of $G$. By Bollobás's theorem, with probability $1-o(1)$ any three distinct card occurrences of $G$ determine $G$ up to isomorphism. Hence a nonisomorphic candidate shares at most two card occurrences with $G$. It scores at most $2+e$ on the received multiset. The true candidate scores at least $n-f-e>2+e$, so it is the unique winning isomorphism class. [Bollobás, reconstruction from any three cards for almost all graphs](https://doi.org/10.1002/jgt.3190140102)
+
+For sharpness, toggle one edge between two fixed vertices of a labeled $G$ to obtain $H$. Their edge counts differ, so they are nonisomorphic, and the two cards deleting these vertices agree. Retain up to two such common card occurrences and fill the rest of a received multiset of length $n-f$ by taking cards from the two decks as evenly as possible. Because $\max(0,n-f-2)\le 2e$, one can choose the split so the received multiset shares at least $n-f-e$ occurrences with each deck. Every multiset with this many common occurrences can be produced from the corresponding deck with $f$ erasures and at most $e$ replacements. Both sources therefore fit the same received input. The edge toggle preserves the uniform distribution and is an involution. Choosing the ambiguous multiset symmetrically for each such pair also excludes high-probability decoding against a worst-case adversary, even under the random-source prior.
+
+The orbit comparison used for scoring is of the same type as the prior complete invariant comparisons, but uses explicit deletion-stable anchors and the exact multiset corruption metric here. [Prior graph separation context](https://github.com/Dugongue/MathProofs/blob/f1a463ce1a77aa494b7d33b81a4cbaac5dcb708b/GrochowCatalogueProofsII/HomomorphismSeparation.md)

@@ -1,0 +1,45 @@
+{
+  "exact_computation": {
+    "source": "CheckVeroneseFixedAlgebra.py",
+    "sha256": "ff3c42924acd0cca9dd03405494ec73146e39b23266842af79e39b52a5f59ac9",
+    "used_in": [
+      "GP-0184"
+    ],
+    "scope": "Exact modular elimination over the field of order 101. The four ranks were replayed independently.",
+    "checks": [
+      "n=7, degree=-2: columns=623, rank=623",
+      "n=7, degree=-1: columns=21805, rank=21770",
+      "n=8, degree=-2: columns=1568, rank=1568",
+      "n=8, degree=-1: columns=87808, rank=87752"
+    ]
+  },
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of the two first-jet block-matrix identities used in GP-0542. The full catalogue arguments are written proofs.",
+  "receipts": [
+    {
+      "source": "LayeredABPCertificates.lean",
+      "sha256": "470ecaaf48b4ba71ca4942c370d0bcaccc2298e5d45aa149cae5c2302ea38691",
+      "used_in": [
+        "GP-0542"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueFifth.firstJet_recurrence"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueFifth.firstJet_product"
+        }
+      ]
+    }
+  ]
+}
