@@ -1,0 +1,57 @@
+{
+  "status": "Written proofs with independent Lean kernel and axiom checks of the listed supporting lemmas.",
+  "lean_version": "4.33.0",
+  "files": [
+    {
+      "path": "SymmetricCircuitAdvances.lean",
+      "sha256": "78e9567050829169a1e6e8bad827870c98d1f75ec305c00e9b4a832ee3a9a445",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SymmetricCircuitAdvances.determinantOfSandwichPencil"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SymmetricCircuitAdvances.determinantFromReciprocal"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "SymmetricCircuitAdvances.diagonalBlockIndexBound"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "SymmetricCircuitAdvances.previousPaddingDoesNotEraseGap"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "base_graph": "The complete bipartite graph on two sets of size three.",
+    "full_permanents": [
+      2093056,
+      2094080
+    ],
+    "restricted_permanents": [
+      32768,
+      32768
+    ],
+    "absolute_directed_permanent_gap": 33554432,
+    "modular_hankel_checks": 680
+  },
+  "priority": "Publication priority is unverified."
+}

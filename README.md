@@ -1597,3 +1597,8 @@ Pending formalizations:
 <!-- matrix-pc-advances:start -->
 - [Matrix Polynomial Calculus advances](MatrixPCAdvances/RESULTS.md) — exact conjugacy, rectangular inverse and weak-rank degrees, plus sharp degree and exponential sparse-size lower bounds for arithmetic noncongruence. Written proofs with Lean checks of supporting lemmas.
 <!-- matrix-pc-advances:end -->
+
+
+<!-- symmetric-circuit-advances:start -->
+- [Symmetric permanent and determinant advances](SymmetricCircuitAdvances/RESULTS.md) — exponential lower bounds with only five-label local symmetries, equivariant and border determinant representations, a single-reciprocal symmetric determinant construction, and matching-coefficient orbit bounds. Written proofs with Lean checks of supporting identities.
+<!-- symmetric-circuit-advances:end -->
