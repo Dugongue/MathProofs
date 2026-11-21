@@ -1,0 +1,26 @@
+{
+  "full_lemma": "open",
+  "reductions": "written proofs",
+  "kernel_checked": {
+    "source": "GradeCharacter.lean",
+    "sha256": "9fa2a20850b2e21d274a3ff60bfc28cd4bf0d2f6b7ef33d5173893f9cf557c09",
+    "lean": "4.33.0",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "graded_character_transfer"
+      }
+    ],
+    "scope": "Abstract finite-product identity for graded characters"
+  },
+  "finite_controls": {
+    "sign_checks": 161,
+    "compiler_comparisons": 24,
+    "compiler_yes": 12,
+    "compiler_no": 12
+  }
+}

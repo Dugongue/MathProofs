@@ -1739,3 +1739,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-x:start -->
 - [Grochow catalogue proofs X](GrochowCatalogueProofsX/README.md) — 24 additional catalogue entries, including special-linear tensor isomorphism in upper rank two, quantum witnesses at coherent multiplicity four, and exact extraspecial complement counts.
 <!-- grochow-catalogue-proofs-x:end -->
+
+
+<!-- even-conjugator-f3:start -->
+- [Even conjugators over the ternary field](EvenConjugatorF3/README.md) — One-instance reductions from filtered quadratic relations, intrinsic matrix algebras and output subspaces, with an executable signed comparison for full symmetric-square relations.
+<!-- even-conjugator-f3:end -->
