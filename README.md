@@ -1717,3 +1717,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-viii:start -->
 - [Grochow catalogue proofs VIII](GrochowCatalogueProofsVIII/README.md) — 21 additional catalogue entries, including oriented castling for special-linear transport, exact minimum-action counts for finite abelian groups, and two Lean-checked principal congruence identities.
 <!-- grochow-catalogue-proofs-viii:end -->
+
+
+<!-- grochow-catalogue-proofs-ix:start -->
+- [Grochow catalogue proofs IX](GrochowCatalogueProofsIX/README.md) — 22 additional catalogue entries, including the sparse quantum-symmetry threshold, binary divided-power tensor ranks, and parallel class-two subgroup intersection.
+<!-- grochow-catalogue-proofs-ix:end -->

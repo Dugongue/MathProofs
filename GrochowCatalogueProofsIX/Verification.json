@@ -1,0 +1,29 @@
+{
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of two translation identities used in GP-0348. The projective transport algorithm and its complexity analysis are written.",
+  "receipts": [
+    {
+      "source": "TranslationCosetCertificates.lean",
+      "sha256": "7b375a13efb3cbfee01e1bc056867cbc8257f98f45a1bf440da709c751e04016",
+      "used_in": [
+        "GP-0348"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueNinth.shift_comp"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueNinth.translation_offset_iff"
+        }
+      ]
+    }
+  ]
+}
