@@ -1726,3 +1726,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-ix:start -->
 - [Grochow catalogue proofs IX](GrochowCatalogueProofsIX/README.md) — 22 additional catalogue entries, including the sparse quantum-symmetry threshold, binary divided-power tensor ranks, and parallel class-two subgroup intersection.
 <!-- grochow-catalogue-proofs-ix:end -->
+
+
+<!-- grochow-catalogue-proofs-x:start -->
+- [Grochow catalogue proofs X](GrochowCatalogueProofsX/README.md) — 24 additional catalogue entries, including special-linear tensor isomorphism in upper rank two, quantum witnesses at coherent multiplicity four, and exact extraspecial complement counts.
+<!-- grochow-catalogue-proofs-x:end -->

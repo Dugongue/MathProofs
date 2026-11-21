@@ -1,0 +1,31 @@
+{
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of two representative identities used in GP-0491. The parallel transversal construction and its complexity analysis are written.",
+  "receipts": [
+    {
+      "source": "SchreierProjectionCertificates.lean",
+      "sha256": "81d55c9fed8ecbda73ccd478cd26dd104f286c457bfeb7b64a7545e3abe1e2d7",
+      "used_in": [
+        "GP-0491"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueTenth.projection_coset_iff"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueTenth.unique_projection_representative"
+        }
+      ]
+    }
+  ]
+}
