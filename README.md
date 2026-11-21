@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quantitative-tensor-degeneration-vii:start -->
+- **[Quantitative tensor degeneration VII](QuantitativeTensorDegenerationVII/README.md)** — Exact cubic transporters over rings, cancellation beyond associative catalysts, a sharp face-incidence threshold for cap optimization, and exact orders for regular multiplication pencils. Written proofs with three Lean-checked supporting statements.
+<!-- quantitative-tensor-degeneration-vii:end -->
+
 <!-- quantitative-tensor-degeneration-vi:start -->
 - **[Quantitative tensor degeneration VI](QuantitativeTensorDegenerationVI/README.md)** — Sharp catalyst-size tradeoffs, compact witness circuits and hard exact optimization, optimal multiplication pencils, and characteristic-two cubic degeneration. Written proofs with three Lean-checked supporting statements.
 <!-- quantitative-tensor-degeneration-vi:end -->

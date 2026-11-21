@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED",
+  "source": "CubicTransporter.lean",
+  "sha256": "013f11cf987e9819e79fd8cd95badad814796758e5686191c9a6483304fdbf0e",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Three supporting statements for the exact cubic transporter. The main theorems are written proofs.",
+  "declarations": [
+    {
+      "name": "CubicTransporter.balanced_vanishes_on_commutator_multiple",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "CubicTransporter.idempotent_eq_zero_of_complement_unit",
+      "transitive_axioms": []
+    },
+    {
+      "name": "CubicTransporter.graph_column_selector",
+      "transitive_axioms": [
+        "propext"
+      ]
+    }
+  ]
+}
