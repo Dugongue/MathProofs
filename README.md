@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- two-scalar-centroid-ti:start -->
+- **[One-instance TI reductions with two scalar centroids](TwoScalarCentroidTI/README.md)** — Intrinsic symplectic determinant lines, multicolor graph records, cube-kernel syzygies and Cartesian graph orientation over the ternary field. Written proofs with three Lean-checked supporting identities.
+<!-- two-scalar-centroid-ti:end -->
+
 <!-- scalar-centroid-orientation:start -->
 - **[Determinant records for scalar-centroid cube-zero algebras](ScalarCentroidOrientation/README.md)** — Exact dual relation orientation and a two-centroid normal form, with one ordinary ternary TI instance on stated syzygy, graph and odd-orbit classes. Written proofs with three Lean-checked supporting lemmas.
 <!-- scalar-centroid-orientation:end -->
