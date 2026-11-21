@@ -1,0 +1,25 @@
+{
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of the square-zero product and residual identities used in GP-0421. The algorithm and its complexity analysis are written.",
+  "receipts": [
+    {
+      "source": "PrincipalCongruenceCertificates.lean",
+      "sha256": "be0063e041273200faf5084b30e050d8d6ed17e24a8631432b5d34f919efa09b",
+      "used_in": [
+        "GP-0421"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "GrochowCatalogueEighth.square_zero_list_product"
+        },
+        {
+          "axioms": [],
+          "theorem": "GrochowCatalogueEighth.left_residual_displacement"
+        }
+      ]
+    }
+  ]
+}

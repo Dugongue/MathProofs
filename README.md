@@ -1708,3 +1708,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-vii:start -->
 - [Grochow catalogue proofs VII](GrochowCatalogueProofsVII/README.md) — 26 additional catalogue entries, including a quadratic exact-versus-border determinantal gap, the equivariant code partner obstruction, and two Lean-checked identities for repetition codes.
 <!-- grochow-catalogue-proofs-vii:end -->
+
+
+<!-- grochow-catalogue-proofs-viii:start -->
+- [Grochow catalogue proofs VIII](GrochowCatalogueProofsVIII/README.md) — 21 additional catalogue entries, including oriented castling for special-linear transport, exact minimum-action counts for finite abelian groups, and two Lean-checked principal congruence identities.
+<!-- grochow-catalogue-proofs-viii:end -->
