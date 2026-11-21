@@ -1,0 +1,645 @@
+{
+  "axes": 48,
+  "rules": 40,
+  "raw_assignments": 281474976710656,
+  "retained_when_H_is_false": 26286336,
+  "retained_when_H_is_true": 1182154752,
+  "retained_when_H_is_false_and_classical_ETH_is_false": 13143168,
+  "retained_when_H_is_false_and_classical_ETH_is_true": 13143168,
+  "retained_when_H_is_false_and_WEAKETH_is_true": 19714752,
+  "retained_when_H_is_false_omitting_arithmetic_axes": 547632,
+  "individual_branches": {
+    "HR": {
+      "true": 10796544,
+      "false": 15489792
+    },
+    "HN": {
+      "true": 22367232,
+      "false": 3919104
+    },
+    "HC": {
+      "true": 9300096,
+      "false": 16986240
+    },
+    "AP": {
+      "true": 0,
+      "false": 26286336
+    },
+    "BP": {
+      "true": 7686144,
+      "false": 18600192
+    },
+    "AQP": {
+      "true": 16250112,
+      "false": 10036224
+    },
+    "BQP_TIME": {
+      "true": 18641664,
+      "false": 7644672
+    },
+    "AAP": {
+      "true": 17515008,
+      "false": 8771328
+    },
+    "PNP": {
+      "true": 0,
+      "false": 26286336
+    },
+    "PRP": {
+      "true": 8246016,
+      "false": 18040320
+    },
+    "PBPP": {
+      "true": 5239296,
+      "false": 21047040
+    },
+    "PZPP": {
+      "true": 14259456,
+      "false": 12026880
+    },
+    "PBQP": {
+      "true": 2619648,
+      "false": 23666688
+    },
+    "PPSPACE": {
+      "true": 0,
+      "false": 26286336
+    },
+    "PH2": {
+      "true": 20860416,
+      "false": 5425920
+    },
+    "AMNP": {
+      "true": 8762112,
+      "false": 17524224
+    },
+    "NPCONP": {
+      "true": 8762112,
+      "false": 17524224
+    },
+    "NPADVICE": {
+      "true": 10008576,
+      "false": 16277760
+    },
+    "NPQP": {
+      "true": 6213888,
+      "false": 20072448
+    },
+    "GIP": {
+      "true": 10996992,
+      "false": 15289344
+    },
+    "GINPC": {
+      "true": 0,
+      "false": 26286336
+    },
+    "AGI": {
+      "true": 0,
+      "false": 26286336
+    },
+    "BGI": {
+      "true": 7174656,
+      "false": 19111680
+    },
+    "ANPC": {
+      "true": 10430208,
+      "false": 15856128
+    },
+    "BNPC": {
+      "true": 0,
+      "false": 26286336
+    },
+    "ETH": {
+      "true": 13143168,
+      "false": 13143168
+    },
+    "SETH": {
+      "true": 6571584,
+      "false": 19714752
+    },
+    "OWF": {
+      "true": 13143168,
+      "false": 13143168
+    },
+    "VPVNP3": {
+      "true": 5004288,
+      "false": 21282048
+    },
+    "MCSPP": {
+      "true": 9020160,
+      "false": 17266176
+    },
+    "MKTPP": {
+      "true": 6013440,
+      "false": 20272896
+    },
+    "COB": {
+      "true": 8762112,
+      "false": 17524224
+    },
+    "PLDEC": {
+      "true": 8762112,
+      "false": 17524224
+    },
+    "AXIS": {
+      "true": 0,
+      "false": 26286336
+    },
+    "PROBES": {
+      "true": 0,
+      "false": 26286336
+    },
+    "POLYBACK": {
+      "true": 0,
+      "false": 26286336
+    },
+    "INTBACK": {
+      "true": 0,
+      "false": 26286336
+    },
+    "DUAL": {
+      "true": 0,
+      "false": 26286336
+    },
+    "SOCLE9": {
+      "true": 0,
+      "false": 26286336
+    },
+    "RH": {
+      "true": 17524224,
+      "false": 8762112
+    },
+    "GRH": {
+      "true": 8762112,
+      "false": 17524224
+    },
+    "BSD": {
+      "true": 13143168,
+      "false": 13143168
+    },
+    "HODGE": {
+      "true": 13143168,
+      "false": 13143168
+    },
+    "ABC": {
+      "true": 13143168,
+      "false": 13143168
+    },
+    "H10Q": {
+      "true": 13143168,
+      "false": 13143168
+    },
+    "HASSEQ": {
+      "true": 0,
+      "false": 26286336
+    },
+    "WEAKETH": {
+      "true": 19714752,
+      "false": 6571584
+    }
+  },
+  "individual_branches_if_H": {
+    "HR": {
+      "true": 1182154752,
+      "false": 0
+    },
+    "HN": {
+      "true": 1182154752,
+      "false": 0
+    },
+    "HC": {
+      "true": 1182154752,
+      "false": 0
+    },
+    "AP": {
+      "true": 992378880,
+      "false": 189775872
+    },
+    "BP": {
+      "true": 559841280,
+      "false": 622313472
+    },
+    "AQP": {
+      "true": 1158266880,
+      "false": 23887872
+    },
+    "BQP_TIME": {
+      "true": 917962752,
+      "false": 264192000
+    },
+    "AAP": {
+      "true": 1129734144,
+      "false": 52420608
+    },
+    "PNP": {
+      "true": 1474560,
+      "false": 1180680192
+    },
+    "PRP": {
+      "true": 659275776,
+      "false": 522878976
+    },
+    "PBPP": {
+      "true": 440008704,
+      "false": 742146048
+    },
+    "PZPP": {
+      "true": 899629056,
+      "false": 282525696
+    },
+    "PBQP": {
+      "true": 220250112,
+      "false": 961904640
+    },
+    "PPSPACE": {
+      "true": 491520,
+      "false": 1181663232
+    },
+    "PH2": {
+      "true": 1091469312,
+      "false": 90685440
+    },
+    "AMNP": {
+      "true": 560185344,
+      "false": 621969408
+    },
+    "NPCONP": {
+      "true": 560185344,
+      "false": 621969408
+    },
+    "NPADVICE": {
+      "true": 699826176,
+      "false": 482328576
+    },
+    "NPQP": {
+      "true": 500416512,
+      "false": 681738240
+    },
+    "GIP": {
+      "true": 481787904,
+      "false": 700366848
+    },
+    "GINPC": {
+      "true": 81690624,
+      "false": 1100464128
+    },
+    "AGI": {
+      "true": 602062848,
+      "false": 580091904
+    },
+    "BGI": {
+      "true": 436764672,
+      "false": 745390080
+    },
+    "ANPC": {
+      "true": 545734656,
+      "false": 636420096
+    },
+    "BNPC": {
+      "true": 545734656,
+      "false": 636420096
+    },
+    "ETH": {
+      "true": 590340096,
+      "false": 591814656
+    },
+    "SETH": {
+      "true": 295170048,
+      "false": 886984704
+    },
+    "OWF": {
+      "true": 590340096,
+      "false": 591814656
+    },
+    "VPVNP3": {
+      "true": 349913088,
+      "false": 832241664
+    },
+    "MCSPP": {
+      "true": 559448064,
+      "false": 622706688
+    },
+    "MKTPP": {
+      "true": 538361856,
+      "false": 643792896
+    },
+    "COB": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "PLDEC": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "AXIS": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "PROBES": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "POLYBACK": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "INTBACK": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "DUAL": {
+      "true": 1182154752,
+      "false": 0
+    },
+    "SOCLE9": {
+      "true": 1182154752,
+      "false": 0
+    },
+    "RH": {
+      "true": 788103168,
+      "false": 394051584
+    },
+    "GRH": {
+      "true": 394051584,
+      "false": 788103168
+    },
+    "BSD": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "HODGE": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "ABC": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "H10Q": {
+      "true": 591077376,
+      "false": 591077376
+    },
+    "HASSEQ": {
+      "true": 0,
+      "false": 1182154752
+    },
+    "WEAKETH": {
+      "true": 885510144,
+      "false": 296644608
+    }
+  },
+  "minimal_positive_conflicts_at_most_three": [
+    {
+      "premises": [
+        "AP"
+      ],
+      "rules": [
+        "U03"
+      ]
+    },
+    {
+      "premises": [
+        "PNP"
+      ],
+      "rules": [
+        "U03",
+        "C05"
+      ]
+    },
+    {
+      "premises": [
+        "PPSPACE"
+      ],
+      "rules": [
+        "U03",
+        "C01",
+        "C05"
+      ]
+    },
+    {
+      "premises": [
+        "GINPC"
+      ],
+      "rules": [
+        "G01",
+        "G05"
+      ]
+    },
+    {
+      "premises": [
+        "AGI"
+      ],
+      "rules": [
+        "G01"
+      ]
+    },
+    {
+      "premises": [
+        "BNPC"
+      ],
+      "rules": [
+        "G07"
+      ]
+    },
+    {
+      "premises": [
+        "AXIS"
+      ],
+      "rules": [
+        "T02"
+      ]
+    },
+    {
+      "premises": [
+        "PROBES"
+      ],
+      "rules": [
+        "T03"
+      ]
+    },
+    {
+      "premises": [
+        "POLYBACK"
+      ],
+      "rules": [
+        "T04"
+      ]
+    },
+    {
+      "premises": [
+        "INTBACK"
+      ],
+      "rules": [
+        "T05"
+      ]
+    },
+    {
+      "premises": [
+        "DUAL"
+      ],
+      "rules": [
+        "T06"
+      ]
+    },
+    {
+      "premises": [
+        "SOCLE9"
+      ],
+      "rules": [
+        "T08"
+      ]
+    },
+    {
+      "premises": [
+        "HASSEQ"
+      ],
+      "rules": [
+        "M02"
+      ]
+    },
+    {
+      "premises": [
+        "HC",
+        "BP"
+      ],
+      "rules": [
+        "U03",
+        "U05"
+      ]
+    },
+    {
+      "premises": [
+        "PRP",
+        "MCSPP"
+      ],
+      "rules": [
+        "U03",
+        "C09"
+      ]
+    },
+    {
+      "premises": [
+        "PRP",
+        "MKTPP"
+      ],
+      "rules": [
+        "U03",
+        "C04",
+        "C10"
+      ]
+    },
+    {
+      "premises": [
+        "PBPP",
+        "MCSPP"
+      ],
+      "rules": [
+        "U03",
+        "C03",
+        "C09"
+      ]
+    },
+    {
+      "premises": [
+        "PBPP",
+        "MKTPP"
+      ],
+      "rules": [
+        "U03",
+        "C03",
+        "C04",
+        "C10"
+      ]
+    },
+    {
+      "premises": [
+        "PZPP",
+        "MKTPP"
+      ],
+      "rules": [
+        "U03",
+        "C10"
+      ]
+    },
+    {
+      "premises": [
+        "PBQP",
+        "MCSPP"
+      ],
+      "rules": [
+        "U03",
+        "C02",
+        "C03",
+        "C09"
+      ]
+    },
+    {
+      "premises": [
+        "PBQP",
+        "MKTPP"
+      ],
+      "rules": [
+        "U03",
+        "C02",
+        "C03",
+        "C04",
+        "C10"
+      ]
+    },
+    {
+      "premises": [
+        "AMNP",
+        "NPCONP"
+      ],
+      "rules": [
+        "U03",
+        "C08"
+      ]
+    },
+    {
+      "premises": [
+        "COB",
+        "PLDEC"
+      ],
+      "rules": [
+        "T01"
+      ]
+    },
+    {
+      "premises": [
+        "HR",
+        "BP",
+        "PBPP"
+      ],
+      "rules": [
+        "U03",
+        "U06"
+      ]
+    },
+    {
+      "premises": [
+        "HR",
+        "BP",
+        "PBQP"
+      ],
+      "rules": [
+        "U03",
+        "U06",
+        "C02"
+      ]
+    },
+    {
+      "premises": [
+        "HC",
+        "GIP",
+        "BGI"
+      ],
+      "rules": [
+        "U03",
+        "U05",
+        "G04"
+      ]
+    }
+  ],
+  "independent_brute_force_projection": 378
+}

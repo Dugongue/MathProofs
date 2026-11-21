@@ -1383,3 +1383,10 @@ Pending formalizations:
 
 - [Cross-world atlas](TISLCrossWorlds/RESULTS.md) adds 67 technical entries and compares 29 worlds or joint assumptions. It gives a principal-determinant compiler over bounded-depth finite coefficient rings, exact local-ring and residue-field collapse equivalences, a signed ternary-to-ordinary integral reduction, and new algebraic and oracle comparisons. The unrestricted ternary equality remains open. Two supporting identities were independently checked in Lean.
 <!-- tisl-cross-worlds:end -->
+
+
+<!-- tisl-worlds-500:start -->
+## Strict ternary tensor isomorphism atlas
+
+- [The 520-entry atlas](TISLWorlds500/RESULTS.md) adds 219 technical entries and compares both branches of 47 premises against the ternary equality and strictness worlds. It includes an oriented boundary promise, mixed-characteristic determinant profiles, a finite-extension transfer to ordinary free polynomial-ring tensors, and quotient-volume compilers. The unrestricted reduction remains open. Lean verified two supporting scalar identities.
+<!-- tisl-worlds-500:end -->

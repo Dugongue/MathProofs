@@ -1,0 +1,87 @@
+{
+  "entries": {
+    "earlier": 301,
+    "added": 219,
+    "total": 520,
+    "paired_cases_in_new_chapters": 130
+  },
+  "chapters": {
+    "Volumes.md": {
+      "technical_entries": 60,
+      "paired_cases": 15,
+      "submitted_source_sha256": "43a39fc828988918a841675b83ccf29041cd3a5d90918d99dcbf1a2429e1cbf0"
+    },
+    "Algebra.md": {
+      "technical_entries": 52,
+      "paired_cases": 31,
+      "submitted_source_sha256": "39869c77444d89f4c24e6f490164110248b6bed6de7fa4161ad4c07c5be9d19e"
+    },
+    "Arithmetic.md": {
+      "technical_entries": 52,
+      "paired_cases": 52,
+      "submitted_source_sha256": "b611f4e9fec9ac999272cbcb4e2adac3b732b81a08a5ef46b2cee2cfb4be8b29"
+    },
+    "Complexity.md": {
+      "technical_entries": 55,
+      "paired_cases": 32,
+      "submitted_source_sha256": "6be66e12d6a8b26ff395cb717c3bf19a5be9930fdfbcf2e0dd67cb8cd8f21c9d"
+    }
+  },
+  "scope": "Written reduction proofs and exact implications, with explicitly labeled conditional preprint and oracle branches. The unrestricted ternary reduction remains open.",
+  "lean": {
+    "version": "4.33.0",
+    "source": "QuotientVolumes.lean",
+    "sha256": "50dfe263b7c5be1aeab787f270bc7a7f70cf0282ea4f465ef82c46573b4cf234",
+    "declarations": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "QuotientVolumes.volume_covariance"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "QuotientVolumes.corrected_projective_mark"
+      }
+    ],
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "scope": "Only the two supporting calibrated scalar identities."
+  },
+  "finite_controls": {
+    "3": {
+      "rectangular_frame_cases": 192,
+      "alternating_frame_cases": 288,
+      "symmetric_lagrangian_cases": 20,
+      "dual_correction_essential_cases": 0
+    },
+    "5": {
+      "rectangular_frame_cases": 384,
+      "alternating_frame_cases": 576,
+      "symmetric_lagrangian_cases": 40,
+      "dual_correction_essential_cases": 96
+    },
+    "7": {
+      "rectangular_frame_cases": 576,
+      "alternating_frame_cases": 864,
+      "symmetric_lagrangian_cases": 60,
+      "dual_correction_essential_cases": 256
+    }
+  },
+  "world_count": {
+    "raw_axes": 48,
+    "proved_rules": 40,
+    "strict_models_under_rules": 26286336,
+    "meaning": "Boolean assignments satisfying the encoded rules, not mathematical consistency models."
+  },
+  "priority": "Publication priority is unverified."
+}

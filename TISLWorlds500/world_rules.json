@@ -1,0 +1,626 @@
+{
+  "axes": {
+    "H": "Signed ternary TI many-one reduces to ordinary ternary TI in deterministic polynomial time",
+    "HR": "Signed ternary TI has a one-output bounded-error randomized reduction to ordinary ternary TI",
+    "HN": "Signed ternary TI has a polynomial-size circuit many-one reduction to ordinary ternary TI",
+    "HC": "Signed ternary TI is decidable in deterministic polynomial time with an ordinary TI oracle",
+    "AP": "Signed ternary TI is in P",
+    "BP": "Ordinary ternary TI is in P",
+    "AQP": "Signed ternary TI is in QP",
+    "BQP_TIME": "Ordinary ternary TI is in QP",
+    "AAP": "Signed ternary TI is in P/poly",
+    "PNP": "P = NP",
+    "PRP": "P = RP",
+    "PBPP": "P = BPP",
+    "PZPP": "P = ZPP",
+    "PBQP": "P = BQP",
+    "PPSPACE": "P = PSPACE",
+    "PH2": "The polynomial hierarchy collapses to its second level",
+    "AMNP": "AM = NP",
+    "NPCONP": "P = NP ∩ coNP",
+    "NPADVICE": "NP ⊆ P/poly",
+    "NPQP": "NP ⊆ QP",
+    "GIP": "Graph isomorphism is in P",
+    "GINPC": "Graph isomorphism is NP-complete under deterministic Karp reductions",
+    "AGI": "Signed ternary TI reduces to graph isomorphism under deterministic Karp reductions",
+    "BGI": "Ordinary ternary TI reduces to graph isomorphism under deterministic Karp reductions",
+    "ANPC": "Signed ternary TI is NP-complete under deterministic Karp reductions",
+    "BNPC": "Ordinary ternary TI is NP-complete under deterministic Karp reductions",
+    "ETH": "The Exponential Time Hypothesis for 3-SAT",
+    "SETH": "The Strong Exponential Time Hypothesis",
+    "OWF": "Classical uniform one-way functions exist",
+    "VPVNP3": "Formal arithmetic VP = VNP over the fixed field F3",
+    "MCSPP": "The minimum circuit size problem is in P",
+    "MKTPP": "The minimum KT problem is in P",
+    "COB": "Complement ordinary ternary TI many-one reduces to ordinary ternary TI in P",
+    "PLDEC": "Signed TI has a PL decoder on a polynomial, deterministically generated list of ordinary TI queries",
+    "AXIS": "The oriented single-mode boundary test is in PromiseP on ordinary-positive inputs",
+    "PROBES": "The quotient-volume marks cover an H-hard carrier, with an explicit polynomial equivariant extraction and complete sign repair",
+    "POLYBACK": "The explicit ordinary free F3[t] tensor image of signed ternary TI reduces to ordinary ternary TI in P",
+    "INTBACK": "The explicit ordinary free integral tensor image of signed ternary TI reduces to ordinary ternary TI in P",
+    "DUAL": "Full signed-to-ordinary collapse over the ternary dual numbers",
+    "SOCLE9": "Full signed-to-ordinary collapse on the socle-supported Z/9 carrier",
+    "RH": "The Riemann hypothesis for the Riemann zeta function",
+    "GRH": "The generalized Riemann hypothesis for all Dirichlet L-functions, including zeta",
+    "BSD": "The Birch and Swinnerton-Dyer conjecture for all elliptic curves over Q",
+    "HODGE": "The rational Hodge conjecture",
+    "ABC": "The abc conjecture over Q",
+    "H10Q": "Solvability of rational Diophantine equations is decidable",
+    "HASSEQ": "Rational signed TI has a local-to-global principle at all places of Q",
+    "WEAKETH": "No 3-SAT algorithm runs in 2^(O(n^(1−ε))) poly(input length) for any fixed ε>0"
+  },
+  "rules": [
+    {
+      "id": "U01",
+      "when": [
+        "H"
+      ],
+      "then": [
+        "HR",
+        "HN",
+        "HC"
+      ],
+      "reason": "Simulate deterministically, compile into circuits, or make one oracle call.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "U02",
+      "when": [
+        "HR"
+      ],
+      "then": [
+        "HN"
+      ],
+      "reason": "Amplify each length by independent repeated reductions and combine output instances via the ordinary majority compiler. Fix all repetitions for that length by the union bound over inputs.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)",
+        "[Complexity chapter](Complexity.md)"
+      ]
+    },
+    {
+      "id": "U03",
+      "when": [
+        "AP"
+      ],
+      "then": [
+        "H",
+        "AQP",
+        "AAP"
+      ],
+      "reason": "A decision bit selects fixed YES or NO output. Polynomial time gives both listed bounds.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "U04",
+      "when": [
+        "AAP"
+      ],
+      "then": [
+        "HN"
+      ],
+      "reason": "A decision circuit chooses the fixed YES or NO output.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "U05",
+      "when": [
+        "HC",
+        "BP"
+      ],
+      "then": [
+        "AP"
+      ],
+      "reason": "Answer all ordinary oracle calls deterministically.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "U06",
+      "when": [
+        "HR",
+        "BP",
+        "PBPP"
+      ],
+      "then": [
+        "AP"
+      ],
+      "reason": "Simulate the one-output randomized reduction followed by ordinary decision, then derandomize BPP.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "U07",
+      "when": [
+        "HN",
+        "BP"
+      ],
+      "then": [
+        "AAP"
+      ],
+      "reason": "Compose the advice reduction circuit with a circuit for ordinary polynomial-time decision.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "U08",
+      "when": [
+        "H",
+        "BQP_TIME"
+      ],
+      "then": [
+        "AQP"
+      ],
+      "reason": "Compose a polynomial-size output map with quasipolynomial ordinary decision.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "C01",
+      "when": [
+        "PPSPACE"
+      ],
+      "then": [
+        "PNP",
+        "PBQP"
+      ],
+      "reason": "Both NP and BQP are contained in PSPACE.",
+      "sources": []
+    },
+    {
+      "id": "C02",
+      "when": [
+        "PBQP"
+      ],
+      "then": [
+        "PBPP"
+      ],
+      "reason": "BPP is contained in BQP.",
+      "sources": []
+    },
+    {
+      "id": "C03",
+      "when": [
+        "PBPP"
+      ],
+      "then": [
+        "PRP"
+      ],
+      "reason": "RP is contained in BPP.",
+      "sources": []
+    },
+    {
+      "id": "C04",
+      "when": [
+        "PRP"
+      ],
+      "then": [
+        "PZPP"
+      ],
+      "reason": "ZPP is contained in RP.",
+      "sources": []
+    },
+    {
+      "id": "C05",
+      "when": [
+        "PNP"
+      ],
+      "then": [
+        "AP",
+        "BP",
+        "NPADVICE",
+        "NPQP",
+        "GIP",
+        "NPCONP",
+        "PH2",
+        "AMNP",
+        "PBPP"
+      ],
+      "reason": "The transporter relations are in NP. PH collapses to P and contains AM and BPP.",
+      "sources": [
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "C06",
+      "when": [
+        "NPADVICE"
+      ],
+      "then": [
+        "AAP",
+        "PH2"
+      ],
+      "reason": "Signed TI lies in NP and Karp–Lipton gives collapse to the second level.",
+      "sources": [
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)",
+        "[Karp and Lipton](https://doi.org/10.5169/seals-52237)"
+      ]
+    },
+    {
+      "id": "C07",
+      "when": [
+        "NPQP"
+      ],
+      "then": [
+        "AQP",
+        "BQP_TIME"
+      ],
+      "reason": "Both transporter problems lie in NP.",
+      "sources": [
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "C08",
+      "when": [
+        "AMNP",
+        "NPCONP"
+      ],
+      "then": [
+        "AP"
+      ],
+      "reason": "Signed nonisomorphism lies in AM, so the two assumptions put signed decision in P.",
+      "sources": [
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "C09",
+      "when": [
+        "MCSPP",
+        "PRP"
+      ],
+      "then": [
+        "AP"
+      ],
+      "reason": "The MCSP-assisted witness inverter gives signed decision in RP with the MCSP oracle.",
+      "sources": [
+        "[Allender and Das](https://www.cs.rutgers.edu/~allender/papers/szk.mcsp.pdf) · [Allender et al., Theorem 5.7](https://pages.cs.wisc.edu/~dieter/Papers/gi-mktp-sicomp.pdf)",
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "C10",
+      "when": [
+        "MKTPP",
+        "PZPP"
+      ],
+      "then": [
+        "AP"
+      ],
+      "reason": "The group-orbit MKTP algorithm gives signed decision in ZPP with the MKTP oracle.",
+      "sources": [
+        "[Allender and Das](https://www.cs.rutgers.edu/~allender/papers/szk.mcsp.pdf) · [Allender et al., Theorem 5.7](https://pages.cs.wisc.edu/~dieter/Papers/gi-mktp-sicomp.pdf)",
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "C11",
+      "when": [
+        "VPVNP3"
+      ],
+      "then": [
+        "NPADVICE"
+      ],
+      "reason": "Isolate Boolean witnesses, compute the formal VNP count modulo three, amplify and fix good randomness nonuniformly.",
+      "sources": [
+        "[Valiant and Vazirani](https://ics.uci.edu/~vazirani/ValVaz.pdf) · [Earlier VP/VNP comparison](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "C12",
+      "when": [
+        "PNP"
+      ],
+      "then": [
+        "!ETH",
+        "!SETH",
+        "!OWF",
+        "!WEAKETH"
+      ],
+      "reason": "Polynomial SAT violates both exponential hypotheses, and NP search in P inverts every polynomial-time function on its range.",
+      "sources": [
+        "[Impagliazzo and Paturi](https://doi.org/10.1006/jcss.2000.1727)"
+      ]
+    },
+    {
+      "id": "C13",
+      "when": [
+        "SETH"
+      ],
+      "then": [
+        "ETH"
+      ],
+      "reason": "Sparsification and linear-size reduction of each fixed-width sparse SAT to 3-SAT transfer arbitrarily small exponents.",
+      "sources": [
+        "[Impagliazzo and Paturi](https://doi.org/10.1006/jcss.2000.1727)"
+      ]
+    },
+    {
+      "id": "C14",
+      "when": [
+        "ETH"
+      ],
+      "then": [
+        "WEAKETH"
+      ],
+      "reason": "A stretched-exponential 3-SAT running time has asymptotic exponential rate zero.",
+      "sources": [
+        "[Comparison of classical and Weak ETH](https://arxiv.org/abs/2611.02650)"
+      ]
+    },
+    {
+      "id": "G01",
+      "when": [
+        "AGI"
+      ],
+      "then": [
+        "H",
+        "AQP"
+      ],
+      "reason": "Compose with graph-to-tensor or with Babai's graph algorithm.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)",
+        "[Babai, Graph Isomorphism in Quasipolynomial Time](https://arxiv.org/abs/1512.03547)"
+      ]
+    },
+    {
+      "id": "G02",
+      "when": [
+        "AGI",
+        "GIP"
+      ],
+      "then": [
+        "AP"
+      ],
+      "reason": "Compose signed-to-graph with graph decision.",
+      "sources": [
+        "[Babai, Graph Isomorphism in Quasipolynomial Time](https://arxiv.org/abs/1512.03547)"
+      ]
+    },
+    {
+      "id": "G03",
+      "when": [
+        "BGI"
+      ],
+      "then": [
+        "BQP_TIME"
+      ],
+      "reason": "Compose ordinary-to-graph with Babai's graph algorithm.",
+      "sources": [
+        "[Babai, Graph Isomorphism in Quasipolynomial Time](https://arxiv.org/abs/1512.03547)"
+      ]
+    },
+    {
+      "id": "G04",
+      "when": [
+        "BGI",
+        "GIP"
+      ],
+      "then": [
+        "BP"
+      ],
+      "reason": "Compose ordinary-to-graph with graph decision.",
+      "sources": [
+        "[Babai, Graph Isomorphism in Quasipolynomial Time](https://arxiv.org/abs/1512.03547)"
+      ]
+    },
+    {
+      "id": "G05",
+      "when": [
+        "GINPC"
+      ],
+      "then": [
+        "AGI",
+        "BGI",
+        "PH2",
+        "NPQP"
+      ],
+      "reason": "Both languages are in NP. Graph nonisomorphism is in AM, and Babai supplies the quasipolynomial upper bound.",
+      "sources": [
+        "[Boppana, Håstad and Zachos](https://www.sciencedirect.com/science/article/pii/0020019087902328)",
+        "[Babai, Graph Isomorphism in Quasipolynomial Time](https://arxiv.org/abs/1512.03547)",
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "G06",
+      "when": [
+        "ANPC"
+      ],
+      "then": [
+        "PH2"
+      ],
+      "reason": "Signed nonisomorphism lies in AM, so signed NP-completeness collapses PH to its second level.",
+      "sources": [
+        "[Boppana, Håstad and Zachos](https://www.sciencedirect.com/science/article/pii/0020019087902328)",
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "G07",
+      "when": [
+        "BNPC"
+      ],
+      "then": [
+        "H",
+        "PH2"
+      ],
+      "reason": "Completeness gives the reduction, and ordinary nonisomorphism lies in AM.",
+      "sources": [
+        "[Boppana, Håstad and Zachos](https://www.sciencedirect.com/science/article/pii/0020019087902328)",
+        "[Earlier complexity atlas](prior/prior/earlier/baseline/expansion/Complexity.md)"
+      ]
+    },
+    {
+      "id": "T01",
+      "when": [
+        "COB",
+        "PLDEC"
+      ],
+      "then": [
+        "H"
+      ],
+      "reason": "Complement rails and the single-query weighted branching-program compiler implement the PL decoder.",
+      "sources": [
+        "[Complexity chapter](Complexity.md)"
+      ]
+    },
+    {
+      "id": "T02",
+      "when": [
+        "AXIS"
+      ],
+      "then": [
+        "H"
+      ],
+      "reason": "Reflect the sign cube, recover edge boundaries, and gate through the single original ordinary input.",
+      "sources": [
+        "[Complexity chapter](Complexity.md)",
+        "[Quotient-volume chapter](Volumes.md)"
+      ]
+    },
+    {
+      "id": "T03",
+      "when": [
+        "PROBES"
+      ],
+      "then": [
+        "H"
+      ],
+      "reason": "Compile the sufficient explicit family of character measurements and repair all signs.",
+      "sources": [
+        "[Quotient-volume chapter](Volumes.md)"
+      ]
+    },
+    {
+      "id": "T04",
+      "when": [
+        "POLYBACK"
+      ],
+      "then": [
+        "H"
+      ],
+      "reason": "Compose the uniform ternary polynomial-ring bridge with the stipulated back-transfer.",
+      "sources": [
+        "[Arithmetic chapter](Arithmetic.md)"
+      ]
+    },
+    {
+      "id": "T05",
+      "when": [
+        "INTBACK"
+      ],
+      "then": [
+        "H"
+      ],
+      "reason": "Compose the integral bridge with the stipulated back-transfer.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "T06",
+      "when": [
+        "DUAL"
+      ],
+      "then": [
+        "H"
+      ],
+      "reason": "Use the fixed dual-number ring to residue-field equivalence.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "T07",
+      "when": [
+        "H"
+      ],
+      "then": [
+        "DUAL"
+      ],
+      "reason": "Use the residue-field to fixed dual-number ring equivalence.",
+      "sources": [
+        "[Definitions and ordinary/signed transfers](prior/RESULTS.md)"
+      ]
+    },
+    {
+      "id": "T08",
+      "when": [
+        "SOCLE9"
+      ],
+      "then": [
+        "H"
+      ],
+      "reason": "The signed and ordinary comparisons on this carrier reflect their residue-field counterparts.",
+      "sources": [
+        "[Mixed-characteristic chapter](Algebra.md)"
+      ]
+    },
+    {
+      "id": "T09",
+      "when": [
+        "H"
+      ],
+      "then": [
+        "SOCLE9"
+      ],
+      "reason": "Encode and reflect the residue instance using a fixed socle line over Z/9.",
+      "sources": [
+        "[Mixed-characteristic chapter](Algebra.md)"
+      ]
+    },
+    {
+      "id": "M01",
+      "when": [
+        "GRH"
+      ],
+      "then": [
+        "RH"
+      ],
+      "reason": "The trivial character includes the Riemann zeta function.",
+      "sources": [
+        "[Arithmetic chapter](Arithmetic.md)"
+      ]
+    },
+    {
+      "id": "M02",
+      "when": [],
+      "then": [
+        "!HASSEQ"
+      ],
+      "reason": "Explicit rational tensor pairs have local signed transporters everywhere and no rational signed transporter.",
+      "sources": [
+        "[Arithmetic chapter](Arithmetic.md)"
+      ]
+    }
+  ],
+  "arithmetic_axes": [
+    "RH",
+    "GRH",
+    "BSD",
+    "HODGE",
+    "ABC",
+    "H10Q",
+    "HASSEQ"
+  ],
+  "optional_literature": {
+    "ETH_REFUTATION": {
+      "pins": [
+        "!ETH"
+      ],
+      "source": "https://github.com/openai/math/blob/main/lean/docs/378.md",
+      "scope": "Accept the published, scoped Lean bridge and the posted refutation of classical ETH. This branch does not pin Weak ETH."
+    }
+  }
+}
