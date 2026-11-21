@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-holonomy-advances:start -->
+- **[Four advances on tensor isomorphism from holonomy](GrochowHolonomyAdvances/README.md)** — Informal proofs of GI reductions for higher-dimensional field-multiple blocks, noncommutative semisimple holonomy, commuting holonomy with nilpotent radicals, and unbounded cycle length under a local cycle-rank bound. Includes exact isomorphism counts in the field-multiple class, cactus GI-completeness, finite controls, and a Lean-checked auxiliary generator-agreement lemma.
+<!-- grochow-holonomy-advances:end -->
+
 <!-- grochow-lean-intake-crossovers:start -->
 [GrochowLeanIntakeCrossovers research notes](GrochowLeanIntakeCrossovers/AUDIT.md) — AI-assisted informal proofs. Polynomial-time Fitting-free Cayley-table canonization, VNP completeness for canonical IPS with maximum-degree-nine negative 2-CNF prefixes over fields of size greater than two, determinant-resolved isomorphism of weighted cubic graph tensors, and symbolic subgraph circuits with supplied bounded cut-rank factors. Includes two independently kernel-checked algebraic identities.
 <!-- grochow-lean-intake-crossovers:end -->
