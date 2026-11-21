@@ -1,0 +1,36 @@
+{
+  "status": "VERIFIED",
+  "source": "ExactCubicOrientation.lean",
+  "sha256": "debc4d3f7ca9c88cb9c91bb4cb994ad8ed600e1cebb1f201b5fdd8dcd4fd2051",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Four supporting statements for asymmetric cubic recovery and determinant coalescing. The main theorems are written proofs.",
+  "declarations": [
+    {
+      "name": "ExactCubicOrientation.asymmetric_projection_bound",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExactCubicOrientation.distinct_regular_multiplicities",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ExactCubicOrientation.residual_determinant_monomial",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "ExactCubicOrientation.residue_correction_trivial",
+      "transitive_axioms": [
+        "propext"
+      ]
+    }
+  ]
+}

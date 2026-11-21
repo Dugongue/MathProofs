@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- cubic-transporters-and-ti:start -->
+- **[Cubic transporters and special-linear tensor isomorphism](CubicTransportersAndTI/README.md)** — Exact ring-valued cubic transporters preserve the ternary sign in the cube-zero normal form. Frobenius and centroid determinant records and paired-adjoint corrections give single ordinary TI instances on stated classes. Written proofs with four Lean-checked supporting lemmas.
+<!-- cubic-transporters-and-ti:end -->
+
 <!-- quantitative-tensor-degeneration-vii:start -->
 - **[Quantitative tensor degeneration VII](QuantitativeTensorDegenerationVII/README.md)** — Exact cubic transporters over rings, cancellation beyond associative catalysts, a sharp face-incidence threshold for cap optimization, and exact orders for regular multiplication pencils. Written proofs with three Lean-checked supporting statements.
 <!-- quantitative-tensor-degeneration-vii:end -->
