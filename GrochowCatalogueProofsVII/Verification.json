@@ -1,0 +1,31 @@
+{
+  "lean": "4.33.0",
+  "scope": "Kernel and transitive axiom audit of the invariant sum and functional identities in the repetition-code obstruction in GP-0313. The orbit criterion and other arguments are written.",
+  "receipts": [
+    {
+      "source": "MonomialPartnerCertificates.lean",
+      "sha256": "de47e8bb561584fded1458c26b577b3a9f0e264562265c9c1e355a9150164f4e",
+      "used_in": [
+        "GP-0313"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueSeventh.invariant_weight_sum"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueSeventh.invariant_functional_vanishes"
+        }
+      ]
+    }
+  ]
+}

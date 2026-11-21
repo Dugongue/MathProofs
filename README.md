@@ -1703,3 +1703,8 @@ Pending formalizations:
 <!-- grochow-catalogue-proofs-vi:start -->
 - [Grochow catalogue proofs VI](GrochowCatalogueProofsVI/README.md) — 26 additional catalogue entries, including the weighted conormal bound for non-squarefree determinant pencils, TOCI-completeness for a single mixed quartic, and two Lean-checked point-constraint identities.
 <!-- grochow-catalogue-proofs-vi:end -->
+
+
+<!-- grochow-catalogue-proofs-vii:start -->
+- [Grochow catalogue proofs VII](GrochowCatalogueProofsVII/README.md) — 26 additional catalogue entries, including a quadratic exact-versus-border determinantal gap, the equivariant code partner obstruction, and two Lean-checked identities for repetition codes.
+<!-- grochow-catalogue-proofs-vii:end -->

@@ -1,0 +1,17 @@
+# Exact data needed for exponentiation of coherent configurations
+
+## GP-0770
+
+There is no operation on a pair of coherent configurations that specializes to the usual exponentiation for every permutation group realizing the second configuration. For a base of rank $r$, the exact sufficient data are the group orbits on words of length $d$ over an alphabet of size $r$, where $d$ is the size of the underlying permutation domain. The group can be omitted from the input if these orbit partitions are supplied. A second positive statement gives an intrinsic construction on all coherent configurations, and identifies exactly when it recovers a given group exponentiation.
+
+Let $X$ be a homogeneous coherent configuration with basis relations $R_1,\dots,R_r$ on $\Omega$, and let $G\le S_d$. Product basis relations on $\Omega^d$ correspond to words $a\in[r]^d$, via
+$$
+R_a=\{(u,v):(u_i,v_i)\in R_{a_i}\text{ for every }i\}.
+$$
+Each $R_a$ is nonempty, and the sets are pairwise disjoint. The coordinate permutation action is an action by algebraic automorphisms on the product configuration. Taking unions of these relations over $G$-orbits gives the usual configuration $X\uparrow G$. For completeness, the sums of their adjacency matrices form a basis of the fixed subalgebra of the product adjacency algebra under $G$. They are closed under transpose, the diagonal relation is retained, and their products have constant coefficients on every orbit. This proves directly that the proposed fusion is a coherent configuration. In particular two groups give the exact same fusion on the common named product domain if and only if they give the same partition of $[r]^d$. [Exponentiation definition](https://www.pdmi.ras.ru/~inp/ccNOTES.pdf)
+
+Take $d\ge4$. The natural actions of $A_d$ and $S_d$ have the same orbital configuration, because both groups are two-transitive. Choose $X$ of rank at least $d$, for example the regular scheme of a cyclic group of order $d$. A word in $[r]^d$ with all letters distinct has trivial point stabilizer in $S_d$. Its single $S_d$-orbit splits into exactly two $A_d$-orbits. Since every $A_d$-orbit lies inside an $S_d$-orbit, the two output ranks differ. Thus the two exponentiations are not isomorphic even if relation names are ignored. This excludes any intrinsic construction agreeing with both. The distinction is sharp for this pair: when $r<d$, each word has a repeated letter. The transposition of its equal letters is an odd stabilizer element, so its two group orbits coincide.
+
+For a coherent configuration $Y$ on $d$ points, one intrinsic operation is to use its color-preserving automorphism group $\operatorname{Aut}(Y)$, acting on the coordinates of $X$. If $Y$ is the orbital configuration of $G$, then $\operatorname{Aut}(Y)$ is the 2-closure of $G$ and contains $G$. This canonical operation equals $X\uparrow G$ on the named domain exactly when $G$ is already orbit-equivalent to its 2-closure on $[r]^d$. It agrees for every base if and only if $G=\operatorname{Aut}(Y)$, because a word of $d$ distinct letters determines a faithful copy of the group orbit itself. This gives a sufficient condition and an exact criterion for the intrinsic construction.
+
+[Original problem list](https://www.pdmi.ras.ru/~inp/cp01.pdf) · [Earlier automorphism calculation for exponentiations](https://github.com/Dugongue/MathProofs/blob/53ffa5dcacaca5757e11adca8df99ba0d38f8bc5/GrochowCatalogueProofsVI/CoherentExponentiationAndFusions.md)
