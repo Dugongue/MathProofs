@@ -1558,3 +1558,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightEleventh/RESULTS.md). This packet gives a strict tree tensor approximation improvement, refutes Yu's Conjecture A6.2, proves factor closure for VNP over finite-imperfection-degree fields, and proves scoped results on permutation-group algorithms, Gram recovery, dihedral invariants, and sparse product Hamiltonians.
 <!-- grochow-eight-eleventh:end -->
+
+
+<!-- permanental-cauchy-consequences:start -->
+### Four theorems on permanental rank and the permanent's singular locus
+
+[Proofs and verification](PermanentalCauchyConsequences/RESULTS.md). This packet refutes the proposed row and column partition description of the permanent's singular locus, proves an exact threshold for removing a row from a maximal permanental ideal, separates Cauchy rank behavior by characteristic, and characterizes the prescribed-column construction through Wronski fibers and elliptic curves.
+<!-- permanental-cauchy-consequences:end -->
