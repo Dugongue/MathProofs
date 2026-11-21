@@ -1,0 +1,43 @@
+{
+  "status": "VERIFIED",
+  "scope": "Five supporting identities. The quantitative theorems are written proofs.",
+  "source": "QuantitativeIdentities.lean",
+  "sha256": "aee3d0149c7c8c1b523e54435ca1cbcf3ba32b380e80730723f497496fd396c7",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "declarations": [
+    {
+      "name": "QuantitativeDegeneration.isotopy_recovery",
+      "transitive_axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "QuantitativeDegeneration.inverse_middle_cost",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "QuantitativeDegeneration.quotient_cycle_cost",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "QuantitativeDegeneration.doubling_lower_bound",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "QuantitativeDegeneration.determinant_fiber_coordinates",
+      "transitive_axioms": [
+        "propext"
+      ]
+    }
+  ]
+}

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quantitative-tensor-degeneration:start -->
+- **[Quantitative tensor degeneration](QuantitativeTensorDegeneration/README.md)** — Sparse degree-one orbit arcs with exponential relative Laurent pole cost, sharp pencil profiles, quantitative mixed tensor recovery, and determinant-resolved transporter schemes. Written proofs with five Lean-checked supporting identities.
+<!-- quantitative-tensor-degeneration:end -->
+
 <!-- oq19-square-zero-orientation:start -->
 - [Ternary square-zero orientation](OQ19SquareZeroOrientation/README.md) — one ordinary tensor-isomorphism comparison for the stated classes, with written proofs and four Lean-checked supporting identities.
 <!-- oq19-square-zero-orientation:end -->
