@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- combinatorial-grochow-bridges:start -->
+- **[Four combinatorial bridges to Grochow's work](CombinatorialGrochowBridges/README.md)** — Informal proofs of a Newton-polytope compiler for monotone permanent-oracle circuits and a guarded-assignment extension theorem, a tensor-equivalence reduction with gain-graph algorithms, flow-certified Unique Games contraction, and a Weisfeiler–Leman bound for joint graph-edit profiles. Includes reproducible controls and a Lean-checked auxiliary multiset lemma.
+<!-- combinatorial-grochow-bridges:end -->
+
 <!-- recursive-determinant-ti:start -->
 - **[Recursive determinant reductions to ordinary TI](RecursiveDeterminantTI/README.md)** — Cube-kernel induction, symplectic and relation descent, principal adjoint filtrations, and signed independent hierarchies over the ternary field. Written proofs with supporting Lean identities.
 <!-- recursive-determinant-ti:end -->
