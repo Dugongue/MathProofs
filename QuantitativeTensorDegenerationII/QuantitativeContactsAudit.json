@@ -1,0 +1,39 @@
+{
+  "status": "VERIFIED",
+  "source": "QuantitativeContacts.lean",
+  "sha256": "69b721e768d363ad8cffc7829258c9693dcc23b0cb1ba8e7ad2d8d165ccfb59e",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "scope": "Four supporting integer identities. The geometric and complexity results are written proofs.",
+  "declarations": [
+    {
+      "name": "QuantitativeContacts.twice_anchor",
+      "transitive_axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "QuantitativeContacts.contact_box",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "QuantitativeContacts.literal_complement",
+      "transitive_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "QuantitativeContacts.two_power_positive_multiple",
+      "transitive_axioms": [
+        "propext"
+      ]
+    }
+  ]
+}

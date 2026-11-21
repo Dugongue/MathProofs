@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- quantitative-tensor-degeneration-ii:start -->
+- **[Quantitative tensor degeneration II](QuantitativeTensorDegenerationII/README.md)** — Split conductors, filtered debordering, exact catalyst cancellation, and exponential ramification of sparse relative degenerations. Written proofs with four Lean-checked supporting identities.
+<!-- quantitative-tensor-degeneration-ii:end -->
+
 <!-- quantitative-tensor-degeneration:start -->
 - **[Quantitative tensor degeneration](QuantitativeTensorDegeneration/README.md)** — Sparse degree-one orbit arcs with exponential relative Laurent pole cost, sharp pencil profiles, quantitative mixed tensor recovery, and determinant-resolved transporter schemes. Written proofs with five Lean-checked supporting identities.
 <!-- quantitative-tensor-degeneration:end -->
