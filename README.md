@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-tsp-iso-advances:start -->
+- **[Four candidates for the Grochow top 30](GrochowTspIsoAdvances/README.md)** — Informal proofs of a polynomial-size GI encoding for tensors with semisimple holonomy, an accuracy–aspect-ratio LP lower bound for Hamming TSP, a sharp Weisfeiler–Leman bound for edited TSP terminal profiles, and a randomized rank-parameter algorithm for Rural Postman with prescribed binary holonomy. Includes finite controls and a Lean-checked arithmetic gate identity.
+<!-- grochow-tsp-iso-advances:end -->
+
 <!-- grochow-tsp-bridges:start -->
 - **[Four TSP results from Grochow's combinatorial framework](GrochowTspBridges/README.md)** — Informal proofs of near-exact shared LP lower bounds for metric TSP, an optimal splicing certificate for projective ATSP lifts, a crossing bound for prescribed-holonomy Rural Postman, and an exact shortcut-edit oracle for tree-based TSP and prize-collecting variants. Includes reproducible controls and a Lean-checked path parity lemma.
 <!-- grochow-tsp-bridges:end -->
