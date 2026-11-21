@@ -1532,3 +1532,10 @@ Pending formalizations:
 
 [Proofs and verification](GrochowEightNinth/RESULTS.md). The results include uniform NC construction of minimum faithful nilpotent-group actions, NP-complete cubic symmetric recognition over two fixed fields, exact odd-characteristic modular dihedral cutoffs, affine search-to-decision, and uniform normal Ritz conditioning and distribution formulas.
 <!-- grochow-eight-ninth:end -->
+
+
+<!-- grochow-eight-tenth:start -->
+### Nine results on odd-order orbit recovery, finite-group algorithms, and spectral separation
+
+[Proofs and verification](GrochowEightTenth/RESULTS.md). This packet proves single-orbit recovery for all finite odd-order orthogonal actions, stable Gram decoding, fixed-parameter cubic recognition, a quartic exact-versus-border separation, constructive algorithms for Hall extensions and scalar-affine conjugacy, and quantitative coordinate spectral separation.
+<!-- grochow-eight-tenth:end -->

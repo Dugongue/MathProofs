@@ -1,0 +1,30 @@
+{
+  "status": "VERIFIED",
+  "scope": "Two supporting algebraic identities for coordinate spectral separation. Main research results have proofs in prose.",
+  "lean": "4.33.0",
+  "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "files": [
+    {
+      "path": "CoordinateSpectralGap.lean",
+      "sha256": "0b8bcb056a29ca63c0b1a675e43574f95e45bf35fb260a581158374588fea492",
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CoordinateSpectralGap.adjacentWeightLoss"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CoordinateSpectralGap.symmetricOuterSpread"
+        }
+      ]
+    }
+  ]
+}
