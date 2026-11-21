@@ -1645,3 +1645,8 @@ Pending formalizations:
 <!-- orbit-and-group-advances:start -->
 - **[Orbit recovery, graph multiplicities, and classical tensor and group algorithms](GrochowOrbitAndGroupAdvances/RESULTS.md)** — Written proofs refute the real one-orbit recovery conjecture, determine sharp concrete recovery counts, and give a quantitative low-degree graph multiplicity bound. The collection also proves the Easdown–Praeger inequality for all finite nilpotency-class-two groups and gives five classical tensor-isomorphism reductions. Three supporting finite checks passed Lean kernel and axiom audits.
 <!-- orbit-and-group-advances:end -->
+
+
+<!-- grochow-catalogue-proofs:start -->
+- [Grochow catalogue proofs](GrochowCatalogueProofs/README.md) — 37 catalogue answers by written proof, including fixed-target dihedral epimorphism and compact homomorphism extension. The Lean receipts cover specific supporting lemmas.
+<!-- grochow-catalogue-proofs:end -->

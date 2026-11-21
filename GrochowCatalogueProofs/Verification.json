@@ -1,0 +1,121 @@
+{
+  "lean": "4.33.0",
+  "scope": "Independent kernel and transitive-axiom checks of the named lemmas only. The complete catalogue answers remain written mathematical proofs.",
+  "receipts": [
+    {
+      "source": "CatalogueCertificates.lean",
+      "sha256": "090ee946a308456dcbc5001696f3f80a6b05095368b6aff932abc61963c733f0",
+      "used_in": [
+        "GP-0605",
+        "GP-0743"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueCertificates.determinant_of_max_weight_entries"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueCertificates.quadratic_norm"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "GrochowCatalogueCertificates.quadratic_norm_at_zero"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "GrochowCatalogueCertificates.boolean_violation_gates"
+        }
+      ]
+    },
+    {
+      "source": "DihedralEpimorphismCore.lean",
+      "sha256": "64a0688d09a3196223ad2b5de1ededd77ece933b804e4764bf1ab04d166e1277",
+      "used_in": [
+        "GP-0349"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DihedralEpimorphism.rankOneBooleanRecovery"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DihedralEpimorphism.dihedralCommutatorFormula"
+        }
+      ]
+    },
+    {
+      "source": "AffineOrbitCertificate.lean",
+      "sha256": "11597fdc1ede54c9c738ed018362926de11c3786e35b2619f00abed302a33929",
+      "used_in": [
+        "GP-0950"
+      ],
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueAffine.shearShift_comp"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueAffine.shearShift_regular"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "GrochowCatalogueAffine.shearShift_noncommuting"
+        }
+      ]
+    }
+  ],
+  "finite_controls": {
+    "check_dihedral.py": {
+      "pair_checks": 5440,
+      "normalised_onto_assignments": [
+        8,
+        64,
+        512
+      ]
+    },
+    "check_marked_d8.py": {
+      "equation_lists": 1098,
+      "widths": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "CheckIntegralCancellation.py": {
+      "ordinary_candidate_count": 16000,
+      "stabilized_witness": true
+    }
+  }
+}
