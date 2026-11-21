@@ -1,0 +1,43 @@
+{
+  "lean_version": "4.33.0",
+  "scope": "Four supporting lemmas for binary and arbitrary-prime precision amplification, Frobenius scaling, and additive layer displacement. The four main tensor results have written proofs.",
+  "files": [
+    {
+      "theorems": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "CoefficientRingAdvances.binaryPrecision"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CoefficientRingAdvances.primePrecision"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CoefficientRingAdvances.scalingFrobenius"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CoefficientRingAdvances.layerDisplacement"
+        }
+      ],
+      "path": "CoefficientRingAdvances.lean",
+      "sha256": "c3fdc1a0693114b75f816104708262f6a9c5df5fd5f9c794cc6de04602a6bbd9"
+    }
+  ]
+}

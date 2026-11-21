@@ -1582,3 +1582,8 @@ Pending formalizations:
 <!-- symplectic-orbit-advances:start -->
 - [Four symplectic orbit-closure advances](SymplecticOrbitAdvances/RESULTS.md) — a dichotomy for fixed tensor tuple formats, TOCI-completeness for one symmetric cubic or alternating three-form, exponential separating degrees, and transfer of normality and rational singularities.
 <!-- symplectic-orbit-advances:end -->
+
+
+<!-- coefficient-ring-advances:start -->
+- [Four advances in determinant-constrained tensor isomorphism over coefficient rings](CoefficientRingAdvances/RESULTS.md) — two unbounded-depth principal determinant compilers, exact ordered transporter profiles over arbitrary local rings with fixed residue characteristic, and polynomial three-mode lifting and counting for residue p-groups.
+<!-- coefficient-ring-advances:end -->
