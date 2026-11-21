@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- grochow-cubic-depth:start -->
+- **[Four extensions of the cubic multiplication-tensor construction](GrochowCubicDepth/README.md)** — Written proofs of exact cubic equivalence algorithms in characteristic three, determinant-preserving integral tensor encodings, local singularity transfer for tensor orbit closures, and affine polynomial equivalence over arbitrary rings. Includes finite controls and a Lean-checked auxiliary identity.
+<!-- grochow-cubic-depth:end -->
+
 <!-- grochow-cubic-four:start -->
 - **[Four extensions of the cubic jet-algebra reduction](GrochowCubicFour/README.md)** — Written proofs of arbitrary-ring determinant profiles, linear-size local algebra encodings and refutation-degree bounds, exact directional tensor degeneration, and two-way proof-degree simulations. Includes finite controls and one Lean-checked auxiliary identity.
 <!-- grochow-cubic-four:end -->
