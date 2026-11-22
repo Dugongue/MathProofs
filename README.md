@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- dieudonne-four:start -->
+- **[Four Cartier–Dieudonné results for isomorphism](DieudonneFour/README.md)** — Free tensor compilation with exact transporter fibers, deterministic transporter counting, prescribed extension degrees, and recovery from subgroup parameter schemes.
+<!-- dieudonne-four:end -->
+
 <!-- general-congruence-sparse-conjugacy:start -->
 [General congruence degree and sparse conjugacy](GeneralCongruenceSparseConjugacy/RESULTS.md) gives a written instance-wise formula over every field for the congruence-degree part of Open Question 7.3 of Galesi, Grochow, Pitassi and She. It also gives sharp sparse conjugacy exponents for fixed-gap diagonal families and for the unequal-trace worst case in arbitrary coordinates. Dirichlet GRH bounds a common prime preserving the geometric sparse optima. Lean verifies the integral coefficient-isolation lemma.
 <!-- general-congruence-sparse-conjugacy:end -->
