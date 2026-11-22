@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- blind-grochow-profiles:start -->
+- **[Sharp dimensions for tensor and matrix isomorphism tests](BlindGrochowProfiles/README.md)** — Unique first collisions for finite étale tensor tests, a binary-budget complexity theorem, and exact identity degrees for locally conjugate matrix tuples. Written proofs with eight Lean-checked components.
+<!-- blind-grochow-profiles:end -->
+
 <!-- blind-dag-connections:start -->
 - **[Anonymous structural search in the Lean DAG](BlindDAGConnections/README.md)** — Reproducible port searches, finite score certificates for small-product sets, and a sharp permutation cycle-profile cutoff. Thirteen Lean declarations passed kernel and axiom checks.
 <!-- blind-dag-connections:end -->

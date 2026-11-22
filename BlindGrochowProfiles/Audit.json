@@ -1,0 +1,82 @@
+{
+  "Counting.lean": {
+    "sha256": "7ce289eacf71c48976804bf4c9f999517eff92ef8fe0afe7d496aad3395f6cfc",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowCounting.collapse_restriction"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindGrochowCounting.balanced_mass"
+      }
+    ]
+  },
+  "Orbit.lean": {
+    "sha256": "f75da7774b8d3dd8f056ba7d515b73587155ecf96ce920854431e5543bab0e00",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "GrochowOrbitNorm.transport_sum"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "GrochowOrbitNorm.left_norm_obstruction"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "GrochowOrbitNorm.right_norm_obstruction"
+      }
+    ]
+  },
+  "Degree.lean": {
+    "sha256": "fa82b844c84bc1d945c9c43dd2edd68dab42f7ea9bbebc6927694a58e538449c",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "DegreeDescent.equiv_of_isotopy"
+      }
+    ]
+  },
+  "Modular.lean": {
+    "sha256": "9f4f5364cc3398dc8eb10a76e772858c4b09dd7cef302d373b0f4c34495a2dc6",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "ModularProfiles.line_bound"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "ModularProfiles.grid_bound"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "p": 2,
+    "r": 2,
+    "dimension": 6,
+    "proper_subgroups": 4,
+    "regular_orbit_difference": 1,
+    "first_identity": 2
+  },
+  {
+    "p": 2,
+    "r": 3,
+    "dimension": 30,
+    "proper_subgroups": 15,
+    "regular_orbit_difference": -2,
+    "first_identity": 3
+  },
+  {
+    "p": 2,
+    "r": 4,
+    "dimension": 270,
+    "proper_subgroups": 66,
+    "regular_orbit_difference": 8,
+    "first_identity": 4
+  },
+  {
+    "p": 3,
+    "r": 2,
+    "dimension": 12,
+    "proper_subgroups": 5,
+    "regular_orbit_difference": 1,
+    "first_identity": 3
+  },
+  {
+    "p": 3,
+    "r": 3,
+    "dimension": 120,
+    "proper_subgroups": 27,
+    "regular_orbit_difference": -3,
+    "first_identity": 5
+  },
+  {
+    "p": 5,
+    "r": 2,
+    "dimension": 30,
+    "proper_subgroups": 7,
+    "regular_orbit_difference": 1,
+    "first_identity": 5
+  },
+  {
+    "p": 7,
+    "r": 2,
+    "dimension": 56,
+    "proper_subgroups": 9,
+    "regular_orbit_difference": 1,
+    "first_identity": 7
+  }
+]
