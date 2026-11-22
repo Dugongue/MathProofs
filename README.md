@@ -1962,3 +1962,8 @@ Pending formalizations:
 <!-- simultaneous-computability-across-fields:start -->
 - [Four routes for simultaneous computability](SimultaneousComputabilityAcrossFields/README.md) — exact torsor splitting degrees, arithmetic cohomology profiles, matroid proof complexity, and growing prime windows.
 <!-- simultaneous-computability-across-fields:end -->
+
+
+<!-- simultaneous-computability-bridges:start -->
+- [Exact bridges in simultaneous computability](SimultaneousComputabilityBridges/README.md) — modular decision profiles, exact certificate transport, multiplication-tensor witnesses, and ideal principalization.
+<!-- simultaneous-computability-bridges:end -->
