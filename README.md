@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- sparse-matrix-proof-bounds:start -->
+[Sparse matrix proof bounds](SparseMatrixProofBounds/RESULTS.md) gives written proofs for Question 7.3 of Galesi, Grochow, Pitassi and She. For diagonal projections with a unit rank gap and proportional ranks and nullities, conjugacy has sharp quadratic-logarithmic size and congruence has sharp quartic exponent. General sparse size remains open. Lean verifies the ordered coloring lemma.
+<!-- sparse-matrix-proof-bounds:end -->
+
 <!-- dieudonne-four:start -->
 - **[Four Cartier–Dieudonné results for isomorphism](DieudonneFour/README.md)** — Free tensor compilation with exact transporter fibers, deterministic transporter counting, prescribed extension degrees, and recovery from subgroup parameter schemes.
 <!-- dieudonne-four:end -->

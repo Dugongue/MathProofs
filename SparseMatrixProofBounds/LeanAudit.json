@@ -1,0 +1,16 @@
+{
+  "lean_version": "4.33.0",
+  "source": "GreedyPalette.lean",
+  "sha256": "2b955422801416b688a74094ce8bff7f69851a9140477eda1680dbad7d840e49",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "GramInputs.ordered_palette"
+    }
+  ],
+  "scope": "Ordered greedy coloring with a per-vertex forbidden-color budget."
+}
