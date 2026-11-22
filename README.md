@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- polyhedral-tensor-determinants:start -->
+- **[Geometry and determinant-one tensor isomorphism](PolyhedralTensorDeterminants/README.md)** — Ceva tests, polygon holonomy, Platonic face incidences and the surface Bockstein.
+<!-- polyhedral-tensor-determinants:end -->
+
 <!-- principal-unit-determinants:start -->
 - **[Four principal-unit determinant results](PrincipalUnitDeterminants/README.md)** — Uniform ring reductions, prescribed quotient profiles, square-zero extensions and unit-group recovery from truncations.
 <!-- principal-unit-determinants:end -->

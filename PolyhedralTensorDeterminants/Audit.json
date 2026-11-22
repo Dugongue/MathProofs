@@ -1,0 +1,143 @@
+{
+  "lean": "v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "written_proofs": 4,
+  "kernel_checked_components": 8,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "verification": [
+    {
+      "article": "A.md",
+      "source": "A.lean",
+      "sha256": "299eea0d90a59fa95feaf79dbc73ce6e86db7afe4ac4bc838117bd8618be9b4d",
+      "components": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "PolyhedraFour.Triangle.ceva_ratios"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "PolyhedraFour.Triangle.triangle_majority_character"
+        }
+      ],
+      "finite_control": {
+        "source": "ACheck.py",
+        "sha256": "11bc82db0580f6210877d3c70c76f63fe5a0dc868e09b6708c4df90199d66f75",
+        "output": [
+          "528 direct diagonal-image cases checked over Z/7, Z/8, and Z/9.",
+          "Every triple of principal side units over Z/9 passed the Ceva relation check."
+        ]
+      }
+    },
+    {
+      "article": "B.md",
+      "source": "B.lean",
+      "sha256": "45856360d2f315b1c924a445ef4c393d510776ef6f09411ed810a1aaffbc586e",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "PolyhedralHexagon.determinant_evaluation"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "PolyhedralHexagon.exact_determinant_range"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "PolyhedralHexagon.determinant_one_iff_square"
+        }
+      ],
+      "finite_control": {
+        "source": "BCheck.py",
+        "sha256": "ce298b1384ef73aefeb76d418511797099b6123334577f9d145b7115aeb84306",
+        "output": [
+          "C4 over Z/3, holonomy 1: [1, 2] and [1, 2]",
+          "C6 over Z/3, holonomy 1: [1] and [2]",
+          "C6 over Z/3, holonomy 2: [1, 2] and [1, 2]",
+          "C6 over Z/5, holonomy 4: [1, 4] and [2, 3]",
+          "C6 over Z/7, holonomy 2: [1, 2, 4] and [1, 2, 4]",
+          "C6 over Z/7, holonomy 6: [1, 2, 3, 4, 5, 6] and [1, 2, 3, 4, 5, 6]",
+          "C6 over Z/8, holonomy 1: [1] and [3]",
+          "C6 over Z/8, holonomy 3: [1, 3] and [1, 3]",
+          "C8 over Z/8, holonomy 3: [1, 3, 5, 7] and [1, 3, 5, 7]",
+          "C10 over Z/8, holonomy 5: [1, 5] and [3, 7]"
+        ]
+      }
+    },
+    {
+      "article": "C.md",
+      "source": "C.lean",
+      "sha256": "8ec82a73d56d2319f827ca6352d2e6fec27a1514c42bea7a0b27f6e39f60a5e3",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "PolyhedralIntervals.potential_product_by_endpoints"
+        }
+      ],
+      "finite_control": {
+        "source": "CCheck.py",
+        "sha256": "63451b89b69b1c37117392d53d8df11cc7fb0da67e11bd59716b6ae5b7ed517c",
+        "output": [
+          "tetrahedron (50, 6, -1, 62)",
+          "cube (98, 2, -1, 122)",
+          "octahedron (98, 2, -1, 122)",
+          "icosahedron (242, 2, -1, 302)",
+          "dodecahedron (242, 2, -1, 302)"
+        ]
+      }
+    },
+    {
+      "article": "D.md",
+      "source": "D.lean",
+      "sha256": "98ae1dc208089b1d750a5562cf802405f2d106c17f7a50a8f6bb7bbc7411760f",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "PolyhedraFour.Surface.flag_boundary_twice"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "PolyhedraFour.Surface.comparison_chain_decomposition"
+        }
+      ],
+      "finite_control": {
+        "source": "DCheck.py",
+        "sha256": "b6650b429ea0fa65c258ece82197f3b3afe84de774f1e6c2a4e37f8f81ddb7d3",
+        "output": [
+          "Icosahedral sphere and hemi-icosahedron: ranks 242 and 121, distinct mod-2 chains",
+          "All 60 hemi-icosahedral automorphisms checked directly",
+          "Period 4: mod-3 chain and four geometric generators verified",
+          "Period 5: mod-3 chain and four geometric generators verified",
+          "Period 6: mod-3 chain and four geometric generators verified",
+          "Period 7: mod-3 chain and four geometric generators verified"
+        ]
+      }
+    }
+  ]
+}
