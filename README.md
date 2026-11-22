@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- determinant-one-correction:start -->
+- **[Four results on determinant-one correction](DeterminantOneCorrection/README.md)** — Supplied-transporter hardness over finite local rings, exact cube-zero and square-zero field results, and counted sign edits for marked multiplication tensors.
+<!-- determinant-one-correction:end -->
+
 <!-- multiplication-tensor-determinants:start -->
 - **[Four determinant results for multiplication tensors](MultiplicationTensorDeterminants/README.md)** — Tensor Isomorphism hardness with a supplied ordinary transporter, exact étale descent, group-algebra determinants and pure-power orbit counts.
 <!-- multiplication-tensor-determinants:end -->

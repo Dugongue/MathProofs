@@ -1,0 +1,129 @@
+{
+  "lean": "v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "written_proofs": 4,
+  "kernel_checked_components": 8,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "verification": [
+    {
+      "article": "A.md",
+      "source": "A.lean",
+      "sha256": "314bbd37fb1a297d5c679397a17f86029269011af786abc50433095fc134e7e3",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetCorrectionNext.CyclicMarker.paired_arrow_determinants"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "DetCorrectionNext.CyclicMarker.balanced_marker_scaling"
+        }
+      ]
+    },
+    {
+      "article": "B.md",
+      "source": "B.lean",
+      "sha256": "fa2431e19f33bfb8ad94f5e1c70b8d51ff457cdd84c4ecafdffb25eba4e5b7a1",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetCorrectionB.radical_shear_det_one"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetCorrectionB.radical_multiplicity_det"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetCorrectionB.twin_permutation_det_one"
+        }
+      ],
+      "finite_control": {
+        "source": "BCheck.py",
+        "sha256": "fee6c1c6e518dc7b96e3af66927f41973a28e84734ce6fcf1a6b1b4f6649d16b",
+        "output": [
+          "s=2: 144 input pairs and 1054 decorated automorphisms checked.",
+          "s=4: 144 input pairs and 1054 decorated automorphisms checked.",
+          "s=6: 144 input pairs and 1054 decorated automorphisms checked."
+        ]
+      }
+    },
+    {
+      "article": "C.md",
+      "source": "C.lean",
+      "sha256": "b4799d8858784fa94f4405543b5ae6b7d2cf642407553badb7893d2c6e050fd5",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "MarkedMultiplication.perfect_matching_iff_odd_with_budget"
+        }
+      ],
+      "finite_control": {
+        "source": "CCheck.py",
+        "sha256": "96027e3e0cf90f6c11ca572a2d70008ae0e83f5df8fdaa0e30d1ac6c6c83c420",
+        "output": [
+          "7 sign codes and 6 norm defects checked.",
+          "39 allowed permutations across those controls.",
+          "530 bipartite graphs and 19767 edit vectors checked."
+        ]
+      }
+    },
+    {
+      "article": "D.md",
+      "source": "D.lean",
+      "sha256": "c1c005fc601e8ffdd0bf6cdc578ce2696d1c215a32f940824b68eeecfd62c2a0",
+      "components": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "DetCorrectionNext.LocalRing.slope_rotation"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetCorrectionNext.LocalRing.scaled_perfect_pair"
+        }
+      ],
+      "finite_control": {
+        "source": "DCheck.py",
+        "sha256": "1d7fd961118cc9c53cca386eb0e8a91c09e309864e6d7dd608e466cecfd7af9e",
+        "output": [
+          "17424 basis products preserved by the determinant-RHO rotation",
+          "17424 basis products checked on the negative control, 16 mismatches",
+          "Both tests used inputs with the same residue tensor, and the label lines reduce to the same line."
+        ]
+      }
+    }
+  ]
+}
