@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- parametric-convex-four:start -->
+- **[Four parametric discrete-convexity results for isomorphism](ParametricConvexFour/README.md)** — Exact tensor instability, sharp diagonal invariants, valuated matroid normalization, and sparse polymatroid reconstruction.
+<!-- parametric-convex-four:end -->
+
 <!-- ordinary-even-ti-source-probe-progress:start -->
 - **[Ordinary even-order tensor isomorphism, native scalar probe progress](OrdinaryEvenTILean/Runtime/SourceProbeProgress.md)** — Lean-checked signed CRT decoding, inverse-gauge support, and native scalar probe components. The end-to-end theorem remains conditional on the full controller executions.
 <!-- ordinary-even-ti-source-probe-progress:end -->
