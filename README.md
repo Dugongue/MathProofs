@@ -1928,3 +1928,8 @@ Pending formalizations:
 <!-- four-research-programs:start -->
 - [Four research programs](FourResearchPrograms/README.md) — bounded-degree arithmetic traces, infinitesimal tensor stabilizers, phase-average curvature, and degree-constrained SOS ranks.
 <!-- four-research-programs:end -->
+
+
+<!-- four-field-proposals:start -->
+- [Four proposed fields of mathematics](FourFieldProposals/README.md) — simultaneous computability, partially observed laws, quantitative witness descent, and geometry of proof obstructions.
+<!-- four-field-proposals:end -->
