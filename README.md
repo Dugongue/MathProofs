@@ -1952,3 +1952,8 @@ Pending formalizations:
 <!-- simultaneous-computability-and-grochow:start -->
 - [Simultaneous computability and Grochow's isomorphism questions](SimultaneousComputabilityAndGrochow/README.md) — sharp finite-field matrix proof complexity, tensor extension profiles, joint descent, and exact integral entry degrees.
 <!-- simultaneous-computability-and-grochow:end -->
+
+
+<!-- simultaneous-computability-and-grochow-second:start -->
+- [Simultaneous computability and Grochow's isomorphism questions, second pass](SimultaneousComputabilityAndGrochowSecond/README.md) — exact characteristic-two PC degree in a pure Jordan class, joint prime densities, deterministic witness descent, and four-by-four arithmetic pencils.
+<!-- simultaneous-computability-and-grochow-second:end -->
