@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- pc-tensor-consequences:start -->
+- **[Four consequences for tensor-isomorphism proof complexity](PCTensorConsequences/README.md)** — Four graph-to-tensor routes in odd characteristic, sparse integral tensors with prescribed easy characteristics, and an affine-space description of an isomorphism transporter.
+<!-- pc-tensor-consequences:end -->
+
 <!-- pc-graph-tensor-routes:start -->
 - **[Two graph-to-tensor reductions in Polynomial Calculus](PCGraphTensorRoutes/README.md)** — Constant-degree equivalence of the incidence and Grigoriev FGS routes over every field under the stated isolate conventions. Includes matrix-space conjugacy, code tensors, executable checks, and four Lean-checked lemmas.
 <!-- pc-graph-tensor-routes:end -->
