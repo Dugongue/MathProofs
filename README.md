@@ -1919,3 +1919,8 @@ Pending formalizations:
 <!-- tensor-pc-rank-bounds:start -->
 - [Polynomial Calculus degree bounds for structured tensor isomorphism](TensorPCRankBounds/README.md) — Lovitz–Petrov decompositions, thin multiplication, determinantal frames, arbitrary direct sums, and all matrix pencils.
 <!-- tensor-pc-rank-bounds:end -->
+
+
+<!-- four-research-programs:start -->
+- [Four research programs](FourResearchPrograms/README.md) — bounded-degree arithmetic traces, infinitesimal tensor stabilizers, phase-average curvature, and degree-constrained SOS ranks.
+<!-- four-research-programs:end -->
