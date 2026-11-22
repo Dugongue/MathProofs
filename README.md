@@ -1832,3 +1832,8 @@ Pending formalizations:
 <!-- portfolio-top-30:start -->
 - [Portfolio top 30](PortfolioTop30/README.md) — ranked proofs, including [four extensions of Manin’s bilinear theorem](PortfolioTop30/ManinExtensions.md) and the [earlier top-ten audit](PortfolioTop30/Top10-Audit.md).
 <!-- portfolio-top-30:end -->
+
+
+<!-- manin-top-20:start -->
+- [Top 20 for Fedor Manin](ManinTop20/README.md) — ranked results in homotopy computability, extension and persistence, with [five new proofs](ManinTop20/ManinNewProofs.md).
+<!-- manin-top-20:end -->
