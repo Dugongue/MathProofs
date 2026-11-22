@@ -1972,3 +1972,8 @@ Pending formalizations:
 <!-- simultaneous-computability-label-erasure:start -->
 - [All-characteristic label erasure and proof transfer](SimultaneousComputabilityLabelErasure/README.md) — uniform Polynomial Calculus degree, diagram witnesses, arithmetic forms, and IPS transfer.
 <!-- simultaneous-computability-label-erasure:end -->
+
+
+<!-- ordinary-tensor-transfer-fallout:start -->
+- [Sharp proof bounds and arithmetic in ordinary tensor isomorphism](OrdinaryTensorTransferFallout/README.md) — tight sparse Polynomial Calculus bounds, extension spectra, and short circuit certificates.
+<!-- ordinary-tensor-transfer-fallout:end -->
