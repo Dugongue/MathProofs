@@ -1967,3 +1967,8 @@ Pending formalizations:
 <!-- simultaneous-computability-bridges:start -->
 - [Exact bridges in simultaneous computability](SimultaneousComputabilityBridges/README.md) — modular decision profiles, exact certificate transport, multiplication-tensor witnesses, and ideal principalization.
 <!-- simultaneous-computability-bridges:end -->
+
+
+<!-- simultaneous-computability-label-erasure:start -->
+- [All-characteristic label erasure and proof transfer](SimultaneousComputabilityLabelErasure/README.md) — uniform Polynomial Calculus degree, diagram witnesses, arithmetic forms, and IPS transfer.
+<!-- simultaneous-computability-label-erasure:end -->
