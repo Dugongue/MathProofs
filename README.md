@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- dirichlet-grochow-prime-tests:start -->
+[Prime tests and transporter certificates](DirichletGrochowPrimeTests/RESULTS.md) give exact tensor-side thresholds for joint prime counts on rational abelian forms of the diagonal tensor, modular IPS certificates for determinant-constrained marked modules, a sufficient transporter construction with one projective mode specified, and cyclotomic Galois transport for sparse labels. The subgroup-table lower bound of 30 and its attainment have Lean audits. The general proofs are written mathematical arguments.
+<!-- dirichlet-grochow-prime-tests:end -->
+
 <!-- slice-similarity-four:start -->
 - **[Four extensions of identical slice similarity](SliceSimilarityFour/README.md)** — Rational canonical forms of small substitutions, conjugate subgroup restrictions, smooth projective varieties, and exact distinction thresholds.
 <!-- slice-similarity-four:end -->

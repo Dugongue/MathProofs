@@ -1,0 +1,21 @@
+{
+  "lean_version": "4.33.0",
+  "source": "RankThreeReviewed.lean",
+  "sha256": "d0213af65efa6632edb95a99bfacf8ac201d94cc8d8d9e6a68cccf88d62b5b45",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "theorem": "JointPrimeRankThree.sharpLower"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "theorem": "JointPrimeRankThree.realized"
+    }
+  ],
+  "scope": "Lower bound and its attainment for the explicit rank-three binary subgroup table."
+}
