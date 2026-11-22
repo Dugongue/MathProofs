@@ -1937,3 +1937,8 @@ Pending formalizations:
 <!-- four-field-proposals:start -->
 - [Four proposed fields of mathematics](FourFieldProposals/README.md) — simultaneous computability, partially observed laws, quantitative witness descent, and geometry of proof obstructions.
 <!-- four-field-proposals:end -->
+
+
+<!-- simultaneous-computability:start -->
+- [Simultaneous computability](SimultaneousComputability/README.md) — joint degrees, quadratic integral profiles, infinite field probes, and natural witness transport.
+<!-- simultaneous-computability:end -->
