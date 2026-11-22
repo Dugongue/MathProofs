@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- multiplication-tensor-determinants:start -->
+- **[Four determinant results for multiplication tensors](MultiplicationTensorDeterminants/README.md)** — Tensor Isomorphism hardness with a supplied ordinary transporter, exact étale descent, group-algebra determinants and pure-power orbit counts.
+<!-- multiplication-tensor-determinants:end -->
+
 <!-- blind-grochow-twohundred:start -->
 - **[Two hundred universal results from structural proof search](BlindGrochowTwoHundred/README.md)** — Universal results on extension tests, determinant ranges, form transport and robust rank tests.
 <!-- blind-grochow-twohundred:end -->

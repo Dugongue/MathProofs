@@ -1,0 +1,214 @@
+{
+  "lean": "v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "written_proofs": 4,
+  "kernel_checked_components": 14,
+  "verification": [
+    {
+      "article": "A.md",
+      "source": "A.lean",
+      "sha256": "1fbfcdabc93af8450edcc1c5678ab2521a603166153cdb60200991866b29059e",
+      "scope": "Component statements in a written proof",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Extension.distinct_powered_iff"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Extension.new_power_agreement_forces_repeat"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Extension.discriminant_transforms"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Extension.repair_equal_discriminant"
+        }
+      ],
+      "control": {
+        "source": "A-Check.py",
+        "sha256": "a353ae9d32459cf9393ecf1381a2eb3173449122db3e70eab48e0d69067d63fa",
+        "output": [
+          "235 schedules, ordinary and orientation-compatible minima through 16",
+          "44 literal permutation centralizers checked through degree 7",
+          "18280 profile-power cases and 2439 nontrivial collision fibres"
+        ]
+      }
+    },
+    {
+      "article": "B.md",
+      "source": "B.lean",
+      "sha256": "7babfd0b11880f1bf32dde1693998164f2ad8f8a0c5d19b077de394d4a6424ff",
+      "scope": "Component statements in a written proof",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioB.monomial_coordinate_det"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioB.prime_to_scalar_order_det"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioB.gram_twist_det_square"
+        }
+      ],
+      "control": {
+        "source": "BCheck.py",
+        "sha256": "d23fc21924ae36d4a5bdf6e7b15f68c64dd9cda83d96e6eac29674715e9bbecf",
+        "output": [
+          "q=4, bounds=(2, 2): 180 substitutions, 1 orbit classes",
+          "q=4, bounds=(4, 4): 182 substitutions, 3 orbit classes",
+          "q=4, bounds=(8, 2): 37 substitutions, 1 orbit classes",
+          "q=3, bounds=(3, 9): 14 substitutions, 1 orbit classes",
+          "q=5, bounds=(5, 5): 482 substitutions, 2 orbit classes",
+          "S3 regular matrices over F_3: 324 units",
+          "S3 regular matrices over F_4: 2160 units",
+          "Sharp square-zero spectra checked on 11086 radical dimension matrices."
+        ]
+      }
+    },
+    {
+      "article": "C.md",
+      "source": "C.lean",
+      "sha256": "9667204199b54df48de086e0f77a6e6e0a75a3ff923747545031b59d09b00c86",
+      "scope": "Component statements in a written proof",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TruncatedTensor.det_coordinate_scale"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TruncatedTensor.sign_coordinate_exchange"
+        }
+      ],
+      "control": {
+        "source": "CCheck.py",
+        "sha256": "9598f22eb423c4c61e9c190f854dbae0b3c60fff597235caef67e23bbc76cf60",
+        "output": [
+          "F_2 (2, 2): 6 graded automorphisms, 1 SL orbit classes",
+          "F_2 (2, 2, 2): 168 graded automorphisms, 1 SL orbit classes",
+          "F_2 (2, 4): 2 graded automorphisms, 1 SL orbit classes",
+          "F_2 (4, 4): 6 graded automorphisms, 1 SL orbit classes",
+          "F_2 (3, 6): 1 graded automorphisms, 1 SL orbit classes",
+          "F_2 (6, 6): 2 graded automorphisms, 1 SL orbit classes",
+          "F_3 (2, 2): 8 graded automorphisms, 4 SL orbit classes",
+          "F_3 (2, 3): 12 graded automorphisms, 4 SL orbit classes",
+          "F_3 (3, 3): 48 graded automorphisms, 1 SL orbit classes",
+          "F_3 (3, 6): 12 graded automorphisms, 4 SL orbit classes",
+          "F_3 (6, 6): 8 graded automorphisms, 4 SL orbit classes",
+          "F_3 (2, 3, 3): 864 graded automorphisms, 4 SL orbit classes",
+          "F_5 (2, 2): 32 graded automorphisms, 32 SL orbit classes",
+          "F_5 (3, 3): 32 graded automorphisms, 1 SL orbit classes",
+          "F_5 (5, 5): 480 graded automorphisms, 2 SL orbit classes",
+          "F_7 (2, 2): 72 graded automorphisms, 4 SL orbit classes",
+          "F_7 (2, 2, 3): 432 graded automorphisms, 108 SL orbit classes",
+          "F_7 (3, 3): 72 graded automorphisms, 27 SL orbit classes",
+          "F_7 (6, 6): 72 graded automorphisms, 108 SL orbit classes",
+          "F_11 (2, 4): 100 graded automorphisms, 8 SL orbit classes",
+          "20 cases, 1950 digit tests, 2429 graded determinants, 4424 full lift determinants."
+        ]
+      }
+    },
+    {
+      "article": "D.md",
+      "source": "D.lean",
+      "sha256": "7fe51706415e94892e7b61fd72d3676e94c84a17a33b574fbcdfd34f029034ce",
+      "scope": "Component statements in a written proof",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Quiver.coupled_path_sign"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Quiver.odd_component_exchange"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Quiver.prime_path_budget"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Quiver.determinant_repeated_blocks"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "DetRatioFour.Quiver.determinant_dual_pair"
+        }
+      ],
+      "control": {
+        "source": "DCheck.py",
+        "sha256": "dbd7b7e802d3c3ee398643fc48df48c3e816a7b8ff9316f9d225627af79ac197",
+        "output": [
+          "75 graphs, 69 pairwise incidence comparisons, 293 vertex relabelings, 855 middle swaps, 75 odd block exchanges",
+          "5 sharp prime chains verified by direct path enumeration",
+          "55 graph-field cases and 145 parallel-arrow path lifts"
+        ]
+      }
+    }
+  ]
+}
