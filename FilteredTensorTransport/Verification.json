@@ -1,0 +1,87 @@
+{
+  "main_theorems": "written proofs",
+  "general_TI_SL_to_TI": "open",
+  "implemented": "ternary two-flag and last-layer algorithms",
+  "kernel_checked": {
+    "version": "4.33.0",
+    "scope": "unique linear difference of lifts",
+    "sha256": "9efa4d60c3890765278842930cdee5fbc0a6b94f3a70c1f9ad81b8647bc856ae",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "extension_lift_torsor"
+      }
+    ],
+    "frozen_target_bridge_sha256": "a6a64d813a8187729d9fc88eee3d869e453a291246950d83315f39c193fec941",
+    "bridge_theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "extension_lift_torsor"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "ResearchRouteFixedTarget.extension_lift_torsor"
+      }
+    ]
+  },
+  "checks": {
+    "raw": {
+      "determinant_queries": 72,
+      "feasible": 36,
+      "negative": 36,
+      "input_matrix_pairs_per_reference_test": 2304
+    },
+    "ferrers": {
+      "dimensions": [
+        4,
+        4,
+        12
+      ],
+      "source_widths": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "reflected_SL": false,
+      "reflected_signature": [
+        1,
+        1,
+        2
+      ]
+    },
+    "quadratic_solver": {
+      "scrambled_pairs": 5,
+      "determinant_queries": 40,
+      "feasible": 4
+    },
+    "degree_four_source_automorphisms": {
+      "1": 4374
+    },
+    "degree_four_cross_isomorphisms": {
+      "2": 4374
+    },
+    "truncation_lengths": [
+      4,
+      8,
+      12,
+      16
+    ]
+  }
+}

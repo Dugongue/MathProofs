@@ -1786,3 +1786,8 @@ Pending formalizations:
 <!-- frobenius-relation-transport:start -->
 - [Determinant-constrained tensor transport through nonsplit quadratic relations](FrobeniusRelationTransport/README.md) — Deterministic recognition, decision, and witnesses for a free-mode class over odd prime fields. Includes ternary sign examples, a repeated-degree refinement, and a Lean-checked coset identity.
 <!-- frobenius-relation-transport:end -->
+
+
+<!-- filtered-tensor-transport:start -->
+- [Induction for determinant-constrained tensors](FilteredTensorTransport/README.md) — Two-input-flag transport, exact matrix-factor descent, geometrically monomial kernels, and a last-layer orientation law. Includes two raw ternary solvers and a Lean-checked lift identity.
+<!-- filtered-tensor-transport:end -->
