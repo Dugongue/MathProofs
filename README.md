@@ -1892,3 +1892,8 @@ Pending formalizations:
 <!-- universality-consequences:start -->
 - [Four higher-order tensor universality consequences](UniversalityConsequences/README.md) — proof complexity, exact transporter schemes, restriction of scalars, and algebraic group actions.
 <!-- universality-consequences:end -->
+
+
+<!-- determinantal-geometry-and-modules:start -->
+- [Four proofs in determinantal geometry and module isomorphism](DeterminantalGeometryAndModules/README.md) — sharp uniform sizes, codepth formulas, prescribed nodal coranks, and local–global phenomena.
+<!-- determinantal-geometry-and-modules:end -->
