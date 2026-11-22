@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- slice-similarity-four:start -->
+- **[Four extensions of identical slice similarity](SliceSimilarityFour/README.md)** — Rational canonical forms of small substitutions, conjugate subgroup restrictions, smooth projective varieties, and exact distinction thresholds.
+<!-- slice-similarity-four:end -->
+
 <!-- hessian-four:start -->
 - **[Four extensions of the fixed-Hessian construction](HessianFour/README.md)** — Identical slice similarity, recovery from singular schemes, rank intervals at fixed Hessian, and polynomial-time decoding in hidden bases.
 <!-- hessian-four:end -->
