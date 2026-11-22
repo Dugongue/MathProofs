@@ -1,0 +1,24 @@
+{
+  "lean_version": "4.33.0",
+  "source": "MixedGraphIdentities.lean",
+  "sha256": "90d8784578e943329ba3089995ee5c4ec8fece2238f393c7a34c905621b26790",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "MixedGraphPC.form_preparation"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "MixedGraphPC.reverse_preparation"
+    }
+  ],
+  "scope": "Rectangular preparation of forward form arrows and reverse linear arrows."
+}

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- matrix-inverse-axioms:start -->
+[Inverse axioms and matrix proof complexity](MatrixInverseAxioms/RESULTS.md) gives a factorial-versus-polynomial sparse Polynomial Calculus separation on the same matrix inputs, exact degree formulas for quiver and mixed-graph encodings, and a deterministic finite-field degree algorithm without factoring. The main results are written proofs. Lean verifies the two preparation identities.
+<!-- matrix-inverse-axioms:end -->
+
 <!-- strange-convex-four:start -->
 - **[Four unexpected bridges from parametric discrete convexity](StrangeConvexFour/README.md)** — Toric bundles, dimer statistical mechanics, graph sandpiles, and multiparameter persistent homology.
 <!-- strange-convex-four:end -->

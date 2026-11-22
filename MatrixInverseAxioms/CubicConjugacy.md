@@ -1,0 +1,41 @@
+# Exact cubic sparse size for dense conjugacy with identical Jordan spectra
+
+Use the ordinary Polynomial Calculus equations $H=XA-BX=0$, $XY=YX=I$ on the two square variable matrices of side $n$. Size counts nonzero monomial occurrences in every used line, and combinations have two premises. We prove a sharp $\Theta(n^3)$ worst-case theorem for a class including dense inputs of minimum proof degree three. The two matrices in the hard family are nilpotent with identical characteristic and minimal polynomials. The results hold over every field. [Galesi, Grochow, Pitassi and She, Question 7.3](https://arxiv.org/html/2305.19320#S7.SS3)
+
+## Constant-rank polynomial of the target
+
+Fix $d,k,w$ independently of $n$. Suppose each row of $B$ has at most $w$ nonzero entries, and a polynomial $f$ of degree at most $d$ over the input field satisfies
+$$
+ \operatorname{rank}f(B)=k<\operatorname{rank}f(A).
+$$
+There is a refutation with $O_{d,k,w}(n^3)$ monomial occurrences. Its degree is at most $k+2$. The source $A$ can be dense. For $d=2$, every fixed $k\ge0$, and $w=2$, the cubic worst-case order is attained over every field.
+
+Choose $k+1$ standard column vectors $e_l$ so that $t_l=f(A)e_l$ are independent. First derive the vectors of linear equations
+$$
+ X t_l=f(B)X e_l .
+$$
+For a monomial of degree $h$ use $XA^h-B^hX=\sum_{a+b=h-1}B^a H A^b$. All sums over powers have bounded length. Each row of $B^a$ has at most $\max(1,w)^d$ entries. It remains to derive $Hz$ for each of a bounded number of constant vectors $z=A^b e_l$. For row $i$ form a balanced binary combination of the raw inputs $H_{ij}z_j$. Every partial sum on a set of $s$ columns has support in at most $n+ws$ variables: the whole row $i$ of $X$ and at most $w$ other rows restricted to those $s$ columns. At level $b$ above the leaves there are at most $\lceil n/2^b\rceil$ nodes and the total number of participating columns is at most $n$. Summing over levels costs $O_w(n^2)$ per row, including leaf scalings. Thus the cost here is $O(n^3)$. Completed entries of $Hz$ have $O_w(n)$ monomials, so the bounded-row-support multiplications by $B^a$ and summation of the resulting equations stay within this cost.
+
+Factor $f(B)=UV$, choosing for the $k$ rows of $V$ a basis from the actual rows of $f(B)$. Those rows have bounded support, so each of the $k(k+1)$ entries of $Q=(VXe_l)_l$ has bounded support. Choose $k+1$ standard rows which cut out an invertible minor $T$ in the matrix with columns $t_l$, and write $R$ for the row selector. Multiply the derived linear equations on the left by $RY$ and use the selected entries of $R(YX-I)t_l$. This gives
+$$
+ P Q=I_{k+1},\qquad P=T^{-1}RYU.
+$$
+Explicitly each contraction by a row of $Y$ adds at most $n$ single-variable multiples of linear equations with $O(n)$ terms each. Each contraction of an inverse axiom with a constant vector adds at most $n$ input lines of sparsity $O(n)$. Binary balanced addition costs $O(n^2\log(2n))$ for each of the boundedly many entries above. This argument uses expanded polynomials in the original variables throughout. Each entry of $P$ has $O_k(n)$ terms.
+
+For completeness transpose the rectangular product and write $M=Q^T$, $N=P^T$. The $(k+1)$-by-$k$ matrix $M$ has bounded-support entries. Derive the vanishing of its $j$-minors downwards, starting vacuously above size $k$. On $j+1$ rows and $j$ columns form the row $c$ of signed $j$-minors, extended by zero on the other rows. Each entry of $cM$ is a known $(j+1)$-minor up to sign, or zero from a repeated column. The difference $(cM)N-c(MN-I)=c$ therefore gives the vanishing of those minors in degree at most $j+2$. Every $j$-minor occurs since a spare row exists, and descending to the empty minor gives one. All polynomials in the entries of $M$ occurring here have bounded sparsity for fixed $k,d,w$. Multiplications by entries of $N$ can be done monomial by monomial with one scalar linear combination by a balanced sum, costing $O_{k,d,w}(n\log(2n))$ per such product of a bounded-support polynomial and one linear entry. Multiplication of the $O(n)$-term derived inverse equations by the bounded-support cofactors has the same bound. For $k=0$ the zero inner dimension already supplies a constant equation. This finishes the upper bound.
+
+## An isospectral sharp family in degree three
+
+Fix an even integer $h\ge2$ and begin in dimension $2h+1$. Let $u$ be the all-ones column of length $h$ and let $v$ alternate $1,-1$, with $v^Tu=0$. Put $M=I_h+uv^T$, which has inverse $I_h-uv^T$ over the integers. Define
+$$
+ A=\begin{pmatrix}0&M&0\\0&0&u\\0&0&0\end{pmatrix}
+$$
+in block dimensions $(h,h,1)$. In a separate target basis define $B$ on the first $h+1$ basis vectors to be zero and send its last $h$ basis vectors, in order, to $e_i-e_{i+1}$ for $1\le i\le h$. Then $A^2=t z^T$ where $t=(u,0,0)^T$ in block notation and $z$ is the last coordinate. We have $A^3=B^2=0$, $\operatorname{rank} A=h+1$, and $\operatorname{rank} B=h$. In the target, $\ker B$ is the first $h+1$ coordinate space and $\operatorname{im}B$ is the coordinate-sum-zero hyperplane in that space, in every characteristic.
+
+We show that **each** of the $h(h+1)$ forward axioms in the first $h+1$ target rows and middle $h$ source columns must occur in a refutation. For a middle column $j$, $e_j^TA=z^T$. Because $M$ is invertible there is a row $a^T$ supported on the top block such that $a^TA=e_j^T$. Also $a^Tt=1$ because $A^2=t z^T$. Put $C=A-t e_j^T=(I-t a^T)A$. Then $C^2=0$, since $At=0$, $e_j^Tt=0$ and $t e_j^T A=A^2$. The projection $I-ta^T$ drops the rank of $A$ by exactly one, as $t$ lies in its image before projecting. Hence $C$ is square-zero of rank $h$, and $t$ belongs to $\ker C$ outside $\operatorname{im}C$. For every $i\le h+1$ the vector $e_i$ lies in $\ker B$ outside $\operatorname{im}B$. Two square-zero matrices of rank $h$ on dimension $2h+1$ admit Jordan bases with any specified vector in the kernel outside the image as the length-one summand. Extend an image basis by its preimages and that specified vector. This gives an invertible $X$ over the base field with $XC=BX$ and $Xt=e_i$. Consequently $XA-BX=e_i e_j^T$. Taking $Y=X^{-1}$ satisfies every axiom except the indicated forward input.
+
+For those columns $j$ at least $h-1$ distinct variables from $XA$ in every indicated entry have coefficients $\pm1$, belonging to column indices in the top source block. The variables in $(BX)_{ij}$ have column $j$ in the middle block and cannot cancel them. Distinct indispensable indices cannot represent the same axiom up to scalar, by their single-omission witnesses. Thus every refutation has $\Omega(h^3)$ monomial occurrences just at its input lines.
+
+Append $k$ common size-three nilpotent Jordan blocks to both matrices for any fixed $k\ge0$. Every single-omission witness extends with identity on those blocks. For $f(t)=t^2$ the two ranks become $k+1$ and $k$. The upper bound applies with $w=2$ and gives $\Theta(n^3)$ sparse size. The sequence has bounded gaps in $n$; a common zero block pads to every larger intermediate dimension while retaining the rank difference and witnesses. For $k=1$ both matrices have characteristic polynomial $t^n$ and minimal polynomial $t^3$, and both have trace zero for every positive power. The minimum PC degree is exactly three: the upper construction takes degree three, and the established degree-two criterion excludes degree two for equal minimal polynomials and matching eigenvalue multiplicities. Alternatively for this lower bound, a linear combination of quadratic inverse axioms can yield a constant in degree two only through $\operatorname{tr}C_0-\operatorname{tr}D_0$ when $XC_0=D_0X$ for every intertwiner. On equal-eigenvalue Jordan chains each individual shift-coefficient map identifies the diagonal entries on all the linked positions. The shared maximal chain length connects every source and target position in one component, so both traces are the same in every characteristic. [Original equations](https://arxiv.org/html/2305.19320#S7.SS3)
+
+The exact cubic size and the short certificate are written proofs. They address arbitrary dense sources under the displayed sufficient condition on the target.
