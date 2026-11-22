@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- pc-graph-tensor-routes:start -->
+- **[Two graph-to-tensor reductions in Polynomial Calculus](PCGraphTensorRoutes/README.md)** — Constant-degree equivalence of the incidence and Grigoriev FGS routes over every field under the stated isolate conventions. Includes matrix-space conjugacy, code tensors, executable checks, and four Lean-checked lemmas.
+<!-- pc-graph-tensor-routes:end -->
+
 <!-- binary-subcode-algorithms:start -->
 - **[Binary subcode containment and two-prime epimorphism counts](BinarySubcodeAlgorithms/README.md)** — Deterministic single-exponential exact counting and witness construction for bounded branchwidth with arbitrary dimension gap. Includes type-multiplicity and weight-span results, executable controls, and two Lean-checked lemmas.
 <!-- binary-subcode-algorithms:end -->
