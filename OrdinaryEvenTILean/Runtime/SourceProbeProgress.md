@@ -1,0 +1,95 @@
+# Native scalar probe progress for ordinary even-order tensor isomorphism
+
+These checked modules extend the fixed-finite-field solver and reuse the existing MathProofs implementations of Problems 1.7 and 1.8, prior even-order TI proofs, and their original attributions.
+
+- The actual signed CRT decoder subtracts the physical pin from each positive source word.
+- Native occurrences, including pinned and dual sites, use the exact normalized base-field units.
+- Nonpadded native actions are scalar exactly when the actual selected base-residue words agree.
+- Once the affine representative is scalar, every subsequent probe can test only the homogeneous source crop.
+- The homogeneous source-probe scan gives the original prepared self-request decision.
+- The source-probe scan tests the kernel of the same numeric incidence matrix that the paid CRT routine reads.
+- The rectangular scalar crop is tested in the native regular representation.
+- The order-four mask reads retained columns of the inverse source gauge directly. The proof gives a supported row in positive original dimension.
+- The installed inverse gauge feeds the concrete order-four probe and its selected-reference verdict.
+- The opposite source-frame transpose supplies the same support under the checked dual-chart Gram relation.
+- An installed inverse gauge supplies the saved mask and the supported reference for the live scanner.
+- The paid reciprocal routine produces and exports the literal inverse of an installed source frame.
+- Simultaneously permuting physical CRT equation, word and selected site labels preserves the universal probe verdict.
+- Retained-column support depends only on the intrinsic primary subspaces. Either frame can choose its own bases and factor order.
+- The actual recovered order-four mode obeys the native inverse-support criterion after width transport.
+- One paid archived factor pass generates complete mode site rows and advances the native shared-origin prefix.
+- The paid mode loop accumulates the conjunction of all installed modes’ exact kernel verdicts.
+- The flat address comparisons in the physical scanner agree with pairwise equality of the supported native sites.
+- The archived chart and the reference chart span the same intrinsic primary subspace. The exact order-four crop verdict compares the selected live residue words.
+- A paid loader reads the archived multiplicity and physical primary width to emit an interval of sites.
+- The machine scans every CRT prefix prescription in one installed mode. Arbitrary valid CRT completions give the exact subgroup answer.
+- One machine loads and tests each mode from durable tables of live chart and site data.
+- A paid publication routine writes a mode into the persistent scanner tables.
+- The physical row bounds and exact shared CRT slot agree with the numbered native block and its multiplicity tag.
+- The paid publication loop writes chart, site, and header slices for every selected mode.
+- The bounded physical scanner returns the original compiled native branch verdict when the installed mode tables cover the active addresses.
+- Both ordinary trial branches keep the exact scalar verdict when read in physical site order.
+- The original enlarged trial payload reduces to its actual four-site source crop.
+- The complete order-four scalar predicate equals the supported CRT comparisons for the four numeric mode matrices.
+- The inverse-bank mask and selected live reference give exactly the native supported addresses.
+- The paid chart packer concatenates every archived basis block in the literal archive order.
+- Literal archived coefficient vectors identify their polynomials and determine the factor match across archive orders.
+- Matching archived factor keys identifies the corresponding free CRT origin or the shared pin in the original native mode.
+- A paid byte-comparison loop finds the unique matching native key and reads its installed address.
+- Passing between bases of each primary subspace preserves supported CRT addresses, including repeated blocks sharing a pin.
+- The paid mode-site installer remaps the actual archived sites to the supplied native CRT addresses.
+- The ordinary mode command produces the scanner record and reference from the installed archive and site map.
+- The padded mode command masks the installed inverse labels, remaps sites, and chooses its first supported reference.
+- One bounded machine writes the per-mode records and scans the resulting tables.
+- The archived primary bases form an invertible source frame, and a paid transpose installs it for inversion.
+- The ordinary crops and the source-probe branch verdict agree with the exact original prepared trial.
+- The original compiled order-four crop obeys one fixed set of native support comparisons across the homogeneous probes.
+- One paid command packs the archived frame, restores valid field memory, and writes the exact inverse labels for the padding probe.
+- The dual occurrence gets literal transpose labels from the packed source frame without a second inversion.
+- A single support relation from each exact compiled trial works for all its homogeneous words, across the ordinary and padded shapes.
+- A fixed physical mode dispatcher, publisher, and scanner run together once the selected mode loader provides the stated live geometry.
+- The native mode-prefix metadata supplies the exact positive CRT address in a paid final assignment.
+
+The fixed-field theorem is still conditional on a complete raw trial-record producer covering both branches and on the full scalar and recovery controller executions. Step 5 still needs one raw trial execution that produces the native key and address banks in the same order as the incidence bank, installs the padded chart inputs, and supplies the mode loader in the shared layout. The Lean statements specify the installed inputs used by each checked command.
+
+## Newly checked modules
+
+- `EvenP21ScalarScanPublish`
+- `EvenP21ScalarScanPublishLoop`
+- `EvenP21ScalarScanSupport`
+- `EvenP21ScalarScanUnpadded`
+- `EvenP21SiteRowOrder`
+- `EvenP22PadAppend`
+- `EvenP22PadAssembly`
+- `EvenP22PadDual`
+- `EvenP22PadInverse`
+- `EvenP22PadPack`
+- `EvenP22ScalarController`
+- `EvenP22ScalarCoverage`
+- `EvenP22ScalarCrop`
+- `EvenP22ScalarDualSupport`
+- `EvenP22ScalarExactData`
+- `EvenP22ScalarFourBound`
+- `EvenP22ScalarFourCrop`
+- `EvenP22ScalarFourSupport`
+- `EvenP22ScalarFourTransport`
+- `EvenP22ScalarNativeFix`
+- `EvenP22ScalarPrimarySupport`
+- `EvenP22ScalarScanConcrete`
+- `EvenP22ScalarScanDispatch`
+- `EvenP22ScalarScanFirstReference`
+- `EvenP22ScalarScanFrame`
+- `EvenP22ScalarScanInstalledCases`
+- `EvenP22ScalarScanMappedSites`
+- `EvenP22ScalarScanOrdinaryMode`
+- `EvenP22ScalarScanPaddedMode`
+- `EvenP22ScalarScanPipeline`
+- `EvenP22ScalarScanRemap`
+- `EvenP22ScalarScanSiteInput`
+- `EvenP22ScalarScanSitePorts`
+- `EvenP22ScalarUniformCrop`
+- `EvenP22SiteAddress`
+- `EvenP22SiteCompare`
+- `EvenP22SiteKeys`
+- `EvenP22SiteLookup`
+- `EvenP22SiteNativeKeys`
