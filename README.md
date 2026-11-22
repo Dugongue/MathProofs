@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- strange-convex-four:start -->
+- **[Four unexpected bridges from parametric discrete convexity](StrangeConvexFour/README.md)** — Toric bundles, dimer statistical mechanics, graph sandpiles, and multiparameter persistent homology.
+<!-- strange-convex-four:end -->
+
 <!-- parametric-convex-four:start -->
 - **[Four parametric discrete-convexity results for isomorphism](ParametricConvexFour/README.md)** — Exact tensor instability, sharp diagonal invariants, valuated matroid normalization, and sparse polymatroid reconstruction.
 <!-- parametric-convex-four:end -->
