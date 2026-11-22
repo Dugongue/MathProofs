@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- blind-grochow-twohundred:start -->
+- **[Two hundred universal results from structural proof search](BlindGrochowTwoHundred/README.md)** — Universal results on extension tests, determinant ranges, form transport and robust rank tests.
+<!-- blind-grochow-twohundred:end -->
+
 <!-- blind-grochow-thousand:start -->
 - **[One thousand checked isomorphism leads](BlindGrochowThousand/README.md)** — Four generated proof batches for Frobenius tests, matrix transport, cubic weights and rank-preserving binary projections.
 <!-- blind-grochow-thousand:end -->
