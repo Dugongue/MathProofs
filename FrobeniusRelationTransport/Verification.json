@@ -1,0 +1,114 @@
+{
+  "main_theorem": "written proof",
+  "general_TI_vs_TI_SL": "open",
+  "lean_version": "4.33.0",
+  "lean_scope": "Translation of the intersection of local cosets given a base point",
+  "lean_source_sha256": "c139ac17d252f390efc66c867369d5e89e1d4b4a616c17b617cb57e8ecff0fb4",
+  "axioms": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "synchronize_shifts"
+    }
+  ],
+  "controls": {
+    "dense": [
+      {
+        "input_dimension": 10,
+        "output_dimension": 35,
+        "relation_dimension": 20,
+        "derivation_dimension": 10,
+        "symmetrizer_dimension": 1,
+        "modulus_low_first": [
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "generator_determinants": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "output_reflection_SL": true,
+        "reflected_combined_signs": [
+          -1
+        ]
+      },
+      {
+        "input_dimension": 12,
+        "output_dimension": 54,
+        "relation_dimension": 24,
+        "derivation_dimension": 12,
+        "symmetrizer_dimension": 1,
+        "modulus_low_first": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "generator_determinants": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "output_reflection_SL": false,
+        "reflected_combined_signs": [
+          -1
+        ]
+      }
+    ],
+    "blocks": {
+      "degrees": [
+        10,
+        14,
+        18
+      ],
+      "phase_counts": {
+        "000": 630,
+        "001": 0,
+        "010": 0,
+        "011": 630,
+        "100": 0,
+        "101": 630,
+        "110": 630,
+        "111": 0
+      },
+      "trace_prime": 11,
+      "repeated_degree": 22,
+      "trace_values": [
+        2,
+        4,
+        6,
+        8
+      ]
+    }
+  }
+}

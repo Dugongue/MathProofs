@@ -1769,3 +1769,8 @@ Pending formalizations:
 <!-- large-relation-even-ti:start -->
 - [Large relation spaces and even conjugators](LargeRelationEvenTI/README.md) — Single-instance ternary TI reductions using recovered graphs, incidence parity, hidden tensor factors, and Pfaffian cofactors. Includes a dense raw-input compiler and a Lean-checked incidence theorem.
 <!-- large-relation-even-ti:end -->
+
+
+<!-- frobenius-relation-transport:start -->
+- [Determinant-constrained tensor transport through nonsplit quadratic relations](FrobeniusRelationTransport/README.md) — Deterministic recognition, decision, and witnesses for a free-mode class over odd prime fields. Includes ternary sign examples, a repeated-degree refinement, and a Lean-checked coset identity.
+<!-- frobenius-relation-transport:end -->
