@@ -1866,3 +1866,8 @@ Pending formalizations:
 <!-- manin-grochow-crossovers:start -->
 - [Top 20 for Joshua Grochow with Manin crossovers](ManinGrochowCrossovers/README.md) — triangulated tensor isomorphism, manifold proof complexity, and exact finite conjugacy separators.
 <!-- manin-grochow-crossovers:end -->
+
+
+<!-- higher-order-universality:start -->
+- [Grochow Top 20 with arbitrary-degree universality](HigherOrderUniversality/README.md) — uniform commutative-ring tensor compilation and sharp homotopy complexity in dimension four.
+<!-- higher-order-universality:end -->
