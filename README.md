@@ -1906,3 +1906,8 @@ Pending formalizations:
 <!-- determinantal-tensor-crossovers:start -->
 - [Determinantal methods for tensor isomorphism](DeterminantalTensorCrossovers/README.md) — fixed optimal representations, exact determinant reductions, arithmetic genera, and sharp PC degree on matrix multiplication sums.
 <!-- determinantal-tensor-crossovers:end -->
+
+
+<!-- tensor-pc-rank-bounds:start -->
+- [Polynomial Calculus degree bounds for structured tensor isomorphism](TensorPCRankBounds/README.md) — Lovitz–Petrov decompositions, thin multiplication, determinantal frames, arbitrary direct sums, and all matrix pencils.
+<!-- tensor-pc-rank-bounds:end -->
