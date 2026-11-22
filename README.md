@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- cubic-linear-carriers:start -->
+- **[Single-tensor reductions for characteristic-three cubics](CubicLinearCarriers/README.md)** — One ordinary tensor of side at most 2n + 9 for every refinement of a polarization meeting two rank tests, with transporter recovery. Other sufficient classes, a matrix subgroup construction for arbitrary cubics, and a Lean-checked block comparison lemma.
+<!-- cubic-linear-carriers:end -->
+
 <!-- fixed-vertex-margin:start -->
 - **[Exact affine instability for fixed-vertex layered quivers](FixedVertexMargin/README.md)** — Polynomial-bit algorithms over the rationals and finite fields for the squared margin and optimal flags. Three vertices require logarithmically many principal-filtration queries. Written proofs, exact controls, and one Lean-checked pooling identity.
 <!-- fixed-vertex-margin:end -->
