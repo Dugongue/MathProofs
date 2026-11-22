@@ -1947,3 +1947,8 @@ Pending formalizations:
 <!-- simultaneous-computability-frontier:start -->
 - [Quadratic profiles and integral obstructions](SimultaneousComputabilityFrontier/README.md) — density-one simultaneous quadratic realization and fixed-format undecidability beyond étale–Brauer–Manin.
 <!-- simultaneous-computability-frontier:end -->
+
+
+<!-- simultaneous-computability-and-grochow:start -->
+- [Simultaneous computability and Grochow's isomorphism questions](SimultaneousComputabilityAndGrochow/README.md) — sharp finite-field matrix proof complexity, tensor extension profiles, joint descent, and exact integral entry degrees.
+<!-- simultaneous-computability-and-grochow:end -->
