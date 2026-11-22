@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- binary-subcode-algorithms:start -->
+- **[Binary subcode containment and two-prime epimorphism counts](BinarySubcodeAlgorithms/README.md)** — Deterministic single-exponential exact counting and witness construction for bounded branchwidth with arbitrary dimension gap. Includes type-multiplicity and weight-span results, executable controls, and two Lean-checked lemmas.
+<!-- binary-subcode-algorithms:end -->
+
 <!-- cubic-linear-carriers:start -->
 - **[Single-tensor reductions for characteristic-three cubics](CubicLinearCarriers/README.md)** — One ordinary tensor of side at most 2n + 9 for every refinement of a polarization meeting two rank tests, with transporter recovery. Other sufficient classes, a matrix subgroup construction for arbitrary cubics, and a Lean-checked block comparison lemma.
 <!-- cubic-linear-carriers:end -->
