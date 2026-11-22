@@ -1827,3 +1827,8 @@ Pending formalizations:
 <!-- filtered-tensor-transport:start -->
 - [Induction for determinant-constrained tensors](FilteredTensorTransport/README.md) — Two-input-flag transport, exact matrix-factor descent, geometrically monomial kernels, and a last-layer orientation law. Includes two raw ternary solvers and a Lean-checked lift identity.
 <!-- filtered-tensor-transport:end -->
+
+
+<!-- portfolio-top-30:start -->
+- [Portfolio top 30](PortfolioTop30/README.md) — ranked proofs, including [four extensions of Manin’s bilinear theorem](PortfolioTop30/ManinExtensions.md) and the [earlier top-ten audit](PortfolioTop30/Top10-Audit.md).
+<!-- portfolio-top-30:end -->
