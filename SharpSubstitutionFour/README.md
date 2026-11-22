@@ -1,0 +1,12 @@
+# Four consequences of the sharp matrix-substitution threshold
+
+The preceding construction reduces ordinary tensor isomorphism to isomorphism of square pencils whose matching matrix substitutions have the same rational canonical form through size $h$. Explicit inequivalent pencils separate at size $h+1$. [Starting proof](https://github.com/Dugongue/MathProofs/blob/main/SliceSimilarityFour/Tensor.md) · [Marked width theorem](https://github.com/Dugongue/MathProofs/blob/main/SliceSimilarityFour/Algorithms.md)
+
+| Proof | Main result |
+| --- | --- |
+| [Arbitrary projective schemes](Geometry.md) | For every projective scheme $T$ over any field, the first marked first-row extra-relation scheme can be $T\times\operatorname{OGr}(h+1,2h+2)$. The restriction to one marked half is $T$ itself. Every smaller extra-relation scheme is empty. |
+| [Noncommutative rational expressions and kernel recovery](Functions.md) | The first separating size for the wider class of two-product-free quadratic kernels is the minimum quadratic product length in the symmetric difference. One rank query tests membership. Every rational expression has matching invertibility domains and characteristic polynomials at all sizes and matching rational canonical forms below the cutoff. |
+| [Commuting and cyclic coefficient matrices](Commuting.md) | When the unrestricted size is $t$, commuting coefficients first separate at $t+1$ and commuting coefficients with a cyclic vector first separate at $t+2$ for the ordinary carrier. Polynomials in one matrix never separate. |
+| [Symmetric coefficients and computational complexity](Threshold.md) | For the original marked pairs the exact unrestricted size is $(h+1)d_*$, where $d_*$ is the minimum rank of a matrix in exactly one input space. Symmetric coefficients need at most one extra index, sometimes necessarily, and either size optimization decision problem is NP-complete over the binary field. |
+
+These are four written proofs. Supporting finite computations passed 1,683 geometry checks, 30 rational-expression and kernel checks, 120 commuting and cyclic checks, and 56 symmetric or unrestricted probes. Lean independently audited the square-zero perturbation inverse in [SquareZeroInverse.lean](SquareZeroInverse.lean). That audit covers the inverse identity used in the rational calculus. Priority for the exact research claims remains unconfirmed. Prepared for MathProofs with AI assistance.

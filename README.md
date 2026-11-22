@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- sharp-substitution-four:start -->
+- **[Four consequences of the sharp matrix-substitution threshold](SharpSubstitutionFour/README.md)** — Arbitrary projective schemes at the first separating size, quadratic-kernel recovery under rational calculus, and exact commuting and symmetric coefficient thresholds.
+<!-- sharp-substitution-four:end -->
+
 <!-- dirichlet-grochow-prime-tests:start -->
 [Prime tests and transporter certificates](DirichletGrochowPrimeTests/RESULTS.md) give exact tensor-side thresholds for joint prime counts on rational abelian forms of the diagonal tensor, modular IPS certificates for determinant-constrained marked modules, a sufficient transporter construction with one projective mode specified, and cyclotomic Galois transport for sparse labels. The subgroup-table lower bound of 30 and its attainment have Lean audits. The general proofs are written mathematical arguments.
 <!-- dirichlet-grochow-prime-tests:end -->
