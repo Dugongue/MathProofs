@@ -1,0 +1,7026 @@
+{
+  "A.lean": {
+    "status": "VERIFIED",
+    "sha256": "c273f06ca43e9db36905439b9e6b5856839c3909410e5fc00d74486616cf20ff",
+    "theorems": [
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_01"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_02"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_03"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_04"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_05"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_06"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_07"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_08"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_09"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_10"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_11"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_12"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_13"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_14"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_15"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_16"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_17"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_18"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_19"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_20"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_21"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_22"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_23"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_24"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_25"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_26"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_27"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_28"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_29"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_30"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_31"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_32"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_33"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_34"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_35"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_36"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_37"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_38"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_39"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_40"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_41"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_42"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_43"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_44"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_45"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_46"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_47"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_48"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_49"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.fixed_50"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_01"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_02"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_03"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_04"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_05"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_06"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_07"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_08"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_09"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_10"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_11"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_12"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_13"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_14"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_15"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_16"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_17"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_18"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_19"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_20"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_21"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_22"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_23"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_24"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_25"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_26"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_27"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_28"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_29"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_30"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_31"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_32"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_33"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_34"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_35"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_36"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_37"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_38"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_39"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_40"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_41"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_42"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_43"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_44"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_45"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_46"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_47"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_48"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_49"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.nullity_50"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_01"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_02"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_03"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_04"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_05"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_06"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_07"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_08"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_09"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_10"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_11"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_12"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_13"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_14"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_15"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_16"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_17"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_18"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_19"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_20"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_21"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_22"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_23"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_24"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_25"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_26"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_27"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_28"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_29"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_30"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_31"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_32"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_33"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_34"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_35"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_36"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_37"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_38"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_39"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_40"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_41"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_42"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_43"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_44"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_45"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_46"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_47"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_48"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_49"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.hybrid_50"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_01"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_02"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_03"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_04"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_05"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_06"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_07"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_08"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_09"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_10"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_11"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_12"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_13"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_14"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_15"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_16"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_17"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_18"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_19"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_20"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_21"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_22"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_23"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_24"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_25"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_26"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_27"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_28"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_29"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_30"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_31"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_32"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_33"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_34"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_35"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_36"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_37"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_38"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_39"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_40"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_41"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_42"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_43"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_44"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_45"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_46"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_47"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_48"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_49"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.extension_50"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_01"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_02"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_03"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_04"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_05"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_06"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_07"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_08"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_09"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_10"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_11"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_12"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_13"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_14"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_15"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_16"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_17"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_18"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_19"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_20"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_21"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_22"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_23"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_24"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_25"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_26"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_27"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_28"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_29"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_30"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_31"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_32"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_33"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_34"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_35"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_36"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_37"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_38"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_39"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_40"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_41"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_42"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_43"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_44"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_45"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_46"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_47"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_48"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_49"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "A.characteristic_50"
+      }
+    ]
+  },
+  "B.lean": {
+    "status": "VERIFIED",
+    "sha256": "f0fb55a793e98b2dbe0580ffc57f591ee2be0ec1379c5d242b594c605b58ca64",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.profile"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b040"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b000"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b020"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b030"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b010"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b113"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b001"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b050"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b131"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b011"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b149"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b021"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b077"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b104"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b095"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b167"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b185"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b059"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b122"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b158"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b176"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b086"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b041"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b068"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b031"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b140"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b087"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b123"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b096"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b042"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b114"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b234"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b242"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b210"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b078"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b168"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b141"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b194"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b060"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b002"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b202"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b012"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b132"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b069"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b022"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b159"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b226"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b218"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b150"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b177"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b105"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b032"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b051"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b186"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b235"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b052"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b160"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b195"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b243"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b124"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b003"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b115"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b219"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b211"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b142"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b023"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b169"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b106"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b178"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b061"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b088"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b043"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b013"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b187"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b151"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b033"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b070"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b097"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b227"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b203"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b079"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b133"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b228"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b044"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b143"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b053"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b098"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b244"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b161"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b204"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b080"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b220"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b071"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b196"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b212"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b125"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b034"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b134"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b236"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b014"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b188"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b107"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b089"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b024"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b179"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b004"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b116"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b170"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b062"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b152"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b090"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b189"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b205"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b063"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b197"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b162"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b099"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b045"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b005"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b245"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b054"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b229"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b144"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b072"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b213"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b035"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b135"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b180"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b237"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b153"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b126"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b081"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b015"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b025"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b108"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b221"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b171"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b117"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b136"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b016"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b118"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b230"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b091"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b154"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b073"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b036"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b222"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b145"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b214"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b109"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b206"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b064"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b100"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b082"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b026"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b006"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b190"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b246"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b198"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b055"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b163"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b181"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b238"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b172"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b046"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b127"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b047"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b037"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b247"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b223"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b056"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b155"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b173"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b017"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b146"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b137"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b182"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b110"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b027"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b207"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b007"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b215"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b101"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b119"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b074"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b164"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b239"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b128"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b231"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b092"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b191"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b083"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b199"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b065"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b240"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b129"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b057"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b093"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b156"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b248"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b102"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b084"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b200"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b018"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b038"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b111"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b183"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b208"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b008"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b120"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b066"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b147"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b192"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b165"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b174"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b075"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b232"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b138"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b216"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b048"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b028"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b224"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b094"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b166"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b039"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b209"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b085"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b233"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b201"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b184"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b241"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b058"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b067"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b103"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b175"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b148"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b076"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b139"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b009"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b112"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b130"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b157"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b049"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b019"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b029"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b217"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b121"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b193"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "OrbitQ.b225"
+      }
+    ]
+  },
+  "C.lean": {
+    "status": "VERIFIED",
+    "sha256": "7378504f3354caf3a7619925d50f77988b2f2768280a965cfb5a8397702030f3",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p7_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p13_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p19_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p31_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p37_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p43_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p61_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p67_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p73_25"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_01"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_02"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_03"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_04"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_05"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_06"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_07"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_08"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_09"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_10"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_11"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_12"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_13"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_14"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_15"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_16"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_17"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_18"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_19"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_20"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_21"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_22"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_23"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_24"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "C1000.p79_25"
+      }
+    ]
+  },
+  "D.lean": {
+    "status": "VERIFIED",
+    "sha256": "f91780854baf0f842600b2e0db0e87d93baae2bd0f3081ed3ebe03d826036273",
+    "theorems": [
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_001"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_002"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_003"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_004"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_005"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_006"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_007"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_008"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_009"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_010"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_011"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_012"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_013"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_014"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_015"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_016"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_017"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_018"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_019"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_020"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_021"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_022"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_023"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_024"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_025"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_026"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_027"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_028"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_029"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_030"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_031"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_032"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_033"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_034"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_035"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_036"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_037"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_038"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_039"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_040"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_041"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_042"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_043"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_044"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_045"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_046"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_047"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_048"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_049"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_050"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_051"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_052"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_053"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_054"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_055"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_056"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_057"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_058"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_059"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_060"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_061"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_062"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_063"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_064"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_065"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_066"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_067"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_068"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_069"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_070"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_071"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_072"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_073"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_074"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_075"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_076"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_077"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_078"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_079"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_080"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_081"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_082"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_083"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_084"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_085"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_086"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_087"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_088"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_089"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_090"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_091"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_092"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_093"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_094"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_095"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_096"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_097"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_098"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_099"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_100"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_101"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_102"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_103"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_104"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_105"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_106"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_107"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_108"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_109"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_110"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_111"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_112"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_113"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_114"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_115"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_116"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_117"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_118"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_119"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_120"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_121"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_122"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_123"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_124"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n4_125"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_001"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_002"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_003"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_004"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_005"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_006"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_007"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_008"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_009"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_010"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_011"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_012"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_013"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_014"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_015"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_016"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_017"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_018"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_019"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_020"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_021"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_022"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_023"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_024"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_025"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_026"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_027"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_028"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_029"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_030"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_031"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_032"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_033"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_034"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_035"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_036"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_037"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_038"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_039"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_040"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_041"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_042"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_043"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_044"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_045"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_046"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_047"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_048"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_049"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_050"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_051"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_052"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_053"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_054"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_055"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_056"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_057"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_058"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_059"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_060"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_061"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_062"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_063"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_064"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_065"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_066"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_067"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_068"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_069"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_070"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_071"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_072"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_073"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_074"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_075"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_076"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_077"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_078"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_079"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_080"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_081"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_082"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_083"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_084"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_085"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_086"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_087"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_088"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_089"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_090"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_091"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_092"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_093"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_094"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_095"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_096"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_097"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_098"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_099"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_100"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_101"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_102"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_103"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_104"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_105"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_106"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_107"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_108"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_109"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_110"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_111"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_112"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_113"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_114"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_115"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_116"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_117"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_118"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_119"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_120"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_121"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_122"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_123"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_124"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "ShotD.n5_125"
+      }
+    ]
+  }
+}

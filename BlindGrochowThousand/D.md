@@ -1,0 +1,13 @@
+# Exact survival spectra of binary rank condensers
+
+The catalogue contains 250 certified test panels in dimensions 4 and 5. Each seed is a surjective linear map from the indicated binary vector space to two bits. Its two row vectors are specified in ordinary binary encoding. The output records, for each $t$, the number of 2-dimensional subspaces on which exactly $t$ seeds preserve rank two.
+
+An input plane over $\mathbb F_2$ has exactly three nonzero points $x,y,x+y$. Sorting the three picks a unique pair of the smallest two. The Lean evaluator enumerates these pairs using XOR. It tests the two images for being nonzero and distinct, which is exactly linear independence in $\mathbb F_2^2$. Thus each count covers the whole Grassmannian of 2-planes in the specified coordinates. The formal statements are exact equalities of the finite evaluator. The mathematical interpretation of the evaluator follows from the two-point rank test.
+
+There are 125 complete panels. All planes retain rank for some seed in each complete panel. Of these, 35 still cover every plane after any one seed is removed. The other 125 panels each miss between one and three planes. The survival spectrum is invariant under a change of input basis, permutation of seeds and invertible output changes on each seed. The search retains distinct spectra within each dimension, ensuring that simple coordinate changes cannot account for different retained cases.
+
+For example, the seven projected pairs in `ShotD.n4_004` have spectrum $(0,4,8,10,5,6,2,0)$ on the 35 binary 2-planes of dimension 4. This panel preserves rank on every plane, although four planes each depend on a single seed. The single-failure guarantees can be read from the first two entries together. A panel whose first $r+1$ entries vanish remains complete after any $r$ seed failures.
+
+The Python generator samples distinct row spaces, evaluates the spectra via integer masks, and retains equal quotas of complete and nearly complete designs. The Lean evaluator certifies the survival row for each distinct seed by enumerating planes directly. The final panel proofs reuse those rows and check their sums and histograms by kernel reduction. This is a catalogue of small instances, with no optimality or asymptotic size claim.
+
+The frozen queue supplied handles 484095 and 13892 on combinatorial sizes and determinantal rank, and handles 252477 and 327410 on rank drop and kernel change. The use of binary planes, projections and coverage distributions was selected after revealing those candidates. [Anonymous queue](queues/worker-4.json) · [Lean cases](D.lean) · [Generator](D-gen.py) · [Rank condenser background](https://arxiv.org/abs/1411.7455)

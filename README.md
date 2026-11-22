@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- blind-grochow-thousand:start -->
+- **[One thousand checked isomorphism leads](BlindGrochowThousand/README.md)** — Four generated proof batches for Frobenius tests, matrix transport, cubic weights and rank-preserving binary projections.
+<!-- blind-grochow-thousand:end -->
+
 <!-- blind-grochow-hundred:start -->
 - **[One hundred Lean theorems from structural search](BlindGrochowHundred/README.md)** — Formal results on Frobenius tests, matrix transports, algebra contractions and linear probe compression.
 <!-- blind-grochow-hundred:end -->
