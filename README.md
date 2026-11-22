@@ -1851,5 +1851,5 @@ Pending formalizations:
 
 
 <!-- manin-top-20:start -->
-- [Top 20 for Fedor Manin](ManinTop20/README.md) — ranked results with [new proofs on persistence, mapping degrees, and actual manifold boundaries](ManinTop20/ManinPersistenceAndDegrees.md) and [previous results](ManinTop20/ManinGeometry.md).
+- [Top 20 for Fedor Manin](ManinTop20/README.md) — ranked results with [new proofs on open questions in extension, persistence, and mapping degrees](ManinTop20/ManinOpenQuestions.md) and [previous results](ManinTop20/ManinPersistenceAndDegrees.md).
 <!-- manin-top-20:end -->
