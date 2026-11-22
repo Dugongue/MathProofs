@@ -1843,5 +1843,5 @@ Pending formalizations:
 
 
 <!-- manin-top-20:start -->
-- [Top 20 for Fedor Manin](ManinTop20/README.md) — ranked results with [new proofs on nilmanifold persistence, mapping-degree spectra, and extension](ManinTop20/ManinGeometry.md) and [earlier proofs](ManinTop20/ManinNewProofs.md).
+- [Top 20 for Fedor Manin](ManinTop20/README.md) — ranked results with [new proofs on persistence, mapping degrees, and actual manifold boundaries](ManinTop20/ManinPersistenceAndDegrees.md) and [previous results](ManinTop20/ManinGeometry.md).
 <!-- manin-top-20:end -->
