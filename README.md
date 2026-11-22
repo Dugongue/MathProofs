@@ -1957,3 +1957,8 @@ Pending formalizations:
 <!-- simultaneous-computability-and-grochow-second:start -->
 - [Simultaneous computability and Grochow's isomorphism questions, second pass](SimultaneousComputabilityAndGrochowSecond/README.md) — exact characteristic-two PC degree in a pure Jordan class, joint prime densities, deterministic witness descent, and four-by-four arithmetic pencils.
 <!-- simultaneous-computability-and-grochow-second:end -->
+
+
+<!-- simultaneous-computability-across-fields:start -->
+- [Four routes for simultaneous computability](SimultaneousComputabilityAcrossFields/README.md) — exact torsor splitting degrees, arithmetic cohomology profiles, matroid proof complexity, and growing prime windows.
+<!-- simultaneous-computability-across-fields:end -->
