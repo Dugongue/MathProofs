@@ -1942,3 +1942,8 @@ Pending formalizations:
 <!-- simultaneous-computability:start -->
 - [Simultaneous computability](SimultaneousComputability/README.md) — joint degrees, quadratic integral profiles, infinite field probes, and natural witness transport.
 <!-- simultaneous-computability:end -->
+
+
+<!-- simultaneous-computability-frontier:start -->
+- [Quadratic profiles and integral obstructions](SimultaneousComputabilityFrontier/README.md) — density-one simultaneous quadratic realization and fixed-format undecidability beyond étale–Brauer–Manin.
+<!-- simultaneous-computability-frontier:end -->
