@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- blind-dag-connections:start -->
+- **[Anonymous structural search in the Lean DAG](BlindDAGConnections/README.md)** — Reproducible port searches, finite score certificates for small-product sets, and a sharp permutation cycle-profile cutoff. Thirteen Lean declarations passed kernel and axiom checks.
+<!-- blind-dag-connections:end -->
+
 <!-- pc-tensor-consequences:start -->
 - **[Four consequences for tensor-isomorphism proof complexity](PCTensorConsequences/README.md)** — Four graph-to-tensor routes in odd characteristic, sparse integral tensors with prescribed easy characteristics, and an affine-space description of an isomorphism transporter.
 <!-- pc-tensor-consequences:end -->

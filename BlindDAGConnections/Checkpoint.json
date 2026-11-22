@@ -1,0 +1,24 @@
+{
+  "seed": "indigo-43",
+  "sample": 512,
+  "cap": 48,
+  "total": 1,
+  "matches": [
+    {
+      "consumer": "3f0991d7e4165ddd50500129b97f08cf4c1fe93363ba21b9dd788bfeaa0fe89b",
+      "inputs": [
+        {
+          "slot": 3,
+          "expression": "d17d4d7316ac476f20a7819702076c31a91d395f1909bc9f50bcdfeefe4c36fd",
+          "producer": "ca0c4522bdc088e64ac3f5df571b966c1381a9d3b39b5ea99fa815812a3306be"
+        },
+        {
+          "slot": 4,
+          "expression": "b8bf9d766539b13efd2a3e4d6d021b1a57c44a11bf3ad6a5ef5074bda152cb50",
+          "producer": "2a99bcbad7b9a09c9b3c8142dac3888fae25238880d5ae4727a26be4d0f16e92"
+        }
+      ],
+      "revisions": 3
+    }
+  ]
+}
