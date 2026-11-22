@@ -1,0 +1,16 @@
+{
+  "lean_version": "4.33.0",
+  "source": "IsotropicDetection.lean",
+  "sha256": "5fcee600eb159fd9ffd1bdd3ad5fa19f647c806c2d9d5b2894c3dfcfafc52ec7",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "IsotropicDetection.isolate"
+    }
+  ],
+  "scope": "Integral containment identity isolating an isotropic minor coefficient."
+}
