@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- fixed-vertex-margin:start -->
+- **[Exact affine instability for fixed-vertex layered quivers](FixedVertexMargin/README.md)** — Polynomial-bit algorithms over the rationals and finite fields for the squared margin and optimal flags. Three vertices require logarithmically many principal-filtration queries. Written proofs, exact controls, and one Lean-checked pooling identity.
+<!-- fixed-vertex-margin:end -->
+
 <!-- matrix-inverse-axioms:start -->
 [Inverse axioms and matrix proof complexity](MatrixInverseAxioms/RESULTS.md) gives a factorial-versus-polynomial sparse Polynomial Calculus separation on the same matrix inputs, exact degree formulas for quiver and mixed-graph encodings, and a deterministic finite-field degree algorithm without factoring. The main results are written proofs. Lean verifies the two preparation identities.
 <!-- matrix-inverse-axioms:end -->
