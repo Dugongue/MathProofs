@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- matrix-congruence-and-prime-genera:start -->
+[Matrix proof complexity and joint prime tests](MatrixCongruenceAndPrimeGenera/RESULTS.md) gives sharp sparse Polynomial Calculus bounds and short circuit IPS certificates for odd finite-field congruence with field equations, instance-wise conjugacy degree bounds, asymptotics and factorization complexity for abelian tensor genera, and equal-degree joint prime thresholds. The general arguments are written proofs. Lean verifies the graph incidence lemma used in the factorization reduction.
+<!-- matrix-congruence-and-prime-genera:end -->
+
 <!-- sharp-substitution-four:start -->
 - **[Four consequences of the sharp matrix-substitution threshold](SharpSubstitutionFour/README.md)** — Arbitrary projective schemes at the first separating size, quadratic-kernel recovery under rational calculus, and exact commuting and symmetric coefficient thresholds.
 <!-- sharp-substitution-four:end -->

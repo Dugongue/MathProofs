@@ -1,0 +1,16 @@
+{
+  "lean_version": "4.33.0",
+  "source": "TriangleSupport.lean",
+  "sha256": "6f6937c9b8bc960da5d8c32ef5974dd03e5ef87957b017146f0c2111ef53fb33",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "TriangleSupport.triangleSupport"
+    }
+  ],
+  "scope": "Three distinct sorted edges have vanishing binary incidence sum precisely when they form a triangle."
+}
