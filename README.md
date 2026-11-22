@@ -1853,3 +1853,8 @@ Pending formalizations:
 <!-- manin-top-20:start -->
 - [Top 20 for Fedor Manin](ManinTop20/README.md) — ranked results with [new proofs on open questions in extension, persistence, and mapping degrees](ManinTop20/ManinOpenQuestions.md) and [previous results](ManinTop20/ManinPersistenceAndDegrees.md).
 <!-- manin-top-20:end -->
+
+
+<!-- manin-grochow-crossovers:start -->
+- [Top 20 for Joshua Grochow with Manin crossovers](ManinGrochowCrossovers/README.md) — triangulated tensor isomorphism, manifold proof complexity, and exact finite conjugacy separators.
+<!-- manin-grochow-crossovers:end -->
