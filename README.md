@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- exact-matrix-proof-degrees:start -->
+[Exact proof degree for matrix conjugacy](ExactMatrixProofDegrees/RESULTS.md) gives an instance-wise formula over every field for the conjugacy-degree part of Galesi, Grochow, Pitassi and Sheâ€™s Open Question 7.3. Companion results include sharp Rank Principle bounds, bounded-mode tensor IPS certificates, and shortest joint prime tests for abelian number fields using Dirichlet GRH. The general results have written proofs. Lean verifies two finite-sum lemmas for the prime tests.
+<!-- exact-matrix-proof-degrees:end -->
+
 <!-- tisl-unusual-eight:start -->
 - **[Eight sufficient theorems for TI versus TI_SL](TISLUnusualEight/README.md)** — Higher-rank ramification, real-closed orientation, graph incidence parity, and elliptic theta-group transport.
 <!-- tisl-unusual-eight:end -->

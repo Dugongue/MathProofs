@@ -1,0 +1,53 @@
+# How many products of nonabelian Galois fields can agree everywhere locally?
+
+Let $F$ be any number field. Let $N_F(n)$ be the largest size of a family of pairwise nonisomorphic dimension-$n$ étale $F$-algebras in which **every** factor of **every** member is a nonabelian Galois field and all members are isomorphic over every completion of $F$. Then, for all sufficiently large $n$,
+$$
+\log N_F(n)=\frac{n}{16}\log n+O(n).
+$$
+The implied constants are absolute. Along multiples of 16 the lower bound already holds with every factor having Galois group $D_8\times C_2$, where $D_8$ denotes the dihedral group of order eight. If abelian factors are admitted while every factor remains Galois, the sharp coefficient becomes $1/4$. The same assertions hold for ordinary multiplication tensors. These counts restrict *all* competitors to the stated factor types.
+
+## Faithful constituents and local signatures
+
+For a finite group $Q$, let $b(Q)$ be the least number of irreducible complex representations whose direct sum is faithful. Set $b(1)=0$. As a companion to the counting result, products of Galois fields with $b(Q)\le t$ for each factor are determined by all joint complete-splitting counts through order $t$, even for mixed degrees. In particular one-prime counts determine every product whose factor groups admit faithful irreducibles. Examples include all nontrivial finite simple groups and all symmetric groups.
+
+To see this, use normal subgroups $H$ of the common Galois group $G$ as in the joint-prime theorem. Write $d_H=[G:H]$ and $\delta_H$ for the multiplicity difference. For a single factor the function $d_H\prod_{i=1}^t1_H(g_i)$ on $G^t$ is $d_H^{1-t}$ times the inflated regular character of $(G/H)^t$. Therefore its inner product with the irreducible character $\rho_1\boxtimes\cdots\boxtimes\rho_t$ is $d_H^{1-t}\prod_i\dim\rho_i$ if $H\subseteq\bigcap_i\ker\rho_i$, and zero otherwise. Choose an inclusion-minimal changed $H$. Inflate at most $t$ irreducibles of $G/H$ cutting out $H$, padding with trivial representations. The difference in their coefficient is $d_H^{1-t}\delta_H\prod_i\dim\rho_i\ne0$. Chebotarev supplies a distinguishing prime tuple. For $t=0$ all factor groups are trivial and the empty test gives the dimension. The theorem on Galois products identifies the least order algorithmically. [Joint-prime proof](JointGalois.md)
+
+## The upper bound
+
+Take the common character $\chi$ of the embedding actions. Local isomorphism implies equality of permutation characters by Chebotarev in the common compositum. The element $g$ fixes all $n$ embeddings exactly when $\chi(g)=n$, so all members have the same minimal Galois splitting field. Equivalently the following counting argument may be applied to any finite subfamily in its common compositum. At most $n$ distinct irreducible characters occur in $\chi$.
+
+An index-$d$ normal subgroup $H$ contributing a field is specified by at most $b(G/H)$ irreducibles of $\chi$ via intersection of kernels. They all occur because a Galois field affords the inflated regular character of $G/H$. Padding with the trivial character allows uniform tuple lengths. For unrestricted Galois quotients a greedy choice takes at most $\lfloor\log_2 d\rfloor$ irreducibles, since as long as the current kernel strictly contains $H$ some irreducible cuts its order modulo $H$ by a factor of at least two.
+
+For nonabelian groups we claim the sharper estimate
+$$
+b(Q)-1\le |Q|/16 .
+$$
+If some irreducible representation has image of order at least eight, choose it first. Each further choice can halve the remaining kernel, giving $b(Q)-1\le\lfloor\log_2(|Q|/8)\rfloor$. If the last floor is $j\ge1$, the inequality $j\le2^{j-1}$ gives the claim; the case $j=0$ is immediate.
+
+Otherwise every nonlinear irreducible representation has image $S_3$, the only nonabelian group of order less than eight. Fix one such representation $\rho$. Its image has trivial center, hence its projective image also has order six. For any linear character $\lambda$ the twist $\lambda\rho$ remains nonlinear and has the same projective representation. Its image also has order six, so its kernel equals the projective kernel of $\rho$, namely $\ker\rho$. Thus $\lambda$ vanishes on $\ker\rho$ in the sense of taking value one there. All linear characters of $Q$ factor through $S_3$. Since $Q$ surjects onto $S_3$ it follows that $Q^{\rm ab}=C_2$. The derived subgroup $B$ embeds in a product of copies of $C_3$ via the nonlinear irreducibles: their restrictions have image in the derived subgroups of the copies of $S_3$, the linear characters are trivial on $B$, and the kernel of all irreducibles together is trivial. Hence $|B|=3^a$ for some $a\ge1$. The kernel of each nonlinear irreducible lies in $B$ since the map to the abelianization of $S_3$ induces the isomorphism on abelianizations. The restrictions to $B$ are nonzero linear functionals into $C_3$ separating its elements, so at most $a$ nonlinear irreducibles suffice. Now $(a-1)/(2\cdot3^a)\le1/18$ for $a\ge1$, proving the claim in this case too.
+
+For any fixed number $c_d$ of degree-$d$ fields let $r_d$ be a uniform integer bound on $b(Q)$ for the possible order-$d$ groups. There are at most $n^{r_d}$ possible normal subgroups of that index. For $c_d>0$ the number of distinct multisets of their fields is at most $(2e n^{r_d}/c_d)^{c_d}$. The unique rational factor, when allowed, needs no choices. At a fixed degree profile the logarithm of the total count is at most
+$$
+\log n\sum_{d\ge2}(r_d-1)c_d+\sum_{d\ge2}c_d\log(n/c_d)+O(n).
+$$
+Terms with $c_d=0$ are interpreted as zero. The middle sum is $O(n)$: its summands are at most $2c_d\log d+n/(ed^2)$ by maximizing $x\log(n/(d^2x))$. Use $\sum dc_d=n$. The number of profiles is bounded by the number of compositions of $n$, hence contributes $O(n)$ to the logarithm. The faithful-constituent estimate for nonabelian groups gives the $n/16$ leading term. With all Galois quotients allowed, $\lfloor\log_2d\rfloor-1\le d/4$ gives the $n/4$ coefficient.
+
+## A locally isomorphic family with nonabelian fields of degree 16
+
+Let $m\ge1$, and take $U=\mathbb F_4^s$ with $4^s$ the least power of four at least $m$. The character group of an elementary abelian group $C$ is $C^*=U\oplus\mathbb F_2a\oplus\mathbb F_2b$, using additive binary characters. Pick $c\in C$ with $a(c)=1$ and annihilated by $U$ and $b$. Realize $C$ as the center of the product $G=D_8\times(C_2)^{2s+1}$, identifying $c$ with the nontrivial commutator of $D_8$. Then $G/C$ has order four.
+
+Construct many different collections of $m$ two-dimensional subspaces $W$ of $C^*$, with the multiset of their characters independent of the collection. Partition an $m$-element subset of $U$ into disjoint affine subspaces $u_i+U_i$ of sizes $M_i$ equal to its base-four summands. Use coordinate-prefix blocks in the first $m$ radix-four words. Fix $\lambda\in\mathbb F_4\setminus\{0,1\}$, and for each $i$ choose a permutation $f_i$ of $U_i$ such that $z\mapsto z+f_i(z)$ is also a permutation. For each $z\in U_i$ take the plane whose first two nonzero vectors are
+$$
+a+u_i+z,\qquad b+\lambda u_i+f_i(z).
+$$
+The third vector is their sum. Within the three tag layers $a,b,a+b$, the untagged coordinates run respectively over $u_i+U_i,\lambda(u_i+U_i),(1+\lambda)(u_i+U_i)$ once. These blocks are disjoint within each layer. Thus the character multisets agree in all choices. The first vector determines $i,z$ and its partner determines $f_i(z)$, so different choices give different collections.
+
+Let $H_W=W^\perp$ in $C$. This subgroup is central in $G$, with $[G:H_W]=16$ and $c\notin H_W$. Hence $G/H_W$ is nonabelian. In fact the $D_8$ factor embeds since its center has trivial intersection with $H_W$, and the central dimension left over supplies a complementary $C_2$. For each collection take the disjoint union of its $m$ regular quotient $G$-sets $G/H_W$. Their permutation characters vanish off $C$. On $C$ the character of a block is $16\,1_{W^\perp}$, whose Fourier coefficients count each member of $W$ with weight four. The common character multiset therefore gives a common permutation character on $G$. Distinct collections give nonisomorphic $G$-sets because all stabilizers are normal.
+
+The complete-mapping theorem of Eberhard, Manners and Mrazović yields $\exp(M_i\log M_i-O(M_i))$ choices for each $f_i$. It applies to additive $\mathbb F_4$-spaces, whose Sylow two subgroup is noncyclic for $M_i>1$. Even for the finitely many small sizes there is a choice $z\mapsto\lambda z$. With at most three summands of each size, $\sum_iM_i\log(m/M_i)=O(m)$ by the convergence of $\sum_{j\ge0}(j+1)4^{-j}$. Thus the number of choices is at least $\exp(m\log m-O(m))$. [Eberhard, Manners and Mrazović, Theorem 1.2](https://arxiv.org/abs/2003.01798)
+
+The group $G$ is solvable. Shafarevich's locally cyclic realization theorem supplies a Galois extension of any number field $F$ with group $G$ and cyclic decomposition groups everywhere. Use the fixed fields indexed by the $H_W$. The products are globally distinct and everywhere locally isomorphic, since restriction of the common permutation character to a cyclic subgroup determines the full orbit decomposition by divisor inversion. This gives the lower bound at $n=16m$. For general sufficiently large $n$ choose $0\le j<16$ with $n-21j$ divisible by 16, using $\gcd(16,21)=1$. Adjoin $j$ copies of a fixed field with nonabelian Galois group $C_7\rtimes C_3$ of order 21 to every product of degree $16m=n-21j$. Such a field exists over $F$ by the same solvable realization theorem. The $O(1)$ padding keeps every factor nonabelian and changes the leading logarithm by $O(\log n)$. [Shafarevich's theorem with local conditions, König, Theorem 3.1](https://doi.org/10.1017/S0004972720001136)
+
+For the unrestricted Galois-factor case the same plane construction used in $C$ itself has block index four instead of sixteen. Use its locally cyclic elementary abelian realization and add at most three rational factors for arbitrary $n$. This proves the matching $1/4$ lower constant. Ordinary multiplication tensor equivalence agrees with isomorphism of these unital commutative algebras by normalization at the units.
+
+The previous abelian-splitting genus asymptotic established the $1/4$ coefficient in that smaller locus and supplied the complete-mapping construction. The new restriction to nonabelian factors changes the coefficient to $1/16$. It uses the faithful constituent bound and the central-subgroup version of the construction. These proofs are mathematical arguments without a full Lean formalization.

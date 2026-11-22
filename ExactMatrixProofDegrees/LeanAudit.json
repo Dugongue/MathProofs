@@ -1,0 +1,24 @@
+{
+  "lean_version": "4.33.0",
+  "source": "CharacterEnergy.lean",
+  "sha256": "23c58027f7eb145d1956452c88bdbb0ce4f867aa5b456a54f84fa72ff9b0dfa7",
+  "theorems": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "CharacterEnergy.gram"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem": "CharacterEnergy.gram_zero_iff"
+    }
+  ],
+  "scope": "Finite Gram expansion of squared discrepancies and a criterion for vanishing."
+}
