@@ -1,0 +1,755 @@
+{
+  "A.lean": {
+    "status": "VERIFIED",
+    "sha256": "5e1b388815566c1af1ddcdda3a529caee61371b18059e6092a4d449fb41b8a51",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.powered_period_schedule"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.successive_extensions"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.period_of_disjoint_union"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.matching_two_periods_recovers_gcd"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.matching_coprime_periods_injective"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.period_modulo_bound"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.period_monotone_in_cycle_length"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.period_antitone_in_extension"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.powered_period_fibre"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.bounded_period_mark_factors"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.fixed_point_count_after_extension"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.period_bound_saturates_mark"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.support_bound_from_single_mark"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.lcm_schedule_preserves_full_return"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.CycleRecovery.undetected_cycle_weight_bound"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.deck_conserves_total"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.coarsening_preserves_deck"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.injective_labels_recover_mass"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.paired_coprime_extension_recovers_weights"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.singleton_fibre_panel_recovers_weights"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.recovery_after_declared_erasures"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.nonzero_mass_marginals_recover_rank_one"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.product_with_known_factor_recovers_first"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.weighted_rectangle_collision"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.Tomography.weighted_rectangle_minimum_mass"
+      }
+    ]
+  },
+  "B.lean": {
+    "status": "VERIFIED",
+    "sha256": "080d3ddbbc73b1e0ee0694565d9d9118181223fddf667b38832ebfb1a36424f5",
+    "theorems": [
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.anchored_left_right_character"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.anchored_special_equivalence"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.anchored_congruence"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.transporter_character_coset"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.left_right_character_fiber"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.path_weight_transport"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.graph_gauge_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.graph_gauge_root_rigid"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.graph_flat_iff"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.path_character_budget"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.diagonal_anchor_intertwiner_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.anchored_diagonal_conjugacy"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.diagonal_support_trace_certificate"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.cubic_reverse_transport"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.commutator_transport_residual"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.scalar_residual_certificate"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.left_inverse_defect_certificate"
+      },
+      {
+        "axioms": [
+          "propext"
+        ],
+        "theorem": "BlindHundredB.singular_slices_left_right"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.surjective_probe_transport_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.relation_kernel_equivalence"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.common_probe_simultaneous_equivalence"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.observation_range_equivalence"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.common_observation_simultaneous_equivalence"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundredB.minimal_factorization_equivalence"
+      },
+      {
+        "axioms": [],
+        "theorem": "BlindHundredB.intertwiner_from_probe_observation"
+      }
+    ]
+  },
+  "C.lean": {
+    "status": "VERIFIED",
+    "sha256": "f777329c6d280742b3349be6609fbb3486164b26ef42b9bf874e00c5fa5b6999",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.regular_intertwiner_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.regular_bimodule_intertwiner_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.regular_double_commutant_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.regular_intertwiner_from_generators"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.regular_conjugacy_recovers_algebra"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.independently_fixed_output_isotopy"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.surjective_product_transport_recovers_second_kernel"
+      },
+      {
+        "axioms": [],
+        "theorem": "BlindGrochowHundred.C.left_regular_invariant_complement_of_central_projection"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_centroid_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_slice_separating_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_product_at_invertible_slice"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_transporter_from_two_leg_duality"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_tensor_ext_of_spanning_probes"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_reference_slice_determined_by_tensor"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_orthogonal_blocks_recover_product"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_radical_computed_by_weight"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_tensor_and_reference_pair_recover_algebra"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_weighted_tensor_fixed_transporter_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_product_pair_separating_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_orthogonal_projection_is_multiplication"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_nilpotence_detected_by_contractions"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_normalized_contractions_commute"
+      },
+      {
+        "axioms": [],
+        "theorem": "BlindGrochowHundred.C.frobenius_recovered_multiplication_associative"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_good_slices_iff_units"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowHundred.C.frobenius_weighted_form_determines_orthogonal_decomposition"
+      }
+    ]
+  },
+  "D.lean": {
+    "status": "VERIFIED",
+    "sha256": "ff04bc0aa8ec1a550d6cb8191a1425169308b9469809a8bdb446c253d3f5a3eb",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.image_decoder"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.faithful_decoder_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.surjective_decoder_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.image_transport_after_input"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.erasure_iff_decoder"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.joint_image_is_graph"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.adaptive_separation"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.joint_decoder_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.full_recovery_from_split_probe"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.redundant_probe_preserves_fibers"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.strict_kernel_refinement_rank"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.rank_certifies_decodability"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.joint_rank_increments"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.improvement_has_witness"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.joint_rank_overlap"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.joint_surjectivity_iff"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.split_recoding_rank"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.ambient_orbit_iff_kernel"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.joint_product_equivalence"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.summed_observation_rank_bound"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.compress_on_subspace"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.rank_budgeted_compression"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.common_compression"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.compressed_separation_on_subspace"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindHundred.Probes.scalar_compression_is_sharp"
+      }
+    ]
+  }
+}

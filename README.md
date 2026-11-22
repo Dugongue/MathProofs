@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- blind-grochow-hundred:start -->
+- **[One hundred Lean theorems from structural search](BlindGrochowHundred/README.md)** — Formal results on Frobenius tests, matrix transports, algebra contractions and linear probe compression.
+<!-- blind-grochow-hundred:end -->
+
 <!-- blind-grochow-ten:start -->
 - **[Ten Lean proofs from a four-worker structural search](BlindGrochowTen/README.md)** — Results on Frobenius recovery, matrix conjugacy and algebra transporters, with a reusable planner and independent proof audit.
 <!-- blind-grochow-ten:end -->
