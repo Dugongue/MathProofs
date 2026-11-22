@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- blind-grochow-ten:start -->
+- **[Ten Lean proofs from a four-worker structural search](BlindGrochowTen/README.md)** — Results on Frobenius recovery, matrix conjugacy and algebra transporters, with a reusable planner and independent proof audit.
+<!-- blind-grochow-ten:end -->
+
 <!-- blind-grochow-profiles:start -->
 - **[Sharp dimensions for tensor and matrix isomorphism tests](BlindGrochowProfiles/README.md)** — Unique first collisions for finite étale tensor tests, a binary-budget complexity theorem, and exact identity degrees for locally conjugate matrix tuples. Written proofs with eight Lean-checked components.
 <!-- blind-grochow-profiles:end -->

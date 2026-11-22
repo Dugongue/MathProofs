@@ -1,0 +1,52 @@
+{
+  "workers": [
+    {
+      "source": "A.lean",
+      "theorems": [
+        "BlindGrochowTen.MarkRecovery.robust_divisor_recovery",
+        "BlindGrochowTen.MarkRecovery.robust_polynomial_marks_recovery",
+        "BlindGrochowTen.MarkRecovery.two_decks_forest_recovery"
+      ],
+      "claims": [
+        "noisy-divisor-counts",
+        "nonlinear-noisy-observations",
+        "forest-descent"
+      ]
+    },
+    {
+      "source": "B.lean",
+      "theorems": [
+        "BlindTenMatrix.trace_certificate",
+        "BlindTenMatrix.split_image_dimension",
+        "BlindTenMatrix.pointed_conjugacy_from_word_coordinates"
+      ],
+      "claims": [
+        "explicit-degree-two-trace-certificate",
+        "split-image-dimension",
+        "cyclic-pointed-transport"
+      ]
+    },
+    {
+      "source": "C.lean",
+      "theorems": [
+        "BlindGrochowTen.multiplication_isotopy_normal_form",
+        "BlindGrochowTen.weighted_trace_equiv_iff_unit_cube"
+      ],
+      "claims": [
+        "associative-semiring-isotopies",
+        "weighted-trace-cube-classes"
+      ]
+    },
+    {
+      "source": "D.lean",
+      "theorems": [
+        "BlindTen.PrimePower.exact_punctured_mark_threshold",
+        "BlindTen.PrimePower.cycle_profile_of_power_nullities"
+      ],
+      "claims": [
+        "punctured-power-marks",
+        "reconstruction-by-nullities"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "A.lean": {
+    "sha256": "31cff8a2e3d67c0e12da963a8f60ef2dcc7a5486d3992f0a088e36502fcbd4f5",
+    "status": "VERIFIED",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowTen.MarkRecovery.robust_divisor_recovery"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowTen.MarkRecovery.robust_polynomial_marks_recovery"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowTen.MarkRecovery.two_decks_forest_recovery"
+      }
+    ]
+  },
+  "B.lean": {
+    "sha256": "0b75a1ac1782baa00046f33412e972fb0d1af582bfa71129d96a1ea9dba5af0c",
+    "status": "VERIFIED",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindTenMatrix.trace_certificate"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindTenMatrix.split_image_dimension"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindTenMatrix.pointed_conjugacy_from_word_coordinates"
+      }
+    ]
+  },
+  "C.lean": {
+    "sha256": "5ccb98cbc6142eb395a4b56e4d3d0c3cd3807b2ed4cdde627833c526b5a02e1a",
+    "status": "VERIFIED",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowTen.multiplication_isotopy_normal_form"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindGrochowTen.weighted_trace_equiv_iff_unit_cube"
+      }
+    ]
+  },
+  "D.lean": {
+    "sha256": "8539fb19745f00ab70778d78af0af8b65f74a86284614293823dbeb883b7523e",
+    "status": "VERIFIED",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindTen.PrimePower.exact_punctured_mark_threshold"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "BlindTen.PrimePower.cycle_profile_of_power_nullities"
+      }
+    ]
+  }
+}
