@@ -1,0 +1,77 @@
+# Several prescribed projective schemes in one tensor-isomorphism pencil
+
+**Theorem.** Let $k$ be a field, fix $h\ge2$ and put $m=h+1$. For any finite ordered list $T_1,\ldots,T_s$ of projective $k$-schemes, there is a construction of square pencils with centered square-zero slices, indexed by an additional three-tensor $K$. It has the following properties.
+
+- There are explicit sizes $j_1=m<j_2<\cdots<j_s$. All marked first-row extra-relation schemes below $m$ are empty. At each $j_i$, take the open part of the extra-relation scheme where the kernel is one-dimensional and its line of quadrics has polarization rank $2j_i$. The restriction of this part to the common marked pure half of the direction space is isomorphic to $T_i$. The full part is a relative split maximal orthogonal Grassmannian over $T_i$. At $j_1$ it is the entire first rank-drop scheme $T_1\times\operatorname{OGr}(m,2m)$.
+- These specified schemes and their embeddings in the direction Grassmannians are independent of $K$ at each fixed input format. Nevertheless unrestricted three-mode equivalence of the square pencils holds exactly when their additional tensors $K$ are isomorphic. For any two such pencils of the same format, matching matrix substitutions through size $h$ have the same rational canonical form.
+- The construction is polynomial in $h$, the dense additional tensor and the dimensions and numbers of supplied quadratic equations for the projective presentations. An arbitrary projective presentation is first put into quadratic form via a high Veronese embedding.
+
+The higher-size statements use the open stratum defined by the rank of the kernel line. Lower-rank kernel lines can persist at later sizes. All specified isomorphisms are scheme-theoretic over $k$ and commute with base change.
+
+## 1. Giving different projective schemes different matrix ranks
+
+Use the [rank-one construction](https://github.com/Dugongue/MathProofs/blob/main/SharpSubstitutionFour/Geometry.md) to realize each $T_i$ as the projective rank-one scheme of a symmetric matrix space $M_i\subset M_{n_i}(k)$, with $n_i\ge2$. This uses a quadratic presentation of $T_i$ in $\mathbb P^{n_i-1}$. The equations of that presentation give linear equations in the entries of a symmetric matrix. On the diagonal of the Segre embedding they restrict to the original quadrics, in every characteristic. Put $n=\max_i n_i$ and $g=2n+1$. Set $w_1=0$ and, for $i\ge2$, set
+$$
+w_i=(s+i)g,\qquad r_i=w_i+1,\qquad j_i=mr_i
+$$
+with the same rules $r_1=1$ and $j_1=m$. Fix linear coordinate rows $\alpha_i:M_i\to k^{1\times\dim M_i}$. On independent source and target slots form the rectangular linear maps
+$$
+C_i(A_i)=\operatorname{diag}\bigl(\alpha_i(A_i)^{\oplus w_i},A_i\bigr).
+\tag{1}
+$$
+The first term is absent when $w_i=0$. Over any extension field, a nonzero $A_i$ has rank contribution $w_i+\operatorname{rank}A_i$, since the coordinate row is nonzero. A zero matrix contributes zero.
+
+Write $N_K$ for the matrix space spanned by slices of the additional tensor. Let $R=1+\sum_i(w_i+n_i)$ and form the single rectangular matrix space
+$$
+\mathcal C_K
+=\left\{\operatorname{diag}\bigl(C_1(A_1),\ldots,C_s(A_s),B^{\oplus R}\bigr):
+                A_i\in M_i,\ B\in N_K\right\}.
+\tag{2}
+$$
+Use the same source and target spaces for all $K$ of a fixed format. Add inert dimensions if needed so their total dimension $d$ is greater than $2r_s$.
+
+The only geometric points of matrix rank exactly $r_i$ in $\mathbb P(\mathcal C_K)$ have $B=0$, one nonzero $A_i$ of rank one, and all other $A_\ell=0$. For $i=1$, rank one excludes both the hidden part and any $w_\ell>0$. For $i>1$, two nonzero terms with positive $w_\ell$ already have rank at least $2(s+2)g+2>r_s$. A single high term at index $p$, possibly with a contribution from $A_1$, has rank in $[w_p+1,w_p+2n]$. These windows are disjoint because consecutive $w_p$ differ by $g$. A contribution from $A_1$ alone has rank at most $n<r_i$. At the bottom $w_i+1$ of its own window, the high term has rank-one data and no other contribution. Finally $R>r_s$, so the last block in (2) is zero at all these points.
+
+The dimension of the space in (1) and the sizes of its blocks are polynomial in the quadratic presentation dimensions. The numbers $w_i$ have order at most $s n$, and $R$ has order at most $s^2 n$. This proves the size claim for (2). The [pencil compiler](https://github.com/Dugongue/MathProofs/blob/main/SliceSimilarityFour/Tensor.md) is polynomial in the rectangular format and $h$.
+
+## 2. Extracting the rank windows as schemes
+
+Apply the usual anchored compiler to $\mathcal C_K\subset\operatorname{Hom}(E,F)$. On $Z=E\oplus F$ use the rectangular tuple
+$$
+D(x,y,C)=[xI_Z+\widetilde C,\,yI_Z],
+$$
+where $\widetilde C$ has only the block from $E$ to $F$. Take the quadratic relations $q_D=X^{\mathsf T}D^{\oplus m}Y$ in the active variable space $V$, with the prescribed inert direction. Write $X_0,Y_0$ for the two marked halves and $H_K$ for the span of the relations. Where any anchor is nonzero over a field, the rank of $D$ is $d$.
+
+For $U\in\operatorname{Gr}(j,V)$, define $\mathcal P_j$ as the kernel of the quotient map $\operatorname{Sym}^2 V\to\operatorname{Sym}^2(V/U)$, interpreted as a subbundle in the universal plane. Its rank is $a_j=j\dim V-j(j-1)/2$. The first-row determinantal scheme is defined by the maximal minors of $\mathcal P_j\to\operatorname{Sym}^2 V/H_K$. It agrees with the family of first-row matrix substitutions after pulling back to the ordered-basis bundle of $U$, since $V^j$ maps split surjectively onto $\mathcal P_j$. Let $\mathcal I_j$ be the incidence scheme of pairs $(U,[q])$ where the quadratic line in $H_K$ lies in $\mathcal P_j$. Its condition is well-defined over every test ring.
+
+A form in $UV$ has polar matrix of rank at most $2j$, scheme-theoretically. In a basis adapted to $U$, the block on the annihilator of $U$ is zero, so the polar map factors through a free module of rank $2j$ by splitting the first $j$ rows off from the remaining rows. All $(2j+1)$-minors vanish. Conversely, on the exact-polar-rank-$2j$ locus at $j=mr_i$, some $r_i$-minor of $D$ is a unit locally. Indeed the polar matrix of $q_D$ is, after permuting, a sum of $m$ copies each of $D$ and $D^{\mathsf T}$. On geometric points its rank is $2m\operatorname{rank}D$. Thus such opens cover the locus, and the field calculation forces zero anchors and one active matrix block of rank $r_i$ at every geometric point.
+
+We check the equations on an arbitrary test ring. On a chart of the projective relation take a local generator $D$. At a geometric point in the window $r_i$, choose a unit $r_i$-minor with rows in $F$ and columns in the first $E$ of $D$. Such charts cover by the geometric rank calculation. Eliminate this minor and its transposes in the polar matrix. The resulting invertible block has size $2mr_i$. The minors extending this block by one row and one column force the whole Schur complement of the chosen minor of $D$ to be zero, including every nilpotent residual entry.
+
+The second block of $D$ now forces $y=0$: use a row outside the selected rows and its diagonal entry in the second block. The entry of the pivot rows in that column is zero. To see $x=0$, choose a diagonal index outside both selected rows and selected columns in $Z$, possible because $d>2r_i$. If this index is in $E$, its row has zero entries in the selected columns. If it is in $F$, its column has zero entries in the selected rows. Thus in either case its Schur entry is $x$. The remaining rank equations are those of $C$ in (2).
+
+In the active $C_i$ choose one unit coordinate of $\alpha_i(A_i)$ in each repeated row block and a unit entry of $A_i$. These give a unit minor of size $w_i+1=r_i$, again on charts covering the geometric locus. Its Schur complement is now block diagonal outside the selected minor. Vanishing of that complement kills all other $A_\ell$ and $B$ as matrices over the test ring and imposes the rank-one equations on $A_i$. Conversely an $A_i$ of rank one on this chart gives $D$ of rank exactly $r_i$. This proves that the corresponding exact rank subscheme in the projective relation space is $T_i$ itself, by the rank-one symmetric matrix presentation. The argument survives arbitrary base change.
+
+## 3. From a quadratic line to the determinantal scheme
+
+Over $T_i$, the distinguished line of quadrics has support a rank-$2j_i$ subbundle $\mathcal L_i\subset V\otimes\mathcal O_{T_i}$. The column and row halves have rank $j_i$, using the successive unit minors above. The equations give the split hyperbolic quadratic locally on the dual of that support, with values in the dual of the line of quadrics. More explicitly, for $\lambda_i=\mathcal O_{T_i}(-1)$ from the chosen quadratic presentation, the column half is $\mathcal O^{mw_i}\oplus\lambda_i^{\oplus m}$ and the row half is $(\lambda_i^2)^{\oplus mw_i}\oplus\lambda_i^{\oplus m}$. The coordinate row in (1) gives the line $\lambda_i^2$, and the two factors of the symmetric rank-one matrix give $\lambda_i$ on each side.
+
+For an incidence pair $(U,[q])$ in the chosen exact rank window, project $U^\perp$ to $\mathcal L_i^*$. On geometric fibers its image is totally isotropic and has dimension $j_i$. The lower bound on this dimension follows from $\dim U^\perp=\dim V-j_i$ and the ambient projection kernel dimension $\dim V-2j_i$. The upper bound is maximal isotropy in dimension $2j_i$. Over each test ring, choose $j_i$ vectors of $U^\perp$ whose projections have a unit minor. They span a totally isotropic summand in $\mathcal L_i^*$. Its polar orthogonal complement is that same summand because the polar pairing is perfect and both have the same rank on geometric fibers. Every other projection from $U^\perp$ belongs to this summand. The inclusion of $U^\perp$ into its preimage is then an isomorphism, by checking equality of the two direct summands on fibers. Hence $U\subseteq\mathcal L_i$. Taking annihilators gives an inverse construction from any maximal totally isotropic summand of $\mathcal L_i^*$. This identifies the exact-rank incidence functor with the claimed relative orthogonal Grassmannian over $T_i$, including in characteristic two.
+
+We now show that the relation is unique on geometric fibers in this incidence. Work over a geometric field and take $U\subset\mathcal L_i$ at a point of it. Another relation in $H_K\cap UV$ has polar rank at most $2j_i$, so its anchors and hidden part vanish. Project to the quadratic variables of each other visible block $\ell\ne i$. All its variables are disjoint from $\mathcal L_i$ and the projection of $UV$ there is zero. Injectivity of the map from matrices to their associated repeated quadrics forces its other block contributions to be zero. A nonzero relation is therefore supported on block $i$, with underlying matrix in $M_i$ of rank one.
+
+Two distinct rank-one points in $M_i$ have distinct symmetric factor lines and distinct coordinate row lines. The latter follows because $\alpha_i$ is a linear coordinate isomorphism. Their rank-$2j_i$ supports intersect exactly in the fixed column space of the repeated row anchors, of dimension $mw_i<j_i$. To see this, in the row-anchor slots the two column halves are the same fixed space and the two row lines are disjoint. In the appended data slots both the column and row lines are disjoint. This holds independently in every repetition. A $j_i$-plane cannot be contained in this intersection. Thus there is only one projective relation line. Since the kernel is a linear space, its dimension on the fiber is exactly one.
+
+On the defect-one open in the determinantal scheme, a unit $(a_j-1)$-minor permits elimination. The remaining column vanishes by the defining minors, so the kernel is a line subbundle and its projective incidence is the determinantal scheme itself. The geometric uniqueness just proved shows that all of the exact-rank incidence is over this open. The rank condition there is the open condition that the polar matrix of the line has a unit $2j_i$-minor. This proves the desired equality of schemes, instead of only a bijection on field points.
+
+On the common pure half $U\subset X_0$, the inclusions force $U$ to be the column half of $\mathcal L_i$ of the same rank. This equation holds on all test rings, giving one section over $T_i$. At the first size, every nonzero relation with polar rank at most $2m$ is of this type, and both support halves are $\lambda_1^{\oplus m}$. Tensoring by the line twist makes the hyperbolic Grassmannian constant, proving the full product assertion. Below $m$, the complete absence of nonzero relations follows from the minimum rank of the anchored matrix and the polar-rank bound. Fiberwise injectivity of the map from $\mathcal P_j$ gives an empty determinantal scheme there. The constructions of the embedded strata use the same visible forms in the same variable coordinates at each fixed tensor format.
+
+## 4. Recovering the independent tensor
+
+Every nonzero hidden block in (2) has rank at least $R$. The entire visible matrix subspace has rank at most $R-1$. Thus the rank-$<R$ elements of $\mathcal C_K$ are exactly the visible subspace. Left-right equivalence of the matrix spaces recovers this subspace intrinsically. Restrict the source to the intersection of the kernels of its matrices, and quotient the target by the sum of its images. Each visible matrix becomes zero. The new matrix space is the hidden replicated space with possible inert dimensions from the visible blocks. Quotient by its common source kernel and restrict its target to its total image to discard these inert dimensions and any unsupported hidden directions.
+
+A matrix-space equivalence after the preceding operations gives the same arrow-label change for the two replicated tuples. Cancellation of the common repetition $R$ holds by Krull–Schmidt for the parallel-arrow quiver with these ordered labels. Restore the unused dimensions in the fixed additional tensor format and match the kernels of the slice maps, obtaining an isomorphism of the original tensors. If the supported hidden space is zero, it is detected by the extraction directly. Conversely any input tensor isomorphism gives a matrix-space equivalence on the hidden blocks, with identity on all visible blocks. The [pencil compiler](https://github.com/Dugongue/MathProofs/blob/main/SliceSimilarityFour/Tensor.md) reflects unrestricted three-mode equivalence and preserves the coincident rational canonical forms for arbitrary matrix substitutions up to size $h$. This finishes both directions.
+
+The construction uses rank-one linear sections and maximal isotropic Grassmannians in the sense of the preceding result. Its additional content is simultaneous recovery at separated matrix sizes with one polynomial-size ambient carrier, and recovery of an independent tensor-isomorphism problem from the same carrier. Compare earlier universality results of [Lorscheid–Weist](https://doi.org/10.1112/blms.12272) and [Ringel](https://arxiv.org/abs/1703.08782), and [Grochow–Qiao](https://arxiv.org/abs/2306.16317) for the tensor-isomorphism reduction framework. Priority for this simultaneous statement remains unconfirmed.
+
+Exact finite controls checked 11,264 rank patterns and 793 Schur charts over dual numbers of the binary and ternary fields. In the Schur checks the selected double-point equation survives while off-window blocks and the two anchors vanish scheme-theoretically.

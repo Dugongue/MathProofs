@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- first-rank-drop-four:start -->
+- **[Four extensions of projective schemes at the first rank drop](FirstRankDropFour/README.md)** — Several projective schemes in one tensor-isomorphism pencil, unmarked recovery, polarized deformations, and parsimonious point counting.
+<!-- first-rank-drop-four:end -->
+
 <!-- matrix-congruence-and-prime-genera:start -->
 [Matrix proof complexity and joint prime tests](MatrixCongruenceAndPrimeGenera/RESULTS.md) gives sharp sparse Polynomial Calculus bounds and short circuit IPS certificates for odd finite-field congruence with field equations, instance-wise conjugacy degree bounds, asymptotics and factorization complexity for abelian tensor genera, and equal-degree joint prime thresholds. The general arguments are written proofs. Lean verifies the graph incidence lemma used in the factorization reduction.
 <!-- matrix-congruence-and-prime-genera:end -->
