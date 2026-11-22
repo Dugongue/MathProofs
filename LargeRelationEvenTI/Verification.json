@@ -1,0 +1,38 @@
+{
+  "unrestricted_lemma": "open",
+  "sufficient_reductions": "written proofs",
+  "kernel_verified": {
+    "scope": "Connected incidence image equals all zero-sum functions",
+    "lean_version": "4.33.0",
+    "sha256": "a953bd5a657eeda8cb5f64fcfa2562865bdda52c0e2e4748ead8e005a07ee12f",
+    "theorems": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "theorem": "RelationParity.incidence_iff_zero_sum"
+      }
+    ]
+  },
+  "executions": {
+    "raw_cycle": {
+      "dimension_x": 14,
+      "dimension_z": 91,
+      "even": 2,
+      "odd_only": 2
+    },
+    "certified_minor_frames": {
+      "even": 4,
+      "odd_only": 4,
+      "invalid_certificate_rejected": 1
+    },
+    "incidence_controls": {
+      "lift_decisions": 288,
+      "record_bijections": 144,
+      "dihedral_edge_actions": 612,
+      "cyclic_examples": 9
+    }
+  }
+}

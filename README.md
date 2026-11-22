@@ -1756,3 +1756,8 @@ Pending formalizations:
 <!-- even-conjugator-f3:start -->
 - [Even conjugators over the ternary field](EvenConjugatorF3/README.md) — One-instance reductions from filtered quadratic relations, intrinsic matrix algebras and output subspaces, with an executable signed comparison for full symmetric-square relations.
 <!-- even-conjugator-f3:end -->
+
+
+<!-- large-relation-even-ti:start -->
+- [Large relation spaces and even conjugators](LargeRelationEvenTI/README.md) — Single-instance ternary TI reductions using recovered graphs, incidence parity, hidden tensor factors, and Pfaffian cofactors. Includes a dense raw-input compiler and a Lean-checked incidence theorem.
+<!-- large-relation-even-ti:end -->
