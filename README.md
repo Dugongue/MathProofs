@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- rank-condenser-four:start -->
+- **[Four rank-condenser results for sharp matrix substitutions](RankCondenserFour/README.md)** — Exact adaptive probe counts, lossless spectral compression, deterministic rank-layer probes, and preservation of nonreduced rank-drop schemes.
+<!-- rank-condenser-four:end -->
+
 <!-- exact-matrix-proof-degrees:start -->
 [Exact proof degree for matrix conjugacy](ExactMatrixProofDegrees/RESULTS.md) gives an instance-wise formula over every field for the conjugacy-degree part of Galesi, Grochow, Pitassi and Sheâ€™s Open Question 7.3. Companion results include sharp Rank Principle bounds, bounded-mode tensor IPS certificates, and shortest joint prime tests for abelian number fields using Dirichlet GRH. The general results have written proofs. Lean verifies two finite-sum lemmas for the prime tests.
 <!-- exact-matrix-proof-degrees:end -->
