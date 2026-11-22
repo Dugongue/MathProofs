@@ -1,0 +1,171 @@
+{
+  "lean": "v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "written_proofs": 4,
+  "kernel_checked_components": 10,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "verification": [
+    {
+      "article": "A.md",
+      "source": "A.lean",
+      "sha256": "11f435b650fa558999d9252918821be07f46c26a93d968d22933323995484212",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "PrincipalUnitFour.Precision.coset_colors_exact_translation_stabilizer"
+        },
+        {
+          "axioms": [],
+          "theorem": "PrincipalUnitFour.Precision.normalized_line_generator_rigid"
+        }
+      ],
+      "finite_control": {
+        "source": "ACheck.py",
+        "sha256": "08cf758a9836d6358c3b8100ee64c4a3d4b3479189a7f2fa5916b75ae8c47dbf",
+        "output": [
+          "22 compatible subgroup profiles checked in F_2[t]/(t^4).",
+          "Mixed-payload collisions checked through all three precisions."
+        ]
+      }
+    },
+    {
+      "article": "B.md",
+      "source": "B.lean",
+      "sha256": "45106775bb6ac3e4fb1ac8f68723d81a0fdda97beae320acf3add75dbedaf61f",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "PrincipalUnitsB.norm_layer_det"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "PrincipalUnitsB.matrix_unit_alignment"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "PrincipalUnitsB.radical_conjugation_formula"
+        }
+      ],
+      "finite_control": {
+        "source": "BCheck.py",
+        "sha256": "ad1883364810f2012cb7968844b0d4e1310b4bf5adecaca6449f1c2e2967af1c",
+        "output": [
+          "Z/4: quadratic unit and principal norm sizes (2, 2)",
+          "Z/4: 4 automorphisms of the loop algebra",
+          "Z/8: quadratic unit and principal norm sizes (4, 4)",
+          "Z/8: 8 automorphisms of the loop algebra",
+          "Z/16: quadratic unit and principal norm sizes (8, 8)",
+          "Z/16: 16 automorphisms of the loop algebra",
+          "Z/9: quadratic unit and principal norm sizes (6, 3)",
+          "Z/27: quadratic unit and principal norm sizes (18, 9)"
+        ]
+      }
+    },
+    {
+      "article": "C.md",
+      "source": "C.lean",
+      "sha256": "0b4adf19fb6aee684bdb6d1e06a6a0e901430c865c4a30d2fb22b177a5c9243c",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TruncationProbe.det_pascal"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TruncationProbe.powerColumns_translate"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "TruncationProbe.det_powerColumns_translate"
+        }
+      ],
+      "finite_control": {
+        "source": "CCheck.py",
+        "sha256": "a152e2610497828c3a15a5e14926cff22828af01a6a255d7552f9aba21eb9b6f",
+        "output": [
+          "Z/4, d=2: 4 determinant-one classes",
+          "Z/4, d=3: 1 determinant-one classes",
+          "Z/4, d=4: 8 determinant-one classes",
+          "Z/8, d=2: 16 determinant-one classes",
+          "Z/8, d=3: 1 determinant-one classes",
+          "Z/8, d=4: 64 determinant-one classes",
+          "Z/9, d=2: 4 determinant-one classes",
+          "Z/9, d=3: 27 determinant-one classes",
+          "Z/9, d=4: 24 determinant-one classes",
+          "Z/6, d=2: 4 determinant-one classes",
+          "Z/6, d=3: 1 determinant-one classes",
+          "Z/6, d=4: 8 determinant-one classes",
+          "F2[e]/(e^2), d=2: 4 determinant-one classes",
+          "F2[e]/(e^2), d=3: 1 determinant-one classes",
+          "F2[e]/(e^2), d=4: 8 determinant-one classes",
+          "F2[e]/(e^3), d=2: 4 determinant-one classes",
+          "F2[e]/(e^3), d=3: 1 determinant-one classes",
+          "F2[e]/(e^3), d=4: 32 determinant-one classes",
+          "F2[e]/(e^4), d=2: 16 determinant-one classes",
+          "F2[e]/(e^4), d=3: 1 determinant-one classes",
+          "F3[e]/(e^2), d=2: 4 determinant-one classes",
+          "F3[e]/(e^2), d=3: 27 determinant-one classes",
+          "F3[e]/(e^2), d=4: 24 determinant-one classes",
+          "23 cases, 30658 substitutions, 1852 invertible substitutions with nonzero constant term, 42 principal subgroup tests, and 16 sharp lengths."
+        ]
+      }
+    },
+    {
+      "article": "D.md",
+      "source": "D.lean",
+      "sha256": "be4643632e622b27a2717b994561ce4ec4b26c0123bf9373ab8752f184d2b15b",
+      "components": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "PrincipalUnitFour.Uniform.principal_unit_frobenius"
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "PrincipalUnitFour.Uniform.unramified_square_ne_neg_one"
+        }
+      ],
+      "finite_control": {
+        "source": "DCheck.py",
+        "sha256": "8a13c3a5029fe0a4d9a69a079e2d26487281334aa876e21e6f611c8b6aad80f7",
+        "output": [
+          "39 calibrated ring cases and 6630 unit checks",
+          "320 odd-residue-degree width bounds checked"
+        ]
+      }
+    }
+  ]
+}

@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- principal-unit-determinants:start -->
+- **[Four principal-unit determinant results](PrincipalUnitDeterminants/README.md)** — Uniform ring reductions, prescribed quotient profiles, square-zero extensions and unit-group recovery from truncations.
+<!-- principal-unit-determinants:end -->
+
 <!-- determinant-one-correction:start -->
 - **[Four results on determinant-one correction](DeterminantOneCorrection/README.md)** — Supplied-transporter hardness over finite local rings, exact cube-zero and square-zero field results, and counted sign edits for marked multiplication tensors.
 <!-- determinant-one-correction:end -->
