@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- tisl-unusual-eight:start -->
+- **[Eight sufficient theorems for TI versus TI_SL](TISLUnusualEight/README.md)** — Higher-rank ramification, real-closed orientation, graph incidence parity, and elliptic theta-group transport.
+<!-- tisl-unusual-eight:end -->
+
 <!-- first-rank-drop-four:start -->
 - **[Four extensions of projective schemes at the first rank drop](FirstRankDropFour/README.md)** — Several projective schemes in one tensor-isomorphism pencil, unmarked recovery, polarized deformations, and parsimonious point counting.
 <!-- first-rank-drop-four:end -->

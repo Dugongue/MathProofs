@@ -1,0 +1,14 @@
+# Search scope and related approaches
+
+The search used the federated DAG front door for castling, theta groups, reduced norms, Kempf–Ness, neighborhood twins, and polarized tensors. It compared the current source and notes hits with the checked Mathproof tree and the relevant historical TI and TI_SL manuscripts. A complete full-text query over the canonical notes catalog matched 1,492 documents for the TI and TI_SL vocabulary out of 25,060 indexed documents. A separate name-filtered source review selected 202 Lean files. These counts refer to the catalog snapshot used for this run. The federated searches included additional registered libraries and historical source snapshots, with bounded result windows. Source hits and written notes are evidence of prior consideration, while checked ports have a separate verification status.
+
+| Technique used in this package | Prior overlap identified | Exact scope of the new proof |
+| --- | --- | --- |
+| Cyclic isogeny descent in elliptic theta representations | Earlier notes suggested computing determinant data on smooth $3\times3\times3$ models from theta groups. | Compute the stabilizer character of mixed section multiplication in unbounded dimensions, and give a finite-field algorithm using two Smith power tests. |
+| Higher-rank Henselian ramification and commutator Pfaffians | Earlier work used reduced norms and intrinsic volume forms for split degree-two and quaternion products. | Recover coordinate volume labels directly from raw division arrays in all stated degrees, then compute the correction lattice after every finite extension. |
+| Real-closed semialgebraic geometry | Earlier moment-map and real matrix-space approaches are present. | Encode the common orientation of an imaginary centroid by one square constraint, and decide signed rectangular pencils by fixed-dimensional sign sampling. |
+| Incidence parity and neighborhood-inclusion blocks | Graphical-space isomorphism and earlier graph-incidence detectors are present. | Compute the degree-difference determinant lattice of the entire transporter, and retain any residual power obstruction with a same-field Kummer algebra. |
+
+Castling was discarded after finding a dedicated historical TI_SL construction. The evidence identifies underused mechanisms within fields that already have nearby applications. It does not certify that a whole field has never been used, or priority outside the indexed files and papers searched.
+
+Primary comparison sources include [Joux–Narayanan](https://doi.org/10.4230/LIPIcs.ITCS.2025.62), [Grochow–Qiao, Part I](https://doi.org/10.1137/21M1441110), [Grochow–Qiao, Part IV](https://arxiv.org/abs/2306.16317), [Li–Qiao–Wigderson–Wigderson–Zhang](https://arxiv.org/abs/2206.04815), and [Oprea](https://mathweb.ucsd.edu/~doprea/verlindeams.pdf). Each proof gives the references specific to its mechanism.
