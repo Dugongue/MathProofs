@@ -1901,3 +1901,8 @@ Pending formalizations:
 <!-- determinantal-geometry-and-modules:start -->
 - [Four proofs in determinantal geometry and module isomorphism](DeterminantalGeometryAndModules/README.md) — sharp uniform sizes, codepth formulas, prescribed nodal coranks, and local–global phenomena.
 <!-- determinantal-geometry-and-modules:end -->
+
+
+<!-- determinantal-tensor-crossovers:start -->
+- [Determinantal methods for tensor isomorphism](DeterminantalTensorCrossovers/README.md) — fixed optimal representations, exact determinant reductions, arithmetic genera, and sharp PC degree on matrix multiplication sums.
+<!-- determinantal-tensor-crossovers:end -->
