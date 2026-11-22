@@ -1,0 +1,146 @@
+{
+  "lean": "v4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "written_proofs": 4,
+  "kernel_checked_components": 9,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "verification": [
+    {
+      "article": "A.md",
+      "source": "A.lean",
+      "sha256": "bba51a8539a26adecbb1017d1abb9753267ef64c32eb9b5585907288db327173",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CevaFour.Count.card_component_scales"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CevaFour.Count.card_scaled_pair"
+        }
+      ],
+      "finite_control": {
+        "source": "ACheck.py",
+        "sha256": "8513c4754ce5e4b944fe43cb7373028b25a934f097e9974974cf41e3787e0cef",
+        "output": [
+          "359,424 exhaustive coordinate counts and 5,616 terminal partitions.",
+          "At most 5 star queries per four-vertex partition.",
+          "24 matrix actions checked against both pairing multipliers over F3.",
+          "Controls completed in 1.99 seconds."
+        ]
+      }
+    },
+    {
+      "article": "B.md",
+      "source": "B.lean",
+      "sha256": "0cd8943fcccd796f57331b86672d9da14ba5171258163832fd52c0e18f0ca77f",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CevaWitnessCost.two_coordinates_merge"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "CevaWitnessCost.three_terminal_separation"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CevaWitnessCost.exact_three_terminal_character"
+        }
+      ],
+      "finite_control": {
+        "source": "BCheck.py",
+        "sha256": "41a7636258e5325cf22ad52f81a9f9b2598fbd85dbbb6d0b2b4dfdd164128065",
+        "output": [
+          "126 label/deletion comparisons passed",
+          "64 multiway cut comparisons and all terminal residues passed"
+        ]
+      }
+    },
+    {
+      "article": "C.md",
+      "source": "C.lean",
+      "sha256": "f58f2307143d6a6d9d438b674e9876d62d347b13ee2ddbc9e80e514f9fc51d60",
+      "components": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CevaPrecision.prescribed_lift_iff"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "theorem": "CevaPrecision.jointFiber_card"
+        }
+      ],
+      "finite_control": {
+        "source": "CCheck.py",
+        "sha256": "79477833787ec79f530e58296128f111d726315ad7c49800f5c519577850351e",
+        "output": [
+          "character fibers 1080",
+          "colliding label actions 142",
+          "profile levels 266",
+          "cycle and determinant fibers 2000"
+        ]
+      }
+    },
+    {
+      "article": "D.md",
+      "source": "D.lean",
+      "sha256": "dbf0329379dc555ef19b4eec63e3fb7b67cdb2cc0f5f3a5d9598feb310a047e4",
+      "components": [
+        {
+          "axioms": [
+            "propext"
+          ],
+          "theorem": "CevaFour.Segre.grid_ratio"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ],
+          "theorem": "CevaFour.Segre.grid_gate"
+        }
+      ],
+      "finite_control": {
+        "source": "DCheck.py",
+        "sha256": "94a221c5f7e357e1a955c5b240cfbe041ca596c0273c03ed8d124b68ef5bb87c",
+        "output": [
+          "9216 exact pairs of matrices over the binary dual numbers",
+          "3780 group assignments with distinct supports and correct register values",
+          "1572 Vandermonde threshold cases over fields of sizes four and eight"
+        ]
+      }
+    }
+  ]
+}

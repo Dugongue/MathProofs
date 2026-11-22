@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- ceva-determinant-extensions:start -->
+- **[Four extensions of the Ceva determinant compiler](CevaDeterminantExtensions/README.md)** — Calibrated stabilizer counts, modular witness costs, conditional Segre characters and precision-lifting obstructions.
+<!-- ceva-determinant-extensions:end -->
+
 <!-- polyhedral-tensor-determinants:start -->
 - **[Geometry and determinant-one tensor isomorphism](PolyhedralTensorDeterminants/README.md)** — Ceva tests, polygon holonomy, Platonic face incidences and the surface Bockstein.
 <!-- polyhedral-tensor-determinants:end -->
