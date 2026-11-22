@@ -1871,3 +1871,8 @@ Pending formalizations:
 <!-- higher-order-universality:start -->
 - [Grochow Top 20 with arbitrary-degree universality](HigherOrderUniversality/README.md) — uniform commutative-ring tensor compilation and sharp homotopy complexity in dimension four.
 <!-- higher-order-universality:end -->
+
+
+<!-- universality-consequences:start -->
+- [Four higher-order tensor universality consequences](UniversalityConsequences/README.md) — proof complexity, exact transporter schemes, restriction of scalars, and algebraic group actions.
+<!-- universality-consequences:end -->
