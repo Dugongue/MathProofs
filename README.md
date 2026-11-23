@@ -1992,3 +1992,8 @@ Pending formalizations:
 <!-- quasipolynomial-factoring-fallout:start -->
 - [Consequences of deterministic quasipolynomial finite-field factoring](QuasipolynomialFactoringFallout/README.md) — transporter search, prescribed determinant counts, extension-degree complexity, and low-degree proof certificates under the stated factoring input where required.
 <!-- quasipolynomial-factoring-fallout:end -->
+
+
+<!-- deterministic-average-case-ti:start -->
+- [Deterministic algorithms for finite-field tensor isomorphism](DeterministicAverageCaseTI/README.md) — conditional bounded-mode decisions and extension spectra, factoring-free ordinary even-order witnesses, and deterministic transfers for orthogonal, unitary, and other average-case algorithms.
+<!-- deterministic-average-case-ti:end -->
