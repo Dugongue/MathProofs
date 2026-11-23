@@ -1982,3 +1982,8 @@ Pending formalizations:
 <!-- geometry-partially-observed-laws:start -->
 - [Geometry of partially observed laws](GeometryOfPartiallyObservedLaws/README.md) — exact law profiles, collective curvature failures, adaptive marginal probes, and finite extendibility.
 <!-- geometry-partially-observed-laws:end -->
+
+
+<!-- simultaneous-partially-observed-laws:start -->
+- [Simultaneous computability of partially observed laws](SimultaneousPartiallyObservedLaws/README.md) — phase concavity profiles across observations, arithmetic fields, and exact sample sizes.
+<!-- simultaneous-partially-observed-laws:end -->
