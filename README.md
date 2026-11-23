@@ -1977,3 +1977,8 @@ Pending formalizations:
 <!-- ordinary-tensor-transfer-fallout:start -->
 - [Sharp proof bounds and arithmetic in ordinary tensor isomorphism](OrdinaryTensorTransferFallout/README.md) — tight sparse Polynomial Calculus bounds, extension spectra, and short circuit certificates.
 <!-- ordinary-tensor-transfer-fallout:end -->
+
+
+<!-- geometry-partially-observed-laws:start -->
+- [Geometry of partially observed laws](GeometryOfPartiallyObservedLaws/README.md) — exact law profiles, collective curvature failures, adaptive marginal probes, and finite extendibility.
+<!-- geometry-partially-observed-laws:end -->
