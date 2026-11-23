@@ -1987,3 +1987,8 @@ Pending formalizations:
 <!-- simultaneous-partially-observed-laws:start -->
 - [Simultaneous computability of partially observed laws](SimultaneousPartiallyObservedLaws/README.md) — phase concavity profiles across observations, arithmetic fields, and exact sample sizes.
 <!-- simultaneous-partially-observed-laws:end -->
+
+
+<!-- quasipolynomial-factoring-fallout:start -->
+- [Consequences of deterministic quasipolynomial finite-field factoring](QuasipolynomialFactoringFallout/README.md) — transporter search, prescribed determinant counts, extension-degree complexity, and low-degree proof certificates under the stated factoring input where required.
+<!-- quasipolynomial-factoring-fallout:end -->
