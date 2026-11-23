@@ -1997,3 +1997,8 @@ Pending formalizations:
 <!-- deterministic-average-case-ti:start -->
 - [Deterministic algorithms for finite-field tensor isomorphism](DeterministicAverageCaseTI/README.md) — conditional bounded-mode decisions and extension spectra, factoring-free ordinary even-order witnesses, and deterministic transfers for orthogonal, unitary, and other average-case algorithms.
 <!-- deterministic-average-case-ti:end -->
+
+
+<!-- constructive-tensor-isomorphism:start -->
+- [Constructive tensor isomorphism and sparse refutations](ConstructiveTensorIsomorphism/README.md) — explicit bounded-mode and spectral transporters under the factoring premise where specified, unconditional sparse Polynomial Calculus bounds on a recognized class, and exact finite-local-ring lifting.
+<!-- constructive-tensor-isomorphism:end -->
