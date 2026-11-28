@@ -1,0 +1,30 @@
+# Nontrivial integral units invisible to any finite quotient panel
+
+Let $P$ be the torsion-free Promislow group. For every homomorphism $q:P\to Q$ with $Q$ finite, there is a nonsigned unit of $\mathbb Z[P]$ whose image in $\mathbb Z[Q]$ is $1$. This holds simultaneously for any finite list of quotients, by taking their product. It strengthens the finite-probe obstruction in the arithmetic branch, using the integral-unit construction of O’Neill and Astra. [Source manuscript, Sections 2–5](https://charlesponeill.com/maths-releases/promislow-units/promislow-units.pdf).
+
+Use their notation $x=a^2$, $y=b^2$, $z=(ab)^2$, $T=\langle x,y,z\rangle$, and $S=\mathbb Z[T]$. The group ring is free of rank four over $S$ with coset basis $1,a,b,ab$. For each vertex $(h,t,w)=(a,x,y)$ or $(b,y,x)$, let $m>1$ be odd, $d=(m-1)/2$ and set
+
+$$
+P_m(t)=1+t+\cdots+t^d,\quad Q_m(t)=1+t+\cdots+t^{d-1},
+\quad \Psi_m(t)=1+t+\cdots+t^{m-1},\quad F=t^{-d}\Psi_m(t).
+$$
+
+The identity $P_m^2-tQ_m^2=\Psi_m$ follows from the two geometric sums for any odd $m$. The vertex numerator $E(c)=P_m+Q_mch$ satisfies $E(c)E(-c)=\Psi_m$ for $c=\pm w^j$, since $h^2=t$ and $hwh^{-1}=w^{-1}$. For a phase $v=w^k$ use the source’s list
+
+$$
+(c_1,\ldots,c_8)=(-1,v^{-1},-v^{-2},v^{-1},1,-v^{-1},v^2,-v^{-1}).
+$$
+
+The letter is $L=t^{-4d}\prod_j E(c_j)/F^4$, with inverse using the reversed opposite phases. The phase calculation in Lemma 4 of the source depends only on this eight-term list and the palindromicity of $P_m,Q_m$, so it holds for every odd $m$. In particular, writing a signed letter as scalar plus screw, its scalar part is invariant under $t\mapsto t^{-1}$ and congruent to $1$ modulo $v-1$. The screw coefficient is divisible by $(v-1)^5$.
+
+Choose odd integers $m_1,m_2,m_3>1$ with residues $3,5,3$ modulo 32, respectively, each coprime to $|Q|$ and with $\gcd(m_1,m_2)=1$. The Chinese remainder theorem permits this by taking them congruent to $1$ modulo the odd part of $|Q|$ and choosing $m_2\equiv1\bmod m_1$. Pick $K_A\equiv3\bmod16$ divisible by $m_3$ and $K_B\equiv15\bmod16$ divisible by $m_1m_2$. For each positive integer $s$ define two letters $A_1,A_2$ at the $a$ vertex with parameters $(m_1,K_As)$ and $(m_2,K_As)$, and $B$ at the $b$ vertex with parameters $(m_3,K_Bs)$.
+
+The denominators $F_1,F_2,F_3$ are central and pairwise coprime in the Laurent polynomial UFD $S$. The first two have disjoint sets of complex roots in $x$ and the third depends on $y$. For each letter the other vertex’s phase difference is divisible by its $F_i$. This uses $\Psi_m(t)\mid t^k-1$ when $m\mid k$. The corresponding scalar parts commute with the other vertex’s factors, since its screw generator inverts $t$ and fixes the phase variable of the scalar under conjugation where required by the source’s Corollary 5. More explicitly, the scalar of an $a$-letter depends only on $x,y$ and is invariant under inversion of $x$, so it commutes with $b$ and with the translation coefficients of the $b$-vertex. The reverse case is symmetric.
+
+Set $W_i=[A_i,B]$ and $U_s=[[[W_1,W_2],W_1],W_1]$. The denominator cancellation uses coprimality, not primality of the $F_i$. For each $F_i$ invert the other two denominators. Factor the letter with denominator $F_i^4$ as $CK/F_i^4$ using its two halves. Both halves are integral and their inverses have denominator at most $F_i^4$. Conjugating by the first half puts $W_1^{\pm1},W_2^{\pm1}$ at distance divisible by $F_i$ from $1$. Indeed the other letter’s scalar is congruent to $1$ and commutes with the halves, while its screw part has five powers of $F_i$, of which at most four are lost to conjugation. For a commutator involving two letters already integral at this localization and with commuting scalar part, the same conclusion follows by applying the five-power bound to their commutator before conjugation. The three nested commutators give four powers of $F_i$, since commutating terms congruent to $1$ at orders $r$ and $s$ produces order at least $r+s$. Conjugating back loses at most four powers. This proves $U_s$ and its inverse integral at each of the three localizations. Pairwise coprimality gives their integrality in $S$ coefficient by coefficient.
+
+At $s=1$, evaluate the induced representation from the translation character $(x,y,z)=(2,3,5)$ over $\mathbb F_{17}$. In it the eigenvalues of $x,y$ are among $2^{\pm1},3^{\pm1}$. None is $1$, and all have order dividing 16. Thus $m$ modulo 32 determines the evaluated geometric sums and $t^{-d}$, and $k$ modulo 16 determines the phase. The new letters evaluate identically to the original ones. Proposition 10(b) shows four nonzero coset coefficients in this evaluation. In particular, after clearing the central denominator, at least two coset components of the numerator at $s=1$ are nonzero. In each of these components the numerator at general $s$ is a finite sum of Laurent terms with integer coefficients and exponents affine in $s$. Collect identical affine exponent functions. Distinct functions collide at only finitely many $s$, so the same two components are nonzero for all sufficiently large $s$. Dividing by a nonzero central denominator preserves this conclusion.
+
+Finally take such an $s$ divisible by $|Q|$. Both phase monomials map to $1$. Every $\Psi_{m_i}(q(t))$ is invertible over $\mathbb Q[Q]$ because $\Psi_{m_i}(T)$ and $T^{\operatorname{ord}(q(t))}-1$ have no common root. Thus the group quotient map extends to the localization over $\mathbb Q[Q]$. When the phase is $1$, the four positive and four negative factors in each numerator commute and give the denominator $F_i^4$, so all three letters map to $1$. Hence $q(U_s)=1$ in $\mathbb Q[Q]$, and integrality gives the same equality in $\mathbb Z[Q]$. At least two nonzero coset components show $U_s$ is a nonsigned unit.
+
+Because $P$ is residually finite, a finite quotient can separate the finitely many support elements of any single unit from each other. Appending such quotients to a fixed panel and applying the theorem yields infinitely many distinct nonsigned units invisible to the original panel.

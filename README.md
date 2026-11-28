@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- oneill-crossovers-20261127:start -->
+- [November maths-release crossover proofs](OneillCrossovers/README.md) — nine arguments on coloring, arithmetic, group rings and tensors.
+<!-- oneill-crossovers-20261127:end -->
+
 <!-- top100-ranks31-100-20261127:start -->
 - [Informal proofs and audit for ranks 31–100](Top100InformalProofs/README.md) — research manuscripts, public proof links, and source gaps for the November portfolio.
 <!-- top100-ranks31-100-20261127:end -->
