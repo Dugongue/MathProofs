@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- mixed-diagram-trichotomy:start -->
+- **[Mixed trichotomy for coherent quadratic Postnikov diagrams](MixedDiagramTrichotomy/README.md)**. Written proof of P, NP-complete and computably enumerable complete classifications over arbitrary fixed finite indexing categories under one boundary and period-probe interface.
+<!-- mixed-diagram-trichotomy:end -->
+
 <!-- general-postnikov-complexity:start -->
 - **[Complexity of relative lifting for finite Postnikov towers](GeneralPostnikovComplexity/README.md)**. Written proofs of the finite-homotopy dichotomy at arbitrary depth, a rationally split NP upper bound, and undecidability for rational nonsplitting with full lower-degree probes.
 <!-- general-postnikov-complexity:end -->
