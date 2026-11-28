@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- top30-informal-proofs-20261127:start -->
+- [Top 30 informal proof audit and additions](Top30InformalProofs/README.md) — proof texts, dependencies, and open or source-missing claims for the 27 November portfolio.
+<!-- top30-informal-proofs-20261127:end -->
+
 <!-- top30-handoff-20261127:start -->
 - **[Top 30 research register — 27 November 2026](PortfolioTop30/Handoff20261127.md)**. All 30 handoff entries with scope, verification status, dependencies and links to available proofs.
 <!-- top30-handoff-20261127:end -->
