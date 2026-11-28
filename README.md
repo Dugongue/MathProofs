@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- cook-levin-crossovers-20261128:start -->
+- [Quantitative Cook–Levin crossovers](CookLevinCrossovers/README.md) — cut polynomials, Heisenberg representation schemes, smooth affine point counting, rank completion, and quiver subrepresentations.
+<!-- cook-levin-crossovers-20261128:end -->
+
 <!-- headline-research-proofs-20261128:start -->
 - [New results from four research routes](HeadlineResearchProofs/README.md) — fixed three-manifold extension, determinant border rank and rigidity, global-field hypersurface smoothing, and Rademacher Hanner.
 <!-- headline-research-proofs-20261128:end -->
