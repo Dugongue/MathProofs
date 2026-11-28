@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- top100-ranks31-100-20261127:start -->
+- [Informal proofs and audit for ranks 31–100](Top100InformalProofs/README.md) — research manuscripts, public proof links, and source gaps for the November portfolio.
+<!-- top100-ranks31-100-20261127:end -->
+
 <!-- top30-informal-proofs-20261127:start -->
 - [Top 30 informal proof audit and additions](Top30InformalProofs/README.md) — proof texts, dependencies, and open or source-missing claims for the 27 November portfolio.
 <!-- top30-informal-proofs-20261127:end -->
