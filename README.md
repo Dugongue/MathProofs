@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- deep-riemann-hypothesis-gl1-20261128:start -->
+- [Deep Riemann Hypothesis for Dirichlet L-functions: progress report](DeepRiemannHypothesisGL1/README.md) — the exact GRH-to-DRH gap, the origin of the √2, a limitation on averaged inputs, an almost-all-characters sketch, and numerics; the conjecture remains open.
+<!-- deep-riemann-hypothesis-gl1-20261128:end -->
+
 <!-- kapovich-millson-question-82-20261128:start -->
 - [Kapovich–Millson Question 8.2](KapovichMillsonQuestion82/KapovichMillsonQuestion82.md) — closed hyperbolic universality for SL2, with an obstruction for orientable sources.
 <!-- kapovich-millson-question-82-20261128:end -->
