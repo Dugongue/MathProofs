@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- affine-scheme-crossovers-20261127:start -->
+- [Nine extensions of relative affine-scheme realization](AffineSchemeCrossovers/README.md) — closed aspherical targets, analytic restriction, derived zero loci, and six further results.
+<!-- affine-scheme-crossovers-20261127:end -->
+
 <!-- top10-crossovers-20261127:start -->
 - [Scheme realization, spherical Hanner curvature, and étale tensor proof degree](Top10CrossoverProofs/README.md) — November crossover manuscripts.
 <!-- top10-crossovers-20261127:end -->
