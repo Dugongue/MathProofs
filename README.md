@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- mixed-postnikov-trichotomy:start -->
+- **[Arithmetic constraints on quadratic Postnikov lifts](MixedPostnikovTrichotomy/README.md)**. Written proofs of a polynomial-time, NP-complete, and computably enumerable complete classification for cochain-boundary extension coupled to equality-congruence arithmetic.
+<!-- mixed-postnikov-trichotomy:end -->
+
 <!-- november-2026-proof-intake -->
 - **[Single equations in free class-two nilpotent groups](FreeClassTwoSingleEquation/README.md)**. A written decision proof uniform in rank, using symplectic orbits and strong approximation.
 - **[Unique products through Hirsch length three](UniqueProductHirschThree/Proof.md)**. A written classification for torsion-free virtually nilpotent groups, with six exact finite certificates covering the Heisenberg cases.
