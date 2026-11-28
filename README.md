@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- kapovich-millson-extensions-20261128:start -->
+- [Extensions of Kapovich–Millson universality](KapovichMillsonExtensions/README.md) — derived hyperbolic transfer, exact algebraic charts, and obstructions for cone points and knots.
+<!-- kapovich-millson-extensions-20261128:end -->
+
 <!-- deep-riemann-hypothesis-gl1-20261128:start -->
 - [Deep Riemann Hypothesis for Dirichlet L-functions: progress report](DeepRiemannHypothesisGL1/README.md) — the exact GRH-to-DRH gap, the origin of the √2, a limitation on averaged inputs, an almost-all-characters sketch, and numerics; the conjecture remains open.
 <!-- deep-riemann-hypothesis-gl1-20261128:end -->
