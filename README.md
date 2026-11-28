@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- headline-research-proofs-20261128:start -->
+- [New results from four research routes](HeadlineResearchProofs/README.md) — fixed three-manifold extension, determinant border rank and rigidity, global-field hypersurface smoothing, and Rademacher Hanner.
+<!-- headline-research-proofs-20261128:end -->
+
 <!-- kenwu-crossovers-20261127:start -->
 - [Thirteen Ken Wu Lab and MathProofs crossovers](KenWuCrossovers/README.md) — sharp phase moments, scheduling configuration LPs, matching spectral extrema and further proofs.
 <!-- kenwu-crossovers-20261127:end -->
