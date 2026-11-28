@@ -6,6 +6,7 @@ Each Lean file imports only Mathlib.
 INFORMAL PROOFS (not formalized yet)
 
 <!-- november-2026-proof-intake -->
+- **[Massey product complexity](MasseyProductComplexity/PROOF.md)**. Written proofs of polynomial-time lower-length tests and arithmetic completeness for fourfold vanishing on two-complexes with degree-one inputs.
 - **[Polynomial-time recognition of co-H-spaces](CoHSpaceRecognition/README.md)**. A written decision proof for fixed connectivity $c-1$ and dimension at most $4c-2$, including simply connected complexes through dimension six.
 - **[Poonen’s two-extra-dimensions question](PoonenDimensionReduction/README.md)**. A written norm-pencil reduction from rational points on varieties of dimension at most $n$ to smooth projective geometrically integral varieties of dimension exactly $n+2$.
 - **[Equality–congruence CSP classification and witnesses](EqualityCongruenceCSP/README.md)**. Written proofs of the block-generic Taylor criterion, constructive polynomial-time search and exact solution geometry, and a two-sort separation example.
