@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- kenwu-crossovers-20261127:start -->
+- [Thirteen Ken Wu Lab and MathProofs crossovers](KenWuCrossovers/README.md) — sharp phase moments, scheduling configuration LPs, matching spectral extrema and further proofs.
+<!-- kenwu-crossovers-20261127:end -->
+
 <!-- affine-scheme-crossovers-20261127:start -->
 - [Nine extensions of relative affine-scheme realization](AffineSchemeCrossovers/README.md) — closed aspherical targets, analytic restriction, derived zero loci, and six further results.
 <!-- affine-scheme-crossovers-20261127:end -->
