@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- kapovich-millson-question-82-20261128:start -->
+- [Kapovich–Millson Question 8.2](KapovichMillsonQuestion82/KapovichMillsonQuestion82.md) — closed hyperbolic universality for SL2, with an obstruction for orientable sources.
+<!-- kapovich-millson-question-82-20261128:end -->
+
 <!-- cook-levin-crossovers-20261128:start -->
 - [Quantitative Cook–Levin crossovers](CookLevinCrossovers/README.md) — cut polynomials, Heisenberg representation schemes, smooth affine point counting, rank completion, and quiver subrepresentations.
 <!-- cook-levin-crossovers-20261128:end -->
