@@ -5,6 +5,9 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- november-2026-proof-intake -->
+- **[Conservative Mal’cev and majority imply weighted balance](ConservativeMalcevMajority/README.md)**. The written proof covers arbitrary positive unary weights, every pp-definable relation, and monotone read-once solution formulas.
+
 <!-- ceva-determinant-extensions:start -->
 - **[Four extensions of the Ceva determinant compiler](CevaDeterminantExtensions/README.md)** — Calibrated stabilizer counts, modular witness costs, conditional Segre characters and precision-lifting obstructions.
 <!-- ceva-determinant-extensions:end -->
