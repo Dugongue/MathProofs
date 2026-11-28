@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- top10-crossovers-20261127:start -->
+- [Scheme realization, spherical Hanner curvature, and étale tensor proof degree](Top10CrossoverProofs/README.md) — November crossover manuscripts.
+<!-- top10-crossovers-20261127:end -->
+
 <!-- oneill-crossovers-20261127:start -->
 - [November maths-release crossover proofs](OneillCrossovers/README.md) — nine arguments on coloring, arithmetic, group rings and tensors.
 <!-- oneill-crossovers-20261127:end -->
