@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- postnikov-extension-degrees:start -->
+- **[Computability degrees of unbounded-dimensional extension](PostnikovExtensionDegrees/README.md)**. Written proofs that arbitrary computably enumerable degrees occur for fixed simply connected simplicial abelian targets, and that degreewise listability can still give decidable extension outside NP.
+<!-- postnikov-extension-degrees:end -->
+
 <!-- mixed-diagram-trichotomy:start -->
 - **[Mixed trichotomy for coherent quadratic Postnikov diagrams](MixedDiagramTrichotomy/README.md)**. Written proof of P, NP-complete and computably enumerable complete classifications over arbitrary fixed finite indexing categories under one boundary and period-probe interface.
 <!-- mixed-diagram-trichotomy:end -->
