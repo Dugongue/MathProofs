@@ -6,6 +6,7 @@ Each Lean file imports only Mathlib.
 INFORMAL PROOFS (not formalized yet)
 
 <!-- november-2026-proof-intake -->
+- **[Poonen’s two-extra-dimensions question](PoonenDimensionReduction/README.md)**. A written norm-pencil reduction from rational points on varieties of dimension at most $n$ to smooth projective geometrically integral varieties of dimension exactly $n+2$.
 - **[Equality–congruence CSP classification and witnesses](EqualityCongruenceCSP/README.md)**. Written proofs of the block-generic Taylor criterion, constructive polynomial-time search and exact solution geometry, and a two-sort separation example.
 - **[Nilpotent solutions of linear-system games](NilpotentLinearSystemGames/README.md)**. Written proofs of classical solvability below the least prime divisor of the modulus and fixed-template NP-completeness when a magic-square solution exists.
 - **[Deciding pre-injectivity of group cellular automata](GroupCAPreinjectivity/README.md)**. A written proof reduces the group-subshift decision problem to finite rank tests over rational function fields.
