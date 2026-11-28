@@ -6,6 +6,7 @@ Each Lean file imports only Mathlib.
 INFORMAL PROOFS (not formalized yet)
 
 <!-- november-2026-proof-intake -->
+- **[Equality–congruence CSP classification and witnesses](EqualityCongruenceCSP/README.md)**. Written proofs of the block-generic Taylor criterion, constructive polynomial-time search and exact solution geometry, and a two-sort separation example.
 - **[Nilpotent solutions of linear-system games](NilpotentLinearSystemGames/README.md)**. Written proofs of classical solvability below the least prime divisor of the modulus and fixed-template NP-completeness when a magic-square solution exists.
 - **[Deciding pre-injectivity of group cellular automata](GroupCAPreinjectivity/README.md)**. A written proof reduces the group-subshift decision problem to finite rank tests over rational function fields.
 - **[Taylor operations and Postnikov spaces](TaylorPostnikovSpaces/README.md)**. Written proofs of the two-stage characterization, explicit arithmetic examples, equal-axis and compactness theorems, and local-to-global H-space gluing.

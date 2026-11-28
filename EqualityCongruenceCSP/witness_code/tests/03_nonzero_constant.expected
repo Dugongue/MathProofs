@@ -1,0 +1,8 @@
+OK
+T 0
+BOUND 1
+Z 1 0
+PARAMETERS 1 5
+X 1 22
+VALUES 1 9
+VERIFIED exact_coset_and_nonzero_forms
