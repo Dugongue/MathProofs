@@ -6,6 +6,7 @@ Each Lean file imports only Mathlib.
 INFORMAL PROOFS (not formalized yet)
 
 <!-- november-2026-proof-intake -->
+- **[Negative support in four-variable entropy inequalities](FourVariableEntropySupport/README.md)**. A written proof classifies the minimal negative supports of valid non-Shannon inequalities and gives sharp five-coordinate certificates.
 - **[Heisenberg quotients of three-manifold groups](HeisenbergThreeManifoldSurjection/README.md)**. A written characterization by the mod-$p$ Betti number and triple cup product gives polynomial-time decision for odd primes.
 - **[Massey product complexity](MasseyProductComplexity/PROOF.md)**. Written proofs of polynomial-time lower-length tests and arithmetic completeness for fourfold vanishing on two-complexes with degree-one inputs.
 - **[Polynomial-time recognition of co-H-spaces](CoHSpaceRecognition/README.md)**. A written decision proof for fixed connectivity $c-1$ and dimension at most $4c-2$, including simply connected complexes through dimension six.
