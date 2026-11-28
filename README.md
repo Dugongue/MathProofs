@@ -6,6 +6,7 @@ Each Lean file imports only Mathlib.
 INFORMAL PROOFS (not formalized yet)
 
 <!-- november-2026-proof-intake -->
+- **[Taylor operations and Postnikov spaces](TaylorPostnikovSpaces/README.md)**. Written proofs of the two-stage characterization, explicit arithmetic examples, equal-axis and compactness theorems, and local-to-global H-space gluing.
 - **[Conservative Mal’cev and majority imply weighted balance](ConservativeMalcevMajority/README.md)**. The written proof covers arbitrary positive unary weights, every pp-definable relation, and monotone read-once solution formulas.
 
 <!-- ceva-determinant-extensions:start -->

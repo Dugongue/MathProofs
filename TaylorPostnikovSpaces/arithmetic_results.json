@@ -1,0 +1,139 @@
+{
+  "status": "COMPUTATIONAL",
+  "confidence": 1.0,
+  "arithmetic": "exact integers and rational numbers",
+  "checked_indices": [
+    1,
+    100
+  ],
+  "primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    71,
+    73,
+    79,
+    83,
+    89,
+    97,
+    101
+  ],
+  "local_recurrence_checks": 2600,
+  "rational_recurrence_checks": 100,
+  "passed": true,
+  "scope": "Finite arithmetic checks only; the manuscript proves the infinite statement and the topology.",
+  "initial_values": [
+    {
+      "j": 1,
+      "factorial": 1,
+      "z_j": 0,
+      "a_j": -1,
+      "x_j_at_2": "1",
+      "x_j_at_odd_primes": "0"
+    },
+    {
+      "j": 2,
+      "factorial": 2,
+      "z_j": 1,
+      "a_j": -1,
+      "x_j_at_2": "1",
+      "x_j_at_odd_primes": "1/2"
+    },
+    {
+      "j": 3,
+      "factorial": 6,
+      "z_j": 3,
+      "a_j": -2,
+      "x_j_at_2": "2/3",
+      "x_j_at_odd_primes": "1/2"
+    },
+    {
+      "j": 4,
+      "factorial": 24,
+      "z_j": 15,
+      "a_j": 0,
+      "x_j_at_2": "2/3",
+      "x_j_at_odd_primes": "5/8"
+    },
+    {
+      "j": 5,
+      "factorial": 120,
+      "z_j": 15,
+      "a_j": -4,
+      "x_j_at_2": "2/15",
+      "x_j_at_odd_primes": "1/8"
+    },
+    {
+      "j": 6,
+      "factorial": 720,
+      "z_j": 495,
+      "a_j": -5,
+      "x_j_at_2": "31/45",
+      "x_j_at_odd_primes": "11/16"
+    },
+    {
+      "j": 7,
+      "factorial": 5040,
+      "z_j": 4095,
+      "a_j": 0,
+      "x_j_at_2": "256/315",
+      "x_j_at_odd_primes": "13/16"
+    },
+    {
+      "j": 8,
+      "factorial": 40320,
+      "z_j": 4095,
+      "a_j": -7,
+      "x_j_at_2": "32/315",
+      "x_j_at_odd_primes": "13/128"
+    },
+    {
+      "j": 9,
+      "factorial": 362880,
+      "z_j": 286335,
+      "a_j": -3,
+      "x_j_at_2": "2237/2835",
+      "x_j_at_odd_primes": "101/128"
+    },
+    {
+      "j": 10,
+      "factorial": 3628800,
+      "z_j": 1374975,
+      "a_j": -8,
+      "x_j_at_2": "5371/14175",
+      "x_j_at_odd_primes": "97/256"
+    },
+    {
+      "j": 11,
+      "factorial": 39916800,
+      "z_j": 30405375,
+      "a_j": -9,
+      "x_j_at_2": "118771/155925",
+      "x_j_at_odd_primes": "195/256"
+    },
+    {
+      "j": 12,
+      "factorial": 479001600,
+      "z_j": 389656575,
+      "a_j": -9,
+      "x_j_at_2": "380524/467775",
+      "x_j_at_odd_primes": "833/1024"
+    }
+  ]
+}
