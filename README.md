@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- kapovich-millson-manin-20261128:start -->
+- [Kapovich–Millson and Manin crossovers](KapovichMillsonManin/README.md) — integral trace fibres, degree-one boundary extension, and sharp cone counts.
+<!-- kapovich-millson-manin-20261128:end -->
+
 <!-- kapovich-millson-extensions-20261128:start -->
 - [Extensions of Kapovich–Millson universality](KapovichMillsonExtensions/README.md) — derived hyperbolic transfer, exact algebraic charts, and obstructions for cone points and knots.
 <!-- kapovich-millson-extensions-20261128:end -->

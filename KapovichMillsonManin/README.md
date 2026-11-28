@@ -1,0 +1,18 @@
+# Hyperbolic three-manifolds and Manin's integer arithmetic
+
+Four proofs combine the hyperbolic representation and mapping constructions with integer arithmetic from the Manin program. Each statement specifies the matrices, trace functions, or boundary maps supplied as part of the problem.
+
+| Proposed portfolio rank | Main result |
+| --- | --- |
+| 3–6 | [Knot surgery and integral trace fibres](KnotSurgeryArithmetic.md). One fixed closed hyperbolic rational homology sphere supports every computably enumerable set as the positive integral image of a trace polynomial. Every positive fibre has rational and compatible profinite points. The construction uses integer surgery on a hyperbolic knot in \(S^3\). For any fixed number of variables it also gives exact marked affine-scheme universality over \(\mathbb Z\). |
+| 5–9 | [Degree-one extension from a totally geodesic boundary](HyperbolicExtension.md). For every closed Nil three-manifold as target, a fixed compact hyperbolic source with connected totally geodesic boundary has complete c.e. extension controlled by one annular winding. All extensions glue to degree-one maps. A separate genus-two construction applies to nontrivial oriented circle bundles over the torus. |
+| 7–10 | [Decidability of numerical traces and undecidability of trace comparisons](IntegralRepresentations.md). Numerical word-trace requirements in \(\mathrm{SL}_2(\mathbb Z)\) are decidable for arbitrary finite presentations. With equalities between word traces, one fixed closed hyperbolic three-manifold and one varying number suffice for complete c.e. complexity. The hardness construction uses traces of words of length at most two in the designated marks. |
+| 10–16 | [Sharp cone counts and extension on fixed orbifolds](TwoConeArithmetic.md). The minimum positive projective-plane cone count for \(r\) integral Heisenberg factors is \(4r(r-1)+2\), with a product formula for further three-manifold groups. For a single two-cone target the integral extension problem is complete c.e. even when the rational and compatible finite-quotient tests always have extensions. |
+
+The first and third manuscripts share an integral matrix frame. Their distinct conclusions concern surgery with cyclic first homology and local solubility, and the decision boundary for restricted trace languages. The second and fourth use the same Heisenberg arithmetic, with distinct geometric conclusions for actual manifold targets, degree, and hyperbolic orbifold cone counts.
+
+The two-cone result also holds with the entire connected totally geodesic boundary as the prescribed subspace. Use the excellent bouquet exterior construction of [HyperbolicExtension.md](HyperbolicExtension.md) on the fixed bouquet of [TwoConeArithmetic.md](TwoConeArithmetic.md). The prescribed graph map extends over the regular neighborhood by retraction, and its restriction to the boundary varies on one annulus. Gluing and the homotopy extension property give equivalence with the graph extension problem for each of the original, rational, and profinite targets. The common fundamental-group assignments still give the same finite-adele compatibility criterion.
+
+The proofs are informal and await external review. Rank ranges are assessments of advances over the existing portfolio. Publication priority remains unverified.
+
+The [hyperbolic replacement proof](DerivedHyperbolicTransfer.md) and the [cone-count and realization proof](TwoConePoints.md) are included as references from the preceding Kapovich–Millson work. [Manin, *Rational homotopy type and computability*](https://arxiv.org/abs/2007.10632) · [Kapovich–Millson, *On representation varieties of 3-manifold groups*](https://msp.org/gt/2017/21-4/gt-v21-n4-p01-p.pdf)
