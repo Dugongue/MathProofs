@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- general-postnikov-complexity:start -->
+- **[Complexity of relative lifting for finite Postnikov towers](GeneralPostnikovComplexity/README.md)**. Written proofs of the finite-homotopy dichotomy at arbitrary depth, a rationally split NP upper bound, and undecidability for rational nonsplitting with full lower-degree probes.
+<!-- general-postnikov-complexity:end -->
+
 <!-- higher-postnikov-trichotomy:start -->
 - **[Arithmetic constraints on three-stage Postnikov lifts](HigherPostnikovTrichotomy/README.md)**. Written proof of a polynomial-time, NP-complete, and computably enumerable complete trichotomy including targets whose final obstruction depends on the intermediate lift.
 <!-- higher-postnikov-trichotomy:end -->
