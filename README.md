@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- higher-postnikov-trichotomy:start -->
+- **[Arithmetic constraints on three-stage Postnikov lifts](HigherPostnikovTrichotomy/README.md)**. Written proof of a polynomial-time, NP-complete, and computably enumerable complete trichotomy including targets whose final obstruction depends on the intermediate lift.
+<!-- higher-postnikov-trichotomy:end -->
+
 <!-- mixed-postnikov-trichotomy:start -->
 - **[Arithmetic constraints on quadratic Postnikov lifts](MixedPostnikovTrichotomy/README.md)**. Written proofs of a polynomial-time, NP-complete, and computably enumerable complete classification for cochain-boundary extension coupled to equality-congruence arithmetic.
 <!-- mixed-postnikov-trichotomy:end -->
