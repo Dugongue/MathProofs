@@ -1,0 +1,480 @@
+\documentclass[11pt]{amsart}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{theoremA}{Theorem A}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\Zp}{\mathbb{Z}_p}
+\newcommand{\Qp}{\mathbb{Q}_p}
+\newcommand{\w}{\wedge}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Sp}{\operatorname{Sp}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\spn}{\operatorname{span}}
+
+\title{Single equations in free nilpotent groups of class two are decidable}
+\author{MathProofs}
+\date{}
+
+\begin{document}
+
+\begin{abstract}
+We prove that there is an algorithm which, given $r\ge 1$ and a single equation
+$w(X_1,\dots,X_k)=1$ with constants in the free nilpotent group $N_{2,r}$ of class
+$2$ and rank $r$, decides whether the equation has a solution. For $r=2$ (the
+Heisenberg group) this is a theorem of Duchin, Liang and Shapiro; for $r\ge 3$ the
+commutator subgroup has rank greater than one, a case they explicitly left open.
+The proof reduces a single equation to the problem of representing a fixed
+alternating integral form by a congruence-restricted sum of $t$ decomposable
+bivectors. We show that the rational solution set of this problem is a finite
+union of orbits of the simply connected group $\Sp_{2t}\times\SL_d$; strong
+approximation then reduces integral solvability to finitely many $p$-adic
+conditions, which are decidable by the Ax--Kochen--Ershov theorem. By contrast,
+Roman'kov has shown that some finitely generated class-$2$ nilpotent groups have
+an undecidable commutator problem $[X,Y]=g$, so the universality of the
+commutator form of $N_{2,r}$ is essential.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Let $N_{2,r}$ be the free nilpotent group of class $2$ and rank $r$. An
+\emph{equation} over a group $G$ is an expression $w(X_1,\dots,X_k)=1$ with $w$ an
+element of the free product of $G$ with the free group on $X_1,\dots,X_k$; it is
+\emph{solvable} if some substitution $X_i\mapsto g_i\in G$ makes $w$ trivial.
+
+For systems of equations the situation in free nilpotent groups is negative:
+Roman'kov \cite{Rom77} proved undecidability for free nilpotent groups of large
+class and rank, and Duchin, Liang and Shapiro \cite[Thm.~4]{DLS} proved that the
+satisfiability of finite systems is undecidable in every non-abelian free
+nilpotent group, in particular in $N_{2,r}$ for all $r\ge 2$. For \emph{single}
+equations, Duchin--Liang--Shapiro \cite[Thm.~3]{DLS} gave an algorithm for every
+class-$2$ group with commutator subgroup of rank one, including the Heisenberg
+group $N_{2,2}$, and Levine \cite{Lev} extended this to virtually class-$2$ groups
+with virtually cyclic commutator subgroup. Earlier, Truss \cite{Tru} treated
+two-variable equations in $N_{2,2}$, Repin \cite{Rep83,Rep84} one-variable equations
+in nilpotent groups, and Burke and Truss \cite{BT} equations in class-$2$ groups
+that are not products of commutators. In \cite[\S2]{DLS} the authors observe that
+for commutator subgroups of rank $d>1$ their method produces $d$ simultaneous
+quadratic equations, and that the resulting special class of quadratic systems
+``a priori could be decidable''. On the other hand, Roman'kov \cite{Rom16a}
+constructed finitely generated class-$2$ nilpotent groups in which the equations
+$[X,Y]=g$ are undecidable.
+
+\begin{theoremA}
+There is an algorithm which, given $r\ge1$ and a single equation $w=1$ with
+constants in $N_{2,r}$, decides whether it has a solution in $N_{2,r}$.
+\end{theoremA}
+
+The proof has three steps. In Section~\ref{sec:normal} we bring an arbitrary single
+equation into a normal form: either it is decided by a finite congruence
+computation, or it is equivalent to a \emph{congruence symplectic representation
+problem}: whether a given bivector $c\in\Lambda^2\Z^r$ lies in a set of the form
+$\sum_{l\le t}m_l\,u_l\w v_l+S\w\Z^r$ with $u_l,v_l$ in prescribed residue classes.
+In Section~\ref{sec:S} we remove the subgroup $S$. In
+Sections~\ref{sec:orbits}--\ref{sec:decide} we show that the rational points of
+the resulting variety form finitely many orbits of a simply connected group
+(Lemma~\ref{lem:orbits}), and apply strong approximation on the acting group
+(Lemma~\ref{lem:SA}) to reduce to finitely many decidable $p$-adic problems.
+
+The contrast with \cite{Rom16a} is explained in Remark~\ref{rem:contrast}: in a
+class-$2$ group whose commutator map is a non-universal bilinear map, the analogous
+fibres are not homogeneous, and Hilbert's tenth problem can be encoded.
+
+\section{Preliminaries}\label{sec:prelim}
+
+\subsection{A model of \texorpdfstring{$N_{2,r}$}{N(2,r)}}
+Let $\tau(x,x')=\sum_{a<b}x_ax'_b\,e_a\w e_b$ for $x,x'\in\Z^r$. On
+$N=\Z^r\times\Lambda^2\Z^r$ define
+\[(x,c)(x',c')=(x+x',\,c+c'+\tau(x,x')).\]
+Since $\tau$ is bilinear this is a group, with $(x,c)^{-1}=(-x,-c+\tau(x,x))$, and
+with the convention $[g,h]=g^{-1}h^{-1}gh$ one computes
+$[(x,c),(x',c')]=(0,\tau(x,x')-\tau(x',x))=(0,x\w x')$. Thus $N$ is nilpotent of
+class $2$, generated by the $(e_a,0)$, and its centre and derived subgroup both
+equal $0\times\Lambda^2\Z^r$; it is the free nilpotent group $N_{2,r}$. We identify
+$[N,N]$ with $\Lambda^2\Z^r$.
+
+\subsection{Alternating forms}
+Every alternating matrix $A\in M_k(\Z)$ admits $P\in\GL_k(\Z)$ with
+$P^{T}AP=\operatorname{diag}(d_1J,\dots,d_tJ,0)$, $J=\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$,
+$d_l\ge1$, $d_l\mid d_{l+1}$, computably \cite[Thm.~IV.1]{New}. Applied to
+$c\in\Lambda^2\Z^n$ this gives a basis $f_1,\dots,f_n$ with
+$c=\sum_{j\le s}\gamma_j f_{2j-1}\w f_{2j}$; $2s=\rank c$. The \emph{support} of $c$
+is the smallest subspace $P\subseteq\Q^n$ with $c\in\Lambda^2P$; it has dimension
+$\rank c$, and $\Lambda_P=P\cap\Z^n$ is a direct summand of $\Z^n$.
+We use Witt's theorem for nondegenerate alternating spaces over a field: every
+isometry between subspaces extends to an isometry of the whole space
+\cite[Thm.~3.9]{Art}.
+
+\subsection{Strong approximation}
+Let $\A_f$ be the finite ad\`eles of $\Q$. If $H$ is a simply connected
+absolutely almost simple $\Q$-group with $H(\R)$ non-compact, then $H(\Q)$ is dense
+in $H(\A_f)$ \cite[Thm.~7.12]{PR}. This applies to $\Sp_{2a}$ ($a\ge1$) and
+$\SL_b$ ($b\ge2$), and hence to finite products of such groups.
+
+\subsection{Decidability over \texorpdfstring{$\Qp$}{Qp}}
+The first-order theory of $\Qp$ is decidable \cite{AK,Ers}. Moreover $\Zp$ is
+existentially definable in $\Qp$: for $p$ odd, $x\in\Zp$ iff $\exists y\;
+y^2=1+px^2$; for $p=2$, $x\in\Z_2$ iff $\exists y\; y^3=1+2x^3$. (If $v(x)\ge0$ the
+right side is a unit congruent to $1$ modulo $p$, hence a square, respectively a
+cube, since cubing is bijective on $\Z_2^\times$; if $v(x)<0$ its valuation is odd,
+respectively not divisible by $3$.) Hence the truth of an existential sentence
+over $\Qp$ with rational parameters, involving polynomial equations, integrality
+conditions and congruences, is decidable.
+
+\section{Normal form of a single equation}\label{sec:normal}
+
+Let $w(X_1,\dots,X_k)$ be a word with constants from $N$ and write
+$X_i=(x_i,c_i)$. Multiplying out with the model above, the value of $w$ is
+\begin{equation}\label{eq:value}
+\Big(\textstyle\sum_i e_ix_i+a_0,\ \sum_i e_ic_i+Q(x)\Big),
+\end{equation}
+where $e_i\in\Z$ is the exponent sum of $X_i$ in $w$, $a_0\in\Z^r$, and
+$Q\colon(\Z^r)^k\to\Lambda^2\Z^r$ is a polynomial map with integer coefficients;
+all of these are computable from $w$.
+
+\begin{lemma}\label{lem:nonzero}
+If $e=(e_1,\dots,e_k)\ne0$, solvability of $w=1$ is decidable.
+\end{lemma}
+
+\begin{proof}
+Let $g=\gcd(e_i)$. As the $c_i$ range over $\Lambda^2\Z^r$, $\sum e_ic_i$ ranges over
+$g\Lambda^2\Z^r$. By \eqref{eq:value}, $w=1$ is solvable iff there is
+$x\in(\Z^r)^k$ with $\sum e_ix_i=-a_0$ and $Q(x)\equiv0\pmod{g\Lambda^2\Z^r}$.
+Since $Q$ has integer coefficients, $Q(x)\bmod g$ depends only on $x\bmod g$. For
+each of the finitely many residues $\bar x$ with $Q(\bar x)\equiv0$, decide the
+linear system $\sum e_ix_i=-a_0$, $x\equiv\bar x\pmod g$ by Smith normal form.
+\end{proof}
+
+\begin{lemma}\label{lem:zero}
+If $e=0$, then $w=1$ is solvable iff $a_0=0$ and there are $x_1,\dots,x_k\in\Z^r$ with
+\begin{equation}\label{eq:quad}
+\sum_{i<j}a_{ij}\,x_i\w x_j+\sum_i h_i\w x_i=c_0,
+\end{equation}
+where $a_{ij}\in\Z$, $h_i\in\Z^r$, $c_0\in\Lambda^2\Z^r$ are computable from $w$.
+\end{lemma}
+
+\begin{proof}
+Evaluation factors through the class-$2$ quotient of the free product of $N$ with
+the free group on the $X_i$. There $gX^{\varepsilon}=X^{\varepsilon}g[g,X^{\varepsilon}]$,
+so moving all constants to the right writes $w=w_X\cdot g_0\cdot\prod(\text{central
+factors }[g,X_i^{\pm1}])$, with $w_X$ a word in the variables only. In class $2$,
+$[g,X^{-1}]=[g,X]^{-1}$ and $[g,X][g',X]=[gg',X]$, so the central factors combine to
+$\prod_i[\tilde h_i,X_i]$. As $w_X$ has zero exponent sums, in the free class-$2$
+group it equals $\prod_{i<j}[X_i,X_j]^{a_{ij}}$. Evaluating, $[X_i,X_j]\mapsto x_i\w
+x_j$ and $[\tilde h_i,X_i]\mapsto h_i\w x_i$ with $h_i$ the abelian image of
+$\tilde h_i$; the equation holds iff $g_0$ is central (i.e.\ $a_0=0$) and
+\eqref{eq:quad} holds with $c_0$ minus the central coordinate of $g_0$.
+\end{proof}
+
+Let $A=(a_{ij})$ be the alternating matrix of \eqref{eq:quad} and $P\in\GL_k(\Z)$ as
+in \S\ref{sec:prelim}. The substitution $x_i=\sum_jP_{ij}y_j$ is a bijection of
+$(\Z^r)^k$, transforms $\tfrac12\sum A_{ij}x_i\w x_j$ into the same expression for
+$P^TAP$, and transforms the linear terms into linear terms. Renaming the paired
+variables $y_l,z_l$ ($l\le t$) and the unpaired ones $w_j$, \eqref{eq:quad} becomes
+\begin{equation}\label{eq:normal}
+\sum_{l\le t}\big(d_l\,y_l\w z_l+y_l\w P_l+z_l\w Q_l\big)+\sum_j s_j\w w_j=c_0
+\end{equation}
+with computable $P_l,Q_l,s_j\in\Z^r$. One checks directly the identity
+\[d\,(d\,y\w z+y\w P+z\w Q)=(dy-Q)\w(dz+P)+Q\w P,\]
+and $(y,z)\mapsto(u,v)=(dy-Q,dz+P)$ is a bijection onto
+$\{u\equiv -Q,\ v\equiv P\pmod d\}$. The last sum in \eqref{eq:normal} ranges over
+$S\w\Z^r$, $S=\spn(s_j)$. Multiplying by $D=d_t$ (injective, as $\Lambda^2\Z^r$ is
+torsion free) we obtain:
+
+\begin{definition}\label{def:csr}
+An instance of $\mathrm{CSR}_r$ consists of $t\ge0$, positive integers $m_l$ and
+$F_l$, vectors $\alpha_l,\beta_l\in\Z^r$ ($l\le t$), a subgroup $S\le\Z^r$ given by
+generators, and $c\in\Lambda^2\Z^r$. It asks whether there are $u_l\equiv\alpha_l$,
+$v_l\equiv\beta_l\pmod{F_l}$ and $\lambda\in S\w\Z^r$ with
+$\sum_{l\le t}m_l\,u_l\w v_l+\lambda=c$.
+\end{definition}
+
+\begin{proposition}\label{prop:reduction}
+There is an algorithm that, given a single equation over $N_{2,r}$, either decides
+it or outputs an instance of $\mathrm{CSR}_r$ with the same answer.
+\end{proposition}
+
+\begin{proof}
+If $e\ne0$ apply Lemma~\ref{lem:nonzero}. Otherwise check $a_0=0$ and, by
+Lemma~\ref{lem:zero}, \eqref{eq:normal} and the identity above, output the instance
+with $m_l=D/d_l$, $F_l=d_l$, $\alpha_l=-Q_l$, $\beta_l=P_l$, subgroup $DS$, and
+$c=Dc_0-\sum_l(D/d_l)\,Q_l\w P_l$.
+\end{proof}
+
+\begin{remark}
+Conversely every instance of $\mathrm{CSR}_r$ is equivalent to the single equation
+$\prod_l[a_lY_l^{F_l},b_lZ_l^{F_l}]^{m_l}\prod_j[\sigma_j,W_j]=(0,c)$, where $a_l,b_l$
+have abelian images $\alpha_l,\beta_l$ and the abelian images of the $\sigma_j$
+generate $S$. So Theorem~A is equivalent to the decidability of $\mathrm{CSR}_r$.
+\end{remark}
+
+\section{Removing the subgroup \texorpdfstring{$S$}{S}}\label{sec:S}
+
+\begin{definition}
+An instance of $\mathrm{CSR}^0$ consists of $t,n\ge0$, the bivector
+$\beta=\sum_{l\le t}m_l f_l\w g_l\in\Lambda^2\Z^{2t}$ with all $m_l\ge1$ (here
+$f_1,g_1,\dots,f_t,g_t$ is the standard basis), a modulus $M\ge1$,
+$\varphi_0\in\Hom(\Z^{2t},\Z^n)$ and $c\in\Lambda^2\Z^n$. It asks whether there is
+$\varphi\in\Hom(\Z^{2t},\Z^n)$ with $\varphi\equiv\varphi_0\pmod M$ and
+$\Lambda^2\varphi(\beta)=c$.
+\end{definition}
+
+With $u_l=\varphi(f_l)$, $v_l=\varphi(g_l)$ one has
+$\Lambda^2\varphi(\beta)=\sum m_lu_l\w v_l$.
+
+\begin{proposition}\label{prop:removeS}
+Every instance of $\mathrm{CSR}_r$ is computably equivalent to a finite disjunction
+of instances of $\mathrm{CSR}^0$.
+\end{proposition}
+
+\begin{proof}
+By Smith normal form choose a basis $e_1,\dots,e_r$ of $\Z^r$ with
+$S=\bigoplus_{a\le q}f_a\Z e_a$, $f_a\mid f_{a+1}$. Put
+$\mathfrak A=\spn(e_1,\dots,e_q)$, $\mathfrak B=\spn(e_{q+1},\dots,e_r)$, $F_S=f_q$
+($F_S=1$ if $q=0$), $L=S\w\Z^r$. Then
+$\Lambda^2\Z^r=\Lambda^2\mathfrak A\oplus(\mathfrak A\otimes\mathfrak B)\oplus\Lambda^2\mathfrak B$
+and
+\[F_S\big(\Lambda^2\mathfrak A\oplus\mathfrak A\otimes\mathfrak B\big)\subseteq L\subseteq
+\Lambda^2\mathfrak A\oplus\mathfrak A\otimes\mathfrak B,\]
+the first inclusion because $F_Se_a\w e_b=(F_S/f_a)\,f_ae_a\w e_b$. Writing
+$u=u^{\mathfrak A}+u^{\mathfrak B}$, the condition
+$\sum m_lu_l\w v_l-c\in L$ is equivalent to: (i)
+$\sum m_lu_l^{\mathfrak B}\w v_l^{\mathfrak B}=c_{\mathfrak B\mathfrak B}$ in
+$\Lambda^2\mathfrak B$; and (ii) the $(\Lambda^2\mathfrak A\oplus\mathfrak A\otimes
+\mathfrak B)$-component of $\sum m_lu_l\w v_l-c$ lies in $L$. Condition (ii) is an
+integral bilinear expression modulo a subgroup containing $F_S$ times the summand,
+so it depends only on $(u_l,v_l)\bmod F_S$. Let $M=\lcm(F_S,F_1,\dots,F_t)$. Enumerate
+the residue tuples $(u_l,v_l)\bmod M$ compatible with the congruences modulo the
+$F_l$ and satisfying (ii). The $\mathfrak A$-coordinates enter only through their
+residues, so for each such tuple, (i) with the induced congruences on
+$u_l^{\mathfrak B},v_l^{\mathfrak B}$ is an instance of $\mathrm{CSR}^0$ with
+$n=r-q$.
+\end{proof}
+
+\section{The rational solution set}\label{sec:orbits}
+
+Fix an instance of $\mathrm{CSR}^0$. Let $V=\Q^{2t}$,
+\[X_c=\{\varphi\in\Hom(V,\Q^n):\Lambda^2\varphi(\beta)=c\},\]
+$2s=\rank c$, $P$ the support of $c$, $C$ a complement of $\Lambda_P$ in $\Z^n$
+(so $\Z^n=\Lambda_P\oplus C$), and $d=n-2s$. Let
+\[H=\Sp(\beta)\times\SL(C),\qquad (g,h)\cdot\varphi=h\circ\varphi\circ g^{-1},\]
+where $\SL(C)$ acts as the identity on $P$. Since $\Lambda^2g^{-1}(\beta)=\beta$ and
+$\Lambda^2h(c)=c$, $H$ preserves $X_c$. This action is a $\Q$-representation
+$\rho\colon H\to\GL(\Hom(V,\Q^n))$; it need not be faithful (for instance
+$(-1,-1)$ acts trivially when $s=0$ and $d$ is even).
+
+Dually, $\varphi^*\colon(\Q^n)^*\to V^*$ is an isometry from the alternating form
+$c(\xi,\eta)=\langle\xi\w\eta,c\rangle$ to the nondegenerate form $\beta$ on $V^*$,
+because $\beta(\varphi^*\xi,\varphi^*\eta)=\langle\xi\w\eta,\Lambda^2\varphi(\beta)\rangle$.
+The radical of $c$ is $R=P^\perp$, $c$ is nondegenerate on $A=C^\perp$, and
+$(\Q^n)^*=A\oplus R$. Put $k(\varphi)=\dim\varphi^*(R)$ and
+$X_{c,k}=\{\varphi\in X_c:k(\varphi)=k\}$.
+
+\begin{lemma}\label{lem:orbits}
+Let $K$ be $\Q$ or $\Qp$. For $0\le k\le\min(d,t-s)$, $X_{c,k}(K)$ is a single
+$H(K)$-orbit, and a point $y_k\in X_{c,k}(\Q)$ can be computed. For other $k$,
+$X_{c,k}=\emptyset$. In particular $X_c(\Q)=\bigsqcup_kH(\Q)\cdot y_k$.
+\end{lemma}
+
+\begin{proof}
+\emph{Structure.} For $\xi\in A$ and $\rho,\rho'\in R$ we have
+$\beta(\varphi^*\xi,\varphi^*\rho)=c(\xi,\rho)=0$ and
+$\beta(\varphi^*\rho,\varphi^*\rho')=0$. So $\iota=\varphi^*|_A$ is an isometric
+embedding of the nondegenerate space $(A,c)$, $E=\iota(A)^\perp$ is nondegenerate of
+dimension $2t-2s$, and $\psi=\varphi^*|_R$ maps $R$ into $E$ with totally isotropic
+image. Hence $k\le\min(d,t-s)$.
+
+\emph{Existence.} Over $\Q$, map $A$ isometrically onto the span of $s$ hyperbolic
+pairs of a symplectic basis of $(V^*,\beta)$, send $k$ basis vectors of $R$ to
+independent vectors of a Lagrangian of $E$ and the others to $0$, and let $y_k$ be
+the transpose.
+
+\emph{Transitivity.} Let $\varphi_1,\varphi_2\in X_{c,k}(K)$. By Witt's theorem
+$\iota_2\iota_1^{-1}$ extends to some $g\in\Sp(V^*,\beta)\cong\Sp(\beta)$; replace
+$\varphi_1^*$ by $g\varphi_1^*$, so $\iota_1=\iota_2$ and both $\psi_i$ map into the
+same $E$, with kernels of dimension $d-k$. Choose $h\in\SL(R)$ with
+$h(\ker\psi_2)=\ker\psi_1$; this is possible since $\SL$ is transitive on subspaces
+of any fixed dimension $j$ with $0<j<d$ (the stabiliser contains elements of every
+determinant), and trivially for $j\in\{0,d\}$. The map $\mathrm{id}_A\oplus h$ is
+the transpose of an element of $\SL(C)$. Now $\psi_1h$ and $\psi_2$ have the same
+kernel, so $\tau(\psi_1h\rho)=\psi_2\rho$ defines a linear bijection between totally
+isotropic subspaces of $E$, which is an isometry. By Witt's theorem in $E$ it
+extends to $\sigma\in\Sp(E)$; extend $\sigma$ by the identity on $\iota_2(A)$ to
+$\tilde\sigma\in\Sp(V^*)$. Then $\tilde\sigma\varphi_1^*(\mathrm{id}_A\oplus h)=
+\varphi_2^*$.
+\end{proof}
+
+\section{Strong approximation and the decision procedure}\label{sec:decide}
+
+\begin{lemma}\label{lem:SA}
+Let $H$ be a finite product of groups $\Sp_{2a}$ and $\SL_b$ over $\Q$, acting on
+$\Q^N$ through a $\Q$-representation $\rho\colon H\to\GL_N$. Let $y_0\in\Q^N$,
+$M\ge1$, $a\in\Z^N$, and let $B$ be the set of primes dividing $M$ or a
+denominator of $y_0$. The following are equivalent:
+\begin{enumerate}[label=(\alph*)]
+\item there is $\gamma\in H(\Q)$ with $\rho(\gamma)y_0\in\Z^N$ and
+$\rho(\gamma)y_0\equiv a\pmod M$;
+\item for every $p\in B$ there is $\eta\in H(\Qp)$ with $\rho(\eta)y_0\in\Zp^N$ and
+$\rho(\eta)y_0\equiv a\pmod{M\Zp^N}$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(a)$\Rightarrow$(b) is clear. Conversely, for $p\in B$ let
+$V'_p=\{\eta\in H(\Qp):\rho(\eta)y_0\in\Zp^N\cap(a+M\Zp^N)\}$, which is open and,
+by (b), nonempty. For $p\notin B$ let $V_p=\rho^{-1}(\GL_N(\Zp))$, an open
+subgroup of $H(\Qp)$; for $\eta\in V_p$, $\rho(\eta)y_0\in\Zp^N$, and the
+congruence is vacuous at $p$. Fixing a $\Z$-model of $H$, $\rho$ is defined over
+$\Zp$ for almost all $p$, so $V_p\supseteq H(\Zp)$ for almost all $p$. Hence
+$\prod_{p\in B}V'_p\times\prod_{p\notin B}V_p$ is a nonempty open subset of
+$H(\A_f)$. By strong approximation for the simply connected group $H$
+(\S\ref{sec:prelim}; trivial factors are harmless), it contains some
+$\gamma\in H(\Q)$, which satisfies (a).
+\end{proof}
+
+\begin{theorem}\label{thm:csr0}
+$\mathrm{CSR}^0$ is decidable.
+\end{theorem}
+
+\begin{proof}
+Integral solutions are points of $X_c(\Q)=\bigsqcup_kH(\Q)y_k$
+(Lemma~\ref{lem:orbits}), and a point of $\Hom(\Z^{2t},\Z^n)$ is integral iff its
+matrix entries are. For each $k\le\min(d,t-s)$ apply Lemma~\ref{lem:SA} with
+$N=2tn$, $y_0=y_k$, $a=\varphi_0$ and modulus $M$. For each of the finitely many
+primes $p\in B_k$, condition (b) is an existential sentence over $\Qp$ with
+rational parameters, hence decidable (\S\ref{sec:prelim}). The instance is solvable
+iff for some $k$ all these local conditions hold.
+\end{proof}
+
+\begin{proof}[Proof of Theorem A]
+Combine Proposition~\ref{prop:reduction}, Proposition~\ref{prop:removeS} and
+Theorem~\ref{thm:csr0}. All steps are uniform in $r$.
+\end{proof}
+
+\begin{remark}
+By Lemma~\ref{lem:orbits} over $\Qp$, condition (b) of Lemma~\ref{lem:SA} for
+$y_0=y_k$ says intrinsically that $X_{c,k}(\Qp)$ meets $\Zp^N\cap(\varphi_0+M\Zp^N)$.
+The algorithm, as written, relies on a general decision procedure for $\Qp$ and
+is not intended to be efficient.
+\end{remark}
+
+\section{Complements}\label{sec:complements}
+
+\begin{example}
+Without congruences ($F_l=1$, $m_l=1$, $S$ saturated) the instance is solvable iff
+the image of $c$ in $\Lambda^2(\Z^r/S)$ has rank at most $2t$: rank is subadditive,
+and conversely the normal form writes $c$ as a sum of $s$ integral decomposables.
+In particular an element of $N_{2,r}$ is a product of $t$ commutators iff it is
+central of rank at most $2t$, so the commutator width of $N_{2,r}$ is
+$\lfloor r/2\rfloor$; this is classical, see \cite{AR,Rom16b}.
+\end{example}
+
+\begin{example}
+Congruences can obstruct solvability in degenerate cases. Take $n=2$, $t=1$,
+$\beta=f\w g$, $c=0$, $M=4$, $\varphi(f)\equiv(2,0)$, $\varphi(g)\equiv(0,2)$. Then
+$s=0$, $d=2$; the stratum $k=0$ is $\{\varphi=0\}$, which violates the congruence,
+and on $k=1$ one needs $u\w v=0$ with $u\equiv(2,0)$, $v\equiv(0,2)\pmod4$, which
+forces $u_1v_2\equiv4\pmod 8$ but $u_1v_2=u_2v_1\equiv0\pmod{16}$; the $2$-adic test
+fails, so the instance is unsolvable.
+\end{example}
+
+\begin{remark}\label{rem:contrast}
+The decisive feature of $N_{2,r}$ is that its commutator map
+$(x,y)\mapsto x\w y$ is the universal alternating bilinear map, so the fibres
+$X_c$ are finite unions of orbits of $\Sp(\beta)\times\SL(C)$. For a general
+class-$2$ group with commutator map $\omega$, the fibres of
+$(u_l,v_l)\mapsto\sum m_l\omega(u_l,v_l)$ need not be homogeneous. Indeed, given any
+bilinear map $B\colon\Z^m\times\Z^m\to\Z^p$, the class-$2$ group on
+$\Z^m\oplus\Z^m\oplus\Z^p\oplus\Lambda^2\Z^m\oplus\Lambda^2\Z^m$ with commutator
+$((u,v),(u',v'))\mapsto(B(u,v')-B(u',v),\,u\w u',\,v\w v')$ satisfies
+$[X,Y]=(0,(c,0,0))$ solvable iff $c\in B(\Z^m,\Z^m)$, and for suitable $B$ (built from
+a universal Diophantine equation with one coordinate $u_0v_0=1$ fixing a frame)
+this membership is undecidable. This recovers Roman'kov's theorem \cite{Rom16a}.
+\end{remark}
+
+\begin{thebibliography}{99}
+
+\bibitem{AR}
+Kh.~S. Allambergenov and V.~A. Roman'kov, \emph{Products of commutators in groups},
+Dokl. Akad. Nauk UzSSR (1984), no.~4, 14--15 (Russian).
+
+\bibitem{Art}
+E. Artin, \emph{Geometric Algebra}, Interscience, New York, 1957.
+
+\bibitem{AK}
+J. Ax and S. Kochen, \emph{Diophantine problems over local fields. III. Decidable
+fields}, Ann. of Math. (2) \textbf{83} (1966), 437--456.
+
+\bibitem{BT}
+E.~K. Burke and J.~K. Truss, \emph{Unification for nilpotent groups of class 2},
+Forum Math. \textbf{7} (1995), 435ff., doi:10.1515/form.1995.7.435.
+
+\bibitem{DLS}
+M. Duchin, H. Liang and M. Shapiro, \emph{Equations in nilpotent groups},
+Proc. Amer. Math. Soc. \textbf{143} (2015), no.~11, 4723--4731.
+
+\bibitem{Ers}
+Yu.~L. Ershov, \emph{On elementary theories of local fields}, Algebra i Logika
+\textbf{4} (1965), no.~2, 5--30 (Russian).
+
+\bibitem{Lev}
+A. Levine, \emph{Equations in virtually class 2 nilpotent groups}, J. Groups
+Complex. Cryptol. \textbf{14} (2022), no.~1; arXiv:2009.10651.
+
+\bibitem{New}
+M. Newman, \emph{Integral Matrices}, Academic Press, New York, 1972.
+
+\bibitem{PR}
+V. Platonov and A. Rapinchuk, \emph{Algebraic Groups and Number Theory},
+Academic Press, Boston, 1994.
+
+\bibitem{Rep83}
+N.~N. Repin, \emph{Equations with one unknown in nilpotent groups}, Mat. Zametki
+\textbf{34} (1983), no.~2, 201--206 (Russian).
+
+\bibitem{Rep84}
+N.~N. Repin, \emph{Solvability of equations with one indeterminate in nilpotent
+groups}, Izv. Akad. Nauk SSSR Ser. Mat. \textbf{48} (1984), no.~6, 1295--1313
+(Russian).
+
+\bibitem{Rom77}
+V.~A. Roman'kov, \emph{Unsolvability of the problem of endomorphic reducibility in
+free nilpotent groups and in free rings}, Algebra i Logika \textbf{16} (1977),
+no.~4, 457--471 (Russian).
+
+\bibitem{Rom16a}
+V.~A. Roman'kov, \emph{Diophantine questions in the class of finitely generated
+nilpotent groups}, J. Group Theory \textbf{19} (2016), no.~3, 497--514.
+
+\bibitem{Rom16b}
+V.~A. Roman'kov, \emph{The commutator width of some relatively free Lie algebras
+and nilpotent groups}, Sibirsk. Mat. Zh. \textbf{57} (2016), no.~4, 866--888;
+English transl. Siberian Math. J. \textbf{57} (2016), 679--695.
+
+\bibitem{Tru}
+J.~K. Truss, \emph{Equation-solving in free nilpotent groups of class 2 and 3},
+Bull. London Math. Soc. \textbf{27} (1995), no.~1, 39--45.
+
+\end{thebibliography}
+
+\end{document}
