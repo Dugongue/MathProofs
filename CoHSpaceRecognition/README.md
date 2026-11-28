@@ -26,13 +26,13 @@ $$
 
 restricts to zero on each axis by the unit property. It lifts to a relative class $\widetilde\delta\in H^{2d+2}(D,W;C)$.
 
-The relative Serre spectral sequence for the pair over $X$ has fibre pair $(F'\times F',F'\vee F')$. Its reduced quotient is $F'\wedge F'$. This smash product is $(2d+1)$-connected and has $H_{2d+2}(F'\wedge F';\mathbb Z)=A\otimes A$ by the reduced Künneth theorem. Thus restriction to the fibre pair induces an isomorphism
+The axes are simplicial subcomplexes whose pushout is a homotopy pushout. Its homotopy fibre over $X$ is the wedge of the two fibre axes, by the homotopy pushout property of base change in spaces. Apply fibrewise fibration replacement to the arrow $W\to D$ and then use its mapping cylinder over $X$ to model the relative cohomology. The relative Serre spectral sequence for that pair has fibre pair equivalent to $(F'\times F',F'\vee F')$. Its reduced quotient is $F'\wedge F'$. This smash product is $(2d+1)$-connected and has $H_{2d+2}(F'\wedge F';\mathbb Z)=A\otimes A$ by the reduced Künneth theorem. Thus restriction to the fibre pair induces an isomorphism
 
 $$
 H^{2d+2}(D,W;C)\;\cong\;\operatorname{Hom}(A\otimes A,C).
 $$
 
-In fact all fibre rows below degree $2d+2$ vanish, so the entry in bidegree $(0,2d+2)$ is the only term in that total degree and no differential meets it. Let $w:A\otimes A\to C$ be the image of $\widetilde\delta$.
+In fact all fibre rows below degree $2d+2$ vanish, so the entry in bidegree $(0,2d+2)$ is the only term in that total degree and no differential meets it. [The cube lemma of Mather and its homotopy-fibre application](https://doi.org/10.1017/S0013091525101223) Let $w:A\otimes A\to C$ be the image of $\widetilde\delta$.
 
 Regard $\tau$ as the image of a relative class on $(P,o(X))$. The relative cup product $\operatorname{pr}_1^*\tau\smile\operatorname{pr}_2^*\tau$ is defined on $(D,W)$ with coefficients $A\otimes A$. Its fibre restriction corresponds to the identity on $A\otimes A$ by Künneth. Applying $w$ to its coefficients and forgetting relativity gives $\delta$. Pulling back along the pair of sections $(s,t)$ consequently gives
 
