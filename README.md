@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- top30-handoff-20261127:start -->
+- **[Top 30 research register — 27 November 2026](PortfolioTop30/Handoff20261127.md)**. All 30 handoff entries with scope, verification status, dependencies and links to available proofs.
+<!-- top30-handoff-20261127:end -->
+
 <!-- postnikov-extension-degrees:start -->
 - **[Computability degrees of unbounded-dimensional extension](PostnikovExtensionDegrees/README.md)**. Written proofs that arbitrary computably enumerable degrees occur for fixed simply connected simplicial abelian targets, and that degreewise listability can still give decidable extension outside NP.
 <!-- postnikov-extension-degrees:end -->
