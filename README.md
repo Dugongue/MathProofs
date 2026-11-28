@@ -6,6 +6,7 @@ Each Lean file imports only Mathlib.
 INFORMAL PROOFS (not formalized yet)
 
 <!-- november-2026-proof-intake -->
+- **[Unique products through Hirsch length three](UniqueProductHirschThree/Proof.md)**. A written classification for torsion-free virtually nilpotent groups, with six exact finite certificates covering the Heisenberg cases.
 - **[Negative support in four-variable entropy inequalities](FourVariableEntropySupport/README.md)**. A written proof classifies the minimal negative supports of valid non-Shannon inequalities and gives sharp five-coordinate certificates.
 - **[Heisenberg quotients of three-manifold groups](HeisenbergThreeManifoldSurjection/README.md)**. A written characterization by the mod-$p$ Betti number and triple cup product gives polynomial-time decision for odd primes.
 - **[Massey product complexity](MasseyProductComplexity/PROOF.md)**. Written proofs of polynomial-time lower-length tests and arithmetic completeness for fourfold vanishing on two-complexes with degree-one inputs.
