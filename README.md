@@ -5,6 +5,10 @@ Each Lean file imports only Mathlib.
 ----------------------------------
 INFORMAL PROOFS (not formalized yet)
 
+<!-- su2-exact-chart-20261128:start -->
+- [Exact charts at dense SU(2) representations](KapovichMillsonExtensions/SU2ExactChart.md) — removes the étale covering of Kapovich–Millson Remark 1.5 in the compact case: exact Zariski chart X′ × SL₂ᵏ × PGL₂ with explicit inverse, via an icosahedral frame, Cayley-vector points, order-three lines and von Staudt gadgets.
+<!-- su2-exact-chart-20261128:end -->
+
 <!-- kapovich-millson-manin-20261128:start -->
 - [Kapovich–Millson and Manin crossovers](KapovichMillsonManin/README.md) — integral trace fibres, degree-one boundary extension, and sharp cone counts.
 <!-- kapovich-millson-manin-20261128:end -->
